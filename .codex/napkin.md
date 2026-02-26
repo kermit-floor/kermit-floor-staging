@@ -3,6 +3,8 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-02-26 | user | Blog drafts leaked prompt/planning language into published copy (e.g. "your high-level list", "you mentioned"), making posts read like writing instructions | Final blog copy must be reader-facing only; rewrite prompt-derived points into neutral editorial prose and scan for prompt-leak phrases before finalizing |
+| 2026-02-26 | self | Tried using `view_image` to preview a local `.svg` and the tool rejected `image/svg+xml` | Treat local SVGs as valid repo assets but skip `view_image` preview for SVG; preview only raster formats (`png/jpg/webp`) |
 | 2026-02-07 | self | Used `Get-Content` on paths containing `[locale]` without literal mode in PowerShell | Use `Get-Content -LiteralPath` for bracketed Next.js route folders |
 | 2026-02-07 | self | Ran `npm` directly in PowerShell and hit execution-policy block | Use `npm.cmd` in this environment for install/run commands |
 | 2026-02-07 | self | Left YAML scalars unquoted in blog frontmatter (title/date), causing parser/type issues | Quote colon-containing text and date strings in frontmatter templates |
@@ -33,8 +35,14 @@
 | 2026-02-26 | user | Moved catalogue PDFs under `public/downloads/catalogues` and renamed them with `kermit-` prefix; resource JSON links still pointed to old `/downloads/*.pdf` paths | Update `src/lib/resources.json` catalogue `files.{en,tr}.url` entries to `/downloads/catalogues/...` and verify file existence for each locale link |
 | 2026-02-26 | user | Google click on English blog URL was auto-prefixed to `/tr` by locale detection, leaving English slug intact and causing 404 | Disable locale detection for blog routes (locale-specific dynamic slugs/tags) and add cross-locale slug rescue redirect in blog post page |
 | 2026-02-26 | user | I treated deployment as something I might run locally, but this repo deploys from GitHub push-triggered builds | Do not run local deploy commands here; prepare changes and let GitHub-triggered deployment handle release |
+| 2026-02-26 | self | New Turkish text-integrity validator falsely flagged markdown URL query params (e.g. `/resources?tab=...`) as broken characters | Make suspicious `?` detection URL-query-aware so it ignores `?key=` inside URLs while still catching `?` replacements in Turkish words |
+| 2026-02-26 | user | Did not want explicit “wall panels are not for floors” wording in blog copy | Prefer positive framing: mention matching Stone Collection colors with wall panels instead of negative product-scope statements |
+
+| 2026-02-26 | user | Floating "Chat with us" opened an in-page popup first, but they want a direct WhatsApp action | Replace popup chat UI with a direct WhatsApp link button in the shared `Chatbox` component |
 
 ## User Preferences
+- Blog posts must never read like instructions to the writer (no "your list", "you mentioned", or prompt/process references in final article body).
+- For blog copy, use the exact EN term **"Skirting with Flexible Edges"** for Turkish **"Contalı Süpürgelik"**.
 - Keep responses concise and practical.
 - Implement approved plans end-to-end without partial delivery.
 - Wants the blog-post-generator skill to ask for author-provided high-level details and plan article structure around them.
@@ -58,6 +66,7 @@
 - Wants catalogue downloads to follow the new `public/downloads/catalogues` structure and updated `kermit-` filenames.
 - Wants blog search result clicks to preserve the clicked locale and never auto-prefix to `/tr` with an untranslated slug.
 - Deployment workflow is GitHub push-triggered; do not run local deploy commands for this repo.
+- Prefers positive wording in blog copy for wall/floor planning (mention matching Stone Collection colors, avoid explicit “not for floors” phrasing).
 - Wants blog drafts to use bold emphasis on key words/phrases when it improves clarity.
 - Prefers aligning repo worker name to Cloudflare connected-build expectation (`kermit-floor`) to avoid deploy warnings.
 - Wants optional user-provided inputs for blog generation: own images, short article context, and reference sources/style examples.
@@ -68,7 +77,13 @@
 - Prefers semantic key names in translations/components (e.g., use blog-specific keys for blog sections, not reused `news*` keys).
 - Prefers long-form blog posts with many subtitles to improve reader focus/retention.
 
+- Wants the floating "Chat with us" action to open WhatsApp directly with no intermediate chatbox UI.
+
+
 ## Patterns That Work
+- After generating blog content, run a quick prompt-leak scan (e.g. `your high-level`, `your list`, `Sizin verdiğiniz`, `Listenizde`) before finalizing/publishing.
+- When a user says they uploaded blog images to a repo folder, inspect the actual folder contents/count first; it may differ from the number of images visible in chat.
+- User-provided technical diagrams can be stored as local SVG assets in `public/images/blog/<topicId>/` and embedded directly in MDX (no external hotlinking needed).
 - Validate assumptions by checking repository files before acting.
 - Before patching blog media behavior, inspect both the manifest generator and the page renderer; lazy attrs and layout styling can live in different places.
 - For skill-setting questions, inspect the local `SKILL.md` directly and `rg` for the exact constraint text before answering.
@@ -86,6 +101,7 @@
 - For UTF-8 text edits on Windows, prefer Node reads for exact string matching when PowerShell output garbles characters.
 - For Turkish text integrity checks, use codepoint-based scans and trust UTF-8 file reads over terminal glyph rendering.
 - Add a build-time text integrity validator (`messages/tr.json` + Turkish blog MDX) to catch mojibake and suspicious `?` replacements.
+- Suspicious `?` detection must ignore URL query strings in markdown/content (e.g. `?tab=`) to avoid false positives.
 - For skirting dimensions/specs, prefer exact collection-keyed config maps over `includes()` chains so model-specific values do not drift.
 - When resource files are moved/renamed manually, run a quick JSON + filesystem existence check for `src/lib/resources.json` URLs (especially locale-specific variants).
 - For locale-specific dynamic blog slugs/tags, do not rely on `next-intl` locale auto-detection redirects; preserve clicked locale and redirect mismatched slugs to canonical locale URL.

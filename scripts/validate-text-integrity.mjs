@@ -64,27 +64,43 @@ function findLikelyMojibake(raw) {
 }
 
 function findSuspiciousQuestionReplacement(text) {
-  const patterns = [
-    /\p{L}\?\p{L}/u,
-    /(^|[\s>"'“(\[{])\?\p{L}{2,}/u,
-  ];
+  function isLetter(value) {
+    return value != null && /\p{L}/u.test(value);
+  }
 
-  for (const pattern of patterns) {
-    const match = pattern.exec(text);
-    if (!match) {
+  function isBoundary(value) {
+    return value == null || /[\s>"'“(\[{]/u.test(value);
+  }
+
+  function isLikelyUrlQuery(index) {
+    const after = text.slice(index, index + 40);
+    if (!/^\?[A-Za-z0-9_-]+=/.test(after)) {
+      return false;
+    }
+
+    const before = text.slice(Math.max(0, index - 120), index);
+    const lastToken = before.split(/[\s<>"'“”()[\]{}]/u).pop() ?? '';
+    return lastToken.includes('/') || lastToken.includes('http') || lastToken.includes('www.');
+  }
+
+  for (let index = 0; index < text.length; index += 1) {
+    if (text[index] !== '?') {
       continue;
     }
 
-    const matchText = match[0];
-    const questionOffset = matchText.indexOf('?');
-    if (questionOffset < 0) {
+    if (isLikelyUrlQuery(index)) {
       continue;
     }
 
-    return {
-      index: match.index + questionOffset,
-      reason: 'contains a suspicious "?" inside/at the start of a Turkish word (likely character loss)',
-    };
+    const prev = index > 0 ? text[index - 1] : null;
+    const next = index + 1 < text.length ? text[index + 1] : null;
+
+    if ((isLetter(prev) && isLetter(next)) || (isBoundary(prev) && isLetter(next))) {
+      return {
+        index,
+        reason: 'contains a suspicious "?" inside/at the start of a Turkish word (likely character loss)',
+      };
+    }
   }
 
   return null;
@@ -225,4 +241,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-

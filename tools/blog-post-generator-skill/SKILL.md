@@ -156,6 +156,9 @@ Do not publish unsupported quantified claims.
   - Prefer short sections, bullets, and checklists over long text walls
 - Keep EN/TR intent-aligned while allowing localized phrasing and examples.
 - Prioritize author-provided high-level details in the outline and examples; do not bury them in filler sections.
+- Final article copy must be reader-facing only.
+- Do not reference the user/author prompt, "your high-level details/list", or the drafting process inside the published article body.
+- Convert all prompt/planning inputs into neutral editorial prose (no prompt-leak language like "you mentioned", "your list", "in this article we will cover your points").
 - Use internal links/CTAs selectively when they improve utility.
 - Keep CTA presentation lively and contextual, not boilerplate.
 - Use comparison framing only when the topic/keywords indicate comparison intent.

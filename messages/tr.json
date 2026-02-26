@@ -652,11 +652,7 @@
     "applicationVideoTitle": "Örnek Uygulama Videosu"
   },
   "Chatbox": {
-    "greeting": "Merhaba, size SPC İç Mekan Finiş Sistemimiz hakkında nasıl yardımcı olabiliriz?",
-    "prompt": "Bizimle sohbet edin!",
-    "placeholder": "Mesajınızı yazın...",
-    "whatsappRedirect": "Sizin için WhatsApp'ı açtım. Lütfen mesajınızı oradan gönderin!",
-    "title": "Kermit Floor Destek"
+    "prompt": "Bizimle sohbet edin!"
   },
   "Footer": {
     "tagline": "Modern iç mekanlar için premium SPC parke ve duvar paneli çözümleri.",
