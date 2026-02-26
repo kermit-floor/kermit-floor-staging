@@ -22,10 +22,11 @@ All generated files must include this frontmatter shape.
 - `sourceUrls`: non-empty array of repo paths and/or valid `http(s)` URLs.
   - Include product/spec claim-check sources.
   - Include external research URLs used in drafting.
-  - Include external source URLs of selected web images.
+  - Do **not** include raw external source URLs of selected web images in frontmatter.
+  - Store web-image source provenance in an internal trace file instead (for example `.codex/blog-media-sources/<topicId>.json`).
 - `coverImage`: absolute app path (starts with `/`)
 - `coverImageAlt`: descriptive localized alt text
-- `authorName`: string
+- `authorName`: string, must match a predefined author name from `content/blog/authors.json`
 - `ctaPath`: optional valid route path from `src/navigation.ts`
 
 ## File Contract
@@ -39,4 +40,5 @@ All generated files must include this frontmatter shape.
 - Missing locale pair is invalid.
 - `published` status must be set on both locale files together.
 - `sourceUrls` cannot be empty.
+- `authorName` should be selected from the repo author registry (`content/blog/authors.json`) for consistency.
 - User video references are inserted in MDX body as playable blocks (not as frontmatter fields).

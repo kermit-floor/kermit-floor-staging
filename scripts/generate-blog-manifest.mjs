@@ -44,6 +44,10 @@ markdown.renderer.rules.image = (tokens, idx, options, env, self) => {
   const token = tokens[idx];
   const src = token.attrGet('src') ?? '';
   if (!VIDEO_EXTENSION_PATTERN.test(src)) {
+    token.attrSet('loading', 'lazy');
+    token.attrSet('decoding', 'async');
+  }
+  if (!VIDEO_EXTENSION_PATTERN.test(src)) {
     return defaultImageRenderer(tokens, idx, options, env, self);
   }
 
@@ -52,7 +56,7 @@ markdown.renderer.rules.image = (tokens, idx, options, env, self) => {
   const escapedTitle = markdown.utils.escapeHtml(title);
   const escapedMimeType = markdown.utils.escapeHtml(getVideoMimeType(src));
 
-  return `<video controls preload="metadata" playsinline aria-label="${escapedTitle}"><source src="${escapedSrc}" type="${escapedMimeType}" />Your browser does not support the video tag.</video>`;
+  return `<video controls preload="none" playsinline aria-label="${escapedTitle}"><source src="${escapedSrc}" type="${escapedMimeType}" />Your browser does not support the video tag.</video>`;
 };
 
 const frontmatterSchema = z

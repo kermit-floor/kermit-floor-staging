@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {notFound} from 'next/navigation';
+import {notFound, redirect} from 'next/navigation';
 import {Header} from '@/components/showcase/Header';
 import {Footer} from '@/components/showcase/Footer';
 import {Chatbox} from '@/components/showcase/Chatbox';
@@ -11,6 +11,7 @@ import {
 import {
   getArticleJsonLd,
   getBlogPostPath,
+  toLocalePath,
   toAbsoluteUrl,
 } from '@/lib/blog/seo';
 import type {BlogLocale} from '@/lib/blog/types';
@@ -96,7 +97,15 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  const postEntry = await getPublishedBlogPostBySlug(locale, slug);
+  let postEntry = await getPublishedBlogPostBySlug(locale, slug);
+  if (!postEntry) {
+    const alternateLocale: BlogLocale = locale === 'en' ? 'tr' : 'en';
+    const alternateMatch = await getPublishedBlogPostBySlug(alternateLocale, slug);
+    if (alternateMatch) {
+      redirect(toLocalePath(alternateLocale, getBlogPostPath(alternateMatch.post.slug)));
+    }
+  }
+
   if (!postEntry) {
     notFound();
   }

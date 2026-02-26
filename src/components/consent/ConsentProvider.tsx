@@ -2,9 +2,17 @@
 
 import {createContext, useCallback, useContext, useEffect, useMemo, useState} from 'react';
 import Script from 'next/script';
+import {usePathname, useSearchParams} from 'next/navigation';
 import type {ConsentDecision} from '@/lib/consent/types';
 import {getConsentState, persistConsentDecision} from '@/lib/consent/storage';
-import {denyAnalyticsConsent, grantAnalyticsConsent} from '@/lib/consent/gtag';
+import {
+  bootstrapGtag,
+  denyAnalyticsConsent,
+  grantAnalyticsConsent,
+  initializeGtag,
+  setDefaultAnalyticsConsent,
+  trackPageView,
+} from '@/lib/consent/gtag';
 import {ConsentBanner} from '@/components/consent/ConsentBanner';
 import {ConsentPreferencesDialog} from '@/components/consent/ConsentPreferencesDialog';
 
@@ -22,6 +30,22 @@ type ConsentProviderProps = {
   gaId: string;
   enabled: boolean;
 };
+
+function AnalyticsPageTracker({active}: {active: boolean}) {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const search = searchParams.toString();
+
+  useEffect(() => {
+    if (!active || !pathname) {
+      return;
+    }
+
+    trackPageView();
+  }, [active, pathname, search]);
+
+  return null;
+}
 
 export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps) {
   const [decision, setDecision] = useState<ConsentDecision | null>(null);
@@ -49,7 +73,7 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
     }
 
     if (decision === 'accepted') {
-      grantAnalyticsConsent(gaId);
+      grantAnalyticsConsent();
       return;
     }
 
@@ -88,21 +112,41 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
 
   const shouldLoadGa = gaId.length > 0 && (decision === 'accepted' || !enabled);
   const shouldRenderConsentUi = enabled && gaId.length > 0;
+  const analyticsActive = shouldLoadGa && gaScriptLoaded;
+  const bootstrapScript = [
+    'window.dataLayer = window.dataLayer || [];',
+    'window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};',
+    enabled ? "window.gtag('consent','default',{analytics_storage:'denied'});" : '',
+  ]
+    .filter(Boolean)
+    .join('');
 
   return (
     <ConsentContext.Provider value={value}>
       {children}
+      {analyticsActive ? <AnalyticsPageTracker active={analyticsActive} /> : null}
       {shouldLoadGa ? (
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-          onLoad={() => {
-            setGaScriptLoaded(true);
-            if (!enabled) {
-              grantAnalyticsConsent(gaId);
-            }
-          }}
-        />
+        <>
+          <Script id="kermit-ga-bootstrap" strategy="afterInteractive">
+            {bootstrapScript}
+          </Script>
+          <Script
+            id="kermit-ga-loader"
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            onLoad={() => {
+              bootstrapGtag();
+              if (enabled) {
+                setDefaultAnalyticsConsent('denied');
+              }
+              initializeGtag(gaId);
+              if (!enabled) {
+                grantAnalyticsConsent();
+              }
+              setGaScriptLoaded(true);
+            }}
+          />
+        </>
       ) : null}
       {shouldRenderConsentUi ? (
         <>

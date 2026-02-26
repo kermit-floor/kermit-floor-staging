@@ -31,6 +31,62 @@ type ProductDetailsProps = {
   tPanelNames: (key: string) => string;
 };
 
+type CollectionType = ProductDetailsProps['collectionType'];
+type SkirtingCollectionType = Extract<CollectionType, `skirting-${string}`>;
+
+type SkirtingSpecAttributes = {
+  height: string;
+  depth: string;
+  length: string;
+};
+
+const SKIRTING_SPEC_ATTRIBUTES_BY_COLLECTION: Record<SkirtingCollectionType, SkirtingSpecAttributes> = {
+  'skirting-alpha-140-mm': {
+    height: '140 mm',
+    depth: '18 mm',
+    length: '2400 mm',
+  },
+  'skirting-berlin-100-mm': {
+    height: '100 mm',
+    depth: '22 mm',
+    length: '2400 mm',
+  },
+  'skirting-elite-100-mm': {
+    height: '100 mm',
+    depth: '20 mm',
+    length: '2400 mm',
+  },
+  'skirting-moderna-100-mm': {
+    height: '100 mm',
+    depth: '22 mm',
+    length: '2400 mm',
+  },
+  'skirting-optima-60-mm': {
+    height: '60 mm',
+    depth: '14 mm',
+    length: '2400 mm',
+  },
+  'skirting-optima-90-mm': {
+    height: '90 mm',
+    depth: '18 mm',
+    length: '2400 mm',
+  },
+  'skirting-solid-80-mm': {
+    height: '80 mm',
+    depth: '22 mm',
+    length: '2400 mm',
+  },
+  'skirting-x-line-100-mm': {
+    height: '100 mm',
+    depth: '20 mm',
+    length: '2400 mm',
+  },
+};
+
+function isSkirtingCollectionType(value: CollectionType): value is SkirtingCollectionType {
+  return value.startsWith('skirting-');
+}
+
 function FeatureColumn({ features }: { features: {icon: React.ElementType, text: string}[] }) {
     return (
         <div className="flex flex-col justify-center items-center gap-3 py-4 px-1 lg:px-4 bg-muted h-full">
@@ -49,7 +105,7 @@ export function ProductDetails({ panel, panels, onPanelSelect, collectionType, t
   
   const [api, setApi] = useState<CarouselApi>();
 
-  const isSkirting = collectionType.startsWith('skirting-');
+  const isSkirting = isSkirtingCollectionType(collectionType);
 
   let specs: { label: string; value: string | string[]; icon?: React.ElementType }[];
   
@@ -96,22 +152,12 @@ export function ProductDetails({ panel, panels, onPanelSelect, collectionType, t
   } else if (['spc-parquet-natural-collection', 'full-natural-collection'].includes(collectionType)) {
       specs = naturalFlooringSpecs;
   } else if (isSkirting) {
-    let height = 'N/A';
-    let depth = 'N/A';
-
-    if (collectionType.includes('alpha-140-mm')) { height = '140 mm'; depth = '18 mm'; }
-    else if (collectionType.includes('berlin-100-mm')) { height = '100 mm'; depth = '18 mm'; }
-    else if (collectionType.includes('elite-100-mm')) { height = '100 mm'; depth = '18 mm'; }
-    else if (collectionType.includes('moderna-100-mm')) { height = '100 mm'; depth = '18 mm'; }
-    else if (collectionType.includes('optima-60-mm')) { height = '60 mm'; depth = '14 mm'; }
-    else if (collectionType.includes('optima-90-mm')) { height = '90 mm'; depth = '17 mm'; }
-    else if (collectionType.includes('solid-80-mm')) { height = '80 mm'; depth = '18 mm'; }
-    else if (collectionType.includes('x-line-100-mm')) { height = '100 mm'; depth = '18 mm'; }
+    const skirtingAttributes = SKIRTING_SPEC_ATTRIBUTES_BY_COLLECTION[collectionType];
 
     specs = [
-        { label: t('specHeight'), value: height },
-        { label: t('specDepth'), value: depth },
-        { label: t('specLength'), value: '2400 mm' },
+        { label: t('specHeight'), value: skirtingAttributes.height },
+        { label: t('specDepth'), value: skirtingAttributes.depth },
+        { label: t('specLength'), value: skirtingAttributes.length },
         { label: t('specMaterial'), value: t('specMaterialValue') },
     ];
   }

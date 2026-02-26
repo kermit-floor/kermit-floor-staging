@@ -4,14 +4,23 @@ Use one shared topic plan and adapt per locale.
 
 ## Target Length
 
-- EN: 900-1300 words
-- TR: 900-1300 words
+- EN: minimum 1200 words, standard target 1400-1800 words
+- TR: minimum 1200 words, standard target 1400-1800 words
+- Comparison/evaluation topics can extend to 1600-2200 words when the extra detail improves decision quality.
+
+## Subtitle Density (Retention / Focus)
+
+- Use frequent H2/H3 subtitles to keep long articles easy to follow.
+- Aim for a new subtitle roughly every 120-220 words when natural.
+- Typical long-form post should include about 6-10 subtitles total (H2 + H3 combined).
+- Break dense sections into bullets/checklists/tables instead of long paragraph blocks.
 
 ## Inline Media Density
 
 - Decide image count autonomously from content depth:
-  - 900-1050 words: 2-3 images
-  - 1050-1300 words: 3-5 images
+  - 1200-1500 words: 3-5 images
+  - 1500-1900 words: 4-6 images
+  - 1900-2200 words (often comparisons/checklists): 5-7 images
 - Place visuals where they clarify a point, not as decoration.
 - If user provides videos, place each playable video in the most relevant section.
 

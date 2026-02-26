@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {Link} from '@/navigation';
 import type {BlogLocale, BlogPost} from '@/lib/blog/types';
+import {getBlogAuthorProfileByName} from '@/lib/blog/authors';
 import BlogTagPills from './BlogTagPills';
 
 type BlogPostContentProps = {
@@ -15,6 +16,13 @@ export default function BlogPostContent({post, locale, backLabel}: BlogPostConte
     month: 'long',
     day: '2-digit',
   }).format(post.publishedAtDate);
+  const author = getBlogAuthorProfileByName(post.authorName, locale);
+  const authorInitials = post.authorName
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? '')
+    .join('');
 
   return (
     <article className="mx-auto max-w-4xl">
@@ -24,6 +32,29 @@ export default function BlogPostContent({post, locale, backLabel}: BlogPostConte
 
       <header className="mt-5 space-y-4">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">{publishedDate}</p>
+        <div className="flex items-center gap-3 rounded-xl border bg-card/60 px-3 py-2">
+          <div className="relative h-12 w-12 overflow-hidden rounded-full border bg-muted">
+            {author?.photoPath ? (
+              <Image
+                src={author.photoPath}
+                alt={author.name}
+                fill
+                className="object-cover"
+                sizes="48px"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-sm font-semibold text-muted-foreground">
+                {authorInitials || 'KF'}
+              </div>
+            )}
+          </div>
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-foreground">{author?.name ?? post.authorName}</p>
+            {author?.subtitle ? (
+              <p className="truncate text-xs text-muted-foreground">{author.subtitle}</p>
+            ) : null}
+          </div>
+        </div>
         <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">{post.title}</h1>
         <p className="text-base text-muted-foreground">{post.description}</p>
         <BlogTagPills tags={post.tags} />
@@ -41,7 +72,7 @@ export default function BlogPostContent({post, locale, backLabel}: BlogPostConte
       </div>
 
       <div
-        className="mt-10 space-y-5 text-[16px] leading-8 text-foreground [&_a]:text-primary [&_a]:underline [&_blockquote]:border-l-4 [&_blockquote]:border-primary/40 [&_blockquote]:pl-4 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_li]:ml-5 [&_li]:list-disc [&_ul]:space-y-2 [&_video]:my-8 [&_video]:w-full [&_video]:rounded-xl [&_video]:border"
+        className="mt-10 space-y-5 text-[16px] leading-8 text-foreground [&_a]:text-primary [&_a]:underline [&_blockquote]:border-l-4 [&_blockquote]:border-primary/40 [&_blockquote]:pl-4 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:my-8 [&_img]:h-auto [&_img]:w-full [&_img]:rounded-xl [&_img]:border [&_img]:bg-card/30 [&_li]:ml-5 [&_li]:list-disc [&_ul]:space-y-2 [&_video]:my-8 [&_video]:w-full [&_video]:rounded-xl [&_video]:border"
         dangerouslySetInnerHTML={{__html: post.contentHtml}}
       />
     </article>

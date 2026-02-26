@@ -58,6 +58,19 @@ if (Test-Path $skillFile) {
   if ($skillContent -notmatch 'content/blog/topics') {
     Add-Failure $failures "SKILL.md does not include expected blog output path guidance."
   }
+  if ($skillContent -notmatch 'content/blog/authors\.json') {
+    Add-Failure $failures "SKILL.md does not include expected blog author registry guidance (content/blog/authors.json)."
+  }
+}
+
+$authorsRegistryPath = Join-Path $repoRoot "content/blog/authors.json"
+if (-not (Test-Path $authorsRegistryPath)) {
+  Add-Failure $failures "Missing blog author registry: 'content/blog/authors.json'."
+} else {
+  $authorsRegistryContent = Get-Content -Raw $authorsRegistryPath
+  if ($authorsRegistryContent -notmatch '"authors"\s*:') {
+    Add-Failure $failures "Author registry missing expected \"authors\" key: 'content/blog/authors.json'."
+  }
 }
 
 $scaffolderPath = Join-Path $repoRoot "scripts/new-blog-topic.mjs"
@@ -70,6 +83,9 @@ if (-not (Test-Path $scaffolderPath)) {
       Add-Failure $failures "Scaffolder missing required field '$field'."
     }
   }
+  if ($scaffolderContent -notmatch 'content/blog/authors\.json') {
+    Add-Failure $failures "Scaffolder missing expected blog author registry usage."
+  }
 }
 
 $validatorPath = Join-Path $repoRoot "scripts/validate-blog-content.mjs"
@@ -81,6 +97,9 @@ if (-not (Test-Path $validatorPath)) {
     if ($validatorContent -notmatch $field) {
       Add-Failure $failures "Validator missing required field '$field'."
     }
+  }
+  if ($validatorContent -notmatch 'content/blog/authors\.json') {
+    Add-Failure $failures "Validator missing expected blog author registry checks."
   }
 }
 
@@ -95,6 +114,9 @@ if (-not $RepoOnly) {
     $installedContent = Get-Content -Raw $installedSkillFile
     if ($installedContent -notmatch 'content/blog/topics') {
       Add-Failure $failures "Installed skill appears stale. Reinstall with scripts/install-blog-post-generator-skill.ps1 -Force."
+    }
+    if ($installedContent -notmatch 'content/blog/authors\.json') {
+      Add-Failure $failures "Installed skill appears stale (missing author registry guidance). Reinstall with scripts/install-blog-post-generator-skill.ps1 -Force."
     }
   }
 }

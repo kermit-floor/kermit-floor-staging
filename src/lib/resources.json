@@ -4,7 +4,9 @@
       "id": "pack-installer",
       "productLine": "general",
       "docType": "pack",
-      "audience": ["installer"],
+      "audience": [
+        "installer"
+      ],
       "installationMethod": null,
       "title": "Installer Starter Pack",
       "title_tr": "Usta Bilgi Paketi",
@@ -24,10 +26,21 @@
       ],
       "version": "2024.Q3",
       "updatedAt": "2024-07-20",
-      "tags": ["pack", "installer"],
+      "tags": [
+        "pack",
+        "installer"
+      ],
       "files": {
-        "en": { "url": "#", "size": "45 MB", "format": "zip" },
-        "tr": { "url": "#", "size": "45 MB", "format": "zip" }
+        "en": {
+          "url": "#",
+          "size": "45 MB",
+          "format": "zip"
+        },
+        "tr": {
+          "url": "#",
+          "size": "45 MB",
+          "format": "zip"
+        }
       },
       "previewEnabled": false
     },
@@ -35,7 +48,9 @@
       "id": "pack-dealer",
       "productLine": "general",
       "docType": "pack",
-      "audience": ["dealer"],
+      "audience": [
+        "dealer"
+      ],
       "installationMethod": null,
       "title": "Dealer Starter Pack",
       "title_tr": "Bayi Başlangıç Paketi",
@@ -57,10 +72,21 @@
       ],
       "version": "2024.Q3",
       "updatedAt": "2024-07-20",
-      "tags": ["pack", "dealer"],
+      "tags": [
+        "pack",
+        "dealer"
+      ],
       "files": {
-        "en": { "url": "#", "size": "120 MB", "format": "zip" },
-        "tr": { "url": "#", "size": "120 MB", "format": "zip" }
+        "en": {
+          "url": "#",
+          "size": "120 MB",
+          "format": "zip"
+        },
+        "tr": {
+          "url": "#",
+          "size": "120 MB",
+          "format": "zip"
+        }
       },
       "previewEnabled": false
     },
@@ -68,7 +94,9 @@
       "id": "pack-architect",
       "productLine": "general",
       "docType": "pack",
-      "audience": ["architect"],
+      "audience": [
+        "architect"
+      ],
       "installationMethod": null,
       "title": "Architect & Specifier Pack",
       "title_tr": "Mimar ve Tasarımcı Paketi",
@@ -88,10 +116,21 @@
       ],
       "version": "2024.Q3",
       "updatedAt": "2024-07-20",
-      "tags": ["pack", "architect"],
+      "tags": [
+        "pack",
+        "architect"
+      ],
       "files": {
-        "en": { "url": "#", "size": "250 MB", "format": "zip" },
-        "tr": { "url": "#", "size": "250 MB", "format": "zip" }
+        "en": {
+          "url": "#",
+          "size": "250 MB",
+          "format": "zip"
+        },
+        "tr": {
+          "url": "#",
+          "size": "250 MB",
+          "format": "zip"
+        }
       },
       "previewEnabled": false
     },
@@ -99,18 +138,32 @@
       "id": "skirting-catalogue-2024",
       "productLine": "skirting",
       "docType": "catalogue",
-      "audience": ["all"],
+      "audience": [
+        "all"
+      ],
       "installationMethod": null,
-      "title": "SPC Skirting Boards Catalogue 2025",
-      "title_tr": "SPC Süpürgelik Kataloğu 2025",
+      "title": "SPC Skirting Boards Catalogue 2026",
+      "title_tr": "SPC S?p?rgelik Katalo?u 2026",
       "summary": "Explore our complete range of SPC skirting boards, including all models and color options.",
       "summary_tr": "Tüm modelleri ve renk seçeneklerini içeren eksiksiz SPC süpürgelik serimizi keşfedin.",
-      "version": "v1.0",
-      "updatedAt": "2023-05-14",
-      "tags": ["catalogue", "skirting", "2023"],
+      "version": "v2.0",
+      "updatedAt": "2026-02-26",
+      "tags": [
+        "catalogue",
+        "skirting",
+        "2026"
+      ],
       "files": {
-        "en": { "url": "/downloads/spc-skirting-board-catalogue-en.pdf", "size": "8 MB", "format": "pdf" },
-        "tr": { "url": "/downloads/spc-skirting-board-catalogue-en.pdf", "size": "8 MB", "format": "pdf" }
+        "en": {
+          "url": "/downloads/catalogues/kermit-spc-skirting-board-catalogue-en.pdf",
+          "size": "8 MB",
+          "format": "pdf"
+        },
+        "tr": {
+          "url": "/downloads/catalogues/kermit-spc-supurgelik-katalog-tr.pdf",
+          "size": "8 MB",
+          "format": "pdf"
+        }
       },
       "previewEnabled": true
     },
@@ -118,7 +171,9 @@
       "id": "wall-panel-catalogue-2025",
       "productLine": "wall_panels",
       "docType": "catalogue",
-      "audience": ["all"],
+      "audience": [
+        "all"
+      ],
       "installationMethod": null,
       "title": "SPC Wall Panel Catalogue 2025",
       "title_tr": "SPC Duvar Paneli Kataloğu 2025",
@@ -126,10 +181,22 @@
       "summary_tr": "Yenilikçi SPC duvar panellerimizin eksiksiz koleksiyonu.",
       "version": "v1.0",
       "updatedAt": "2024-07-25",
-      "tags": ["catalogue", "wall-panels", "2025"],
+      "tags": [
+        "catalogue",
+        "wall-panels",
+        "2025"
+      ],
       "files": {
-        "en": { "url": "/downloads/spc-wall-panel-catalogue-en.pdf", "size": "15 MB", "format": "pdf" },
-        "tr": { "url": "/downloads/spc-duvar-paneli-katalog-tr.pdf", "size": "15 MB", "format": "pdf" }
+        "en": {
+          "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en.pdf",
+          "size": "15 MB",
+          "format": "pdf"
+        },
+        "tr": {
+          "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en.pdf",
+          "size": "15 MB",
+          "format": "pdf"
+        }
       },
       "previewEnabled": true
     },
@@ -137,7 +204,9 @@
       "id": "flooring-catalogue-2025",
       "productLine": "flooring",
       "docType": "catalogue",
-      "audience": ["all"],
+      "audience": [
+        "all"
+      ],
       "installationMethod": null,
       "title": "SPC Flooring Catalogue 2025",
       "title_tr": "SPC Parke Kataloğu 2025",
@@ -145,10 +214,22 @@
       "summary_tr": "Yenilikçi SPC parke ürünlerimizin eksiksiz koleksiyonu.",
       "version": "v1.0",
       "updatedAt": "2024-07-26",
-      "tags": ["catalogue", "flooring", "2025"],
+      "tags": [
+        "catalogue",
+        "flooring",
+        "2025"
+      ],
       "files": {
-        "en": { "url": "/downloads/spc-flooring-catalogue-en.pdf", "size": "12 MB", "format": "pdf" },
-        "tr": { "url": "/downloads/spc-parke-katalogu-tr.pdf", "size": "12 MB", "format": "pdf" }
+        "en": {
+          "url": "/downloads/catalogues/kermit-spc-flooring-catalogue-en.pdf",
+          "size": "12 MB",
+          "format": "pdf"
+        },
+        "tr": {
+          "url": "/downloads/catalogues/kermit-spc-flooring-catalogue-en.pdf",
+          "size": "12 MB",
+          "format": "pdf"
+        }
       },
       "previewEnabled": true
     },
@@ -424,14 +505,14 @@
       },
       "previewEnabled": true
     },
-    
-    
-    
     {
       "id": "flooring-install-click",
       "productLine": "flooring",
       "docType": "installation",
-      "audience": ["installer", "all"],
+      "audience": [
+        "installer",
+        "all"
+      ],
       "installationMethod": "clip",
       "title": "SPC Flooring Installation Guide (Click System)",
       "title_tr": "SPC Parke Montaj Kılavuzu (Kilit Sistem)",
@@ -439,10 +520,22 @@
       "summary_tr": "UniClic sistemli SPC parkemizin montajı için adım adım talimatlar.",
       "version": "v3.0",
       "updatedAt": "2025-12-11",
-      "tags": ["installation", "flooring", "click-system"],
+      "tags": [
+        "installation",
+        "flooring",
+        "click-system"
+      ],
       "files": {
-        "en": { "url": "/downloads/spc-flooring-installation-guide-uniclic.pdf", "size": "3.5 MB", "format": "pdf" },
-        "tr": { "url": "/downloads/spc-parke-montaj-kilavuzu-uniclic.pdf", "size": "3.5 MB", "format": "pdf" }
+        "en": {
+          "url": "/downloads/spc-flooring-installation-guide-uniclic.pdf",
+          "size": "3.5 MB",
+          "format": "pdf"
+        },
+        "tr": {
+          "url": "/downloads/spc-parke-montaj-kilavuzu-uniclic.pdf",
+          "size": "3.5 MB",
+          "format": "pdf"
+        }
       },
       "previewEnabled": true
     },
@@ -450,7 +543,9 @@
       "id": "general-warranty",
       "productLine": "general",
       "docType": "warranty",
-      "audience": ["all"],
+      "audience": [
+        "all"
+      ],
       "installationMethod": null,
       "title": "Kermit Floor Limited Warranty",
       "title_tr": "Kermit Floor Sınırlı Garanti",
@@ -458,10 +553,21 @@
       "summary_tr": "Tüm Kermit Floor SPC ürünleri için resmi garanti hüküm ve koşulları.",
       "version": "2024",
       "updatedAt": "2024-01-01",
-      "tags": ["warranty", "legal"],
+      "tags": [
+        "warranty",
+        "legal"
+      ],
       "files": {
-        "en": { "url": "/downloads/kermit-warranty-en.pdf", "size": "0.5 MB", "format": "pdf" },
-        "tr": { "url": "/downloads/kermit-warranty-tr.pdf", "size": "0.5 MB", "format": "pdf" }
+        "en": {
+          "url": "/downloads/kermit-warranty-en.pdf",
+          "size": "0.5 MB",
+          "format": "pdf"
+        },
+        "tr": {
+          "url": "/downloads/kermit-warranty-tr.pdf",
+          "size": "0.5 MB",
+          "format": "pdf"
+        }
       },
       "previewEnabled": true
     }

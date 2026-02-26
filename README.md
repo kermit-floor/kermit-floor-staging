@@ -62,7 +62,7 @@ Frozen skill files live in `tools/blog-post-generator-skill/`.
 Quick start in chat:
 
 - Start explicitly with: `$blog-post-generator`
-- The skill asks required inputs one by one (topic, EN/TR keywords, status, optional videos).
+- The skill asks required inputs one by one (topic, EN/TR keywords, status, author from `content/blog/authors.json`, optional videos).
 
 Current skill behavior includes:
 

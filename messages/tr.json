@@ -78,7 +78,7 @@
       }
     },
     "viewAboutUs": "Hakkımızda Daha Fazla Bilgi Edinin",
-    "newsTitle": "Haberler & Duyurular",
+    "blogSectionTitle": "Faydalı Bilgiler",
     "comingSoon": "Çok Yakında...",
     "resourcesTitle": "Projenizi Tam Dokümantasyonla Planlayın",
     "resourcesCardCatalogue": "Kataloglar",
@@ -677,7 +677,7 @@
     "termsOfService": "Hizmet Şartları",
     "phone": "+90 262 658 97 29",
     "email": "info@kermit.com.tr",
-    "cookieSettings": "?erez Ayarlar?"
+    "cookieSettings": "Çerez Ayarları"
   },
   "PrivacyPolicyPage": {
     "seo": {
@@ -685,7 +685,7 @@
       "description": "Kermit Floor'un kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu öğrenin."
     },
     "title": "Gizlilik Politikası",
-    "lastUpdated": "Son g?ncelleme: 8 ?ubat 2026",
+    "lastUpdated": "Son güncelleme: 8 Şubat 2026",
     "section1": {
       "title": "1. Biz kimiz (Veri Sorumlusu)",
       "content": "<p>Bu web sitesi (“Site”), Kermit Plastik Sanayi ve Ticaret Anonim Şirketi (“Kermit Floor”, “biz”) tarafından işletilmektedir.</p><ul><li><strong>Veri Sorumlusu (KVKK):</strong> Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li><strong>Adres:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li><strong>İletişim (gizlilik):</strong> info@kermit.com.tr</li><li><strong>Telefon:</strong> +90 262 658 97 29</li></ul>"
@@ -716,7 +716,7 @@
     },
     "section8": {
       "title": "8. Çerezler ve benzer teknolojiler",
-      "content": "<p>?erezleri ve benzer teknolojileri Siteyi ?al???r durumda tutmak ve izin vermeniz halinde kullan?m ?l??m? ile performans iyile?tirmesi yapmak i?in kullan?r?z.</p><p><strong>R?zaya ba?l? analitik:</strong> Google Analytics 4 (GA4) yaln?zca ?erez banner? ?zerinden analitik ?erezleri a??k?a kabul etti?inizde etkinle?tirilir. Analitik ?erezleri reddederseniz GA4 ziyaretiniz i?in ?al??maz.</p><p>Tercihinizi istedi?iniz zaman footer alan?ndaki <strong>?erez Ayarlar?</strong> ba?lant?s?ndan de?i?tirebilirsiniz.</p><ul><li><strong>Zorunlu ?erezler:</strong> temel i?levler ve g?venlik i?in gereklidir.</li><li><strong>Analitik ?erezleri (GA4):</strong> yaln?zca r?za verildi?inde etkin olur.</li></ul><p><strong>R?za kayd?:</strong> ?erez tercihinizi hat?rlamak i?in <code>kf_consent_v1</code> adl? birinci taraf ?erez kullan?r?z.</p>"
+      "content": "<p>Çerezleri ve benzer teknolojileri Siteyi çalışır durumda tutmak ve izin vermeniz halinde kullanım ölçümü ile performans iyileştirmesi yapmak için kullanırız.</p><p><strong>Rızaya bağlı analitik:</strong> Google Analytics 4 (GA4) yalnızca çerez bannerı üzerinden analitik çerezleri açıkça kabul ettiğinizde etkinleştirilir. Analitik çerezleri reddederseniz GA4 ziyaretiniz için çalışmaz.</p><p>Tercihinizi istediğiniz zaman footer alanındaki <strong>Çerez Ayarları</strong> bağlantısından değiştirebilirsiniz.</p><ul><li><strong>Zorunlu çerezler:</strong> temel işlevler ve güvenlik için gereklidir.</li><li><strong>Analitik çerezleri (GA4):</strong> yalnızca rıza verildiğinde etkin olur.</li></ul><p><strong>Rıza kaydı:</strong> çerez tercihinizi hatırlamak için <code>kf_consent_v1</code> adlı birinci taraf çerez kullanırız.</p>"
     },
     "section9": {
       "title": "9. Veri saklama",
@@ -809,17 +809,17 @@
   },
   "ConsentBanner": {
     "title": "Gizlilik tercihlerinizi belirleyin",
-    "description": "Site kullan?m?n? anlamak ve performans? iyile?tirmek i?in analitik ?erezler (Google Analytics 4) kullan?r?z. Analitik ?erezleri kabul edebilir veya reddedebilirsiniz.",
-    "accept": "Analiti?i kabul et",
-    "reject": "Analiti?i reddet",
-    "manage": "Tercihleri y?net",
-    "privacyLink": "Gizlilik Politikas?",
-    "preferencesTitle": "?erez tercihleri",
-    "preferencesDescription": "Analitik ?erez tercihinizi a?a??dan y?netin. Zorunlu ?erezler temel site i?levleri i?in aktif kal?r.",
-    "analyticsTitle": "Analitik ?erezleri (Google Analytics 4)",
-    "analyticsDescription": "Kullan?m ?l??m? ve performans iyile?tirmesi i?in kullan?l?r. Yaln?zca izninizle etkinle?ir.",
-    "statusAccepted": "G?ncel durum: Analitik a??k",
-    "statusRejected": "G?ncel durum: Analitik kapal?",
-    "statusUnset": "G?ncel durum: Hen?z bir tercih kaydedilmedi"
+    "description": "Site kullanımını anlamak ve performansı iyileştirmek için analitik çerezler (Google Analytics 4) kullanırız. Analitik çerezleri kabul edebilir veya reddedebilirsiniz.",
+    "accept": "Analitiği kabul et",
+    "reject": "Analitiği reddet",
+    "manage": "Tercihleri yönet",
+    "privacyLink": "Gizlilik Politikası",
+    "preferencesTitle": "Çerez tercihleri",
+    "preferencesDescription": "Analitik çerez tercihinizi aşağıdan yönetin. Zorunlu çerezler temel site işlevleri için aktif kalır.",
+    "analyticsTitle": "Analitik çerezleri (Google Analytics 4)",
+    "analyticsDescription": "Kullanım ölçümü ve performans iyileştirmesi için kullanılır. Yalnızca izninizle etkinleşir.",
+    "statusAccepted": "Güncel durum: Analitik açık",
+    "statusRejected": "Güncel durum: Analitik kapalı",
+    "statusUnset": "Güncel durum: Henüz bir tercih kaydedilmedi"
   }
 }

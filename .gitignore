@@ -45,3 +45,6 @@ next-env.d.ts
 # firebase
 firebase-debug.log
 firestore-debug.log
+
+# codex internal traces (may contain external media provenance URLs)
+.codex/blog-media-sources/

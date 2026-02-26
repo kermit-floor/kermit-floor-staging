@@ -1,5 +1,5 @@
 import path from 'node:path';
-import {mkdir, writeFile, access} from 'node:fs/promises';
+import {mkdir, writeFile, access, readFile} from 'node:fs/promises';
 
 const args = process.argv.slice(2);
 const topicFlagIndex = args.findIndex((arg) => arg === '--topic' || arg === '-t');
@@ -21,6 +21,62 @@ if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(topicId)) {
 
 const today = new Date().toISOString().slice(0, 10);
 const topicDir = path.join(process.cwd(), 'content', 'blog', 'topics', topicId);
+const BLOG_AUTHORS_PATH = path.join(process.cwd(), 'content', 'blog', 'authors.json');
+const FALLBACK_AUTHOR_NAME = 'Kermit Floor Team';
+
+function parseAuthorRegistry(raw) {
+  const parsed = JSON.parse(raw);
+  const entries = Array.isArray(parsed) ? parsed : parsed?.authors;
+  if (!Array.isArray(entries) || entries.length === 0) {
+    throw new Error('Author registry must contain at least one author.');
+  }
+
+  const normalized = entries.map((entry, index) => {
+    if (typeof entry === 'string') {
+      const name = entry.trim();
+      if (!name) {
+        throw new Error(`Invalid author entry at index ${index}.`);
+      }
+      return {name, isDefault: false};
+    }
+
+    if (!entry || typeof entry !== 'object') {
+      throw new Error(`Invalid author entry at index ${index}.`);
+    }
+
+    const name = typeof entry.name === 'string' ? entry.name.trim() : '';
+    if (!name) {
+      throw new Error(`Author entry at index ${index} is missing a valid "name".`);
+    }
+
+    return {
+      name,
+      isDefault: entry.isDefault === true || entry.default === true,
+    };
+  });
+
+  const defaultAuthor = normalized.find((entry) => entry.isDefault);
+  return defaultAuthor?.name ?? normalized[0].name;
+}
+
+async function getDefaultAuthorName() {
+  try {
+    const raw = await readFile(BLOG_AUTHORS_PATH, 'utf8');
+    return parseAuthorRegistry(raw);
+  } catch (error) {
+    const nodeError = error;
+    if (nodeError?.code === 'ENOENT') {
+      console.warn(`Author registry not found at content/blog/authors.json. Falling back to "${FALLBACK_AUTHOR_NAME}".`);
+      return FALLBACK_AUTHOR_NAME;
+    }
+    console.warn(
+      `Could not read content/blog/authors.json (${error instanceof Error ? error.message : String(error)}). Falling back to "${FALLBACK_AUTHOR_NAME}".`,
+    );
+    return FALLBACK_AUTHOR_NAME;
+  }
+}
+
+const defaultAuthorName = await getDefaultAuthorName();
 
 const englishTemplate = `---
 topicId: ${topicId}
@@ -45,7 +101,7 @@ sourceUrls:
   - https://example.com
 coverImage: /images/hero-images/about-us-hero-image.jpg
 coverImageAlt: ""
-authorName: Kermit Floor Team
+authorName: ${JSON.stringify(defaultAuthorName)}
 ctaPath: /resources
 ---
 
@@ -77,7 +133,7 @@ sourceUrls:
   - https://example.com
 coverImage: /images/hero-images/about-us-hero-image.jpg
 coverImageAlt: ""
-authorName: Kermit Floor Team
+authorName: ${JSON.stringify(defaultAuthorName)}
 ctaPath: /resources
 ---
 

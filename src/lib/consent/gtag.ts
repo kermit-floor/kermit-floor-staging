@@ -10,21 +10,44 @@ function isBrowser(): boolean {
   return typeof window !== 'undefined';
 }
 
-function hasGtag(): boolean {
-  return isBrowser() && typeof window.gtag === 'function';
-}
-
 type ConsentValue = 'granted' | 'denied';
 
+function ensureGtagBootstrap(): boolean {
+  if (!isBrowser()) {
+    return false;
+  }
+
+  window.dataLayer = window.dataLayer ?? [];
+  if (typeof window.gtag !== 'function') {
+    window.gtag = (...args: unknown[]) => {
+      window.dataLayer = window.dataLayer ?? [];
+      window.dataLayer.push(args);
+    };
+  }
+
+  return true;
+}
+
+export function bootstrapGtag(): void {
+  ensureGtagBootstrap();
+}
+
+export function setDefaultAnalyticsConsent(value: ConsentValue): void {
+  if (!ensureGtagBootstrap()) {
+    return;
+  }
+  window.gtag?.('consent', 'default', {analytics_storage: value});
+}
+
 function updateAnalyticsConsent(value: ConsentValue): void {
-  if (!hasGtag()) {
+  if (!ensureGtagBootstrap()) {
     return;
   }
   window.gtag?.('consent', 'update', {analytics_storage: value});
 }
 
 export function initializeGtag(gaId: string): void {
-  if (!hasGtag() || !gaId) {
+  if (!gaId || !ensureGtagBootstrap()) {
     return;
   }
   if (window.__kermitGaInitialized) {
@@ -32,16 +55,31 @@ export function initializeGtag(gaId: string): void {
   }
 
   window.gtag?.('js', new Date());
-  window.gtag?.('config', gaId, {anonymize_ip: true});
+  window.gtag?.('config', gaId, {
+    anonymize_ip: true,
+    send_page_view: false,
+  });
   window.__kermitGaInitialized = true;
 }
 
-export function grantAnalyticsConsent(gaId: string): void {
+export function grantAnalyticsConsent(): void {
   updateAnalyticsConsent('granted');
-  initializeGtag(gaId);
 }
 
 export function denyAnalyticsConsent(): void {
   updateAnalyticsConsent('denied');
+}
+
+export function trackPageView(): void {
+  if (!isBrowser() || !window.__kermitGaInitialized || typeof window.gtag !== 'function') {
+    return;
+  }
+
+  const pagePath = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  window.gtag('event', 'page_view', {
+    page_title: document.title,
+    page_location: window.location.href,
+    page_path: pagePath,
+  });
 }
 

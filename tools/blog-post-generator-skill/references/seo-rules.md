@@ -28,7 +28,7 @@ Apply these rules to both EN and TR outputs.
 - Use descriptive, locale-specific alt text for each inline image.
 - Keep filenames deterministic and topic-grouped under `public/images/blog/<topicId>/`.
 - Align each image with the section intent.
-- Add selected external image source URLs to `sourceUrls`.
+- Keep raw external image source URLs out of public frontmatter; store them in an internal media trace file instead.
 
 ## Video SEO and UX
 

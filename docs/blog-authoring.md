@@ -13,6 +13,17 @@ This creates:
 - `content/blog/topics/<topic-id>/en.mdx`
 - `content/blog/topics/<topic-id>/tr.mdx`
 
+The scaffolder uses the default author from `content/blog/authors.json` (falls back to `Kermit Floor Team` if the registry is missing or invalid).
+
+## Manage blog authors (repo-defined)
+
+Define allowed blog authors in:
+
+- `content/blog/authors.json`
+
+Use this registry to keep `authorName` consistent across posts and tools/skills.
+Each author should have a display `name`; `id` is recommended for stable selection. Mark one entry with `"isDefault": true` for scaffolding defaults.
+
 ## Starter placeholders
 
 - The repo currently includes two starter topic pairs only as initial placeholders.
@@ -37,7 +48,8 @@ This creates:
    - `targetAudience`: `mixed-b2b | installer | dealer | architect`
    - `funnelStage`: `awareness | consideration | decision`
 9. Add non-empty `sourceUrls` with repo claim-check paths and external research URLs.
-10. Write Turkish locale content with proper Turkish characters (`ç, ğ, ı, İ, ö, ş, ü`).
+10. Set `authorName` to a name defined in `content/blog/authors.json`.
+11. Write Turkish locale content with proper Turkish characters (`ç, ğ, ı, İ, ö, ş, ü`).
 
 ## Keyword workflow
 

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "authors": [
+    {
+      "id": "yasin-bayram",
+      "name": "Yasin Bayram",
+      "subtitle": {
+        "en": "Construction Expert with 30 years of experience",
+        "tr": "İnşaat Eksperi: 30 yıllık deneyim"
+      },
+      "photoPath": "/images/authors/yasinbayram.jpeg",
+      "isDefault": true
+    },
+    {
+      "id": "kermit-floor-team",
+      "name": "Kermit Floor Team",
+      "subtitle": {
+        "en": "Editorial Team",
+        "tr": "Editör Ekibi"
+      },
+      "isDefault": false
+    }
+  ]
+}

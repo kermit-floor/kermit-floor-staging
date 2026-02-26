@@ -238,9 +238,9 @@ export default async function Home({
              <Separator />
           </div>
 
-          {/* 4. News Section */}
+          {/* 4. Blog / Useful Information Section */}
           <section className="container mx-auto px-4 text-center">
-            <h2 className="font-headline text-3xl font-bold text-foreground mb-4">{t('newsTitle')}</h2>
+            <h2 className="font-headline text-3xl font-bold text-foreground mb-4">{t('blogSectionTitle')}</h2>
             {latestBlogPosts.length > 0 ? (
               <>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 text-left">

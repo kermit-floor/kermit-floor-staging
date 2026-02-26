@@ -9,6 +9,24 @@ const intlMiddleware = createMiddleware({
   localePrefix,
 });
 
+const intlMiddlewareWithoutLocaleDetection = createMiddleware({
+  defaultLocale,
+  locales,
+  pathnames,
+  localePrefix,
+  localeDetection: false,
+});
+
+function isBlogRoute(pathname: string): boolean {
+  const segments = pathname.split('/').filter(Boolean);
+  if (segments.length === 0) {
+    return false;
+  }
+
+  const offset = segments[0] === 'en' || segments[0] === 'tr' ? 1 : 0;
+  return segments[offset] === 'blog';
+}
+
 export function middleware(request: NextRequest) {
   const {host} = request.nextUrl;
 
@@ -27,6 +45,14 @@ export function middleware(request: NextRequest) {
       const directAssetUrl = new URL(imagePath, request.url);
       return NextResponse.redirect(directAssetUrl, 307);
     }
+  }
+
+  // Blog posts/tags use locale-specific dynamic slugs. next-intl locale detection can
+  // prefix `/tr` onto an English blog URL (or vice versa) without translating the slug,
+  // which produces `/tr/blog/<english-slug>` 404s from search/social clicks.
+  // Keep the clicked locale for all blog routes and rely on explicit language-switch links.
+  if (isBlogRoute(request.nextUrl.pathname)) {
+    return intlMiddlewareWithoutLocaleDetection(request);
   }
 
   return intlMiddleware(request);

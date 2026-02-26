@@ -19,12 +19,12 @@ export function ConsentBanner({open, onAccept, onReject, onManage}: ConsentBanne
   }
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 p-4 md:p-6">
-      <div className="mx-auto max-w-4xl rounded-xl border border-border bg-card p-4 shadow-xl md:p-6">
-        <div className="space-y-3">
-          <p className="font-headline text-lg font-semibold text-foreground">{t('title')}</p>
-          <p className="text-sm text-muted-foreground">{t('description')}</p>
-          <div className="flex flex-wrap gap-2 pt-1">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-card/95 shadow-2xl backdrop-blur supports-[backdrop-filter]:bg-card/90">
+      <div className="mx-auto w-full max-w-6xl px-3 py-3 md:px-4 md:py-3.5">
+        <div className="space-y-2">
+          <p className="font-headline text-base font-semibold text-foreground">{t('title')}</p>
+          <p className="text-xs leading-5 text-muted-foreground md:text-sm">{t('description')}</p>
+          <div className="flex flex-wrap items-center gap-2 pt-1">
             <Button size="sm" onClick={onAccept}>
               {t('accept')}
             </Button>
