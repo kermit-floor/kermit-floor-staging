@@ -40,6 +40,8 @@
 
 | 2026-02-26 | user | Floating "Chat with us" opened an in-page popup first, but they want a direct WhatsApp action | Replace popup chat UI with a direct WhatsApp link button in the shared `Chatbox` component |
 
+| 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
+
 ## User Preferences
 - Blog posts must never read like instructions to the writer (no "your list", "you mentioned", or prompt/process references in final article body).
 - For blog copy, use the exact EN term **"Skirting with Flexible Edges"** for Turkish **"Contalı Süpürgelik"**.
@@ -78,6 +80,9 @@
 - Prefers long-form blog posts with many subtitles to improve reader focus/retention.
 
 - Wants the floating "Chat with us" action to open WhatsApp directly with no intermediate chatbox UI.
+
+
+- For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
 
 
 ## Patterns That Work
