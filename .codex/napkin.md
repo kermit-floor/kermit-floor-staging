@@ -3,6 +3,7 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-03-11 | self | Tried deleting binary `src/app/favicon.ico` with `apply_patch`, which failed due UTF-8 requirement | Delete binary files via shell commands (`Remove-Item`) instead of `apply_patch` |
 | 2026-03-11 | user | Rejected runtime file-existence checks for resources as unnecessary overhead | Keep resources availability manual: audit files when requested and set missing `files.{en,tr}.url` to `#` so UI shows "coming soon" |
 | 2026-03-11 | self | Passed a malformed quoted `workdir` value in a parallel shell call, causing PowerShell "directory name is invalid" | Keep JSON tool-call strings minimal and validate quote boundaries before parallel calls |
 | 2026-03-11 | self | Used `rg` with wildcard file arguments (`tailwind.config.*`, `*.config.*`) in PowerShell and got OS path syntax errors | Query concrete file paths or directory roots with `rg`; avoid shell wildcards as positional paths in this environment |
@@ -46,6 +47,7 @@
 | 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
 
 ## User Preferences
+- Keep a single favicon source (`/images/icons/favicon.32x32.png`) and route fallback `/favicon.ico` to it; avoid separate artifact favicon files.
 - Avoid runtime filesystem checks for resource links; use manual `resources.json` URLs and mark missing files with `#`.
 - On the Resources page, if a document file is missing, do not show a dead download link; render a non-clickable "coming soon" state instead.
 - When asking style audits, prefers only key fonts/colors and not exhaustive minor palette dumps.
@@ -143,6 +145,7 @@
 - `src/lib/resources.json` currently references more local `/downloads/*.pdf` files than exist in `public/downloads` (many resource cards resolve to missing files in this snapshot).
 - Product collection route files contain repeated stale comments mentioning 60-second revalidation even though no `revalidate` export is set on those pages.
 - Blog markdown inline images need explicit styling in `src/components/blog/BlogPostContent.tsx`; manifest-side `loading=\"lazy\"` attrs alone do not control layout/overflow.
+
 
 
 

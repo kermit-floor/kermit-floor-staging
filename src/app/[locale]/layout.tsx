@@ -27,6 +27,7 @@ export async function generateMetadata({
     },
     icons: {
       icon: '/images/icons/favicon.32x32.png',
+      shortcut: '/images/icons/favicon.32x32.png',
       apple: '/images/icons/favicon.180x180.png',
     },
   };
