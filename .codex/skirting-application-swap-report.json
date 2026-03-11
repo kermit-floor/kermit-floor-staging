@@ -1,0 +1,384 @@
+﻿{
+    "timestamp":  "2026-03-11T14:19:16",
+    "sourceDir":  "C:\\Users\\hp\\Downloads\\room-scenes-jpg",
+    "replacedCount":  55,
+    "sourceUnmatchedCount":  0,
+    "targetMissingCount":  10,
+    "replaced":  [
+                     {
+                         "Code":  "0704031",
+                         "SourceFile":  "0704031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0704031\\application.jpg",
+                         "SizeKB":  663.7
+                     },
+                     {
+                         "Code":  "0705031",
+                         "SourceFile":  "0705031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0705031\\application.jpg",
+                         "SizeKB":  470
+                     },
+                     {
+                         "Code":  "0709031",
+                         "SourceFile":  "0709031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0709031\\application.jpg",
+                         "SizeKB":  600.1
+                     },
+                     {
+                         "Code":  "0710031",
+                         "SourceFile":  "0710031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0710031\\application.jpg",
+                         "SizeKB":  680.1
+                     },
+                     {
+                         "Code":  "0712031",
+                         "SourceFile":  "0712031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0712031\\application.jpg",
+                         "SizeKB":  576.5
+                     },
+                     {
+                         "Code":  "0713031",
+                         "SourceFile":  "0713031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0713031\\application.jpg",
+                         "SizeKB":  502.7
+                     },
+                     {
+                         "Code":  "0715031",
+                         "SourceFile":  "0715031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0715031\\application.jpg",
+                         "SizeKB":  444.9
+                     },
+                     {
+                         "Code":  "0904031",
+                         "SourceFile":  "0904031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0904031\\application.jpg",
+                         "SizeKB":  595.9
+                     },
+                     {
+                         "Code":  "0905031",
+                         "SourceFile":  "0905031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0905031\\application.jpg",
+                         "SizeKB":  578.3
+                     },
+                     {
+                         "Code":  "0906031",
+                         "SourceFile":  "0906031 Gri.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0906031\\application.jpg",
+                         "SizeKB":  458.7
+                     },
+                     {
+                         "Code":  "0909031",
+                         "SourceFile":  "0909031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0909031\\application.jpg",
+                         "SizeKB":  560.1
+                     },
+                     {
+                         "Code":  "0910031",
+                         "SourceFile":  "0910031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0910031\\application.jpg",
+                         "SizeKB":  521.7
+                     },
+                     {
+                         "Code":  "0912031",
+                         "SourceFile":  "0912031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0912031\\application.jpg",
+                         "SizeKB":  550.7
+                     },
+                     {
+                         "Code":  "0913031",
+                         "SourceFile":  "0913031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0913031\\application.jpg",
+                         "SizeKB":  669.5
+                     },
+                     {
+                         "Code":  "0915031",
+                         "SourceFile":  "0915031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\solid-80-mm-skirting-board\\0915031\\application.jpg",
+                         "SizeKB":  443.3
+                     },
+                     {
+                         "Code":  "1004031",
+                         "SourceFile":  "1004031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1004031\\application.jpg",
+                         "SizeKB":  583.4
+                     },
+                     {
+                         "Code":  "1005031",
+                         "SourceFile":  "1005031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1005031\\application.jpg",
+                         "SizeKB":  635
+                     },
+                     {
+                         "Code":  "1006031",
+                         "SourceFile":  "1006031 Gri.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1006031\\application.jpg",
+                         "SizeKB":  613.4
+                     },
+                     {
+                         "Code":  "1009031",
+                         "SourceFile":  "1009031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1009031\\application.jpg",
+                         "SizeKB":  546.7
+                     },
+                     {
+                         "Code":  "1010031",
+                         "SourceFile":  "1010031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1010031\\application.jpg",
+                         "SizeKB":  306.2
+                     },
+                     {
+                         "Code":  "1012031",
+                         "SourceFile":  "1012031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1012031\\application.jpg",
+                         "SizeKB":  505.6
+                     },
+                     {
+                         "Code":  "1013031",
+                         "SourceFile":  "1013031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1013031\\application.jpg",
+                         "SizeKB":  607.2
+                     },
+                     {
+                         "Code":  "1015031",
+                         "SourceFile":  "1015031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\moderna-100-mm-skirting-board\\1015031\\application.jpg",
+                         "SizeKB":  405.1
+                     },
+                     {
+                         "Code":  "1104031",
+                         "SourceFile":  "1104031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1104031\\application.jpg",
+                         "SizeKB":  536.6
+                     },
+                     {
+                         "Code":  "1105031",
+                         "SourceFile":  "1105031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1105031\\application.jpg",
+                         "SizeKB":  513.8
+                     },
+                     {
+                         "Code":  "1106031",
+                         "SourceFile":  "1106031 Gri.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1106031\\application.jpg",
+                         "SizeKB":  685.5
+                     },
+                     {
+                         "Code":  "1109031",
+                         "SourceFile":  "1109031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1109031\\application.jpg",
+                         "SizeKB":  492.6
+                     },
+                     {
+                         "Code":  "1110031",
+                         "SourceFile":  "1110031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1110031\\application.jpg",
+                         "SizeKB":  749
+                     },
+                     {
+                         "Code":  "1112031",
+                         "SourceFile":  "1112031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1112031\\application.jpg",
+                         "SizeKB":  546.8
+                     },
+                     {
+                         "Code":  "1113031",
+                         "SourceFile":  "1113031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1113031\\application.jpg",
+                         "SizeKB":  659.6
+                     },
+                     {
+                         "Code":  "1115031",
+                         "SourceFile":  "1115031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\berlin-100-mm-skirting-board\\1115031\\application.jpg",
+                         "SizeKB":  570.5
+                     },
+                     {
+                         "Code":  "1404031",
+                         "SourceFile":  "1404031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1404031\\application.jpg",
+                         "SizeKB":  515.9
+                     },
+                     {
+                         "Code":  "1405031",
+                         "SourceFile":  "1405031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1405031\\application.jpg",
+                         "SizeKB":  599.3
+                     },
+                     {
+                         "Code":  "1406031",
+                         "SourceFile":  "1406031 Gri.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1406031\\application.jpg",
+                         "SizeKB":  788.3
+                     },
+                     {
+                         "Code":  "1409031",
+                         "SourceFile":  "1409031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1409031\\application.jpg",
+                         "SizeKB":  609.6
+                     },
+                     {
+                         "Code":  "1410031",
+                         "SourceFile":  "1410031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1410031\\application.jpg",
+                         "SizeKB":  563.3
+                     },
+                     {
+                         "Code":  "1412031",
+                         "SourceFile":  "1412031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1412031\\application.jpg",
+                         "SizeKB":  588.8
+                     },
+                     {
+                         "Code":  "1413031",
+                         "SourceFile":  "1413031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1413031\\application.jpg",
+                         "SizeKB":  562.6
+                     },
+                     {
+                         "Code":  "1415031",
+                         "SourceFile":  "1415031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\alpha-140-mm-skirting-board\\1415031\\application.jpg",
+                         "SizeKB":  672.4
+                     },
+                     {
+                         "Code":  "E1004031",
+                         "SourceFile":  "E1004031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1004031\\application.jpg",
+                         "SizeKB":  620.6
+                     },
+                     {
+                         "Code":  "E1005031",
+                         "SourceFile":  "E1005031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1005031\\application.jpg",
+                         "SizeKB":  512.2
+                     },
+                     {
+                         "Code":  "E1006031",
+                         "SourceFile":  "E1006031 Gri.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1006031\\application.jpg",
+                         "SizeKB":  491.3
+                     },
+                     {
+                         "Code":  "E1009031",
+                         "SourceFile":  "E1009031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1009031\\application.jpg",
+                         "SizeKB":  788.6
+                     },
+                     {
+                         "Code":  "E1010031",
+                         "SourceFile":  "E1010031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1010031\\application.jpg",
+                         "SizeKB":  374.4
+                     },
+                     {
+                         "Code":  "E1012031",
+                         "SourceFile":  "E1012031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1012031\\application.jpg",
+                         "SizeKB":  519.6
+                     },
+                     {
+                         "Code":  "E1013031",
+                         "SourceFile":  "E1013031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1013031\\application.jpg",
+                         "SizeKB":  519.1
+                     },
+                     {
+                         "Code":  "E1015031",
+                         "SourceFile":  "E1015031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\elite-100-mm-skirting-board\\E1015031\\application.jpg",
+                         "SizeKB":  602.7
+                     },
+                     {
+                         "Code":  "X1004031",
+                         "SourceFile":  "X1004031 Antrasit.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1004031\\application.jpg",
+                         "SizeKB":  615.1
+                     },
+                     {
+                         "Code":  "X1005031",
+                         "SourceFile":  "X1005031 Beyaz.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1005031\\application.jpg",
+                         "SizeKB":  566.2
+                     },
+                     {
+                         "Code":  "X1006031",
+                         "SourceFile":  "X1006031 Gri.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1006031\\application.jpg",
+                         "SizeKB":  530.5
+                     },
+                     {
+                         "Code":  "X1009031",
+                         "SourceFile":  "X1009031 Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1009031\\application.jpg",
+                         "SizeKB":  435
+                     },
+                     {
+                         "Code":  "X1010031",
+                         "SourceFile":  "X1010031 Kaya Grisi.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1010031\\application.jpg",
+                         "SizeKB":  480.5
+                     },
+                     {
+                         "Code":  "X1012031",
+                         "SourceFile":  "X1012031 Siyah.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1012031\\application.jpg",
+                         "SizeKB":  580.6
+                     },
+                     {
+                         "Code":  "X1013031",
+                         "SourceFile":  "X1013031 Kumsal Bej.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1013031\\application.jpg",
+                         "SizeKB":  532.2
+                     },
+                     {
+                         "Code":  "X1015031",
+                         "SourceFile":  "X1015031 Buz Beyazı.jpg",
+                         "Target":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\x-line-100-mm-skirting-board\\X1015031\\application.jpg",
+                         "SizeKB":  571.4
+                     }
+                 ],
+    "sourceUnmatched":  [
+
+                        ],
+    "targetMissing":  [
+                          {
+                              "Code":  "0603031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0603031"
+                          },
+                          {
+                              "Code":  "0604031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0604031"
+                          },
+                          {
+                              "Code":  "0605031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0605031"
+                          },
+                          {
+                              "Code":  "0606031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0606031"
+                          },
+                          {
+                              "Code":  "0609031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0609031"
+                          },
+                          {
+                              "Code":  "0610031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0610031"
+                          },
+                          {
+                              "Code":  "0612031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0612031"
+                          },
+                          {
+                              "Code":  "0613031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0613031"
+                          },
+                          {
+                              "Code":  "0615031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-60-mm-skirting-board\\0615031"
+                          },
+                          {
+                              "Code":  "0706031",
+                              "TargetFolder":  "C:\\Projects\\kermit-web-site\\kermit-floor-staging\\public\\images\\skirting-boards\\optima-90-mm-skirting-board\\0706031"
+                          }
+                      ]
+}

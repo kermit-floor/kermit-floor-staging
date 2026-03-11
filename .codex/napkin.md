@@ -46,6 +46,8 @@
 - Blog posts must never read like instructions to the writer (no "your list", "you mentioned", or prompt/process references in final article body).
 - For blog copy, use the exact EN term **"Skirting with Flexible Edges"** for Turkish **"Contalı Süpürgelik"**.
 - Keep responses concise and practical.
+- Wants concrete image production specs (ratio, dimensions, and file-size targets) before generating new product application images.
+- For bulk skirting scene refreshes, prefers source filenames that begin with product code so replacements can be mapped automatically.
 - Implement approved plans end-to-end without partial delivery.
 - Wants the blog-post-generator skill to ask for author-provided high-level details and plan article structure around them.
 - Does not want raw external image source URLs exposed in public blog frontmatter/output; keep image provenance in internal-only trace files.
@@ -112,6 +114,7 @@
 - For locale-specific dynamic blog slugs/tags, do not rely on `next-intl` locale auto-detection redirects; preserve clicked locale and redirect mismatched slugs to canonical locale URL.
 - In this repo, "deploy" means pushing to GitHub and letting the connected build/deploy pipeline run, not `npm run deploy` locally.
 - For bulk text updates across MDX/JSON, use a small Node script to preserve UTF-8 and avoid PowerShell encoding defaults.
+- For skirting application-image swaps, match by filename code token and replace each target folder image as `application.jpg`, then report missing codes.
 
 ## Patterns That Don't Work
 - Guessing environment behavior without verifying local config/scripts.
