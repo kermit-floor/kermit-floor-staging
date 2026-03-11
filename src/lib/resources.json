@@ -527,13 +527,47 @@
       ],
       "files": {
         "en": {
-          "url": "/downloads/spc-flooring-installation-guide-uniclic.pdf",
+          "url": "#",
           "size": "3.5 MB",
           "format": "pdf"
         },
         "tr": {
-          "url": "/downloads/spc-parke-montaj-kilavuzu-uniclic.pdf",
+          "url": "#",
           "size": "3.5 MB",
+          "format": "pdf"
+        }
+      },
+      "previewEnabled": true
+    },
+    {
+      "id": "skirting-install-manual",
+      "productLine": "skirting",
+      "docType": "installation",
+      "audience": [
+        "installer",
+        "all"
+      ],
+      "installationMethod": null,
+      "title": "SPC Skirting Installation Manual",
+      "title_tr": "SPC Süpürgelik Montaj Kılavuzu",
+      "summary": "Step-by-step installation instructions for Kermit SPC skirting boards.",
+      "summary_tr": "Kermit SPC süpürgeliklerin montajı için adım adım talimatlar.",
+      "version": "v1.0",
+      "updatedAt": "2026-03-11",
+      "tags": [
+        "installation",
+        "skirting",
+        "manual"
+      ],
+      "files": {
+        "en": {
+          "url": "/downloads/installation-guides/SPC-Skirting-Installation-Manual-EN.pdf",
+          "size": "2.0 MB",
+          "format": "pdf"
+        },
+        "tr": {
+          "url": "/downloads/installation-guides/SPC-Supurgelik-Montaj-Kilavuzu-TR.pdf",
+          "size": "2.0 MB",
           "format": "pdf"
         }
       },
@@ -559,12 +593,12 @@
       ],
       "files": {
         "en": {
-          "url": "/downloads/kermit-warranty-en.pdf",
+          "url": "#",
           "size": "0.5 MB",
           "format": "pdf"
         },
         "tr": {
-          "url": "/downloads/kermit-warranty-tr.pdf",
+          "url": "#",
           "size": "0.5 MB",
           "format": "pdf"
         }

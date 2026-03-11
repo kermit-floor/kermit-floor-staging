@@ -1,8 +1,11 @@
-# Napkin
+﻿# Napkin
 
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-03-11 | user | Rejected runtime file-existence checks for resources as unnecessary overhead | Keep resources availability manual: audit files when requested and set missing `files.{en,tr}.url` to `#` so UI shows "coming soon" |
+| 2026-03-11 | self | Passed a malformed quoted `workdir` value in a parallel shell call, causing PowerShell "directory name is invalid" | Keep JSON tool-call strings minimal and validate quote boundaries before parallel calls |
+| 2026-03-11 | self | Used `rg` with wildcard file arguments (`tailwind.config.*`, `*.config.*`) in PowerShell and got OS path syntax errors | Query concrete file paths or directory roots with `rg`; avoid shell wildcards as positional paths in this environment |
 | 2026-02-26 | user | Blog drafts leaked prompt/planning language into published copy (e.g. "your high-level list", "you mentioned"), making posts read like writing instructions | Final blog copy must be reader-facing only; rewrite prompt-derived points into neutral editorial prose and scan for prompt-leak phrases before finalizing |
 | 2026-02-26 | self | Tried using `view_image` to preview a local `.svg` and the tool rejected `image/svg+xml` | Treat local SVGs as valid repo assets but skip `view_image` preview for SVG; preview only raster formats (`png/jpg/webp`) |
 | 2026-02-07 | self | Used `Get-Content` on paths containing `[locale]` without literal mode in PowerShell | Use `Get-Content -LiteralPath` for bracketed Next.js route folders |
@@ -36,15 +39,18 @@
 | 2026-02-26 | user | Google click on English blog URL was auto-prefixed to `/tr` by locale detection, leaving English slug intact and causing 404 | Disable locale detection for blog routes (locale-specific dynamic slugs/tags) and add cross-locale slug rescue redirect in blog post page |
 | 2026-02-26 | user | I treated deployment as something I might run locally, but this repo deploys from GitHub push-triggered builds | Do not run local deploy commands here; prepare changes and let GitHub-triggered deployment handle release |
 | 2026-02-26 | self | New Turkish text-integrity validator falsely flagged markdown URL query params (e.g. `/resources?tab=...`) as broken characters | Make suspicious `?` detection URL-query-aware so it ignores `?key=` inside URLs while still catching `?` replacements in Turkish words |
-| 2026-02-26 | user | Did not want explicit “wall panels are not for floors” wording in blog copy | Prefer positive framing: mention matching Stone Collection colors with wall panels instead of negative product-scope statements |
+| 2026-02-26 | user | Did not want explicit â€œwall panels are not for floorsâ€ wording in blog copy | Prefer positive framing: mention matching Stone Collection colors with wall panels instead of negative product-scope statements |
 
 | 2026-02-26 | user | Floating "Chat with us" opened an in-page popup first, but they want a direct WhatsApp action | Replace popup chat UI with a direct WhatsApp link button in the shared `Chatbox` component |
 
 | 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
 
 ## User Preferences
+- Avoid runtime filesystem checks for resource links; use manual `resources.json` URLs and mark missing files with `#`.
+- On the Resources page, if a document file is missing, do not show a dead download link; render a non-clickable "coming soon" state instead.
+- When asking style audits, prefers only key fonts/colors and not exhaustive minor palette dumps.
 - Blog posts must never read like instructions to the writer (no "your list", "you mentioned", or prompt/process references in final article body).
-- For blog copy, use the exact EN term **"Skirting with Flexible Edges"** for Turkish **"Contalı Süpürgelik"**.
+- For blog copy, use the exact EN term **"Skirting with Flexible Edges"** for Turkish **"ContalÄ± SÃ¼pÃ¼rgelik"**.
 - Keep responses concise and practical.
 - Wants concrete image production specs (ratio, dimensions, and file-size targets) before generating new product application images.
 - For bulk skirting scene refreshes, prefers source filenames that begin with product code so replacements can be mapped automatically.
@@ -70,14 +76,14 @@
 - Wants catalogue downloads to follow the new `public/downloads/catalogues` structure and updated `kermit-` filenames.
 - Wants blog search result clicks to preserve the clicked locale and never auto-prefix to `/tr` with an untranslated slug.
 - Deployment workflow is GitHub push-triggered; do not run local deploy commands for this repo.
-- Prefers positive wording in blog copy for wall/floor planning (mention matching Stone Collection colors, avoid explicit “not for floors” phrasing).
+- Prefers positive wording in blog copy for wall/floor planning (mention matching Stone Collection colors, avoid explicit â€œnot for floorsâ€ phrasing).
 - Wants blog drafts to use bold emphasis on key words/phrases when it improves clarity.
 - Prefers aligning repo worker name to Cloudflare connected-build expectation (`kermit-floor`) to avoid deploy warnings.
 - Wants optional user-provided inputs for blog generation: own images, short article context, and reference sources/style examples.
 - Wants image delivery to use raw/local image paths rather than Next/Cloudflare image optimization.
 - Wants canonical host preference to stay on apex (`kermitfloor.com`) rather than `www`.
 - Wants Google Analytics configured with measurement ID `G-W9FZMTQP1H`.
-- Prefers homepage blog section framing as "Useful Information" / "Faydalı Bilgiler" instead of news/updates wording.
+- Prefers homepage blog section framing as "Useful Information" / "FaydalÄ± Bilgiler" instead of news/updates wording.
 - Prefers semantic key names in translations/components (e.g., use blog-specific keys for blog sections, not reused `news*` keys).
 - Prefers long-form blog posts with many subtitles to improve reader focus/retention.
 
@@ -88,7 +94,7 @@
 
 
 ## Patterns That Work
-- After generating blog content, run a quick prompt-leak scan (e.g. `your high-level`, `your list`, `Sizin verdiğiniz`, `Listenizde`) before finalizing/publishing.
+- After generating blog content, run a quick prompt-leak scan (e.g. `your high-level`, `your list`, `Sizin verdiÄŸiniz`, `Listenizde`) before finalizing/publishing.
 - When a user says they uploaded blog images to a repo folder, inspect the actual folder contents/count first; it may differ from the number of images visible in chat.
 - User-provided technical diagrams can be stored as local SVG assets in `public/images/blog/<topicId>/` and embedded directly in MDX (no external hotlinking needed).
 - Validate assumptions by checking repository files before acting.
@@ -122,6 +128,7 @@
 - Assuming mojibake in PowerShell output means file data is corrupted; this environment can misrender UTF-8 in command output.
 
 ## Domain Notes
+- Installation resource entry `flooring-install-click` currently points to missing `/public/downloads/spc-...uniclic.pdf` files in this snapshot; `public/downloads/installation-guides` currently contains only skirting EN/TR manuals.
 - Deploy target is Cloudflare Workers using OpenNext.
 - Product scope: SPC flooring, wall panels, and skirting boards.
 - Seed blog posts are placeholders and expected to be replaced by editorial content later.
@@ -136,3 +143,7 @@
 - `src/lib/resources.json` currently references more local `/downloads/*.pdf` files than exist in `public/downloads` (many resource cards resolve to missing files in this snapshot).
 - Product collection route files contain repeated stale comments mentioning 60-second revalidation even though no `revalidate` export is set on those pages.
 - Blog markdown inline images need explicit styling in `src/components/blog/BlogPostContent.tsx`; manifest-side `loading=\"lazy\"` attrs alone do not control layout/overflow.
+
+
+
+

@@ -19,7 +19,8 @@ export default function ResourceCard({ resource }: ResourceCardProps) {
 
   const title = currentLocale === 'tr' ? resource.title_tr : resource.title;
   const summary = currentLocale === 'tr' ? resource.summary_tr : resource.summary;
-  const fileDetails = resource.files[currentLocale] || resource.files['en'];
+  const fileDetails = resource.files[currentLocale] ?? resource.files.en;
+  const hasAvailableFile = Boolean(fileDetails?.url && fileDetails.url !== '#');
 
   const dateLocale = currentLocale === 'tr' ? tr : enUS;
   const formattedDate = format(new Date(resource.updatedAt), 'dd MMM yyyy', {
@@ -43,18 +44,26 @@ export default function ResourceCard({ resource }: ResourceCardProps) {
         </CardContent>
       </div>
       <CardFooter className="p-6 pt-0 md:pt-6 flex-shrink-0 w-full md:w-auto border-t md:border-t-0 md:border-l flex flex-row md:flex-col items-center justify-center gap-2">
-        {resource.previewEnabled && (
-            <Button variant="outline" asChild className="w-full">
-              <a href={fileDetails.url} target="_blank" rel="noopener noreferrer">
-                <Eye className="mr-2 h-4 w-4" /> {t('preview')}
+        {hasAvailableFile ? (
+          <>
+            {resource.previewEnabled && (
+              <Button variant="outline" asChild className="w-full">
+                <a href={fileDetails.url} target="_blank" rel="noopener noreferrer">
+                  <Eye className="mr-2 h-4 w-4" /> {t('preview')}
+                </a>
+              </Button>
+            )}
+            <Button asChild className="w-full">
+              <a href={fileDetails.url} download>
+                <Download className="mr-2 h-4 w-4" /> {t('download')}
               </a>
             </Button>
+          </>
+        ) : (
+          <div className="w-full rounded-md border border-dashed border-border bg-muted/50 px-4 py-2 text-center text-sm font-medium text-muted-foreground">
+            {t('comingSoon')}
+          </div>
         )}
-        <Button asChild className="w-full">
-          <a href={fileDetails.url} download>
-            <Download className="mr-2 h-4 w-4" /> {t('download')}
-          </a>
-        </Button>
       </CardFooter>
     </Card>
   );
