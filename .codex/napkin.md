@@ -112,6 +112,7 @@
 - Image links in CSV exports should be absolute clickable URLs using apex host: `https://kermitfloor.com/...`.
 - If links are requested as "clickable" in CSV, include explicit spreadsheet formula columns (e.g., `=HYPERLINK(...)`) in addition to raw URL columns.
 - For Desktop CSV exports covering multiple collections, generate one CSV per collection with the exact 4 columns in order: `product_code`, `en_translation`, `product_image_url`, `application_image_url`.
+- When moving overlapping product codes between collections, enforce single ownership by removing non-owner manifest/translation/folder artifacts and avoid fallback duplication.
 
 
 - For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
@@ -182,6 +183,7 @@
 - Audit snapshot (2026-03-12, later): EN/TR key parity and manifest-folder parity are clean across Full Natural, Stone, Wall Panels, 3D Model A/B, and all 8 skirting models; `spc-parquet-natural-collection/29198-4` remains as an orphan folder not listed in `products.json` and not translated.
 - As of 2026-03-12 (latest): orphan natural folder `29198-4` was reconciled by adding it to `spc-parquet-natural-collection/products.json` and adding EN/TR keys under `SpcParquetNaturalCollectionPanelNames`.
 - As of 2026-03-12 (latest): generated six Desktop CSV exports (`natural`, `stone`, `full-natural`, `spc-wall-panels`, `3d model a`, `3d model b`) with absolute `https://kermitfloor.com/images/...` links and manifest-order product rows.
+- As of 2026-03-12 (latest): ownership cleanup set `19022-5` to Full Natural only, and `29036-5` + `29100-5` to Natural only; non-owner folders, manifest entries, and namespace keys were removed; `full-collection-19022-5` legacy redirect now points to `/full-natural-collection`.
 
 
 
