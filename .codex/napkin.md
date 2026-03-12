@@ -3,6 +3,7 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-03-13 | self | Used raw mojibake glyphs in an inline regex during a PowerShell/Node here-string and triggered an invalid-regex parse error | For encoding-repair scripts, prefer codepoint-based detection over literal mojibake regex fragments |
 | 2026-03-12 | self | Used over-escaped quotes in a PowerShell `rg` command and triggered a regex parse error (`unclosed group`) | In PowerShell audits, use simple fixed-string `rg` patterns (or `-F`) without nested quote escaping unless regex is required |
 | 2026-03-12 | self | Wrote JSON with `Set-Content -Encoding UTF8` and introduced BOM, breaking strict `JSON.parse` | Prefer `apply_patch`/Node writes for JSON; strip BOM if PowerShell write was used |
 | 2026-03-12 | self | Tried composing inline JSON for `Set-Content` with escaped quotes and hit PowerShell parameter parsing error | Use a here-string piped to `Set-Content` (or Node write) for multi-line JSON content |
@@ -113,6 +114,8 @@
 - If links are requested as "clickable" in CSV, include explicit spreadsheet formula columns (e.g., `=HYPERLINK(...)`) in addition to raw URL columns.
 - For Desktop CSV exports covering multiple collections, generate one CSV per collection with the exact 4 columns in order: `product_code`, `en_translation`, `product_image_url`, `application_image_url`.
 - When moving overlapping product codes between collections, enforce single ownership by removing non-owner manifest/translation/folder artifacts and avoid fallback duplication.
+- For collection-level hard deletes, remove code artifacts from manifest + locale namespaces + image folder + legacy redirects, and do not add alternate fallback mappings.
+- For EN mojibake cleanup (`â€“`, `â€™`, `Ã‡`, etc.), decode suspicious values with CP1252-byte reinterpretation (not plain latin1) and accept only score-improving fixes.
 
 
 - For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
@@ -146,6 +149,7 @@
 - For locale-specific dynamic blog slugs/tags, do not rely on `next-intl` locale auto-detection redirects; preserve clicked locale and redirect mismatched slugs to canonical locale URL.
 - In this repo, "deploy" means pushing to GitHub and letting the connected build/deploy pipeline run, not `npm run deploy` locally.
 - For bulk text updates across MDX/JSON, use a small Node script to preserve UTF-8 and avoid PowerShell encoding defaults.
+- For mojibake scans, use codepoint-based detectors (`C2/C3/C4/C5` prefix pairs, `E2 80` punctuation patterns, `U+FFFD`) to avoid shell/regex encoding pitfalls.
 - For skirting application-image swaps, match by filename code token and replace each target folder image as `application.jpg`, then report missing codes.
 - When moving a flooring code between collections, update both collection `products.json` manifests and matching entries in `src/redirects/legacyRedirects.ts`.
 - In this environment, if direct `Remove-Item` is blocked, use `git rm -r` to remove tracked asset folders cleanly.
@@ -184,6 +188,8 @@
 - As of 2026-03-12 (latest): orphan natural folder `29198-4` was reconciled by adding it to `spc-parquet-natural-collection/products.json` and adding EN/TR keys under `SpcParquetNaturalCollectionPanelNames`.
 - As of 2026-03-12 (latest): generated six Desktop CSV exports (`natural`, `stone`, `full-natural`, `spc-wall-panels`, `3d model a`, `3d model b`) with absolute `https://kermitfloor.com/images/...` links and manifest-order product rows.
 - As of 2026-03-12 (latest): ownership cleanup set `19022-5` to Full Natural only, and `29036-5` + `29100-5` to Natural only; non-owner folders, manifest entries, and namespace keys were removed; `full-collection-19022-5` legacy redirect now points to `/full-natural-collection`.
+- As of 2026-03-13 (latest): `29148-4` was fully removed from the Natural collection (`products.json`, EN/TR natural keys, asset folder, and legacy redirect rows) with no fallback redirect added.
+- As of 2026-03-13 (latest): deep EN/TR Unicode audit across `messages`, `content`, and `src` found and fixed 23 mojibake-corrupted English locale strings in `messages/en.json`; post-fix scan reports zero suspect sequences.
 
 
 

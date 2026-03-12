@@ -194,8 +194,6 @@ export const legacyRedirects = [
   { source: '/full-collection-29148-2/', destination: '/full-natural-collection', permanent: true },
   { source: '/full-collection-29148-3', destination: '/full-natural-collection', permanent: true },
   { source: '/full-collection-29148-3/', destination: '/full-natural-collection', permanent: true },
-  { source: '/full-collection-29148-4', destination: '/spc-parquet-natural-collection', permanent: true },
-  { source: '/full-collection-29148-4/', destination: '/spc-parquet-natural-collection', permanent: true },
   { source: '/full-collection-29148-5', destination: '/full-natural-collection', permanent: true },
   { source: '/full-collection-29148-5/', destination: '/full-natural-collection', permanent: true },
   { source: '/full-collection-29149-2', destination: '/full-natural-collection', permanent: true },
