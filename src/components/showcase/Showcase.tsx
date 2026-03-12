@@ -193,7 +193,7 @@ function SkirtingCollectionNav() {
     imageUrl: string;
     imageHint: string;
   }[] = [
-    { name: t('optima-60-mm'), href: '/spc-skirting-boards/optima-60-mm-skirting-board', imageUrl: '/images/skirting-boards/optima-60-mm-skirting-board/0603031/product.jpg', imageHint: 'optima 60mm skirting' },
+    { name: t('optima-60-mm'), href: '/spc-skirting-boards/optima-60-mm-skirting-board', imageUrl: '/images/skirting-boards/optima-60-mm-skirting-board/0604031/product.jpg', imageHint: 'optima 60mm skirting' },
     { name: t('optima-90-mm'), href: '/spc-skirting-boards/optima-90-mm-skirting-board', imageUrl: '/images/skirting-boards/optima-90-mm-skirting-board/0704031/product.jpg', imageHint: 'optima 90mm skirting' },
     { name: t('solid-80-mm'), href: '/spc-skirting-boards/solid-80-mm-skirting-board', imageUrl: '/images/skirting-boards/solid-80-mm-skirting-board/0904031/product.jpg', imageHint: 'solid 80mm skirting' },
     { name: t('berlin-100-mm'), href: '/spc-skirting-boards/berlin-100-mm-skirting-board', imageUrl: '/images/skirting-boards/berlin-100-mm-skirting-board/1110031/product.jpg', imageHint: 'berlin 100mm skirting' },

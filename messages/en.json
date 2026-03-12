@@ -105,13 +105,13 @@
   },
   "Spc3dWallPanelsModelAPage": {
     "seo": {
-      "title": "Kermit Floor | SPC 3D Wall Panels – Model A",
+      "title": "Kermit Floor | SPC 3D Wall Panels â€“ Model A",
       "description": "Transform your walls with our Model A 3D SPC panels, offering unique textures and modern designs."
     }
   },
   "Spc3dWallPanelsModelBPage": {
     "seo": {
-      "title": "Kermit Floor | SPC 3D Wall Panels – Model B",
+      "title": "Kermit Floor | SPC 3D Wall Panels â€“ Model B",
       "description": "Create stunning feature walls with our Model B 3D SPC panels, featuring elegant and contemporary patterns."
     }
   },
@@ -171,14 +171,14 @@
     },
     "hero": {
       "title": "About Kermit Floor",
-      "subtitle": "We manufacture SPC flooring, SPC skirting boards and SPC wall panels—designed for durability, fast installation and consistent project results.",
+      "subtitle": "We manufacture SPC flooring, SPC skirting boards and SPC wall panelsâ€”designed for durability, fast installation and consistent project results.",
       "ctaPrimary": "Contact Us",
       "ctaSecondary": "Download Resources"
     },
     "whoWeAre": {
       "title": "Who We Are",
       "p1": "Kermit Floor is a manufacturer focused on SPC-based interior finishing systems: SPC flooring, SPC skirting boards, and SPC wall panels. Our product development is rooted in long-term experience in polymer processing and mold-making, enabling tight control over design details, repeatability and production consistency.",
-      "p2": "We build products that are practical for the trade—stable, durable, and easy to work with—while keeping the look clean and modern for residential and commercial environments."
+      "p2": "We build products that are practical for the tradeâ€”stable, durable, and easy to work withâ€”while keeping the look clean and modern for residential and commercial environments."
     },
     "whatWeMake": {
       "title": "What We Make",
@@ -188,7 +188,7 @@
       },
       "skirting": {
         "title": "SPC Skirting Boards",
-        "text": "Skirting solutions designed to finish the wall–floor junction cleanly. Our skirting boards feature flexible edges to improve the final fit on uneven surfaces."
+        "text": "Skirting solutions designed to finish the wallâ€“floor junction cleanly. Our skirting boards feature flexible edges to improve the final fit on uneven surfaces."
       },
       "wallPanels": {
         "title": "SPC Wall Panels",
@@ -220,7 +220,7 @@
     },
     "sustainability": {
       "title": "Sustainability & Responsibility",
-      "p1": "We prioritize long service life, practical installation, and responsible manufacturing. Our production is increasingly supported by renewable energy, and we continuously invest in efficient processes that reduce waste and environmental impact. We remain firmly committed to ethical business practices—fair partnerships, transparent operations, and consistent quality standards—so customers can specify Kermit Floor products with confidence."
+      "p1": "We prioritize long service life, practical installation, and responsible manufacturing. Our production is increasingly supported by renewable energy, and we continuously invest in efficient processes that reduce waste and environmental impact. We remain firmly committed to ethical business practicesâ€”fair partnerships, transparent operations, and consistent quality standardsâ€”so customers can specify Kermit Floor products with confidence."
     },
     "finalCta": {
       "title": "Build complete SPC interiors with a manufacturer-backed system.",
@@ -239,18 +239,18 @@
     },
     "locations": {
       "title": "Our Offices",
-      "turkeyTitle": "TURKEY – FACTORY (HEADQUARTERS)",
-      "turkeyAddress": "Cumhuriyet Mh. Cihan Sk. No:4\nÇAYIROVA / KOCAELİ - TÜRKİYE",
+      "turkeyTitle": "TURKEY â€“ FACTORY (HEADQUARTERS)",
+      "turkeyAddress": "Cumhuriyet Mh. Cihan Sk. No:4\nÃ‡AYIROVA / KOCAELÄ° - TÃœRKÄ°YE",
       "turkeyPhone": "+90 262 658 97 29",
       "turkeyFax": "+90 262 658 11 29",
       "turkeyEmail": "info@kermit.com.tr",
-      "moldovaTitle": "MOLDOVA – FACTORY",
-      "moldovaAddress": "Muncești 799, Chișinău/MOLDOVA",
+      "moldovaTitle": "MOLDOVA â€“ FACTORY",
+      "moldovaAddress": "MunceÈ™ti 799, ChiÈ™inÄƒu/MOLDOVA",
       "moldovaPhone": "+373 (22) 85 42 29 / +373 (22) 85 42 30",
       "moldovaGsm": "GSM: +373 79 157375",
       "moldovaFax": "+373 (22) 52 40 02",
       "moldovaEmail": "info@serkanplast.com",
-      "romaniaTitle": "ROMANIA – STORE",
+      "romaniaTitle": "ROMANIA â€“ STORE",
       "romaniaCompany": "DMS INNOVATIVE SOLUTION SRL",
       "romaniaAddress": "Bucuresti - Romania",
       "romaniaPhone": "+40 738 754 074 / +40 722 547 258",
@@ -301,7 +301,6 @@
     "23124-8": "Ceppo di Gre Beige",
     "23137-6": "Travertine White Vein",
     "23137-3": "Travertine Grey",
-    "16041-8": "Smoked Oak",
     "29098-2": "European Oak",
     "29115-18": "Sand Oak",
     "29150-4": "Weathered Oak",
@@ -343,12 +342,13 @@
     "2641-2": "Silver Mist Oak",
     "189-10": "Dark Taupe Oak",
     "340-06": "White Chocolate Walnut",
-    "29148-4": "Light Honey Oak",
+    "29148-4": "Natural Beige Oak",
     "29102-6": "Rustic Greige Oak",
     "29053-3": "Arctic Driftwood Oak",
     "29098-99": "Dark Walnut Oak",
     "29036-11": "Natural Honey Oak",
-    "2641-3": "Rustic Greige Oak"
+    "2641-3": "Rustic Greige Oak",
+    "29198-4": "29198-4"
   },
   "SpcParquetStoneCollectionPanelNames": {
     "23054-2": "Anthracite Concrete",
@@ -667,8 +667,8 @@
     "supportTechnical": "Technical Data Sheets",
     "supportBlog": "Blog",
     "contactTitle": "Contact",
-    "address": "Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE",
-    "copyright": "© {year} Kermit Floor. All rights reserved.",
+    "address": "Cumhuriyet Mh. Cihan Sk. No:4 Ã‡AYIROVA / KOCAELÄ° - TÃœRKÄ°YE",
+    "copyright": "Â© {year} Kermit Floor. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "phone": "+90 262 658 97 29",
@@ -684,7 +684,7 @@
     "lastUpdated": "Last updated: 8 February 2026",
     "section1": {
       "title": "1. Who we are (Data Controller)",
-      "content": "<p>This website (“Site”) is operated by Kermit Plastik Sanayi ve Ticaret Anonim Şirketi (“Kermit Floor”, “we”, “us”).</p><ul><li><strong>Data Controller (KVKK):</strong> Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li><strong>Address:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li><strong>Contact (privacy):</strong> info@kermit.com.tr</li><li><strong>Phone:</strong> +90 262 658 97 29</li></ul>"
+      "content": "<p>This website (â€œSiteâ€) is operated by Kermit Plastik Sanayi ve Ticaret Anonim Åžirketi (â€œKermit Floorâ€, â€œweâ€, â€œusâ€).</p><ul><li><strong>Data Controller (KVKK):</strong> Kermit Plastik Sanayi ve Ticaret Anonim Åžirketi</li><li><strong>Address:</strong> Cumhuriyet Mh. Cihan Sk. No:4 Ã‡AYIROVA / KOCAELÄ° - TÃœRKÄ°YE</li><li><strong>Contact (privacy):</strong> info@kermit.com.tr</li><li><strong>Phone:</strong> +90 262 658 97 29</li></ul>"
     },
     "section2": {
       "title": "2. Scope",
@@ -704,7 +704,7 @@
     },
     "section6": {
       "title": "6. Who we share data with (Recipients / Transfers)",
-      "content": "<p>We may share personal data with:</p><ul><li>IT/hosting providers (e.g., hosting, CDN, website infrastructure)</li><li>Analytics providers (only as configured; ideally with IP masking and consent where required)</li><li>Communication tools (email service provider, CRM, customer support tools)</li><li>Professional advisors (lawyers, accountants) where necessary</li><li>Authorities / courts where legally required</li></ul><p>We do not sell personal data.</p><p><strong>International transfers:</strong> Your data may be processed in countries other than your own depending on our vendors’ infrastructure. Where required, we use appropriate safeguards (e.g., contractual protections and security measures).</p>"
+      "content": "<p>We may share personal data with:</p><ul><li>IT/hosting providers (e.g., hosting, CDN, website infrastructure)</li><li>Analytics providers (only as configured; ideally with IP masking and consent where required)</li><li>Communication tools (email service provider, CRM, customer support tools)</li><li>Professional advisors (lawyers, accountants) where necessary</li><li>Authorities / courts where legally required</li></ul><p>We do not sell personal data.</p><p><strong>International transfers:</strong> Your data may be processed in countries other than your own depending on our vendorsâ€™ infrastructure. Where required, we use appropriate safeguards (e.g., contractual protections and security measures).</p>"
     },
     "section7": {
       "title": "7. Marketing communications",
@@ -728,15 +728,15 @@
     },
     "section12": {
       "title": "12. How to exercise your rights",
-      "content": "<p>To submit a request, contact us at:</p><ul><li><strong>Email:</strong> info@kermit.com.tr</li><li><strong>Postal address:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li></ul><p>Include sufficient information to verify your identity and clearly describe your request.</p><p>We may request additional information to confirm identity and process your request in line with applicable law.</p>"
+      "content": "<p>To submit a request, contact us at:</p><ul><li><strong>Email:</strong> info@kermit.com.tr</li><li><strong>Postal address:</strong> Cumhuriyet Mh. Cihan Sk. No:4 Ã‡AYIROVA / KOCAELÄ° - TÃœRKÄ°YE</li></ul><p>Include sufficient information to verify your identity and clearly describe your request.</p><p>We may request additional information to confirm identity and process your request in line with applicable law.</p>"
     },
     "section13": {
-      "title": "13. Children’s privacy",
+      "title": "13. Childrenâ€™s privacy",
       "content": "<p>The Site is not directed to children. We do not knowingly collect personal data from children.</p>"
     },
     "section14": {
       "title": "14. Changes to this Privacy Policy",
-      "content": "<p>We may update this Privacy Policy from time to time. The “Last updated” date will change accordingly. Material changes will be posted on the Site.</p>"
+      "content": "<p>We may update this Privacy Policy from time to time. The â€œLast updatedâ€ date will change accordingly. Material changes will be posted on the Site.</p>"
     }
   },
   "TermsOfServicePage": {
@@ -748,7 +748,7 @@
     "lastUpdated": "Last Updated: 25 January 2026",
     "section1": {
       "title": "1. Parties and Scope",
-      "content": "<p>These Website Terms of Use (“Terms”) govern access to and use of www.kermitfloor.com (the “Website”), operated by Kermit Plastik Sanayi ve Ticaret Anonim Şirketi (“Kermit Floor”, “Company”).</p><p>The Website is an informational platform providing product information, catalogs/technical documents, and contact/quote request channels. The Website does not provide online checkout or e-commerce purchasing.</p>"
+      "content": "<p>These Website Terms of Use (â€œTermsâ€) govern access to and use of www.kermitfloor.com (the â€œWebsiteâ€), operated by Kermit Plastik Sanayi ve Ticaret Anonim Åžirketi (â€œKermit Floorâ€, â€œCompanyâ€).</p><p>The Website is an informational platform providing product information, catalogs/technical documents, and contact/quote request channels. The Website does not provide online checkout or e-commerce purchasing.</p>"
     },
     "section2": {
       "title": "2. Acceptance",
@@ -759,8 +759,8 @@
       "content": "<ul><li><strong>Content:</strong> All text, images, videos, catalogs, technical documents, drawings, trademarks/logos, designs, and software on the Website.</li><li><strong>User:</strong> Any person accessing the Website or submitting an inquiry.</li></ul>"
     },
     "section4": {
-      "title": "4. Informational Content – No Binding Offer",
-      "content": "<p>All product information, specifications, visuals, and documents are provided for general information only and do not constitute a binding offer. Pricing, lead times, availability, and final specifications are confirmed only via the Company’s written quotation/confirmation.</p>"
+      "title": "4. Informational Content â€“ No Binding Offer",
+      "content": "<p>All product information, specifications, visuals, and documents are provided for general information only and do not constitute a binding offer. Pricing, lead times, availability, and final specifications are confirmed only via the Companyâ€™s written quotation/confirmation.</p>"
     },
     "section5": {
       "title": "5. Technical Documents and Application Responsibility",
@@ -788,7 +788,7 @@
     },
     "section11": {
       "title": "11. Limitation of Liability",
-      "content": "<p>To the maximum extent permitted by law, the Website is provided “as is.” The Company is not liable for indirect or consequential damages, loss of profits, or loss of data arising from use of (or inability to use) the Website.</p>"
+      "content": "<p>To the maximum extent permitted by law, the Website is provided â€œas is.â€ The Company is not liable for indirect or consequential damages, loss of profits, or loss of data arising from use of (or inability to use) the Website.</p>"
     },
     "section12": {
       "title": "12. Privacy",
@@ -796,11 +796,11 @@
     },
     "section13": {
       "title": "13. Governing Law and Jurisdiction",
-      "content": "<p>These Terms are governed by the laws of the Republic of Türkiye. Courts and enforcement offices of Çayırova shall have jurisdiction.</p>"
+      "content": "<p>These Terms are governed by the laws of the Republic of TÃ¼rkiye. Courts and enforcement offices of Ã‡ayÄ±rova shall have jurisdiction.</p>"
     },
     "section14": {
       "title": "14. Contact",
-      "content": "<ul><li>Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li>Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li>info@kermit.com.tr</li></ul>"
+      "content": "<ul><li>Kermit Plastik Sanayi ve Ticaret Anonim Åžirketi</li><li>Cumhuriyet Mh. Cihan Sk. No:4 Ã‡AYIROVA / KOCAELÄ° - TÃœRKÄ°YE</li><li>info@kermit.com.tr</li></ul>"
     }
   },
   "ConsentBanner": {
@@ -819,3 +819,4 @@
     "statusUnset": "Current status: No choice saved yet"
   }
 }
+

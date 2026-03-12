@@ -159,7 +159,7 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
     heroImageHint = 'hallway with stylish skirting';
   } else if (pageType === 'skirting-optima-60-mm') {
     pageTitle = t('heroTitleSkirtingOptima60mm');
-    heroImage = '/images/skirting-boards/optima-60-mm-skirting-board/0603031/application.jpg';
+    heroImage = '/images/skirting-boards/optima-60-mm-skirting-board/0604031/application.jpg';
     heroImageHint = 'room with minimal skirting';
   } else if (pageType === 'skirting-optima-90-mm') {
     pageTitle = t('heroTitleSkirtingOptima90mm');

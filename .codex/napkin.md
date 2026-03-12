@@ -3,6 +3,19 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-03-12 | self | Used over-escaped quotes in a PowerShell `rg` command and triggered a regex parse error (`unclosed group`) | In PowerShell audits, use simple fixed-string `rg` patterns (or `-F`) without nested quote escaping unless regex is required |
+| 2026-03-12 | self | Wrote JSON with `Set-Content -Encoding UTF8` and introduced BOM, breaking strict `JSON.parse` | Prefer `apply_patch`/Node writes for JSON; strip BOM if PowerShell write was used |
+| 2026-03-12 | self | Tried composing inline JSON for `Set-Content` with escaped quotes and hit PowerShell parameter parsing error | Use a here-string piped to `Set-Content` (or Node write) for multi-line JSON content |
+| 2026-03-12 | self | Validation initially checked URL-backed files against `images/...` instead of `public/images/...`, causing false missing-file failures | When verifying site URLs against repo files, map `https://host/images/...` to local `public/images/...` |
+| 2026-03-12 | self | Bulk Desktop CSV overwrite aborted mid-run when one file was temporarily locked (`EBUSY`) | Use per-file try/catch writes (or retries) so one locked file doesn’t stop all exports |
+| 2026-03-12 | user | Exported translation key paths when user needed English translated names | For product CSV exports, default to `english_translation` values unless keys are explicitly requested |
+| 2026-03-12 | user | Combined product export in one merged `.txt` list made collection boundaries unclear | For Desktop product exports, generate separate `.txt` files per collection when separation is requested |
+| 2026-03-12 | self | Used `process.argv[1]` with `node -` and accidentally wrote to a temp `-` file | With `node - <arg>`, read output path from `process.argv[2]` |
+| 2026-03-12 | user | JSON-style export content (quotes/commas/brackets/headers) was too verbose for product lists | For product-list `.txt` exports, output plain code-only lines (`one code per line`) with no extra punctuation/text |
+| 2026-03-12 | self | Wrapped a PowerShell delete script in a quoted here-string, so it printed instead of executing | Run direct PowerShell commands (or pipe the here-string to `Invoke-Expression`) when execution is intended |
+| 2026-03-12 | user | Asked for collection cleanup and I only removed manifest entries first, leaving duplicate asset folders in `public/images/full-natural-collection` | For "move/remove shared codes between collections", remove both manifest entries and duplicate code folders from the source collection |
+| 2026-03-12 | self | Trusted `rg`/terminal-rendered Turkish output while auditing encoding and initially overestimated corruption scope | For Turkish encoding audits, run UTF-8 Node checks on source bytes/JSON values and use validator output as ground truth |
+| 2026-03-12 | self | Guessed natural/panel loader filenames (`floor-parquet-natural-data.ts`, `load-panel-data.ts`) and lost time on missing-path reads | Use `rg --files src/lib | rg \"natural|panel\"` first, then open exact files |
 | 2026-03-11 | self | Tried deleting binary `src/app/favicon.ico` with `apply_patch`, which failed due UTF-8 requirement | Delete binary files via shell commands (`Remove-Item`) instead of `apply_patch` |
 | 2026-03-11 | user | Rejected runtime file-existence checks for resources as unnecessary overhead | Keep resources availability manual: audit files when requested and set missing `files.{en,tr}.url` to `#` so UI shows "coming soon" |
 | 2026-03-11 | self | Passed a malformed quoted `workdir` value in a parallel shell call, causing PowerShell "directory name is invalid" | Keep JSON tool-call strings minimal and validate quote boundaries before parallel calls |
@@ -90,6 +103,15 @@
 - Prefers long-form blog posts with many subtitles to improve reader focus/retention.
 
 - Wants the floating "Chat with us" action to open WhatsApp directly with no intermediate chatbox UI.
+- When requesting collection/product exports in `.txt`, expects the file to be written directly to `C:\\Users\\hp\\Desktop`.
+- For product-list exports, wants plain code-only `.txt` output (one product per line, no JSON punctuation or section labels).
+- When saying "separated according to collection", prefers separate files per collection over a single merged file.
+- For collection exports, wants per-collection CSVs with `product_code` and translation key mapping (flooring + wall panels).
+- For CSV collection exports, prefers actual English translated names over translation key paths.
+- CSV exports should include image-link columns for each code: `product_image_url` and `application_image_url`.
+- Image links in CSV exports should be absolute clickable URLs using apex host: `https://kermitfloor.com/...`.
+- If links are requested as "clickable" in CSV, include explicit spreadsheet formula columns (e.g., `=HYPERLINK(...)`) in addition to raw URL columns.
+- For Desktop CSV exports covering multiple collections, generate one CSV per collection with the exact 4 columns in order: `product_code`, `en_translation`, `product_image_url`, `application_image_url`.
 
 
 - For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
@@ -111,6 +133,7 @@
 - When onboarding to this repo, inspect `scripts/generate-blog-manifest.mjs` and `scripts/generate-panel-manifests.mjs` early; they explain most runtime data flow decisions.
 - Panel collection pages may intentionally keep server-side fs loading while `Showcase` adds a client fallback fetch from `/data/<collection>.json` for Cloudflare Worker compatibility.
 - Use repo installers/checkers (`scripts/install-blog-post-generator-skill.ps1`, `scripts/check-blog-post-generator-skill-setup.ps1`) instead of manual skill file copying.
+- For export QA, run a strict CSV audit: header check + row-count check + row-order/code match against collection `products.json` + value match against `messages/en.json` namespace.
 - When terminal output shows garbled Unicode (Turkish/emojis), verify with a Node UTF-8 read before assuming source file corruption.
 - Use quick Node audits (JSON parse + file existence checks) to validate translation parity, resource URLs, and blog/media references when `node_modules` is unavailable.
 - For UTF-8 text edits on Windows, prefer Node reads for exact string matching when PowerShell output garbles characters.
@@ -123,6 +146,8 @@
 - In this repo, "deploy" means pushing to GitHub and letting the connected build/deploy pipeline run, not `npm run deploy` locally.
 - For bulk text updates across MDX/JSON, use a small Node script to preserve UTF-8 and avoid PowerShell encoding defaults.
 - For skirting application-image swaps, match by filename code token and replace each target folder image as `application.jpg`, then report missing codes.
+- When moving a flooring code between collections, update both collection `products.json` manifests and matching entries in `src/redirects/legacyRedirects.ts`.
+- In this environment, if direct `Remove-Item` is blocked, use `git rm -r` to remove tracked asset folders cleanly.
 
 ## Patterns That Don't Work
 - Guessing environment behavior without verifying local config/scripts.
@@ -145,6 +170,18 @@
 - `src/lib/resources.json` currently references more local `/downloads/*.pdf` files than exist in `public/downloads` (many resource cards resolve to missing files in this snapshot).
 - Product collection route files contain repeated stale comments mentioning 60-second revalidation even though no `revalidate` export is set on those pages.
 - Blog markdown inline images need explicit styling in `src/components/blog/BlogPostContent.tsx`; manifest-side `loading=\"lazy\"` attrs alone do not control layout/overflow.
+- Flooring code `29036-15` is currently in `full-natural-collection` (`public/images/full-natural-collection/products.json` and legacy redirects to `/full-natural-collection`).
+- As of 2026-03-12, `full-natural-collection` no longer lists shared codes `19022-5`, `29036-5`, `29100-5`; those remain only in `spc-parquet-natural-collection`.
+- As of 2026-03-12, legacy `/full-collection-{code}` redirects for `19022-5`, `29036-5`, `29100-5` point to `/spc-parquet-natural-collection`.
+- As of 2026-03-12, duplicate asset folders for `19022-5`, `29036-5`, `29100-5` were removed from `public/images/full-natural-collection/` and retained under `public/images/spc-parquet-natural-collection/`.
+- As of 2026-03-12, `29148-4` is in `spc-parquet-natural-collection` with EN/TR name `Natural Beige Oak`, image folder populated, and legacy `/full-collection-29148-4` redirects mapped to `/spc-parquet-natural-collection`.
+- `16041-8` has no plain folder under `public/images`; only `spc-3d-panels-model-a/3D-16041-8` exists.
+- As of 2026-03-12, stale `PanelNames.16041-8` keys were removed from `messages/en.json` and `messages/tr.json`; `3DModelAPanelNames.3D-16041-8` remains valid.
+- Audit snapshot (2026-03-12): remaining irregularities include extra Full Natural translation keys (`19022-5`, `29036-5`, `29100-5`), an orphan Natural folder (`29198-4`), extra Optima-60 folder (`0603031`), and SPC wall-panel `details.json` name mismatches (`23048-2`, `29150-4`).
+- As of 2026-03-12 (latest): `19022-5`, `29036-5`, and `29100-5` were re-added to `full-natural-collection/products.json` and their Full Natural folders were restored; `0603031` hardcoded references were removed; wall-panel `details.json` mismatches for `23048-2` and `29150-4` were fixed; and `details.json` files were generated for all 64 skirting product folders.
+- Audit snapshot (2026-03-12, later): EN/TR key parity and manifest-folder parity are clean across Full Natural, Stone, Wall Panels, 3D Model A/B, and all 8 skirting models; `spc-parquet-natural-collection/29198-4` remains as an orphan folder not listed in `products.json` and not translated.
+- As of 2026-03-12 (latest): orphan natural folder `29198-4` was reconciled by adding it to `spc-parquet-natural-collection/products.json` and adding EN/TR keys under `SpcParquetNaturalCollectionPanelNames`.
+- As of 2026-03-12 (latest): generated six Desktop CSV exports (`natural`, `stone`, `full-natural`, `spc-wall-panels`, `3d model a`, `3d model b`) with absolute `https://kermitfloor.com/images/...` links and manifest-order product rows.
 
 
 
