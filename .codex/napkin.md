@@ -3,6 +3,7 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-03-16 | self | Used `??` in a PowerShell inline parser script and hit a parser error in this environment | Use explicit `if`/`elseif` null checks in PowerShell scripts here instead of relying on `??` |
 | 2026-03-13 | self | Used raw mojibake glyphs in an inline regex during a PowerShell/Node here-string and triggered an invalid-regex parse error | For encoding-repair scripts, prefer codepoint-based detection over literal mojibake regex fragments |
 | 2026-03-12 | self | Used over-escaped quotes in a PowerShell `rg` command and triggered a regex parse error (`unclosed group`) | In PowerShell audits, use simple fixed-string `rg` patterns (or `-F`) without nested quote escaping unless regex is required |
 | 2026-03-12 | self | Wrote JSON with `Set-Content -Encoding UTF8` and introduced BOM, breaking strict `JSON.parse` | Prefer `apply_patch`/Node writes for JSON; strip BOM if PowerShell write was used |
@@ -62,6 +63,7 @@
 
 ## User Preferences
 - Keep a single favicon source (`/images/icons/favicon.32x32.png`) and route fallback `/favicon.ico` to it; avoid separate artifact favicon files.
+- When auditing or correcting collection names against a user-provided CSV, treat the CSV as the source of truth if the user says so and sync both locale files to it.
 - Avoid runtime filesystem checks for resource links; use manual `resources.json` URLs and mark missing files with `#`.
 - On the Resources page, if a document file is missing, do not show a dead download link; render a non-clickable "coming soon" state instead.
 - When asking style audits, prefers only key fonts/colors and not exhaustive minor palette dumps.
@@ -122,6 +124,9 @@
 
 
 ## Patterns That Work
+- Wall panel name changes are sourced from `messages/{en,tr}.json` under `PanelNames`; `public/images/spc-wall-panels/*/details.json` can remain code-based.
+- Desktop export CSVs may contain hundreds of trailing blank rows; filter to populated rows before doing parity audits against collection manifests.
+- For user-provided `.xlsx` product lists, compare the product-code column against the image URL path segment; Excel can silently auto-convert code-like IDs such as `2002-3` into numeric serials.
 - After generating blog content, run a quick prompt-leak scan (e.g. `your high-level`, `your list`, `Sizin verdiÄŸiniz`, `Listenizde`) before finalizing/publishing.
 - When a user says they uploaded blog images to a repo folder, inspect the actual folder contents/count first; it may differ from the number of images visible in chat.
 - User-provided technical diagrams can be stored as local SVG assets in `public/images/blog/<topicId>/` and embedded directly in MDX (no external hotlinking needed).
@@ -160,6 +165,9 @@
 - Assuming mojibake in PowerShell output means file data is corrupted; this environment can misrender UTF-8 in command output.
 
 ## Domain Notes
+- Product code `29098-2` is reused across namespaces: wall panels use `PanelNames.29098-2`, while another collection already has a separate `29098-2` label; verify namespace before renaming shared codes.
+- `FullNaturalCollectionPanelNames` in both locales is currently code-based for the whole collection (values mirror product codes), so CSV audits against human-readable Full Natural names will report broad translation mismatches.
+- As of 2026-03-16, `FullNaturalCollectionPanelNames` in both locales was synced to the human-readable names from `C:\Users\hp\Documents\fullnatural111.csv`.
 - Installation resource entry `flooring-install-click` currently points to missing `/public/downloads/spc-...uniclic.pdf` files in this snapshot; `public/downloads/installation-guides` currently contains only skirting EN/TR manuals.
 - Deploy target is Cloudflare Workers using OpenNext.
 - Product scope: SPC flooring, wall panels, and skirting boards.
