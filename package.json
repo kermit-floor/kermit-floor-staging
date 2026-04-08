@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
     "build": "npm run text:validate && npm run blog:validate && npm run blog:build-manifest && node scripts/generate-panel-manifests.mjs && next build",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf:deploy": "opennextjs-cloudflare deploy",
     "start": "next start -p 9002",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",

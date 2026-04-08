@@ -18,15 +18,26 @@ This runs the Next.js build and produces output in `.open-next/` (Worker + asset
 npx @opennextjs/cloudflare deploy
 ```
 
-Or use the npm scripts:
+### NPM Scripts
 
-- `npm run preview` — build and run locally in the Cloudflare Workers runtime.
-- `npm run deploy` — build and deploy to Cloudflare.
+- `npm run preview` builds and runs locally in the Cloudflare Workers runtime.
+- `npm run deploy` builds and deploys to Cloudflare in one command.
+- `npm run cf:build` builds the OpenNext worker/assets bundle for CI or Workers Builds.
+- `npm run cf:deploy` deploys an already-built OpenNext bundle.
+
+### Workers Builds Settings
+
+If you are using Cloudflare Workers Builds with a connected Git repository, use:
+
+- Build command: `npm run cf:build`
+- Deploy command: `npm run cf:deploy`
+
+Do not use `npm run build` followed by `npx wrangler deploy` for this app. `wrangler deploy` reads `wrangler.jsonc`, which points `main` at `.open-next/worker.js`. That file is produced by the OpenNext build step, not by `next build` alone.
 
 ### Building on Windows
 
-OpenNext may hit permission or spawn errors on Windows. Prefer **WSL** or **Cloudflare’s CI** (e.g. connect the repo in the Cloudflare dashboard) for reliable builds. To use Cloudflare bindings during `next dev`, add `initOpenNextCloudflareForDev()` from `@opennextjs/cloudflare` to `next.config.ts` (see OpenNext docs).
+OpenNext may hit permission or spawn errors on Windows. Prefer **WSL** or **Cloudflare's CI** (for example, a connected Cloudflare Workers Build) for reliable builds. To use Cloudflare bindings during `next dev`, add `initOpenNextCloudflareForDev()` from `@opennextjs/cloudflare` to `next.config.ts` (see OpenNext docs).
 
-### Content updates
+### Content Updates
 
-Product and resource pages are **statically generated at build time**. Changes to product lists (e.g. `public/images/*/products.json`) or to the resources library require a **new build and deploy** to appear on the site. There is no ISR or on-demand revalidation on Cloudflare for this app.
+Product and resource pages are **statically generated at build time**. Changes to product lists (for example, `public/images/*/products.json`) or to the resources library require a **new build and deploy** to appear on the site. There is no ISR or on-demand revalidation on Cloudflare for this app.

@@ -3,7 +3,19 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-08 | self | Piped a rename script into nested `powershell -Command -`; it exited `0` but did not actually rename the target folders in this environment | For bulk folder renames here, run the PowerShell `Move-Item` loop directly in the `shell_command` instead of nesting another PowerShell process |
 | 2026-03-16 | self | Used `??` in a PowerShell inline parser script and hit a parser error in this environment | Use explicit `if`/`elseif` null checks in PowerShell scripts here instead of relying on `??` |
+| 2026-04-06 | self | Used Git upstream shorthand `@{u}` directly in PowerShell and hit parsing/ambiguity issues while checking tracking info | In PowerShell, prefer `git for-each-ref --format='%(upstream:short)' <ref>` or single-quote reflog/upstream shorthand carefully |
+| 2026-04-06 | self | Tried using `rg.exe` for a repo audit in this workspace and hit `Access is denied` | Fall back to PowerShell `Select-String`, `Get-Content`, and `Get-ChildItem` when ripgrep is unavailable here |
+| 2026-04-06 | user | Natural collection product code was confirmed as `29198-4`, but user corrected it to `29148-4`; the name/translation text was already right | When fixing product-code mismatches, preserve the translation values and update only code keys, manifest entries, asset folder names, and related notes/references |
+| 2026-04-06 | self | Assumed the GitHub credential used here could push/merge to upstream after it successfully created an issue | Check repo API permissions first; if token has pull-only access, create a fork, push there, and open a PR back to upstream |
+| 2026-04-06 | self | Needed to confirm whether GitHub authority changed after the PR merge | Re-check both the repo permissions API and a `git push --dry-run` to verify actual upstream write access |
+| 2026-04-08 | self | Started an `.xlsx` audit assuming `openpyxl` would be available, but the module is not installed in this workspace | For local Excel verification here, prefer direct `.xlsx` ZIP/XML parsing in Python unless a spreadsheet library is already confirmed present |
+| 2026-04-08 | self | Tried to create a GitHub issue directly from this workspace, but `gh` is not installed, `GITHUB_TOKEN` is absent, and the available GitHub connector lacks issue creation | Draft the issue text locally and report the creation blocker clearly before continuing with repo changes |
+| 2026-04-08 | self | Kept relying on the earlier assumption that upstream GitHub access here was pull-only | Re-check current Git push capability with `git push --dry-run`; as of 2026-04-08 this environment can dry-run push new branches to both `origin` (`tulparfynh/kermit-floor-staging`) and `fork` (`kermit-floor/kermit-floor-staging`) |
+| 2026-04-08 | self | Tried using Node with `jszip` for a bulk `.xlsx`-driven migration, but `jszip` is not installed in this workspace | Reuse the Python standard-library ZIP/XML parser for workbook-driven bulk code migrations here instead of assuming extra Node packages |
+| 2026-04-09 | self | Ran two mutating Git commands (`stash` and `add`) in parallel and hit a transient `.git/index.lock` collision | Keep Git write operations strictly serial in this repo; parallelize only read-only Git queries |
+| 2026-04-09 | self | Used unquoted `stash@{0}` in PowerShell and it was parsed as a script block instead of a Git revision | In PowerShell, always single-quote stash refs and reflog syntax like `'stash@{0}'` |
 | 2026-03-13 | self | Used raw mojibake glyphs in an inline regex during a PowerShell/Node here-string and triggered an invalid-regex parse error | For encoding-repair scripts, prefer codepoint-based detection over literal mojibake regex fragments |
 | 2026-03-12 | self | Used over-escaped quotes in a PowerShell `rg` command and triggered a regex parse error (`unclosed group`) | In PowerShell audits, use simple fixed-string `rg` patterns (or `-F`) without nested quote escaping unless regex is required |
 | 2026-03-12 | self | Wrote JSON with `Set-Content -Encoding UTF8` and introduced BOM, breaking strict `JSON.parse` | Prefer `apply_patch`/Node writes for JSON; strip BOM if PowerShell write was used |
@@ -62,6 +74,7 @@
 | 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
 
 ## User Preferences
+- When asking Git workflow questions, prefers concise explanation of what is safe to delete and what action is actually needed.
 - Keep a single favicon source (`/images/icons/favicon.32x32.png`) and route fallback `/favicon.ico` to it; avoid separate artifact favicon files.
 - When auditing or correcting collection names against a user-provided CSV, treat the CSV as the source of truth if the user says so and sync both locale files to it.
 - Avoid runtime filesystem checks for resource links; use manual `resources.json` URLs and mark missing files with `#`.
@@ -121,12 +134,20 @@
 
 
 - For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
+- For repo verification requests like collection/product presence checks, prefers confirmation-only responses with no project/data changes.
+- If a product-code correction is provided, keep the product name translation text unchanged unless the user explicitly says the wording is wrong.
 
 
 ## Patterns That Work
+- For Cloudflare Workers Builds on this repo, use the OpenNext-specific two-step commands (`npm run cf:build` then `npm run cf:deploy`); `next build` alone does not create `.open-next/worker.js`, so a plain `wrangler deploy` will fail with "entry-point file ... .open-next/worker.js was not found".
+- For public GitHub Actions pages that hide raw logs, combine the visible annotation text with the repo workflow file and local generated-artifact inspection; if a generated JSON embeds markdown/content strings, check for literal `\r\n` sequences because Windows-generated content can fail Linux `git diff --exit-code` guardrails.
 - Wall panel name changes are sourced from `messages/{en,tr}.json` under `PanelNames`; `public/images/spc-wall-panels/*/details.json` can remain code-based.
 - Desktop export CSVs may contain hundreds of trailing blank rows; filter to populated rows before doing parity audits against collection manifests.
 - For user-provided `.xlsx` product lists, compare the product-code column against the image URL path segment; Excel can silently auto-convert code-like IDs such as `2002-3` into numeric serials.
+- Direct `.xlsx` ZIP/XML parsing works well in this environment for quick workbook audits when `openpyxl` is unavailable.
+- For collection-wide product-code migrations here, update the collection `products.json`, the matching EN/TR translation namespace keys, asset folder names, each folder’s `details.json` `name`, and every hardcoded image path that points into that collection.
+- For large workbook-driven code swaps, derive the old->new mapping from the workbook directly instead of hand-transcribing hundreds of code pairs.
+- For wall-panel code migrations, also scan blog MDX for user-facing raw code mentions in article text; some posts list matching color examples with backticked codes that must be updated alongside image paths.
 - After generating blog content, run a quick prompt-leak scan (e.g. `your high-level`, `your list`, `Sizin verdiÄŸiniz`, `Listenizde`) before finalizing/publishing.
 - When a user says they uploaded blog images to a repo folder, inspect the actual folder contents/count first; it may differ from the number of images visible in chat.
 - User-provided technical diagrams can be stored as local SVG assets in `public/images/blog/<topicId>/` and embedded directly in MDX (no external hotlinking needed).
@@ -136,6 +157,7 @@
 - For this repo, favor static-first features that fit Next.js + Cloudflare/OpenNext deployment.
 - Run `npm.cmd run blog:validate` + `npm.cmd run typecheck` before full build to catch schema/typing issues early.
 - For Cloudflare incidents, probe route groups (`/`, `/about`, `/blog`, `/sitemap.xml`) to isolate failing feature paths quickly.
+- When a merged commit does not auto-deploy to Cloudflare, first confirm the merge SHA reached the watched branch, check whether GitHub push workflows ran for that SHA, and run `npm.cmd run build`; if the push is visible and the build passes, the likely blocker is Cloudflare dashboard integration/branch settings or a Cloudflare-side build failure, not the repo commit itself.
 - If `wrangler tail` seems "stuck", treat it as active stream mode; trigger requests from another terminal and read emitted logs.
 - For Workers-hosted content pages, compile repo content into a deterministic build artifact instead of reading filesystem at runtime.
 - For `next-intl` rich translations, keep content tags aligned with explicit renderer keys on each page.
@@ -145,6 +167,7 @@
 - For export QA, run a strict CSV audit: header check + row-count check + row-order/code match against collection `products.json` + value match against `messages/en.json` namespace.
 - When terminal output shows garbled Unicode (Turkish/emojis), verify with a Node UTF-8 read before assuming source file corruption.
 - Use quick Node audits (JSON parse + file existence checks) to validate translation parity, resource URLs, and blog/media references when `node_modules` is unavailable.
+- When the GitHub connector lacks generic issue write actions, `git credential fill` can provide the stored GitHub HTTPS credential for authenticated REST API issue comments/closure via PowerShell without needing `gh`.
 - For UTF-8 text edits on Windows, prefer Node reads for exact string matching when PowerShell output garbles characters.
 - For Turkish text integrity checks, use codepoint-based scans and trust UTF-8 file reads over terminal glyph rendering.
 - Add a build-time text integrity validator (`messages/tr.json` + Turkish blog MDX) to catch mojibake and suspicious `?` replacements.
@@ -170,6 +193,8 @@
 - As of 2026-03-16, `FullNaturalCollectionPanelNames` in both locales was synced to the human-readable names from `C:\Users\hp\Documents\fullnatural111.csv`.
 - Installation resource entry `flooring-install-click` currently points to missing `/public/downloads/spc-...uniclic.pdf` files in this snapshot; `public/downloads/installation-guides` currently contains only skirting EN/TR manuals.
 - Deploy target is Cloudflare Workers using OpenNext.
+- The GitHub credential available in this workspace currently has `pull` access only on `tulparfynh/kermit-floor-staging`; it can create issues and cross-fork PRs, but cannot push to or merge the upstream repo directly.
+- As of 2026-04-08 (latest): the local Git credential can dry-run push a new branch to both `origin` (`tulparfynh/kermit-floor-staging`) and `fork` (`kermit-floor/kermit-floor-staging`); PR creation from this environment should be possible directly against `origin` without requiring a cross-fork workflow.
 - Product scope: SPC flooring, wall panels, and skirting boards.
 - Seed blog posts are placeholders and expected to be replaced by editorial content later.
 - A route can fail on Workers runtime while unrelated routes stay healthy; this often points to feature-specific runtime dependencies.
@@ -194,6 +219,13 @@
 - As of 2026-03-12 (latest): `19022-5`, `29036-5`, and `29100-5` were re-added to `full-natural-collection/products.json` and their Full Natural folders were restored; `0603031` hardcoded references were removed; wall-panel `details.json` mismatches for `23048-2` and `29150-4` were fixed; and `details.json` files were generated for all 64 skirting product folders.
 - Audit snapshot (2026-03-12, later): EN/TR key parity and manifest-folder parity are clean across Full Natural, Stone, Wall Panels, 3D Model A/B, and all 8 skirting models; `spc-parquet-natural-collection/29198-4` remains as an orphan folder not listed in `products.json` and not translated.
 - As of 2026-03-12 (latest): orphan natural folder `29198-4` was reconciled by adding it to `spc-parquet-natural-collection/products.json` and adding EN/TR keys under `SpcParquetNaturalCollectionPanelNames`.
+- As of 2026-04-06 (latest): the Natural collection code was corrected back to `29148-4`; `Natural Beige Oak` stayed unchanged, `products.json` now lists `29148-4`, and the asset folder path is `public/images/spc-parquet-natural-collection/29148-4`.
+- As of 2026-04-06 (latest): PR `#4` for the Natural code correction was merged into `main` by `tulparfynh`, and issue `#3` was closed.
+- As of 2026-04-08 (local, uncommitted): `full-natural-collection` was migrated from supplier codes to the workbook-provided Kermit codes; manifest, EN/TR keys, folders, and `details.json` names all match the workbook.
+- As of 2026-04-08 (local, uncommitted): `spc-parquet-stone-collection` was migrated from supplier codes to the workbook-provided Kermit codes; manifest, EN/TR keys, folders, `details.json` names, and Stone image references in source content all match the workbook.
+- As of 2026-04-08 (local, uncommitted): `spc-wall-panels` was migrated from supplier codes to the workbook-provided Kermit codes; `PanelNames`, folders, `details.json`, wall-panel image references, and the bathroom-renovation blog’s raw code examples all match the workbook.
+- As of 2026-04-08 (local, uncommitted): `spc-3d-panels-model-a` was migrated from supplier codes to the workbook-provided Kermit codes; manifest, `3DModelAPanelNames`, folders, `details.json` names, and the showcase image references all match the workbook.
+- As of 2026-04-08 (local, uncommitted): `spc-3d-panels-model-b` was migrated from supplier codes to the workbook-provided Kermit codes; manifest, `3DModelBPanelNames`, folders, `details.json` names, and the showcase image references all match the workbook.
 - As of 2026-03-12 (latest): generated six Desktop CSV exports (`natural`, `stone`, `full-natural`, `spc-wall-panels`, `3d model a`, `3d model b`) with absolute `https://kermitfloor.com/images/...` links and manifest-order product rows.
 - As of 2026-03-12 (latest): ownership cleanup set `19022-5` to Full Natural only, and `29036-5` + `29100-5` to Natural only; non-owner folders, manifest entries, and namespace keys were removed; `full-collection-19022-5` legacy redirect now points to `/full-natural-collection`.
 - As of 2026-03-13 (latest): `29148-4` was fully removed from the Natural collection (`products.json`, EN/TR natural keys, asset folder, and legacy redirect rows) with no fallback redirect added.
