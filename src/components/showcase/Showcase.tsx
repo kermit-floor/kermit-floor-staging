@@ -48,19 +48,19 @@ function WallCollectionNav() {
     { 
       name: t('spcWallPanelsTitle'), 
       href: '/spc-wall-panels', 
-      imageUrl: '/images/spc-wall-panels/23048-6/application.jpg',
+      imageUrl: '/images/spc-wall-panels/613/application.jpg',
       imageHint: 'travertine texture'
     },
     { 
       name: t('spc3dWallPanelsModelATitle'), 
       href: '/spc-3d-wall-panels-model-a', 
-      imageUrl: '/images/spc-3d-panels-model-a/3D-29115-18/application.jpg',
+      imageUrl: '/images/spc-3d-panels-model-a/3D-205/application.jpg',
       imageHint: 'geometric 3d texture'
     },
     { 
       name: t('spc3dWallPanelsModelBTitle'), 
       href: '/spc-3d-wall-panels-model-b', 
-      imageUrl: '/images/spc-3d-panels-model-b/3D-23138-2/application.jpg',
+      imageUrl: '/images/spc-3d-panels-model-b/3D-617/application.jpg',
       imageHint: 'wavy 3d texture'
     },
   ];
@@ -122,19 +122,19 @@ function FlooringCollectionNav() {
     { 
       name: t('spcParquetNaturalCollectionTitle'), 
       href: '/spc-parquet-natural-collection', 
-      imageUrl: '/images/spc-parquet-natural-collection/29098-2/product.jpg',
+      imageUrl: '/images/spc-parquet-natural-collection/215/product.jpg',
       imageHint: 'natural oak flooring'
     },
     { 
       name: t('spcParquetStoneCollectionTitle'), 
       href: '/spc-parquet-stone-collection', 
-      imageUrl: '/images/spc-parquet-stone-collection/23054-2/product.jpg',
+      imageUrl: '/images/spc-parquet-stone-collection/604/product.jpg',
       imageHint: 'stone look flooring'
     },
     { 
       name: t('fullNaturalCollectionTitle'), 
       href: '/full-natural-collection', 
-      imageUrl: '/images/full-natural-collection/29074-1/product.jpg',
+      imageUrl: '/images/full-natural-collection/742/product.jpg',
       imageHint: 'wide plank flooring'
     },
   ];
