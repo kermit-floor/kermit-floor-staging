@@ -95,6 +95,10 @@ function parseIsoDate(value, field, filePath) {
   return date;
 }
 
+function normalizeLineEndings(value) {
+  return value.replace(/\r\n?/g, '\n');
+}
+
 function normalizeTag(value, locale = 'en') {
   const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
   return value
@@ -144,7 +148,7 @@ async function parseTopicLocaleFile(topicId, locale) {
     throw new Error(`Invalid tags in ${filePath}. Provide at least one valid tag.`);
   }
 
-  const content = parsed.content.trim();
+  const content = normalizeLineEndings(parsed.content).trim();
   const contentHtml = markdown.render(content);
 
   return {
