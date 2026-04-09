@@ -136,15 +136,18 @@
 - For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
 - For repo verification requests like collection/product presence checks, prefers confirmation-only responses with no project/data changes.
 - If a product-code correction is provided, keep the product name translation text unchanged unless the user explicitly says the wording is wrong.
+- For repeated-code audits that include 3D wall panels, treat `3D-###` and `###` as the same base product code when the user asks for normalized duplicates.
 
 
 ## Patterns That Work
 - For Cloudflare Workers Builds on this repo, use the OpenNext-specific two-step commands (`npm run cf:build` then `npm run cf:deploy`); `next build` alone does not create `.open-next/worker.js`, so a plain `wrangler deploy` will fail with "entry-point file ... .open-next/worker.js was not found".
+- For duplicate-code audits across collection manifests, check both exact codes and a normalized variant that strips the `3D-` prefix; the user may mean either distinct `3D-###` SKUs or shared base numeric codes.
 - For public GitHub Actions pages that hide raw logs, combine the visible annotation text with the repo workflow file and local generated-artifact inspection; if a generated JSON embeds markdown/content strings, check for literal `\r\n` sequences because Windows-generated content can fail Linux `git diff --exit-code` guardrails.
 - Wall panel name changes are sourced from `messages/{en,tr}.json` under `PanelNames`; `public/images/spc-wall-panels/*/details.json` can remain code-based.
 - Desktop export CSVs may contain hundreds of trailing blank rows; filter to populated rows before doing parity audits against collection manifests.
 - For user-provided `.xlsx` product lists, compare the product-code column against the image URL path segment; Excel can silently auto-convert code-like IDs such as `2002-3` into numeric serials.
 - Direct `.xlsx` ZIP/XML parsing works well in this environment for quick workbook audits when `openpyxl` is unavailable.
+- For `.xlsx` exports in this workspace, Python's standard-library `zipfile` + SpreadsheetML XML is a reliable fallback when no spreadsheet package is installed.
 - For collection-wide product-code migrations here, update the collection `products.json`, the matching EN/TR translation namespace keys, asset folder names, each folder’s `details.json` `name`, and every hardcoded image path that points into that collection.
 - For large workbook-driven code swaps, derive the old->new mapping from the workbook directly instead of hand-transcribing hundreds of code pairs.
 - For wall-panel code migrations, also scan blog MDX for user-facing raw code mentions in article text; some posts list matching color examples with backticked codes that must be updated alongside image paths.

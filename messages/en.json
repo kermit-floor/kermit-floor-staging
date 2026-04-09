@@ -311,19 +311,19 @@
     "3D-801": "Ash Grey",
     "3D-802": "Fumed Oak",
     "3D-803": "Charcoal Oak",
-    "3D-205": "Natural Oak",
+    "3D-205": "Buttermilk Oak",
     "3D-804": "Light Grey Oak",
     "3D-805": "Smoked Oak",
-    "3D-742": "Greige Oak Duo"
+    "3D-742": "Glacier Oak"
   },
   "3DModelBPanelNames": {
-    "3D-617": "Bianco Carrara",
-    "3D-618": "Marble White Grey Vein",
-    "3D-605": "Pietra Grey",
-    "3D-610": "Nero Marquina",
-    "3D-608": "Urban Concrete",
-    "3D-607": "Travertine Beige",
-    "3D-612": "Calacatta White"
+    "3D-617": "Bianco Lasa",
+    "3D-618": "Carrara White",
+    "3D-605": "Bardiglio Grey",
+    "3D-610": "Marble Black",
+    "3D-608": "Travertine Grey",
+    "3D-607": "Travertine White Vein",
+    "3D-612": "Calacatta Gold"
   },
   "SpcParquetNaturalCollectionPanelNames": {
     "206": "Ivory Mist Oak",
