@@ -3,6 +3,7 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-13 | self | `git push -u origin <branch>` timed out locally after ~124s even though the remote ref was created successfully | After a push timeout here, verify with `git ls-remote --heads origin <branch>` and `git status -sb` before retrying a large push |
 | 2026-04-13 | self | Extracted `Logo` as a shared component but left `MobileMenu` wrapping it in another `Link`, which created nested `<a>` tags and a hydration error | When a shared component already renders navigation, pass click handlers through it or wrap it in a neutral container instead of another `Link` |
 | 2026-04-12 | self | Passed a backup path with spaces through `npm.cmd run <script> -- <path>` and the argument was split unexpectedly by the Windows/npm layer | Quote path args carefully when going through `npm.cmd`, or call `node <script> "<full path>"` directly for verification scripts that take filesystem paths |
 | 2026-04-12 | self | Put `-LiteralPath` after the file path in `Get-Content`, which PowerShell treated as a missing argument instead of a switch | In this environment, call `Get-Content -LiteralPath '<path>'` with the switch before the value |
