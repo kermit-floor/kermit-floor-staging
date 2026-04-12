@@ -3,6 +3,7 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-13 | self | Reported PR `#7` as if it still represented the current pending state, even though the user had already merged it and later branch-only commits were no longer part of that PR | Re-check live PR state and compare `HEAD` vs `origin/main` immediately before describing what a merged PR contains |
 | 2026-04-13 | self | Wrote a malformed `apply_patch` hunk while adding a new markdown doc and ended up with an empty file on disk | After creating a new file with `apply_patch`, immediately read it back and keep file-creation hunks minimal and single-purpose |
 | 2026-04-13 | self | `git push -u origin <branch>` timed out locally after ~124s even though the remote ref was created successfully | After a push timeout here, verify with `git ls-remote --heads origin <branch>` and `git status -sb` before retrying a large push |
 | 2026-04-13 | self | Tried to submit a formal GitHub approval on a PR created by the same connected account and the API rejected it (`Review Can not approve your own pull request`) | When the connected account owns the PR, record the review verdict with a `COMMENT` review instead of an `APPROVE` action |
