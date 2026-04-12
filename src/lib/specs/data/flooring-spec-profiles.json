@@ -1,0 +1,24 @@
+{
+  "floor-natural": [
+    { "labelKey": "specThickness", "value": "5 mm / 7 mm" },
+    { "labelKey": "specWearLayer", "value": "0,30 mm / 0,55 mm" },
+    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specDimensions", "value": ["181,1 X 1219,2 mm", "228,6 X 1219,2 mm", "228,6 X 1493 mm"] },
+    { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeValue" } },
+    { "labelKey": "specLockingSystem", "value": "UniClic / I4F" },
+    { "labelKey": "specUtilityClass", "value": "23 / 33" },
+    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "floor-stone": [
+    { "labelKey": "specThickness", "value": "5 mm / 7 mm" },
+    { "labelKey": "specWearLayer", "value": "0,30 mm / 0,55 mm" },
+    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specDimensions", "value": "305 X 915 mm" },
+    { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeValue" } },
+    { "labelKey": "specLockingSystem", "value": "I4F" },
+    { "labelKey": "specUtilityClass", "value": "23 / 33" },
+    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ]
+}

@@ -73,7 +73,7 @@ export default async function AboutPage({
   ];
   
   const whatWeMakeItems = [
-      { title: t('whatWeMake.flooring.title'), text: t('whatWeMake.flooring.text'), image: '/images/spc-parquet-natural-collection/215/application.jpg', imageHint: 'elegant room flooring' },
+      { title: t('whatWeMake.flooring.title'), text: t('whatWeMake.flooring.text'), image: '/images/spc-parquet-natural-collection/N-215/application.jpg', imageHint: 'elegant room flooring' },
       { title: t('whatWeMake.skirting.title'), text: t('whatWeMake.skirting.text'), image: '/images/skirting-boards/elite-100-mm-skirting-board/E1004031/application.jpg', imageHint: 'decorative skirting' },
       { title: t('whatWeMake.wallPanels.title'), text: t('whatWeMake.wallPanels.text'), image: '/images/spc-wall-panels/613/application.jpg', imageHint: 'modern kitchen panels' },
   ]

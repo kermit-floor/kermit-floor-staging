@@ -3,6 +3,9 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-13 | self | Extracted `Logo` as a shared component but left `MobileMenu` wrapping it in another `Link`, which created nested `<a>` tags and a hydration error | When a shared component already renders navigation, pass click handlers through it or wrap it in a neutral container instead of another `Link` |
+| 2026-04-12 | self | Passed a backup path with spaces through `npm.cmd run <script> -- <path>` and the argument was split unexpectedly by the Windows/npm layer | Quote path args carefully when going through `npm.cmd`, or call `node <script> "<full path>"` directly for verification scripts that take filesystem paths |
+| 2026-04-12 | self | Put `-LiteralPath` after the file path in `Get-Content`, which PowerShell treated as a missing argument instead of a switch | In this environment, call `Get-Content -LiteralPath '<path>'` with the switch before the value |
 | 2026-04-08 | self | Piped a rename script into nested `powershell -Command -`; it exited `0` but did not actually rename the target folders in this environment | For bulk folder renames here, run the PowerShell `Move-Item` loop directly in the `shell_command` instead of nesting another PowerShell process |
 | 2026-03-16 | self | Used `??` in a PowerShell inline parser script and hit a parser error in this environment | Use explicit `if`/`elseif` null checks in PowerShell scripts here instead of relying on `??` |
 | 2026-04-06 | self | Used Git upstream shorthand `@{u}` directly in PowerShell and hit parsing/ambiguity issues while checking tracking info | In PowerShell, prefer `git for-each-ref --format='%(upstream:short)' <ref>` or single-quote reflog/upstream shorthand carefully |
@@ -12,7 +15,8 @@
 | 2026-04-06 | self | Needed to confirm whether GitHub authority changed after the PR merge | Re-check both the repo permissions API and a `git push --dry-run` to verify actual upstream write access |
 | 2026-04-08 | self | Started an `.xlsx` audit assuming `openpyxl` would be available, but the module is not installed in this workspace | For local Excel verification here, prefer direct `.xlsx` ZIP/XML parsing in Python unless a spreadsheet library is already confirmed present |
 | 2026-04-08 | self | Tried to create a GitHub issue directly from this workspace, but `gh` is not installed, `GITHUB_TOKEN` is absent, and the available GitHub connector lacks issue creation | Draft the issue text locally and report the creation blocker clearly before continuing with repo changes |
-| 2026-04-08 | self | Kept relying on the earlier assumption that upstream GitHub access here was pull-only | Re-check current Git push capability with `git push --dry-run`; as of 2026-04-08 this environment can dry-run push new branches to both `origin` (`tulparfynh/kermit-floor-staging`) and `fork` (`kermit-floor/kermit-floor-staging`) |
+| 2026-04-08 | self | Kept relying on the earlier assumption that upstream GitHub access here was pull-only | Re-check current Git push capability with `git push --dry-run`; verify the current canonical `origin` instead of relying on older remote-ownership assumptions |
+| 2026-04-09 | user | The GitHub repo was moved from `tulparfynh/kermit-floor-staging` to `kermit-floor/kermit-floor-staging`, but the local remote setup still treated `tulparfynh` as canonical | Update `origin` to `https://github.com/kermit-floor/kermit-floor-staging.git`, remove redundant duplicate remotes, and treat `kermit-floor/kermit-floor-staging` as the canonical upstream going forward |
 | 2026-04-08 | self | Tried using Node with `jszip` for a bulk `.xlsx`-driven migration, but `jszip` is not installed in this workspace | Reuse the Python standard-library ZIP/XML parser for workbook-driven bulk code migrations here instead of assuming extra Node packages |
 | 2026-04-09 | self | Ran two mutating Git commands (`stash` and `add`) in parallel and hit a transient `.git/index.lock` collision | Keep Git write operations strictly serial in this repo; parallelize only read-only Git queries |
 | 2026-04-09 | self | Used unquoted `stash@{0}` in PowerShell and it was parsed as a script block instead of a Git revision | In PowerShell, always single-quote stash refs and reflog syntax like `'stash@{0}'` |
@@ -74,6 +78,9 @@
 | 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
 
 ## User Preferences
+- For code-structure questions, prefers the answer framed in code terms (routes, manifests, translation namespaces, shared mapping logic) rather than visual/UI grouping.
+- When evaluating architecture choices, prefers the recommendation optimized for future-proofing, scalability, and mistake reduction rather than the smallest immediate patch.
+- For flooring product-code prefix changes, touch only the exact collections the user names; do not assume every flooring collection is in scope.
 - When asking Git workflow questions, prefers concise explanation of what is safe to delete and what action is actually needed.
 - Keep a single favicon source (`/images/icons/favicon.32x32.png`) and route fallback `/favicon.ico` to it; avoid separate artifact favicon files.
 - When auditing or correcting collection names against a user-provided CSV, treat the CSV as the source of truth if the user says so and sync both locale files to it.
@@ -140,6 +147,9 @@
 
 
 ## Patterns That Work
+- For "how are products grouped?" questions in this repo, inspect `public/images/*/products.json`, the matching `src/lib/*-data.ts` loaders, `src/app/[locale]/*/page.tsx`, and the `collectionType`/translation switch in `src/components/showcase/Showcase.tsx`; grouping is defined across those layers, not in a single registry.
+- For skirting naming audits, distinguish collection-model labels from per-SKU labels: `SkirtingCollectionNames` names the 8 skirting model families, while `SkirtingPanelNames` feeds `tPanelNames` for the individual SKU cards/details.
+- For flooring code-prefix migrations, use each target collection's `products.json` as the source of truth, then rename folders and rewrite the matching locale namespace keys plus collection-scoped image-path references from that manifest.
 - For Cloudflare Workers Builds on this repo, use the OpenNext-specific two-step commands (`npm run cf:build` then `npm run cf:deploy`); `next build` alone does not create `.open-next/worker.js`, so a plain `wrangler deploy` will fail with "entry-point file ... .open-next/worker.js was not found".
 - For duplicate-code audits across collection manifests, check both exact codes and a normalized variant that strips the `3D-` prefix; the user may mean either distinct `3D-###` SKUs or shared base numeric codes.
 - For public GitHub Actions pages that hide raw logs, combine the visible annotation text with the repo workflow file and local generated-artifact inspection; if a generated JSON embeds markdown/content strings, check for literal `\r\n` sequences because Windows-generated content can fail Linux `git diff --exit-code` guardrails.
@@ -184,6 +194,7 @@
 - For skirting application-image swaps, match by filename code token and replace each target folder image as `application.jpg`, then report missing codes.
 - When moving a flooring code between collections, update both collection `products.json` manifests and matching entries in `src/redirects/legacyRedirects.ts`.
 - In this environment, if direct `Remove-Item` is blocked, use `git rm -r` to remove tracked asset folders cleanly.
+- For client components like the showcase header, avoid `next/dynamic(..., { ssr: false })` as a workaround for import cycles; extract shared client helpers into a separate module and use normal imports to prevent `BAILOUT_TO_CLIENT_SIDE_RENDERING` in dev HTML.
 
 ## Patterns That Don't Work
 - Guessing environment behavior without verifying local config/scripts.
@@ -191,13 +202,16 @@
 - Assuming mojibake in PowerShell output means file data is corrupted; this environment can misrender UTF-8 in command output.
 
 ## Domain Notes
+- As of 2026-04-12, `SkirtingPanelNames` is effectively an identity map in both locales (displaying raw SKU codes), with one English typo: key `1113031` maps to value `1101331`; `SkirtingCollectionNames` contains the short labels for the 8 skirting model families.
+- As of 2026-04-12, product-page spec values (thickness, depth, dimensions, etc.) are not loaded from `details.json`; the app chooses them in `src/components/showcase/ProductDetails.tsx` based on `collectionType`, while panel loaders only supply image URLs and `nameKey`.
+- As of 2026-04-12 (latest): `spc-parquet-stone-collection`, `spc-parquet-natural-collection`, and `full-natural-collection` use `N-`-prefixed product codes in manifests, locale namespaces, asset folders, and collection-scoped image references.
 - Product code `29098-2` is reused across namespaces: wall panels use `PanelNames.29098-2`, while another collection already has a separate `29098-2` label; verify namespace before renaming shared codes.
 - `FullNaturalCollectionPanelNames` in both locales is currently code-based for the whole collection (values mirror product codes), so CSV audits against human-readable Full Natural names will report broad translation mismatches.
 - As of 2026-03-16, `FullNaturalCollectionPanelNames` in both locales was synced to the human-readable names from `C:\Users\hp\Documents\fullnatural111.csv`.
 - Installation resource entry `flooring-install-click` currently points to missing `/public/downloads/spc-...uniclic.pdf` files in this snapshot; `public/downloads/installation-guides` currently contains only skirting EN/TR manuals.
 - Deploy target is Cloudflare Workers using OpenNext.
-- The GitHub credential available in this workspace currently has `pull` access only on `tulparfynh/kermit-floor-staging`; it can create issues and cross-fork PRs, but cannot push to or merge the upstream repo directly.
-- As of 2026-04-08 (latest): the local Git credential can dry-run push a new branch to both `origin` (`tulparfynh/kermit-floor-staging`) and `fork` (`kermit-floor/kermit-floor-staging`); PR creation from this environment should be possible directly against `origin` without requiring a cross-fork workflow.
+- As of 2026-04-09 (latest): the canonical GitHub repo is `kermit-floor/kermit-floor-staging`; local `origin` should point there, and the redundant `fork` remote is no longer needed in this checkout.
+- As of 2026-04-09 (latest): pushes from this workspace to `origin` succeeded against `kermit-floor/kermit-floor-staging`.
 - Product scope: SPC flooring, wall panels, and skirting boards.
 - Seed blog posts are placeholders and expected to be replaced by editorial content later.
 - A route can fail on Workers runtime while unrelated routes stay healthy; this often points to feature-specific runtime dependencies.
@@ -223,7 +237,7 @@
 - Audit snapshot (2026-03-12, later): EN/TR key parity and manifest-folder parity are clean across Full Natural, Stone, Wall Panels, 3D Model A/B, and all 8 skirting models; `spc-parquet-natural-collection/29198-4` remains as an orphan folder not listed in `products.json` and not translated.
 - As of 2026-03-12 (latest): orphan natural folder `29198-4` was reconciled by adding it to `spc-parquet-natural-collection/products.json` and adding EN/TR keys under `SpcParquetNaturalCollectionPanelNames`.
 - As of 2026-04-06 (latest): the Natural collection code was corrected back to `29148-4`; `Natural Beige Oak` stayed unchanged, `products.json` now lists `29148-4`, and the asset folder path is `public/images/spc-parquet-natural-collection/29148-4`.
-- As of 2026-04-06 (latest): PR `#4` for the Natural code correction was merged into `main` by `tulparfynh`, and issue `#3` was closed.
+- As of 2026-04-06 (latest): PR `#4` for the Natural code correction was merged into `main`, and issue `#3` was closed.
 - As of 2026-04-08 (local, uncommitted): `full-natural-collection` was migrated from supplier codes to the workbook-provided Kermit codes; manifest, EN/TR keys, folders, and `details.json` names all match the workbook.
 - As of 2026-04-08 (local, uncommitted): `spc-parquet-stone-collection` was migrated from supplier codes to the workbook-provided Kermit codes; manifest, EN/TR keys, folders, `details.json` names, and Stone image references in source content all match the workbook.
 - As of 2026-04-08 (local, uncommitted): `spc-wall-panels` was migrated from supplier codes to the workbook-provided Kermit codes; `PanelNames`, folders, `details.json`, wall-panel image references, and the bathroom-renovation blog’s raw code examples all match the workbook.

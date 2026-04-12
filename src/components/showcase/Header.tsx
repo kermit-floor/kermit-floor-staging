@@ -1,112 +1,14 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import { useTranslations, useLocale } from 'next-intl';
-import { Link, usePathname } from '@/navigation';
-import * as React from 'react';
-
-// Dynamically import components that cause hydration issues
-const LanguageSwitcher = dynamic(() => import('./LanguageSwitcher').then(mod => mod.LanguageSwitcher), { ssr: false });
-const MobileMenu = dynamic(() => import('./MobileMenu').then(mod => mod.MobileMenu), { ssr: false });
-
-
-export function Logo() {
-  const locale = useLocale();
-  return (
-    <Link href="/">
-      <Image
-        src="/images/kermit-floor-logo.png"
-        alt="Kermit Floor Logo"
-        width={140}
-        height={48}
-        className="object-contain"
-      />
-    </Link>
-  );
-}
-
-export function NavMenu({ isMobile = false }) {
-  const pathname = usePathname();
-  const pathnameValue = typeof pathname === 'string' ? pathname : '';
-  const t = useTranslations('Header');
-  
-  const getResourcesLink = (): Parameters<typeof Link>[0]['href'] => {
-    if (pathnameValue.includes('/spc-skirting-boards')) {
-      return { pathname: '/resources', query: { tab: 'skirting' } };
-    }
-    if (pathnameValue.includes('/spc-parquet') || pathnameValue.includes('/full-natural-collection')) {
-      return { pathname: '/resources', query: { tab: 'flooring' } };
-    }
-    if (pathnameValue.includes('/spc-wall-panels') || pathnameValue.includes('/spc-3d-wall-panels')) {
-      return { pathname: '/resources', query: { tab: 'wall_panels' } };
-    }
-    return '/resources';
-  };
-  
-  const navLinks: { href: Parameters<typeof Link>[0]['href']; label: string }[] = [
-    { href: '/', label: t('navHome') },
-    { href: '/spc-parquet-natural-collection', label: t('navFloors') },
-    { href: '/spc-wall-panels', label: t('navWalls') },
-    { href: '/spc-skirting-boards/optima-90-mm-skirting-board', label: t('navSkirtings') },
-    { href: getResourcesLink(), label: t('navDownload') },
-    { href: '/about', label: t('navAbout') },
-    { href: '/contact', label: t('navContact') },
-  ];
-
-  return (
-    <nav
-      className={cn(
-        'flex items-center gap-2 md:gap-4 lg:gap-6',
-        isMobile ? 'flex-col items-start space-y-4 p-6' : 'hidden md:flex'
-      )}
-    >
-      {navLinks.map((link) => {
-        let isActive = false;
-        const hrefPath =
-          typeof link.href === 'string'
-            ? link.href
-            : typeof link.href === 'object' && link.href !== null && 'pathname' in link.href
-              ? String(link.href.pathname ?? '')
-              : '';
-        if (hrefPath === '/') {
-            isActive = pathnameValue === '/';
-        } else if (hrefPath.includes('spc-skirting-boards')) {
-            isActive = pathnameValue.startsWith('/spc-skirting-boards');
-        } else if (hrefPath.includes('spc-parquet-natural-collection')) {
-            isActive = pathnameValue.startsWith('/spc-parquet-') || pathnameValue.startsWith('/full-natural-collection');
-        } else if (hrefPath.includes('spc-wall-panels')) {
-            isActive = pathnameValue.startsWith('/spc-wall-panels') || pathnameValue.startsWith('/spc-3d-wall-panels');
-        } else if (hrefPath.startsWith('/resources')) {
-            isActive = pathnameValue.startsWith('/resources');
-        } else {
-            isActive = pathnameValue.startsWith(hrefPath);
-        }
-        
-        return (
-          <Link
-            key={link.label}
-            href={link.href}
-            className={cn(
-              'relative font-semibold tracking-wider transition-colors hover:text-primary whitespace-nowrap text-sm md:text-base lg:text-lg',
-              'after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-primary after:origin-center after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100',
-              isActive
-                ? 'text-primary after:scale-x-100'
-                : 'text-foreground/70',
-              isMobile && 'text-2xl after:bottom-[-2px]'
-            )}
-          >
-            {link.label}
-          </Link>
-        );
-      })}
-    </nav>
-  );
-}
+import { useTranslations } from 'next-intl';
+import type { CollectionKey } from '@/lib/product-collections';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { MobileMenu } from './MobileMenu';
+import { Logo, NavMenu } from './HeaderShared';
 
 type HeaderProps = {
-  pageType?: 'spc-wall-panels' | 'spc-3d-wall-panels-model-a' | 'spc-3d-wall-panels-model-b' | 'spc-parquet-natural-collection' | 'spc-parquet-stone-collection' | 'full-natural-collection' | 'skirting-alpha-140-mm' | 'skirting-berlin-100-mm' | 'skirting-elite-100-mm' | 'skirting-moderna-100-mm' | 'skirting-optima-60-mm' | 'skirting-optima-90-mm' | 'skirting-solid-80-mm' | 'skirting-x-line-100-mm';
+  pageType?: CollectionKey;
   languageSwitcherHrefs?: Partial<Record<'en' | 'tr', string>>;
 }
 
@@ -131,15 +33,15 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
     heroImageHint = 'modern kitchen with marble panels';
   } else if (pageType === 'spc-parquet-natural-collection') {
     pageTitle = t('heroTitleSpcParquetNaturalCollection');
-    heroImage = '/images/spc-parquet-natural-collection/215/application.jpg';
+    heroImage = '/images/spc-parquet-natural-collection/N-215/application.jpg';
     heroImageHint = 'modern living room with natural oak flooring';
   } else if (pageType === 'spc-parquet-stone-collection') {
     pageTitle = t('heroTitleSpcParquetStoneCollection');
-    heroImage = '/images/spc-parquet-stone-collection/604/application.jpg';
+    heroImage = '/images/spc-parquet-stone-collection/N-604/application.jpg';
     heroImageHint = 'stylish interior with stone look flooring';
   } else if (pageType === 'full-natural-collection') {
     pageTitle = t('heroTitleFullNaturalCollection');
-    heroImage = '/images/full-natural-collection/742/application.jpg';
+    heroImage = '/images/full-natural-collection/N-742/application.jpg';
     heroImageHint = 'elegant room with wide plank natural flooring';
   } else if (pageType === 'skirting-alpha-140-mm') {
     pageTitle = t('heroTitleSkirtingAlpha140mm');

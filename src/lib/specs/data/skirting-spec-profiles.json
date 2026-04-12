@@ -1,0 +1,50 @@
+{
+  "skirting-alpha-140-mm": [
+    { "labelKey": "specHeight", "value": "140 mm" },
+    { "labelKey": "specDepth", "value": "18 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-berlin-100-mm": [
+    { "labelKey": "specHeight", "value": "100 mm" },
+    { "labelKey": "specDepth", "value": "22 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-elite-100-mm": [
+    { "labelKey": "specHeight", "value": "100 mm" },
+    { "labelKey": "specDepth", "value": "20 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-moderna-100-mm": [
+    { "labelKey": "specHeight", "value": "100 mm" },
+    { "labelKey": "specDepth", "value": "22 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-optima-60-mm": [
+    { "labelKey": "specHeight", "value": "60 mm" },
+    { "labelKey": "specDepth", "value": "14 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-optima-90-mm": [
+    { "labelKey": "specHeight", "value": "90 mm" },
+    { "labelKey": "specDepth", "value": "18 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-solid-80-mm": [
+    { "labelKey": "specHeight", "value": "80 mm" },
+    { "labelKey": "specDepth", "value": "22 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "skirting-x-line-100-mm": [
+    { "labelKey": "specHeight", "value": "100 mm" },
+    { "labelKey": "specDepth", "value": "20 mm" },
+    { "labelKey": "specLength", "value": "2400 mm" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ]
+}

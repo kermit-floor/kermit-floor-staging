@@ -18,6 +18,9 @@
     "text:validate": "node scripts/validate-text-integrity.mjs",
     "blog:validate": "node scripts/validate-blog-content.mjs",
     "blog:build-manifest": "node scripts/generate-blog-manifest.mjs",
+    "refactor:product-spec:capture": "node tools/refactor/product-spec-registry/capture-showcase-baseline.mjs",
+    "refactor:product-spec:compare": "node tools/refactor/product-spec-registry/compare-showcase-baseline.mjs",
+    "refactor:product-spec:validate-registry": "node tools/refactor/product-spec-registry/validate-registry.mjs",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
