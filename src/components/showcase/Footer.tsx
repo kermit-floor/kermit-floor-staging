@@ -1,6 +1,6 @@
 'use client';
 
-import { Logo } from './Header';
+import { Logo } from './HeaderShared';
 import { Separator } from '@/components/ui/separator';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from '@/navigation';

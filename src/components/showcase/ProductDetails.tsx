@@ -2,10 +2,9 @@
 'use client';
 
 import Image from 'next/image';
-import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import type { Panel } from '@/lib/panel-types';
-import { Droplets, ShieldCheck, Zap, Hammer, Volume2, Leaf, ZoomIn, X, ChevronLeft, ChevronRight, Ruler, Square, Building, Layers, Waves, Slice, Cable } from 'lucide-react';
+import { Droplets, ShieldCheck, Zap, Hammer, Volume2, Leaf, ZoomIn, X, ChevronLeft, ChevronRight, Waves, Slice, Cable } from 'lucide-react';
 import {
     Dialog,
     DialogContent,
@@ -21,71 +20,19 @@ import {
   CarouselItem,
   type CarouselApi,
 } from '@/components/ui/carousel';
-import { useTranslations } from 'next-intl';
+import type { CollectionFamily } from '@/lib/product-collections';
+import type { ResolvedCollectionSpecs, ResolvedSpecRow } from '@/lib/specs/types';
 
 type ProductDetailsProps = {
   panel: Panel;
   panels: Panel[];
   onPanelSelect: (panel: Panel) => void;
-  collectionType: 'spc-wall-panels' | 'spc-3d-wall-panels-model-a' | 'spc-3d-wall-panels-model-b' | 'spc-parquet-natural-collection' | 'spc-parquet-stone-collection' | 'full-natural-collection' | 'skirting-alpha-140-mm' | 'skirting-berlin-100-mm' | 'skirting-elite-100-mm' | 'skirting-moderna-100-mm' | 'skirting-optima-60-mm' | 'skirting-optima-90-mm' | 'skirting-solid-80-mm' | 'skirting-x-line-100-mm';
+  family: CollectionFamily;
   tPanelNames: (key: string) => string;
+  specs: ResolvedSpecRow[];
+  featureLabels: string[];
+  specialFlags: ResolvedCollectionSpecs['specialFlags'];
 };
-
-type CollectionType = ProductDetailsProps['collectionType'];
-type SkirtingCollectionType = Extract<CollectionType, `skirting-${string}`>;
-
-type SkirtingSpecAttributes = {
-  height: string;
-  depth: string;
-  length: string;
-};
-
-const SKIRTING_SPEC_ATTRIBUTES_BY_COLLECTION: Record<SkirtingCollectionType, SkirtingSpecAttributes> = {
-  'skirting-alpha-140-mm': {
-    height: '140 mm',
-    depth: '18 mm',
-    length: '2400 mm',
-  },
-  'skirting-berlin-100-mm': {
-    height: '100 mm',
-    depth: '22 mm',
-    length: '2400 mm',
-  },
-  'skirting-elite-100-mm': {
-    height: '100 mm',
-    depth: '20 mm',
-    length: '2400 mm',
-  },
-  'skirting-moderna-100-mm': {
-    height: '100 mm',
-    depth: '22 mm',
-    length: '2400 mm',
-  },
-  'skirting-optima-60-mm': {
-    height: '60 mm',
-    depth: '14 mm',
-    length: '2400 mm',
-  },
-  'skirting-optima-90-mm': {
-    height: '90 mm',
-    depth: '18 mm',
-    length: '2400 mm',
-  },
-  'skirting-solid-80-mm': {
-    height: '80 mm',
-    depth: '22 mm',
-    length: '2400 mm',
-  },
-  'skirting-x-line-100-mm': {
-    height: '100 mm',
-    depth: '20 mm',
-    length: '2400 mm',
-  },
-};
-
-function isSkirtingCollectionType(value: CollectionType): value is SkirtingCollectionType {
-  return value.startsWith('skirting-');
-}
 
 function FeatureColumn({ features }: { features: {icon: React.ElementType, text: string}[] }) {
     return (
@@ -100,100 +47,26 @@ function FeatureColumn({ features }: { features: {icon: React.ElementType, text:
     )
 }
 
-export function ProductDetails({ panel, panels, onPanelSelect, collectionType, tPanelNames }: ProductDetailsProps) {
-  const t = useTranslations('ProductDetails');
-  
+export function ProductDetails({
+  panel,
+  panels,
+  onPanelSelect,
+  family,
+  tPanelNames,
+  specs,
+  featureLabels,
+  specialFlags,
+}: ProductDetailsProps) {
   const [api, setApi] = useState<CarouselApi>();
 
-  const isSkirting = isSkirtingCollectionType(collectionType);
-
-  let specs: { label: string; value: string | string[]; icon?: React.ElementType }[];
-  
-  const naturalFlooringSpecs = [
-    { label: t('specThickness'), value: '5 mm / 7 mm' },
-    { label: t('specWearLayer'), value: '0,30 mm / 0,55 mm' },
-    { label: t('specIxpeUnderlay'), value: '1 mm / 1,5 mm Included' },
-    { label: t('specDimensions'), value: ['181,1 X 1219,2 mm', '228,6 X 1219,2 mm', '228,6 X 1493 mm'] },
-    { label: t('specEdge'), value: t('specEdgeValue') },
-    { label: t('specLockingSystem'), value: 'UniClic / I4F' },
-    { label: t('specUtilityClass'), value: '23 / 33' },
-    { label: t('specUsageArea'), value: 'Interior' },
-    { label: t('specMaterial'), value: t('specMaterialValue') },
-  ];
-
-  const stoneFlooringSpecs = [
-    { label: t('specThickness'), value: '5 mm / 7 mm' },
-    { label: t('specWearLayer'), value: '0,30 mm / 0,55 mm' },
-    { label: t('specIxpeUnderlay'), value: '1 mm / 1,5 mm Included' },
-    { label: t('specDimensions'), value: '305 X 915 mm' },
-    { label: t('specEdge'), value: t('specEdgeValue') },
-    { label: t('specLockingSystem'), value: 'I4F' },
-    { label: t('specUtilityClass'), value: '23 / 33' },
-    { label: t('specUsageArea'), value: 'Interior' },
-    { label: t('specMaterial'), value: t('specMaterialValue') },
-  ];
-
-  if (collectionType === 'spc-3d-wall-panels-model-a') {
-      specs = [
-          { label: t('specThickness'), value: '24 mm' },
-          { label: t('specDimensions'), value: '160 X 2750 mm' },
-          { label: t('specUsageArea'), value: "Interior" },
-          { label: t('specMaterial'), value: t('specMaterialValue') },
-      ];
-  } else if (collectionType === 'spc-3d-wall-panels-model-b') {
-      specs = [
-          { label: t('specThickness'), value: '14 mm' },
-          { label: t('specDimensions'), value: '186 X 2750 mm' },
-          { label: t('specUsageArea'), value: "Interior" },
-          { label: t('specMaterial'), value: t('specMaterialValue') },
-      ];
-  } else if (collectionType === 'spc-parquet-stone-collection') {
-      specs = stoneFlooringSpecs;
-  } else if (['spc-parquet-natural-collection', 'full-natural-collection'].includes(collectionType)) {
-      specs = naturalFlooringSpecs;
-  } else if (isSkirting) {
-    const skirtingAttributes = SKIRTING_SPEC_ATTRIBUTES_BY_COLLECTION[collectionType];
-
-    specs = [
-        { label: t('specHeight'), value: skirtingAttributes.height },
-        { label: t('specDepth'), value: skirtingAttributes.depth },
-        { label: t('specLength'), value: skirtingAttributes.length },
-        { label: t('specMaterial'), value: t('specMaterialValue') },
-    ];
-  }
-  else {
-      specs = [
-          { label: t('specThickness'), value: '4 mm' },
-          { label: t('specWearLayer'), value: '0,30 mm' },
-          { label: t('specDimensions'), value: ['960mm X 2800mm', '960mm X 1400mm'] },
-          { label: t('specEdge'), value: t('specEdgeValue') },
-          { label: t('specInstallation'), value: t('specInstallationValue') },
-          { label: t('specUtilityClass'), value: '23 / 31' },
-          { label: t('specUsageArea'), value: t('specUsageAreaValue') },
-          { label: t('specMaterial'), value: t('specMaterialValue') },
-      ];
-  }
-
-
-  const allFeatures = [
-    { icon: Droplets, text: t('featureWaterProof') },
-    { icon: ShieldCheck, text: t('featureAntiBacterial') },
-    { icon: Zap, text: t('featureQuickInstallation') },
-    { icon: Hammer, text: t('featureImpactResistant') },
-    { icon: Volume2, text: t('featureSoundAbsorbtion') },
-    { icon: Leaf, text: t('featurePhthalateFree') },
-  ];
-
-  const skirtingFeatures = [
-    { icon: Droplets, text: t('featureWaterProof') },
-    { icon: Hammer, text: t('featureImpactResistant') },
-    { icon: Waves, text: t('featureFlexibleEdges') },
-    { icon: Zap, text: t('featureSmartInstallation') },
-    { icon: Slice, text: t('featureMattSurface') },
-    { icon: Cable, text: t('featureCableChannel') },
-  ];
-
-  const featuresToDisplay = isSkirting ? skirtingFeatures : allFeatures;
+  const isSkirting = family === 'skirting';
+  const featureIcons = isSkirting
+    ? [Droplets, Hammer, Waves, Zap, Slice, Cable]
+    : [Droplets, ShieldCheck, Zap, Hammer, Volume2, Leaf];
+  const featuresToDisplay = featureLabels.map((label, index) => ({
+    icon: featureIcons[index],
+    text: label,
+  }));
   const leftFeatures = featuresToDisplay.slice(0, 3);
   const rightFeatures = featuresToDisplay.slice(3);
 
@@ -325,10 +198,10 @@ export function ProductDetails({ panel, panels, onPanelSelect, collectionType, t
                   </ul>
               </div>
             </div>
-            {collectionType === 'skirting-optima-90-mm' && (
+            {specialFlags.embossedBadge && (
                 <div className="mt-6 border-t pt-4 flex justify-center items-center gap-3">
-                    <Image src="/images/icons/embossed-icon.jpg" alt={t('specEmbossed')} width={32} height={32} className="rounded" />
-                    <span className="font-semibold text-lg text-foreground">{t('specEmbossed')}</span>
+                    <Image src="/images/icons/embossed-icon.jpg" alt={specialFlags.embossedBadgeLabel ?? 'Embossed'} width={32} height={32} className="rounded" />
+                    <span className="font-semibold text-lg text-foreground">{specialFlags.embossedBadgeLabel ?? 'Embossed'}</span>
                 </div>
             )}
           </div>

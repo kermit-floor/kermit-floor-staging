@@ -4,8 +4,7 @@ import { useState } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
-import { Logo, NavMenu } from './Header';
-import { Link } from '@/navigation';
+import { Logo, NavMenu } from './HeaderShared';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Separator } from '../ui/separator';
 
@@ -28,13 +27,13 @@ export function MobileMenu({ languageSwitcherHrefs }: MobileMenuProps) {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-full max-w-sm p-0">
+        <SheetContent side="left" className="w-full max-w-sm p-0">
         <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
         <div className="flex flex-col h-full">
           <div className="p-6 border-b">
-            <Link href="/" onClick={() => setMenuOpen(false)}>
+            <div onClick={() => setMenuOpen(false)}>
               <Logo />
-            </Link>
+            </div>
           </div>
           <div className="p-6 flex-grow">
             <NavMenu isMobile />

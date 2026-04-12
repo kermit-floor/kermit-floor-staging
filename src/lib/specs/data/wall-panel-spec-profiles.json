@@ -1,0 +1,24 @@
+{
+  "wall-standard": [
+    { "labelKey": "specThickness", "value": "4 mm" },
+    { "labelKey": "specWearLayer", "value": "0,30 mm" },
+    { "labelKey": "specDimensions", "value": ["960mm X 2800mm", "960mm X 1400mm"] },
+    { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeValue" } },
+    { "labelKey": "specInstallation", "value": { "type": "translation", "key": "specInstallationValue" } },
+    { "labelKey": "specUtilityClass", "value": "23 / 31" },
+    { "labelKey": "specUsageArea", "value": { "type": "translation", "key": "specUsageAreaValue" } },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "wall-3d-model-a": [
+    { "labelKey": "specThickness", "value": "24 mm" },
+    { "labelKey": "specDimensions", "value": "160 X 2750 mm" },
+    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "wall-3d-model-b": [
+    { "labelKey": "specThickness", "value": "14 mm" },
+    { "labelKey": "specDimensions", "value": "186 X 2750 mm" },
+    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ]
+}

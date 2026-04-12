@@ -3,6 +3,7 @@
 
 import Image from 'next/image';
 import type { Panel } from '@/lib/panel-types';
+import type { CollectionKey } from '@/lib/product-collections';
 import {
   Carousel,
   CarouselContent,
@@ -19,7 +20,7 @@ type ColorPickerProps = {
   panels: Panel[];
   selectedPanel: Panel;
   onPanelSelect: (panel: Panel) => void;
-  collectionType: 'spc-wall-panels' | 'spc-3d-wall-panels-model-a' | 'spc-3d-wall-panels-model-b' | 'spc-parquet-natural-collection' | 'spc-parquet-stone-collection' | 'full-natural-collection' | 'skirting-alpha-140-mm' | 'skirting-berlin-100-mm' | 'skirting-elite-100-mm' | 'skirting-moderna-100-mm' | 'skirting-optima-60-mm' | 'skirting-optima-90-mm' | 'skirting-solid-80-mm' | 'skirting-x-line-100-mm';
+  collectionType: CollectionKey;
   tPanelNames: (key: string) => string;
 };
 

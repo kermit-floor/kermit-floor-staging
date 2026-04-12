@@ -22,6 +22,12 @@ import { Button } from '../ui/button';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/navigation';
 import { cn } from '@/lib/utils';
+import { getCollectionFamily, type CollectionKey } from '@/lib/product-collections';
+import {
+  getCollectionPanelNameNamespace,
+  resolveCollectionSpecs,
+  resolvePanelName,
+} from '@/lib/specs';
 
 
 type LinkHref = Parameters<typeof Link>[0]['href'];
@@ -122,19 +128,19 @@ function FlooringCollectionNav() {
     { 
       name: t('spcParquetNaturalCollectionTitle'), 
       href: '/spc-parquet-natural-collection', 
-      imageUrl: '/images/spc-parquet-natural-collection/215/product.jpg',
+      imageUrl: '/images/spc-parquet-natural-collection/N-215/product.jpg',
       imageHint: 'natural oak flooring'
     },
     { 
       name: t('spcParquetStoneCollectionTitle'), 
       href: '/spc-parquet-stone-collection', 
-      imageUrl: '/images/spc-parquet-stone-collection/604/product.jpg',
+      imageUrl: '/images/spc-parquet-stone-collection/N-604/product.jpg',
       imageHint: 'stone look flooring'
     },
     { 
       name: t('fullNaturalCollectionTitle'), 
       href: '/full-natural-collection', 
-      imageUrl: '/images/full-natural-collection/742/product.jpg',
+      imageUrl: '/images/full-natural-collection/N-742/product.jpg',
       imageHint: 'wide plank flooring'
     },
   ];
@@ -246,47 +252,18 @@ function SkirtingCollectionNav() {
 
 type ShowcaseProps = {
   initialPanels: Panel[];
-  collectionType: 'spc-wall-panels' | 'spc-3d-wall-panels-model-a' | 'spc-3d-wall-panels-model-b' | 'spc-parquet-natural-collection' | 'spc-parquet-stone-collection' | 'full-natural-collection' | 'skirting-alpha-140-mm' | 'skirting-berlin-100-mm' | 'skirting-elite-100-mm' | 'skirting-moderna-100-mm' | 'skirting-optima-60-mm' | 'skirting-optima-90-mm' | 'skirting-solid-80-mm' | 'skirting-x-line-100-mm';
+  collectionType: CollectionKey;
 }
 
 export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
   const [panels, setPanels] = useState<Panel[]>(initialPanels);
   const [selectedPanel, setSelectedPanel] = useState<Panel | null>(initialPanels[0] || null);
-  const tSpcPanelNames = useTranslations('PanelNames');
-  const t3dModelAPanelNames = useTranslations('3DModelAPanelNames');
-  const t3dModelBPanelNames = useTranslations('3DModelBPanelNames');
-  const tSpcParquetNaturalCollectionPanelNames = useTranslations('SpcParquetNaturalCollectionPanelNames');
-  const tSpcParquetStoneCollectionPanelNames = useTranslations('SpcParquetStoneCollectionPanelNames');
-  const tFullNaturalCollectionPanelNames = useTranslations('FullNaturalCollectionPanelNames');
-  const tSkirtingPanelNames = useTranslations('SkirtingPanelNames');
+  const tProductDetails = useTranslations('ProductDetails');
+  const tCollectionPanelNames = useTranslations(getCollectionPanelNameNamespace(collectionType));
   const tShowcase = useTranslations('ShowcasePage');
-
-  const safeTranslate = (namespace: string, key: string, translate: (value: string) => string) => {
-    try {
-      return translate(key);
-    } catch (error) {
-      return key;
-    }
-  };
-
-  const tPanelNames = (key: string) => {
-    switch (true) {
-      case collectionType.startsWith('skirting-'):
-        return safeTranslate('SkirtingPanelNames', key, tSkirtingPanelNames);
-      case collectionType === 'spc-3d-wall-panels-model-a':
-        return safeTranslate('3DModelAPanelNames', key, t3dModelAPanelNames);
-      case collectionType === 'spc-3d-wall-panels-model-b':
-        return safeTranslate('3DModelBPanelNames', key, t3dModelBPanelNames);
-      case collectionType === 'spc-parquet-natural-collection':
-        return safeTranslate('SpcParquetNaturalCollectionPanelNames', key, tSpcParquetNaturalCollectionPanelNames);
-      case collectionType === 'spc-parquet-stone-collection':
-        return safeTranslate('SpcParquetStoneCollectionPanelNames', key, tSpcParquetStoneCollectionPanelNames);
-      case collectionType === 'full-natural-collection':
-        return safeTranslate('FullNaturalCollectionPanelNames', key, tFullNaturalCollectionPanelNames);
-      default:
-        return safeTranslate('PanelNames', key, tSpcPanelNames);
-    }
-  };
+  const resolvedCollectionSpecs = resolveCollectionSpecs(collectionType, tProductDetails);
+  const collectionFamily = getCollectionFamily(collectionType);
+  const tPanelNames = (key: string) => resolvePanelName(tCollectionPanelNames, key);
 
   useEffect(() => {
     setPanels(initialPanels);
@@ -312,8 +289,8 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
     return () => { cancelled = true; };
   }, [initialPanels.length, collectionType]);
 
-  const isFlooring = ['spc-parquet-natural-collection', 'spc-parquet-stone-collection', 'full-natural-collection'].includes(collectionType);
-  const isSkirting = collectionType.startsWith('skirting-');
+  const isFlooring = collectionFamily === 'flooring';
+  const isSkirting = collectionFamily === 'skirting';
 
 
   if (!selectedPanel) {
@@ -339,8 +316,11 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
           panel={selectedPanel} 
           panels={panels} 
           onPanelSelect={setSelectedPanel}
-          collectionType={collectionType}
+          family={collectionFamily}
           tPanelNames={tPanelNames}
+          specs={resolvedCollectionSpecs.rows}
+          featureLabels={resolvedCollectionSpecs.featureLabels}
+          specialFlags={resolvedCollectionSpecs.specialFlags}
         />
       </div>
       
