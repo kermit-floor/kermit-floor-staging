@@ -11,26 +11,45 @@ type PanelLoaderOptions = {
   collectionLabel: string;
 };
 
+const IMAGE_EXTENSIONS = ['jpg', 'png', 'webp', 'jpeg'] as const;
+
+async function findImageFilename(panelDirPath: string, baseName: 'product' | 'application') {
+  for (const extension of IMAGE_EXTENSIONS) {
+    const imagePath = path.join(panelDirPath, `${baseName}.${extension}`);
+
+    try {
+      await fs.access(imagePath);
+      return `${baseName}.${extension}`;
+    } catch {}
+  }
+
+  return null;
+}
+
 async function getPanelFromDirectory(
   dirName: string,
   options: PanelLoaderOptions
 ): Promise<Panel | null> {
   const panelDirPath = path.join(options.panelsDir, dirName);
-  const productImagePath = path.join(panelDirPath, 'product.jpg');
-  const applicationImagePath = path.join(panelDirPath, 'application.jpg');
 
   try {
-    await fs.access(productImagePath);
-    await fs.access(applicationImagePath);
+    const [productFilename, applicationFilename] = await Promise.all([
+      findImageFilename(panelDirPath, 'product'),
+      findImageFilename(panelDirPath, 'application'),
+    ]);
+
+    if (!productFilename || !applicationFilename) {
+      throw new Error('Missing product or application image.');
+    }
 
     const baseImagePath = `${options.publicBasePath}/${dirName}`;
 
     return {
       id: dirName,
       nameKey: dirName,
-      thumbnailUrl: `${baseImagePath}/product.jpg`,
-      productImageUrl: `${baseImagePath}/product.jpg`,
-      applicationImageUrl: `${baseImagePath}/application.jpg`,
+      thumbnailUrl: `${baseImagePath}/${productFilename}`,
+      productImageUrl: `${baseImagePath}/${productFilename}`,
+      applicationImageUrl: `${baseImagePath}/${applicationFilename}`,
       productImageHint: `${options.productHintPrefix} ${dirName}`,
       applicationImageHint: `${options.applicationHintPrefix} ${dirName}`,
     };

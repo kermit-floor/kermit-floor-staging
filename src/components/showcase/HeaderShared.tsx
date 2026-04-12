@@ -1,5 +1,6 @@
 'use client';
 
+import { DEFAULT_FLOORING_ROUTE, isFlooringSeriesRoute } from '@/lib/flooring-series';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -28,7 +29,7 @@ export function NavMenu({ isMobile = false }) {
     if (pathnameValue.includes('/spc-skirting-boards')) {
       return { pathname: '/resources', query: { tab: 'skirting' } };
     }
-    if (pathnameValue.includes('/spc-parquet') || pathnameValue.includes('/full-natural-collection')) {
+    if (isFlooringSeriesRoute(pathnameValue)) {
       return { pathname: '/resources', query: { tab: 'flooring' } };
     }
     if (pathnameValue.includes('/spc-wall-panels') || pathnameValue.includes('/spc-3d-wall-panels')) {
@@ -39,7 +40,7 @@ export function NavMenu({ isMobile = false }) {
 
   const navLinks: { href: Parameters<typeof Link>[0]['href']; label: string }[] = [
     { href: '/', label: t('navHome') },
-    { href: '/spc-parquet-natural-collection', label: t('navFloors') },
+    { href: DEFAULT_FLOORING_ROUTE, label: t('navFloors') },
     { href: '/spc-wall-panels', label: t('navWalls') },
     { href: '/spc-skirting-boards/optima-90-mm-skirting-board', label: t('navSkirtings') },
     { href: getResourcesLink(), label: t('navDownload') },
@@ -67,8 +68,8 @@ export function NavMenu({ isMobile = false }) {
           isActive = pathnameValue === '/';
         } else if (hrefPath.includes('spc-skirting-boards')) {
           isActive = pathnameValue.startsWith('/spc-skirting-boards');
-        } else if (hrefPath.includes('spc-parquet-natural-collection')) {
-          isActive = pathnameValue.startsWith('/spc-parquet-') || pathnameValue.startsWith('/full-natural-collection');
+        } else if (hrefPath === DEFAULT_FLOORING_ROUTE) {
+          isActive = isFlooringSeriesRoute(pathnameValue);
         } else if (hrefPath.includes('spc-wall-panels')) {
           isActive = pathnameValue.startsWith('/spc-wall-panels') || pathnameValue.startsWith('/spc-3d-wall-panels');
         } else if (hrefPath.startsWith('/resources')) {

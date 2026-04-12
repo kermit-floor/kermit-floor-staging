@@ -17,12 +17,23 @@ import {
   DialogTitle,
   DialogClose,
 } from "@/components/ui/dialog"
-import { ZoomIn, X } from 'lucide-react';
+import { Check, ZoomIn, X } from 'lucide-react';
 import { Button } from '../ui/button';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/navigation';
 import { cn } from '@/lib/utils';
-import { getCollectionFamily, type CollectionKey } from '@/lib/product-collections';
+import {
+  getCollectionFamily,
+  isFlooringCollectionKey,
+  type CollectionKey,
+  type FlooringCollectionKey,
+} from '@/lib/product-collections';
+import {
+  FLOORING_SERIES_IDS,
+  getFlooringCollectionsBySeries,
+  getFlooringSeriesHref,
+  getFlooringSeriesId,
+} from '@/lib/flooring-series';
 import {
   getCollectionPanelNameNamespace,
   resolveCollectionSpecs,
@@ -115,74 +126,96 @@ function WallCollectionNav() {
   );
 }
 
-function FlooringCollectionNav() {
+function FlooringCollectionNav({ collectionType }: { collectionType: FlooringCollectionKey }) {
   const t = useTranslations('HomePage');
   const pathname = usePathname();
   const pathnameValue = typeof pathname === 'string' ? pathname : '';
-  const collections: {
-    name: string;
-    href: LinkHref;
-    imageUrl: string;
-    imageHint: string;
-  }[] = [
-    { 
-      name: t('spcParquetNaturalCollectionTitle'), 
-      href: '/spc-parquet-natural-collection', 
-      imageUrl: '/images/spc-parquet-natural-collection/N-215/product.jpg',
-      imageHint: 'natural oak flooring'
-    },
-    { 
-      name: t('spcParquetStoneCollectionTitle'), 
-      href: '/spc-parquet-stone-collection', 
-      imageUrl: '/images/spc-parquet-stone-collection/N-604/product.jpg',
-      imageHint: 'stone look flooring'
-    },
-    { 
-      name: t('fullNaturalCollectionTitle'), 
-      href: '/full-natural-collection', 
-      imageUrl: '/images/full-natural-collection/N-742/product.jpg',
-      imageHint: 'wide plank flooring'
-    },
-  ];
+  const activeSeriesId = getFlooringSeriesId(collectionType);
+  const collections = getFlooringCollectionsBySeries(activeSeriesId);
+  const seriesLabelKeyById = {
+    premier: 'premierSeriesTitle',
+    natural: 'naturalSeriesTitle',
+  } as const;
 
   return (
-    <div className="bg-muted py-4 border-b">
+    <div className="border-b bg-background py-5 md:py-6">
         <div className="container mx-auto px-4">
-            <div className="flex items-start justify-center gap-4 md:gap-8">
-                {collections.map((collection, index) => (
-                    <React.Fragment key={collection.name}>
-                        <Link 
-                            href={collection.href} 
-                            className={cn(
-                                "flex flex-col items-center gap-2 group",
-                            )}
-                        >
-                            <div className={cn(
-                                "relative h-16 w-16 md:h-20 md:w-20 rounded-full overflow-hidden border-2 transition-all duration-300",
-                                pathnameValue === getHrefPath(collection.href) ? "border-primary" : "border-transparent group-hover:border-primary/50"
-                            )}
+            <div className="flex flex-col items-center gap-5 md:gap-6">
+                <div className="inline-flex items-center rounded-full border border-primary/20 bg-white p-1 shadow-[0_18px_45px_-30px_rgba(38,64,42,0.6)]">
+                    {FLOORING_SERIES_IDS.map((seriesId) => {
+                        const isActive = seriesId === activeSeriesId;
+                        const href = getFlooringSeriesHref(seriesId);
+
+                        return (
+                            <Link
+                                key={seriesId}
+                                href={href}
+                                className={cn(
+                                    "inline-flex items-center gap-3 rounded-full px-4 py-2 text-sm font-medium transition-all md:px-5 md:text-base",
+                                    isActive
+                                      ? "border border-primary bg-white text-primary shadow-sm"
+                                      : "text-muted-foreground hover:text-primary"
+                                )}
                             >
-                                <Image 
-                                    src={collection.imageUrl}
-                                    alt={collection.name}
-                                    fill
-                                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                    data-ai-hint={collection.imageHint}
-                                    sizes="80px"
-                                />
-                            </div>
-                            <span className={cn(
-                                "text-xs md:text-sm font-semibold text-foreground/80 group-hover:text-primary transition-colors text-center",
-                                pathnameValue === getHrefPath(collection.href) && "text-primary"
-                            )}>
-                                {collection.name}
-                            </span>
-                        </Link>
-                        {index < collections.length - 1 && (
-                            <Separator orientation="vertical" className="h-24 self-center" />
-                        )}
-                    </React.Fragment>
-                ))}
+                                <span
+                                  className={cn(
+                                    "flex h-7 w-7 items-center justify-center rounded-full border transition-colors",
+                                    isActive
+                                      ? "border-primary bg-primary text-white"
+                                      : "border-border bg-muted text-transparent"
+                                  )}
+                                >
+                                  {isActive ? <Check className="h-4 w-4" /> : <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/35" />}
+                                </span>
+                                <span>{t(seriesLabelKeyById[seriesId])}</span>
+                            </Link>
+                        );
+                    })}
+                </div>
+
+                <div className="flex flex-wrap items-start justify-center gap-5 md:gap-7">
+                    {collections.map((collection, index) => {
+                        const isActive = pathnameValue === collection.href;
+
+                        return (
+                          <React.Fragment key={collection.collectionKey}>
+                              <Link 
+                                  href={collection.href} 
+                                  className="flex flex-col items-center gap-2 group"
+                              >
+                                  <div
+                                    className={cn(
+                                      "relative h-16 w-16 overflow-hidden rounded-full border transition-all duration-300 md:h-20 md:w-20",
+                                      isActive
+                                        ? "border-primary shadow-[0_10px_30px_-20px_rgba(38,64,42,0.75)]"
+                                        : "border-border group-hover:border-primary/50"
+                                    )}
+                                  >
+                                      <Image 
+                                          src={collection.imageUrl}
+                                          alt={t(collection.titleKey)}
+                                          fill
+                                          className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                          data-ai-hint={collection.imageHint}
+                                          sizes="80px"
+                                      />
+                                  </div>
+                                  <span
+                                    className={cn(
+                                      "max-w-28 text-center text-xs font-medium text-foreground/80 transition-colors group-hover:text-primary md:max-w-32 md:text-sm",
+                                      isActive && "text-primary"
+                                    )}
+                                  >
+                                      {t(collection.titleKey)}
+                                  </span>
+                              </Link>
+                              {index < collections.length - 1 && (
+                                  <Separator orientation="vertical" className="hidden h-20 self-center md:block" />
+                              )}
+                          </React.Fragment>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     </div>
@@ -296,7 +329,13 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
   if (!selectedPanel) {
     return (
       <div className="space-y-6 lg:space-y-8">
-        {isFlooring ? <FlooringCollectionNav /> : isSkirting ? <SkirtingCollectionNav /> : <WallCollectionNav />}
+        {isFlooring && isFlooringCollectionKey(collectionType) ? (
+          <FlooringCollectionNav collectionType={collectionType} />
+        ) : isSkirting ? (
+          <SkirtingCollectionNav />
+        ) : (
+          <WallCollectionNav />
+        )}
         <div className="container mx-auto px-4 mt-6 lg:mt-8">
           <Skeleton className="h-[60vh] w-full" />
           <div className="text-center py-8">
@@ -310,7 +349,13 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
 
   return (
     <div className="space-y-6 lg:space-y-8 pb-6 lg:pb-8">
-      {isFlooring ? <FlooringCollectionNav /> : isSkirting ? <SkirtingCollectionNav /> : <WallCollectionNav />}
+      {isFlooring && isFlooringCollectionKey(collectionType) ? (
+        <FlooringCollectionNav collectionType={collectionType} />
+      ) : isSkirting ? (
+        <SkirtingCollectionNav />
+      ) : (
+        <WallCollectionNav />
+      )}
       <div className="container mx-auto px-4 mt-6 lg:mt-8">
         <ProductDetails 
           panel={selectedPanel} 

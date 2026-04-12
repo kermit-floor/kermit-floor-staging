@@ -20,5 +20,27 @@
     { "labelKey": "specUtilityClass", "value": "23 / 33" },
     { "labelKey": "specUsageArea", "value": "Interior" },
     { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "floor-premier-plank": [
+    { "labelKey": "specThickness", "value": "5 mm / 6 mm / 7 mm" },
+    { "labelKey": "specWearLayer", "value": "0,30 mm / 0,50 mm" },
+    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specDimensions", "value": ["177,8 x 1219,2 mm", "228,6 x 1219,2 mm"] },
+    { "labelKey": "specEdge", "value": "Micro Bevel / V-Groove" },
+    { "labelKey": "specLockingSystem", "value": "UniClic / I4F" },
+    { "labelKey": "specUtilityClass", "value": "23 / 33" },
+    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
+  ],
+  "floor-premier-pattern": [
+    { "labelKey": "specThickness", "value": "5 mm / 6 mm / 7 mm" },
+    { "labelKey": "specWearLayer", "value": "0,30 mm / 0,50 mm" },
+    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specDimensions", "value": ["305 x 915 mm", "228,6 x 1219,2 mm"] },
+    { "labelKey": "specEdge", "value": "Micro Bevel / V-Groove" },
+    { "labelKey": "specLockingSystem", "value": "UniClic / I4F" },
+    { "labelKey": "specUtilityClass", "value": "23 / 33" },
+    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
   ]
 }

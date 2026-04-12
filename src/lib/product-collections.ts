@@ -2,6 +2,11 @@ export const COLLECTION_KEYS = [
   'spc-wall-panels',
   'spc-3d-wall-panels-model-a',
   'spc-3d-wall-panels-model-b',
+  'spc-flooring-elegance-collection',
+  'spc-flooring-sky-collection',
+  'spc-flooring-mosaic-collection',
+  'spc-flooring-elite-collection',
+  'spc-flooring-travertine-collection',
   'spc-parquet-natural-collection',
   'spc-parquet-stone-collection',
   'full-natural-collection',
@@ -21,6 +26,11 @@ export const COLLECTION_FAMILIES = ['flooring', 'wall_panels', 'skirting'] as co
 export type CollectionFamily = (typeof COLLECTION_FAMILIES)[number];
 
 export const FLOORING_COLLECTION_KEYS = [
+  'spc-flooring-elegance-collection',
+  'spc-flooring-sky-collection',
+  'spc-flooring-mosaic-collection',
+  'spc-flooring-elite-collection',
+  'spc-flooring-travertine-collection',
   'spc-parquet-natural-collection',
   'spc-parquet-stone-collection',
   'full-natural-collection',
@@ -58,6 +68,10 @@ export function isCollectionKey(value: string): value is CollectionKey {
 
 export function isSkirtingCollectionKey(value: CollectionKey): value is SkirtingCollectionKey {
   return SKIRTING_COLLECTION_KEY_SET.has(value);
+}
+
+export function isFlooringCollectionKey(value: CollectionKey): value is FlooringCollectionKey {
+  return FLOORING_COLLECTION_KEY_SET.has(value);
 }
 
 export function getCollectionFamily(collectionKey: CollectionKey): CollectionFamily {

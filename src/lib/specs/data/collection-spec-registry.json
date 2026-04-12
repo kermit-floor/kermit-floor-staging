@@ -23,6 +23,46 @@
       "embossedBadge": false
     }
   },
+  "spc-flooring-elegance-collection": {
+    "family": "flooring",
+    "panelNameNamespace": "SpcFlooringEleganceCollectionPanelNames",
+    "specProfileId": "floor-premier-plank",
+    "specialFlags": {
+      "embossedBadge": false
+    }
+  },
+  "spc-flooring-sky-collection": {
+    "family": "flooring",
+    "panelNameNamespace": "SpcFlooringSkyCollectionPanelNames",
+    "specProfileId": "floor-premier-plank",
+    "specialFlags": {
+      "embossedBadge": false
+    }
+  },
+  "spc-flooring-mosaic-collection": {
+    "family": "flooring",
+    "panelNameNamespace": "SpcFlooringMosaicCollectionPanelNames",
+    "specProfileId": "floor-premier-pattern",
+    "specialFlags": {
+      "embossedBadge": false
+    }
+  },
+  "spc-flooring-elite-collection": {
+    "family": "flooring",
+    "panelNameNamespace": "SpcFlooringEliteCollectionPanelNames",
+    "specProfileId": "floor-premier-plank",
+    "specialFlags": {
+      "embossedBadge": false
+    }
+  },
+  "spc-flooring-travertine-collection": {
+    "family": "flooring",
+    "panelNameNamespace": "SpcFlooringTravertineCollectionPanelNames",
+    "specProfileId": "floor-premier-pattern",
+    "specialFlags": {
+      "embossedBadge": false
+    }
+  },
   "spc-parquet-natural-collection": {
     "family": "flooring",
     "panelNameNamespace": "SpcParquetNaturalCollectionPanelNames",

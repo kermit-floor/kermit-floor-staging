@@ -1,8 +1,15 @@
 'use client';
 
+import {
+  FLOORING_SERIES_HERO,
+  getFlooringSeriesId,
+} from '@/lib/flooring-series';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import type { CollectionKey } from '@/lib/product-collections';
+import {
+  isFlooringCollectionKey,
+  type CollectionKey,
+} from '@/lib/product-collections';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
 import { Logo, NavMenu } from './HeaderShared';
@@ -19,7 +26,12 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
   let heroImage;
   let heroImageHint;
 
-  if (pageType === 'spc-3d-wall-panels-model-a') {
+  if (pageType && isFlooringCollectionKey(pageType)) {
+    const flooringSeriesHero = FLOORING_SERIES_HERO[getFlooringSeriesId(pageType)];
+    pageTitle = t(flooringSeriesHero.titleKey);
+    heroImage = flooringSeriesHero.imageUrl;
+    heroImageHint = flooringSeriesHero.imageHint;
+  } else if (pageType === 'spc-3d-wall-panels-model-a') {
     pageTitle = t('heroTitle3dModelA');
     heroImage = '/images/spc-3d-panels-model-a/3D-205/application.jpg';
     heroImageHint = 'living room with geometric panels';
@@ -31,18 +43,6 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
     pageTitle = t('heroTitleSpc');
     heroImage = '/images/spc-wall-panels/613/application.jpg';
     heroImageHint = 'modern kitchen with marble panels';
-  } else if (pageType === 'spc-parquet-natural-collection') {
-    pageTitle = t('heroTitleSpcParquetNaturalCollection');
-    heroImage = '/images/spc-parquet-natural-collection/N-215/application.jpg';
-    heroImageHint = 'modern living room with natural oak flooring';
-  } else if (pageType === 'spc-parquet-stone-collection') {
-    pageTitle = t('heroTitleSpcParquetStoneCollection');
-    heroImage = '/images/spc-parquet-stone-collection/N-604/application.jpg';
-    heroImageHint = 'stylish interior with stone look flooring';
-  } else if (pageType === 'full-natural-collection') {
-    pageTitle = t('heroTitleFullNaturalCollection');
-    heroImage = '/images/full-natural-collection/N-742/application.jpg';
-    heroImageHint = 'elegant room with wide plank natural flooring';
   } else if (pageType === 'skirting-alpha-140-mm') {
     pageTitle = t('heroTitleSkirtingAlpha140mm');
     heroImage = '/images/skirting-boards/alpha-140-mm-skirting-board/1404031/application.jpg';

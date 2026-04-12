@@ -3,6 +3,7 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-13 | self | Tried patching `messages/en.json` and `messages/tr.json` by matching existing localized text, but `apply_patch` context failed because the file contains encoded/mojibake-rendered lines in terminal output | For bulk locale JSON edits in this repo, prefer a UTF-8 Node read/modify/write script keyed by stable JSON property names instead of patching around rendered text |
 | 2026-04-13 | self | Reported PR `#7` as if it still represented the current pending state, even though the user had already merged it and later branch-only commits were no longer part of that PR | Re-check live PR state and compare `HEAD` vs `origin/main` immediately before describing what a merged PR contains |
 | 2026-04-13 | self | Wrote a malformed `apply_patch` hunk while adding a new markdown doc and ended up with an empty file on disk | After creating a new file with `apply_patch`, immediately read it back and keep file-creation hunks minimal and single-purpose |
 | 2026-04-13 | self | `git push -u origin <branch>` timed out locally after ~124s even though the remote ref was created successfully | After a push timeout here, verify with `git ls-remote --heads origin <branch>` and `git status -sb` before retrying a large push |
@@ -82,6 +83,7 @@
 | 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
 
 ## User Preferences
+- When a UI screenshot is provided as a template, match its grouping and visual order rather than only mirroring the textual collection list.
 - For code-structure questions, prefers the answer framed in code terms (routes, manifests, translation namespaces, shared mapping logic) rather than visual/UI grouping.
 - When evaluating architecture choices, prefers the recommendation optimized for future-proofing, scalability, and mistake reduction rather than the smallest immediate patch.
 - For flooring product-code prefix changes, touch only the exact collections the user names; do not assume every flooring collection is in scope.
@@ -151,6 +153,7 @@
 
 
 ## Patterns That Work
+- For locale JSON files that already contain legacy encoded text, use a short Node transform keyed by property names to add new namespaces/keys safely in UTF-8.
 - For "how are products grouped?" questions in this repo, inspect `public/images/*/products.json`, the matching `src/lib/*-data.ts` loaders, `src/app/[locale]/*/page.tsx`, and the `collectionType`/translation switch in `src/components/showcase/Showcase.tsx`; grouping is defined across those layers, not in a single registry.
 - For skirting naming audits, distinguish collection-model labels from per-SKU labels: `SkirtingCollectionNames` names the 8 skirting model families, while `SkirtingPanelNames` feeds `tPanelNames` for the individual SKU cards/details.
 - Before opening a PR from this workspace, search for an existing open PR on the current head branch to avoid duplicate PRs when the branch was already published earlier.
@@ -207,6 +210,9 @@
 - Assuming mojibake in PowerShell output means file data is corrupted; this environment can misrender UTF-8 in command output.
 
 ## Domain Notes
+- As of 2026-04-13, flooring collections are grouped into two UI series on product pages: Premier Series (`spc-flooring-elegance-collection`, `spc-flooring-sky-collection`, `spc-flooring-mosaic-collection`, `spc-flooring-elite-collection`, `spc-flooring-travertine-collection`) and Natural Series (`spc-parquet-natural-collection`, `spc-parquet-stone-collection`, `full-natural-collection`).
+- As of 2026-04-13, new flooring collection product names are intentionally code-based in both locales via dedicated namespaces (`SpcFlooring*CollectionPanelNames`).
+- As of 2026-04-13, some new flooring application images use `.png` (`spc-flooring-sky-collection` and `spc-flooring-mosaic-collection`), so both the runtime panel loader and `scripts/generate-panel-manifests.mjs` must resolve mixed image extensions instead of assuming `.jpg`.
 - As of 2026-04-12, `SkirtingPanelNames` is effectively an identity map in both locales (displaying raw SKU codes), with one English typo: key `1113031` maps to value `1101331`; `SkirtingCollectionNames` contains the short labels for the 8 skirting model families.
 - As of 2026-04-12, product-page spec values (thickness, depth, dimensions, etc.) are not loaded from `details.json`; the app chooses them in `src/components/showcase/ProductDetails.tsx` based on `collectionType`, while panel loaders only supply image URLs and `nameKey`.
 - As of 2026-04-12 (latest): `spc-parquet-stone-collection`, `spc-parquet-natural-collection`, and `full-natural-collection` use `N-`-prefixed product codes in manifests, locale namespaces, asset folders, and collection-scoped image references.

@@ -3,6 +3,8 @@ import type { CollectionFamily, CollectionKey } from '@/lib/product-collections'
 export const SPEC_PROFILE_IDS = [
   'floor-natural',
   'floor-stone',
+  'floor-premier-plank',
+  'floor-premier-pattern',
   'wall-standard',
   'wall-3d-model-a',
   'wall-3d-model-b',
@@ -17,7 +19,10 @@ export const SPEC_PROFILE_IDS = [
 ] as const;
 
 export type SpecProfileId = (typeof SPEC_PROFILE_IDS)[number];
-export type FlooringSpecProfileId = Extract<SpecProfileId, 'floor-natural' | 'floor-stone'>;
+export type FlooringSpecProfileId = Extract<
+  SpecProfileId,
+  'floor-natural' | 'floor-stone' | 'floor-premier-plank' | 'floor-premier-pattern'
+>;
 export type WallPanelSpecProfileId = Extract<SpecProfileId, 'wall-standard' | 'wall-3d-model-a' | 'wall-3d-model-b'>;
 export type SkirtingSpecProfileId = Extract<
   SpecProfileId,
@@ -65,6 +70,11 @@ export type PanelNameNamespace =
   | 'PanelNames'
   | '3DModelAPanelNames'
   | '3DModelBPanelNames'
+  | 'SpcFlooringEleganceCollectionPanelNames'
+  | 'SpcFlooringSkyCollectionPanelNames'
+  | 'SpcFlooringMosaicCollectionPanelNames'
+  | 'SpcFlooringEliteCollectionPanelNames'
+  | 'SpcFlooringTravertineCollectionPanelNames'
   | 'SpcParquetNaturalCollectionPanelNames'
   | 'SpcParquetStoneCollectionPanelNames'
   | 'FullNaturalCollectionPanelNames'

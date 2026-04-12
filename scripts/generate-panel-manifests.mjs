@@ -8,11 +8,17 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
+const IMAGE_EXTENSIONS = ["jpg", "png", "webp", "jpeg"];
 
 const COLLECTIONS = [
   { key: "spc-wall-panels", dir: "public/images/spc-wall-panels", baseUrl: "/images/spc-wall-panels" },
   { key: "spc-3d-wall-panels-model-a", dir: "public/images/spc-3d-panels-model-a", baseUrl: "/images/spc-3d-panels-model-a" },
   { key: "spc-3d-wall-panels-model-b", dir: "public/images/spc-3d-panels-model-b", baseUrl: "/images/spc-3d-panels-model-b" },
+  { key: "spc-flooring-elegance-collection", dir: "public/images/spc-flooring-elegance-collection", baseUrl: "/images/spc-flooring-elegance-collection" },
+  { key: "spc-flooring-sky-collection", dir: "public/images/spc-flooring-sky-collection", baseUrl: "/images/spc-flooring-sky-collection" },
+  { key: "spc-flooring-mosaic-collection", dir: "public/images/spc-flooring-mosaic-collection", baseUrl: "/images/spc-flooring-mosaic-collection" },
+  { key: "spc-flooring-elite-collection", dir: "public/images/spc-flooring-elite-collection", baseUrl: "/images/spc-flooring-elite-collection" },
+  { key: "spc-flooring-travertine-collection", dir: "public/images/spc-flooring-travertine-collection", baseUrl: "/images/spc-flooring-travertine-collection" },
   { key: "spc-parquet-natural-collection", dir: "public/images/spc-parquet-natural-collection", baseUrl: "/images/spc-parquet-natural-collection" },
   { key: "spc-parquet-stone-collection", dir: "public/images/spc-parquet-stone-collection", baseUrl: "/images/spc-parquet-stone-collection" },
   { key: "full-natural-collection", dir: "public/images/full-natural-collection", baseUrl: "/images/full-natural-collection" },
@@ -35,25 +41,37 @@ async function buildPanelList(collection) {
   const baseUrl = collection.baseUrl;
   const panels = [];
   for (const id of productKeys) {
-    const productPath = path.join(ROOT, collection.dir, id, "product.jpg");
-    const applicationPath = path.join(ROOT, collection.dir, id, "application.jpg");
-    try {
-      await access(productPath);
-      await access(applicationPath);
-    } catch {
+    const [productFilename, applicationFilename] = await Promise.all([
+      findImageFilename(collection.dir, id, "product"),
+      findImageFilename(collection.dir, id, "application"),
+    ]);
+    if (!productFilename || !applicationFilename) {
       continue;
     }
     panels.push({
       id,
       nameKey: id,
-      thumbnailUrl: `${baseUrl}/${id}/product.jpg`,
-      productImageUrl: `${baseUrl}/${id}/product.jpg`,
+      thumbnailUrl: `${baseUrl}/${id}/${productFilename}`,
+      productImageUrl: `${baseUrl}/${id}/${productFilename}`,
       productImageHint: `product view for ${id}`,
-      applicationImageUrl: `${baseUrl}/${id}/application.jpg`,
+      applicationImageUrl: `${baseUrl}/${id}/${applicationFilename}`,
       applicationImageHint: `application view for ${id}`,
     });
   }
   return panels;
+}
+
+async function findImageFilename(collectionDir, id, baseName) {
+  for (const extension of IMAGE_EXTENSIONS) {
+    const filename = `${baseName}.${extension}`;
+
+    try {
+      await access(path.join(ROOT, collectionDir, id, filename));
+      return filename;
+    } catch {}
+  }
+
+  return null;
 }
 
 async function main() {

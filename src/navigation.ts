@@ -46,6 +46,26 @@ export const pathnames = {
     en: '/spc-3d-wall-panels-model-b',
     tr: '/spc-3d-duvar-panelleri-model-b',
   },
+  '/spc-flooring-elegance-collection': {
+    en: '/spc-flooring-elegance-collection',
+    tr: '/spc-parke-elegans-koleksiyonu',
+  },
+  '/spc-flooring-sky-collection': {
+    en: '/spc-flooring-sky-collection',
+    tr: '/spc-parke-sky-koleksiyonu',
+  },
+  '/spc-flooring-mosaic-collection': {
+    en: '/spc-flooring-mosaic-collection',
+    tr: '/spc-parke-mozaik-koleksiyonu',
+  },
+  '/spc-flooring-elite-collection': {
+    en: '/spc-flooring-elite-collection',
+    tr: '/spc-parke-elit-koleksiyonu',
+  },
+  '/spc-flooring-travertine-collection': {
+    en: '/spc-flooring-travertine-collection',
+    tr: '/spc-parke-traverten-koleksiyonu',
+  },
   '/spc-parquet-natural-collection': {
     en: '/spc-parquet-natural-collection',
     tr: '/spc-parke-natural-koleksiyonu',

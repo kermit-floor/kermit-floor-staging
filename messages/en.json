@@ -26,7 +26,9 @@
     "heroTitleSkirtingOptima60mm": "OPTIMA 60MM SKIRTING BOARD",
     "heroTitleSkirtingOptima90mm": "OPTIMA 90MM SKIRTING BOARD",
     "heroTitleSkirtingSolid80mm": "SOLID 80MM SKIRTING BOARD",
-    "heroTitleSkirtingXLine100mm": "X-LINE 100MM SKIRTING BOARD"
+    "heroTitleSkirtingXLine100mm": "X-LINE 100MM SKIRTING BOARD",
+    "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIER",
+    "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL"
   },
   "HomePage": {
     "seo": {
@@ -95,7 +97,14 @@
     "spc3dWallPanelsModelBTitle": "3D Panels (Model B)",
     "spcParquetNaturalCollectionTitle": "Natural Collection",
     "spcParquetStoneCollectionTitle": "Stone Collection",
-    "fullNaturalCollectionTitle": "Full Natural Range"
+    "fullNaturalCollectionTitle": "Full Natural Range",
+    "premierSeriesTitle": "Premier Series",
+    "naturalSeriesTitle": "Natural Series",
+    "spcFlooringEleganceCollectionTitle": "Elegance Collection",
+    "spcFlooringSkyCollectionTitle": "Sky Collection",
+    "spcFlooringMosaicCollectionTitle": "Mosaic Collection",
+    "spcFlooringEliteCollectionTitle": "Elite Collection",
+    "spcFlooringTravertineCollectionTitle": "Travertine Collection"
   },
   "SpcWallPanelsPage": {
     "seo": {
@@ -813,5 +822,99 @@
     "statusAccepted": "Current status: Analytics enabled",
     "statusRejected": "Current status: Analytics disabled",
     "statusUnset": "Current status: No choice saved yet"
+  },
+  "SpcFlooringEleganceCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Elegance Collection SPC Flooring",
+      "description": "Discover the quick-ship Elegance Collection with refined SPC flooring decors for modern interiors."
+    }
+  },
+  "SpcFlooringSkyCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Sky Collection SPC Flooring",
+      "description": "Explore the quick-ship Sky Collection with versatile SPC flooring decors for residential and commercial projects."
+    }
+  },
+  "SpcFlooringMosaicCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Mosaic Collection SPC Flooring",
+      "description": "Browse the quick-ship Mosaic Collection with patterned SPC flooring designs and stone-inspired visuals."
+    }
+  },
+  "SpcFlooringEliteCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Elite Collection SPC Flooring",
+      "description": "View the quick-ship Elite Collection with premium SPC flooring colors built for high-demand interior projects."
+    }
+  },
+  "SpcFlooringTravertineCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Travertine Collection SPC Flooring",
+      "description": "See the quick-ship Travertine Collection with travertine-inspired SPC flooring options for elegant interiors."
+    }
+  },
+  "SpcFlooringEleganceCollectionPanelNames": {
+    "P-301": "P-301",
+    "P-302": "P-302",
+    "P-304": "P-304",
+    "P-305": "P-305",
+    "P-306": "P-306",
+    "P-307": "P-307",
+    "P-308": "P-308",
+    "P-309": "P-309",
+    "P-310": "P-310",
+    "P-311": "P-311"
+  },
+  "SpcFlooringSkyCollectionPanelNames": {
+    "P-101": "P-101",
+    "P-102": "P-102",
+    "P-103": "P-103",
+    "P-104": "P-104",
+    "P-105": "P-105",
+    "P-106": "P-106",
+    "P-107": "P-107",
+    "P-108": "P-108",
+    "P-109": "P-109",
+    "P-110": "P-110",
+    "P-111": "P-111",
+    "P-112": "P-112"
+  },
+  "SpcFlooringMosaicCollectionPanelNames": {
+    "P-501": "P-501",
+    "P-502": "P-502",
+    "P-503": "P-503",
+    "P-504": "P-504",
+    "P-505": "P-505",
+    "P-506": "P-506",
+    "P-507": "P-507"
+  },
+  "SpcFlooringEliteCollectionPanelNames": {
+    "P-201": "P-201",
+    "P-202": "P-202",
+    "P-203": "P-203",
+    "P-204": "P-204",
+    "P-205": "P-205",
+    "P-206": "P-206",
+    "P-207": "P-207",
+    "P-208": "P-208",
+    "P-209": "P-209",
+    "P-210": "P-210",
+    "P-211": "P-211",
+    "P-212": "P-212",
+    "P-213": "P-213",
+    "P-214": "P-214",
+    "P-215": "P-215",
+    "P-216": "P-216",
+    "P-217": "P-217",
+    "P-218": "P-218",
+    "P-219": "P-219",
+    "P-220": "P-220"
+  },
+  "SpcFlooringTravertineCollectionPanelNames": {
+    "P-401": "P-401",
+    "P-402": "P-402",
+    "P-403": "P-403",
+    "P-404": "P-404",
+    "P-405": "P-405"
   }
 }

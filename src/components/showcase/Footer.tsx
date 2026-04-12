@@ -1,5 +1,6 @@
 'use client';
 
+import { DEFAULT_FLOORING_ROUTE } from '@/lib/flooring-series';
 import { Logo } from './HeaderShared';
 import { Separator } from '@/components/ui/separator';
 import { MapPin, Phone, Mail } from 'lucide-react';
@@ -11,7 +12,7 @@ export function Footer() {
   const t = useTranslations('Footer');
 
   const productLinks: { href: Parameters<typeof Link>[0]['href']; label: string }[] = [
-      { href: '/spc-parquet-natural-collection', label: t('productFlooring') },
+      { href: DEFAULT_FLOORING_ROUTE, label: t('productFlooring') },
       { href: '/spc-wall-panels', label: t('productWallPanels') },
       { href: '/spc-skirting-boards/optima-90-mm-skirting-board', label: t('productSkirting') },
     ];
