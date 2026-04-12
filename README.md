@@ -15,6 +15,11 @@ Runs at http://localhost:9002.
 
 See [DEPLOY.md](DEPLOY.md) for Cloudflare (OpenNext) build and deployment instructions.
 
+## Internal Docs
+
+- [docs/product-loading-logic.md](docs/product-loading-logic.md): current product loading, spec registry, and Worker fallback flow
+- [docs/blueprint.md](docs/blueprint.md): high-level product and site blueprint
+
 ## Codex Napkin Guardrails
 
 This repo uses a committed, Codex-only napkin at `.codex/napkin.md` to persist

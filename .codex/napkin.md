@@ -3,7 +3,10 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-13 | self | Reported PR `#7` as if it still represented the current pending state, even though the user had already merged it and later branch-only commits were no longer part of that PR | Re-check live PR state and compare `HEAD` vs `origin/main` immediately before describing what a merged PR contains |
+| 2026-04-13 | self | Wrote a malformed `apply_patch` hunk while adding a new markdown doc and ended up with an empty file on disk | After creating a new file with `apply_patch`, immediately read it back and keep file-creation hunks minimal and single-purpose |
 | 2026-04-13 | self | `git push -u origin <branch>` timed out locally after ~124s even though the remote ref was created successfully | After a push timeout here, verify with `git ls-remote --heads origin <branch>` and `git status -sb` before retrying a large push |
+| 2026-04-13 | self | Tried to submit a formal GitHub approval on a PR created by the same connected account and the API rejected it (`Review Can not approve your own pull request`) | When the connected account owns the PR, record the review verdict with a `COMMENT` review instead of an `APPROVE` action |
 | 2026-04-13 | self | Extracted `Logo` as a shared component but left `MobileMenu` wrapping it in another `Link`, which created nested `<a>` tags and a hydration error | When a shared component already renders navigation, pass click handlers through it or wrap it in a neutral container instead of another `Link` |
 | 2026-04-12 | self | Passed a backup path with spaces through `npm.cmd run <script> -- <path>` and the argument was split unexpectedly by the Windows/npm layer | Quote path args carefully when going through `npm.cmd`, or call `node <script> "<full path>"` directly for verification scripts that take filesystem paths |
 | 2026-04-12 | self | Put `-LiteralPath` after the file path in `Get-Content`, which PowerShell treated as a missing argument instead of a switch | In this environment, call `Get-Content -LiteralPath '<path>'` with the switch before the value |
@@ -150,6 +153,7 @@
 ## Patterns That Work
 - For "how are products grouped?" questions in this repo, inspect `public/images/*/products.json`, the matching `src/lib/*-data.ts` loaders, `src/app/[locale]/*/page.tsx`, and the `collectionType`/translation switch in `src/components/showcase/Showcase.tsx`; grouping is defined across those layers, not in a single registry.
 - For skirting naming audits, distinguish collection-model labels from per-SKU labels: `SkirtingCollectionNames` names the 8 skirting model families, while `SkirtingPanelNames` feeds `tPanelNames` for the individual SKU cards/details.
+- Before opening a PR from this workspace, search for an existing open PR on the current head branch to avoid duplicate PRs when the branch was already published earlier.
 - For flooring code-prefix migrations, use each target collection's `products.json` as the source of truth, then rename folders and rewrite the matching locale namespace keys plus collection-scoped image-path references from that manifest.
 - For Cloudflare Workers Builds on this repo, use the OpenNext-specific two-step commands (`npm run cf:build` then `npm run cf:deploy`); `next build` alone does not create `.open-next/worker.js`, so a plain `wrangler deploy` will fail with "entry-point file ... .open-next/worker.js was not found".
 - For duplicate-code audits across collection manifests, check both exact codes and a normalized variant that strips the `3D-` prefix; the user may mean either distinct `3D-###` SKUs or shared base numeric codes.
