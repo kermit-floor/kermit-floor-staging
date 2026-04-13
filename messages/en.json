@@ -27,7 +27,7 @@
     "heroTitleSkirtingOptima90mm": "OPTIMA 90MM SKIRTING BOARD",
     "heroTitleSkirtingSolid80mm": "SOLID 80MM SKIRTING BOARD",
     "heroTitleSkirtingXLine100mm": "X-LINE 100MM SKIRTING BOARD",
-    "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIER",
+    "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIUM",
     "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL"
   },
   "HomePage": {
@@ -95,16 +95,16 @@
     "spcWallPanelsTitle": "SPC Wall Panels",
     "spc3dWallPanelsModelATitle": "3D Panels (Model A)",
     "spc3dWallPanelsModelBTitle": "3D Panels (Model B)",
-    "spcParquetNaturalCollectionTitle": "Natural Collection",
-    "spcParquetStoneCollectionTitle": "Stone Collection",
-    "fullNaturalCollectionTitle": "Full Natural Range",
-    "premierSeriesTitle": "Premier Series",
-    "naturalSeriesTitle": "Natural Series",
-    "spcFlooringEleganceCollectionTitle": "Elegance Collection",
-    "spcFlooringSkyCollectionTitle": "Sky Collection",
-    "spcFlooringMosaicCollectionTitle": "Mosaic Collection",
-    "spcFlooringEliteCollectionTitle": "Elite Collection",
-    "spcFlooringTravertineCollectionTitle": "Travertine Collection"
+    "spcParquetNaturalCollectionTitle": "Natural",
+    "spcParquetStoneCollectionTitle": "Stone",
+    "fullNaturalCollectionTitle": "Full Natural",
+    "premierSeriesTitle": "Premium Collections",
+    "naturalSeriesTitle": "Natural Collections",
+    "spcFlooringEleganceCollectionTitle": "Elegance",
+    "spcFlooringSkyCollectionTitle": "Sky",
+    "spcFlooringMosaicCollectionTitle": "Mosaic",
+    "spcFlooringEliteCollectionTitle": "Elite",
+    "spcFlooringTravertineCollectionTitle": "Travertine"
   },
   "SpcWallPanelsPage": {
     "seo": {

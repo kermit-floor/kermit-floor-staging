@@ -17,7 +17,7 @@ import {
   DialogTitle,
   DialogClose,
 } from "@/components/ui/dialog"
-import { Check, ZoomIn, X } from 'lucide-react';
+import { ZoomIn, X } from 'lucide-react';
 import { Button } from '../ui/button';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/navigation';
@@ -29,9 +29,7 @@ import {
   type FlooringCollectionKey,
 } from '@/lib/product-collections';
 import {
-  FLOORING_SERIES_IDS,
   getFlooringCollectionsBySeries,
-  getFlooringSeriesHref,
   getFlooringSeriesId,
 } from '@/lib/flooring-series';
 import {
@@ -39,6 +37,7 @@ import {
   resolveCollectionSpecs,
   resolvePanelName,
 } from '@/lib/specs';
+import { useFlooringSeries } from './FlooringSeriesContext';
 
 
 type LinkHref = Parameters<typeof Link>[0]['href'];
@@ -126,54 +125,16 @@ function WallCollectionNav() {
   );
 }
 
-function FlooringCollectionNav({ collectionType }: { collectionType: FlooringCollectionKey }) {
+function FlooringCollectionNav({ activeSeriesId }: { activeSeriesId: ReturnType<typeof getFlooringSeriesId> }) {
   const t = useTranslations('HomePage');
   const pathname = usePathname();
   const pathnameValue = typeof pathname === 'string' ? pathname : '';
-  const activeSeriesId = getFlooringSeriesId(collectionType);
   const collections = getFlooringCollectionsBySeries(activeSeriesId);
-  const seriesLabelKeyById = {
-    premier: 'premierSeriesTitle',
-    natural: 'naturalSeriesTitle',
-  } as const;
 
   return (
-    <div className="border-b bg-background py-5 md:py-6">
+    <div className="border-b bg-background pb-3 pt-8 md:pb-4 md:pt-10">
         <div className="container mx-auto px-4">
-            <div className="flex flex-col items-center gap-5 md:gap-6">
-                <div className="inline-flex items-center rounded-full border border-primary/20 bg-white p-1 shadow-[0_18px_45px_-30px_rgba(38,64,42,0.6)]">
-                    {FLOORING_SERIES_IDS.map((seriesId) => {
-                        const isActive = seriesId === activeSeriesId;
-                        const href = getFlooringSeriesHref(seriesId);
-
-                        return (
-                            <Link
-                                key={seriesId}
-                                href={href}
-                                className={cn(
-                                    "inline-flex items-center gap-3 rounded-full px-4 py-2 text-sm font-medium transition-all md:px-5 md:text-base",
-                                    isActive
-                                      ? "border border-primary bg-white text-primary shadow-sm"
-                                      : "text-muted-foreground hover:text-primary"
-                                )}
-                            >
-                                <span
-                                  className={cn(
-                                    "flex h-7 w-7 items-center justify-center rounded-full border transition-colors",
-                                    isActive
-                                      ? "border-primary bg-primary text-white"
-                                      : "border-border bg-muted text-transparent"
-                                  )}
-                                >
-                                  {isActive ? <Check className="h-4 w-4" /> : <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/35" />}
-                                </span>
-                                <span>{t(seriesLabelKeyById[seriesId])}</span>
-                            </Link>
-                        );
-                    })}
-                </div>
-
-                <div className="flex flex-wrap items-start justify-center gap-5 md:gap-7">
+            <div className="flex flex-wrap items-start justify-center gap-4 md:gap-6">
                     {collections.map((collection, index) => {
                         const isActive = pathnameValue === collection.href;
 
@@ -181,14 +142,15 @@ function FlooringCollectionNav({ collectionType }: { collectionType: FlooringCol
                           <React.Fragment key={collection.collectionKey}>
                               <Link 
                                   href={collection.href} 
-                                  className="flex flex-col items-center gap-2 group"
+                                  aria-current={isActive ? 'page' : undefined}
+                                  className="group flex flex-col items-center gap-2 rounded-2xl px-3 pb-2 pt-1.5 transition-all duration-300"
                               >
                                   <div
                                     className={cn(
-                                      "relative h-16 w-16 overflow-hidden rounded-full border transition-all duration-300 md:h-20 md:w-20",
+                                      "relative h-16 w-16 overflow-hidden rounded-full border-2 transition-all duration-300 md:h-20 md:w-20",
                                       isActive
-                                        ? "border-primary shadow-[0_10px_30px_-20px_rgba(38,64,42,0.75)]"
-                                        : "border-border group-hover:border-primary/50"
+                                        ? "scale-[1.04] border-[3px] border-primary ring-4 ring-primary/15 shadow-[0_18px_38px_-20px_rgba(38,64,42,0.95)]"
+                                        : "border-foreground/70 group-hover:border-primary/65"
                                     )}
                                   >
                                       <Image 
@@ -202,20 +164,26 @@ function FlooringCollectionNav({ collectionType }: { collectionType: FlooringCol
                                   </div>
                                   <span
                                     className={cn(
-                                      "max-w-28 text-center text-xs font-medium text-foreground/80 transition-colors group-hover:text-primary md:max-w-32 md:text-sm",
-                                      isActive && "text-primary"
+                                      "max-w-28 text-center text-xs font-semibold leading-tight text-foreground/90 transition-colors group-hover:text-primary md:max-w-32 md:text-[15px]",
+                                      isActive && "font-bold text-primary"
                                     )}
                                   >
                                       {t(collection.titleKey)}
                                   </span>
+                                  <span
+                                    aria-hidden="true"
+                                    className={cn(
+                                      "h-0.5 w-10 rounded-full transition-all duration-300",
+                                      isActive ? "bg-primary opacity-100" : "opacity-0"
+                                    )}
+                                  />
                               </Link>
                               {index < collections.length - 1 && (
-                                  <Separator orientation="vertical" className="hidden h-20 self-center md:block" />
+                                  <Separator orientation="vertical" className="hidden h-16 bg-border/80 self-center md:block" />
                               )}
                           </React.Fragment>
                         );
                     })}
-                </div>
             </div>
         </div>
     </div>
@@ -291,6 +259,7 @@ type ShowcaseProps = {
 export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
   const [panels, setPanels] = useState<Panel[]>(initialPanels);
   const [selectedPanel, setSelectedPanel] = useState<Panel | null>(initialPanels[0] || null);
+  const flooringSeries = useFlooringSeries();
   const tProductDetails = useTranslations('ProductDetails');
   const tCollectionPanelNames = useTranslations(getCollectionPanelNameNamespace(collectionType));
   const tShowcase = useTranslations('ShowcasePage');
@@ -324,13 +293,17 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
 
   const isFlooring = collectionFamily === 'flooring';
   const isSkirting = collectionFamily === 'skirting';
+  const activeFlooringSeriesId =
+    isFlooring && isFlooringCollectionKey(collectionType)
+      ? flooringSeries?.activeSeriesId ?? getFlooringSeriesId(collectionType)
+      : null;
 
 
   if (!selectedPanel) {
     return (
       <div className="space-y-6 lg:space-y-8">
-        {isFlooring && isFlooringCollectionKey(collectionType) ? (
-          <FlooringCollectionNav collectionType={collectionType} />
+        {activeFlooringSeriesId ? (
+          <FlooringCollectionNav activeSeriesId={activeFlooringSeriesId} />
         ) : isSkirting ? (
           <SkirtingCollectionNav />
         ) : (
@@ -349,8 +322,8 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
 
   return (
     <div className="space-y-6 lg:space-y-8 pb-6 lg:pb-8">
-      {isFlooring && isFlooringCollectionKey(collectionType) ? (
-        <FlooringCollectionNav collectionType={collectionType} />
+      {activeFlooringSeriesId ? (
+        <FlooringCollectionNav activeSeriesId={activeFlooringSeriesId} />
       ) : isSkirting ? (
         <SkirtingCollectionNav />
       ) : (

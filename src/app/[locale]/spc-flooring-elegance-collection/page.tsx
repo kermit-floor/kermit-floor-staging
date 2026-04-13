@@ -1,5 +1,4 @@
-import { Header } from '@/components/showcase/Header';
-import { Showcase } from '@/components/showcase/Showcase';
+import { FlooringCollectionPageFrame } from '@/components/showcase/FlooringCollectionPageFrame';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { Footer } from '@/components/showcase/Footer';
 import { getFloorElegance } from '@/lib/floor-elegance-data';
@@ -31,10 +30,10 @@ export default async function SpcFlooringEleganceCollectionPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-background">
-      <Header pageType="spc-flooring-elegance-collection" />
-      <div className="flex-grow">
-        <Showcase initialPanels={panels} collectionType="spc-flooring-elegance-collection" />
-      </div>
+      <FlooringCollectionPageFrame
+        collectionType="spc-flooring-elegance-collection"
+        initialPanels={panels}
+      />
       <Footer />
       <Chatbox />
     </main>

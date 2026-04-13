@@ -24,6 +24,14 @@ export type FlooringCollectionNavItem = {
 
 export const FLOORING_COLLECTION_NAV_ITEMS = [
   {
+    collectionKey: 'spc-flooring-elite-collection',
+    href: '/spc-flooring-elite-collection',
+    imageHint: 'dark oak flooring sample',
+    imageUrl: '/images/spc-flooring-elite-collection/P-201/product.jpg',
+    seriesId: 'premier',
+    titleKey: 'spcFlooringEliteCollectionTitle',
+  },
+  {
     collectionKey: 'spc-flooring-elegance-collection',
     href: '/spc-flooring-elegance-collection',
     imageHint: 'light oak flooring sample',
@@ -40,28 +48,20 @@ export const FLOORING_COLLECTION_NAV_ITEMS = [
     titleKey: 'spcFlooringSkyCollectionTitle',
   },
   {
-    collectionKey: 'spc-flooring-mosaic-collection',
-    href: '/spc-flooring-mosaic-collection',
-    imageHint: 'mosaic flooring sample',
-    imageUrl: '/images/spc-flooring-mosaic-collection/P-501/product.jpg',
-    seriesId: 'premier',
-    titleKey: 'spcFlooringMosaicCollectionTitle',
-  },
-  {
-    collectionKey: 'spc-flooring-elite-collection',
-    href: '/spc-flooring-elite-collection',
-    imageHint: 'dark oak flooring sample',
-    imageUrl: '/images/spc-flooring-elite-collection/P-201/product.jpg',
-    seriesId: 'premier',
-    titleKey: 'spcFlooringEliteCollectionTitle',
-  },
-  {
     collectionKey: 'spc-flooring-travertine-collection',
     href: '/spc-flooring-travertine-collection',
     imageHint: 'travertine flooring sample',
     imageUrl: '/images/spc-flooring-travertine-collection/P-401/product.jpg',
     seriesId: 'premier',
     titleKey: 'spcFlooringTravertineCollectionTitle',
+  },
+  {
+    collectionKey: 'spc-flooring-mosaic-collection',
+    href: '/spc-flooring-mosaic-collection',
+    imageHint: 'mosaic flooring sample',
+    imageUrl: '/images/spc-flooring-mosaic-collection/P-501/product.jpg',
+    seriesId: 'premier',
+    titleKey: 'spcFlooringMosaicCollectionTitle',
   },
   {
     collectionKey: 'spc-parquet-natural-collection',

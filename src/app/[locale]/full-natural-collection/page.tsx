@@ -1,6 +1,5 @@
 
-import { Header } from '@/components/showcase/Header';
-import { Showcase } from '@/components/showcase/Showcase';
+import { FlooringCollectionPageFrame } from '@/components/showcase/FlooringCollectionPageFrame';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { Footer } from '@/components/showcase/Footer';
 import { getFloorFullNatural } from '@/lib/floor-full-natural-data';
@@ -35,10 +34,10 @@ export default async function FullNaturalCollectionPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-background">
-      <Header pageType="full-natural-collection" />
-      <div className="flex-grow">
-        <Showcase initialPanels={panels} collectionType="full-natural-collection" />
-      </div>
+      <FlooringCollectionPageFrame
+        collectionType="full-natural-collection"
+        initialPanels={panels}
+      />
       <Footer />
       <Chatbox />
     </main>

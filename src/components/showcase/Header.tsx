@@ -3,6 +3,7 @@
 import {
   FLOORING_SERIES_HERO,
   getFlooringSeriesId,
+  type FlooringSeriesId,
 } from '@/lib/flooring-series';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -10,6 +11,8 @@ import {
   isFlooringCollectionKey,
   type CollectionKey,
 } from '@/lib/product-collections';
+import { useFlooringSeries } from './FlooringSeriesContext';
+import { FlooringSeriesPicker } from './FlooringSeriesPicker';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
 import { Logo, NavMenu } from './HeaderShared';
@@ -21,13 +24,17 @@ type HeaderProps = {
 
 export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
   const t = useTranslations('Header');
+  const flooringSeries = useFlooringSeries();
   
   let pageTitle;
   let heroImage;
   let heroImageHint;
+  let activeFlooringSeriesId: FlooringSeriesId | null = null;
 
   if (pageType && isFlooringCollectionKey(pageType)) {
-    const flooringSeriesHero = FLOORING_SERIES_HERO[getFlooringSeriesId(pageType)];
+    const resolvedFlooringSeriesId = flooringSeries?.activeSeriesId ?? getFlooringSeriesId(pageType);
+    const flooringSeriesHero = FLOORING_SERIES_HERO[resolvedFlooringSeriesId];
+    activeFlooringSeriesId = resolvedFlooringSeriesId;
     pageTitle = t(flooringSeriesHero.titleKey);
     heroImage = flooringSeriesHero.imageUrl;
     heroImageHint = flooringSeriesHero.imageHint;
@@ -116,6 +123,14 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
               {pageTitle}
             </h1>
           </div>
+          {activeFlooringSeriesId && (
+            <div className="absolute inset-x-0 bottom-0 z-10 flex translate-y-1/2 justify-center px-4">
+              <FlooringSeriesPicker
+                activeSeriesId={activeFlooringSeriesId}
+                onSelectSeriesId={flooringSeries?.setActiveSeriesId}
+              />
+            </div>
+          )}
         </div>
       )}
     </>

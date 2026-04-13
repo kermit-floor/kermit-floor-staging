@@ -1,5 +1,4 @@
-import { Header } from '@/components/showcase/Header';
-import { Showcase } from '@/components/showcase/Showcase';
+import { FlooringCollectionPageFrame } from '@/components/showcase/FlooringCollectionPageFrame';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { Footer } from '@/components/showcase/Footer';
 import { getFloorSky } from '@/lib/floor-sky-data';
@@ -31,10 +30,10 @@ export default async function SpcFlooringSkyCollectionPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-background">
-      <Header pageType="spc-flooring-sky-collection" />
-      <div className="flex-grow">
-        <Showcase initialPanels={panels} collectionType="spc-flooring-sky-collection" />
-      </div>
+      <FlooringCollectionPageFrame
+        collectionType="spc-flooring-sky-collection"
+        initialPanels={panels}
+      />
       <Footer />
       <Chatbox />
     </main>

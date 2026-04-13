@@ -27,7 +27,7 @@
     "heroTitleSkirtingOptima90mm": "OPTIMA 90mm SÜPÜRGELİK",
     "heroTitleSkirtingSolid80mm": "SOLID 80mm SÜPÜRGELİK",
     "heroTitleSkirtingXLine100mm": "X-LINE 100mm SÜPÜRGELİK",
-    "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIER",
+    "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIUM",
     "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL"
   },
   "HomePage": {
@@ -95,16 +95,16 @@
     "spcWallPanelsTitle": "SPC Duvar Panelleri",
     "spc3dWallPanelsModelATitle": "SPC 3D Paneller (Model A)",
     "spc3dWallPanelsModelBTitle": "SPC 3D Paneller (Model B)",
-    "spcParquetNaturalCollectionTitle": "Natural Koleksiyonu",
-    "spcParquetStoneCollectionTitle": "Stone Koleksiyonu",
-    "fullNaturalCollectionTitle": "Natural: Tüm Renkler",
-    "premierSeriesTitle": "Premier Series",
-    "naturalSeriesTitle": "Natural Series",
-    "spcFlooringEleganceCollectionTitle": "Elegans Koleksiyonu",
-    "spcFlooringSkyCollectionTitle": "Sky Koleksiyonu",
-    "spcFlooringMosaicCollectionTitle": "Mozaik Koleksiyonu",
-    "spcFlooringEliteCollectionTitle": "Elit Koleksiyonu",
-    "spcFlooringTravertineCollectionTitle": "Traverten Koleksiyonu"
+    "spcParquetNaturalCollectionTitle": "Natural",
+    "spcParquetStoneCollectionTitle": "Stone",
+    "fullNaturalCollectionTitle": "Full Natural",
+    "premierSeriesTitle": "Premium Collections",
+    "naturalSeriesTitle": "Natural Collections",
+    "spcFlooringEleganceCollectionTitle": "Elegans",
+    "spcFlooringSkyCollectionTitle": "Sky",
+    "spcFlooringMosaicCollectionTitle": "Mozaik",
+    "spcFlooringEliteCollectionTitle": "Elit",
+    "spcFlooringTravertineCollectionTitle": "Traverten"
   },
   "SpcWallPanelsPage": {
     "seo": {

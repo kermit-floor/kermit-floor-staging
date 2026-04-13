@@ -1,6 +1,5 @@
 
-import { Header } from '@/components/showcase/Header';
-import { Showcase } from '@/components/showcase/Showcase';
+import { FlooringCollectionPageFrame } from '@/components/showcase/FlooringCollectionPageFrame';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { Footer } from '@/components/showcase/Footer';
 import { getFloorStone } from '@/lib/floor-stone-data';
@@ -35,10 +34,10 @@ export default async function SpcParquetStoneCollectionPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-background">
-      <Header pageType="spc-parquet-stone-collection" />
-      <div className="flex-grow">
-        <Showcase initialPanels={panels} collectionType="spc-parquet-stone-collection" />
-      </div>
+      <FlooringCollectionPageFrame
+        collectionType="spc-parquet-stone-collection"
+        initialPanels={panels}
+      />
       <Footer />
       <Chatbox />
     </main>

@@ -1,5 +1,4 @@
-import { Header } from '@/components/showcase/Header';
-import { Showcase } from '@/components/showcase/Showcase';
+import { FlooringCollectionPageFrame } from '@/components/showcase/FlooringCollectionPageFrame';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { Footer } from '@/components/showcase/Footer';
 import { getFloorMosaic } from '@/lib/floor-mosaic-data';
@@ -31,10 +30,10 @@ export default async function SpcFlooringMosaicCollectionPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-background">
-      <Header pageType="spc-flooring-mosaic-collection" />
-      <div className="flex-grow">
-        <Showcase initialPanels={panels} collectionType="spc-flooring-mosaic-collection" />
-      </div>
+      <FlooringCollectionPageFrame
+        collectionType="spc-flooring-mosaic-collection"
+        initialPanels={panels}
+      />
       <Footer />
       <Chatbox />
     </main>
