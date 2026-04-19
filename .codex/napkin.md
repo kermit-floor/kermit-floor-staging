@@ -3,6 +3,9 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-19 | user | Repo-local Git author was briefly changed toward the personal name/email path, but the intended commit identity for this repo is the GitHub account identity | Use repo-local Git author `kermit-floor <271395912+kermit-floor@users.noreply.github.com>` for commits in this checkout |
+| 2026-04-19 | self | Used a single-quoted shell pattern that also contained an apostrophe while locating napkin sections, which broke the command before execution | When a grep/rg pattern contains an apostrophe, wrap the whole pattern in double quotes instead of single quotes |
+| 2026-04-19 | user | `N-224` in the natural flooring collection was a typo; the correct code is `N-219` | Rename the SKU everywhere consistently: manifest entry, locale namespace keys, and asset folder |
 | 2026-04-13 | user | The flooring hero copy still used "Premier" after the collections were renamed to Premium/Natural | Keep the higher-level flooring hero title aligned with the current taxonomy: use `QUICK SHIP: PREMIUM` instead of `QUICK SHIP: PREMIER` |
 | 2026-04-13 | self | After editing `Showcase.tsx` and locale JSON while Turbopack dev was running, the browser showed a hydration mismatch where server HTML still had the previous classes/text and the client had the updated bundle | When hydration diffs show old vs new CSS classes/text for the same client component here, treat it as stale dev SSR output first: restart the dev server and hard refresh before chasing nonexistent nondeterminism in source |
 | 2026-04-13 | user | The new flooring collection strip lost the stronger visual emphasis of the previous collection circles: text became too thin and borders too weak | Keep flooring collection circle borders visibly strong and labels bold when matching existing showroom-style navigation |
@@ -86,6 +89,9 @@
 | 2026-02-26 | user | Uploaded skirting English TDS PDFs under `public/downloads/technical-data-sheets/spc-skirting-boards/English`; resource links still pointed to old flat `/downloads` paths | Update the 8 skirting TDS entries in `src/lib/resources.json`, set `updatedAt` to the upload date, and temporarily point TR links to the same EN PDFs until TR files are uploaded |
 
 ## User Preferences
+- For this repo's commits, use the GitHub account identity `kermit-floor <271395912+kermit-floor@users.noreply.github.com>`, not the personal name/email.
+- For regenerated naming reports, recreate `naming-reports/` fresh and output a flat lowercase `code -> English Name` markdown list without collection headings.
+- For naming reports, put the export under `naming-reports/` and format each row as `CODE -> English Name`, excluding self-mapped placeholder translations.
 - For flooring collection pickers, prefers the older, stronger visual emphasis: bold labels and clear circle borders.
 - For the flooring series toggle itself, prefers a compact segmented control close to the screenshot rather than a roomy pill layout.
 - For the flooring page layout, prefers the higher-level series picker to overlap the hero/header image boundary so it saves vertical space.
@@ -159,10 +165,17 @@
 - For skirting technical data sheets, if TR PDFs are not uploaded yet, temporarily use the same English PDF links on the Turkish site and switch later when TR files are available.
 - For repo verification requests like collection/product presence checks, prefers confirmation-only responses with no project/data changes.
 - If a product-code correction is provided, keep the product name translation text unchanged unless the user explicitly says the wording is wrong.
+- When the user refers to a flooring name without a trailing qualifier like `(Dark)`, treat it as potentially the same SKU label and verify the exact locale string before suggesting a rename.
 - For repeated-code audits that include 3D wall panels, treat `3D-###` and `###` as the same base product code when the user asks for normalized duplicates.
 
 
 ## Patterns That Work
+- In this workspace, keep `origin` fetch on public HTTPS and set only the push URL to `git@github.com:kermit-floor/kermit-floor-staging.git`; the loaded SSH key authenticates as `kermit-floor`, while HTTPS push had no local credential.
+- For GitHub access checks here, verify both the GitHub connector identity/permission and a local `git push --dry-run`; connector admin access does not guarantee the local HTTPS Git credential is configured.
+- For collection rename briefs that list only some SKUs, treat the file as a partial mapping: update only the listed codes in the target locale namespace and preserve any already named SKUs not mentioned in the brief.
+- When flooring product names change in `messages/en.json`, regenerate `naming-reports/flooring-product-code-names.md` in the same turn so the exported list stays consistent with the locale source.
+- For external proposed naming lists in `.md`, parse `CODE -> Name` rows directly and compare against `messages/en.json` in two passes: exact case-insensitive duplicate detection first, then a lightweight token-overlap scan for near-collisions worth human review.
+- For flooring naming audits, use `src/lib/specs/data/collection-spec-registry.json` to select `family: "flooring"` collections, then join each collection's `public/images/<collection>/products.json` against `messages/en.json` via `panelNameNamespace`; this cleanly filters real EN names and skips code-only placeholders.
 - For locale JSON files that already contain legacy encoded text, use a short Node transform keyed by property names to add new namespaces/keys safely in UTF-8.
 - For the flooring header, keep the series picker as a separate shared component so it can be positioned at the hero boundary while the collection circles remain in the showcase strip below.
 - For flooring page-only UI state that must affect both the hero picker and the showcase strip, a small shared provider around `Header` + `Showcase` is cleaner than URL hacks or browser-only storage.
@@ -215,6 +228,10 @@
 - When moving a flooring code between collections, update both collection `products.json` manifests and matching entries in `src/redirects/legacyRedirects.ts`.
 - In this environment, if direct `Remove-Item` is blocked, use `git rm -r` to remove tracked asset folders cleanly.
 - For client components like the showcase header, avoid `next/dynamic(..., { ssr: false })` as a workaround for import cycles; extract shared client helpers into a separate module and use normal imports to prevent `BAILOUT_TO_CLIENT_SIDE_RENDERING` in dev HTML.
+- For premium-vs-natural flooring audits, compare active flooring `public/images/<collection>/products.json` manifests by numeric suffix only and join `messages/en.json` for product names when exporting the result.
+- For Elite flooring translation fixes, reuse the matching `FullNaturalCollectionPanelNames` or `SpcParquetNaturalCollectionPanelNames` value by numeric suffix instead of leaving code-only labels.
+- For markdown exports of product translations, pull only `*PanelNames` namespaces from `messages/en.json` and `messages/tr.json`, and exclude rows where both locale values are still just the raw code.
+- When the user provides a proposed naming file for a collection, treat it as the exact mapping source for that collection's locale namespace and verify the post-edit diff only touches the intended block.
 
 ## Patterns That Don't Work
 - Guessing environment behavior without verifying local config/scripts.
@@ -270,8 +287,3 @@
 - As of 2026-03-12 (latest): ownership cleanup set `19022-5` to Full Natural only, and `29036-5` + `29100-5` to Natural only; non-owner folders, manifest entries, and namespace keys were removed; `full-collection-19022-5` legacy redirect now points to `/full-natural-collection`.
 - As of 2026-03-13 (latest): `29148-4` was fully removed from the Natural collection (`products.json`, EN/TR natural keys, asset folder, and legacy redirect rows) with no fallback redirect added.
 - As of 2026-03-13 (latest): deep EN/TR Unicode audit across `messages`, `content`, and `src` found and fixed 23 mojibake-corrupted English locale strings in `messages/en.json`; post-fix scan reports zero suspect sequences.
-
-
-
-
-
