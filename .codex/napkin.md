@@ -3,6 +3,8 @@
 ## Corrections
 | Date | Source | What Went Wrong | What To Do Instead |
 |------|--------|----------------|-------------------|
+| 2026-04-19 | user | `N-747` was labeled `Tobacco Oak`, but the intended full natural collection name is `Weathered Oak Brown` | Update `messages/en.json` and `messages/tr.json` under `FullNaturalCollectionPanelNames` so `N-747` is `Weathered Oak Brown` |
+| 2026-04-19 | user | Elegance names `P-302` and `P-309` were previously set to `Barley Oak` and `Bourbon Oak`, but the intended names are `Rustic Beige Oak` and `Tobacco Oak` | Update both `messages/en.json` and `messages/tr.json` under `SpcFlooringEleganceCollectionPanelNames` to the corrected names |
 | 2026-04-19 | user | Repo-local Git author was briefly changed toward the personal name/email path, but the intended commit identity for this repo is the GitHub account identity | Use repo-local Git author `kermit-floor <271395912+kermit-floor@users.noreply.github.com>` for commits in this checkout |
 | 2026-04-19 | self | Used a single-quoted shell pattern that also contained an apostrophe while locating napkin sections, which broke the command before execution | When a grep/rg pattern contains an apostrophe, wrap the whole pattern in double quotes instead of single quotes |
 | 2026-04-19 | user | `N-224` in the natural flooring collection was a typo; the correct code is `N-219` | Rename the SKU everywhere consistently: manifest entry, locale namespace keys, and asset folder |
