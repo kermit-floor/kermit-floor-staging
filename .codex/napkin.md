@@ -150,6 +150,7 @@
 - Prefers long-form blog posts with many subtitles to improve reader focus/retention.
 
 - Wants the floating "Chat with us" action to open WhatsApp directly with no intermediate chatbox UI.
+- Wants WhatsApp routing by locale: Turkish site to +905515370648, English site to +905521342961.
 - When requesting collection/product exports in `.txt`, expects the file to be written directly to `C:\\Users\\hp\\Desktop`.
 - For product-list exports, wants plain code-only `.txt` output (one product per line, no JSON punctuation or section labels).
 - When saying "separated according to collection", prefers separate files per collection over a single merged file.
@@ -234,6 +235,7 @@
 - For Elite flooring translation fixes, reuse the matching `FullNaturalCollectionPanelNames` or `SpcParquetNaturalCollectionPanelNames` value by numeric suffix instead of leaving code-only labels.
 - For markdown exports of product translations, pull only `*PanelNames` namespaces from `messages/en.json` and `messages/tr.json`, and exclude rows where both locale values are still just the raw code.
 - When the user provides a proposed naming file for a collection, treat it as the exact mapping source for that collection's locale namespace and verify the post-edit diff only touches the intended block.
+- For WhatsApp link changes, keep locale-specific numbers in `src/lib/contact.ts` so the floating chat button and resource request dialogs do not drift.
 
 ## Patterns That Don't Work
 - Guessing environment behavior without verifying local config/scripts.

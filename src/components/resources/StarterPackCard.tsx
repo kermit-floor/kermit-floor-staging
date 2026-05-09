@@ -4,6 +4,7 @@ import type { Resource, Locale } from '@/lib/resources-data';
 import { useLocale, useTranslations } from 'next-intl';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { getWhatsAppUrl } from '@/lib/contact';
 import { Check, Download, Package, FileText, X, Mail } from 'lucide-react';
 import {
   Dialog,
@@ -40,9 +41,8 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
   );
 
   const email = "info@kermit.com.tr";
-  const phone = locale === 'tr' ? "905532775896" : "905376156129";
   const whatsappMessage = tDialog('whatsappMessage', { packName: title });
-  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = getWhatsAppUrl(locale, whatsappMessage);
 
   return (
     <Card className="flex flex-col">

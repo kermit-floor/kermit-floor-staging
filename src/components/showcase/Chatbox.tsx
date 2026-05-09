@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import { getWhatsAppUrl } from '@/lib/contact';
 import { useTranslations, useLocale } from 'next-intl';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -19,8 +20,7 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 export function Chatbox() {
   const t = useTranslations('Chatbox');
   const locale = useLocale();
-  const phoneNumber = locale === 'tr' ? '905532775896' : '905376156129';
-  const whatsappUrl = `https://wa.me/${phoneNumber}`;
+  const whatsappUrl = getWhatsAppUrl(locale);
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
