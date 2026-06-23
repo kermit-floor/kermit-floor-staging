@@ -32,6 +32,8 @@ If you are using Cloudflare Workers Builds with a connected Git repository, use:
 - Build command: `npm run cf:build`
 - Deploy command: `npm run cf:deploy`
 
+The Worker name in `wrangler.jsonc` must match the Cloudflare Workers Builds project name. The `WORKER_SELF_REFERENCE` service binding should point to that same Worker name.
+
 Do not use `npm run build` followed by `npx wrangler deploy` for this app. `wrangler deploy` reads `wrangler.jsonc`, which points `main` at `.open-next/worker.js`. That file is produced by the OpenNext build step, not by `next build` alone.
 
 ### Building on Windows

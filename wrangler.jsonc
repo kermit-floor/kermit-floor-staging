@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "kermit-floor",
+  "name": "kermit-floor-staging",
   "compatibility_date": "2025-05-05",
   "compatibility_flags": [
     "nodejs_compat",
@@ -14,7 +14,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "kermit-floor"
+      "service": "kermit-floor-staging"
     }
   ],
   "images": {
