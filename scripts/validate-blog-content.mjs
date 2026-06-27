@@ -23,6 +23,61 @@ const SEARCH_INTENTS = ['informational', 'commercial-investigation', 'comparison
 const TARGET_AUDIENCES = ['mixed-b2b', 'installer', 'dealer', 'architect'];
 const FUNNEL_STAGES = ['awareness', 'consideration', 'decision'];
 const SUSPECT_MOJIBAKE_PREFIXES = new Set([0x00C2, 0x00C3, 0x00C4, 0x00C5]);
+const PROMPT_LEAK_PATTERNS = [
+  {
+    pattern:
+      /\byour (?:high-level|list|draft|prompt|preferred term|secondary keywords?|core focus|use-case note|key user claim)\b/gi,
+    reason: 'references the author prompt instead of the reader topic',
+  },
+  {
+    pattern: /\byou mentioned\b/gi,
+    reason: 'references the author prompt instead of the reader topic',
+  },
+  {
+    pattern: /\byou asked\b/gi,
+    reason: 'references the author prompt instead of the reader topic',
+  },
+  {
+    pattern: /\bprofessional article\b/gi,
+    reason: 'comments on the article draft instead of the subject',
+  },
+  {
+    pattern: /\bthat wording is better than\b/gi,
+    reason: 'comments on wording quality instead of the subject',
+  },
+  {
+    pattern: /\bthis keeps the article\b/gi,
+    reason: 'comments on the article draft instead of the subject',
+  },
+  {
+    pattern: /Bu anlatım hem güçlü hem de profesyonel bir anlatımdır/giu,
+    reason: 'comments on wording quality instead of the subject',
+  },
+  {
+    pattern: /Bu yüksek seviyeli (?:bilgi|noktalar)/giu,
+    reason: 'references planning notes instead of the reader topic',
+  },
+  {
+    pattern: /Sizin (?:özellikle|üçüncü|verdiğiniz|paylaştığınız|notunuz)/giu,
+    reason: 'references the author prompt instead of the reader topic',
+  },
+  {
+    pattern: /ifadesi nasıl doğru anlatılmalı/giu,
+    reason: 'comments on drafting instead of the subject',
+  },
+  {
+    pattern: /blog içeriğinde doğru çerçeve/giu,
+    reason: 'comments on drafting instead of the subject',
+  },
+  {
+    pattern: /Bu ifade neden daha güçlü/giu,
+    reason: 'comments on wording quality instead of the subject',
+  },
+  {
+    pattern: /Bu yaklaşım, kullanım alanını doğru tarif eder ve gereksiz iddialardan kaçınır/giu,
+    reason: 'comments on article framing instead of the subject',
+  },
+];
 
 function getLineAndColumn(source, index) {
   let line = 1;
@@ -98,6 +153,18 @@ function validateNoMojibake(raw, filePath, errors) {
   errors.push(
     `${filePath}:${line}:${column}: ${match.reason}. Code points: ${codePoints}. Snippet: "${snippet}"`,
   );
+}
+
+function validateNoPromptLeaks(raw, filePath, errors) {
+  for (const {pattern, reason} of PROMPT_LEAK_PATTERNS) {
+    pattern.lastIndex = 0;
+    let match;
+    while ((match = pattern.exec(raw)) !== null) {
+      const {line, column} = getLineAndColumn(raw, match.index);
+      const snippet = getSnippet(raw, match.index, 36);
+      errors.push(`${filePath}:${line}:${column}: likely prompt/drafting leak: ${reason}. Snippet: "${snippet}"`);
+    }
+  }
 }
 
 function normalizeTag(value, locale = 'en') {
@@ -366,6 +433,8 @@ async function main() {
     const trRaw = await readFile(localeFiles.tr, 'utf8');
     validateNoMojibake(enRaw, localeFiles.en, errors);
     validateNoMojibake(trRaw, localeFiles.tr, errors);
+    validateNoPromptLeaks(enRaw, localeFiles.en, errors);
+    validateNoPromptLeaks(trRaw, localeFiles.tr, errors);
     const enData = matter(enRaw).data;
     const trData = matter(trRaw).data;
 
