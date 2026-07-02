@@ -20,34 +20,6 @@ See [DEPLOY.md](DEPLOY.md) for Cloudflare (OpenNext) build and deployment instru
 - [docs/product-loading-logic.md](docs/product-loading-logic.md): current product loading, spec registry, and Worker fallback flow
 - [docs/blueprint.md](docs/blueprint.md): high-level product and site blueprint
 
-## Codex Napkin Guardrails
-
-This repo uses a committed, Codex-only napkin at `.codex/napkin.md` to persist
-mistakes, corrections, and working patterns across sessions.
-
-One-time setup:
-
-```powershell
-./scripts/install-napkin-skill.ps1
-```
-
-Daily usage (recommended entrypoint):
-
-```powershell
-./scripts/start-codex.ps1
-```
-
-Troubleshooting:
-
-```powershell
-./scripts/check-napkin-setup.ps1
-```
-
-Notes:
-
-- The frozen skill snapshot is in `tools/napkin-skill/` and intentionally not auto-synced.
-- `.codex/napkin.md` is committed so team members and agents share learned patterns.
-
 ## Codex Blog Post Generator Skill
 
 Install the bilingual EN/TR blog generation skill:
