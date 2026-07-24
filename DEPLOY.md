@@ -43,3 +43,17 @@ OpenNext may hit permission or spawn errors on Windows. Prefer **WSL** or **Clou
 ### Content Updates
 
 Product and resource pages are **statically generated at build time**. Changes to product lists (for example, `public/images/*/products.json`) or to the resources library require a **new build and deploy** to appear on the site. There is no ISR or on-demand revalidation on Cloudflare for this app.
+
+### Large Catalogue Downloads
+
+Cloudflare Workers static assets have a 25 MiB per-file limit. Larger catalogue PDFs must not be committed under `public/`.
+
+The July 2026 SPC flooring catalogues are stored in the `kermit-floor-downloads` R2 bucket and served through the same-origin `/downloads/catalogues/[filename]` route. The Worker receives access through the `CATALOGUE_FILES` binding in `wrangler.jsonc`.
+
+Upload replacement files to these R2 object keys before deploying matching resource metadata:
+
+```bash
+npx wrangler r2 object put kermit-floor-downloads/catalogues/kermit-floor-spc-flooring-catalogue-2026-07.pdf --file /path/to/kermit-floor-spc-flooring-catalogue-2026-07.pdf --content-type application/pdf --content-disposition 'inline; filename="kermit-floor-spc-flooring-catalogue-2026-07.pdf"' --cache-control 'public, max-age=31536000, immutable' --remote
+
+npx wrangler r2 object put kermit-floor-downloads/catalogues/kermit-floor-spc-parke-katalog-2026-07.pdf --file /path/to/kermit-floor-spc-parke-katalog-2026-07.pdf --content-type application/pdf --content-disposition 'inline; filename="kermit-floor-spc-parke-katalog-2026-07.pdf"' --cache-control 'public, max-age=31536000, immutable' --remote
+```
