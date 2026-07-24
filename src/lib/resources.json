@@ -201,33 +201,33 @@
       "previewEnabled": true
     },
     {
-      "id": "flooring-catalogue-2025",
+      "id": "flooring-catalogue-2026",
       "productLine": "flooring",
       "docType": "catalogue",
       "audience": [
         "all"
       ],
       "installationMethod": null,
-      "title": "SPC Flooring Catalogue 2025",
-      "title_tr": "SPC Parke Kataloğu 2025",
+      "title": "SPC Flooring Catalogue 2026",
+      "title_tr": "SPC Parke Kataloğu 2026",
       "summary": "The complete collection of our innovative SPC flooring products.",
       "summary_tr": "Yenilikçi SPC parke ürünlerimizin eksiksiz koleksiyonu.",
-      "version": "v1.0",
-      "updatedAt": "2024-07-26",
+      "version": "v2026.07",
+      "updatedAt": "2026-07-23",
       "tags": [
         "catalogue",
         "flooring",
-        "2025"
+        "2026"
       ],
       "files": {
         "en": {
-          "url": "/downloads/catalogues/kermit-spc-flooring-catalogue-en.pdf",
-          "size": "12 MB",
+          "url": "/downloads/catalogues/kermit-floor-spc-flooring-catalogue-2026-07.pdf",
+          "size": "42 MB",
           "format": "pdf"
         },
         "tr": {
-          "url": "/downloads/catalogues/kermit-spc-flooring-catalogue-en.pdf",
-          "size": "12 MB",
+          "url": "/downloads/catalogues/kermit-floor-spc-parke-katalog-2026-07.pdf",
+          "size": "43 MB",
           "format": "pdf"
         }
       },
