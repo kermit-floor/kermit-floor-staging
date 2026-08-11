@@ -168,33 +168,33 @@
       "previewEnabled": true
     },
     {
-      "id": "wall-panel-catalogue-2025",
+      "id": "wall-panel-catalogue-2026",
       "productLine": "wall_panels",
       "docType": "catalogue",
       "audience": [
         "all"
       ],
       "installationMethod": null,
-      "title": "SPC Wall Panel Catalogue 2025",
-      "title_tr": "SPC Duvar Paneli Kataloğu 2025",
+      "title": "SPC Wall Panel Catalogue 2026",
+      "title_tr": "SPC Duvar Paneli Kataloğu 2026",
       "summary": "The complete collection of our innovative SPC wall panels.",
       "summary_tr": "Yenilikçi SPC duvar panellerimizin eksiksiz koleksiyonu.",
-      "version": "v1.0",
-      "updatedAt": "2024-07-25",
+      "version": "v2026.08",
+      "updatedAt": "2026-08-11",
       "tags": [
         "catalogue",
         "wall-panels",
-        "2025"
+        "2026"
       ],
       "files": {
         "en": {
-          "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en.pdf",
-          "size": "15 MB",
+          "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en-2026-08.pdf",
+          "size": "5.7 MB",
           "format": "pdf"
         },
         "tr": {
-          "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en.pdf",
-          "size": "15 MB",
+          "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en-2026-08.pdf",
+          "size": "5.7 MB",
           "format": "pdf"
         }
       },
