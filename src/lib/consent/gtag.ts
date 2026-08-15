@@ -83,3 +83,11 @@ export function trackPageView(): void {
   });
 }
 
+export function trackEvent(name: string, params?: Record<string, string>): void {
+  if (!isBrowser() || !window.__kermitGaInitialized || typeof window.gtag !== 'function') {
+    return;
+  }
+
+  window.gtag('event', name, params);
+}
+

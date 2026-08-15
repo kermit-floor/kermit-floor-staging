@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { getWhatsAppUrl } from '@/lib/contact';
+import { trackEvent } from '@/lib/consent/gtag';
 import { Check, Download, Package, FileText, X, Mail } from 'lucide-react';
 import {
   Dialog,
@@ -80,7 +81,7 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
                     </DialogTitle>
                 </DialogHeader>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
-                    <a href={`mailto:${email}`} className="block">
+                    <a href={`mailto:${email}`} className="block" onClick={() => trackEvent('generate_lead', {method: 'email', location: 'starter_pack_dialog', pack_id: pack.id, locale})}>
                         <Card className="h-full hover:bg-muted/50 transition-colors">
                             <CardContent className="flex flex-col items-center justify-center p-6 gap-3">
                                 <Mail className="h-10 w-10 text-primary" />
@@ -88,7 +89,7 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
                             </CardContent>
                         </Card>
                     </a>
-                    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block">
+                    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block" onClick={() => trackEvent('generate_lead', {method: 'whatsapp', location: 'starter_pack_dialog', pack_id: pack.id, locale})}>
                         <Card className="h-full hover:bg-muted/50 transition-colors">
                             <CardContent className="flex flex-col items-center justify-center p-6 gap-3">
                                 <WhatsAppIcon className="h-10 w-10 text-primary" />

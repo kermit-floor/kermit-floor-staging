@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { getWhatsAppUrl } from '@/lib/contact';
+import { trackEvent } from '@/lib/consent/gtag';
 import { useTranslations, useLocale } from 'next-intl';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -34,6 +35,7 @@ export function Chatbox() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={t('prompt')}
+          onClick={() => trackEvent('generate_lead', {method: 'whatsapp', location: 'floating_chatbox', locale})}
         >
           <WhatsAppIcon className="h-10 w-10" />
           <span className="ml-3 text-lg font-semibold">{t('prompt')}</span>

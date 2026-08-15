@@ -48,3 +48,6 @@ firestore-debug.log
 
 # codex internal traces (may contain external media provenance URLs)
 .codex/blog-media-sources/
+
+# kimi code local config (contains MCP credentials)
+.kimi-code/

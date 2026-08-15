@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { MapPin, Phone, Mail, Building, Printer, Smartphone } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '../ui/separator';
+import { trackEvent } from '@/lib/consent/gtag';
 
 function LocationCard({ location }: { location: { title: string; details: any[] } }) {
   return (
@@ -20,7 +21,11 @@ function LocationCard({ location }: { location: { title: string; details: any[] 
               <item.icon className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
               <div className="text-muted-foreground whitespace-pre-line text-sm">
                 {item.href ? (
-                  <a href={item.href} className="hover:text-primary transition-colors">{item.value}</a>
+                  <a
+                    href={item.href}
+                    className="hover:text-primary transition-colors"
+                    onClick={item.leadMethod ? () => trackEvent('generate_lead', {method: item.leadMethod, location: 'contact_page', office: location.title}) : undefined}
+                  >{item.value}</a>
                 ) : (
                   <span>{item.value}</span>
                 )}
@@ -44,9 +49,9 @@ export default function ContactPageClient() {
       title: tLoc('turkeyTitle'),
       details: [
         { icon: MapPin, value: tLoc('turkeyAddress') },
-        { icon: Phone, value: tLoc('turkeyPhone'), href: `tel:${tLoc('turkeyPhone').replace(/ /g,'')}` },
+        { icon: Phone, value: tLoc('turkeyPhone'), href: `tel:${tLoc('turkeyPhone').replace(/ /g,'')}`, leadMethod: 'phone' },
         { icon: Printer, value: tLoc('turkeyFax'), href: `tel:${tLoc('turkeyFax').replace(/ /g,'')}` },
-        { icon: Mail, value: tLoc('turkeyEmail'), href: `mailto:${tLoc('turkeyEmail')}` },
+        { icon: Mail, value: tLoc('turkeyEmail'), href: `mailto:${tLoc('turkeyEmail')}`, leadMethod: 'email' },
       ]
     },
     {
@@ -54,9 +59,9 @@ export default function ContactPageClient() {
       details: [
         { icon: MapPin, value: tLoc('moldovaAddress') },
         { icon: Phone, value: tLoc('moldovaPhone') },
-        { icon: Smartphone, value: tLoc('moldovaGsm'), href: `tel:${tLoc('moldovaGsm').replace('GSM:', '').replace(/ /g,'')}` },
+        { icon: Smartphone, value: tLoc('moldovaGsm'), href: `tel:${tLoc('moldovaGsm').replace('GSM:', '').replace(/ /g,'')}`, leadMethod: 'phone' },
         { icon: Printer, value: tLoc('moldovaFax') },
-        { icon: Mail, value: tLoc('moldovaEmail'), href: `mailto:info@serkanplast.com` },
+        { icon: Mail, value: tLoc('moldovaEmail'), href: `mailto:info@serkanplast.com`, leadMethod: 'email' },
       ]
     },
     {
@@ -65,7 +70,7 @@ export default function ContactPageClient() {
         { icon: Building, value: tLoc('romaniaCompany') },
         { icon: MapPin, value: tLoc('romaniaAddress') },
         { icon: Phone, value: tLoc('romaniaPhone') },
-        { icon: Mail, value: tLoc('romaniaEmail'), href: `mailto:${tLoc('romaniaEmail')}` },
+        { icon: Mail, value: tLoc('romaniaEmail'), href: `mailto:${tLoc('romaniaEmail')}`, leadMethod: 'email' },
       ]
     }
   ];
