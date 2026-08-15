@@ -89,3 +89,26 @@ export function getCollectionFamily(collectionKey: CollectionKey): CollectionFam
 
   throw new Error(`Unknown collection key '${collectionKey}'`);
 }
+
+// 'Header' message keys holding the localized, H1-grade name of each collection.
+export const COLLECTION_HERO_TITLE_KEYS = {
+  'spc-wall-panels': 'heroTitleSpc',
+  'spc-3d-wall-panels-model-a': 'heroTitle3dModelA',
+  'spc-3d-wall-panels-model-b': 'heroTitle3dModelB',
+  'spc-flooring-elegance-collection': 'heroH1SpcFlooringEleganceCollection',
+  'spc-flooring-sky-collection': 'heroH1SpcFlooringSkyCollection',
+  'spc-flooring-mosaic-collection': 'heroH1SpcFlooringMosaicCollection',
+  'spc-flooring-elite-collection': 'heroH1SpcFlooringEliteCollection',
+  'spc-flooring-travertine-collection': 'heroH1SpcFlooringTravertineCollection',
+  'spc-parquet-natural-collection': 'heroH1SpcParquetNaturalCollection',
+  'spc-parquet-stone-collection': 'heroH1SpcParquetStoneCollection',
+  'full-natural-collection': 'heroH1FullNaturalCollection',
+  'skirting-alpha-140-mm': 'heroTitleSkirtingAlpha140mm',
+  'skirting-berlin-100-mm': 'heroTitleSkirtingBerlin100mm',
+  'skirting-elite-100-mm': 'heroTitleSkirtingElite100mm',
+  'skirting-moderna-100-mm': 'heroTitleSkirtingModerna100mm',
+  'skirting-optima-60-mm': 'heroTitleSkirtingOptima60mm',
+  'skirting-optima-90-mm': 'heroTitleSkirtingOptima90mm',
+  'skirting-solid-80-mm': 'heroTitleSkirtingSolid80mm',
+  'skirting-x-line-100-mm': 'heroTitleSkirtingXLine100mm',
+} as const satisfies Record<CollectionKey, string>;

@@ -4,6 +4,7 @@ import { Footer } from '@/components/showcase/Footer';
 import { getFloorSky } from '@/lib/floor-sky-data';
 import { getTranslations } from 'next-intl/server';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -25,7 +26,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SpcFlooringSkyCollectionPage() {
+export default async function SpcFlooringSkyCollectionPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SpcFlooringSkyCollectionPage' });
   const panels = await getFloorSky();
 
   return (
@@ -36,6 +39,13 @@ export default async function SpcFlooringSkyCollectionPage() {
       />
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="spc-flooring-sky-collection"
+        kind="itemList"
+        description={t('seo.description')}
+        panels={panels}
+      />
     </main>
   );
 }

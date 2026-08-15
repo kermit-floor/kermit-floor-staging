@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {notFound, redirect} from 'next/navigation';
+import {notFound, permanentRedirect} from 'next/navigation';
 import {Header} from '@/components/showcase/Header';
 import {Footer} from '@/components/showcase/Footer';
 import {Chatbox} from '@/components/showcase/Chatbox';
@@ -102,7 +102,7 @@ export default async function BlogPostPage({
     const alternateLocale: BlogLocale = locale === 'en' ? 'tr' : 'en';
     const alternateMatch = await getPublishedBlogPostBySlug(alternateLocale, slug);
     if (alternateMatch) {
-      redirect(toLocalePath(alternateLocale, getBlogPostPath(alternateMatch.post.slug)));
+      permanentRedirect(toLocalePath(alternateLocale, getBlogPostPath(alternateMatch.post.slug)));
     }
   }
 

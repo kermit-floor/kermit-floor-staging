@@ -4,6 +4,7 @@ import { Footer } from '@/components/showcase/Footer';
 import { getFloorTravertine } from '@/lib/floor-travertine-data';
 import { getTranslations } from 'next-intl/server';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -25,7 +26,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SpcFlooringTravertineCollectionPage() {
+export default async function SpcFlooringTravertineCollectionPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SpcFlooringTravertineCollectionPage' });
   const panels = await getFloorTravertine();
 
   return (
@@ -36,6 +39,13 @@ export default async function SpcFlooringTravertineCollectionPage() {
       />
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="spc-flooring-travertine-collection"
+        kind="itemList"
+        description={t('seo.description')}
+        panels={panels}
+      />
     </main>
   );
 }

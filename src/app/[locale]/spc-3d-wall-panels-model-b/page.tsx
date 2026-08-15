@@ -7,6 +7,7 @@ import { get3dPanelsModelB } from '@/lib/3d-panel-data-model-b';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -30,7 +31,9 @@ export async function generateMetadata({
 
 // This tells Next.js to re-validate the page (check for new data)
 // at most once every 60 seconds.
-export default async function Spc3dWallPanelsModelBPage() {
+export default async function Spc3dWallPanelsModelBPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Spc3dWallPanelsModelBPage' });
   const panels = await get3dPanelsModelB();
 
   return (
@@ -41,6 +44,13 @@ export default async function Spc3dWallPanelsModelBPage() {
       </div>
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="spc-3d-wall-panels-model-b"
+        kind="product"
+        description={t('seo.description')}
+        panels={panels}
+      />
     </main>
   );
 }

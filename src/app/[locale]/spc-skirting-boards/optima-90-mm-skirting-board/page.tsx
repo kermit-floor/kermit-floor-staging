@@ -7,6 +7,7 @@ import { getSkirtingOptima90mm } from '@/lib/skirting-optima-90-mm-data';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -28,7 +29,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SkirtingOptima90mmPage() {
+export default async function SkirtingOptima90mmPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SkirtingPages' });
   const panels = await getSkirtingOptima90mm();
 
   return (
@@ -39,6 +42,13 @@ export default async function SkirtingOptima90mmPage() {
       </div>
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="skirting-optima-90-mm"
+        kind="product"
+        description={t('optima-90-mm.description')}
+        panels={panels}
+      />
     </main>
   );
 }

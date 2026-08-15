@@ -6,6 +6,7 @@ import { getFloorStone } from '@/lib/floor-stone-data';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -29,7 +30,9 @@ export async function generateMetadata({
 
 // This tells Next.js to re-validate the page (check for new data)
 // at most once every 60 seconds.
-export default async function SpcParquetStoneCollectionPage() {
+export default async function SpcParquetStoneCollectionPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SpcParquetStoneCollectionPage' });
   const panels = await getFloorStone();
 
   return (
@@ -40,6 +43,13 @@ export default async function SpcParquetStoneCollectionPage() {
       />
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="spc-parquet-stone-collection"
+        kind="itemList"
+        description={t('seo.description')}
+        panels={panels}
+      />
     </main>
   );
 }

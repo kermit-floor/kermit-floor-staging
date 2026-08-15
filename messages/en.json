@@ -28,7 +28,15 @@
     "heroTitleSkirtingSolid80mm": "SOLID 80MM SKIRTING BOARD",
     "heroTitleSkirtingXLine100mm": "X-LINE 100MM SKIRTING BOARD",
     "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIUM",
-    "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL"
+    "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL",
+    "heroH1SpcFlooringEliteCollection": "Elite SPC Flooring Collection",
+    "heroH1SpcFlooringEleganceCollection": "Elegance SPC Flooring Collection",
+    "heroH1SpcFlooringSkyCollection": "Sky SPC Flooring Collection",
+    "heroH1SpcFlooringMosaicCollection": "Mosaic SPC Flooring Collection",
+    "heroH1SpcFlooringTravertineCollection": "Travertine SPC Flooring Collection",
+    "heroH1SpcParquetNaturalCollection": "Natural SPC Flooring Collection",
+    "heroH1SpcParquetStoneCollection": "Stone SPC Flooring Collection",
+    "heroH1FullNaturalCollection": "Full Natural SPC Flooring Collection"
   },
   "HomePage": {
     "seo": {

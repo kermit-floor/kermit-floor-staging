@@ -7,6 +7,7 @@ import { getPanels } from '@/lib/panel-data';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -28,7 +29,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SpcWallPanelsPage() {
+export default async function SpcWallPanelsPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SpcWallPanelsPage' });
   const panels = await getPanels();
 
   return (
@@ -39,6 +42,13 @@ export default async function SpcWallPanelsPage() {
       </div>
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="spc-wall-panels"
+        kind="product"
+        description={t('seo.description')}
+        panels={panels}
+      />
     </main>
   );
 }

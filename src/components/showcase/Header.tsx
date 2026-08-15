@@ -8,6 +8,7 @@ import {
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import {
+  COLLECTION_HERO_TITLE_KEYS,
   isFlooringCollectionKey,
   type CollectionKey,
 } from '@/lib/product-collections';
@@ -27,6 +28,7 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
   const flooringSeries = useFlooringSeries();
   
   let pageTitle;
+  let heroEyebrow: string | null = null;
   let heroImage;
   let heroImageHint;
   let activeFlooringSeriesId: FlooringSeriesId | null = null;
@@ -35,7 +37,8 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
     const resolvedFlooringSeriesId = flooringSeries?.activeSeriesId ?? getFlooringSeriesId(pageType);
     const flooringSeriesHero = FLOORING_SERIES_HERO[resolvedFlooringSeriesId];
     activeFlooringSeriesId = resolvedFlooringSeriesId;
-    pageTitle = t(flooringSeriesHero.titleKey);
+    heroEyebrow = t(flooringSeriesHero.titleKey);
+    pageTitle = t(COLLECTION_HERO_TITLE_KEYS[pageType]);
     heroImage = flooringSeriesHero.imageUrl;
     heroImageHint = flooringSeriesHero.imageHint;
   } else if (pageType === 'spc-3d-wall-panels-model-a') {
@@ -118,7 +121,12 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center px-4">
+            {heroEyebrow && (
+              <p className="font-headline text-sm lg:text-base font-semibold uppercase tracking-[0.3em] text-white/85 text-center mb-3">
+                {heroEyebrow}
+              </p>
+            )}
             <h1 className="font-headline text-4xl lg:text-5xl font-bold tracking-tight text-white text-center">
               {pageTitle}
             </h1>

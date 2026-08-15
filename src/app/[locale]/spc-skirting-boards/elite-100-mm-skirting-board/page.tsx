@@ -7,6 +7,7 @@ import { getSkirtingElite100mm } from '@/lib/skirting-elite-100-mm-data';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { CollectionJsonLd } from '@/components/seo/CollectionJsonLd';
 
 export async function generateMetadata({
   params,
@@ -28,7 +29,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function SkirtingElite100mmPage() {
+export default async function SkirtingElite100mmPage({params}: {params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SkirtingPages' });
   const panels = await getSkirtingElite100mm();
 
   return (
@@ -39,6 +42,13 @@ export default async function SkirtingElite100mmPage() {
       </div>
       <Footer />
       <Chatbox />
+      <CollectionJsonLd
+        locale={locale}
+        collectionKey="skirting-elite-100-mm"
+        kind="product"
+        description={t('elite-100-mm.description')}
+        panels={panels}
+      />
     </main>
   );
 }

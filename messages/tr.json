@@ -28,7 +28,15 @@
     "heroTitleSkirtingSolid80mm": "SOLID 80mm SÜPÜRGELİK",
     "heroTitleSkirtingXLine100mm": "X-LINE 100mm SÜPÜRGELİK",
     "heroTitleFlooringPremierSeries": "QUICK SHIP: PREMIUM",
-    "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL"
+    "heroTitleFlooringNaturalSeries": "QUICK SHIP: NATURAL",
+    "heroH1SpcFlooringEliteCollection": "Elit SPC Parke Koleksiyonu",
+    "heroH1SpcFlooringEleganceCollection": "Elegans SPC Parke Koleksiyonu",
+    "heroH1SpcFlooringSkyCollection": "Sky SPC Parke Koleksiyonu",
+    "heroH1SpcFlooringMosaicCollection": "Mozaik SPC Parke Koleksiyonu",
+    "heroH1SpcFlooringTravertineCollection": "Traverten SPC Parke Koleksiyonu",
+    "heroH1SpcParquetNaturalCollection": "Natural SPC Parke Koleksiyonu",
+    "heroH1SpcParquetStoneCollection": "Stone SPC Parke Koleksiyonu",
+    "heroH1FullNaturalCollection": "Full Natural SPC Parke Koleksiyonu"
   },
   "HomePage": {
     "seo": {

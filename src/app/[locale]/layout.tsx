@@ -5,6 +5,7 @@ import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {NextIntlClientProvider} from 'next-intl';
 import { inter, montserrat } from '@/app/fonts';
 import {ConsentProvider} from '@/components/consent/ConsentProvider';
+import {SiteJsonLd} from '@/components/seo/SiteJsonLd';
 
 const DEFAULT_GA_ID = 'G-W9FZMTQP1H';
  
@@ -54,6 +55,7 @@ export default async function RootLayout({
       <head>
       </head>
       <body className="font-body antialiased">
+        <SiteJsonLd locale={locale} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ConsentProvider gaId={gaId} enabled={consentModeEnabled}>
             {children}
