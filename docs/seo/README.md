@@ -52,6 +52,12 @@ while the owner is signed into Google):
 ```
 
 Then `/reload` so long-running MCP server processes pick up the new file.
+If 503s persist after `/reload`: those processes are long-lived (they can survive session
+restarts) and may predate the credential refresh — check with
+`ps -eo pid,lstart,cmd | grep -E 'analytics-mcp|google-ads-mcp'`. Kill the stale PIDs — the
+client respawns fresh processes on the next call, no `/reload` needed (verified 2026-08-16). As a fallback, query the APIs directly
+with the ADC token above (GA4: POST `https://analyticsdata.googleapis.com/v1beta/properties/523760978:runReport`;
+GSC: recipe below).
 GCP project: `kermit-analytics-mcp` (enabled APIs: analyticsadmin, analyticsdata, googleads,
 searchconsole, iamcredentials).
 

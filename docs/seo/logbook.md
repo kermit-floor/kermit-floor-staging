@@ -35,7 +35,7 @@ interference check in `.agents/skills/seo-review/SKILL.md` (Step 5b): disjoint s
 freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
 cohort marker in every open entry.
 
-Last review run: — (none yet)
+Last review run: 2026-08-16 (passive checks only; first verdicts due 2026-08-30)
 
 ---
 
@@ -166,3 +166,40 @@ Last review run: — (none yet)
   Ads account 8624458035 visible (token at TEST level, Explorer/Basic pending with Google).
 - **Verdict**: INFO — measurement infrastructure. Re-check Ads token level at every review
   (upgrade lands silently; test with a reporting query).
+
+
+---
+
+## Review 2026-08-16
+
+First review run. No experiments due (earliest: 2026-08-30 indexing checks) — passive checks only.
+
+**Data access**
+- GSC API: working (data through 2026-08-14, normal 2–3 day lag).
+- GA4 MCP: 503 reauth at run start. ADC refreshed per README "Credential recovery", but
+  `/reload` did NOT restart the MCP server processes (PIDs dated 2026-08-14 10:59 — long-lived,
+  they survive session restarts — still held the revoked grant). GA4 data below was pulled via
+  direct Analytics Data API calls with the same ADC (verified working) — a working fallback
+  whenever the MCP path is stale. **Fixed same day**: owner approved killing the two stale
+  PIDs; the client auto-respawned fresh processes (no `/reload` needed) — GA4 MCP and ads MCP
+  verified working (ads still blocked only by the TEST-level developer token).
+- Ads probe: still `DEVELOPER_TOKEN_NOT_APPROVED` (TEST level). Re-probe next run.
+
+**Passive checks**
+- Indexing (early): all 6 new URLs already "Submitted and indexed" via URL Inspection API,
+  canonicals self-matching, crawled 2026-08-16 — `/spc-skirting-boards`, `/tr/spc-supurgelikler`,
+  `/tr/blog/spc-parke-kullanici-yorumlari`, `/blog/spc-flooring-user-reviews`,
+  `/tr/blog/spc-parke-fiyatlari`, `/blog/spc-flooring-cost`. The 08-30 indexing milestone is
+  effectively passed two weeks early; ranking verdicts still wait for their due dates.
+- Rich results: `searchAppearance` empty for the last 28 days — no Product/Breadcrumb
+  enhancements yet (JSON-LD shipped 2026-08-15; still within expectations).
+- Anomalies: none. 2026-08-07 → 08-14: 199 clicks / 4,756 impressions (~25 clicks, ~594 imp
+  per day) vs baseline ~24.6 clicks / ~631 imp per day — in line.
+- GA4 (via direct API): **`generate_lead` = 2 events since 2026-08-14** (baseline 0) — first
+  tracked leads; instrumentation confirmed firing, formal first read still 2026-08-30. No
+  `file_download` in the 2-day window (81/90d ≈ 0.9/day → 0 is normal). AI Assistant channel:
+  1 session/28d vs baseline 6/90d — noise at this volume, trend verdict due 2026-09-15.
+  Sessions ~382/28d, in line with baseline 361/28d — no anomaly.
+
+**Verdicts**: none due. Next review **2026-08-30** (JSON-LD appearance check, first
+`generate_lead` read — GA4 MCP must be working by then).
