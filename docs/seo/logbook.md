@@ -31,7 +31,7 @@ Review cadence (batch of 2026-08-14/16):
 - **2026-09-27** — full structural verdict vs baseline + next iteration plan.
 
 Parallel changes: new work may ship while experiments are PENDING, but only after the
-interference check in `.agents/skills/seo-review/SKILL.md` (Step 5b): disjoint scope ships
+interference check in `.agents/skills/seo-general-review/SKILL.md` (Step 5b): disjoint scope ships
 freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
 cohort marker in every open entry.
 

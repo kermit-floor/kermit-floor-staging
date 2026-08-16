@@ -1,8 +1,8 @@
 ---
-name: seo-review
+name: seo-general-review
 description: Run the recurring kermitfloor.com SEO growth review — pull fresh GSC/GA4 data, judge open experiments in docs/seo/logbook.md against their baselines, record verdicts, and plan the next iteration
 type: prompt
-whenToUse: When the user asks for an SEO review, SEO status, ranking check, "how are our changes doing", or invokes /skill:seo-review
+whenToUse: When the user asks for the periodic SEO review, SEO status, verdict check on shipped changes, "how are our changes doing", or invokes /skill:seo-general-review. For one-off ad-hoc questions (a market, a traffic drop, "is X working") use seo-investigate instead.
 ---
 
 Run the SEO growth review for kermitfloor.com. Work through these steps in order; keep the owner informed with a short note per phase.
@@ -78,5 +78,12 @@ New opportunities may be shipped while experiments are PENDING — but only afte
 - If baselines shifted materially, add `docs/seo/baselines/<today>.md`.
 - Update "Last review run" at the top of the logbook and set next due dates.
 - Remind the owner these docs-only updates still trigger a Cloudflare build on push.
+
+## Arguments — extra focus, not reconfiguration
+
+If `$ARGUMENTS` below is non-empty, treat it as an additional investigation focus for this run
+and cover it in the review summary. The fixed steps above still run in full and dominate on
+conflict. For a standalone ad-hoc question that doesn't need a review run, suggest
+`/skill:seo-investigate` instead.
 
 $ARGUMENTS

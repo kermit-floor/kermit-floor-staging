@@ -12,8 +12,10 @@ This repo runs a recurring measure → change → record → review cycle for ke
 - **Any change that could affect search/AI visibility or lead measurement MUST get a logbook
   entry at ship time** (hypothesis, primary metric + baseline, review-due date). Format and
   timing rules are in the logbook itself.
-- **Reviews** are run with the project skill `/skill:seo-review`
-  (`.agents/skills/seo-review/SKILL.md`). Reviews write verdicts into the logbook the same day.
+- **Reviews** are run with the project skill `/skill:seo-general-review`
+  (`.agents/skills/seo-general-review/SKILL.md`). Reviews write verdicts into the logbook the
+  same day. Ad-hoc SEO/analytics questions go through `/skill:seo-investigate`
+  (`.agents/skills/seo-investigate/SKILL.md`).
 - GA4 data comes via the project MCP server `google-analytics` (`.kimi-code/mcp.json`,
   gitignored); Search Console via direct API calls per `docs/seo/README.md`. When Google calls
   fail with reauth errors, use the recovery command in that README, then `/reload`.

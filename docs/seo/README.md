@@ -8,7 +8,8 @@ This directory is the system's memory. Read this file first in any session that 
 - `docs/seo/logbook.md` — the experiment log. **Every change that could affect search/AI
   visibility or lead measurement gets an entry at ship time** (format and timing rules inside).
 - `docs/seo/baselines/YYYY-MM-DD.md` — dated metric snapshots. Verdicts compare against these.
-- Reviews are run via the project skill: `/skill:seo-review` (`.agents/skills/seo-review/SKILL.md`).
+- Reviews are run via the project skill: `/skill:seo-general-review`
+  (`.agents/skills/seo-general-review/SKILL.md`); ad-hoc questions via `/skill:seo-investigate`.
 
 ## Data access
 
