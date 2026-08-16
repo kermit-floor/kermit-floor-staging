@@ -30,6 +30,11 @@ Review cadence (batch of 2026-08-14/16):
 - **2026-09-15** — rankings: new posts, hub effect on "spc skirting", AI-referral trend.
 - **2026-09-27** — full structural verdict vs baseline + next iteration plan.
 
+Parallel changes: new work may ship while experiments are PENDING, but only after the
+interference check in `.agents/skills/seo-review/SKILL.md` (Step 5b): disjoint scope ships
+freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
+cohort marker in every open entry.
+
 Last review run: — (none yet)
 
 ---
@@ -98,6 +103,10 @@ Last review run: — (none yet)
 - **Review due**: 2026-08-30 (indexing), 2026-09-15 (ranking).
 - **Verdict**: PENDING
 - **Action**: —
+- **Amendment (2026-08-16)**: post edited post-ship to remove all 0,55 mm wear-layer mentions
+  (owner: that spec option is being retired; public line is 0,30/0,50 mm). Product-accuracy
+  amendment, not an SEO-motivated change — does not re-baseline the experiment; reviewers
+  should not attribute ranking movement to it.
 
 ### [2026-08-15] New post pair: SPC pricing factors — commit 89db2ae
 - **Change**: /tr/blog/spc-parke-fiyatlari + /blog/spc-flooring-cost. No invented prices;
@@ -108,6 +117,10 @@ Last review run: — (none yet)
 - **Review due**: 2026-08-30 (indexing), 2026-09-15 (ranking/leads).
 - **Verdict**: PENDING
 - **Action**: —
+- **Amendment (2026-08-16)**: post edited post-ship to remove all 0,55 mm wear-layer mentions
+  (owner: that spec option is being retired; public line is 0,30/0,50 mm). Product-accuracy
+  amendment, not an SEO-motivated change — does not re-baseline the experiment; reviewers
+  should not attribute ranking movement to it.
 
 ### [2026-08-16] CTR refresh of 3 blog topics — commit ee18f48
 - **Change**: year-stamped, benefit-driven titles/descriptions on spc-wall-panel-bathroom-usage
