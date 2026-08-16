@@ -42,7 +42,7 @@ export function NavMenu({ isMobile = false }) {
     { href: '/', label: t('navHome') },
     { href: DEFAULT_FLOORING_ROUTE, label: t('navFloors') },
     { href: '/spc-wall-panels', label: t('navWalls') },
-    { href: '/spc-skirting-boards/optima-90-mm-skirting-board', label: t('navSkirtings') },
+    { href: '/spc-skirting-boards', label: t('navSkirtings') },
     { href: getResourcesLink(), label: t('navDownload') },
     { href: '/about', label: t('navAbout') },
     { href: '/contact', label: t('navContact') },

@@ -14,7 +14,7 @@ export function Footer() {
   const productLinks: { href: Parameters<typeof Link>[0]['href']; label: string }[] = [
       { href: DEFAULT_FLOORING_ROUTE, label: t('productFlooring') },
       { href: '/spc-wall-panels', label: t('productWallPanels') },
-      { href: '/spc-skirting-boards/optima-90-mm-skirting-board', label: t('productSkirting') },
+      { href: '/spc-skirting-boards', label: t('productSkirting') },
     ];
     
     const supportLinks: { href: Parameters<typeof Link>[0]['href']; label: string }[] = [

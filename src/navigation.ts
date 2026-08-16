@@ -78,6 +78,10 @@ export const pathnames = {
     en: '/full-natural-collection',
     tr: '/tam-dogal-koleksiyon',
   },
+  '/spc-skirting-boards': {
+    en: '/spc-skirting-boards',
+    tr: '/spc-supurgelikler',
+  },
   '/spc-skirting-boards/alpha-140-mm-skirting-board': {
     en: '/spc-skirting-boards/alpha-140-mm-skirting-board',
     tr: '/spc-supurgelikler/alpha-140-mm-supurgelik',

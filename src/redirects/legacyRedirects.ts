@@ -402,8 +402,6 @@ export const legacyRedirects = [
   { source: '/spc-flooring-and-wall-panels', destination: '/spc-wall-panels', permanent: true },
   { source: '/spc-flooring-and-wall-panels/', destination: '/spc-wall-panels', permanent: true },
   { source: '/spc-flooring/', destination: '/spc-parquet-natural-collection', permanent: true },
-  { source: '/spc-skirting-boards', destination: '/spc-skirting-boards/optima-90-mm-skirting-board', permanent: true },
-  { source: '/spc-skirting-boards/', destination: '/spc-skirting-boards/optima-90-mm-skirting-board', permanent: true },
   { source: '/spc-skirting-boards/optima90-product-page', destination: '/spc-skirting-boards/optima-90-mm-skirting-board', permanent: true },
   { source: '/spc-skirting-boards/optima90-product-page/', destination: '/spc-skirting-boards/optima-90-mm-skirting-board', permanent: true },
   { source: '/stone-quick-ship-floor-profiles-wall-panels', destination: '/spc-wall-panels', permanent: true },

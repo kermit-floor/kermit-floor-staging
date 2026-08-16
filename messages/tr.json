@@ -608,6 +608,52 @@
       "description": "X-Line 100mm SPC süpürgelik ile keskin, mimari bir görünüm yaratın."
     }
   },
+  "SpcSkirtingBoardsPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC Süpürgelikler",
+      "description": "Kermit Floor SPC süpürgelik serilerini keşfedin: 60–140 mm yükseklikte 8 profil, esnek kenar ve SPC parke ile birebir renk uyumu."
+    },
+    "hero": {
+      "title": "SPC Süpürgelikler"
+    },
+    "specLabels": {
+      "height": "Yükseklik",
+      "width": "Genişlik",
+      "length": "Boy",
+      "material": "Malzeme"
+    },
+    "lines": {
+      "alpha-140-mm": {
+        "name": "Alpha 140mm Süpürgelik"
+      },
+      "berlin-100-mm": {
+        "name": "Berlin 100mm Süpürgelik"
+      },
+      "elite-100-mm": {
+        "name": "Elite 100mm Süpürgelik"
+      },
+      "moderna-100-mm": {
+        "name": "Moderna 100mm Süpürgelik"
+      },
+      "optima-60-mm": {
+        "name": "Optima 60mm Süpürgelik"
+      },
+      "optima-90-mm": {
+        "name": "Optima 90mm Süpürgelik"
+      },
+      "solid-80-mm": {
+        "name": "Solid 80mm Süpürgelik"
+      },
+      "x-line-100-mm": {
+        "name": "X-Line 100mm Süpürgelik"
+      }
+    },
+    "cta": {
+      "title": "Projeniz için SPC süpürgelik mi gerekiyor?",
+      "text": "Miktar ve dekor seçimlerinizi bize gönderin; projeniz için tedarik teklifi hazırlayalım.",
+      "button": "Teklif İste"
+    }
+  },
   "ProductDetails": {
     "specThickness": "KALINLIK",
     "specDepth": "DERİNLİK",

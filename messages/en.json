@@ -608,6 +608,52 @@
       "description": "Create a sharp, architectural look with the X-Line 100mm SPC skirting board."
     }
   },
+  "SpcSkirtingBoardsPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC Skirting Boards",
+      "description": "Explore all SPC skirting boards from Kermit Floor: 8 profiles from 60 to 140 mm, flexible edges, and colors matched to SPC flooring."
+    },
+    "hero": {
+      "title": "SPC Skirting Boards"
+    },
+    "specLabels": {
+      "height": "Height",
+      "width": "Width",
+      "length": "Length",
+      "material": "Material"
+    },
+    "lines": {
+      "alpha-140-mm": {
+        "name": "Alpha 140mm Skirting Board"
+      },
+      "berlin-100-mm": {
+        "name": "Berlin 100mm Skirting Board"
+      },
+      "elite-100-mm": {
+        "name": "Elite 100mm Skirting Board"
+      },
+      "moderna-100-mm": {
+        "name": "Moderna 100mm Skirting Board"
+      },
+      "optima-60-mm": {
+        "name": "Optima 60mm Skirting Board"
+      },
+      "optima-90-mm": {
+        "name": "Optima 90mm Skirting Board"
+      },
+      "solid-80-mm": {
+        "name": "Solid 80mm Skirting Board"
+      },
+      "x-line-100-mm": {
+        "name": "X-Line 100mm Skirting Board"
+      }
+    },
+    "cta": {
+      "title": "Need SPC skirting for a project?",
+      "text": "Send us your quantities and decor choices — we will prepare a supply quote for your project.",
+      "button": "Request a Quote"
+    }
+  },
   "ProductDetails": {
     "specThickness": "THICKNESS",
     "specDepth": "DEPTH",

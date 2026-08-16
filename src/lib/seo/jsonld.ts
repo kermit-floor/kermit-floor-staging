@@ -38,7 +38,7 @@ export const COLLECTION_FAMILY_HUBS = {
     labelKey: 'wallsTitle',
   },
   skirting: {
-    routeKey: '/spc-skirting-boards/optima-90-mm-skirting-board',
+    routeKey: '/spc-skirting-boards',
     labelKey: 'skirtingTitle',
   },
 } as const satisfies Record<CollectionFamily, {routeKey: AppRouteKey; labelKey: string}>;
