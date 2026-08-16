@@ -144,6 +144,15 @@ Last review run: — (none yet)
 - **Verdict**: PENDING
 - **Action**: —
 
+## Queued (owner-planned, not yet experiments)
+
+- **End-customer cost breakdown: SPC vs ceramics vs laminate** — owner will prepare real cost
+  data in a future session. When it exists: new content targeting the price-intent cluster
+  (extends "spc parke fiyatları" ground, baseline pos 14.2) with strong lead potential.
+  Becomes a full experiment entry at ship time (hypothesis, metric, review date).
+- **Customer testimonial quotes** — owner decision 2026-08-16: out of scope. The reviews post
+  stays an expert evaluation; do not re-propose adding quotes.
+
 ## Closed / informational
 
 ### [2026-08-16] Skirting length data correction (2500/2400) — commit d9d4225
