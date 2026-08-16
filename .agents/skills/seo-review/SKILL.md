@@ -55,6 +55,22 @@ Summarize verdicts + proposed actions to the owner. Implement ONLY what they app
   push → production verification.
 - Git mutations (commit/push) require explicit owner approval each time — never assume.
 
+## Step 5b — Parallel changes: the interference check (before shipping ANY new change)
+
+New opportunities may be shipped while experiments are PENDING — but only after this check:
+1. List every open entry's scope (pages, queries, primary metrics) from the logbook.
+2. **Disjoint scope** (different pages AND different queries/metrics) → ship normally, with its
+   own logbook entry and review date.
+3. **Overlapping scope** → never ship blindly. Choose one and record it: (a) wait for the pending
+   verdict (cite its due date to the owner), (b) ship and re-baseline the affected experiment —
+   new dated baseline file, new review date, and a confound note written into BOTH entries,
+   or (c) mark the older experiment INCONCLUSIVE with the reason.
+4. **Site-wide changes** (speed, templates, schema overhauls, navigation) can shift even
+   "disjoint" experiments → add a cohort marker (ship date + one line) to every open entry so
+   reviews can check for discontinuities starting at that date.
+5. Tie-breaker: when in doubt, protect the measurement. Rankings recover from a delayed change;
+   poisoned data cannot be un-poisoned.
+
 ## Step 6 — Record (mandatory, same day)
 
 - Update each judged logbook entry: verdict + date + one-line evidence + action taken.
