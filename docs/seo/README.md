@@ -48,7 +48,7 @@ while the owner is signed into Google):
 ```bash
 ~/google-cloud-sdk/bin/gcloud auth application-default login \
   --impersonate-service-account=mcp-reader@kermit-analytics-mcp.iam.gserviceaccount.com \
-  --scopes="https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/analytics.edit,https://www.googleapis.com/auth/adwords,https://www.googleapis.com/auth/webmasters.readonly,https://www.googleapis.com/auth/cloud-platform"
+  --scopes="https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/analytics.edit,https://www.googleapis.com/auth/adwords,https://www.googleapis.com/auth/webmasters.readonly,https://www.googleapis.com/auth/webmasters,https://www.googleapis.com/auth/cloud-platform"
 ```
 
 Then `/reload` so long-running MCP server processes pick up the new file.
