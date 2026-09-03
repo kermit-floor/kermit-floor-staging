@@ -34,6 +34,7 @@ const SKIRTING_LINES: {
   routeKey: StaticAppRouteKey;
   specProfileId: SkirtingSpecProfileId;
   getPanels: () => Promise<Panel[]>;
+  fallbackImage: string;
   imageHint: string;
 }[] = [
   {
@@ -41,6 +42,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/alpha-140-mm-skirting-board',
     specProfileId: 'skirting-alpha-140-mm',
     getPanels: getSkirtingAlpha140mm,
+    fallbackImage: '/images/skirting-boards/alpha-140-mm-skirting-board/1404031/application.jpg',
     imageHint: 'room with alpha 140mm skirting',
   },
   {
@@ -48,6 +50,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/berlin-100-mm-skirting-board',
     specProfileId: 'skirting-berlin-100-mm',
     getPanels: getSkirtingBerlin100mm,
+    fallbackImage: '/images/skirting-boards/berlin-100-mm-skirting-board/1110031/application.jpg',
     imageHint: 'interior with berlin 100mm skirting',
   },
   {
@@ -55,6 +58,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/elite-100-mm-skirting-board',
     specProfileId: 'skirting-elite-100-mm',
     getPanels: getSkirtingElite100mm,
+    fallbackImage: '/images/skirting-boards/elite-100-mm-skirting-board/E1013031/application.jpg',
     imageHint: 'room with elite 100mm skirting',
   },
   {
@@ -62,6 +66,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/moderna-100-mm-skirting-board',
     specProfileId: 'skirting-moderna-100-mm',
     getPanels: getSkirtingModerna100mm,
+    fallbackImage: '/images/skirting-boards/moderna-100-mm-skirting-board/1004031/application.jpg',
     imageHint: 'hallway with moderna 100mm skirting',
   },
   {
@@ -69,6 +74,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/optima-60-mm-skirting-board',
     specProfileId: 'skirting-optima-60-mm',
     getPanels: getSkirtingOptima60mm,
+    fallbackImage: '/images/skirting-boards/optima-60-mm-skirting-board/0604031/application.jpg',
     imageHint: 'room with optima 60mm skirting',
   },
   {
@@ -76,6 +82,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/optima-90-mm-skirting-board',
     specProfileId: 'skirting-optima-90-mm',
     getPanels: getSkirtingOptima90mm,
+    fallbackImage: '/images/skirting-boards/optima-90-mm-skirting-board/0704031/application.jpg',
     imageHint: 'bedroom with optima 90mm skirting',
   },
   {
@@ -83,6 +90,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/solid-80-mm-skirting-board',
     specProfileId: 'skirting-solid-80-mm',
     getPanels: getSkirtingSolid80mm,
+    fallbackImage: '/images/skirting-boards/solid-80-mm-skirting-board/0904031/application.jpg',
     imageHint: 'office with solid 80mm skirting',
   },
   {
@@ -90,6 +98,7 @@ const SKIRTING_LINES: {
     routeKey: '/spc-skirting-boards/x-line-100-mm-skirting-board',
     specProfileId: 'skirting-x-line-100-mm',
     getPanels: getSkirtingXLine100mm,
+    fallbackImage: '/images/skirting-boards/x-line-100-mm-skirting-board/X1004031/application.jpg',
     imageHint: 'modern room with x-line 100mm skirting',
   },
 ];
@@ -143,7 +152,9 @@ export default async function SpcSkirtingBoardsPage({params}: {params: Promise<{
       depth: getSkirtingSpecValue(line.specProfileId, 'specDepth'),
       length: getSkirtingSpecValue(line.specProfileId, 'specLength'),
       url: getCanonicalForRoute(line.routeKey, locale),
-      image: pick?.applicationImageUrl ?? '',
+      // Cloudflare Workers cannot read the public directory through Node's fs APIs.
+      // Keep a valid server-rendered image when the manifest loader returns no panels.
+      image: pick?.applicationImageUrl ?? line.fallbackImage,
     };
   });
 
