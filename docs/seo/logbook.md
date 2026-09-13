@@ -71,7 +71,9 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 FAQ/photo cohort**: FAQ markup and a portrait shipped on the limited page
+  cohort in [the new baseline](baselines/2026-09-14-faq-schema.md). Event code is unchanged;
+  mark September 13 Pacific in later aggregate engagement/lead comparisons.
 
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
 - **Change**: CF dashboard "Manage robots.txt" set to not manage; robots.txt now repo-clean
@@ -87,7 +89,9 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 FAQ/photo cohort**: six FAQ pages gained explicit Question/Answer markup;
+  see [scope and baseline](baselines/2026-09-14-faq-schema.md). Later AI-referral trends include
+  this intervention from September 13 Pacific; keep the original crawler baseline.
 
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
 - **Change**: Organization+WebSite on all pages; Product (specs as additionalProperty) on 11
@@ -112,7 +116,10 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 FAQ schema addition**: six FAQ pages gained matching FAQPage data; all
+  existing Article/Product/Breadcrumb data is retained. Keep the original appearance checks
+  and mark this additional cohort in broader visibility reads; see the
+  [separate FAQ baseline and October 26 review](baselines/2026-09-14-faq-schema.md).
 
 ### [2026-08-15] Localized collection H1s — commit 8daf750
 - **Change**: collection pages got unique localized keyword H1s (was shared English
@@ -158,7 +165,9 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 FAQ/photo cohort**: the [FAQ addition](baselines/2026-09-14-faq-schema.md)
+  overlaps aggregate AI-referral interpretation from September 13 Pacific. The llms.txt file
+  and its original baseline are unchanged; do not isolate its effect from the newer content.
 
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
 - **Change**: /tr/blog/spc-parke-kullanici-yorumlari + /blog/spc-flooring-user-reviews.
@@ -236,7 +245,11 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 FAQ amendment**: bathroom EN/TR pages gained FAQPage markup without title
+  or visible-text edits. Ship date is **September 13 Pacific**, so the original 28-day window
+  includes part of deployment day. On September 17, retain the original comparison and add
+  the clean 27-day sensitivity check **08-17→09-12 vs 07-20→08-15**. Treat subsequent reads
+  as overlapping interventions; [dated FAQ baseline](baselines/2026-09-14-faq-schema.md).
 
 ### [2026-08-16] Skirting hub page — commit d9d4225
 - **Change**: /spc-skirting-boards + /tr/spc-supurgelikler (cards-first per owner; labeled
@@ -332,6 +345,11 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   Manufacturing Efficiency Expert, for the six new purchasing articles; see the entry below.
   Treat this as an attribution correction within this launch, not an isolated ranking test.
   Article bodies, FAQs, metadata, URLs and original review dates/baseline remain unchanged.
+- **2026-09-14 FAQ/photo amendment**: About and sample/quotation pairs gained FAQPage
+  data; all six purchasing articles gained the supplied author portrait. Preserve the
+  original content baseline and dates, interpret later results as the combined release,
+  and use the [separate markup/photo checkpoint](baselines/2026-09-14-faq-schema.md) for
+  technical parity and the October 26 follow-up.
 
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
 - **Change**: replace Kermit Floor Team with **Barbaros Ahmet Bayram** on the three new EN/TR
@@ -358,6 +376,44 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   improvement is inferred from this check.
 - **Action**: keep the requested author correction. FAQ writing/formatting assessment was
   read-only, as requested by the owner.
+- **Portrait follow-up — 2026-09-14**: owner supplied the photograph now displayed on
+  Barbaros’s six bylines; name, title and Person author data remain unchanged. Implementation
+  and validation are recorded with the FAQPage release below.
+
+### [2026-09-14] FAQPage from visible answers and supplied author portrait — commit 4d4b4e9
+- **Change**: add one FAQPage to each EN/TR About, sample/quotation and bathroom wall-panel
+  page: **6 pages / 26 answers**. Explicit Markdown FAQ blocks generate the same visible
+  headings/complete answers and manifest data; About uses the same translated items in the
+  visible list and schema. Add the owner-supplied portrait to Barbaros's six article bylines.
+- **Hypothesis**: explicit Question/Answer relationships remove ambiguity for systems that
+  consume schema; the matching portrait makes the named byline visually identifiable.
+- **Primary metric + baseline**: exact visible/schema parity **0/6 → 6/6 FAQ pages**;
+  supplied portrait **0/6 → 6/6 bylines**. All 24 other blog pages retain no FAQPage.
+  [Dated technical baseline, URLs and measurement constraints](baselines/2026-09-14-faq-schema.md).
+- **Review due**: immediate deployment parity check **2026-09-14**; maintenance and
+  observational full-effect follow-up **2026-10-26**. Google FAQ rich-result appearance is
+  not a success metric because that feature is retired; no direct citation baseline exists.
+- **Interference**: this is a limited-page addition, not an all-page FAQ template. Existing
+  article wording, metadata, canonicals and prior schemas are unchanged. Parent manufacturer
+  launch and aggregate AI/lead reads include this cohort; the bathroom CTR comparison needs
+  the 27-day sensitivity check recorded in its entry. **September 14 Europe/Athens is
+  September 13 Pacific** for this deployment. Preserve original baselines and verdict dates;
+  the new technical baseline and October 26 review track this addition separately.
+- **Validation**: production build, text/blog validation and type checking passed. All 28
+  blog bodies and About bodies match their preceding rendered HTML; prior JSON-LD data is
+  unchanged. FAQ parser checks cover multiple paragraphs, lists, inline formatting/code,
+  complete answer boundaries and invalid blocks. EN/TR desktop/mobile photo checks passed
+  without byline truncation or horizontal overflow. The portrait is the supplied PNG, unchanged.
+- **Deployment**: GitHub blog guardrails and Cloudflare build passed. Build
+  `048b4d15-12f5-430d-b04b-c1e87bfe72e3`, version `60c1496e-d3bf-47f8-a717-aac9290a8d97`,
+  completed **2026-09-13 22:39:54 UTC**. At **22:40:30 UTC**, all **30 production pages passed**:
+  HTTP 200, expected FAQ presence/absence, language/canonical identities, 26 visible answers
+  matching schema, six portrait bylines and unchanged prior JSON-LD. The public portrait
+  returned HTTP 200 with the exact source SHA-256 recorded in the baseline.
+- **Verdict**: **WORKED — 2026-09-14, implementation correctness only.** Search/AI impact
+  remains unproven; no ranking or citation improvement is inferred from markup checks.
+- **Action**: keep both requested additions. Future FAQ edits update the visible content and
+  schema together through the documented build process; review maintenance on October 26.
 
 ## Queued (owner-planned, not yet experiments)
 
