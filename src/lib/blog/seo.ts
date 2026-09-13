@@ -63,6 +63,7 @@ export function getArticleJsonLd(post: BlogPost, url: string) {
     author: {
       '@type': author?.schemaType ?? 'Person',
       name: post.authorName,
+      ...(author?.schemaType === 'Person' && author.jobTitle ? {jobTitle: author.jobTitle} : {}),
     },
     inLanguage: post.locale,
     mainEntityOfPage: {

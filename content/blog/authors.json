@@ -12,12 +12,12 @@
       "isDefault": true
     },
     {
-      "id": "kermit-floor-team",
-      "name": "Kermit Floor Team",
-      "schemaType": "Organization",
-      "subtitle": {
-        "en": "Editorial Team",
-        "tr": "Editör Ekibi"
+      "id": "barbaros-ahmet-bayram",
+      "name": "Barbaros Ahmet Bayram",
+      "schemaType": "Person",
+      "jobTitle": {
+        "en": "Manufacturing Efficiency Expert",
+        "tr": "Üretim Verimliliği Uzmanı"
       },
       "isDefault": false
     }

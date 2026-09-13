@@ -5,6 +5,7 @@ type RawAuthorEntry = {
   id?: string;
   name?: string;
   subtitle?: Partial<Record<BlogLocale, string>>;
+  jobTitle?: Partial<Record<BlogLocale, string>>;
   photoPath?: string;
   role?: string;
   isDefault?: boolean;
@@ -22,6 +23,7 @@ export type BlogAuthorProfile = {
   id?: string;
   name: string;
   subtitle?: string;
+  jobTitle?: string;
   photoPath?: string;
   isDefault?: boolean;
   schemaType: 'Person' | 'Organization';
@@ -43,8 +45,9 @@ function normalizeAuthorEntry(entry: RawAuthorEntry, locale: BlogLocale): BlogAu
   }
 
   const localizedSubtitle = entry.subtitle?.[locale]?.trim();
+  const jobTitle = entry.jobTitle?.[locale]?.trim() || undefined;
   const fallbackSubtitle = typeof entry.role === 'string' ? entry.role.trim() : '';
-  const subtitle = localizedSubtitle || fallbackSubtitle || undefined;
+  const subtitle = localizedSubtitle || jobTitle || fallbackSubtitle || undefined;
 
   const photoPath = typeof entry.photoPath === 'string' && entry.photoPath.trim() ? entry.photoPath.trim() : undefined;
   const id = typeof entry.id === 'string' && entry.id.trim() ? entry.id.trim() : undefined;
@@ -53,6 +56,7 @@ function normalizeAuthorEntry(entry: RawAuthorEntry, locale: BlogLocale): BlogAu
     id,
     name,
     subtitle,
+    jobTitle,
     photoPath,
     isDefault: entry.isDefault === true,
     schemaType: entry.schemaType === 'Organization' ? 'Organization' : 'Person',
