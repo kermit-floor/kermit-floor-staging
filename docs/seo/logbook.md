@@ -328,6 +328,36 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   map stays conditional on evidence and the scheduled structural review. Warranty terms
   and correctly scoped certificate publication remain open. No ranking or AI-citation win
   is claimed from deployment checks.
+- **Author amendment — 2026-09-14 (Europe/Athens)**: owner requested Barbaros Ahmet Bayram,
+  Manufacturing Efficiency Expert, for the six new purchasing articles; see the entry below.
+  Treat this as an attribution correction within this launch, not an isolated ranking test.
+  Article bodies, FAQs, metadata, URLs and original review dates/baseline remain unchanged.
+
+### [2026-09-14] Named purchasing-guide author — commit c8e22c2
+- **Change**: replace Kermit Floor Team with **Barbaros Ahmet Bayram** on the three new EN/TR
+  purchasing-guide pairs. Show **Manufacturing Efficiency Expert** in English and
+  **Üretim Verimliliği Uzmanı** in Turkish; emit matching `Person`/`jobTitle` Article author
+  data. Existing Yasin Bayram articles retain their bylines. No article or FAQ body changes.
+- **Hypothesis**: a consistent named author and separate job title clarify responsibility
+  for the purchasing guidance for readers and systems consuming Article data.
+- **Primary metric + baseline**: visible byline/title matching `Person`/`jobTitle` on the six
+  affected URLs: **0/6 before → 6/6 after**. Fresh production baseline captured at
+  2026-09-13 22:12 UTC showed Kermit Floor Team / Organization on all six pages.
+- **Review due**: **2026-09-14** attribution smoke check; broader content discovery remains
+  on the parent launch's September 27, October 11 and October 25 review dates.
+- **Interference**: attribution correction on the parent launch's six URLs. No independent
+  author-ranking verdict or baseline reset; preserve the parent amendment in later reads.
+  All 28 article bodies and all 22 pre-existing post records are unchanged.
+- **Validation / deployment**: text and blog validation, type checking and production build
+  passed. GitHub blog and Cloudflare checks passed; Cloudflare build
+  `0089fed5-fe35-4c09-ad8d-530567d01027`, version `13a4375b-f1af-4709-addd-1b4d2e9cba0f`,
+  completed 2026-09-13 22:16:44 UTC (September 14 in Europe/Athens). Production verification
+  at 22:17:32 UTC passed on all six changed pages and the EN/TR bathroom FAQ control pair:
+  HTTP 200, expected visible author and Article data, original article/FAQ HTML intact.
+- **Verdict**: **WORKED — 2026-09-14, attribution correctness only.** No search or AI-citation
+  improvement is inferred from this check.
+- **Action**: keep the requested author correction. FAQ writing/formatting assessment was
+  read-only, as requested by the owner.
 
 ## Queued (owner-planned, not yet experiments)
 
