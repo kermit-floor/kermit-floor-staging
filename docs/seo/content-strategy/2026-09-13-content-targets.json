@@ -195,7 +195,7 @@
     "title": "Planning and checking an SPC installation",
     "angle": "Create one substantial practical guide linked to an approved installation manual.",
     "outline": "Cover substrate, retained tiles, movement gaps, locking method, acclimation, transitions and handover. Keep product-specific numerical limits in a single maintained source.",
-    "evidence": "The public flooring installation file is not yet available in resource data. Stair systems and glue-down approval are unconfirmed."
+    "evidence": "Corrected English Kermit installation/care manual published 2026-09-13. Align article details with the selected lock and existing bathroom/outdoor/cleaning limits; localized manual remains a future improvement."
   },
   {
     "id": "UNDERLAY",
@@ -228,7 +228,7 @@
     "title": "Heating, sunlight and temperature",
     "angle": "Explain exposure and heating conditions with explicit product limits.",
     "outline": "Separate radiant heating from solar gain and surface fading. Use actual commissioning and temperature instructions once available.",
-    "evidence": "Kermit thermal limits and applicable product approvals are not yet documented in the inspected sources."
+    "evidence": "Owner-confirmed maximum floor-surface temperature 27°C and corrected EN/TR heating guides published 2026-09-13. Use the selected product/system scope; do not restore the removed 28-29°C or extreme-room claims."
   },
   {
     "id": "QTY",
@@ -305,6 +305,6 @@
     "title": "Understanding Kermit's certificates and emissions evidence",
     "angle": "Explain what the available documents do and do not establish.",
     "outline": "Link the relevant FloorScore listing and reports and distinguish management-system certificates from product evidence. Link the OEM guide for branding questions.",
-    "evidence": "Owner confirms certification parity. Attach the actual documents with their product and site scope."
+    "evidence": "Actual certificate files have been inspected but public claims are deferred pending accurate holder/site/product scope. Do not use broad certification parity as publication evidence."
   }
 ]

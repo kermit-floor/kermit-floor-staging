@@ -286,7 +286,7 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   hub launch. Parent hub and overlapping blog CTR entries now both record the repair date;
   this operational pass is not a search-ranking verdict.
 
-### [2026-09-13] Manufacturer purchasing guides and product documents — deployment pending
+### [2026-09-13] Manufacturer purchasing guides and product documents — commit d10e888
 - **Change**: expand `/about` and `/tr/hakkimizda`; publish three new English/Turkish blog
   pairs (manufacturer selection, samples/quotes, OEM); render resource discovery in initial
   HTML; add four reviewed technical/installation PDFs and clear request actions for missing
@@ -312,9 +312,22 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   Procurement tags keep related-article cohorts separate. Preserve the desktop GA4/GSC
   discrepancy and 09-03 image-repair notes in later comparisons. No old baseline was reset.
 - **Verdict**: PENDING.
-- **Action**: ship the approved first phase after checks; verify production and record the
-  deployment commit here. Keep the remaining content map conditional on evidence and the
-  scheduled structural review. Warranty terms and scoped certificate publication remain open.
+- **Deployment / validation — 2026-09-13**: code commit **d10e888**, Cloudflare Workers build
+  **19b28227-cfdd-4761-8391-2a1cda71a8d7**, version **04d0cc9f-9b55-4040-957b-a9a0a105d08d**;
+  build succeeded at **20:11:48 UTC**. GitHub blog guardrails also passed. Production checks
+  completed at 20:12-20:14 UTC: **10/10 pages HTTP 200**, correct server-rendered H1/canonical/
+  EN-TR alternates, all six articles in the sitemap, **35 internal destinations** working,
+  and **4/4 public PDF SHA-256 checks** matching the visually reviewed files. Desktop/mobile
+  browser checks passed on all ten pages; request dialogs and privacy controls were checked
+  without sending enquiries. Text/blog validation, manifest generation, typecheck and the
+  production build passed. All 21 corrected PDF pages were rendered and visually checked.
+- **Discovery submission**: Search Console accepted the updated sitemap (HTTP 204), confirmed
+  `lastSubmitted` **2026-09-13T20:13:20.001Z**, with processing pending. This is not indexing
+  confirmation. [Machine-readable verification](content-strategy/2026-09-13-production-verification.json).
+- **Action**: keep the first release live; review on the dates above. The remaining content
+  map stays conditional on evidence and the scheduled structural review. Warranty terms
+  and correctly scoped certificate publication remain open. No ranking or AI-citation win
+  is claimed from deployment checks.
 
 ## Queued (owner-planned, not yet experiments)
 

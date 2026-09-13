@@ -50,3 +50,7 @@ Use the [fresh launch baseline](../baselines/2026-09-13-manufacturer-content.md)
 Required release checks: text/blog validation, generated manifest, typecheck, production build, EN/TR canonical/hreflang and sitemap membership, initial HTML discovery links, mobile/desktop rendering, real PDF downloads and unchanged consent-aware lead handlers. PDF corrections are checked by fresh text extraction and visual inspection of all 21 pages.
 
 Article author and image repair follows [Google’s Article guidance](https://developers.google.com/search/docs/appearance/structured-data/article), checked 2026-09-13: author type matches the named author, and image URLs identify accessible representative images.
+
+## Production outcome
+
+Code commit **d10e888** deployed successfully on 2026-09-13. [Recorded live checks](2026-09-13-production-verification.json) passed for all ten affected pages, 35 internal destinations, four PDF checksums and 20 desktop/mobile page checks. Search Console accepted the sitemap at 20:13 UTC; processing was pending, so the six new URLs are not yet claimed indexed. The technical source originals are corrected with backups. Warranty terms and accurately scoped certificate publication remain unresolved dependencies.

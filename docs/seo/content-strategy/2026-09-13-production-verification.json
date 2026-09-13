@@ -1,0 +1,127 @@
+{
+  "base": "https://kermitfloor.com",
+  "checkedAt": "2026-09-13T20:12:49.622Z",
+  "pages": [
+    {
+      "path": "/about",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/tr/hakkimizda",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/resources",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/tr/kaynaklar",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/tr/blog/spc-parke-ureticisi-secimi",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/blog/oem-private-label-spc-flooring",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/tr/blog/oem-ozel-marka-spc-parke",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/blog/spc-flooring-samples-wholesale-quote",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    },
+    {
+      "path": "/tr/blog/spc-parke-numune-toptan-teklif",
+      "status": 200,
+      "serverH1": true,
+      "canonical": true,
+      "hreflang": true
+    }
+  ],
+  "internalLinks": 35,
+  "pdfs": 4,
+  "codeCommit": "d10e888",
+  "cloudflareBuild": "19b28227-cfdd-4761-8391-2a1cda71a8d7",
+  "cloudflareVersion": "04d0cc9f-9b55-4040-957b-a9a0a105d08d",
+  "cloudflareBuildResult": "success",
+  "githubBlogGuardrails": "success",
+  "browserChecks": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "pageChecks": 20,
+    "result": "pass",
+    "enquirySent": false
+  },
+  "sitemapSubmission": {
+    "submittedAt": "2026-09-13T20:13:20.406481+00:00",
+    "status": 204,
+    "sitemap": "https://kermitfloor.com/sitemap.xml",
+    "property": "sc-domain:kermitfloor.com",
+    "verifiedEntry": {
+      "path": "https://kermitfloor.com/sitemap.xml",
+      "lastSubmitted": "2026-09-13T20:13:20.001Z",
+      "isPending": true,
+      "isSitemapsIndex": false,
+      "type": "sitemap",
+      "lastDownloaded": "2026-09-07T20:03:18.555Z",
+      "warnings": "0",
+      "errors": "0",
+      "contents": [
+        {
+          "type": "web",
+          "submitted": "112",
+          "indexed": "0"
+        }
+      ]
+    }
+  },
+  "pdfChecksums": {
+    "public/downloads/installation-guides/kermit-spc-underfloor-heating-guide-en-2026-09.pdf": "d6b732828fb393960c56c48d503758547376c64531a74be288031767e80345a0",
+    "public/downloads/installation-guides/kermit-spc-flooring-installation-care-en-2026-09.pdf": "59a948e496ee523fd515ea0f874bdc6b200d4128555b0d84c6b49cc39fcf5e70",
+    "public/downloads/installation-guides/kermit-spc-yerden-isitma-rehberi-tr-2026-09.pdf": "27c3cc6756595b78dbebb7d6fb26c5dbe9295127838067769e6f4ef80140812e",
+    "public/downloads/technical-data-sheets/spc-flooring/kermit-spc-6mm-no-ixpe-tds-ro-2026-09.pdf": "4c0f97399fb404412ca31197c6b9dad5d3df2b454e2d8c5849a7a36ddd80a9ac"
+  }
+}
