@@ -15,6 +15,7 @@
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "blog:new": "node scripts/new-blog-topic.mjs",
+    "blog:skill:check": "node scripts/check-blog-post-generator-skill-setup.mjs",
     "text:validate": "node scripts/validate-text-integrity.mjs",
     "blog:validate": "node scripts/validate-blog-content.mjs",
     "blog:build-manifest": "node scripts/generate-blog-manifest.mjs",

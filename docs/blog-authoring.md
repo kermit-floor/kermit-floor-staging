@@ -15,6 +15,10 @@ This creates:
 
 The scaffolder uses the default author from `content/blog/authors.json` (falls back to `Kermit Floor Team` if the registry is missing or invalid).
 
+For assisted drafting or editing, use `.agents/skills/blog-post-generator/SKILL.md` with a clear
+blog request or `$blog-post-generator`. It reuses the supplied brief and preserves unrelated
+content during targeted edits.
+
 ## Manage blog authors (repo-defined)
 
 Define allowed blog authors in:
@@ -26,11 +30,14 @@ Each author should have a display `name`; `id` is recommended for stable selecti
 Set `schemaType` to `Organization` for a company or editorial team; individual authors use `Person` by default.
 An individual's localized `jobTitle` appears below their name (unless a `subtitle` is provided) and in Article author markup; keep the title separate from the author's name.
 
-## Starter placeholders
+## Complete the draft
 
-- The repo currently includes two starter topic pairs only as initial placeholders.
-- Replace or remove them as your editorial calendar is finalized.
-- Keep EN/TR parity and validator rules intact when replacing.
+- Scaffolds contain placeholder metadata and body text. Replace them with the article's
+  actual content, applicable evidence in `sourceUrls`, and appropriate media before review.
+- Keep EN/TR parity and validator rules intact. For targeted edits, update the other locale
+  when the shared facts or intent change; a locale-specific correction can stay in that locale.
+- Save and validate the local draft before review. Publishing follows `AGENTS.md` and
+  `docs/seo/README.md`, including authorization for commit/push and the ship-time logbook entry.
 
 ## Required publishing rules
 

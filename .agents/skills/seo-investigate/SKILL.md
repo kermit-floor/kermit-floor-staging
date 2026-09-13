@@ -1,55 +1,46 @@
 ---
 name: seo-investigate
-description: Investigate an ad-hoc SEO/analytics question for kermitfloor.com (a market, a query, a traffic change) with fresh GSC/GA4 data, then cross-check open experiments in docs/seo/logbook.md
-type: prompt
-whenToUse: When the user asks a one-off SEO/analytics question — "how are we doing in X", "why did Y drop", "is Z working" — or invokes /skill:seo-investigate with a question
+description: Answer a specific kermitfloor.com SEO or analytics question from fresh data, then cross-check relevant experiment history. Use for questions about a market, query, page, or traffic change.
 ---
 
-Investigate one ad-hoc SEO/analytics question for kermitfloor.com. Lightweight: no experiment
-verdicts, no mandatory recording. The question is in `$ARGUMENTS` — if it is empty, ask the
-owner what to investigate and stop.
+Identify the question from the current request and relevant conversation context. Use explicit
+skill arguments when supplied; ask only if the question is missing or materially ambiguous.
+The default outcome is an evidence-based answer without file changes. For a periodic review
+or an explicit experiment verdict, use `seo-general-review`.
 
-## Step 1 — Data access (fast probe)
+## Form an initial assessment from fresh data
 
-Do NOT duplicate procedures — follow `docs/seo/README.md` ("Data access" + "Credential
-recovery") for recipes, IDs, and fixes (including the stale-MCP-process gotcha). Probe only
-what the question needs:
+Read `docs/seo/README.md` for data access, credential recovery, and comparison rules. Probe
+only the sources needed for the question. Follow its direct-API fallback when MCP is stale;
+an unavailable source does not block findings from other relevant sources. Report gaps and
+their effect on the answer. Expected Ads token-access failures are not a bug in this skill.
 
-- GA4 (property 523760978): one `mcp__google-analytics__*` call. Reauth/503 → README recovery.
-- GSC (`sc-domain:kermitfloor.com`): mint a token per the README recipe; same recovery on 401/403.
-- Ads (customer 8624458035): developer token is TEST level — reporting is expected to fail
-  with `DEVELOPER_TOKEN_NOT_APPROVED`. Skip ads data unless a probe succeeds; never treat
-  that failure as a bug in this skill.
+Form initial findings before reading the logbook's interpretations so existing hypotheses do
+not determine the answer. If history is already in context, separate observations from those
+hypotheses explicitly. Pull the relevant country, query, page, device, or event data; state
+filters and exact date ranges, account for reporting lag, and compare like periods when a
+trend matters.
 
-## Step 2 — Investigate (before reading any experiment history)
+Select comparison data matching the metric, scope, and period. If the question concerns a
+recorded experiment, reconcile the initial assessment with its original baseline during the
+history cross-check. The latest overview snapshot is useful only when it matches the question.
+At this site's volumes, prioritize position and impression trends over noisy CTR changes;
+say when there is not enough data for the requested conclusion.
 
-Form findings from fresh data FIRST — do not read `docs/seo/logbook.md` yet, so the answer
-is not anchored to existing hypotheses. Pull what the question needs:
+## Cross-check relevant experiment history
 
-- GSC `searchAnalytics/query` with `dimensionFilterGroups` (country, query, page); 28d vs 28d
-  where a trend matters. GSC data lags ~2–3 days.
-- GA4 via MCP (or the direct-API fallback in the README when MCP is stale).
-- If a comparison number is needed, the newest file in `docs/seo/baselines/` is the reference
-  point (data only, not interpretation).
+After forming findings, read the relevant open, queued, and closed entries in
+`docs/seo/logbook.md`. Explain what is already underway or previously decided, whether the
+evidence supports or challenges an existing hypothesis, and whether a suggested change
+could affect open experiments. Use the README's "Change interference" rules for that check.
+Avoid re-proposing previously rejected work without new evidence that changes the decision.
 
-At kermitfloor volumes: position + impression trend first, CTR second; say "not enough data"
-rather than forcing a call on noise.
+## Deliver the answer within the requested scope
 
-## Step 3 — Cross-check the logbook (after findings)
+Lead with findings, numbers, dates, and sources; follow with limitations, experiment context,
+and useful next steps. An investigation alone does not assign formal verdicts or require a
+logbook write, site edit, commit, or push.
 
-Now read `docs/seo/logbook.md` (open experiments + queued + closed) and report:
-
-- Is something already being done about this topic? (An open experiment, a queued item, or a
-  decided out-of-scope — e.g. testimonial quotes: do not re-propose.)
-- Do the findings confirm or contradict an open experiment's hypothesis?
-- If the findings suggest a new change, flag which open experiments it could interfere with
-  (interference rules: `/skill:seo-general-review` Step 5b).
-
-## Step 4 — Report (read-only by default)
-
-Answer structure: findings first (numbers + dates), then the cross-check, then suggested next
-steps if any. This skill changes nothing: no logbook writes, no site changes, no git
-mutations. If a finding is worth recording (actionable opportunity, evidence about an open
-experiment), offer to add it — only with owner approval.
-
-$ARGUMENTS
+If the owner also asked to record findings or implement a change, complete that authorized
+work using the relevant review or shipping workflow. Existing authorization remains valid
+within its scope; distinguish evidence, formal verdicts, and actions actually taken.

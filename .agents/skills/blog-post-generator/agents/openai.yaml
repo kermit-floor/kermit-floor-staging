@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bilingual Blog Generator"
+  short_description: "Create or edit paired EN/TR posts with verified claims."
+  default_prompt: "Use $blog-post-generator to draft or edit paired EN/TR Kermit Floor blog posts from my brief, verify claims, and validate the local MDX."

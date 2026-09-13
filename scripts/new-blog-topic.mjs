@@ -96,9 +96,7 @@ status: draft
 searchIntent: informational
 targetAudience: mixed-b2b
 funnelStage: awareness
-sourceUrls:
-  - src/components/showcase/ProductDetails.tsx
-  - https://example.com
+sourceUrls: [] # Add the claim sources and research actually used in this article.
 coverImage: /images/hero-images/about-us-hero-image.jpg
 coverImageAlt: ""
 authorName: ${JSON.stringify(defaultAuthorName)}
@@ -128,9 +126,7 @@ status: draft
 searchIntent: informational
 targetAudience: mixed-b2b
 funnelStage: awareness
-sourceUrls:
-  - src/components/showcase/ProductDetails.tsx
-  - https://example.com
+sourceUrls: [] # Add the claim sources and research actually used in this article.
 coverImage: /images/hero-images/about-us-hero-image.jpg
 coverImageAlt: ""
 authorName: ${JSON.stringify(defaultAuthorName)}

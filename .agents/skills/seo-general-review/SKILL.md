@@ -1,89 +1,74 @@
 ---
 name: seo-general-review
-description: Run the recurring kermitfloor.com SEO growth review — pull fresh GSC/GA4 data, judge open experiments in docs/seo/logbook.md against their baselines, record verdicts, and plan the next iteration
-type: prompt
-whenToUse: When the user asks for the periodic SEO review, SEO status, verdict check on shipped changes, "how are our changes doing", or invokes /skill:seo-general-review. For one-off ad-hoc questions (a market, a traffic drop, "is X working") use seo-investigate instead.
+description: Review kermitfloor.com SEO experiments, record due verdicts, and recommend next actions. Use for periodic reviews or explicit experiment verdicts.
 ---
 
-Run the SEO growth review for kermitfloor.com. Work through these steps in order; keep the owner informed with a short note per phase.
+Complete the requested review using fresh evidence, the relevant experiment baselines, and a
+same-day record. Take scope from the current request and conversation; explicit skill arguments
+are optional. A periodic review covers open experiments and scheduled operational reads. A
+focused review covers the named experiment and dependencies that affect its interpretation.
+For a one-off analytics question without an experiment verdict, use `seo-investigate`.
 
-## Step 0 — Load the memory
+## Establish the comparison
 
-Read, in this order:
-1. `docs/seo/README.md` — data access + credential recovery + timing rules.
-2. `docs/seo/logbook.md` — all experiment entries.
-3. The newest file in `docs/seo/baselines/` — the comparison point.
+- Read `docs/seo/README.md` for data access and measurement rules, then the logbook's policy,
+  relevant entries, and review schedule. Read older history only when it informs this review.
+- Check today's date and distinguish due verdicts from operational reads. An experiment can
+  have a WORKED verdict and still require weekly monitoring.
+- For entries not yet due, preserve the review date and label any early findings provisional.
+  Do not force a verdict before the required observation window or volume is available.
+- Use each experiment's recorded baseline and comparison window. For broader checks, select
+  a snapshot matching the metric, page/query cohort, and period; the newest file is not
+  automatically the right comparison.
 
-## Step 1 — Date triage
+## Gather evidence and judge due entries
 
-Get today's date (`date`). For each PENDING entry compare its **Review due** date:
-- **Due or overdue** → in scope for verdicts this run.
-- **Not yet due** → do NOT judge it; tell the owner when it comes due. Partial runs are normal:
-  if nothing is due, say so, do only Step 2's passive checks, and stop.
+Use the README's access and recovery procedures for the sources needed. Report exact date
+ranges, filters, data freshness, and access gaps. Probe Ads during periodic reviews as described
+there; an expected token-access failure does not block GA4/GSC findings.
 
-## Step 2 — Restore data access
+For periodic reviews, run passive checks even when no verdicts are due: search visibility for
+recently shipped pages, available rich-result/enhancement evidence, and unexplained traffic or
+impression changes. Page-filtered GSC performance data shows search exposure; no rows alone
+do not establish that a URL is unindexed. State when indexing or enhancement status could not
+be verified. Focused reviews need only the checks relevant to their scope.
 
-- GA4: try an `mcp__google-analytics__*` call (e.g. account summaries). If it fails with
-  credential/reauth errors, run the recovery command from `docs/seo/README.md` ("Credential recovery"),
-  ask the owner to run `/reload`, and retry.
-- GSC: mint a token and run a small query per the README recipe; same recovery path on 401/403.
-- Ads probe (30 seconds): one reporting query via `mcp__google-ads__*` on customer 8624458035.
-  Still `DEVELOPER_TOKEN_NOT_APPROVED` → note "token still TEST level" and move on.
+For each due entry, evaluate its primary metrics against its baseline and account for recorded
+confounds. At this site's volumes, position and impression trends generally precede CTR in
+interpretation; the experiment's primary metric still determines the verdict:
 
-## Step 3 — Passive checks (every run, even if no verdicts are due)
+- **WORKED** — evidence supports movement in the intended direction.
+- **NO EFFECT** — the metric is flat despite enough time and volume.
+- **HURT** — evidence supports movement in the wrong direction.
+- **INCONCLUSIVE** — time, volume, access, or confounds prevent a reliable judgment; state
+  what would settle it and set a new review date.
 
-- Indexing: are the newest pages (per logbook) indexed? (GSC page queries for their URLs,
-  or `site:`-style checks via page-filtered searchAnalytics.)
-- Rich results: any Product/Breadcrumb enhancement data appearing for product pages?
-- Anomalies: big unexplained swings in total clicks/impressions vs the baseline period.
+Keep scheduled operational readings separate from the original experiment verdict. For
+example, instrumentation firing does not by itself establish growth in qualified leads.
 
-## Step 4 — Verdicts (for each due entry)
+## Record the completed review, then report
 
-Pull the entry's primary metric(s) for the comparison window (28d vs 28d unless the entry says
-otherwise) and write an honest verdict:
-- **WORKED** — metric moved clearly in the intended direction.
-- **NO EFFECT** — metric flat despite enough time/volume.
-- **HURT** — metric moved the wrong way.
-- **INCONCLUSIVE** — not enough volume/time; say what would settle it and set a new date.
-Rules: position + impression trend first, CTR second at our volumes; never force a call on noise;
-a wrong past change is a lesson, not a failure — recommend keep / revert / iterate accordingly.
+Unless the owner explicitly requested a read-only review, finish the local record the same day,
+before waiting on decisions about proposed site changes:
 
-## Step 5 — Present, then act only with approval
+- Update judged entries with verdict, date, evidence, and next review date where needed.
+  Distinguish recommended actions, authorized actions, and actions actually completed.
+- Record scheduled operational reads and their next dates, including those on experiments
+  that already have verdicts. Record unavailable checks and their effect on conclusions.
+- Append a dated review summary to `docs/seo/logbook.md`; detailed evidence may live in
+  `docs/seo/reviews/YYYY-MM-DD.md` with a link from that summary. Update "Last review run"
+  and the relevant review schedule.
+- A run with no due verdicts still records its passive/operational findings and next due dates.
+  Add a dated baseline when a new measurement checkpoint or documented re-baseline is needed;
+  preserve the original comparisons unless the README's interference treatment changes them.
 
-Summarize verdicts + proposed actions to the owner. Implement ONLY what they approve:
-- Reverts/iterations follow the normal ship process: change → `npm run build` → owner-approved
-  push → production verification.
-- Git mutations (commit/push) require explicit owner approval each time — never assume.
+Present findings, limitations, and recommended keep/revert/iterate decisions. The review is
+complete once its checks and required record are finished, even if no new site change is approved.
 
-## Step 5b — Parallel changes: the interference check (before shipping ANY new change)
+## Implement authorized follow-up
 
-New opportunities may be shipped while experiments are PENDING — but only after this check:
-1. List every open entry's scope (pages, queries, primary metrics) from the logbook.
-2. **Disjoint scope** (different pages AND different queries/metrics) → ship normally, with its
-   own logbook entry and review date.
-3. **Overlapping scope** → never ship blindly. Choose one and record it: (a) wait for the pending
-   verdict (cite its due date to the owner), (b) ship and re-baseline the affected experiment —
-   new dated baseline file, new review date, and a confound note written into BOTH entries,
-   or (c) mark the older experiment INCONCLUSIVE with the reason.
-4. **Site-wide changes** (speed, templates, schema overhauls, navigation) can shift even
-   "disjoint" experiments → add a cohort marker (ship date + one line) to every open entry so
-   reviews can check for discontinuities starting at that date.
-5. Tie-breaker: when in doubt, protect the measurement. Rankings recover from a delayed change;
-   poisoned data cannot be un-poisoned.
-
-## Step 6 — Record (mandatory, same day)
-
-- Update each judged logbook entry: verdict + date + one-line evidence + action taken.
-- Append a dated `## Review YYYY-MM-DD` section to `docs/seo/logbook.md` summarizing the run.
-- If baselines shifted materially, add `docs/seo/baselines/<today>.md`.
-- Update "Last review run" at the top of the logbook and set next due dates.
-- Remind the owner these docs-only updates still trigger a Cloudflare build on push.
-
-## Arguments — extra focus, not reconfiguration
-
-If `$ARGUMENTS` below is non-empty, treat it as an additional investigation focus for this run
-and cover it in the review summary. The fixed steps above still run in full and dominate on
-conflict. For a standalone ad-hoc question that doesn't need a review run, suggest
-`/skill:seo-investigate` instead.
-
-$ARGUMENTS
+Implement recommendations only when the current request or subsequent owner authorization
+covers them. Complete covered work without repeating approval. Use `docs/seo/README.md` for
+interference and shipping, and `AGENTS.md` for commit/push authorization. Prepare and validate
+local changes before asking for any remaining shipping decision; record what actually ships.
+Documentation-only pushes also trigger the Cloudflare build.

@@ -22,30 +22,24 @@ See [DEPLOY.md](DEPLOY.md) for Cloudflare (OpenNext) build and deployment instru
 
 ## Codex Blog Post Generator Skill
 
-Install the bilingual EN/TR blog generation skill:
+The repository skill lives in `.agents/skills/blog-post-generator/`, alongside the SEO skills.
+Codex discovers it for this project; no personal skill installation is needed. If it is not yet
+listed in an existing session, reload the session to refresh skill discovery.
 
-```powershell
-./scripts/install-blog-post-generator-skill.ps1
+Verify the repository files and skill metadata after `npm install`:
+
+```bash
+npm run blog:skill:check
 ```
 
-Verify setup:
+Start with `$blog-post-generator` or a clear request to create or edit a Kermit Floor blog
+article. Supply the topic and any editorial points, keywords, author, references, or assets you
+already have. The skill reuses those details and asks only about material missing decisions.
 
-```powershell
-./scripts/check-blog-post-generator-skill-setup.ps1
-```
+New articles produce an EN/TR pair with verified claims and valid frontmatter. Small edits
+preserve unrelated content and maintain relevant locale consistency. Drafts default to `draft`
+and the registry's default author; media is selected for its explanatory value. The result is
+saved and validated locally for review. Publication follows the repository's authorization
+and SEO shipping rules.
 
-Frozen skill files live in `tools/blog-post-generator-skill/`.
-
-Quick start in chat:
-
-- Start explicitly with: `$blog-post-generator`
-- The skill asks required inputs one by one (topic, EN/TR keywords, status, author from `content/blog/authors.json`, optional videos).
-
-Current skill behavior includes:
-
-- automatic EN/TR paired post generation
-- autonomous inline image count planning by post depth
-- web image sourcing + filing under `public/images/blog/<topicId>/`
-- optional playable user video placement from repo paths
-- final media confirmation summary before finalizing draft
-- optional user-provided image assets, article context brief, and reference/style source inputs
+See [docs/blog-authoring.md](docs/blog-authoring.md) for format and publishing requirements.

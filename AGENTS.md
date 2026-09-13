@@ -1,21 +1,28 @@
 # Agent Rules for This Repo
 
-No repo-specific Codex instructions are currently required.
+## Read when relevant
 
-## SEO growth loop (read before any SEO/analytics work)
+- Deployment preparation: `DEPLOY.md`.
+- Blog creation or editing: `docs/blog-authoring.md` and
+  `.agents/skills/blog-post-generator/SKILL.md`.
+- Product loading or technical specifications: `docs/product-loading-logic.md`.
+- SEO data access, measurement, or shipping: `docs/seo/README.md`.
 
-This repo runs a recurring measure → change → record → review cycle for kermitfloor.com.
+## SEO growth loop
 
-- **Memory lives in `docs/seo/`** — read `docs/seo/README.md` first (data access, credential
-  recovery, timing rules), then `docs/seo/logbook.md` (experiment log) and the newest file in
-  `docs/seo/baselines/`.
-- **Any change that could affect search/AI visibility or lead measurement MUST get a logbook
-  entry at ship time** (hypothesis, primary metric + baseline, review-due date). Format and
-  timing rules are in the logbook itself.
-- **Reviews** are run with the project skill `/skill:seo-general-review`
-  (`.agents/skills/seo-general-review/SKILL.md`). Reviews write verdicts into the logbook the
-  same day. Ad-hoc SEO/analytics questions go through `/skill:seo-investigate`
-  (`.agents/skills/seo-investigate/SKILL.md`).
-- GA4 data comes via the project MCP server `google-analytics` (`.kimi-code/mcp.json`,
-  gitignored); Search Console via direct API calls per `docs/seo/README.md`. When Google calls
-  fail with reauth errors, use the recovery command in that README, then `/reload`.
+Use `.agents/skills/seo-general-review/SKILL.md` for periodic reviews or explicit experiment
+verdicts, and `.agents/skills/seo-investigate/SKILL.md` for a specific analytics question.
+Follow the selected workflow's order for reading experiment history and selecting baselines.
+A requested review includes its same-day local record unless the owner explicitly requests
+a read-only review.
+
+Before shipping any change that could affect search/AI visibility or lead measurement, check
+experiment interference per `docs/seo/README.md`. At ship time, add a `docs/seo/logbook.md`
+entry with the hypothesis, primary metric and relevant baseline, and review-due date.
+
+## Delivery boundaries
+
+Complete requested local work and appropriate validation before presenting it for approval.
+Commit and push only when the owner has authorized those actions for the current change set.
+Reuse authorization already given; ask again if the scope, destination, or intended effect
+materially changes. Shipping includes production verification and any required SEO record.

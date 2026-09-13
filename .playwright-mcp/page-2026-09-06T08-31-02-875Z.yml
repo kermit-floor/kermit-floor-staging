@@ -1,0 +1,115 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e5]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "Kermit Floor Logo" [ref=e8]
+      - generic [ref=e9]:
+        - navigation [ref=e10]:
+          - link "HOME" [ref=e11] [cursor=pointer]:
+            - /url: /
+          - link "FLOORS" [ref=e12] [cursor=pointer]:
+            - /url: /spc-flooring-elite-collection
+          - link "WALLS" [ref=e13] [cursor=pointer]:
+            - /url: /spc-wall-panels
+          - link "SKIRTINGS" [ref=e14] [cursor=pointer]:
+            - /url: /spc-skirting-boards
+          - link "RESOURCES" [ref=e15] [cursor=pointer]:
+            - /url: /resources?tab=flooring
+          - link "ABOUT" [ref=e16] [cursor=pointer]:
+            - /url: /about
+          - link "CONTACT" [ref=e17] [cursor=pointer]:
+            - /url: /contact
+        - 'button "Change language, current: English" [ref=e19] [cursor=pointer]'
+    - generic [ref=e21]:
+      - img "Wall panel texture background" [ref=e22]
+      - generic [ref=e23]:
+        - paragraph [ref=e24]: "QUICK SHIP: NATURAL"
+        - heading "Natural SPC Flooring Collection" [level=1] [ref=e25]
+      - generic [ref=e27]:
+        - button "Premium Collections" [ref=e28] [cursor=pointer]
+        - button "Natural Collections" [pressed] [ref=e32] [cursor=pointer]
+    - generic [ref=e38]:
+      - generic [ref=e41]:
+        - link "Natural Natural" [ref=e42] [cursor=pointer]:
+          - /url: /spc-parquet-natural-collection
+          - img "Natural" [ref=e44]
+          - generic [ref=e45]: Natural
+        - link "Stone Stone" [ref=e47] [cursor=pointer]:
+          - /url: /spc-parquet-stone-collection
+          - img "Stone" [ref=e49]
+          - generic [ref=e50]: Stone
+        - link "Full Natural Full Natural" [ref=e52] [cursor=pointer]:
+          - /url: /full-natural-collection
+          - img "Full Natural" [ref=e54]
+          - generic [ref=e55]: Full Natural
+      - generic [ref=e59]:
+        - paragraph [ref=e60]: There are currently no products in this collection.
+        - paragraph [ref=e61]: "Please add product folders with images to the corresponding directory in `public/images`."
+    - generic [ref=e62]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - link [ref=e66] [cursor=pointer]:
+            - /url: /
+            - img "Kermit Floor Logo" [ref=e67]
+          - paragraph [ref=e68]: Premium SPC Flooring, Wall Panel and Skirting solutions for modern interiors.
+        - generic [ref=e69]:
+          - heading "Products" [level=3] [ref=e70]
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "SPC Flooring" [ref=e73] [cursor=pointer]:
+                - /url: /spc-flooring-elite-collection
+            - listitem [ref=e74]:
+              - link "SPC Wall Panels" [ref=e75] [cursor=pointer]:
+                - /url: /spc-wall-panels
+            - listitem [ref=e76]:
+              - link "SPC Skirting Boards" [ref=e77] [cursor=pointer]:
+                - /url: /spc-skirting-boards
+        - generic [ref=e78]:
+          - heading "Support" [level=3] [ref=e79]
+          - list [ref=e80]:
+            - listitem [ref=e81]:
+              - link "Download Catalogue" [ref=e82] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e83]:
+              - link "Installation Guide" [ref=e84] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e85]:
+              - link "Technical Data Sheets" [ref=e86] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e87]:
+              - link "Blog" [ref=e88] [cursor=pointer]:
+                - /url: /blog
+        - generic [ref=e89]:
+          - heading "Contact" [level=3] [ref=e90]
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - generic [ref=e96]: Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE
+            - listitem [ref=e97]:
+              - link "+90 262 658 97 29" [ref=e100] [cursor=pointer]:
+                - /url: tel:+902626589729
+            - listitem [ref=e101]:
+              - link "info@kermit.com.tr" [ref=e105] [cursor=pointer]:
+                - /url: mailto:info@kermit.com.tr
+      - generic [ref=e108]:
+        - paragraph [ref=e109]: © 2026 Kermit Floor. All rights reserved.
+        - generic [ref=e110]:
+          - link "Privacy Policy" [ref=e111] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e112] [cursor=pointer]:
+            - /url: /terms-of-service
+          - button "Cookie Settings" [ref=e113] [cursor=pointer]
+    - link "Chat with us!" [ref=e115] [cursor=pointer]:
+      - /url: https://wa.me/905521342961
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=e117]
+  - generic [ref=e120]:
+    - paragraph [ref=e121]: Your privacy choices
+    - paragraph [ref=e122]: We use analytics cookies (Google Analytics 4) to understand site usage and improve performance. You can accept or reject analytics cookies.
+    - generic [ref=e123]:
+      - button "Accept analytics" [ref=e124] [cursor=pointer]
+      - button "Reject analytics" [ref=e125] [cursor=pointer]
+      - button "Manage preferences" [ref=e126] [cursor=pointer]
+      - link "Privacy Policy" [ref=e127] [cursor=pointer]:
+        - /url: /privacy-policy
