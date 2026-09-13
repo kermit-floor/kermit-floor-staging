@@ -152,16 +152,16 @@
   },
   "ResourcesPage": {
     "seo": {
-      "title": "Kermit Floor | Dökümanlar: Kataloglar, Veri Sayfaları, Montaj Kılavuzları ve daha fazlası",
-      "description": "Kermit Floor SPC ürünleri için katalogları, teknik veri sayfalarını, montaj kılavuzlarını ve diğer kaynakları indirin."
+      "title": "SPC Katalogları, Montaj Kılavuzları ve Belgeler | Kermit Floor",
+      "description": "Kermit parke, süpürgelik ve duvar paneli kataloglarını ve süpürgelik montaj kılavuzlarını indirin. Ürün belgeleri, garanti koşulları ve numune talep edin."
     },
-    "heroTitle": "Dökümanlar ve Videolar",
-    "heroSubtitle": "Kataloglar, teknik veri sayfaları, montaj kılavuzları, CAD dosyaları, texture'lar, garanti ve paketleme bilgileri.",
+    "heroTitle": "Dokümanlar ve İndirmeler",
+    "heroSubtitle": "Güncel ürün kataloglarını ve montaj kaynaklarını inceleyin; şartnameniz için gereken belgeleri talep edin.",
     "starterPacksTitle": "Başlangıç Paketleri",
     "downloadZip": "ZIP İndir",
     "viewContents": "İçeriği Görüntüle",
     "viewContentsTitle": "{packName} İçeriği",
-    "viewContentsDescription": "Bu başlangıç paketine aşağıdaki belgeler dahildir.",
+    "viewContentsDescription": "İhtiyacınız olan belgeleri ekibimizle görüşmek için bu listeyi kullanın. İndirilebilen belgeler aşağıdaki kütüphanededir.",
     "productLineTabs_skirting": "SPC Süpürgelikler",
     "productLineTabs_flooring": "SPC Parke",
     "productLineTabs_wall_panels": "SPC Duvar Panelleri",
@@ -179,18 +179,55 @@
     "preview": "Önizleme",
     "download": "İndir",
     "comingSoon": "Yakında...",
-    "noResults": "Kriterlerinize uygun belge bulunamadı."
+    "noResults": "Kriterlerinize uygun belge bulunamadı.",
+    "requestPack": "Bu Paketi Talep Edin",
+    "requestDocument": "Bu Belgeyi Talep Edin",
+    "downloads": {
+      "title": "Kataloglar ve teknik belgeler",
+      "description": "Kataloglardan ürün kodlarını belirleyin; seçtiğiniz parke için montaj ve teknik belgeleri inceleyin. Her indirmede belge dili ve kapsamı belirtilir.",
+      "englishPdf": "PDF İndir · İngilizce",
+      "localizedPdf": "PDF İndir · Türkçe",
+      "roPdf": "PDF İndir · Romence",
+      "enPdf": "PDF İndir · İngilizce",
+      "trPdf": "PDF İndir · Türkçe"
+    },
+    "documents": {
+      "title": "Projeniz için belge talep edin",
+      "description": "Ürün referansını, projenizin veya hedef pazarın gerekliliklerini paylaşın. Ekibimiz, önerilen tedarik için hangi teknik belgelerin geçerli olduğunu değerlendirebilir.",
+      "listLabel": "Talep edilebilecek belge türleri",
+      "types": {
+        "technical": "Teknik veriler",
+        "installation": "Montaj ve garanti",
+        "projectEvidence": "Testler ve beyanlar"
+      },
+      "requestTitle": "İhtiyacınızı açıkça belirtin",
+      "requestDescription": "Yanıtın sipariş etmeyi düşündüğünüz ürünü kapsaması için şu bilgileri ekleyin:",
+      "include": {
+        "product": "Koleksiyon, desen kodu, kalınlık, aşınma tabakası ve alt katman.",
+        "market": "Teslimat ülkesi, kullanım alanı ve proje şartnamesi.",
+        "requirements": "İstenen testler, sertifikalar, beyanlar ve belge dili."
+      },
+      "manuals": "Aşağıdaki parke montaj kılavuzunu kullanın; sipariş veya uygulama öncesinde ürüne özel talimatları ve geçerli garanti koşullarını isteyin.",
+      "requestAction": "Ürün Belgelerini Talep Edin"
+    },
+    "fileLanguage": "Belge dili: {language}",
+    "languages": {
+      "en": "İngilizce",
+      "tr": "Türkçe",
+      "ro": "Romence",
+      "sr": "Sırpça"
+    }
   },
   "AboutPage": {
     "seo": {
-      "metaTitle": "Hakkımızda | Kermit Floor | SPC Üreticisi",
-      "metaDescription": "SPC parke, süpürgelik ve duvar panellerinin lider üreticisi Kermit Floor hakkında bilgi edinin. Kalite, tasarım ve sistem bazlı çözümlere olan bağlılığımızı keşfedin."
+      "metaTitle": "Türkiye'de SPC Parke Üreticisi | Kermit Floor",
+      "metaDescription": "Kermit'ten SPC parke, süpürgelik ve duvar paneli. OEM ve özel marka tedarik; bir konteyner minimum sipariş ve dört haftalık standart süre."
     },
     "hero": {
-      "title": "Kermit Floor Hakkımızda",
-      "subtitle": "SPC Parke kaplama, SPC süpürgelik ve SPC duvar paneli üretiyoruz—dayanıklılık, hızlı uygulama ve tutarlı sonuç için tasarlandı.",
-      "ctaPrimary": "İletişime Geçin",
-      "ctaSecondary": "Dokümanları İndir"
+      "title": "Türkiye'de SPC Parke Üreticisi",
+      "subtitle": "Kermit Floor; distribütörler, kendi markasıyla ürün sunan işletmeler ve iç mekân projeleri için SPC parke, süpürgelik ve duvar paneli tedarik eder. Ürün özelliklerini, numuneleri ve yazılı tedarik teklifini birlikte değerlendirin.",
+      "ctaPrimary": "Numune ve Teklif İsteyin",
+      "ctaSecondary": "Katalogları İnceleyin"
     },
     "whoWeAre": {
       "title": "Biz Kimiz",
@@ -228,21 +265,98 @@
       }
     },
     "footprint": {
-      "title": "Üretim ve Tedarik Yapısı",
+      "title": "Türkiye ve Avrupa'da Kermit",
       "p1": "Yurt içi projeler ve ihracat süreçleri için planlanmış üretim ve tedarik yapısıyla çalışıyoruz. Amacımız; bayi/distribütör, uygulamacı ve proje alıcıları için güvenilir stok/termin, net dokümantasyon ve öngörülebilir sonuçtur.",
       "ctaTitle": "Bizimle çalışmak ister misiniz?",
       "ctaText": "Bayi/distribütör yapılanmalarına ve proje bazlı tedarik modeline uygunuz. Doküman, numune ve ticari koşullar için satış ekibimizle iletişime geçin.",
       "ctaButton1": "Satış ile İletişim",
-      "ctaButton2": "Dokümanları Gör"
+      "ctaButton2": "Dokümanları Gör",
+      "imageAlt": "Çatısında güneş panelleri bulunan fabrika binası",
+      "locations": {
+        "turkey": {
+          "title": "Türkiye · Çayırova, Kocaeli",
+          "address": "Kermit Plastik Sanayi ve Ticaret A.Ş. · Cumhuriyet Mh. Cihan Sk. No:4, Çayırova, Kocaeli"
+        },
+        "moldova": {
+          "title": "Moldova · Kişinev",
+          "address": "Muncești 799, Chișinău, Moldova"
+        },
+        "romania": {
+          "title": "Romanya · Bükreş mağazası",
+          "address": "DMS Innovative Solution SRL · Bükreş, Romanya"
+        }
+      },
+      "originNote": "Teslimat yerini ve ürün kodlarını ekibimizle paylaşın; siparişinize ilişkin tedarik ayrıntıları teklifte netleşsin."
     },
     "sustainability": {
       "title": "Sürdürülebilirlik ve Sorumluluk",
-      "p1": "Uzun servis ömrünü, pratik montajı ve sorumlu üretimi önceliklendiriyoruz. Üretimimizin artan bir kısmını yenilenebilir enerjiyle destekliyor; atığı ve çevresel etkiyi azaltan verimli süreçlere sürekli yatırım yapıyoruz. Etik iş yapış biçimimize kararlılıkla bağlıyız—adil iş ortaklıkları, şeffaf operasyonlar ve tutarlı kalite standartlarıyla Kermit Floor ürünlerinin güvenle tercih edilmesini sağlıyoruz."
+      "p1": "Uzun servis ömrünü, pratik montajı ve sorumlu üretimi önceliklendiriyoruz. Üretimimizin artan bir kısmını yenilenebilir enerjiyle destekliyor; atığı ve çevresel etkiyi azaltan verimli süreçlere sürekli yatırım yapıyoruz. Etik iş yapış biçimimize kararlılıkla bağlıyız—adil iş ortaklıkları, şeffaf operasyonlar ve tutarlı kalite standartlarıyla Kermit Floor ürünlerinin güvenle tercih edilmesini sağlıyoruz.",
+      "imageAlt": "Yeşil bir filiz tutan eller"
     },
     "finalCta": {
-      "title": "Üretici destekli SPC sistem ile mekânlarınızı tamamlayın.",
-      "ctaPrimary": "Ürünleri İncele",
-      "ctaSecondary": "Katalogları İndir"
+      "title": "SPC parke siparişinizi Kermit ile planlayın.",
+      "ctaPrimary": "Toptan Teklif İsteyin",
+      "ctaSecondary": "Katalogları İnceleyin"
+    },
+    "supply": {
+      "title": "Toptan SPC parke tedarik koşulları",
+      "moq": {
+        "label": "Minimum toptan sipariş",
+        "value": "1 konteyner"
+      },
+      "leadTime": {
+        "label": "Standart tedarik süresi",
+        "value": "4 hafta"
+      },
+      "branding": {
+        "label": "Markalama seçenekleri",
+        "value": "OEM ve özel marka"
+      },
+      "note": "Ürün özellikleri, ambalaj, markalama kapsamı ve sipariş takvimi teklifte netleşir. Seçtiğiniz ürünler için yükleme hesabını ve teslimat yerine ulaşma tarihini isteyin."
+    },
+    "documentation": {
+      "title": "Şartnameniz için ürün belgeleri",
+      "description": "Güncel parke, süpürgelik ve duvar paneli kataloglarımızı inceleyin. Proje veya toptan sipariş için gerekli performans kriterlerini paylaşarak seçilen ürüne ait belgeleri talep edin.",
+      "types": {
+        "catalogues": "Ürün katalogları",
+        "instructions": "Montaj talimatları",
+        "projectEvidence": "Proje belgeleri"
+      },
+      "scope": "Bir belgeyi şartnamede veya özel markalı seride kullanmadan önce ürün referansını, kapsamını ve geçerliliğini kontrol edin. İlgili parke montaj talimatını ve garanti koşullarını teklifinizle birlikte isteyin.",
+      "action": "Belgeleri İnceleyin ve Talep Edin"
+    },
+    "oem": {
+      "title": "Markanız için tanımlı bir SPC serisi",
+      "description": "OEM ve özel marka tedarik mümkündür. Müşterilerinizin ihtiyaç duyduğu ürünleri ve seriyi markanız altında nasıl sunacağınızı bizimle paylaşın.",
+      "items": {
+        "specification": "Koleksiyonu, deseni, ürün yapısını ve kullanım alanını belirleyin.",
+        "branding": "Kutu, etiket ve tasarım ihtiyaçlarını teklif kapsamında netleştirin.",
+        "schedule": "Numuneleri, belgeleri, ilk siparişi ve teslimat takvimini kararlaştırın."
+      },
+      "action": "Özel Marka Siparişini Görüşün"
+    },
+    "questions": {
+      "title": "İlk sipariş öncesinde sık sorulanlar",
+      "factory": {
+        "question": "Kermit'in merkezi nerede?",
+        "answer": "Kermit Plastik Sanayi ve Ticaret A.Ş., Türkiye'de Kocaeli'nin Çayırova ilçesinde yer alır. Şirketimizin Moldova Kişinev'de ve Romanya Bükreş'te de noktaları bulunur. Seçtiğiniz ürünlerin tedarik düzeni için ekibimizle iletişime geçin."
+      },
+      "moq": {
+        "question": "Toptan SPC parkede minimum sipariş miktarı nedir?",
+        "answer": "Minimum sipariş bir konteynerdir. Metrekare miktarı seçilen ürüne, ambalaja ve yükleme düzenine göre değişir; ürün özelliklerinize uygun yükleme hesabını isteyin."
+      },
+      "leadTime": {
+        "question": "Tedarik süresi ne kadar?",
+        "answer": "Standart tedarik süremiz dört haftadır. Sipariş takvimi, teslimat sorumlulukları ve teslimat yerinize ilişkin öngörülen süre teklifte belirtilir."
+      },
+      "oem": {
+        "question": "Kermit, markamızla SPC parke tedarik edebilir mi?",
+        "answer": "Evet. OEM ve özel marka tedarik mümkündür. Kapsamın yazılı olarak belirlenebilmesi için ürün, markalama ve belge ihtiyaçlarınızı paylaşın."
+      },
+      "enquiry": {
+        "question": "Numune veya teklif talebinde hangi bilgiler gerekir?",
+        "answer": "Şirket bilgilerinizi, teslimat yerini, ürün veya desen kodlarını, teknik özellikleri, miktarı, kullanım alanını, numune ihtiyacını ve istenen teslim tarihini gönderin. Özel marka veya proje belgeleriyle ilgili ihtiyaçlarınızı da ekleyin."
+      }
     }
   },
   "ContactPage": {
@@ -970,5 +1084,10 @@
     "P-403": "Travertine Turkish Gold",
     "P-404": "Travertine Light Beige",
     "P-405": "Travertine Turkish"
+  },
+  "ManufacturerGuides": {
+    "title": "Distribütörler ve özel marka alıcıları için rehberler",
+    "description": "Tedarikçileri karşılaştırın, numune talebinizi hazırlayın ve ilk OEM siparişinizin kapsamını bu satın alma rehberleriyle belirleyin.",
+    "read": "Rehberi okuyun"
   }
 }

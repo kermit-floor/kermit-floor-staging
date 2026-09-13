@@ -72,7 +72,7 @@ export default function BlogPostContent({post, locale, backLabel}: BlogPostConte
       </div>
 
       <div
-        className="mt-10 space-y-5 text-[16px] leading-8 text-foreground [&_a]:text-primary [&_a]:underline [&_blockquote]:border-l-4 [&_blockquote]:border-primary/40 [&_blockquote]:pl-4 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:my-8 [&_img]:h-auto [&_img]:w-full [&_img]:rounded-xl [&_img]:border [&_img]:bg-card/30 [&_li]:ml-5 [&_li]:list-disc [&_ul]:space-y-2 [&_video]:my-8 [&_video]:w-full [&_video]:rounded-xl [&_video]:border"
+        className="mt-10 space-y-5 text-[16px] leading-8 text-foreground [&_a]:text-primary [&_a]:underline [&_blockquote]:border-l-4 [&_blockquote]:border-primary/40 [&_blockquote]:pl-4 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_img]:my-8 [&_img]:h-auto [&_img]:w-full [&_img]:rounded-xl [&_img]:border [&_img]:bg-card/30 [&_li]:ml-5 [&_li]:list-disc [&_ul]:space-y-2 [&_pre]:max-w-full [&_pre]:overflow-x-auto [&_pre]:rounded-xl [&_pre]:border [&_pre]:bg-muted/50 [&_pre]:p-5 [&_pre]:text-sm [&_pre]:leading-7 [&_table]:w-full [&_table]:table-fixed [&_table]:border-collapse [&_table]:text-sm [&_table]:leading-6 [&_th]:border [&_th]:bg-muted/50 [&_th]:p-3 [&_th]:text-left [&_td]:border [&_td]:p-3 [&_td]:align-top [&_td]:break-words [&_video]:my-8 [&_video]:w-full [&_video]:rounded-xl [&_video]:border"
         dangerouslySetInnerHTML={{__html: post.contentHtml}}
       />
     </article>

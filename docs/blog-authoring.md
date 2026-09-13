@@ -23,6 +23,7 @@ Define allowed blog authors in:
 
 Use this registry to keep `authorName` consistent across posts and tools/skills.
 Each author should have a display `name`; `id` is recommended for stable selection. Mark one entry with `"isDefault": true` for scaffolding defaults.
+Set `schemaType` to `Organization` for a company or editorial team; individual authors use `Person` by default.
 
 ## Starter placeholders
 

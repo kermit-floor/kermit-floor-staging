@@ -6,6 +6,7 @@ export type FileDetails = {
   url: string;
   size: string;
   format: 'pdf' | 'zip' | 'dwg' | 'dxf';
+  language?: 'en' | 'tr' | 'ro' | 'sr';
 };
 
 export type ProductLine = 'skirting' | 'flooring' | 'wall_panels' | 'general';

@@ -14,6 +14,7 @@
     {
       "id": "kermit-floor-team",
       "name": "Kermit Floor Team",
+      "schemaType": "Organization",
       "subtitle": {
         "en": "Editorial Team",
         "tr": "Editör Ekibi"

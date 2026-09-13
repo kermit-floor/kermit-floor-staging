@@ -190,12 +190,14 @@
         "en": {
           "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en-2026-08.pdf",
           "size": "5.7 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
         "tr": {
           "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en-2026-08.pdf",
           "size": "5.7 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
       "previewEnabled": true
@@ -514,12 +516,12 @@
         "all"
       ],
       "installationMethod": "clip",
-      "title": "SPC Flooring Installation Guide (Click System)",
-      "title_tr": "SPC Parke Montaj Kılavuzu (Kilit Sistem)",
-      "summary": "Step-by-step instructions for installing our SPC flooring with the UniClic system.",
-      "summary_tr": "UniClic sistemli SPC parkemizin montajı için adım adım talimatlar.",
-      "version": "v3.0",
-      "updatedAt": "2025-12-11",
+      "title": "SPC Flooring Installation & Care Guide",
+      "title_tr": "SPC Parke Montaj ve Bakım Kılavuzu (İngilizce)",
+      "summary": "Floating click flooring: inspection, subfloor preparation, minimum 10 mm movement gaps, joining, heating limits and care. Check the selected locking system.",
+      "summary_tr": "Yüzer kilitli parke: ürün kontrolü, alt zemin, en az 10 mm hareket boşluğu, birleştirme, ısıtma sınırları ve bakım. Seçilen kilit sistemini kontrol edin. Belge İngilizcedir.",
+      "version": "2026-09",
+      "updatedAt": "2026-09-13",
       "tags": [
         "installation",
         "flooring",
@@ -527,14 +529,16 @@
       ],
       "files": {
         "en": {
-          "url": "#",
-          "size": "3.5 MB",
-          "format": "pdf"
+          "url": "/downloads/installation-guides/kermit-spc-flooring-installation-care-en-2026-09.pdf",
+          "size": "1001 KB",
+          "format": "pdf",
+          "language": "en"
         },
         "tr": {
-          "url": "#",
-          "size": "3.5 MB",
-          "format": "pdf"
+          "url": "/downloads/installation-guides/kermit-spc-flooring-installation-care-en-2026-09.pdf",
+          "size": "1001 KB",
+          "format": "pdf",
+          "language": "en"
         }
       },
       "previewEnabled": true
@@ -601,6 +605,76 @@
           "url": "#",
           "size": "0.5 MB",
           "format": "pdf"
+        }
+      },
+      "previewEnabled": true
+    },
+    {
+      "id": "flooring-underfloor-heating",
+      "productLine": "flooring",
+      "docType": "installation",
+      "audience": [
+        "all"
+      ],
+      "installationMethod": null,
+      "title": "SPC Flooring Underfloor Heating Guide",
+      "title_tr": "SPC Parke Yerden Isıtma Rehberi",
+      "summary": "Heating compatibility, a maximum floor-surface temperature of 27°C, gradual start-up, underlay and expansion planning. Use with the full installation instructions.",
+      "summary_tr": "Isıtma uyumluluğu, en fazla 27°C zemin yüzey sıcaklığı, kademeli çalıştırma, şilte ve genleşme planı. Tam montaj talimatıyla birlikte kullanın.",
+      "version": "2026-09",
+      "updatedAt": "2026-09-13",
+      "tags": [
+        "flooring",
+        "heating",
+        "installation"
+      ],
+      "files": {
+        "en": {
+          "url": "/downloads/installation-guides/kermit-spc-underfloor-heating-guide-en-2026-09.pdf",
+          "size": "65 KB",
+          "format": "pdf",
+          "language": "en"
+        },
+        "tr": {
+          "url": "/downloads/installation-guides/kermit-spc-yerden-isitma-rehberi-tr-2026-09.pdf",
+          "size": "66 KB",
+          "format": "pdf",
+          "language": "tr"
+        }
+      },
+      "previewEnabled": true
+    },
+    {
+      "id": "flooring-tds-6mm-no-ixpe",
+      "productLine": "flooring",
+      "docType": "tds",
+      "audience": [
+        "all"
+      ],
+      "installationMethod": null,
+      "title": "Technical Data Sheet: 6 mm SPC without IXPE (Romanian)",
+      "title_tr": "Teknik Veri Sayfası: IXPE Olmadan 6 mm SPC (Romence)",
+      "summary": "Manufacturer technical sheet for the specified 6 mm configuration with a 0.50 mm wear layer and no attached IXPE. Values apply to this configuration. Romanian PDF.",
+      "summary_tr": "0,50 mm aşınma tabakalı, entegre IXPE içermeyen 6 mm yapı için üretici teknik veri sayfası. Değerler bu yapıya aittir. PDF Romencedir.",
+      "version": "2026-09",
+      "updatedAt": "2026-09-13",
+      "tags": [
+        "flooring",
+        "technical-data",
+        "6mm"
+      ],
+      "files": {
+        "en": {
+          "url": "/downloads/technical-data-sheets/spc-flooring/kermit-spc-6mm-no-ixpe-tds-ro-2026-09.pdf",
+          "size": "69 KB",
+          "format": "pdf",
+          "language": "ro"
+        },
+        "tr": {
+          "url": "/downloads/technical-data-sheets/spc-flooring/kermit-spc-6mm-no-ixpe-tds-ro-2026-09.pdf",
+          "size": "69 KB",
+          "format": "pdf",
+          "language": "ro"
         }
       },
       "previewEnabled": true

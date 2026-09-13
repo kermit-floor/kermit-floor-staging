@@ -6,7 +6,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from '@/components/ui/button';
 import { getWhatsAppUrl } from '@/lib/contact';
 import { trackEvent } from '@/lib/consent/gtag';
-import { Check, Download, Package, FileText, X, Mail } from 'lucide-react';
+import { Check, Package, FileText, X, Mail } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -70,8 +70,8 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
         <Dialog>
             <DialogTrigger asChild>
                 <Button className="w-full sm:flex-1 whitespace-normal h-auto">
-                    <Download className="mr-2 h-4 w-4" />
-                    {t('downloadZip')}
+                    <Mail className="mr-2 h-4 w-4" />
+                    {t('requestPack')}
                 </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">

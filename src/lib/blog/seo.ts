@@ -1,4 +1,5 @@
 import type {BlogLocale, BlogPost, BlogPostPair} from './types';
+import {getBlogAuthorProfileByName} from './authors';
 
 const DEFAULT_SITE_URL = 'https://kermitfloor.com';
 
@@ -50,16 +51,17 @@ export function getPairLocalePath(pair: BlogPostPair, locale: BlogLocale): strin
 }
 
 export function getArticleJsonLd(post: BlogPost, url: string) {
+  const author = getBlogAuthorProfileByName(post.authorName, post.locale);
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.description,
-    image: [toAbsoluteUrl(post.locale, post.coverImage)],
+    image: [`${getSiteUrl()}${ensureLeadingSlash(post.coverImage)}`],
     datePublished: `${post.publishedAt}T00:00:00Z`,
     dateModified: `${post.updatedAt}T00:00:00Z`,
     author: {
-      '@type': 'Person',
+      '@type': author?.schemaType ?? 'Person',
       name: post.authorName,
     },
     inLanguage: post.locale,

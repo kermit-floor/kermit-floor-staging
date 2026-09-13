@@ -152,16 +152,16 @@
   },
   "ResourcesPage": {
     "seo": {
-      "title": "Kermit Floor | Resources: Catalogues, TDS, Installation Manuals and more",
-      "description": "Download catalogues, technical data sheets, installation guides, and other resources for Kermit Floor SPC products."
+      "title": "SPC Catalogues, Installation Guides & Documents | Kermit Floor",
+      "description": "Download Kermit flooring, skirting and wall-panel catalogues and skirting installation guides. Request product documents, warranty terms and wholesale samples."
     },
     "heroTitle": "Resources & Downloads",
-    "heroSubtitle": "Catalogues, technical data sheets, installation guides, CAD files, textures, warranties and packaging information.",
+    "heroSubtitle": "Browse current product catalogues and installation resources, then request the documents needed for your specification.",
     "starterPacksTitle": "Starter Packs",
     "downloadZip": "Download ZIP",
     "viewContents": "View Contents",
     "viewContentsTitle": "{packName} Contents",
-    "viewContentsDescription": "The following documents are included in this starter pack.",
+    "viewContentsDescription": "Use this list to discuss the documents you need with our team. Available downloads are in the library below.",
     "productLineTabs_skirting": "SPC Skirting Boards",
     "productLineTabs_flooring": "SPC Flooring",
     "productLineTabs_wall_panels": "SPC Wall Panels",
@@ -179,18 +179,55 @@
     "preview": "Preview",
     "download": "Download",
     "comingSoon": "Coming soon...",
-    "noResults": "No documents match your criteria."
+    "noResults": "No documents match your criteria.",
+    "requestPack": "Request This Pack",
+    "requestDocument": "Request This Document",
+    "downloads": {
+      "title": "Catalogues and technical downloads",
+      "description": "Find product codes in the catalogues, then check the installation and technical documents for your selected flooring. Each download identifies its language and scope.",
+      "englishPdf": "Download PDF · English",
+      "localizedPdf": "Download PDF · English",
+      "roPdf": "Download PDF · Romanian",
+      "enPdf": "Download PDF · English",
+      "trPdf": "Download PDF · Turkish"
+    },
+    "documents": {
+      "title": "Request documents for your project",
+      "description": "Send the product reference and the requirements of your project or destination market. Our team can review which technical documents apply to the proposed supply.",
+      "listLabel": "Documents to discuss",
+      "types": {
+        "technical": "Technical data",
+        "installation": "Installation & warranty",
+        "projectEvidence": "Tests & declarations"
+      },
+      "requestTitle": "Make the request specific",
+      "requestDescription": "Include these details so the response addresses the product you intend to order:",
+      "include": {
+        "product": "Collection, decor code, thickness, wear layer and backing.",
+        "market": "Destination country, intended use and project specification.",
+        "requirements": "Required tests, certificates, declarations and document language."
+      },
+      "manuals": "Use the flooring installation guide below and ask for any product-specific instructions and the applicable warranty before ordering or starting work.",
+      "requestAction": "Request Product Documents"
+    },
+    "fileLanguage": "File language: {language}",
+    "languages": {
+      "en": "English",
+      "tr": "Turkish",
+      "ro": "Romanian",
+      "sr": "Serbian"
+    }
   },
   "AboutPage": {
     "seo": {
-      "metaTitle": "About Kermit Floor | SPC Flooring, Skirting & Wall Panels Manufacturer",
-      "metaDescription": "Learn about Kermit Floor, a leading manufacturer of SPC flooring, skirting, and wall panels. Discover our commitment to quality, innovation, and sustainable practices."
+      "metaTitle": "SPC Flooring Manufacturer in Türkiye | Kermit Floor",
+      "metaDescription": "SPC flooring, skirting and wall panels from Kermit in Türkiye. OEM and private label available, one-container MOQ and a four-week standard lead time."
     },
     "hero": {
-      "title": "About Kermit Floor",
-      "subtitle": "We manufacture SPC flooring, SPC skirting boards and SPC wall panels—designed for durability, fast installation and consistent project results.",
-      "ctaPrimary": "Contact Us",
-      "ctaSecondary": "Download Resources"
+      "title": "SPC Flooring Manufacturer in Türkiye",
+      "subtitle": "Kermit Floor supplies SPC flooring, skirting boards and wall panels for distributors, private-label brands and interior projects. Start with the product specification, samples and a written supply offer.",
+      "ctaPrimary": "Request Samples & a Quote",
+      "ctaSecondary": "Browse Catalogues"
     },
     "whoWeAre": {
       "title": "Who We Are",
@@ -228,21 +265,98 @@
       }
     },
     "footprint": {
-      "title": "Manufacturing & Supply Footprint",
+      "title": "Kermit in Türkiye and Europe",
       "p1": "We operate with a production and supply structure built for both domestic projects and export workflows. Our goal is simple: reliable availability, clear documentation, and predictable results for distributors, contractors and project buyers.",
       "ctaTitle": "Interested in working with us?",
       "ctaText": "We support distributor/dealer structures and project-based supply. Contact our sales team for product documentation, samples and commercial terms.",
       "ctaButton1": "Contact Sales",
-      "ctaButton2": "View Resources"
+      "ctaButton2": "View Resources",
+      "imageAlt": "Factory building with rooftop solar panels",
+      "locations": {
+        "turkey": {
+          "title": "Türkiye · Çayırova, Kocaeli",
+          "address": "Kermit Plastik Sanayi ve Ticaret A.Ş. · Cumhuriyet Mh. Cihan Sk. No:4, Çayırova, Kocaeli"
+        },
+        "moldova": {
+          "title": "Moldova · Chișinău",
+          "address": "Muncești 799, Chișinău, Moldova"
+        },
+        "romania": {
+          "title": "Romania · Bucharest store",
+          "address": "DMS Innovative Solution SRL · Bucharest, Romania"
+        }
+      },
+      "originNote": "Share the destination and product codes with our team so the quotation can confirm the supply details for your order."
     },
     "sustainability": {
       "title": "Sustainability & Responsibility",
-      "p1": "We prioritize long service life, practical installation, and responsible manufacturing. Our production is increasingly supported by renewable energy, and we continuously invest in efficient processes that reduce waste and environmental impact. We remain firmly committed to ethical business practices—fair partnerships, transparent operations, and consistent quality standards—so customers can specify Kermit Floor products with confidence."
+      "p1": "We prioritize long service life, practical installation, and responsible manufacturing. Our production is increasingly supported by renewable energy, and we continuously invest in efficient processes that reduce waste and environmental impact. We remain firmly committed to ethical business practices—fair partnerships, transparent operations, and consistent quality standards—so customers can specify Kermit Floor products with confidence.",
+      "imageAlt": "Hands holding a green sprout"
     },
     "finalCta": {
-      "title": "Build complete SPC interiors with a manufacturer-backed system.",
-      "ctaPrimary": "Explore Products",
-      "ctaSecondary": "Download Catalogues"
+      "title": "Plan your next SPC flooring order with Kermit.",
+      "ctaPrimary": "Request a Wholesale Quote",
+      "ctaSecondary": "Browse Catalogues"
+    },
+    "supply": {
+      "title": "Wholesale SPC flooring at a glance",
+      "moq": {
+        "label": "Minimum wholesale order",
+        "value": "1 container"
+      },
+      "leadTime": {
+        "label": "Standard lead time",
+        "value": "4 weeks"
+      },
+      "branding": {
+        "label": "Branding options",
+        "value": "OEM & private label"
+      },
+      "note": "The quotation confirms the selected specification, packing, branding scope and order schedule. Ask for the destination delivery date and loading calculation for your chosen products."
+    },
+    "documentation": {
+      "title": "Documents for your specification",
+      "description": "Start with our current flooring, skirting and wall-panel catalogues. For a project or wholesale order, send the required performance criteria and ask for the documents relevant to the selected product.",
+      "types": {
+        "catalogues": "Product catalogues",
+        "instructions": "Installation instructions",
+        "projectEvidence": "Project documentation"
+      },
+      "scope": "Review the product reference, scope and validity of each document before using it in a tender or branded range. Request the applicable flooring installation instructions and warranty with your quotation.",
+      "action": "View Downloads & Request Documents"
+    },
+    "oem": {
+      "title": "Your brand, a defined SPC range",
+      "description": "OEM and private-label supply are available. Tell us which products your customers need and how you plan to present the range under your brand.",
+      "items": {
+        "specification": "Define the collection, decor, construction and intended use.",
+        "branding": "Agree the carton, label and artwork requirements in the offer.",
+        "schedule": "Confirm samples, documents, the first order and delivery schedule."
+      },
+      "action": "Discuss a Private-Label Order"
+    },
+    "questions": {
+      "title": "Questions before your first order",
+      "factory": {
+        "question": "Where is Kermit based?",
+        "answer": "Kermit Plastik Sanayi ve Ticaret A.Ş. is based in Çayırova, Kocaeli, Türkiye. Our company also has locations in Chișinău, Moldova, and Bucharest, Romania. Contact our team for the supply arrangements for your selected products."
+      },
+      "moq": {
+        "question": "What is the minimum wholesale SPC flooring order?",
+        "answer": "The minimum order is one container. The square-metre quantity depends on the selected product, packing and loading arrangement; request a calculation for your specification."
+      },
+      "leadTime": {
+        "question": "What is the lead time?",
+        "answer": "Our standard lead time is four weeks. The quotation confirms the actual order schedule and delivery responsibilities, including the expected timing for your destination."
+      },
+      "oem": {
+        "question": "Can Kermit supply SPC flooring under our brand?",
+        "answer": "Yes. OEM and private-label supply are available. Include your product, branding and documentation requirements so the scope can be agreed in writing."
+      },
+      "enquiry": {
+        "question": "What should a sample or quotation request include?",
+        "answer": "Send your company details, destination, product or decor codes, technical requirements, quantity, intended use, sample needs and required delivery date. Include any private-label or project-documentation requirements."
+      }
     }
   },
   "ContactPage": {
@@ -970,5 +1084,10 @@
     "P-403": "Travertine Turkish Gold",
     "P-404": "Travertine Light Beige",
     "P-405": "Travertine Turkish"
+  },
+  "ManufacturerGuides": {
+    "title": "Guides for distributors and private-label buyers",
+    "description": "Compare suppliers, prepare a sample request and define your first OEM order with these practical purchasing guides.",
+    "read": "Read the guide"
   }
 }

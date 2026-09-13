@@ -11,6 +11,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import ManufacturerGuides from '@/components/manufacturer/ManufacturerGuides';
 
 export async function generateMetadata({
   params,
@@ -84,7 +85,7 @@ export default async function AboutPage({
       <main className="flex-grow">
         
         {/* 1. Hero */}
-        <section className="relative h-72 md:h-96 w-full">
+        <section className="relative isolate w-full overflow-hidden">
           <Image
             src="/images/hero-images/about-us-hero-image.jpg"
             alt={t('hero.title')}
@@ -94,18 +95,19 @@ export default async function AboutPage({
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-4">
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-16 text-center md:py-24">
             <h1 className="font-headline text-4xl lg:text-5xl font-bold tracking-tight text-white">
               {t('hero.title')}
             </h1>
             <p className="mt-4 text-lg text-white/90 max-w-3xl mx-auto">
               {t('hero.subtitle')}
             </p>
-            <div className="mt-8 flex justify-center gap-4">
-              <Button asChild size="lg">
+            <div className="mt-8 flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row">
+              <Button asChild size="lg" className="h-auto min-h-11 whitespace-normal py-3">
                 <Link href="/contact">{t('hero.ctaPrimary')}</Link>
               </Button>
-              <Button asChild size="lg" className="bg-background text-primary hover:bg-background/80">
+              <Button asChild size="lg" className="h-auto min-h-11 whitespace-normal bg-background py-3 text-primary hover:bg-background/80">
                 <Link href="/resources">{t('hero.ctaSecondary')}</Link>
               </Button>
             </div>
@@ -113,6 +115,19 @@ export default async function AboutPage({
         </section>
 
         <div className="container px-4 mx-auto space-y-16 md:space-y-24 py-16 md:py-24">
+            <section aria-labelledby="supply-title" className="max-w-5xl mx-auto">
+                <h2 id="supply-title" className="font-headline text-3xl font-bold text-center">{t('supply.title')}</h2>
+                <dl className="mt-8 grid gap-4 sm:grid-cols-3">
+                    {['moq', 'leadTime', 'branding'].map((key) => (
+                        <div key={key} className="rounded-xl border bg-card p-6 text-center">
+                            <dt className="text-sm font-medium text-muted-foreground">{t(`supply.${key}.label`)}</dt>
+                            <dd className="mt-2 font-headline text-2xl font-bold text-primary">{t(`supply.${key}.value`)}</dd>
+                        </div>
+                    ))}
+                </dl>
+                <p className="mt-5 text-center text-sm text-muted-foreground">{t('supply.note')}</p>
+            </section>
+
             {/* 2. Who We Are */}
             <section className="max-w-4xl mx-auto text-center">
                 <h2 className="font-headline text-3xl font-bold text-foreground">{t('whoWeAre.title')}</h2>
@@ -151,17 +166,26 @@ export default async function AboutPage({
             {/* 5. Manufacturing & Supply Footprint */}
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="relative aspect-square lg:aspect-[4/3] rounded-lg overflow-hidden">
-                    <Image src="/images/about-us/factory.jpg" alt="Manufacturing facility" fill className="object-cover" data-ai-hint="manufacturing facility" sizes="(max-width: 1024px) 100vw, 50vw" />
+                    <Image src="/images/about-us/factory.jpg" alt={t('footprint.imageAlt')} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
                 </div>
                 <div>
                     <h2 className="font-headline text-3xl font-bold text-foreground">{t('footprint.title')}</h2>
                     <p className="mt-4 text-lg text-muted-foreground">{t('footprint.p1')}</p>
+                    <dl className="mt-6 space-y-4">
+                        {['turkey', 'moldova', 'romania'].map((key) => (
+                            <div key={key}>
+                                <dt className="font-semibold">{t(`footprint.locations.${key}.title`)}</dt>
+                                <dd className="mt-1 text-muted-foreground">{t(`footprint.locations.${key}.address`)}</dd>
+                            </div>
+                        ))}
+                    </dl>
+                    <p className="mt-4 text-sm text-muted-foreground">{t('footprint.originNote')}</p>
                     <div className="mt-8 p-6 bg-muted/50 rounded-lg">
                         <h3 className="font-headline text-xl font-semibold">{t('footprint.ctaTitle')}</h3>
                         <p className="mt-2 text-muted-foreground">{t('footprint.ctaText')}</p>
                         <div className="mt-6 flex flex-col sm:flex-row gap-4">
                             <Button asChild>
-                                <a href="mailto:info@kermitfloor.com">{t('footprint.ctaButton1')}</a>
+                                <Link href="/contact">{t('footprint.ctaButton1')}</Link>
                             </Button>
                             <Button asChild variant="outline">
                                 <Link href="/resources">{t('footprint.ctaButton2')}</Link>
@@ -173,10 +197,52 @@ export default async function AboutPage({
             
             <Separator />
 
+            <section className="grid gap-10 lg:grid-cols-2">
+                <div>
+                    <h2 className="font-headline text-3xl font-bold">{t('documentation.title')}</h2>
+                    <p className="mt-4 text-muted-foreground">{t('documentation.description')}</p>
+                    <ul className="mt-5 flex flex-wrap gap-2">
+                        {['catalogues', 'instructions', 'projectEvidence'].map((key) => (
+                            <li key={key} className="rounded-md border px-3 py-2 text-sm">{t(`documentation.types.${key}`)}</li>
+                        ))}
+                    </ul>
+                    <p className="mt-5 text-sm text-muted-foreground">{t('documentation.scope')}</p>
+                    <Button asChild variant="outline" className="mt-6 h-auto whitespace-normal">
+                        <Link href={{pathname: '/resources', hash: 'certificates'}}>{t('documentation.action')}</Link>
+                    </Button>
+                </div>
+                <div className="rounded-xl bg-muted/50 p-6 md:p-8">
+                    <h2 className="font-headline text-3xl font-bold">{t('oem.title')}</h2>
+                    <p className="mt-4 text-muted-foreground">{t('oem.description')}</p>
+                    <ul className="mt-5 list-disc space-y-2 pl-5 text-muted-foreground">
+                        {['specification', 'branding', 'schedule'].map((key) => <li key={key}>{t(`oem.items.${key}`)}</li>)}
+                    </ul>
+                    <Button asChild className="mt-6 h-auto whitespace-normal">
+                        <Link href="/contact">{t('oem.action')}</Link>
+                    </Button>
+                </div>
+            </section>
+
+            <ManufacturerGuides locale={locale === 'tr' ? 'tr' : 'en'} />
+
+            <section className="max-w-4xl mx-auto" aria-labelledby="manufacturer-questions-title">
+                <h2 id="manufacturer-questions-title" className="font-headline text-3xl font-bold">{t('questions.title')}</h2>
+                <dl className="mt-8 divide-y">
+                    {['factory', 'moq', 'leadTime', 'oem', 'enquiry'].map((key) => (
+                        <div key={key} className="py-5">
+                            <dt className="font-headline text-lg font-semibold">{t(`questions.${key}.question`)}</dt>
+                            <dd className="mt-2 leading-7 text-muted-foreground">{t(`questions.${key}.answer`)}</dd>
+                        </div>
+                    ))}
+                </dl>
+            </section>
+
+            <Separator />
+
             {/* 6. Sustainability & Responsibility */}
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="lg:order-2 relative aspect-square lg:aspect-[4/3] rounded-lg overflow-hidden">
-                    <Image src="/images/about-us/sustainability.jpg" alt="Hands holding a green sprout" fill className="object-cover" data-ai-hint="sustainability responsibility" sizes="(max-width: 1024px) 100vw, 50vw" />
+                    <Image src="/images/about-us/sustainability.jpg" alt={t('sustainability.imageAlt')} fill className="object-cover" data-ai-hint="sustainability responsibility" sizes="(max-width: 1024px) 100vw, 50vw" />
                 </div>
                 <div className="lg:order-1">
                     <h2 className="font-headline text-3xl font-bold text-foreground">{t('sustainability.title')}</h2>
@@ -189,12 +255,12 @@ export default async function AboutPage({
         <section className="bg-muted">
             <div className="container mx-auto px-4 py-16 text-center">
                 <h2 className="font-headline text-3xl font-bold text-primary max-w-3xl mx-auto">{t('finalCta.title')}</h2>
-                <div className="mt-8 flex justify-center gap-4">
+                <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                     <Button asChild size="lg">
-                        <Link href="/spc-wall-panels">{t('finalCta.ctaPrimary')}</Link>
+                        <Link href="/contact">{t('finalCta.ctaPrimary')}</Link>
                     </Button>
                             <Button asChild size="lg" variant="outline">
-                                <Link href={{ pathname: '/resources', query: { tab: 'wall_panels' } }}>{t('finalCta.ctaSecondary')}</Link>
+                                <Link href="/resources">{t('finalCta.ctaSecondary')}</Link>
                             </Button>
                 </div>
             </div>

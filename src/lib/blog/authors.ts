@@ -8,6 +8,7 @@ type RawAuthorEntry = {
   photoPath?: string;
   role?: string;
   isDefault?: boolean;
+  schemaType?: 'Person' | 'Organization';
 };
 
 type RawAuthorRegistry =
@@ -23,6 +24,7 @@ export type BlogAuthorProfile = {
   subtitle?: string;
   photoPath?: string;
   isDefault?: boolean;
+  schemaType: 'Person' | 'Organization';
 };
 
 function getRawAuthorEntries(): RawAuthorEntry[] {
@@ -53,6 +55,7 @@ function normalizeAuthorEntry(entry: RawAuthorEntry, locale: BlogLocale): BlogAu
     subtitle,
     photoPath,
     isDefault: entry.isDefault === true,
+    schemaType: entry.schemaType === 'Organization' ? 'Organization' : 'Person',
   };
 }
 

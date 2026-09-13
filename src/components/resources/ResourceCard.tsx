@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { format } from 'date-fns';
 import { enUS, tr } from 'date-fns/locale';
 import { Eye, Download, FileText } from 'lucide-react';
+import { Link } from '@/navigation';
 
 type ResourceCardProps = {
   resource: Resource;
@@ -41,6 +42,7 @@ export default function ResourceCard({ resource }: ResourceCardProps) {
           <Badge variant="outline">{`${t('doc_type')}: ${resource.docType}`}</Badge>
           <Badge variant="outline">{`${t('version')}: ${resource.version}`}</Badge>
           <Badge variant="outline">{`${t('last_updated')}: ${formattedDate}`}</Badge>
+          {hasAvailableFile && <Badge variant="outline">{t('fileLanguage', {language: t(`languages.${fileDetails.language ?? currentLocale}`)})}</Badge>}
         </CardContent>
       </div>
       <CardFooter className="p-6 pt-0 md:pt-6 flex-shrink-0 w-full md:w-auto border-t md:border-t-0 md:border-l flex flex-row md:flex-col items-center justify-center gap-2">
@@ -60,9 +62,9 @@ export default function ResourceCard({ resource }: ResourceCardProps) {
             </Button>
           </>
         ) : (
-          <div className="w-full rounded-md border border-dashed border-border bg-muted/50 px-4 py-2 text-center text-sm font-medium text-muted-foreground">
-            {t('comingSoon')}
-          </div>
+          <Button asChild variant="outline" className="w-full h-auto whitespace-normal">
+            <Link href="/contact">{t('requestDocument')}</Link>
+          </Button>
         )}
       </CardFooter>
     </Card>
