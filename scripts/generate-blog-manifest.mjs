@@ -3,6 +3,7 @@ import {access, mkdir, readdir, readFile, writeFile} from 'node:fs/promises';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 import {z} from 'zod';
+import {configureFaqRenderer} from './lib/blog-faq.mjs';
 
 const BLOG_LOCALES = ['en', 'tr'];
 const BLOG_STATUSES = ['draft', 'published'];
@@ -19,6 +20,7 @@ const markdown = new MarkdownIt({
   linkify: true,
   typographer: false,
 });
+configureFaqRenderer(markdown);
 
 const VIDEO_EXTENSION_PATTERN = /\.(mp4|webm|ogg|mov|m4v)(?:$|\?)/i;
 
@@ -149,7 +151,8 @@ async function parseTopicLocaleFile(topicId, locale) {
   }
 
   const content = normalizeLineEndings(parsed.content).trim();
-  const contentHtml = markdown.render(content);
+  const renderEnv = {source: content};
+  const contentHtml = markdown.render(content, renderEnv);
 
   return {
     ...frontmatter,
@@ -157,6 +160,7 @@ async function parseTopicLocaleFile(topicId, locale) {
     path: `/blog/${frontmatter.slug}`,
     content,
     contentHtml,
+    ...(renderEnv.faqItems ? {faqItems: renderEnv.faqItems} : {}),
     publishedAtTimestamp: publishedAtDate.getTime(),
     updatedAtTimestamp: updatedAtDate.getTime(),
   };

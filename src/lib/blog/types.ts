@@ -1,3 +1,5 @@
+import type {FaqItem} from '@/lib/seo/faq';
+
 export const BLOG_LOCALES = ['en', 'tr'] as const;
 export type BlogLocale = (typeof BLOG_LOCALES)[number];
 
@@ -40,6 +42,7 @@ export type BlogPost = BlogFrontmatter & {
   path: string;
   content: string;
   contentHtml: string;
+  faqItems?: FaqItem[];
   publishedAtDate: Date;
   updatedAtDate: Date;
 };
@@ -48,6 +51,7 @@ export type BlogManifestPost = BlogFrontmatter & {
   path: string;
   content: string;
   contentHtml: string;
+  faqItems?: FaqItem[];
   publishedAtTimestamp: number;
   updatedAtTimestamp: number;
 };

@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { Chatbox } from '@/components/showcase/Chatbox';
 import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
 import ManufacturerGuides from '@/components/manufacturer/ManufacturerGuides';
+import FaqJsonLd from '@/components/seo/FaqJsonLd';
 
 export async function generateMetadata({
   params,
@@ -66,6 +67,10 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('AboutPage');
+  const faqItems = ['factory', 'moq', 'leadTime', 'oem', 'enquiry'].map((key) => ({
+    question: t(`questions.${key}.question`),
+    answer: t(`questions.${key}.answer`),
+  }));
 
   const whyKermitItems = [
     { icon: Factory, title: t('whyKermit.manufacturer.title'), text: t('whyKermit.manufacturer.text') },
@@ -228,10 +233,10 @@ export default async function AboutPage({
             <section className="max-w-4xl mx-auto" aria-labelledby="manufacturer-questions-title">
                 <h2 id="manufacturer-questions-title" className="font-headline text-3xl font-bold">{t('questions.title')}</h2>
                 <dl className="mt-8 divide-y">
-                    {['factory', 'moq', 'leadTime', 'oem', 'enquiry'].map((key) => (
-                        <div key={key} className="py-5">
-                            <dt className="font-headline text-lg font-semibold">{t(`questions.${key}.question`)}</dt>
-                            <dd className="mt-2 leading-7 text-muted-foreground">{t(`questions.${key}.answer`)}</dd>
+                    {faqItems.map(({question, answer}) => (
+                        <div key={question} className="py-5">
+                            <dt className="font-headline text-lg font-semibold">{question}</dt>
+                            <dd className="mt-2 leading-7 text-muted-foreground">{answer}</dd>
                         </div>
                     ))}
                 </dl>
@@ -269,6 +274,7 @@ export default async function AboutPage({
       </main>
       <Footer />
       <Chatbox />
+      <FaqJsonLd url={getCanonicalForRoute('/about', locale)} locale={locale} items={faqItems} />
     </div>
   );
 }

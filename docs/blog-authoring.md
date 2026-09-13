@@ -77,6 +77,29 @@ An individual's localized `jobTitle` appears below their name (unless a `subtitl
 npm run blog:validate
 ```
 
+## FAQ sections
+
+Wrap a visible FAQ section in a `faq` code fence. The build renders it as normal article
+headings and answers and generates FAQPage data from those same Markdown tokens.
+
+````md
+```faq
+## Frequently asked questions
+
+### What is the minimum order?
+
+The minimum order is one container. The loading quantity depends on the product specification.
+```
+````
+
+Use one block per article: an H2 section heading followed by H3 questions and complete
+answers. Answers may contain multiple paragraphs, inline formatting, links and lists.
+Close the fence before unrelated closing paragraphs or sales calls to action. Questions and
+answers stay in the article's language; do not maintain separate schema-only copies.
+Unclosed, empty, nested or duplicate-question blocks fail manifest generation.
+Articles without an explicit FAQ block emit no FAQPage data. Schema is generated at build
+time; the Cloudflare Worker does not parse Markdown or read source files at request time.
+
 ## CI/build guardrails
 
 - Build runs blog validation before `next build`.

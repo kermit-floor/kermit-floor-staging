@@ -4,6 +4,7 @@ import {Header} from '@/components/showcase/Header';
 import {Footer} from '@/components/showcase/Footer';
 import {Chatbox} from '@/components/showcase/Chatbox';
 import BlogPostContent from '@/components/blog/BlogPostContent';
+import FaqJsonLd from '@/components/seo/FaqJsonLd';
 import {
   getPublishedBlogPostBySlug,
   getPublishedBlogPostPairs,
@@ -140,6 +141,7 @@ export default async function BlogPostPage({
       <Chatbox />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(articleJsonLd)}} />
+      <FaqJsonLd url={pageUrl} locale={locale} items={post.faqItems ?? []} />
     </div>
   );
 }
