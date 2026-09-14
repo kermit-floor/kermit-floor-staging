@@ -73,7 +73,7 @@ export async function generateMetadata({
       modifiedTime: `${post.updatedAt}T00:00:00Z`,
       images: [
         {
-          url: toAbsoluteUrl(locale, post.coverImage),
+          url: toAbsoluteUrl('en', post.coverImage),
           alt: post.coverImageAlt,
         },
       ],
@@ -82,7 +82,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [toAbsoluteUrl(locale, post.coverImage)],
+      images: [toAbsoluteUrl('en', post.coverImage)],
     },
   };
 }

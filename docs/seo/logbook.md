@@ -74,6 +74,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
 - **2026-09-14 FAQ/photo cohort**: FAQ markup and a portrait shipped on the limited page
   cohort in [the new baseline](baselines/2026-09-14-faq-schema.md). Event code is unchanged;
   mark September 13 Pacific in later aggregate engagement/lead comparisons.
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
 - **Change**: CF dashboard "Manage robots.txt" set to not manage; robots.txt now repo-clean
@@ -92,6 +99,16 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
 - **2026-09-14 FAQ/photo cohort**: six FAQ pages gained explicit Question/Answer markup;
   see [scope and baseline](baselines/2026-09-14-faq-schema.md). Later AI-referral trends include
   this intervention from September 13 Pacific; keep the original crawler baseline.
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+- **Re-baseline — 2026-09-14**: new content overlaps the aggregate AI-referral metric.
+  Ship and re-baseline the combined cohort to **1 AI Assistant session / 28 days**, versus
+  **1 / 28 days** previously, in the [fresh dated baseline](baselines/2026-09-14-technical-content.md).
+  New combined-effect review **2026-10-26**. Keep the original 6/90-day history and September
+  15 pre-batch checkpoint, but do not isolate later movement as a crawler/llms.txt effect.
 
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
 - **Change**: Organization+WebSite on all pages; Product (specs as additionalProperty) on 11
@@ -120,6 +137,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   existing Article/Product/Breadcrumb data is retained. Keep the original appearance checks
   and mark this additional cohort in broader visibility reads; see the
   [separate FAQ baseline and October 26 review](baselines/2026-09-14-faq-schema.md).
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Localized collection H1s — commit 8daf750
 - **Change**: collection pages got unique localized keyword H1s (was shared English
@@ -135,7 +159,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Blog alternate-locale redirects 307→308 — commit 8daf750
 - **Change**: unprefixed TR-slug blog URLs now permanent-redirect to /tr canonicals.
@@ -150,7 +180,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] llms.txt — commit 8daf750
 - **Change**: curated AI-engine map at /llms.txt.
@@ -168,6 +204,16 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
 - **2026-09-14 FAQ/photo cohort**: the [FAQ addition](baselines/2026-09-14-faq-schema.md)
   overlaps aggregate AI-referral interpretation from September 13 Pacific. The llms.txt file
   and its original baseline are unchanged; do not isolate its effect from the newer content.
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+- **Re-baseline — 2026-09-14**: new content overlaps the aggregate AI-referral metric.
+  Ship and re-baseline the combined cohort to **1 AI Assistant session / 28 days**, versus
+  **1 / 28 days** previously, in the [fresh dated baseline](baselines/2026-09-14-technical-content.md).
+  New combined-effect review **2026-10-26**. Keep the original 6/90-day history and September
+  15 pre-batch checkpoint, but do not isolate later movement as a crawler/llms.txt effect.
 
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
 - **Change**: /tr/blog/spc-parke-kullanici-yorumlari + /blog/spc-flooring-user-reviews.
@@ -189,7 +235,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] New post pair: SPC pricing factors — commit 89db2ae
 - **Change**: /tr/blog/spc-parke-fiyatlari + /blog/spc-flooring-cost. No invented prices;
@@ -213,7 +265,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-16] CTR refresh of 3 blog topics — commit ee18f48
 - **Change**: year-stamped, benefit-driven titles/descriptions on spc-wall-panel-bathroom-usage
@@ -250,6 +308,14 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   includes part of deployment day. On September 17, retain the original comparison and add
   the clean 27-day sensitivity check **08-17→09-12 vs 07-20→08-15**. Treat subsequent reads
   as overlapping interventions; [dated FAQ baseline](baselines/2026-09-14-faq-schema.md).
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  The three Turkish share-image repairs fall after the fixed comparison ending September
+  13 Pacific. Preserve the September 17 verdict window and the recorded FAQ sensitivity
+  check; mark later comparisons with the image repair rather than attributing them to titles alone.
 
 ### [2026-08-16] Skirting hub page — commit d9d4225
 - **Change**: /spc-skirting-boards + /tr/spc-supurgelikler (cards-first per owner; labeled
@@ -277,7 +343,13 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remain unchanged. Shared Article image paths and team-author type were repaired.
   Separate this new discovery/conversion opportunity in aggregate reads;
   retain this experiment's original baseline and review date.
-
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  Keep this entry's original page/query baseline and review dates. Mark aggregate reads
+  with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-09-03] Skirting hub card-image fallback — release repair, commit 171ace5
 - **Change**: Added a fixed application-image fallback for each of the eight skirting lines on
@@ -350,6 +422,16 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   original content baseline and dates, interpret later results as the combined release,
   and use the [separate markup/photo checkpoint](baselines/2026-09-14-faq-schema.md) for
   technical parity and the October 26 follow-up.
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+- **Secondary re-baseline — 2026-09-14**: the new article/document links overlap resource,
+  organic-landing, lead/download and AI secondary readings. Use the
+  [new dated secondary baseline](baselines/2026-09-14-technical-content.md) and **October 26**
+  combined-effect review. Keep the original six-URL/exact manufacturer-query primary
+  baseline and September 27 / October 11 / October 25 checks. No sole-cause AI/lead claim.
 
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
 - **Change**: replace Kermit Floor Team with **Barbaros Ahmet Bayram** on the three new EN/TR
@@ -414,6 +496,51 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   remains unproven; no ranking or citation improvement is inferred from markup checks.
 - **Action**: keep both requested additions. Future FAQ edits update the visible content and
   schema together through the documented build process; review maintenance on October 26.
+- **2026-09-14 technical-content cohort**: six new specification/installation/heating
+  articles, their technical tag pages and two original diagrams ship as a separate cohort.
+  Shared blog Open Graph/Twitter image URLs now use real `/images/...` assets on Turkish
+  pages. Existing article bodies, titles/descriptions, Article data and related-post cohorts
+  are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
+  The six new FAQ pages add 20 visible/schema-matched answers. Keep this entry's original
+  six-page/26-answer technical baseline fixed; validate the new cohort separately.
+
+### [2026-09-14] Technical specification, installation and heating guides — commit pending deployment
+- **Change**: publish three EN/TR topic pairs (six URLs), two original localized layer
+  diagrams and direct links to the applicable product PDFs. Correct Turkish blog Open Graph
+  and Twitter image paths; no existing title/description/body or Article data is changed.
+  [Editorial scope and claim sources](content-strategy/2026-09-14-technical-content-launch.md).
+- **Hypothesis**: practical specification and site-planning answers, supported by Kermit
+  documents, will create technical-query discovery and help readers prepare suitable projects.
+- **Primary metric + baseline**: six new URLs' indexing, impressions, position and query
+  allocation. Fresh GSC returns no rows for these URLs or the fixed 13-query technical group
+  in either finalized 28-day window (08-15→09-11 vs 07-18→08-14). All six production URLs
+  returned 404 at **2026-09-14 07:13 UTC** before release. No rows are not proof of no demand.
+  [Baseline and exact API requests](baselines/2026-09-14-technical-content.md).
+- **Secondary measures**: article landings, related resource use, lead/download key events
+  and observed AI referrals. Qualified leads, sales and direct chatbot citations are not
+  inferred from these metrics.
+- **Review due**: **2026-09-28 indexing**, **2026-10-12 rankings/query allocation**,
+  **2026-10-26 full content/link and overlapping secondary effects**.
+- **Interference treatment**: ship and re-baseline the crawler/llms.txt aggregate AI metric
+  and manufacturer secondary resource/organic/lead/AI readings to the new dated baseline,
+  with an October 26 combined-effect review and matching notes in the parent entries.
+  Preserve original history and disjoint exact-query/page checks. New technical tags leave
+  all 28 existing related-post cohorts unchanged. The shared image-path repair has a cohort
+  marker in every open entry; the fixed September 17 CTR window ends before this release.
+- **Technical checkpoint**: new visible FAQs must match 20 generated answers; Article and
+  canonical/locale identity must match on all six pages. All 34 articles' cover/share-image
+  URLs must resolve to the correct shared asset. This checkpoint is separate from SEO impact.
+- **Validation**: paired content/text validation, FAQ manifest generation and production
+  build passed. All 28 pre-existing post records and related-post cohorts are preserved.
+  Local production preview passed on all 34 articles: metadata/image identities, existing
+  body preservation and FAQ parity; 22 internal destinations and 18 asset byte checks passed.
+  All six new pages passed desktop/mobile checks (12 checks) with no body overflow or broken
+  images. The EN/TR diagrams and mobile tables were visually inspected. Production verification
+  is pending deployment.
+- **Deployment**: prepared locally; commit and production outcome will be recorded after shipping.
+- **Verdict**: PENDING.
+- **Action**: complete production checks; evaluate discovery on the dates above. Remaining
+  roadmap topics retain their evidence dependencies and structural-review sequencing.
 
 ## Queued (owner-planned, not yet experiments)
 

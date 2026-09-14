@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="760" viewBox="0 0 800 760" role="img" aria-labelledby="title desc" lang="en">
+<title id="title">Inside the documented 6 mm plank</title><desc id="desc">Surface treatment (UV); Wear layer · 0.50 mm; Decorative film; Rigid SPC core. Overall thickness: 6.00 mm. No attached IXPE backing. Schematic · not to scale.</desc>
+<rect width="800" height="760" rx="24" fill="#f4f5f0"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#233e35">
+<text x="48" y="68" font-size="35" font-weight="700">Inside the documented 6 mm plank</text>
+<rect x="48" y="110" width="704" height="66" fill="#527360"/>
+<text x="76" y="153" font-size="30" fill="#ffffff">Surface treatment (UV)</text>
+<rect x="48" y="184" width="704" height="100" fill="#c8dace"/>
+<text x="76" y="245" font-size="33" font-weight="700">Wear layer · 0.50 mm</text>
+<rect x="48" y="292" width="704" height="66" fill="#d7bf95"/>
+<text x="76" y="335" font-size="30">Decorative film</text>
+<rect x="48" y="366" width="704" height="196" fill="#29483d"/>
+<text x="76" y="478" font-size="36" font-weight="700" fill="#ffffff">Rigid SPC core</text>
+<text x="48" y="613" font-size="32" font-weight="700">Overall thickness: 6.00 mm</text>
+<text x="48" y="657" font-size="31">No attached IXPE backing</text>
+<path d="M48 688H752" stroke="#b9c7bc"/>
+<text x="48" y="728" font-size="27" fill="#4d6156">Schematic · not to scale</text>
+</g></svg>
