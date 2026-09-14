@@ -134,3 +134,17 @@ Local validation passed: 34 article contracts, 20 new FAQ answers, 22 internal d
 18 checked public assets and 12 desktop/mobile page checks. All local source paths exist,
 Turkish links use their correct locale paths, and new copy contains none of the retired
 0.55 mm, 28–29°C or unsupported acoustic values.
+
+## Production outcome
+
+Code **97d45e7** deployed successfully at **2026-09-14 07:21:08 UTC** through Cloudflare
+build `457eab59-6643-4279-aee7-031dbb4ed192`, version `d2216f0f-b8e7-49e6-9faa-151dcca2448d`.
+GitHub guardrails passed. [Live verification](2026-09-14-technical-content-production-verification.json)
+passed for all 34 articles, 20 new FAQ answers, 22 internal destinations, 18 shared
+image/diagram assets, four linked PDF checksums and 12 desktop/mobile checks. Existing
+article bodies/metadata text are preserved; all share-image paths now identify the real assets.
+Google accepted the updated sitemap at 07:23 UTC, with processing pending. No new URL is
+claimed indexed and no ranking, qualified-lead or AI-citation outcome is inferred yet.
+
+The approved content map now marks SPEC, INSTALL and HEAT as published. The next phases
+still depend on the recorded review dates and evidence requirements.

@@ -504,7 +504,7 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   The six new FAQ pages add 20 visible/schema-matched answers. Keep this entry's original
   six-page/26-answer technical baseline fixed; validate the new cohort separately.
 
-### [2026-09-14] Technical specification, installation and heating guides — commit pending deployment
+### [2026-09-14] Technical specification, installation and heating guides — commit 97d45e7
 - **Change**: publish three EN/TR topic pairs (six URLs), two original localized layer
   diagrams and direct links to the applicable product PDFs. Correct Turkish blog Open Graph
   and Twitter image paths; no existing title/description/body or Article data is changed.
@@ -536,10 +536,22 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   body preservation and FAQ parity; 22 internal destinations and 18 asset byte checks passed.
   All six new pages passed desktop/mobile checks (12 checks) with no body overflow or broken
   images. The EN/TR diagrams and mobile tables were visually inspected. Production verification
-  is pending deployment.
-- **Deployment**: prepared locally; commit and production outcome will be recorded after shipping.
+  passed on production after deployment.
+- **Deployment — 2026-09-14**: code commit **97d45e7**; GitHub blog check passed.
+  Cloudflare build **457eab59-6643-4279-aee7-031dbb4ed192**, Worker version
+  **d2216f0f-b8e7-49e6-9faa-151dcca2448d**, succeeded at **07:21:08 UTC**.
+  This is September 14 in Pacific and the GA4 Europe/Istanbul reporting timezone.
+- **Production verification**: all **34 articles HTTP 200**, correct canonical/hreflang,
+  bylines, unchanged existing bodies and matching FAQ data; the six new pages contain
+  **20 matching answers**. Both blog listings and sitemap expose all six new URLs.
+  **22 internal destinations**, **18 shared image/diagram assets** and **four linked PDF
+  checksums** passed. All **12 desktop/mobile checks** passed without body overflow or
+  broken article images. Turkish alternate slugs return the expected 308 redirects.
+  [Complete live verification](content-strategy/2026-09-14-technical-content-production-verification.json).
+- **Sitemap submission**: Google accepted the sitemap (HTTP **204**), last submitted
+  **2026-09-14T07:23:13.956Z**, with processing pending. This is not indexing confirmation.
 - **Verdict**: PENDING.
-- **Action**: complete production checks; evaluate discovery on the dates above. Remaining
+- **Action**: keep the second content batch live; evaluate discovery on the dates above. Remaining
   roadmap topics retain their evidence dependencies and structural-review sequencing.
 
 ## Queued (owner-planned, not yet experiments)

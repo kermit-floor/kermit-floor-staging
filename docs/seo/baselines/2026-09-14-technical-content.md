@@ -86,3 +86,7 @@ September 13 Pacific are unchanged. Mark all later blog/aggregate reads with thi
 Record the actual UTC and Pacific deployment dates after shipping. GSC uses Pacific dates;
 GA4 property reporting uses Europe/Istanbul. Exclude the partial deployment day in each
 system when forming a full post-launch comparison.
+
+Deployment completed **2026-09-14 07:21:08 UTC** (September 14 in Pacific, Europe/Athens
+and the GA4 Europe/Istanbul timezone). Exclude September 14 as the partial launch day;
+September 15 is the first full post-launch day. Code commit: `97d45e7`.

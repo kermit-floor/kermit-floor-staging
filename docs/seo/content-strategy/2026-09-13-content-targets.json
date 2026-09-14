@@ -173,7 +173,11 @@
     "title": "Choosing SPC thickness and wear layer",
     "angle": "Help buyers compare technical specifications consistently.",
     "outline": "Build a collection-specific table showing thickness, wear layer, backing, format, locking system and stated use class. Explain the difference between these fields.",
-    "evidence": "Public wear layers are 0.30/0.50 mm. Natural/Stone profiles still contain retired 0.55 mm values and need reconciliation before reuse."
+    "evidence": "Published September 14 using the five verified Elegance/Sky/Elite/Mosaic/Travertine profiles plus the scoped 6 mm no-IXPE technical sheet. Natural/Stone/Full Natural still contain retired 0.55 mm values and are omitted pending reconciliation.",
+    "status": "published",
+    "topic_id": "spc-flooring-thickness-wear-layer",
+    "released_at": "2026-09-14",
+    "release_record": "2026-09-14-technical-content-launch.md"
   },
   {
     "id": "PROJECT",
@@ -195,7 +199,11 @@
     "title": "Planning and checking an SPC installation",
     "angle": "Create one substantial practical guide linked to an approved installation manual.",
     "outline": "Cover substrate, retained tiles, movement gaps, locking method, acclimation, transitions and handover. Keep product-specific numerical limits in a single maintained source.",
-    "evidence": "Corrected English Kermit installation/care manual published 2026-09-13. Align article details with the selected lock and existing bathroom/outdoor/cleaning limits; localized manual remains a future improvement."
+    "evidence": "Corrected English Kermit installation/care manual published 2026-09-13. Align article details with the selected lock and existing bathroom/outdoor/cleaning limits; localized manual remains a future improvement.",
+    "status": "published",
+    "topic_id": "spc-flooring-installation-planning",
+    "released_at": "2026-09-14",
+    "release_record": "2026-09-14-technical-content-launch.md"
   },
   {
     "id": "UNDERLAY",
@@ -228,7 +236,11 @@
     "title": "Heating, sunlight and temperature",
     "angle": "Explain exposure and heating conditions with explicit product limits.",
     "outline": "Separate radiant heating from solar gain and surface fading. Use actual commissioning and temperature instructions once available.",
-    "evidence": "Owner-confirmed maximum floor-surface temperature 27°C and corrected EN/TR heating guides published 2026-09-13. Use the selected product/system scope; do not restore the removed 28-29°C or extreme-room claims."
+    "evidence": "Owner-confirmed maximum floor-surface temperature 27°C and corrected EN/TR heating guides published 2026-09-13. Use the selected product/system scope; do not restore the removed 28-29°C or extreme-room claims.",
+    "status": "published",
+    "topic_id": "spc-flooring-heating-sunlight",
+    "released_at": "2026-09-14",
+    "release_record": "2026-09-14-technical-content-launch.md"
   },
   {
     "id": "QTY",
