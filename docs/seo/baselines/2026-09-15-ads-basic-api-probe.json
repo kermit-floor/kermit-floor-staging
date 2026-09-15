@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-09-15T09:25:55.095882+00:00",
+  "customer_id": "8624458035",
+  "service": "KeywordPlanIdeaService",
+  "method": "GenerateKeywordHistoricalMetrics",
+  "keywords": [
+    "spc flooring"
+  ],
+  "geography": "all",
+  "language": "all",
+  "network": "GOOGLE_SEARCH",
+  "ok": true,
+  "rows_returned": 1,
+  "results": [
+    {
+      "text": "spc flooring",
+      "avg_monthly_searches": "110000",
+      "monthly_volume_count": 12
+    }
+  ]
+}

@@ -37,9 +37,20 @@ GSC data lags ~2–3 days. Use 28-day vs 28-day comparisons for verdicts.
 
 ### Google Ads — customer `8624458035`
 
-Developer token is at TEST level until Google approves Explorer/Basic (applied 2026-08-14).
-Probe at each periodic review with a reporting query via `mcp__google-ads__*` tools; when the
-`DEVELOPER_TOKEN_NOT_APPROVED` error stops, ads reporting is live (read-only).
+Google Cloud project `kermit-analytics-mcp` (`640830772342`) has **Basic** access,
+confirmed **2026-09-15**, with 15,000 daily production operations. Brand verification
+is complete and published. Access levels now belong to the Cloud project rather than
+the developer token. [Approval and verification record](2026-09-15-ads-basic-access.md).
+
+Production reporting and a read-only `KeywordPlanIdeaService.GenerateKeywordHistoricalMetrics`
+request succeeded. The installed MCP exposes reporting/account tools; keyword planning
+can use the installed Google Ads Python client directly. The smoke query's worldwide,
+all-language data is not a country-specific SEO baseline.
+
+Probe at each periodic review with a reporting query via `mcp__google-ads__*` tools (or a
+fresh local stdio client when tools are not exposed). Keep reporting read-only. If access
+fails, record the actual error and distinguish credential failures from Cloud-project
+approval errors; do not assume the former TEST-token restriction still applies.
 
 ## Credential recovery (read this when any Google call fails)
 

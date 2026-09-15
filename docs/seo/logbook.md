@@ -896,3 +896,33 @@ and the overdue 09-10 operational lead read. GSC finalized data and GA4 reports 
   **no experiment baseline or review date was reset**.
 - Updated review docs only, preserving existing local edits. No code/content/schema changes,
   commit, push or deployment. **A docs-only push still triggers a Cloudflare build.**
+
+### [2026-09-15] Google Ads app identity and Basic-access application — commit 8b51643
+- **Change**: published an application description and privacy notice at
+  `/analytics-mcp` and `/analytics-mcp-privacy`; configured Kermit Analytics MCP as
+  External / In production. Google verified the branding and it was published; a new
+  Basic-access application was approved on September 15.
+- **Hypothesis**: accurate public app and data-use information enables brand verification
+  and Basic API access for keyword research.
+- **Primary metric and baseline**: branding unverified and Ads project at Explorer before
+  this change; success means verified/published branding, Basic access, and a successful
+  read-only Keyword Planner query. Existing production-reporting access remains available.
+- **Interference**: new application URLs and access-verification metrics are disjoint from
+  the open content, indexing, CTR and lead experiments. Pages declare `noindex, follow`,
+  are absent from the sitemap, and contain no GA4 code. Existing Cloudflare beacon injection
+  remains active; no shared template, event, sitemap, or crawler setting changed. Preserve
+  all existing experiment baselines and review dates.
+- **Validation**: `npm run build` passed; Cloudflare Workers Builds and GitHub blog checks
+  succeeded for `8b51643`. Both `.html` URLs redirect to extensionless pages with HTTP 200.
+  Published content and CSS match the source after removing only the existing edge beacon
+  and normalizing inter-tag whitespace; privacy links, `noindex`, and sitemap exclusion
+  verified. [Production evidence](baselines/2026-09-15-ads-branding-production.json).
+- **Review due**: **2026-09-18**, satisfied early by the September 15 decision/API check.
+- **Verdict**: **WORKED — 2026-09-15**. Branding verified/published; console confirms Basic
+  with 15,000 daily production operations. A read-only keyword-history query for
+  `spc flooring` returned one result and 12 monthly volume entries.
+  [API evidence](baselines/2026-09-15-ads-basic-api-probe.json).
+- **Action**: keep Basic access. Keyword-planning requests can use the Google Ads Python
+  client; the installed reporting MCP has no keyword-planning tool yet. The probe used
+  all geographies/languages and is not a market-specific keyword recommendation.
+  [Access and publication record](2026-09-15-ads-basic-access.md).

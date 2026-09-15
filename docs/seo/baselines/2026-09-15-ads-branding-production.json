@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-09-15T09:23:14.896584+00:00",
+  "commit": "8b51643",
+  "files": [
+    {
+      "file": "analytics-mcp.html",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/analytics-mcp",
+      "content_type": "text/html",
+      "matches_local_after_beacon_and_tag_whitespace_normalization": true,
+      "cloudflare_beacon_count": 1,
+      "noindex": true,
+      "google_analytics_present": false
+    },
+    {
+      "file": "analytics-mcp-privacy.html",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/analytics-mcp-privacy",
+      "content_type": "text/html",
+      "matches_local_after_beacon_and_tag_whitespace_normalization": true,
+      "cloudflare_beacon_count": 1,
+      "noindex": true,
+      "google_analytics_present": false
+    },
+    {
+      "file": "analytics-mcp.css",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/analytics-mcp.css",
+      "content_type": "text/css",
+      "matches_local_after_beacon_and_tag_whitespace_normalization": true,
+      "cloudflare_beacon_count": 0
+    }
+  ],
+  "app_pages_absent_from_sitemap": true
+}
