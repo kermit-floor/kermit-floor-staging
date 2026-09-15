@@ -109,11 +109,29 @@ New URLs: **September 29 indexing**, **October 13 rankings/query allocation**, *
 full content/link effect**. Existing index checkpoints stand; overlapping earlier content
 effects and whole-site AI/resource outcomes use the new October 27 combined review.
 
-The deployment commit, UTC/Pacific date, check totals and sitemap response will be recorded
-after production deployment. A successful build is not evidence of indexing or SEO impact.
+Deployment details and live checks are recorded below. A successful build is not evidence
+of indexing or SEO impact.
 
 Local validation passed for all 40 article contracts, 20 new visible/schema FAQ answers,
 26 internal destinations, 19 shared image byte checks and 12 desktop/mobile page checks.
 The long Turkish design-table heading was shortened after mobile overflow was detected;
 all pages now fit the tested viewports. Covers, format tables and the project schedule were
 visually inspected. All 34 original records and related-post cohorts remain identical.
+
+## Production outcome
+
+Code **3d01b51** deployed successfully at **2026-09-15 07:39:13 UTC** through Cloudflare
+build `8b05eb5c-b416-416a-a7c6-67cb95f9e177`, Worker version
+`433b9d2e-783e-4975-830b-055c46671d61`. GitHub blog guardrails passed. This is September 15
+in Pacific and Europe/Istanbul; September 16 is the first full post-launch reporting day.
+
+[Production verification](2026-09-15-project-content-production-verification.json) passed
+for **40 articles**, **20 new FAQ answers**, **26 internal destinations**, **19 shared image
+assets** and **12 desktop/mobile page checks**. All six new URLs appear in both locale
+blog listings and the sitemap; bare Turkish slugs return the expected 308 redirects.
+Existing article HTML and metadata match the manifest, and prior records/related cohorts
+are preserved. Live covers and schedule layouts were also visually inspected.
+
+Search Console accepted the updated sitemap (HTTP **204**) at **07:42:40 UTC**; processing
+is pending. No new URL is claimed indexed and no ranking, lead-quality or chatbot-citation
+win is inferred. The approved map now marks DEALER, PROJECT and DESIGN as published.

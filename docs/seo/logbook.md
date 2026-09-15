@@ -588,7 +588,7 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   query allocation and the original baseline. The third-batch entry carries the matching
   confound; later movement is not attributed solely to September 14's publication.
 
-### [2026-09-15] Distributor, project and colour-selection guides — deployment pending
+### [2026-09-15] Distributor, project and colour-selection guides — commit 3d01b51
 - **Change**: three EN/TR topic pairs, six URLs: distributor assortment/first orders;
   coordinated flooring/skirting/panel specification; colour and format selection. Original
   worksheets, verified collection examples and 20 visible FAQ answers use the existing
@@ -613,18 +613,29 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   disjoint product/CTR/reviews/pricing/redirect/hub cohorts retain their dates. The launch
   record checks every open scope; original snapshots are not deleted.
 - **Technical checkpoint**: all 34 existing post records and related-post cohorts remain
-  identical. Six new pages must match 20 visible/schema FAQ answers, correct author, locale,
-  canonical/share images, sitemap/listing discovery and locale redirects. All pass locally;
-  production verification follows deployment. No indexing or effect result is claimed yet.
+  identical. Production checks confirm 20 visible/schema FAQ answers on the six new pages,
+  correct author, locale, canonical/share images, sitemap/listing discovery and redirects.
+  Technical correctness passes; indexing and content effects remain unproven.
 - **Validation**: paired content/text validation, manifest generation, source/media existence,
   typecheck and the production build pass. A long Turkish table header found during mobile
   QA was shortened in that new article; shared styling was not changed. Final local checks
   pass for all 40 articles, 20 new FAQ answers, 26 internal destinations, 19 shared image
   assets and 12 desktop/mobile page checks. Tables and covers were visually inspected.
-  Production verification follows deployment.
+  The same checks also passed on production after deployment.
 - **Verdict**: PENDING.
-- **Action**: publish the approved third batch, verify production and record deployment and
-  sitemap status here the same day. Remaining roadmap topics retain their evidence needs.
+- **Deployment — 2026-09-15**: code **3d01b51**; Cloudflare build
+  **8b05eb5c-b416-416a-a7c6-67cb95f9e177**, Worker version
+  **433b9d2e-783e-4975-830b-055c46671d61**, succeeded **07:39:13 UTC**. GitHub blog checks
+  passed. The deployment date is September 15 in Pacific and Europe/Istanbul.
+- **Production verification**: all **40 articles HTTP 200**, expected body/metadata/author
+  and FAQ parity; **26 internal destinations**, **19 shared image SHA-256 checks**, and
+  **12 desktop/mobile checks** passed. All six new URLs appear in blog listings and sitemap;
+  the three bare Turkish slugs return 308 to their canonical locale paths.
+  [Live check record](content-strategy/2026-09-15-project-content-production-verification.json).
+- **Sitemap submission**: Google accepted the sitemap (HTTP **204**), `lastSubmitted`
+  **2026-09-15T07:42:40.099Z**, with processing pending. This is not indexing confirmation.
+- **Action**: keep the third batch live. DEALER, PROJECT and DESIGN are marked published in
+  the approved map. Use the review dates above; remaining topics retain their evidence needs.
 
 ## Queued (owner-planned, not yet experiments)
 

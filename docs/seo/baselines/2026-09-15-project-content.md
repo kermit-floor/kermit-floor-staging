@@ -88,6 +88,10 @@ metadata, template, navigation, related-post membership or direct contextual lin
 test pages changes. Exclude the six new articles and their new tag pages from old page-level
 comparisons and mark aggregate site summaries with this content release.
 
-Record the actual deployment time after shipping. GSC uses Pacific dates; GA4 uses
+The actual deployment time is recorded below. GSC uses Pacific dates; GA4 uses
 Europe/Istanbul. Exclude the partial deployment day in each system from a full post-launch
 window. Deployment and sitemap acceptance do not establish indexing or search impact.
+
+Deployment completed **2026-09-15 07:39:13 UTC**, September 15 in Pacific and
+Europe/Istanbul. Exclude September 15 as the partial launch day; September 16 is the first
+full post-launch day. Code commit: `3d01b51`.

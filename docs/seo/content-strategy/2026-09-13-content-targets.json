@@ -162,10 +162,11 @@
     "title": "Working with Kermit as a distributor",
     "angle": "Describe a real wholesale relationship and help dealers plan a first range.",
     "outline": "Cover the full product system, assortment depth, samples, documents, reorders and the one-container purchasing process. Link OEM options where relevant.",
-    "evidence": "Define available support first. Existing dealer-pack file is a placeholder; exclusivity is not a default promise.",
-    "status": "prepared",
+    "evidence": "Published September 15 using the confirmed one-container MOQ, four-week standard lead time, OEM availability and actual Resources library. Samples, support contents, packing and exclusivity remain order/agreement-specific.",
+    "status": "published",
     "topic_id": "kermit-floor-distributor-guide",
-    "release_record": "2026-09-15-project-content-launch.md"
+    "release_record": "2026-09-15-project-content-launch.md",
+    "released_at": "2026-09-15"
   },
   {
     "id": "SPEC",
@@ -191,10 +192,11 @@
     "title": "Specifying flooring, skirting and wall panels together",
     "angle": "Use Kermit's three-family range to serve architects, contractors and commercial buyers.",
     "outline": "Provide a coordinated finish schedule, room/zone limits, document checklist, sample reference and handover requirements. Add real project case studies as evidence becomes available.",
-    "evidence": "Use product-specific class, acoustic, fire, slip and load evidence where a project needs it; certification alone is not universal application approval.",
-    "status": "prepared",
+    "evidence": "Published September 15 with a copyable finish schedule, scoped standard-panel and Berlin/Optima profile dimensions, actual flooring movement/heating limits, quantity units and handover records. Product-specific project evidence remains required.",
+    "status": "published",
     "topic_id": "spc-interior-finishes-project-specification",
-    "release_record": "2026-09-15-project-content-launch.md"
+    "release_record": "2026-09-15-project-content-launch.md",
+    "released_at": "2026-09-15"
   },
   {
     "id": "INSTALL",
@@ -301,10 +303,11 @@
     "title": "Choosing colour and format",
     "angle": "Use Kermit's own collection assets to answer real design decisions.",
     "outline": "Compare samples under daylight and artificial light, show real decor codes and widths, and explain coordinated skirting/wall choices.",
-    "evidence": "Use actual photography and formats. Verify herringbone and EIR availability rather than infer them from Milat.",
-    "status": "prepared",
+    "evidence": "Published September 15 using actual Elite/Travertine decor codes, existing collection images and five verified Premier collection formats. Physical samples establish colour coordination; herringbone, stair and EIR capabilities are not inferred from images.",
+    "status": "published",
     "topic_id": "spc-flooring-colour-format",
-    "release_record": "2026-09-15-project-content-launch.md"
+    "release_record": "2026-09-15-project-content-launch.md",
+    "released_at": "2026-09-15"
   },
   {
     "id": "FACTORY",
