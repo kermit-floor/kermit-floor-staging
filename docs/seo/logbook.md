@@ -81,13 +81,18 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   are unchanged. [Scope, interference treatment and checks](content-strategy/2026-09-14-technical-content-launch.md).
   Keep this entry's original page/query baseline and review dates. Mark aggregate reads
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
+- **2026-09-15 project-content cohort**: six distributor/project/design pages add discovery
+  and enquiry opportunities. [Dated baseline](baselines/2026-09-15-project-content.md):
+  20 lead / 8 download key events in the latest 28 days. No event-code change; retain the
+  WORKED instrumentation verdict and September 17 weekly operational read.
 
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
 - **Change**: CF dashboard "Manage robots.txt" set to not manage; robots.txt now repo-clean
   (GPTBot, ClaudeBot, Google-Extended etc. allowed). "Block AI training bots" was already off.
 - **Hypothesis**: being crawlable by answer engines grows AI-referral traffic over time.
 - **Primary metric(s)**: GA4 "AI Assistant" channel sessions (baseline 6/90d).
-- **Review due**: 2026-09-15.
+- **Review due**: September 15 historical checkpoint; **2026-10-27 combined effect** after
+  the dated September 15 content re-baseline below.
 - **Verdict**: PENDING
 - **Action**: —
 - **2026-09-13 content cohort**: approved manufacturer/About expansion, six new purchasing
@@ -109,6 +114,12 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   **1 / 28 days** previously, in the [fresh dated baseline](baselines/2026-09-14-technical-content.md).
   New combined-effect review **2026-10-26**. Keep the original 6/90-day history and September
   15 pre-batch checkpoint, but do not isolate later movement as a crawler/llms.txt effect.
+- **Re-baseline — 2026-09-15**: the distributor/project/design batch adds six pages and
+  overlaps the aggregate AI measure. Use the [fresh September 15 baseline](baselines/2026-09-15-project-content.md):
+  **2 AI Assistant sessions / 28 days vs 1 previously**. New combined-effect review
+  **October 27** supersedes October 26 for this aggregate outcome. Keep the September 15
+  historical checkpoint and earlier snapshots; do not attribute later movement to crawler
+  settings or llms.txt alone. The new content entry records the same confound treatment.
 
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
 - **Change**: Organization+WebSite on all pages; Product (specs as additionalProperty) on 11
@@ -192,7 +203,8 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
 - **Change**: curated AI-engine map at /llms.txt.
 - **Hypothesis**: helps AI engines route to key content.
 - **Primary metric(s)**: qualitative; AI-referral trend (with entry "AI crawlers unblocked").
-- **Review due**: 2026-09-15 (joint verdict with crawler unblock).
+- **Review due**: September 15 historical checkpoint with crawler unblock;
+  **2026-10-27 combined effect** after the dated September 15 content re-baseline below.
 - **Verdict**: PENDING
 - **Action**: —
 - **2026-09-13 content cohort**: approved manufacturer/About expansion, six new purchasing
@@ -214,6 +226,12 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   **1 / 28 days** previously, in the [fresh dated baseline](baselines/2026-09-14-technical-content.md).
   New combined-effect review **2026-10-26**. Keep the original 6/90-day history and September
   15 pre-batch checkpoint, but do not isolate later movement as a crawler/llms.txt effect.
+- **Re-baseline — 2026-09-15**: the distributor/project/design batch adds six pages and
+  overlaps the aggregate AI measure. Use the [fresh September 15 baseline](baselines/2026-09-15-project-content.md):
+  **2 AI Assistant sessions / 28 days vs 1 previously**. New combined-effect review
+  **October 27** supersedes October 26 for this aggregate outcome. Keep the September 15
+  historical checkpoint and earlier snapshots; do not attribute later movement to crawler
+  settings or llms.txt alone. The new content entry records the same confound treatment.
 
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
 - **Change**: /tr/blog/spc-parke-kullanici-yorumlari + /blog/spc-flooring-user-reviews.
@@ -387,8 +405,9 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   includes existing About/Resources page and GA4 landing metrics with complete query recipes.
 - **Secondary measures**: Organic Search landings, lead/download key events and observed AI
   referrals. No direct chatbot citation baseline; lead-intent actions are not qualified leads.
-- **Review due**: **2026-09-27 indexing**, **2026-10-11 rankings/snippets**, **2026-10-25 full
-  structural effect**. Existing 09-15/09-17/09-27 experiments retain their dates.
+- **Review due**: **2026-09-27 indexing**, **2026-10-11 interim rankings/snippets**,
+  **2026-10-27 combined content/link effect** after the September 15 re-baseline below.
+  The original October 25 date remains in launch history; other 09-15/09-17/09-27 checks stand.
 - **Interference**: new blog listings/tags and links may affect discovery; About/Resources and
   request/download opportunities can affect site-wide engagement, AI referrals and lead counts.
   Existing six CTR-test article titles/descriptions/URLs and product schemas are unchanged.
@@ -432,6 +451,14 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   [new dated secondary baseline](baselines/2026-09-14-technical-content.md) and **October 26**
   combined-effect review. Keep the original six-URL/exact manufacturer-query primary
   baseline and September 27 / October 11 / October 25 checks. No sole-cause AI/lead claim.
+- **Re-baseline — 2026-09-15**: new distributor/project/design articles add incoming links
+  to quotation/OEM guides and Resources. Treat primary content/link outcomes and secondary
+  organic/resource/lead/AI metrics as overlapping, using the
+  [fresh September 15 snapshot](baselines/2026-09-15-project-content.md): fixed manufacturer
+  group **76 impressions / 3 clicks / position 14.49**, versus 21 / 2 / 13.33. New combined
+  effect review **October 27** replaces the October 25/26 effect dates. Preserve original
+  history, September 27 indexing and October 11 interim rankings. The new entry records
+  the same incoming-link confound; no isolated first-batch effect is claimed.
 
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
 - **Change**: replace Kermit Floor Team with **Barbaros Ahmet Bayram** on the three new EN/TR
@@ -519,8 +546,8 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
 - **Secondary measures**: article landings, related resource use, lead/download key events
   and observed AI referrals. Qualified leads, sales and direct chatbot citations are not
   inferred from these metrics.
-- **Review due**: **2026-09-28 indexing**, **2026-10-12 rankings/query allocation**,
-  **2026-10-26 full content/link and overlapping secondary effects**.
+- **Review due**: **2026-09-28 indexing**, **2026-10-12 interim rankings/query allocation**,
+  **2026-10-27 combined content/link and secondary effects** after the September 15 re-baseline.
 - **Interference treatment**: ship and re-baseline the crawler/llms.txt aggregate AI metric
   and manufacturer secondary resource/organic/lead/AI readings to the new dated baseline,
   with an October 26 combined-effect review and matching notes in the parent entries.
@@ -553,6 +580,51 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
 - **Verdict**: PENDING.
 - **Action**: keep the second content batch live; evaluate discovery on the dates above. Remaining
   roadmap topics retain their evidence dependencies and structural-review sequencing.
+- **Re-baseline — 2026-09-15**: the third batch links to these technical guides. Incoming
+  links overlap their primary content/link effect as well as secondary traffic outcomes.
+  The [new dated baseline](baselines/2026-09-15-project-content.md) re-queries the original
+  13 queries and six URLs (no rows in either finalized 28-day window). New combined-effect
+  review **October 27** supersedes October 26. Keep September 28 indexing, October 12 interim
+  query allocation and the original baseline. The third-batch entry carries the matching
+  confound; later movement is not attributed solely to September 14's publication.
+
+### [2026-09-15] Distributor, project and colour-selection guides — deployment pending
+- **Change**: three EN/TR topic pairs, six URLs: distributor assortment/first orders;
+  coordinated flooring/skirting/panel specification; colour and format selection. Original
+  worksheets, verified collection examples and 20 visible FAQ answers use the existing
+  renderer, author registry and shared images. No template, navigation, old article or
+  product data changes. [Release scope](content-strategy/2026-09-15-project-content-launch.md).
+- **Hypothesis**: practical range and finish-planning answers will establish relevant new
+  search coverage and help dealers/designers prepare identifiable product enquiries.
+- **Primary metric + baseline**: new URLs' indexing, impressions, position and query/page
+  allocation for the fixed 14-query group. [Fresh baseline](baselines/2026-09-15-project-content.md)
+  reports no rows for the group or six URLs in finalized 08-16→09-12 vs 07-19→08-15 windows.
+  All six URLs returned 404 before launch at 07:30:13 UTC. No rows do not prove zero demand.
+- **Secondary measures**: organic article landings, resource/enquiry activity and observed
+  AI referrals. The dated snapshot includes 2 AI Assistant sessions vs 1 in the prior 28 days,
+  210 Organic Search sessions vs 273, and 20 lead / 8 download key events. Small counts and
+  changed instrumentation prevent a conversion-growth or chatbot-citation claim.
+- **Review due**: **2026-09-29 indexing**, **2026-10-13 rankings/query allocation**,
+  **2026-10-27 full content/link and overlapping combined effects**.
+- **Interference treatment**: ship and re-baseline crawler/llms.txt aggregate AI outcomes and
+  the manufacturer/technical content outcomes to September 15, with October 27 combined
+  effect reviews and matching parent-entry notes. Added incoming links affect the earlier
+  guides even though their content is preserved. Older indexing/interim ranking checks and
+  disjoint product/CTR/reviews/pricing/redirect/hub cohorts retain their dates. The launch
+  record checks every open scope; original snapshots are not deleted.
+- **Technical checkpoint**: all 34 existing post records and related-post cohorts remain
+  identical. Six new pages must match 20 visible/schema FAQ answers, correct author, locale,
+  canonical/share images, sitemap/listing discovery and locale redirects. All pass locally;
+  production verification follows deployment. No indexing or effect result is claimed yet.
+- **Validation**: paired content/text validation, manifest generation, source/media existence,
+  typecheck and the production build pass. A long Turkish table header found during mobile
+  QA was shortened in that new article; shared styling was not changed. Final local checks
+  pass for all 40 articles, 20 new FAQ answers, 26 internal destinations, 19 shared image
+  assets and 12 desktop/mobile page checks. Tables and covers were visually inspected.
+  Production verification follows deployment.
+- **Verdict**: PENDING.
+- **Action**: publish the approved third batch, verify production and record deployment and
+  sitemap status here the same day. Remaining roadmap topics retain their evidence needs.
 
 ## Queued (owner-planned, not yet experiments)
 
