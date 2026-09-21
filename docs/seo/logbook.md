@@ -34,23 +34,59 @@ Review cadence (batch of 2026-08-14/16):
 - **2026-09-17** — completed: CTR remains INCONCLUSIVE after the fixed 28-day and
   27-day sensitivity checks; weekly leads 5/4; desktop discrepancy persists. New
   Turkish wall-panel product visibility watch. [Review](reviews/2026-09-17.md).
-- **2026-09-24** — weekly lead read, desktop follow-up and Turkish wall-panel watch.
+- **2026-09-21** — completed early passive/operational review: no verdict due;
+  16/18 new articles indexed, eight search clicks; weekly leads 5/8; existing
+  sitemap locale-entry gap recorded. Consent/contact repair shipped separately today.
+  [Review](reviews/2026-09-21.md).
+- **2026-09-24** — weekly lead read, descriptive desktop follow-up and Turkish wall-panel watch.
 - **2026-09-27** — full structural verdict vs baseline, H1/pricing follow-ups,
-  combined CTR-topic outcome, Turkish wall-panel query allocation and manufacturer indexing. Later content indexing: September 28/29; interim rankings:
-  October 11/12/13. FAQ maintenance: October 26; combined content/AI effects: October 27.
+  combined CTR-topic outcome, Turkish wall-panel query allocation and manufacturer indexing;
+  consider the sitemap locale-entry correction after these readings. Later content indexing:
+  September 28/29; consent operations September 28; desktop comparison October 5; interim
+  rankings October 11/12/13. Conversion/contact comparisons October 21 at the earliest;
+  FAQ maintenance October 26; GSC content/link effects October 27; combined GA4 AI effects
+  November 2, per the September 21 measurement re-baseline. The September 21 wall-panel
+  link release also sets November 2 for the overlapping wall-panel search outcome;
+  September 27 keeps unaffected cohorts and pre-link historical reads.
 
 Parallel changes: new work may ship while experiments are PENDING, but only after the
 interference check in `docs/seo/README.md` (Change interference): disjoint scope ships
 freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
 cohort marker in every open entry.
 
-Last review run: 2026-09-17 (fixed CTR verdict INCONCLUSIVE; weekly lead/desktop
-reads and passive indexing/enhancements completed; 16/18 September articles indexed;
-new Turkish wall-panel watch; next operations September 24, structural/CTR September 27)
+Last review run: 2026-09-21 (no verdict due; fresh passive/operational review complete;
+16/18 September articles indexed, two crawled/not indexed; eight content clicks; weekly
+lead/download keys 5/8; sitemap locale-entry gap recorded; next operations September 24,
+structural/CTR September 27; preserve the separately shipped September 21 GA4 re-baseline)
 
 ---
 
 ## Open experiments
+
+### [2026-09-21] Direct Turkish product links from wall-panel articles — release pending
+- **Change**: the Turkish usage-guide and bathroom-renovation article body links now
+  explicitly target `/tr/spc-duvar-panelleri` rather than the English product URL.
+  Copy, metadata, English articles and shared rendering are unchanged.
+- **Hypothesis**: explicit locale destinations improve the reader path and support
+  the intended product URL's discovery. Existing links are not a proven loss cause.
+- **Primary metrics / baseline**: Turkish product impressions/position and product/guide
+  allocation for `spc duvar paneli` and `spc panel`, with property query clicks as a
+  guardrail. Latest 28 days: product **14 clicks / 354 impressions / position 9.13**;
+  exact product queries **4/98/9.80** and **0/5/14.20**. [Dated baseline and scope](baselines/2026-09-21-wall-panel-links.md).
+- **Interference**: owner authorized pushing all pending work September 21, superseding
+  the proposed September 27 wait. Ship and re-baseline the wall-panel components of
+  Product-schema, redirect and combined CTR outcomes; matching notes are in each
+  parent entry. Preserve unaffected September 27 checks and historical verdicts.
+  Aggregate GA4 interpretations also carry today's existing consent-release break.
+- **Review due**: **2026-11-02** combined wall-panel effect, six weeks after deployment;
+  exclude September 21. September 27 may still read the pre-release cohort through
+  September 20, subject to finalized-data availability.
+- **Validation**: production build, text/blog validation and type checks pass. Both
+  built article HTML files have the direct Turkish href; manifest comparison confirms
+  only the two Turkish articles' content/contentHtml destinations changed.
+- **Verdict**: PENDING SEO effect. Production deployment/verification pending.
+- **Action**: local correction complete; commit/push authorized. Live checks will verify
+  both contextual links and the Turkish destination after the connected build.
 
 ### [2026-09-21] Analytics consent ordering repair — commit 0e7cbf5
 - **Change**: grant accepted consent and configure GA before mounting the page tracker;
@@ -102,6 +138,10 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   actual enquiry impact remains PENDING.
 
 ### [2026-08-14] GA4 lead tracking (generate_lead + file_download key events) — commit ae721ed
+- **Additional September 21 navigation confound**: the two Turkish wall-panel
+  article links now explicitly target the Turkish product; [scope](baselines/2026-09-21-wall-panel-links.md).
+  Interpret aggregate lead/AI readings with this and today's consent repair together;
+  preserve the existing October 21 conversion / November 2 AI dates and old verdicts.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
   Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
@@ -111,8 +151,8 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   pack_id), contact-page tel/mailto links (office param). Both events registered as GA4 key events.
 - **Hypothesis**: we cannot improve what we cannot count; lead baseline enables all future CRO.
 - **Primary metric(s)**: weekly `generate_lead` key-event count (baseline 0); file_download count.
-- **Review due**: weekly operational reads completed September 13, 15 and 17;
-  next **2026-09-24**. Original September 3 instrumentation verdict retained.
+- **Review due**: weekly operational reads completed September 13, 15 and 17, plus
+  an early September 21 update; next **2026-09-24**. Original September 3 verdict retained.
 - **Verdict**: **WORKED — 2026-09-03.** GA4 recorded 17 `generate_lead` key events and
   5 `file_download` key events from 2026-08-14 through 2026-09-02, versus a lead baseline of 0;
   the instrumentation is firing. These are lead-intent actions, not confirmed sales leads.
@@ -165,7 +205,19 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   is recommended and unimplemented. Any repair needs measurement interference treatment.
   [September 17 review](reviews/2026-09-17.md).
 
+- **Passive / operational check — 2026-09-21**: September 13–19 records **5 lead / 8 download key events**,
+  versus 4/3 in September 6–12; since launch **26/16**. Seven downloads cluster
+  on September 17 TR Resources/Direct. Retain WORKED for instrumentation only and
+  the September 24 weekly date. Consent repair shipped separately today; these
+  figures precede it. Repair operations September 28; desktop October 5; conversion
+  comparisons October 21 at the earliest.
+  [September 21 review](reviews/2026-09-21.md).
+
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
+- **Additional September 21 navigation confound**: the two Turkish wall-panel
+  article links now explicitly target the Turkish product; [scope](baselines/2026-09-21-wall-panel-links.md).
+  Interpret aggregate lead/AI readings with this and today's consent repair together;
+  preserve the existing October 21 conversion / November 2 AI dates and old verdicts.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
   Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
@@ -175,8 +227,9 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   (GPTBot, ClaudeBot, Google-Extended etc. allowed). "Block AI training bots" was already off.
 - **Hypothesis**: being crawlable by answer engines grows AI-referral traffic over time.
 - **Primary metric(s)**: GA4 "AI Assistant" channel sessions (baseline 6/90d).
-- **Review due**: September 15 historical checkpoint completed; **2026-10-27 combined effect** after
-  the dated September 15 content re-baseline below.
+- **Review due**: September 15 historical checkpoint completed; **2026-11-02 combined
+  GA4 AI effect** after the September 21 consent re-baseline, superseding October 27.
+  Historical September content re-baselines remain below.
 - **Verdict**: **INCONCLUSIVE — 2026-09-15 historical checkpoint.** Matched
   07-18→08-14 vs 08-16→09-12 has **1→2 AI Assistant sessions**, all ChatGPT; one
   current session contains a lead key event. This is too little referral evidence and does
@@ -219,7 +272,21 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   Preserve **October 27**, the September 15 INCONCLUSIVE checkpoint and all baselines.
   [September 17 review](reviews/2026-09-17.md).
 
+- **Passive / operational check — 2026-09-21**: Latest 28 days (August 23–September 19) has **13 AI
+  Assistant sessions / four users / three key events**, versus 1/1/0 in July 26–
+  August 22. All are ChatGPT; no new article landing appears. Keep the historical
+  INCONCLUSIVE verdict. Consent repair shipped today; preserve its baseline and
+  **November 2** combined GA4 review. Browser-like robots/llms requests return 200;
+  verified AI-bot access and direct citations remain unmeasured.
+  [September 21 review](reviews/2026-09-21.md).
+
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
+- **2026-09-21 wall-panel link interference**: two Turkish article body links now
+  explicitly target the Turkish product. Owner authorized shipping before September
+  27. Re-baseline only the overlapping wall-panel components to the [new checkpoint](baselines/2026-09-21-wall-panel-links.md),
+  with combined follow-up **November 2**. Preserve historical verdicts and other cohorts'
+  dates; September 27 can read this cohort only through September 20 as pre-release
+  evidence. Later effects cannot be isolated to the original change.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
   Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
@@ -270,6 +337,16 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   the new Turkish wall-panel product/query-allocation watch in that structural review.
   [September 17 review](reviews/2026-09-17.md).
 
+- **Passive / operational check — 2026-09-21**: All 11 English Product pages remain indexed with valid
+  Breadcrumbs and the unchanged Product eligibility error; no site-wide or
+  Product-filtered searchAppearance rows. TR wall-panel product falls **41→14 clicks /
+  889→354 impressions** in matched rolling 28 days. Query allocation still partly
+  shifts to the guide, while `spc panel` weakens property-wide. Keep September 24
+  watch and September 27 verdict. An existing sitemap gap (TR static/article URLs
+  appear only as alternates, not their own URL entries) is recommended for correction
+  after the structural read, not implemented or attributed as the cause of losses.
+  [September 21 review](reviews/2026-09-21.md).
+
 ### [2026-08-15] Localized collection H1s — commit 8daf750
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -307,6 +384,12 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Blog alternate-locale redirects 307→308 — commit 8daf750
+- **2026-09-21 wall-panel link interference**: two Turkish article body links now
+  explicitly target the Turkish product. Owner authorized shipping before September
+  27. Re-baseline only the overlapping wall-panel components to the [new checkpoint](baselines/2026-09-21-wall-panel-links.md),
+  with combined follow-up **November 2**. Preserve historical verdicts and other cohorts'
+  dates; September 27 can read this cohort only through September 20 as pre-release
+  evidence. Later effects cannot be isolated to the original change.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
   Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
@@ -333,6 +416,10 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] llms.txt — commit 8daf750
+- **Additional September 21 navigation confound**: the two Turkish wall-panel
+  article links now explicitly target the Turkish product; [scope](baselines/2026-09-21-wall-panel-links.md).
+  Interpret aggregate lead/AI readings with this and today's consent repair together;
+  preserve the existing October 21 conversion / November 2 AI dates and old verdicts.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
   Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
@@ -342,7 +429,8 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
 - **Hypothesis**: helps AI engines route to key content.
 - **Primary metric(s)**: qualitative; AI-referral trend (with entry "AI crawlers unblocked").
 - **Review due**: September 15 historical checkpoint with crawler unblock completed;
-  **2026-10-27 combined effect** after the dated September 15 content re-baseline below.
+  **2026-11-02 combined GA4 AI effect** after the September 21 consent re-baseline,
+  superseding October 27. Historical September content re-baselines remain below.
 - **Verdict**: **INCONCLUSIVE — 2026-09-15 historical checkpoint.** Matched
   07-18→08-14 vs 08-16→09-12 has **1→2 AI Assistant sessions**, all ChatGPT; one
   current session contains a lead key event. This is too little referral evidence and does
@@ -385,6 +473,14 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   a browser-like client; default Python remains 403/1010. Verified AI-bot edge access
   remains unmeasured; no crawler setting changed.
   [September 17 review](reviews/2026-09-17.md).
+
+- **Passive / operational check — 2026-09-21**: Latest 28 days (August 23–September 19) has **13 AI
+  Assistant sessions / four users / three key events**, versus 1/1/0 in July 26–
+  August 22. All are ChatGPT; no new article landing appears. Keep the historical
+  INCONCLUSIVE verdict. Consent repair shipped today; preserve its baseline and
+  **November 2** combined GA4 review. Browser-like robots/llms requests return 200;
+  verified AI-bot access and direct citations remain unmeasured.
+  [September 21 review](reviews/2026-09-21.md).
 
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
@@ -474,6 +570,12 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-16] CTR refresh of 3 blog topics — commit ee18f48
+- **2026-09-21 wall-panel link interference**: two Turkish article body links now
+  explicitly target the Turkish product. Owner authorized shipping before September
+  27. Re-baseline only the overlapping wall-panel components to the [new checkpoint](baselines/2026-09-21-wall-panel-links.md),
+  with combined follow-up **November 2**. Preserve historical verdicts and other cohorts'
+  dates; September 27 can read this cohort only through September 20 as pre-release
+  evidence. Later effects cannot be isolated to the original change.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
   Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
@@ -713,6 +815,14 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   **September 27 indexing, October 11 interim ranking and October 27 combined effect**.
   [September 17 review](reviews/2026-09-17.md).
 
+- **Passive / operational check — 2026-09-21**: **6/6 articles remain indexed**; September 13–19
+  exposure is **47 impressions / one click** (TR sample/quote). Preserve September 27
+  indexing, October 11 ranking and October 27 GSC content/link dates; GA4 conversion
+  and AI comparisons follow the September 21 measurement treatment. The Turkish
+  articles are sitemap alternates but lack their own `<loc>` entries; correction
+  is recommended after the structural review, not implemented.
+  [September 21 review](reviews/2026-09-21.md).
+
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -868,6 +978,13 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   clicks are the EN installation guide. Preserve **September 28 / October 12 / October 27**.
   [September 17 review](reviews/2026-09-17.md).
 
+- **Passive / operational check — 2026-09-21**: **5/6 remain indexed**. EN thickness/wear-layer is now
+  **Crawled — currently not indexed** (September 19 crawl), live 200/self-canonical
+  without noindex. September 13–19 exposure: **120 impressions / five clicks**.
+  Preserve September 28 indexing, October 12 ranking and October 27 GSC effect;
+  no premature content rewrite or verdict. GA4 dates follow September 21 treatment.
+  [September 21 review](reviews/2026-09-21.md).
+
 ### [2026-09-15] Distributor, project and colour-selection guides — commit 3d01b51
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -933,6 +1050,14 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   is established separately from search exposure. Preserve **September 29 / October
   13 / October 27**; no early ranking verdict.
   [September 17 review](reviews/2026-09-17.md).
+
+- **Passive / operational check — 2026-09-21**: **5/6 remain indexed**. TR colour/format is now
+  **Crawled — currently not indexed** (September 20 UTC crawl), live 200/self-canonical
+  without noindex and present as a sitemap alternate, not a standalone URL entry.
+  September 13–19 exposure: **44 impressions / two clicks** (TR distributor).
+  Preserve September 29 indexing, October 13 ranking and October 27 GSC effect;
+  GA4 dates follow September 21 treatment. No new verdict or site change.
+  [September 21 review](reviews/2026-09-21.md).
 
 ## Queued (owner-planned, not yet experiments)
 
@@ -1302,3 +1427,50 @@ Fresh GSC finalized through **September 15**; GA4 uses the same cutoff.
 - **Completed:** local review/evidence, judged entry, operational records and schedule.
   All pre-existing records preserved; no baseline reset, site change, commit, push
   or deployment. Consent-order repair and targeting/link changes remain recommendations.
+
+
+### Review run — 2026-09-21
+
+**Scope:** periodic review, including an early operational update. **No verdict due**;
+retain all earlier verdicts and upcoming dates. [Detailed review](reviews/2026-09-21.md)
+and [fresh requests/responses](reviews/2026-09-21-evidence.json).
+
+- **Access/freshness:** GA4, GSC, 44 URL Inspections and read-only Ads reporting succeeded
+  with existing credentials. Finalized GSC ends September 19; GA4 uses the same cutoff.
+  Rolling windows: July 26–August 22 versus August 23–September 19; weekly September
+  6–12 versus September 13–19. Ads production lookup succeeds; campaign probe has no rows.
+- **Search:** clicks **686→668 (−2.6%)**, impressions **16,898→18,894 (+11.8%)**,
+  average position 9.42→7.94. Reviews/pricing/broad-query gains coexist with skirting,
+  bathroom and panel losses. GA4 sessions **393→280**; Türkiye desktop organic
+  sessions **94→30**, while matched GSC clicks are **214→174**. Discrepancy unresolved.
+- **Measurement break:** consent repair and Germany contact card shipped separately
+  earlier today. Their production validation and baseline are already recorded. All
+  performance dates in this review precede the release; it cannot show repair success.
+  Preserve GSC comparisons and the WORKED tracking verdict. Post-release operations
+  September 28, desktop October 5, conversions October 21, combined GA4 AI November 2.
+- **Leads/AI:** weekly **5 lead / eight download key events**, versus 4/3; since launch
+  **26/16**. Seven downloads cluster on one day/page/channel. Latest AI channel:
+  **13 sessions / four users / three keys**, all ChatGPT; encouraging but small, with
+  no new article landings or direct citation evidence. September 24 operations retained.
+- **Discovery:** **16/18** new articles indexed. Two outstanding guides now report
+  crawled/not indexed rather than unknown: EN thickness and TR colour/format. All
+  18 live pages are 200/self-canonical without noindex. September 13–19 exposure is
+  **211 page-row impressions / eight clicks**. Formal indexing September 27/28/29;
+  rankings October 11/12/13. No early success/failure verdict.
+- **New sitemap finding:** Turkish static/article URLs are present as alternates but
+  lack their own URL entries. The implementation predates September. Recommend
+  reciprocal EN/TR sitemap entries after the September 27 structural review; no
+  demonstrated connection to the exclusions or wall-panel loss, no change implemented.
+- **Wall-panel watch:** TR product **41→14 clicks / 889→354 impressions**. `spc duvar
+  paneli` shifts product→guide while whole-property clicks rise 24→27; `spc panel`
+  falls property-wide 13→3. Latest product week 5→1 clicks is sparse. Keep September
+  24 monitoring and September 27 allocation review before targeting/link changes.
+- **Enhancements:** all 11 English Product pages indexed with valid Breadcrumbs and
+  unchanged missing offers/review/aggregateRating errors; no searchAppearance rows.
+  Keep September 27 effect and October 26 FAQ maintenance; do not fabricate fields.
+  Verified AI-bot edge access remains unmeasured without Cloudflare logs.
+
+**Action:** keep existing releases; record the sitemap recommendation for later decision.
+Completed local review/evidence/logbook updates only. No site edit, commit, push or
+new deployment by this review. October 27 GSC content/link and November 2 GA4 AI dates
+are distinct; today's existing GA4 release baseline is retained, not duplicated.
