@@ -79,5 +79,8 @@ uses its own frozen pre/post windows, not these rolling dates.
 
 Local validation passed: production build, text/blog validation, type checks, built
 HTML link checks and manifest comparison (only the two Turkish content/contentHtml
-fields changed). Production deployment and verification are recorded in the logbook
-once complete. The separately recommended sitemap correction is not part of this release.
+fields changed). Code commit **2bcdbac** deployed successfully via Cloudflare Workers Build
+`fa12289c-b120-4473-905f-d8811dadfe0f`; GitHub blog checks passed. At **14:48 UTC**,
+both Turkish contextual links and the product destination passed live verification,
+as did both English articles and metadata preservation. [Production evidence](2026-09-21-wall-panel-links-production.json).
+The separately recommended sitemap correction is not part of this release.

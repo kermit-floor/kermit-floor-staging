@@ -1,0 +1,81 @@
+{
+  "source_commit": "2bcdbac",
+  "checked_at": "2026-09-21T14:48:26.982364+00:00",
+  "method": "Read-only HTTP requests with browser-like User-Agent; no analytics or enquiry events executed. Compare contextual paragraphs and metadata with validated local production build.",
+  "checks": {
+    "/tr/blog/spc-duvar-paneli-kullanim-alanlari": {
+      "checked_at": "2026-09-21T14:48:26.979654+00:00",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/tr/blog/spc-duvar-paneli-kullanim-alanlari",
+      "canonical": "https://kermitfloor.com/tr/blog/spc-duvar-paneli-kullanim-alanlari",
+      "title": "SPC Duvar Paneli Kullanım Alanları: Banyo, Otel, Ofis (2026)",
+      "meta_robots": [],
+      "x_robots_tag": null,
+      "metadata_matches_local_build": true,
+      "contextual_paragraph_matches_local_build": true,
+      "contextual_link_href": "/tr/spc-duvar-panelleri"
+    },
+    "/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore": {
+      "checked_at": "2026-09-21T14:48:26.603857+00:00",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore",
+      "canonical": "https://kermitfloor.com/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore",
+      "title": "Banyo Tadilatında SPC Panel Neden Avantajlıdır? Seramiğe Göre Pratik Karşılaştırma",
+      "meta_robots": [],
+      "x_robots_tag": null,
+      "metadata_matches_local_build": true,
+      "contextual_paragraph_matches_local_build": true,
+      "contextual_link_href": "/tr/spc-duvar-panelleri"
+    },
+    "/blog/spc-wall-panel-usage-areas": {
+      "checked_at": "2026-09-21T14:48:26.778432+00:00",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/blog/spc-wall-panel-usage-areas",
+      "canonical": "https://kermitfloor.com/blog/spc-wall-panel-usage-areas",
+      "title": "SPC Wall Panel Usage Areas: Bathrooms, Hotels and More (2026)",
+      "meta_robots": [],
+      "x_robots_tag": null,
+      "metadata_matches_local_build": true,
+      "english_product_link_preserved": true
+    },
+    "/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles": {
+      "checked_at": "2026-09-21T14:48:26.937931+00:00",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+      "canonical": "https://kermitfloor.com/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+      "title": "SPC Advantages in Bathroom Renovation Over Ceramic Tiles",
+      "meta_robots": [],
+      "x_robots_tag": null,
+      "metadata_matches_local_build": true,
+      "english_product_link_preserved": true
+    },
+    "/tr/spc-duvar-panelleri": {
+      "checked_at": "2026-09-21T14:48:26.680114+00:00",
+      "status": 200,
+      "final_url": "https://kermitfloor.com/tr/spc-duvar-panelleri",
+      "canonical": "https://kermitfloor.com/tr/spc-duvar-panelleri",
+      "title": "Kermit Floor | SPC Duvar Panelleri",
+      "meta_robots": [],
+      "x_robots_tag": null
+    }
+  },
+  "result": "PASS",
+  "deployment_checks": [
+    {
+      "name": "Workers Builds: kermit-floor-staging",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://dash.cloudflare.com/542a80d833f2cf2d70591dbf553ed0d2/workers/services/view/kermit-floor-staging/production/builds/fa12289c-b120-4473-905f-d8811dadfe0f",
+      "started_at": "2026-09-21T14:47:47Z",
+      "completed_at": "2026-09-21T14:47:47Z"
+    },
+    {
+      "name": "blog",
+      "status": "completed",
+      "conclusion": "success",
+      "details_url": "https://github.com/kermit-floor/kermit-floor-staging/actions/runs/35614048267/job/106380103127",
+      "started_at": "2026-09-21T14:43:20Z",
+      "completed_at": "2026-09-21T14:45:14Z"
+    }
+  ]
+}

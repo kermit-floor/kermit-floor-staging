@@ -63,7 +63,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 
 ## Open experiments
 
-### [2026-09-21] Direct Turkish product links from wall-panel articles — release pending
+### [2026-09-21] Direct Turkish product links from wall-panel articles — commit 2bcdbac
 - **Change**: the Turkish usage-guide and bathroom-renovation article body links now
   explicitly target `/tr/spc-duvar-panelleri` rather than the English product URL.
   Copy, metadata, English articles and shared rendering are unchanged.
@@ -84,9 +84,15 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 - **Validation**: production build, text/blog validation and type checks pass. Both
   built article HTML files have the direct Turkish href; manifest comparison confirms
   only the two Turkish articles' content/contentHtml destinations changed.
-- **Verdict**: PENDING SEO effect. Production deployment/verification pending.
-- **Action**: local correction complete; commit/push authorized. Live checks will verify
-  both contextual links and the Turkish destination after the connected build.
+- **Deployment / verification**: committed and pushed to `main`; Cloudflare Workers
+  Build `fa12289c-b120-4473-905f-d8811dadfe0f` and GitHub blog checks succeeded.
+  Live checks at **14:48 UTC on September 21** passed for both Turkish articles,
+  their two English counterparts and the Turkish product destination: HTTP 200,
+  self-canonicals, no noindex, unchanged metadata, correct contextual hrefs and
+  preserved English links. [Production evidence](baselines/2026-09-21-wall-panel-links-production.json).
+- **Verdict**: PENDING SEO effect; implementation correctness verified September 21.
+- **Action**: deployed and verified; keep the direct Turkish links. Review the combined
+  wall-panel effect November 2; preserve the pre-release and unaffected September 27 checks.
 
 ### [2026-09-21] Analytics consent ordering repair — commit 0e7cbf5
 - **Change**: grant accepted consent and configure GA before mounting the page tracker;
