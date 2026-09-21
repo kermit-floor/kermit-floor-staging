@@ -1,0 +1,3466 @@
+{
+  "fetched_at": "2026-09-21T14:01:13.325994+00:00",
+  "purpose": "Pre-deployment GA4 baseline for consent repair and Germany contact addition; dates through September 19 exclude release day.",
+  "reports": {
+    "totals_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          },
+          {
+            "name": "screenPageViews"
+          },
+          {
+            "name": "engagementRate"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagementRate",
+            "type": "TYPE_FLOAT"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "metricValues": [
+              {
+                "value": "280"
+              },
+              {
+                "value": "146"
+              },
+              {
+                "value": "1608"
+              },
+              {
+                "value": "0.62857142857142856"
+              },
+              {
+                "value": "31"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "events_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "48"
+              },
+              {
+                "value": "16"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "15"
+              },
+              {
+                "value": "15"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "totals_prior28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          },
+          {
+            "name": "screenPageViews"
+          },
+          {
+            "name": "engagementRate"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagementRate",
+            "type": "TYPE_FLOAT"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "metricValues": [
+              {
+                "value": "393"
+              },
+              {
+                "value": "160"
+              },
+              {
+                "value": "1719"
+              },
+              {
+                "value": "0.58269720101781175"
+              },
+              {
+                "value": "11"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "events_prior28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "42"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "10"
+              },
+              {
+                "value": "10"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "totals_latest7": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-09-13",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          },
+          {
+            "name": "screenPageViews"
+          },
+          {
+            "name": "engagementRate"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagementRate",
+            "type": "TYPE_FLOAT"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "metricValues": [
+              {
+                "value": "88"
+              },
+              {
+                "value": "42"
+              },
+              {
+                "value": "477"
+              },
+              {
+                "value": "0.64772727272727271"
+              },
+              {
+                "value": "13"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "events_latest7": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-09-13",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "8"
+              },
+              {
+                "value": "8"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "5"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "totals_prior7": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-09-06",
+            "endDate": "2026-09-12"
+          }
+        ],
+        "dimensions": [],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          },
+          {
+            "name": "screenPageViews"
+          },
+          {
+            "name": "engagementRate"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagementRate",
+            "type": "TYPE_FLOAT"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "metricValues": [
+              {
+                "value": "64"
+              },
+              {
+                "value": "35"
+              },
+              {
+                "value": "451"
+              },
+              {
+                "value": "0.65625"
+              },
+              {
+                "value": "7"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "events_prior7": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-09-06",
+            "endDate": "2026-09-12"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "organic_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "country"
+          },
+          {
+            "name": "deviceCategory"
+          },
+          {
+            "name": "browser"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionDefaultChannelGroup",
+            "stringFilter": {
+              "matchType": "EXACT",
+              "value": "Organic Search"
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "country"
+          },
+          {
+            "name": "deviceCategory"
+          },
+          {
+            "name": "browser"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "45"
+              },
+              {
+                "value": "24"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "33"
+              },
+              {
+                "value": "25"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "29"
+              },
+              {
+                "value": "18"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Romania"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Romania"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "China"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Germany"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Bosnia & Herzegovina"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "China"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United Kingdom"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United Kingdom"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Cyprus"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Hong Kong"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Israel"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Italy"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Moldova"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Romania"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Singapore"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Australia"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Azerbaijan"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Germany"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Germany"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "India"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Luxembourg"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Malaysia"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Moldova"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Philippines"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Philippines"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Singapore"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "South Korea"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Spain"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Spain"
+              },
+              {
+                "value": "tablet"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Sri Lanka"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Samsung Internet"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United Kingdom"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United States"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "rowCount": 37,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "sources_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "172"
+              },
+              {
+                "value": "106"
+              },
+              {
+                "value": "16"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "(direct) / (none)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "71"
+              },
+              {
+                "value": "29"
+              },
+              {
+                "value": "11"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "terreirodinastico.com / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "9"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "fumamx.com / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "nova.paytr.com / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "10.4.193.209 / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "SPC-\u043f\u0456\u0434\u043b\u043e\u0433\u0430 \u0442\u0430 \u043f\u043b\u0456\u043d\u0442... (Mass Mailing created on 2026-09-14) / Email"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "bing / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "(not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "SPC \u10d8\u10d0\u10e2\u10d0\u10d9\u10d8, \u10de\u10d0\u10dc\u10d4\u10da\u10d4\u10d1\u10d8... (Mass Mailing created on 2026-09-18) / Email"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 11,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "pages_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "pagePath"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "screenPageViews"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "pagePath",
+            "stringFilter": {
+              "matchType": "FULL_REGEXP",
+              "value": "/(contact|tr/iletisim|blog/.*|tr/blog/.*|resources|tr/kaynaklar)"
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "pagePath"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "57"
+              },
+              {
+                "value": "10"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "34"
+              },
+              {
+                "value": "9"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/iletisim"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "24"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/contact"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "16"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/spc-wall-panels-for-bathrooms"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "12"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "12"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/spc-flooring-mistakes-misconceptions"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/spc-flooring-cost"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/is-spc-flooring-waterproof"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/spc-flooring-user-reviews"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/tag/proje-b\u00fct\u00e7esi"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/tag/spc-parke-yorumlar\u0131"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-duvar-paneli-kullanim-alanlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/spc-flooring-vs-laminate"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/what-is-spc-flooring-vs-laminate-differences-benefits"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-dogru-bilinen-yanlislar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-fiyatlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-kullanici-yorumlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-suya-dayanikli-mi"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/kermit-spc-skirting-advantages"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/what-is-skirting-with-flexible-edges"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/banyo-icin-spc-duvar-panelleri"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/tag/silikon-alternatifi"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/tag/spc-parke-fiyatlar\u0131"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 24,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "organic_prior28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "country"
+          },
+          {
+            "name": "deviceCategory"
+          },
+          {
+            "name": "browser"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionDefaultChannelGroup",
+            "stringFilter": {
+              "matchType": "EXACT",
+              "value": "Organic Search"
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "country"
+          },
+          {
+            "name": "deviceCategory"
+          },
+          {
+            "name": "browser"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "80"
+              },
+              {
+                "value": "28"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "66"
+              },
+              {
+                "value": "19"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "48"
+              },
+              {
+                "value": "26"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Romania"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "28"
+              },
+              {
+                "value": "8"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "9"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United Kingdom"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "7"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Germany"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Germany"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Hong Kong"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Romania"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Opera"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United Kingdom"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "China"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Japan"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Moldova"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Moldova"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Poland"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Romania"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Thailand"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "T\u00fcrkiye"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Bosnia & Herzegovina"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "France"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "France"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Italy"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Moldova"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Mongolia"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Morocco"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Netherlands"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Edge"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Philippines"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Saudi Arabia"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Safari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Spain"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United Kingdom"
+              },
+              {
+                "value": "mobile"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "United States"
+              },
+              {
+                "value": "desktop"
+              },
+              {
+                "value": "Chrome"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "rowCount": 33,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "sources_prior28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "totalUsers"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "283"
+              },
+              {
+                "value": "117"
+              },
+              {
+                "value": "9"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "(direct) / (none)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "83"
+              },
+              {
+                "value": "36"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "(not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "12"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "erp.kermit.com.tr / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "bing / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "terreirodinastico.com / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "google / cpc"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 8,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "pages_prior28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "pagePath"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "screenPageViews"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000,
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "pagePath",
+            "stringFilter": {
+              "matchType": "FULL_REGEXP",
+              "value": "/(contact|tr/iletisim|blog/.*|tr/blog/.*|resources|tr/kaynaklar)"
+            }
+          }
+        }
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "pagePath"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "46"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/iletisim"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "38"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "31"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/contact"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "30"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "12"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/kermit-spc-supurgelik-farki"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-dogru-bilinen-yanlislar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-fiyatlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/contali-supurgelik-nedir"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-duvar-paneli-kullanim-alanlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-kullanici-yorumlari"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/tag/suya-dayan\u0131kl\u0131-s\u00fcp\u00fcrgelik"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/is-spc-flooring-waterproof"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/what-is-skirting-with-flexible-edges"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/banyo-icin-spc-duvar-panelleri"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 16,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    }
+  }
+}

@@ -52,6 +52,11 @@ fresh local stdio client when tools are not exposed). Keep reporting read-only. 
 fails, record the actual error and distinguish credential failures from Cloud-project
 approval errors; do not assume the former TEST-token restriction still applies.
 
+Earlier reporting evidence from the September 15 review: customer lookup returned
+Kermit Floor with `test_account: false`; the August 16–September 12 campaign query
+returned no rows. That reporting probe alone did not identify the access tier.
+[Review evidence](reviews/2026-09-15.md).
+
 ## Credential recovery (read this when any Google call fails)
 
 Auth uses service-account impersonation via gcloud ADC (no keys — org policy forbids them).

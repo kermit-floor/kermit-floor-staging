@@ -385,7 +385,12 @@
       "romaniaCompany": "DMS INNOVATIVE SOLUTION SRL",
       "romaniaAddress": "Bükreş - Romanya",
       "romaniaPhone": "+40 738 754 074 / +40 722 547 258",
-      "romaniaEmail": "info@dmsinnovative.ro"
+      "romaniaEmail": "info@dmsinnovative.ro",
+      "germanyTitle": "ALMANYA – TEMSİLCİLİK",
+      "germanyCompany": "IQBody GmbH",
+      "germanyRepresentative": "Temsilci: Suat Altun",
+      "germanyAddress": "Ströherstraße 14D\n36088 Hünfeld, Almanya",
+      "germanyPhone": "+49 1714071718"
     },
     "form": {
       "title": "Mesaj Gönderin",

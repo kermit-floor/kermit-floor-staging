@@ -385,7 +385,12 @@
       "romaniaCompany": "DMS INNOVATIVE SOLUTION SRL",
       "romaniaAddress": "Bucuresti - Romania",
       "romaniaPhone": "+40 738 754 074 / +40 722 547 258",
-      "romaniaEmail": "info@dmsinnovative.ro"
+      "romaniaEmail": "info@dmsinnovative.ro",
+      "germanyTitle": "GERMANY – REPRESENTATIVE",
+      "germanyCompany": "IQBody GmbH",
+      "germanyRepresentative": "Representative: Suat Altun",
+      "germanyAddress": "Ströherstraße 14D\n36088 Hünfeld, Germany",
+      "germanyPhone": "+49 1714071718"
     },
     "form": {
       "title": "Send a Message",

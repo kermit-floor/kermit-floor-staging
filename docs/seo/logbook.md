@@ -28,30 +28,82 @@ Review cadence (batch of 2026-08-14/16):
 - **2026-08-30** — completed 2026-09-03: indexing check, first lead read, rich-result appearance.
 - **2026-09-06** — completed: CTR refresh INCONCLUSIVE; skirting-image smoke check WORKED.
 - **2026-09-10** — operational lead read completed 2026-09-13; next read 2026-09-17.
-- **2026-09-15** — rankings: new posts, hub effect on "spc skirting", AI-referral trend.
-  Also recheck the desktop GA4/GSC discrepancy identified on 2026-09-13.
-- **2026-09-17** — CTR follow-up with a full finalized 28-day post-launch window; weekly leads.
-- **2026-09-27** — full structural verdict vs baseline + next iteration plan.
+- **2026-09-15** — completed: reviews ranking WORKED; H1s, pricing, hub checkpoint
+  and historical AI checkpoint INCONCLUSIVE. Desktop discrepancy persists; consent-order
+  concern reproduced. Ads production read access verified. [Review](reviews/2026-09-15.md).
+- **2026-09-17** — completed: CTR remains INCONCLUSIVE after the fixed 28-day and
+  27-day sensitivity checks; weekly leads 5/4; desktop discrepancy persists. New
+  Turkish wall-panel product visibility watch. [Review](reviews/2026-09-17.md).
+- **2026-09-24** — weekly lead read, desktop follow-up and Turkish wall-panel watch.
+- **2026-09-27** — full structural verdict vs baseline, H1/pricing follow-ups,
+  combined CTR-topic outcome, Turkish wall-panel query allocation and manufacturer indexing. Later content indexing: September 28/29; interim rankings:
+  October 11/12/13. FAQ maintenance: October 26; combined content/AI effects: October 27.
 
 Parallel changes: new work may ship while experiments are PENDING, but only after the
 interference check in `docs/seo/README.md` (Change interference): disjoint scope ships
 freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
 cohort marker in every open entry.
 
-Last review run: 2026-09-13 (passive checks + overdue weekly lead read; no new experiment
-verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/leads 2026-09-17)
+Last review run: 2026-09-17 (fixed CTR verdict INCONCLUSIVE; weekly lead/desktop
+reads and passive indexing/enhancements completed; 16/18 September articles indexed;
+new Turkish wall-panel watch; next operations September 24, structural/CTR September 27)
 
 ---
 
 ## Open experiments
 
+### [2026-09-21] Analytics consent ordering repair — release pending
+- **Change**: grant accepted consent and configure GA before mounting the page tracker;
+  block manual lead/page events immediately on rejection and resume after reacceptance.
+  Adds 16 desktop/mobile English/Turkish browser regressions.
+- **Hypothesis**: correct command ordering prevents initial page views from using denied
+  consent after acceptance and improves session/attribution completeness.
+- **Primary metric / baseline**: configuration and every tested page view follow granted
+  consent; one view per accepted navigation and no manual events after rejection.
+  September 15 production capture and pre-fix regression show the initial denied view.
+  [Fresh measurement baseline](baselines/2026-09-21-consent-contact.md): 280 sessions,
+  16 lead / 15 download keys in the latest 28 days; weekly 5 / 8.
+- **Interference**: ship and re-baseline GA4-dependent experiments per the linked treatment;
+  all open entries carry the site-wide marker. Germany contact exposure ships concurrently.
+  Preserve GSC baselines/dates and original WORKED instrumentation verdict.
+- **Validation**: production build passed; all 16 consent tests passed on September 21.
+  Production verification pending connected Cloudflare deployment.
+- **Review due**: September 28 operational check; October 5 desktop comparison;
+  October 21 conversion comparisons; November 2 combined AI-referral outcome.
+- **Verdict**: PENDING.
+- **Action**: deploy authorized pending work, verify live behavior and preserve the
+  measurement break in all later trend interpretations.
+
+### [2026-09-21] Germany representative on bilingual contact pages — release pending
+- **Change**: IQBody GmbH, representative Suat Altun, Ströherstraße 14D, 36088 Hünfeld,
+  and +49 1714071718 on English/Turkish contact pages; click-to-call uses existing
+  generate_lead tracking. Four office cards use a responsive two-column desktop layout.
+- **Hypothesis**: a named local representative makes German enquiries easier.
+- **Primary metric / baseline**: Germany-office phone lead-intent events; baseline zero
+  before the new link exists. Contact-page views/keys are EN 16/0 and TR 24/1 in the
+  pre-release 28-day [snapshot](baselines/2026-09-21-consent-contact.md).
+- **Interference**: overlaps contact-page lead tracking and the concurrent site-wide
+  consent repair. Re-baseline together; isolate the new office value in event analysis
+  where available, and do not infer conversion growth from aggregate GA4 changes.
+  No existing search titles, URLs, structured data or GSC baselines change.
+- **Validation**: build and EN/TR desktop/mobile checks pass; exact phone href,
+  four cards and absence of horizontal overflow verified. Production verification pending.
+- **Review due**: October 21, after 30 days; low counts may remain inconclusive.
+- **Verdict**: PENDING.
+- **Action**: deploy and verify both language versions and consent-aware phone tracking.
+
 ### [2026-08-14] GA4 lead tracking (generate_lead + file_download key events) — commit ae721ed
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: `generate_lead` event on WhatsApp button, starter-pack dialogs (whatsapp/email,
   pack_id), contact-page tel/mailto links (office param). Both events registered as GA4 key events.
 - **Hypothesis**: we cannot improve what we cannot count; lead baseline enables all future CRO.
 - **Primary metric(s)**: weekly `generate_lead` key-event count (baseline 0); file_download count.
-- **Review due**: first read completed 2026-09-03; 2026-09-10 operational read completed
-  2026-09-13; next weekly read **2026-09-17**.
+- **Review due**: weekly operational reads completed September 13, 15 and 17;
+  next **2026-09-24**. Original September 3 instrumentation verdict retained.
 - **Verdict**: **WORKED — 2026-09-03.** GA4 recorded 17 `generate_lead` key events and
   5 `file_download` key events from 2026-08-14 through 2026-09-02, versus a lead baseline of 0;
   the instrumentation is firing. These are lead-intent actions, not confirmed sales leads.
@@ -86,15 +138,45 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   20 lead / 8 download key events in the latest 28 days. No event-code change; retain the
   WORKED instrumentation verdict and September 17 weekly operational read.
 
+- **Operational update — 2026-09-15**: 09-06→09-12 has **4 lead / 3 download key
+  events**, versus 2/0 in 08-30→09-05. Since 08-14 through 09-12: **21/8**; latest
+  28-day total is 20/8 because August 15 is excluded. No new burst. Preserve WORKED
+  instrumentation and the **September 17** weekly date. A live browser check reproduces
+  initial page_view before consent-granted update on desktop and mobile, including saved
+  consent. This predates August and does not establish the desktop decline's cause.
+  A consent-order repair is recommended, not implemented; any ship needs measurement
+  interference treatment. [September 15 evidence](reviews/2026-09-15.md).
+
+- **Operational update — 2026-09-17**: 09-09→09-15 has **5 lead / 4 download key
+  events**, versus 2/0 in 09-02→09-08. Since 08-14 through 09-15: **23/9**;
+  raw counts 55/9. Latest raw lead count is six, with two September 15 AI-channel
+  actions producing one key event; no new large burst. Retain **WORKED** for
+  instrumentation, not qualified-lead growth. Next weekly and desktop read: **September
+  24**. Consent-order source remains unchanged since the September 15 finding; repair
+  is recommended and unimplemented. Any repair needs measurement interference treatment.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: CF dashboard "Manage robots.txt" set to not manage; robots.txt now repo-clean
   (GPTBot, ClaudeBot, Google-Extended etc. allowed). "Block AI training bots" was already off.
 - **Hypothesis**: being crawlable by answer engines grows AI-referral traffic over time.
 - **Primary metric(s)**: GA4 "AI Assistant" channel sessions (baseline 6/90d).
-- **Review due**: September 15 historical checkpoint; **2026-10-27 combined effect** after
+- **Review due**: September 15 historical checkpoint completed; **2026-10-27 combined effect** after
   the dated September 15 content re-baseline below.
-- **Verdict**: PENDING
-- **Action**: —
+- **Verdict**: **INCONCLUSIVE — 2026-09-15 historical checkpoint.** Matched
+  07-18→08-14 vs 08-16→09-12 has **1→2 AI Assistant sessions**, all ChatGPT; one
+  current session contains a lead key event. This is too little referral evidence and does
+  not measure chatbot citations. **Combined effect remains pending 2026-10-27.** [September 15 evidence](reviews/2026-09-15.md).
+- **Action**: keep. Preserve the original 6/90-day baseline and September content
+  re-baselines. Seek sustained referral volume and landing/source patterns at the October
+  27 review; direct citation claims need separate measurement. Browser-like requests
+  receive HTTP 200 for robots.txt/llms.txt, while default Python urllib receives
+  Cloudflare 403/1010. Actual verified AI-bot edge access was not established.
 - **2026-09-13 content cohort**: approved manufacturer/About expansion, six new purchasing
   articles and resource/document improvements are recorded in the manufacturer-content
   launch entry below. Existing URLs, metadata test variants, product schema and event code
@@ -121,7 +203,19 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   historical checkpoint and earlier snapshots; do not attribute later movement to crawler
   settings or llms.txt alone. The new content entry records the same confound treatment.
 
+- **Passive / operational check — 2026-09-17**: Latest rolling 28 days (08-19→09-15 vs 07-22→08-18) has **6 AI
+  Assistant sessions / 3 users**, versus 1/1; all ChatGPT, four engaged sessions and
+  two key events. Four sessions cluster on September 15 and land on existing product/
+  resource pages. This does not measure direct citations or isolate the newer content.
+  Preserve **October 27**, the September 15 INCONCLUSIVE checkpoint and all baselines.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: Organization+WebSite on all pages; Product (specs as additionalProperty) on 11
   product pages; ItemList on collection pages; BreadcrumbList on inner pages.
 - **Hypothesis**: better machine readability → rich results, stronger entity understanding,
@@ -156,14 +250,39 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   Keep this entry's original page/query baseline and review dates. Mark aggregate reads
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
+- **Passive check — 2026-09-15**: All 11 Product pages remain indexed with valid Breadcrumb items; the
+  missing offers/review/aggregateRating Product eligibility error persists. No
+  searchAppearance rows. Preserve September 27; no fabricated eligibility data.
+  [September 15 evidence](reviews/2026-09-15.md).
+
+- **Passive / operational check — 2026-09-17**: All 11 English Product pages remain indexed with valid Breadcrumbs and
+  unchanged missing offers/review/aggregateRating eligibility errors. Site-wide and
+  Product-filtered searchAppearance have no rows. Preserve **September 27**; include
+  the new Turkish wall-panel product/query-allocation watch in that structural review.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-08-15] Localized collection H1s — commit 8daf750
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: collection pages got unique localized keyword H1s (was shared English
   "QUICK SHIP: ..." slogan, demoted to eyebrow). Also fixed: 5 premier collections had shared one H1.
 - **Hypothesis**: H1 is the strongest on-page signal; TR pages rank on TR terms.
 - **Primary metric(s)**: positions/CTR for collection terms ("spc parke" 4.9, collection pages' CTR).
-- **Review due**: 2026-09-15.
-- **Verdict**: PENDING
-- **Action**: —
+- **Review due**: September 15 review completed; follow-up **2026-09-27**.
+- **Verdict**: **INCONCLUSIVE — 2026-09-15.** The fixed 16 HTTPS collection pages
+  move from 52 clicks / 1,958 impressions / 2.66% CTR / position 8.45 to
+  47 / 1,739 / 2.70% / 9.93 in matched pre/post 28-day windows. Natural collection
+  exposure for `spc parke` improves from 21 impressions at 27.76 to 34 at 22.32
+  (0→2 clicks); property-level movement mostly reflects the blog result. Shared non-brand
+  query/page rows improve modestly under fixed pre-period weights, so query mix matters.
+  Mixed trends and sparse direct target-query exposure prevent a clear effect verdict.
+  [September 15 evidence](reviews/2026-09-15.md).
+- **Action**: keep the localized H1s. On September 27, recheck the fixed URL cohort,
+  query allocation and sustained expansion in collection-query exposure. Preserve the
+  original baseline; no revert or further H1 change is justified by this read.
 - **2026-09-13 content cohort**: approved manufacturer/About expansion, six new purchasing
   articles and resource/document improvements are recorded in the manufacturer-content
   launch entry below. Existing URLs, metadata test variants, product schema and event code
@@ -179,6 +298,11 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Blog alternate-locale redirects 307→308 — commit 8daf750
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: unprefixed TR-slug blog URLs now permanent-redirect to /tr canonicals.
 - **Hypothesis**: consolidates indexing/link equity onto canonical URLs.
 - **Primary metric(s)**: GSC indexed-URL mix for the affected slugs; /tr URL clicks vs unprefixed.
@@ -200,13 +324,25 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] llms.txt — commit 8daf750
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: curated AI-engine map at /llms.txt.
 - **Hypothesis**: helps AI engines route to key content.
 - **Primary metric(s)**: qualitative; AI-referral trend (with entry "AI crawlers unblocked").
-- **Review due**: September 15 historical checkpoint with crawler unblock;
+- **Review due**: September 15 historical checkpoint with crawler unblock completed;
   **2026-10-27 combined effect** after the dated September 15 content re-baseline below.
-- **Verdict**: PENDING
-- **Action**: —
+- **Verdict**: **INCONCLUSIVE — 2026-09-15 historical checkpoint.** Matched
+  07-18→08-14 vs 08-16→09-12 has **1→2 AI Assistant sessions**, all ChatGPT; one
+  current session contains a lead key event. This is too little referral evidence and does
+  not measure chatbot citations. **Combined effect remains pending 2026-10-27.** [September 15 evidence](reviews/2026-09-15.md).
+- **Action**: keep. Preserve the original 6/90-day baseline and September content
+  re-baselines. Seek sustained referral volume and landing/source patterns at the October
+  27 review; direct citation claims need separate measurement. Browser-like requests
+  receive HTTP 200 for robots.txt/llms.txt, while default Python urllib receives
+  Cloudflare 403/1010. Actual verified AI-bot edge access was not established.
 - **2026-09-13 content cohort**: approved manufacturer/About expansion, six new purchasing
   articles and resource/document improvements are recorded in the manufacturer-content
   launch entry below. Existing URLs, metadata test variants, product schema and event code
@@ -233,16 +369,37 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   historical checkpoint and earlier snapshots; do not attribute later movement to crawler
   settings or llms.txt alone. The new content entry records the same confound treatment.
 
+- **Passive / operational check — 2026-09-17**: AI-channel sessions are **6 versus 1** in the rolling 28-day comparison;
+  current users total three. No direct citation measurement or new-guide AI landing
+  appears in this read. Preserve the **October 27 combined-effect** date and the
+  September 15 historical INCONCLUSIVE verdict. robots.txt/llms.txt return 200 with
+  a browser-like client; default Python remains 403/1010. Verified AI-bot edge access
+  remains unmeasured; no crawler setting changed.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: /tr/blog/spc-parke-kullanici-yorumlari + /blog/spc-flooring-user-reviews.
   Honest expert evaluation (no fabricated testimonials; spec-anchored).
 - **Hypothesis**: own the reviews-intent cluster (350 imp, pos 8.4 with no dedicated page).
 - **Primary metric(s)**: query "spc parke kullanıcı yorumları" position + post clicks.
-- **Review due**: 2026-09-15 (ranking; indexing checkpoint completed 2026-09-03).
-- **Verdict**: PENDING (ranking). **Indexing checkpoint 2026-09-03: WORKED.** Both URLs are
+- **Review due**: September 15 ranking review completed; indexing checkpoint completed
+  September 3. Ranking milestone closed; retain in routine passive monitoring.
+- **Verdict**: **WORKED — 2026-09-15, rankings.** In 07-18→08-14 versus
+  08-16→09-12, `spc parke kullanıcı yorumları` improves **8.22→3.34**, clicks **5→13**,
+  CTR **3.88%→10.66%**, with impressions 129→122. Latest weekly position is 2.13.
+  The article pair earns **29 clicks / 2,028 impressions** across all queries; both
+  remain indexed/self-canonical. [September 15 evidence](reviews/2026-09-15.md).
+  Historical **Indexing checkpoint 2026-09-03: WORKED.** Both URLs are
   Submitted and indexed, self-canonical, fetch-successful, and had GSC activity in 08-15→08-31:
-  TR 12 clicks / 207 impressions; EN 3 / 835. Do not judge rankings before 09-15.
-- **Action**: keep unchanged through the ranking window.
+  TR 12 clicks / 207 impressions; EN 3 / 835. That September 3 checkpoint did not yet judge rankings.
+- **Action**: keep the winning article pair. The success is supported for the
+  intended Turkish query and article discovery, not qualified leads or equivalent English
+  query rankings. Preserve the original accuracy amendment and other cohort notes.
 - **Amendment (2026-08-16)**: post edited post-ship to remove all 0,55 mm wear-layer mentions
   (owner: that spec option is being retired; public line is 0,30/0,50 mm). Product-accuracy
   amendment, not an SEO-motivated change — does not re-baseline the experiment; reviewers
@@ -262,17 +419,33 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] New post pair: SPC pricing factors — commit 89db2ae
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: /tr/blog/spc-parke-fiyatlari + /blog/spc-flooring-cost. No invented prices;
   7 cost drivers + quote-comparison checklist + /contact CTA.
 - **Hypothesis**: capture price-intent (pos 14.2, "kermit süpürgelik fiyatları" pos 6.1) and
   convert it to WhatsApp/email leads.
 - **Primary metric(s)**: query positions + post clicks; generate_lead events with page = post.
-- **Review due**: 2026-09-15 (ranking/leads; indexing checkpoint completed 2026-09-03).
-- **Verdict**: PENDING (ranking/leads). **Indexing checkpoint 2026-09-03: WORKED.** Both URLs
+- **Review due**: September 15 ranking/lead review completed; follow-up **2026-09-27**
+  (indexing checkpoint completed September 3).
+- **Verdict**: **INCONCLUSIVE — 2026-09-15, overall ranking/conversion outcome.**
+  Search discovery improves: `spc parke fiyatları` moves from 0 clicks / 16 impressions /
+  position 12.06 to **7 / 188 / 9.86** in matched pre/post 28-day windows. However, the
+  tag page takes 4 clicks / 127 impressions at 9.20; the article has 3 / 52 at 11.83.
+  Both articles total **10 clicks / 1,302 impressions**, but neither has an attributed
+  `generate_lead` event, and recorded pricing landings are too few for conversion judgment.
+  [September 15 evidence](reviews/2026-09-15.md).
+  Historical **Indexing checkpoint 2026-09-03: WORKED.** Both URLs
   are Submitted and indexed, self-canonical, fetch-successful, and had GSC activity in
-  08-15→08-31: TR 6 clicks / 202 impressions; EN 2 / 531. No tracked `generate_lead` event was
-  attributed to either post yet; do not judge that low-volume outcome before 09-15.
-- **Action**: keep unchanged through the ranking/lead window.
+  08-15→08-31: TR 6 clicks / 202 impressions; EN 2 / 531. As of that September 3 checkpoint, no tracked `generate_lead` event was
+  attributed to either post; the low-volume conversion outcome was deferred.
+- **Action**: keep. Recheck article-versus-tag query allocation, article clicks,
+  recorded landings and lead key events on September 27. More sustained article ranking
+  and enough measured visits to assess conversion would settle the open questions.
+  Do not remove/noindex the tag or rewrite the article from this small sample.
 - **Amendment (2026-08-16)**: post edited post-ship to remove all 0,55 mm wear-layer mentions
   (owner: that spec option is being retired; public line is 0,30/0,50 mm). Product-accuracy
   amendment, not an SEO-motivated change — does not re-baseline the experiment; reviewers
@@ -292,24 +465,37 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-16] CTR refresh of 3 blog topics — commit ee18f48
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: year-stamped, benefit-driven titles/descriptions on spc-wall-panel-bathroom-usage
   (+FAQ section), kermit-spc-skirting-advantages, spc-wall-panel-usage-areas (EN/TR).
 - **Hypothesis**: same positions, higher CTR.
 - **Primary metric(s)**: CTR — "spc wall panels for bathroom" 0.5% @ 9.8 (928 imp);
   "spc skirting" blog 0.5% @ 6.9; "spc duvar kaplama" 1.8% @ 6.3 (279 imp).
-- **Review due**: initial read completed 2026-09-06; follow-up **2026-09-17** with finalized
-  2026-08-17→09-13 vs 2026-07-19→08-15 (28d each, excluding the launch day).
-- **Verdict**: **INCONCLUSIVE — 2026-09-06.** Only 19 complete post-launch days through
+- **Review due**: September 17 fixed-window review completed; **2026-09-27 combined
+  topic/structural follow-up**. Preserve finalized 08-17→09-13 vs 07-19→08-15 (28d)
+  and the 08-17→09-12 vs 07-20→08-15 (27d) sensitivity result.
+- **Verdict**: **INCONCLUSIVE — 2026-09-17.** Full 28-day exact-query clicks/
+  impressions, pre→post: bathroom **1/230→0/52**, skirting **1/515→0/388**,
+  wall cladding **4/74→2/89**. Only two post-period clicks; average positions
+  also worsen (10.72→11.81, 7.44→8.23, 7.14→7.52). Six-page totals instead rise
+  45→51 clicks, with CTR 1.13%→1.59%; these mixed scopes do not prove title success
+  or harm. The clean 27-day check reaches the same conclusion. [September 17 review](reviews/2026-09-17.md).
+- **September 6 checkpoint**: **INCONCLUSIVE — 2026-09-06.** Only 19 complete post-launch days through
   09-04. Matched 19d before→after exact-query clicks/impressions: bathroom 1/157→0/44,
   skirting 1/346→0/312, wall cladding 3/43→2/71. Bathroom impressions fell 72% at nearly
   unchanged position, but the English page's all-query CTR rose 0.95%→1.57%; the signals
   and low click counts do not establish a title effect. All six refreshed pages are indexed,
   recrawled after launch, and serve the shipped metadata. Full evidence, standard 28d
   comparison, and URL-alias handling: [2026-09-06 review](reviews/2026-09-06.md).
-- **Action**: keep all six posts unchanged; recheck after the full post-launch window and
-  sufficient click volume. Watch the bathroom query's impression decline; inspect query and
-  country/device mix if it persists. More time alone will not isolate the skirting title's
-  contribution from the hub; report the combined outcome if attribution remains confounded.
+- **Action**: keep all six articles. On September 27, assess the combined topic/
+  structural outcome, same-query exposure/position and URL allocation. More clicks
+  at comparable positions would strengthen interpretation; time alone cannot isolate
+  the skirting title from its hub/image-repair changes. Later reads also include the
+  September content/FAQ cohorts. No title, content, tag or link change was made here.
 - **Interference recorded 2026-09-06**: the same-day 2026-08-16 hub launch overlaps
   "spc skirting"; its **2026-09-03 card-image repair** is another cohort boundary for this
   query. Turkish posts also overlap the 2026-08-15 redirect change, so combine each old
@@ -335,7 +521,24 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   13 Pacific. Preserve the September 17 verdict window and the recorded FAQ sensitivity
   check; mark later comparisons with the image repair rather than attributing them to titles alone.
 
+- **Passive check — 2026-09-15**: Bathroom exact-query impressions fall 228→59 in the clean pre/post
+  28-day read, while the EN article total clicks rise 12→16. Preserve the September
+  17 fixed 28-day verdict and 27-day sensitivity check; no early title verdict.
+  [September 15 evidence](reviews/2026-09-15.md).
+
+- **September 17 checks**: all six current titles/descriptions and self-canonicals pass
+  fresh HTTP checks; all six pages are indexed and recrawled after the August launch.
+  Bathroom mobile exact-query impressions fall 180→33; New Zealand 33→3, Australia
+  17→2, Canada 23→10. Named queries explain only 1 of 14 latest EN bathroom page
+  clicks, so its page-wide CTR improvement is not fully attributable. September 13
+  Pacific FAQ interference remains covered by the recorded 27-day sensitivity.
+
 ### [2026-08-16] Skirting hub page — commit d9d4225
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: /spc-skirting-boards + /tr/spc-supurgelikler (cards-first per owner; labeled
   Height/Width/Length/Material; random application photo per build; ItemList JSON-LD).
   Nav/footer/home/breadcrumbs repointed; stale 308s on the bare path removed.
@@ -343,12 +546,21 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   and fixes its 0.5% CTR.
 - **Primary metric(s)**: hub impressions/position for "spc skirting"; term CTR (target >3%);
   product pages' positions for the term (baseline 22–26).
-- **Review due**: 2026-09-15 (ranking), 2026-09-27 (full; indexing checkpoint completed
-  2026-09-03).
-- **Verdict**: PENDING (ranking/full). **Indexing checkpoint 2026-09-03: WORKED.** EN and TR
+- **Review due**: September 15 ranking checkpoint completed; **2026-09-27 full effect**
+  retained (indexing checkpoint completed September 3).
+- **Verdict**: **INCONCLUSIVE — 2026-09-15 ranking checkpoint; full effect pending.**
+  Equal 27-day windows (07-20→08-15 vs 08-17→09-12) show `spc skirting` at
+  **1→0 clicks, 500→382 impressions, position 7.47→8.22**; CTR is 0%, below the >3%
+  target. The EN hub has only **15 target-query impressions / position 6.0**, versus
+  367 at 8.37 for the blog. Hub exposure is too sparse to demonstrate consistent
+  displacement or an isolated hub effect. [September 15 evidence](reviews/2026-09-15.md).
+  Historical **Indexing checkpoint 2026-09-03: WORKED.** EN and TR
   hubs are Submitted and indexed, self-canonical, fetch-successful, and show valid Breadcrumbs.
   In GSC 08-15→08-31: EN 1 click / 79 impressions at position 8.0; TR 4 / 83 at 4.8.
-- **Action**: keep unchanged through the ranking window.
+- **Action**: keep through September 27. More hub query exposure and an indexed EN
+  crawl after the image repair would strengthen the full review. Fresh inspection still
+  shows EN August 20 / TR September 8; both are indexed and self-canonical. The
+  September 3 image repair and August 16 title refresh remain overlapping interventions.
 - **Cohort / interference note (recorded 2026-09-06)**: card images were repaired on
   **2026-09-03**, commit 171ace5; live verification on 09-06 passed 8/8 images in EN and TR.
   Split later search/engagement reads at that date. The 2026-08-16 blog CTR refresh shares
@@ -369,7 +581,22 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   Keep this entry's original page/query baseline and review dates. Mark aggregate reads
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
+- **September 15 repair split**: hub target-query impressions are 11 at position 6.18
+  before repair (08-17→09-02), and four at 5.5 after repair (09-03→09-12). These
+  unequal, tiny subsets are descriptive only; they do not establish a repair effect.
+
+- **Passive / operational check — 2026-09-17**: Both hubs remain indexed; EN indexed crawl is still August 20, TR
+  September 8. The fixed CTR window gives the hub only 15 target-query impressions,
+  while the overlapping blog has 373. No early replacement verdict; preserve
+  **September 27** and the title/image-repair confounds.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-09-03] Skirting hub card-image fallback — release repair, commit 171ace5
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: Added a fixed application-image fallback for each of the eight skirting lines on
   `/spc-skirting-boards` and `/tr/spc-supurgelikler`. On a Cloudflare cache miss, the Worker
   cannot use the Node filesystem manifest loader; the fallback prevents empty card `src` values
@@ -390,6 +617,11 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   this operational pass is not a search-ranking verdict.
 
 ### [2026-09-13] Manufacturer purchasing guides and product documents — commit d10e888
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: expand `/about` and `/tr/hakkimizda`; publish three new English/Turkish blog
   pairs (manufacturer selection, samples/quotes, OEM); render resource discovery in initial
   HTML; add four reviewed technical/installation PDFs and clear request actions for missing
@@ -460,7 +692,24 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   history, September 27 indexing and October 11 interim rankings. The new entry records
   the same incoming-link confound; no isolated first-batch effect is claimed.
 
+- **Passive check — 2026-09-15**: Five of six new articles are indexed. English OEM is crawled,
+  currently not indexed; its live browser-like request is 200/self-canonical with no
+  noindex. Only early provisional exposure exists. Preserve September 27 indexing,
+  October 11 interim ranking and October 27 combined-effect dates.
+  [September 15 evidence](reviews/2026-09-15.md).
+
+- **Passive / operational check — 2026-09-17**: **6/6 articles are now indexed**, up from 5/6. EN OEM was crawled on
+  September 16 and is now indexed/self-canonical. Finalized September 13–15 returns
+  15 impressions / zero clicks across five cohort URLs. Early discovery only; preserve
+  **September 27 indexing, October 11 interim ranking and October 27 combined effect**.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: replace Kermit Floor Team with **Barbaros Ahmet Bayram** on the three new EN/TR
   purchasing-guide pairs. Show **Manufacturing Efficiency Expert** in English and
   **Üretim Verimliliği Uzmanı** in Turkish; emit matching `Person`/`jobTitle` Article author
@@ -490,6 +739,11 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   and validation are recorded with the FAQPage release below.
 
 ### [2026-09-14] FAQPage from visible answers and supplied author portrait — commit 4d4b4e9
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: add one FAQPage to each EN/TR About, sample/quotation and bathroom wall-panel
   page: **6 pages / 26 answers**. Explicit Markdown FAQ blocks generate the same visible
   headings/complete answers and manifest data; About uses the same translated items in the
@@ -532,6 +786,11 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   six-page/26-answer technical baseline fixed; validate the new cohort separately.
 
 ### [2026-09-14] Technical specification, installation and heating guides — commit 97d45e7
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: publish three EN/TR topic pairs (six URLs), two original localized layer
   diagrams and direct links to the applicable product PDFs. Correct Turkish blog Open Graph
   and Twitter image paths; no existing title/description/body or Article data is changed.
@@ -588,7 +847,24 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   query allocation and the original baseline. The third-batch entry carries the matching
   confound; later movement is not attributed solely to September 14's publication.
 
+- **Passive check — 2026-09-15**: Five of six new articles are indexed; English thickness/wear-layer
+  remains unknown to Google, with live 200/self-canonical and no noindex. Preserve
+  September 28 indexing, October 12 interim ranking and October 27 combined effect.
+  [September 15 evidence](reviews/2026-09-15.md).
+
+- **Passive / operational check — 2026-09-17**: **5/6 articles are indexed**. EN thickness/wear-layer is not confirmed
+  indexed; saved latest inspection says unknown (an earlier same-run neutral response
+  said discovered/not indexed). Live URL is 200/self-canonical, with no noindex and
+  sitemap inclusion. Finalized September 13–15: **37 impressions / 2 clicks**; both
+  clicks are the EN installation guide. Preserve **September 28 / October 12 / October 27**.
+  [September 17 review](reviews/2026-09-17.md).
+
 ### [2026-09-15] Distributor, project and colour-selection guides — commit 3d01b51
+- **2026-09-21 release cohort / interference**: site-wide consent-order repair and
+  Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
+  Re-baseline GA4 comparisons; conversion review October 21 at the earliest, combined
+  AI-referral review November 2 (supersedes October 27 for GA4 only). Preserve GSC
+  baselines/dates and existing correctness verdicts; check this release for discontinuities.
 - **Change**: three EN/TR topic pairs, six URLs: distributor assortment/first orders;
   coordinated flooring/skirting/panel specification; colour and format selection. Original
   worksheets, verified collection examples and 20 visible FAQ answers use the existing
@@ -636,6 +912,18 @@ verdicts due; desktop GA4/GSC discrepancy flagged; rankings 2026-09-15, CTR/lead
   **2026-09-15T07:42:40.099Z**, with processing pending. This is not indexing confirmation.
 - **Action**: keep the third batch live. DEALER, PROJECT and DESIGN are marked published in
   the approved map. Use the review dates above; remaining topics retain their evidence needs.
+
+- **Passive check — 2026-09-15**: None of today's six new URLs is indexed yet: EN project specification
+  is discovered/not indexed and the other five unknown. This is a same-hour passive
+  check, not a failure verdict. Preserve September 29, October 13 and October 27.
+  [September 15 evidence](reviews/2026-09-15.md).
+
+- **Passive / operational check — 2026-09-17**: **5/6 articles are indexed**, up from 0/6 on launch morning. TR
+  colour/format is still unknown in inspection; live 200/self-canonical, no noindex,
+  included in sitemap. No finalized exposure rows through September 15 yet; indexing
+  is established separately from search exposure. Preserve **September 29 / October
+  13 / October 27**; no early ranking verdict.
+  [September 17 review](reviews/2026-09-17.md).
 
 ## Queued (owner-planned, not yet experiments)
 
@@ -897,6 +1185,39 @@ and the overdue 09-10 operational lead read. GSC finalized data and GA4 reports 
 - Updated review docs only, preserving existing local edits. No code/content/schema changes,
   commit, push or deployment. **A docs-only push still triggers a Cloudflare build.**
 
+
+### Review run — 2026-09-15
+
+Fresh finalized GSC data through **September 12**; GA4 uses the same cutoff.
+[Detailed review](reviews/2026-09-15.md) and [API/browser evidence](reviews/2026-09-15-evidence.json).
+
+- **WORKED:** reviews query position **8.22→3.34**, clicks **5→13**; article pair
+  29 clicks / 2,028 impressions. Keep.
+- **INCONCLUSIVE:** localized H1s (mixed allocation/near-flat CTR), pricing (better
+  discovery largely through the tag, conversion unproven), hub (15 target-query
+  impressions), historical crawler/llms AI checkpoint (1→2 sessions). Keep original
+  baselines; H1/pricing/hub next September 27, combined AI effects October 27.
+- **Passive:** all six August URLs indexed; September manufacturer 5/6, technical 5/6,
+  today's batch 0/6. Nine incomplete September 14 impressions across four new pages.
+  All 11 Products retain valid Breadcrumbs and unchanged Product eligibility errors.
+  Early observations leave the newer experiments' review dates unchanged.
+- **Traffic:** rolling 28-day GSC clicks **661→672**, impressions **16,256→18,892**;
+  GA4 sessions **378→292**, users **148→150**. Türkiye desktop Organic sessions
+  98→42 versus GSC clicks 199→184; Chrome new users remain 17→17.
+- **Measurement:** isolated live tests show page_view queued before consent-granted
+  update on both desktop and mobile. The sequence predates August, so it does not
+  establish the desktop decline's cause. Recommend a separately recorded repair;
+  none implemented. Recheck September 17. Latest weekly lead/download keys 4/3;
+  since launch 21/8. Keep WORKED instrumentation and September 17 operations.
+- **Access:** Google Ads campaign read succeeds without the prior TEST-token error;
+  customer lookup confirms Kermit Floor, test_account=false. No campaign rows in
+  the chosen dates. Exact developer-token tier is unverified. Browser-like requests
+  fetch robots/llms, while default Python receives Cloudflare 403/1010; verified
+  AI-bot edge access remains unmeasured.
+- **Completed:** local review, evidence, verdicts and schedule; Ads access note updated.
+  No site change, commit, push, deployment or new baseline reset. The consent-order
+  repair and other possible iterations are recommendations only.
+
 ### [2026-09-15] Google Ads app identity and Basic-access application — commit 8b51643
 - **Change**: published an application description and privacy notice at
   `/analytics-mcp` and `/analytics-mcp-privacy`; configured Kermit Analytics MCP as
@@ -926,3 +1247,49 @@ and the overdue 09-10 operational lead read. GSC finalized data and GA4 reports 
   client; the installed reporting MCP has no keyword-planning tool yet. The probe used
   all geographies/languages and is not a market-specific keyword recommendation.
   [Access and publication record](2026-09-15-ads-basic-access.md).
+
+- **Passive / operational check — 2026-09-17**: Fresh reporting/account probes succeed after routine ADC reauthentication.
+  August 19–September 15 campaign report has no rows; customer lookup confirms
+  Kermit Floor/test_account=false. Both app-information pages are 200/noindex/follow
+  and absent from sitemap. Retain the separately confirmed **Basic** access and
+  original WORKED verdict; the September 18 decision milestone remains already satisfied.
+  [September 17 review](reviews/2026-09-17.md).
+
+
+### Review run — 2026-09-17
+
+Fresh GSC finalized through **September 15**; GA4 uses the same cutoff.
+[Detailed review](reviews/2026-09-17.md) and [fresh API/HTTP evidence](reviews/2026-09-17-evidence.json).
+
+- **CTR verdict: INCONCLUSIVE.** Fixed 07-19→08-15 vs 08-17→09-13 query
+  clicks/impressions: bathroom 1/230→0/52; skirting 1/515→0/388; wall cladding
+  4/74→2/89. The 27-day FAQ sensitivity agrees. Six-page clicks instead rise
+  45→51; small counts, positions and confounds prevent isolated title attribution.
+  Keep the six articles; combined topic/structural follow-up **September 27**.
+- **Weekly operations:** 09-09→09-15 lead/download key events **5/4** versus 2/0;
+  since launch **23/9**. Retain WORKED instrumentation; no large new raw-event burst.
+  Next weekly/desktop read **September 24**. The recommended consent-order repair
+  remains unimplemented, and is not a proven explanation for the desktop decline.
+- **Passive indexing:** manufacturer **6/6**, technical **5/6**, project **5/6**;
+  **16/18 total**, up from 10/18. EN thickness and TR colour/format await indexing
+  confirmation despite live 200, self-canonicals and sitemap inclusion. Formal new-
+  content dates remain unchanged. New cohort has 52 finalized impressions / 2 clicks,
+  both clicks on EN installation. All six August URLs and six CTR pages are indexed.
+- **Enhancements:** all 11 English Product pages retain valid Breadcrumbs and the
+  same Product eligibility error. No searchAppearance rows. Preserve September 27.
+- **Traffic:** rolling Google clicks **676→664 (−1.8%)**, impressions **16,732→18,786
+  (+12.3%)**; GA4 sessions **397→279**, users **154→149**. Türkiye desktop organic
+  sessions **101→33** versus GSC clicks **211→178**. Latest weekly Google-organic
+  desktop sessions are 8→9, so the discrepancy is not a new weekly collapse.
+- **New watch:** TR wall-panel product clicks **48→17**, impressions **1,006→468**.
+  `spc duvar paneli` partly reallocates to the usage-guide article; `spc panel`
+  weakens property-wide (17→1 clicks; position 7.11→10.22). Review September 24/27
+  before a product/guide targeting iteration; no indexing block is established.
+- **AI/access:** 6 ChatGPT sessions / 3 users, versus 1/1; two key events. Small,
+  clustered traffic to existing pages does not prove new-guide citations. Keep
+  October 27. Ads production probe succeeds; separately verified Basic status kept.
+  Routine ADC recovery succeeded without app restart. Browser-like robots/llms
+  fetches work; default Python still gets 403/1010; verified AI-bot logs unmeasured.
+- **Completed:** local review/evidence, judged entry, operational records and schedule.
+  All pre-existing records preserved; no baseline reset, site change, commit, push
+  or deployment. Consent-order repair and targeting/link changes remain recommendations.

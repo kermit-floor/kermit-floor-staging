@@ -52,6 +52,7 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
   const [bannerOpen, setBannerOpen] = useState(false);
   const [preferencesOpen, setPreferencesOpen] = useState(false);
   const [gaScriptLoaded, setGaScriptLoaded] = useState(false);
+  const [analyticsReady, setAnalyticsReady] = useState(false);
 
   useEffect(() => {
     if (!enabled || !gaId) {
@@ -72,15 +73,18 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
       return;
     }
 
-    if (decision === 'accepted') {
+    if (!enabled || decision === 'accepted') {
       grantAnalyticsConsent();
+      initializeGtag(gaId);
+      // Mount the tracker only after the accepted choice and config are queued.
+      // A child's effect can otherwise send its page view before this effect runs.
+      setAnalyticsReady(true);
       return;
     }
 
-    if (decision === 'rejected') {
-      denyAnalyticsConsent();
-    }
-  }, [decision, gaId, gaScriptLoaded]);
+    denyAnalyticsConsent();
+    setAnalyticsReady(false);
+  }, [decision, enabled, gaId, gaScriptLoaded]);
 
   const accept = useCallback(() => {
     persistConsentDecision('accepted');
@@ -91,6 +95,8 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
 
   const reject = useCallback(() => {
     persistConsentDecision('rejected');
+    denyAnalyticsConsent();
+    setAnalyticsReady(false);
     setDecision('rejected');
     setBannerOpen(false);
     setPreferencesOpen(false);
@@ -112,7 +118,7 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
 
   const shouldLoadGa = gaId.length > 0 && (decision === 'accepted' || !enabled);
   const shouldRenderConsentUi = enabled && gaId.length > 0;
-  const analyticsActive = shouldLoadGa && gaScriptLoaded;
+  const analyticsActive = shouldLoadGa && analyticsReady;
   const bootstrapScript = [
     'window.dataLayer = window.dataLayer || [];',
     'window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};',
@@ -138,10 +144,6 @@ export function ConsentProvider({children, gaId, enabled}: ConsentProviderProps)
               bootstrapGtag();
               if (enabled) {
                 setDefaultAnalyticsConsent('denied');
-              }
-              initializeGtag(gaId);
-              if (!enabled) {
-                grantAnalyticsConsent();
               }
               setGaScriptLoaded(true);
             }}

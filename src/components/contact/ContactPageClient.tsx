@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { MapPin, Phone, Mail, Building, Printer, Smartphone } from 'lucide-react';
+import { MapPin, Phone, Mail, Building, Printer, Smartphone, UserRound } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '../ui/separator';
 import { trackEvent } from '@/lib/consent/gtag';
@@ -72,6 +72,15 @@ export default function ContactPageClient() {
         { icon: Phone, value: tLoc('romaniaPhone') },
         { icon: Mail, value: tLoc('romaniaEmail'), href: `mailto:${tLoc('romaniaEmail')}`, leadMethod: 'email' },
       ]
+    },
+    {
+      title: tLoc('germanyTitle'),
+      details: [
+        { icon: Building, value: tLoc('germanyCompany') },
+        { icon: UserRound, value: tLoc('germanyRepresentative') },
+        { icon: MapPin, value: tLoc('germanyAddress') },
+        { icon: Phone, value: tLoc('germanyPhone'), href: `tel:${tLoc('germanyPhone').replace(/ /g,'')}`, leadMethod: 'phone' },
+      ]
     }
   ];
 
@@ -100,7 +109,7 @@ export default function ContactPageClient() {
       <div className="container mx-auto px-4 py-12 md:py-16 space-y-12">
         <section>
           <h2 className="text-3xl font-bold font-headline text-center mb-8">{tLoc('title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {locations.map((loc, index) => (
               <LocationCard key={index} location={loc} />
             ))}

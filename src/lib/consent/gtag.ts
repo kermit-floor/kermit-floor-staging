@@ -3,6 +3,7 @@ declare global {
     dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
     __kermitGaInitialized?: boolean;
+    __kermitAnalyticsConsent?: 'granted' | 'denied';
   }
 }
 
@@ -36,6 +37,7 @@ export function setDefaultAnalyticsConsent(value: ConsentValue): void {
   if (!ensureGtagBootstrap()) {
     return;
   }
+  window.__kermitAnalyticsConsent = value;
   window.gtag?.('consent', 'default', {analytics_storage: value});
 }
 
@@ -43,6 +45,7 @@ function updateAnalyticsConsent(value: ConsentValue): void {
   if (!ensureGtagBootstrap()) {
     return;
   }
+  window.__kermitAnalyticsConsent = value;
   window.gtag?.('consent', 'update', {analytics_storage: value});
 }
 
@@ -70,13 +73,20 @@ export function denyAnalyticsConsent(): void {
   updateAnalyticsConsent('denied');
 }
 
+function canTrack(): boolean {
+  return isBrowser()
+    && window.__kermitGaInitialized === true
+    && window.__kermitAnalyticsConsent === 'granted'
+    && typeof window.gtag === 'function';
+}
+
 export function trackPageView(): void {
-  if (!isBrowser() || !window.__kermitGaInitialized || typeof window.gtag !== 'function') {
+  if (!canTrack()) {
     return;
   }
 
   const pagePath = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-  window.gtag('event', 'page_view', {
+  window.gtag?.('event', 'page_view', {
     page_title: document.title,
     page_location: window.location.href,
     page_path: pagePath,
@@ -84,10 +94,9 @@ export function trackPageView(): void {
 }
 
 export function trackEvent(name: string, params?: Record<string, string>): void {
-  if (!isBrowser() || !window.__kermitGaInitialized || typeof window.gtag !== 'function') {
+  if (!canTrack()) {
     return;
   }
 
-  window.gtag('event', name, params);
+  window.gtag?.('event', name, params);
 }
-
