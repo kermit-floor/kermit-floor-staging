@@ -47,5 +47,6 @@ changes site-wide measurement; the Germany card also adds a new lead opportunity
   representative independently. Review matching GSC cohorts alongside GA4 trends.
 
 Local validation: production build, 16 consent browser tests, and English/Turkish
-contact checks at desktop/mobile widths pass. Live verification is recorded in the
-release entries after the connected Cloudflare deployment completes.
+contact checks at desktop/mobile widths pass. Cloudflare deployed `0e7cbf5` successfully. Live verification passed for both locales
+at desktop/mobile widths; [production evidence](2026-09-21-production-verification.json)
+records the real GA command sequence and intercepted collection consent flags.

@@ -1,0 +1,357 @@
+{
+  "verifiedAt": "2026-09-21T14:07:07.805Z",
+  "release": "0e7cbf5",
+  "note": "Actual production GA loader; all Google collection requests intercepted before transmission. No real leads sent.",
+  "results": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "status": 200,
+      "layout": {
+        "cards": 4,
+        "columns": 2,
+        "overflow": false
+      },
+      "sequence": [
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "granted"
+        },
+        {
+          "command": "config",
+          "name": "GA configuration",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        }
+      ],
+      "interceptedCollection": [
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": null,
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "generate_lead",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "user_engagement",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "user_engagement",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "scroll",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "locale": "tr",
+      "width": 1440,
+      "status": 200,
+      "layout": {
+        "cards": 4,
+        "columns": 2,
+        "overflow": false
+      },
+      "sequence": [
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "granted"
+        },
+        {
+          "command": "config",
+          "name": "GA configuration",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        }
+      ],
+      "interceptedCollection": [
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": null,
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "generate_lead",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "user_engagement",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "user_engagement",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "scroll",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "status": 200,
+      "layout": {
+        "cards": 4,
+        "columns": 1,
+        "overflow": false
+      },
+      "sequence": [
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "granted"
+        },
+        {
+          "command": "config",
+          "name": "GA configuration",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        }
+      ],
+      "interceptedCollection": [
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": null,
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "generate_lead",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "scroll",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "locale": "tr",
+      "width": 390,
+      "status": 200,
+      "layout": {
+        "cards": 4,
+        "columns": 1,
+        "overflow": false
+      },
+      "sequence": [
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "default",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "granted"
+        },
+        {
+          "command": "config",
+          "name": "GA configuration",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "event",
+          "name": "page_view",
+          "consent": "granted"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        },
+        {
+          "command": "consent",
+          "name": "update",
+          "consent": "denied"
+        }
+      ],
+      "interceptedCollection": [
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": null,
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "generate_lead",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "user_engagement",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "user_engagement",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "page_view",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        },
+        {
+          "event": "scroll",
+          "gcs": "G1-1",
+          "gcd": "13l3r3l3l5l1"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

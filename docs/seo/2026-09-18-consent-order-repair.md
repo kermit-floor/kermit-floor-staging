@@ -1,8 +1,9 @@
 # Consent ordering repair — local preparation, September 18, 2026
 
-Status: prepared September 18; authorized for release September 21 together with all
-pending changes. Deployment verification will be recorded in the logbook. The
-September 17 review and its production observations remain historical records.
+Status: prepared September 18; shipped September 21 in `0e7cbf5`. Cloudflare and
+GitHub checks passed; live English/Turkish desktop/mobile verification confirms the
+repair. [Production evidence](baselines/2026-09-21-production-verification.json).
+The September 17 review and its observations remain historical records.
 
 ## Problem and change
 

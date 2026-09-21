@@ -52,7 +52,7 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
 
 ## Open experiments
 
-### [2026-09-21] Analytics consent ordering repair — release pending
+### [2026-09-21] Analytics consent ordering repair — commit 0e7cbf5
 - **Change**: grant accepted consent and configure GA before mounting the page tracker;
   block manual lead/page events immediately on rejection and resume after reacceptance.
   Adds 16 desktop/mobile English/Turkish browser regressions.
@@ -67,14 +67,19 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   all open entries carry the site-wide marker. Germany contact exposure ships concurrently.
   Preserve GSC baselines/dates and original WORKED instrumentation verdict.
 - **Validation**: production build passed; all 16 consent tests passed on September 21.
-  Production verification pending connected Cloudflare deployment.
+  Cloudflare Workers Builds and GitHub checks succeeded for `0e7cbf5`. Live EN/TR
+  desktop/mobile checks with the real GA loader confirm grant → config → page_view,
+  saved consent, one page view per accepted navigation, and blocked manual events
+  after withdrawal. Intercepted collection payloads use `gcs=G1-1` after acceptance;
+  test collection requests never reach Google. [Production evidence](baselines/2026-09-21-production-verification.json).
 - **Review due**: September 28 operational check; October 5 desktop comparison;
   October 21 conversion comparisons; November 2 combined AI-referral outcome.
 - **Verdict**: PENDING.
-- **Action**: deploy authorized pending work, verify live behavior and preserve the
-  measurement break in all later trend interpretations.
+- **Action**: deployed and verified September 21; keep the repair and preserve the
+  measurement break in all later trend interpretations. Correctness passes; the
+  effect on GA4 completeness and desktop trends remains PENDING.
 
-### [2026-09-21] Germany representative on bilingual contact pages — release pending
+### [2026-09-21] Germany representative on bilingual contact pages — commit 0e7cbf5
 - **Change**: IQBody GmbH, representative Suat Altun, Ströherstraße 14D, 36088 Hünfeld,
   and +49 1714071718 on English/Turkish contact pages; click-to-call uses existing
   generate_lead tracking. Four office cards use a responsive two-column desktop layout.
@@ -87,10 +92,14 @@ new Turkish wall-panel watch; next operations September 24, structural/CTR Septe
   where available, and do not infer conversion growth from aggregate GA4 changes.
   No existing search titles, URLs, structured data or GSC baselines change.
 - **Validation**: build and EN/TR desktop/mobile checks pass; exact phone href,
-  four cards and absence of horizontal overflow verified. Production verification pending.
+  four cards and absence of horizontal overflow verified. Live EN/TR pages return 200
+  at both 1440px and 390px widths, show all supplied details, and queue the Germany
+  phone lead with the correct office/method only after consent.
+  [Production evidence](baselines/2026-09-21-production-verification.json).
 - **Review due**: October 21, after 30 days; low counts may remain inconclusive.
 - **Verdict**: PENDING.
-- **Action**: deploy and verify both language versions and consent-aware phone tracking.
+- **Action**: deployed and verified September 21. Keep the representative card;
+  actual enquiry impact remains PENDING.
 
 ### [2026-08-14] GA4 lead tracking (generate_lead + file_download key events) — commit ae721ed
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
