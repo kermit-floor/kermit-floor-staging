@@ -1,0 +1,2431 @@
+{
+  "fetched_at": "2026-09-22T00:32:55.277025+00:00",
+  "availability": {
+    "request": {
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-21",
+      "dimensions": [
+        "date"
+      ],
+      "dataState": "final",
+      "type": "web",
+      "rowLimit": 100
+    },
+    "response": {
+      "rows": [
+        {
+          "keys": [
+            "2026-09-12"
+          ],
+          "clicks": 20,
+          "impressions": 617,
+          "ctr": 0.03241491085899514,
+          "position": 7.841166936790924
+        },
+        {
+          "keys": [
+            "2026-09-13"
+          ],
+          "clicks": 17,
+          "impressions": 646,
+          "ctr": 0.02631578947368421,
+          "position": 7.402476780185759
+        },
+        {
+          "keys": [
+            "2026-09-14"
+          ],
+          "clicks": 30,
+          "impressions": 717,
+          "ctr": 0.04184100418410042,
+          "position": 6.789400278940028
+        },
+        {
+          "keys": [
+            "2026-09-15"
+          ],
+          "clicks": 29,
+          "impressions": 684,
+          "ctr": 0.04239766081871345,
+          "position": 7.190058479532164
+        },
+        {
+          "keys": [
+            "2026-09-16"
+          ],
+          "clicks": 39,
+          "impressions": 713,
+          "ctr": 0.0546984572230014,
+          "position": 7.26367461430575
+        },
+        {
+          "keys": [
+            "2026-09-17"
+          ],
+          "clicks": 33,
+          "impressions": 743,
+          "ctr": 0.04441453566621804,
+          "position": 6.9771197846567965
+        },
+        {
+          "keys": [
+            "2026-09-18"
+          ],
+          "clicks": 27,
+          "impressions": 627,
+          "ctr": 0.0430622009569378,
+          "position": 7.1945773524720895
+        },
+        {
+          "keys": [
+            "2026-09-19"
+          ],
+          "clicks": 13,
+          "impressions": 611,
+          "ctr": 0.02127659574468085,
+          "position": 7.124386252045826
+        }
+      ],
+      "responseAggregationType": "byProperty"
+    }
+  },
+  "windows": {
+    "latest28": [
+      "2026-08-23",
+      "2026-09-19"
+    ],
+    "previous28": [
+      "2026-07-26",
+      "2026-08-22"
+    ]
+  },
+  "measurement_caveat": "Both windows precede the September 21 consent-order repair. Post-repair GA4 comparisons cross a measurement break; exclude partial September 21 and do not attribute aggregate changes to content alone. GSC uses Pacific dates; GA4 property uses Europe/Istanbul.",
+  "fixed_care_queries": [
+    "spc flooring underlay",
+    "does spc flooring need underlay",
+    "spc flooring acoustic",
+    "how to clean spc flooring",
+    "spc flooring maintenance",
+    "spc flooring repair",
+    "spc flooring kitchen",
+    "spc flooring bedroom",
+    "spc flooring living room",
+    "spc parke şilte",
+    "spc parke altına şilte",
+    "spc parke temizliği",
+    "spc parke bakımı",
+    "spc parke tamiri",
+    "mutfakta spc parke",
+    "spc parke yatak odası"
+  ],
+  "fixed_technical_queries": [
+    "spc flooring thickness",
+    "spc flooring wear layer",
+    "spc flooring installation",
+    "spc flooring underfloor heating",
+    "spc flooring underlay",
+    "spc flooring sunlight",
+    "spc parke kalınlık",
+    "spc parke kalınlığı",
+    "spc parke aşınma tabakası",
+    "spc parke montaj",
+    "spc parke montajı",
+    "spc parke yerden ısıtma",
+    "spc parke şilte"
+  ],
+  "new_paths": [
+    "/blog/spc-flooring-underlay-acoustics",
+    "/tr/blog/spc-parke-silte-akustik",
+    "/blog/kermit-spc-flooring-care-repair",
+    "/tr/blog/kermit-spc-parke-bakim-onarim",
+    "/blog/where-to-use-spc-flooring",
+    "/tr/blog/spc-parke-kullanim-alanlari"
+  ],
+  "technical_paths": [
+    "/blog/spc-flooring-thickness-wear-layer-specification",
+    "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+    "/blog/kermit-spc-flooring-installation-planning",
+    "/tr/blog/kermit-spc-parke-montaj-planlama",
+    "/blog/spc-flooring-heating-sunlight",
+    "/tr/blog/spc-parke-yerden-isitma-gunes"
+  ],
+  "project_paths": [
+    "/blog/kermit-floor-distributor-guide",
+    "/tr/blog/kermit-floor-bayi-rehberi",
+    "/blog/spc-interior-finishes-project-specification",
+    "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+    "/blog/choose-spc-flooring-colour-format",
+    "/tr/blog/spc-parke-renk-format-secimi"
+  ],
+  "manufacturer_article_paths": [
+    "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+    "/tr/blog/spc-parke-ureticisi-secimi",
+    "/blog/oem-private-label-spc-flooring",
+    "/tr/blog/oem-ozel-marka-spc-parke",
+    "/blog/spc-flooring-samples-wholesale-quote",
+    "/tr/blog/spc-parke-numune-toptan-teklif"
+  ],
+  "reports": {
+    "gsc_project_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_manufacturer_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri"
+            ],
+            "clicks": 2,
+            "impressions": 17,
+            "ctr": 0.11764705882352941,
+            "position": 2.1764705882352944
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer"
+            ],
+            "clicks": 0,
+            "impressions": 41,
+            "ctr": 0,
+            "position": 16.097560975609756
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers"
+            ],
+            "clicks": 0,
+            "impressions": 22,
+            "ctr": 0,
+            "position": 20.363636363636363
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 10.571428571428571
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_project_allocation_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_project_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/blog/kermit\\-floor\\-distributor\\-guide|/tr/blog/kermit\\-floor\\-bayi\\-rehberi|/blog/spc\\-interior\\-finishes\\-project\\-specification|/tr/blog/spc\\-ic\\-mekan\\-proje\\-sartnamesi|/blog/choose\\-spc\\-flooring\\-colour\\-format|/tr/blog/spc\\-parke\\-renk\\-format\\-secimi)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/kermit-floor-bayi-rehberi"
+            ],
+            "clicks": 2,
+            "impressions": 6,
+            "ctr": 0.3333333333333333,
+            "position": 4.666666666666666
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/choose-spc-flooring-colour-format"
+            ],
+            "clicks": 0,
+            "impressions": 21,
+            "ctr": 0,
+            "position": 5.380952380952381
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/kermit-floor-distributor-guide"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-interior-finishes-project-specification"
+            ],
+            "clicks": 0,
+            "impressions": 13,
+            "ctr": 0,
+            "position": 5.230769230769231
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-ic-mekan-proje-sartnamesi"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 8
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/resources|/tr/hakkimizda|/tr/kaynaklar)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 20,
+            "impressions": 275,
+            "ctr": 0.07272727272727272,
+            "position": 6.221818181818182
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 3,
+            "impressions": 564,
+            "ctr": 0.005319148936170213,
+            "position": 11.340425531914894
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/resources"
+            ],
+            "clicks": 1,
+            "impressions": 25,
+            "ctr": 0.04,
+            "position": 11
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/kaynaklar"
+            ],
+            "clicks": 0,
+            "impressions": 13,
+            "ctr": 0,
+            "position": 20.153846153846153
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_channels_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "174"
+              },
+              {
+                "value": "112"
+              },
+              {
+                "value": "16"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "71"
+              },
+              {
+                "value": "42"
+              },
+              {
+                "value": "11"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "18"
+              },
+              {
+                "value": "9"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "AI Assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Email"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 6,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_sources_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_lead_events_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "48"
+              },
+              {
+                "value": "16"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "15"
+              },
+              {
+                "value": "15"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_manufacturer_organic_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/about",
+                      "/resources",
+                      "/tr/hakkimizda",
+                      "/tr/kaynaklar"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/hakkimizda"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_technical_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring underfloor heating"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_technical_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-thickness\\-wear\\-layer\\-specification|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kalinlik\\-asinma\\-tabakasi|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-installation\\-planning|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-montaj\\-planlama|https://kermitfloor\\.com/blog/spc\\-flooring\\-heating\\-sunlight|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-yerden\\-isitma\\-gunes)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/kermit-spc-flooring-installation-planning"
+            ],
+            "clicks": 3,
+            "impressions": 32,
+            "ctr": 0.09375,
+            "position": 4.375
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/kermit-spc-parke-montaj-planlama"
+            ],
+            "clicks": 1,
+            "impressions": 11,
+            "ctr": 0.09090909090909091,
+            "position": 5.363636363636363
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-yerden-isitma-gunes"
+            ],
+            "clicks": 1,
+            "impressions": 8,
+            "ctr": 0.125,
+            "position": 5.25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-heating-sunlight"
+            ],
+            "clicks": 0,
+            "impressions": 66,
+            "ctr": 0,
+            "position": 4.378787878787879
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-kalinlik-asinma-tabakasi"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 4
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_article_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-manufacturer\\-turkey\\-buyers\\-checklist|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-ureticisi\\-secimi|https://kermitfloor\\.com/blog/oem\\-private\\-label\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/oem\\-ozel\\-marka\\-spc\\-parke|https://kermitfloor\\.com/blog/spc\\-flooring\\-samples\\-wholesale\\-quote|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-numune\\-toptan\\-teklif)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif"
+            ],
+            "clicks": 1,
+            "impressions": 5,
+            "ctr": 0.2,
+            "position": 6.4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/oem-private-label-spc-flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 11.166666666666666
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote"
+            ],
+            "clicks": 0,
+            "impressions": 25,
+            "ctr": 0,
+            "position": 8.68
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 5.142857142857143
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 3
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_care_queries_latest28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19"
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_care_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_new_pages_latest28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-underlay\\-acoustics|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-silte\\-akustik|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-care\\-repair|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-bakim\\-onarim|https://kermitfloor\\.com/blog/where\\-to\\-use\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kullanim\\-alanlari)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_technical_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring underfloor heating",
+              "https://kermitfloor.com/blog/spc-flooring-heating-sunlight"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_content_organic_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-23",
+            "endDate": "2026-09-19"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/blog/spc-flooring-underlay-acoustics",
+                      "/tr/blog/spc-parke-silte-akustik",
+                      "/blog/kermit-spc-flooring-care-repair",
+                      "/tr/blog/kermit-spc-parke-bakim-onarim",
+                      "/blog/where-to-use-spc-flooring",
+                      "/tr/blog/spc-parke-kullanim-alanlari",
+                      "/blog/kermit-floor-distributor-guide",
+                      "/tr/blog/kermit-floor-bayi-rehberi",
+                      "/blog/spc-interior-finishes-project-specification",
+                      "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+                      "/blog/choose-spc-flooring-colour-format",
+                      "/tr/blog/spc-parke-renk-format-secimi",
+                      "/blog/spc-flooring-thickness-wear-layer-specification",
+                      "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+                      "/blog/kermit-spc-flooring-installation-planning",
+                      "/tr/blog/kermit-spc-parke-montaj-planlama",
+                      "/blog/spc-flooring-heating-sunlight",
+                      "/tr/blog/spc-parke-yerden-isitma-gunes",
+                      "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+                      "/tr/blog/spc-parke-ureticisi-secimi",
+                      "/blog/oem-private-label-spc-flooring",
+                      "/tr/blog/oem-ozel-marka-spc-parke",
+                      "/blog/spc-flooring-samples-wholesale-quote",
+                      "/tr/blog/spc-parke-numune-toptan-teklif"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_project_queries_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_manufacturer_queries_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri"
+            ],
+            "clicks": 3,
+            "impressions": 12,
+            "ctr": 0.25,
+            "position": 2
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer"
+            ],
+            "clicks": 0,
+            "impressions": 9,
+            "ctr": 0,
+            "position": 16.77777777777778
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 45
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey"
+            ],
+            "clicks": 0,
+            "impressions": 5,
+            "ctr": 0,
+            "position": 9.2
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_project_allocation_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_project_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/blog/kermit\\-floor\\-distributor\\-guide|/tr/blog/kermit\\-floor\\-bayi\\-rehberi|/blog/spc\\-interior\\-finishes\\-project\\-specification|/tr/blog/spc\\-ic\\-mekan\\-proje\\-sartnamesi|/blog/choose\\-spc\\-flooring\\-colour\\-format|/tr/blog/spc\\-parke\\-renk\\-format\\-secimi)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/resources|/tr/hakkimizda|/tr/kaynaklar)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 19,
+            "impressions": 341,
+            "ctr": 0.05571847507331378,
+            "position": 5.5337243401759535
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 9,
+            "impressions": 441,
+            "ctr": 0.02040816326530612,
+            "position": 15.02721088435374
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/kaynaklar"
+            ],
+            "clicks": 2,
+            "impressions": 14,
+            "ctr": 0.14285714285714285,
+            "position": 12.071428571428571
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/resources"
+            ],
+            "clicks": 0,
+            "impressions": 23,
+            "ctr": 0,
+            "position": 11.26086956521739
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_channels_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "286"
+              },
+              {
+                "value": "177"
+              },
+              {
+                "value": "9"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "83"
+              },
+              {
+                "value": "48"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "12"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "8"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Paid Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "AI Assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 6,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_sources_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_lead_events_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "42"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "10"
+              },
+              {
+                "value": "10"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_manufacturer_organic_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/about",
+                      "/resources",
+                      "/tr/hakkimizda",
+                      "/tr/kaynaklar"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/hakkimizda"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/about"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 4,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_technical_queries_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_technical_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-thickness\\-wear\\-layer\\-specification|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kalinlik\\-asinma\\-tabakasi|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-installation\\-planning|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-montaj\\-planlama|https://kermitfloor\\.com/blog/spc\\-flooring\\-heating\\-sunlight|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-yerden\\-isitma\\-gunes)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_article_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-manufacturer\\-turkey\\-buyers\\-checklist|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-ureticisi\\-secimi|https://kermitfloor\\.com/blog/oem\\-private\\-label\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/oem\\-ozel\\-marka\\-spc\\-parke|https://kermitfloor\\.com/blog/spc\\-flooring\\-samples\\-wholesale\\-quote|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-numune\\-toptan\\-teklif)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_care_queries_previous28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring kitchen"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 98
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_care_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring kitchen",
+              "https://kermitfloor.com/spc-flooring-elite-collection"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 98
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_new_pages_previous28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-underlay\\-acoustics|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-silte\\-akustik|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-care\\-repair|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-bakim\\-onarim|https://kermitfloor\\.com/blog/where\\-to\\-use\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kullanim\\-alanlari)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_technical_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_content_organic_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-26",
+            "endDate": "2026-08-22"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/blog/spc-flooring-underlay-acoustics",
+                      "/tr/blog/spc-parke-silte-akustik",
+                      "/blog/kermit-spc-flooring-care-repair",
+                      "/tr/blog/kermit-spc-parke-bakim-onarim",
+                      "/blog/where-to-use-spc-flooring",
+                      "/tr/blog/spc-parke-kullanim-alanlari",
+                      "/blog/kermit-floor-distributor-guide",
+                      "/tr/blog/kermit-floor-bayi-rehberi",
+                      "/blog/spc-interior-finishes-project-specification",
+                      "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+                      "/blog/choose-spc-flooring-colour-format",
+                      "/tr/blog/spc-parke-renk-format-secimi",
+                      "/blog/spc-flooring-thickness-wear-layer-specification",
+                      "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+                      "/blog/kermit-spc-flooring-installation-planning",
+                      "/tr/blog/kermit-spc-parke-montaj-planlama",
+                      "/blog/spc-flooring-heating-sunlight",
+                      "/tr/blog/spc-parke-yerden-isitma-gunes",
+                      "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+                      "/tr/blog/spc-parke-ureticisi-secimi",
+                      "/blog/oem-private-label-spc-flooring",
+                      "/tr/blog/oem-ozel-marka-spc-parke",
+                      "/blog/spc-flooring-samples-wholesale-quote",
+                      "/tr/blog/spc-parke-numune-toptan-teklif"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_elite_page_latest28": {
+      "request": {
+        "startDate": "2026-08-23",
+        "endDate": "2026-09-19",
+        "type": "web",
+        "dataState": "final",
+        "dimensions": [
+          "page"
+        ],
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "equals",
+                "expression": "https://kermitfloor.com/spc-flooring-elite-collection"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-flooring-elite-collection"
+            ],
+            "clicks": 2,
+            "impressions": 109,
+            "ctr": 0.01834862385321101,
+            "position": 10.577981651376147
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_elite_page_previous28": {
+      "request": {
+        "startDate": "2026-07-26",
+        "endDate": "2026-08-22",
+        "type": "web",
+        "dataState": "final",
+        "dimensions": [
+          "page"
+        ],
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "equals",
+                "expression": "https://kermitfloor.com/spc-flooring-elite-collection"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-flooring-elite-collection"
+            ],
+            "clicks": 3,
+            "impressions": 136,
+            "ctr": 0.022058823529411766,
+            "position": 10.661764705882353
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    }
+  },
+  "prelaunch_url_check": {
+    "checked_at": "2026-09-22T00:32:55.277048+00:00",
+    "cache_control": "no-cache",
+    "results": [
+      {
+        "path": "/blog/spc-flooring-underlay-acoustics",
+        "status": 404
+      },
+      {
+        "path": "/tr/blog/spc-parke-silte-akustik",
+        "status": 404
+      },
+      {
+        "path": "/blog/kermit-spc-flooring-care-repair",
+        "status": 404
+      },
+      {
+        "path": "/tr/blog/kermit-spc-parke-bakim-onarim",
+        "status": 404
+      },
+      {
+        "path": "/blog/where-to-use-spc-flooring",
+        "status": 404
+      },
+      {
+        "path": "/tr/blog/spc-parke-kullanim-alanlari",
+        "status": 404
+      }
+    ]
+  },
+  "elite_overlap_supplement_fetched_at": "2026-09-22T00:47:27.588376+00:00"
+}
