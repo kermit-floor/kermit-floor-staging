@@ -92,3 +92,25 @@ mobile table wrapping were visually inspected. Production checks follow deployme
 Deployment uses the
 existing GitHub main → Cloudflare pipeline under the continuing publication authorization.
 No indexing, ranking, lead or chatbot-citation success is inferred from deployment checks.
+
+## Published result
+
+Code **d3e770e** deployed successfully at **2026-09-22T00:51:15Z** via Cloudflare build
+**79f77ccd-43c3-4885-b06e-16a94642fc51**, Worker version **dbb5c742-b587-4fdc-8cb3-dfa224dc5143**.
+GitHub blog checks passed. This is **2026-09-21 in Pacific** and **2026-09-22 in
+Europe/Istanbul**. Exclude each partial deployment day; the first full post-launch days
+are **2026-09-22 for GSC** and **2026-09-23 for GA4**. Keep the consent-release break in GA4.
+
+[Production verification](2026-09-22-care-content-production-verification.json) passed for
+**46 articles**, **24 new FAQ answers**, **30 internal destinations**, **54 image and two
+PDF SHA-256 comparisons**, and **12 desktop/mobile views**. All 40 previous article records
+and related-post cohorts are preserved. New articles appear in the corresponding locale
+listings; the three bare Turkish slugs return 308 to their canonical Turkish URLs.
+
+Parsed sitemap XML confirms **three new English loc entries and all six language alternates**.
+The known Turkish standalone-loc gap remains; it is not misreported as six new loc entries.
+Google accepted the sitemap with HTTP **204**, `lastSubmitted`
+**2026-09-22T00:53:35.495Z**, processing pending. This does not prove indexing.
+
+UNDERLAY, CARE and ROOMS are now marked published in the approved map. Review indexing
+**October 6**, rankings **October 20**, and combined content/link effects **November 3**.

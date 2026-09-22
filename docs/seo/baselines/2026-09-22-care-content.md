@@ -112,4 +112,6 @@ events are different series; lead-intent actions are not qualified leads or sale
 
 The [release record](../content-strategy/2026-09-22-care-content-launch.md) checks every
 open/operational entry. Matching notes are added to affected parent logbook entries.
-Deployment timestamps and first full post-launch dates will be recorded after verification.
+Code **d3e770e** deployed **2026-09-22T00:51:15Z**: **2026-09-21 Pacific**,
+**2026-09-22 Europe/Istanbul**. Exclude those partial days. First full days are
+**2026-09-22 for GSC** and **2026-09-23 for GA4**; retain the separate consent break.

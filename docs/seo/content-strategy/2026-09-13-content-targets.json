@@ -222,10 +222,11 @@
     "title": "Underlay and acoustic specification",
     "angle": "Answer backing, additional layer and building-sound questions together.",
     "outline": "Explain the selected collection's IXPE backing, moisture protection and acoustic assembly; distinguish product data from a whole-building result.",
-    "evidence": "Actual Kermit installation instructions and acoustic reports are required; no imported 21 dB claim.",
-    "status": "prepared",
+    "evidence": "Published September 22 from the actual installation manual and 6 mm no-IXPE technical sheet. Acoustic performance remains undeclared for that configuration; no numerical rating is invented. MMFA guidance supports general terminology, not product certification.",
+    "status": "published",
     "topic_id": "spc-flooring-underlay-acoustics",
-    "release_record": "2026-09-22-care-content-launch.md"
+    "release_record": "2026-09-22-care-content-launch.md",
+    "released_at": "2026-09-22"
   },
   {
     "id": "CARE",
@@ -236,10 +237,11 @@
     "title": "Care, delivery checks and repairs",
     "angle": "Provide a practical ownership reference tied to Kermit documents.",
     "outline": "Include delivery inspection, damp cleaning, scratch assessment, spare planks and how to request help, linking the actual warranty.",
-    "evidence": "Use approved cleaning/repair instructions; no unsupported lifespan, repair guarantee or claim deadline.",
-    "status": "prepared",
+    "evidence": "Published September 22 using approved damp-cleaning and furniture-protection instructions, delivery checks and a repair-enquiry record. Applicable warranty terms are requested from the supplier; no warranty file, duration, repair guarantee or claim deadline is invented.",
+    "status": "published",
     "topic_id": "spc-flooring-care-repair",
-    "release_record": "2026-09-22-care-content-launch.md"
+    "release_record": "2026-09-22-care-content-launch.md",
+    "released_at": "2026-09-22"
   },
   {
     "id": "HEAT",
@@ -276,10 +278,11 @@
     "title": "Choosing SPC by room and use",
     "angle": "Answer household application questions in one page before creating many room articles.",
     "outline": "Distinguish kitchens, living rooms, bedrooms and rentals from wet-floor and exposure limits. Use actual Kermit applications and link wall-panel advice separately.",
-    "evidence": "Preserve the existing restriction on bathroom floors, outdoors and wash-down cleaning.",
-    "status": "prepared",
+    "evidence": "Published September 22 using actual indoor application limits. Kitchens, living rooms, bedrooms, entrances and rentals are assessed by conditions; bathroom floors, outdoors, wash-down cleaning and uncontrolled exposure remain excluded.",
+    "status": "published",
     "topic_id": "spc-flooring-room-suitability",
-    "release_record": "2026-09-22-care-content-launch.md"
+    "release_record": "2026-09-22-care-content-launch.md",
+    "released_at": "2026-09-22"
   },
   {
     "id": "TYPES",

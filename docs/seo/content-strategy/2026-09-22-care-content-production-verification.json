@@ -1,0 +1,866 @@
+{
+  "checked_at": "2026-09-22T00:52:11.965Z",
+  "base": "https://kermitfloor.com",
+  "old_records_preserved": 40,
+  "old_related_cohorts_preserved": 40,
+  "articles": [
+    {
+      "path": "/blog/kermit-floor-distributor-guide",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/kermit-floor-bayi-rehberi",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/kermit-spc-skirting-advantages",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/kermit-spc-supurgelik-farki",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/what-is-skirting-with-flexible-edges",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/contali-supurgelik-nedir",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/kermit-spc-flooring-care-repair",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-bakim-onarim",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/choose-spc-flooring-colour-format",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-renk-format-secimi",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-mistakes-misconceptions",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-heating-sunlight",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-yerden-isitma-gunes",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/kermit-spc-flooring-installation-planning",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-montaj-planlama",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-cost",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-fiyatlari",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/where-to-use-spc-flooring",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-kullanim-alanlari",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-thickness-wear-layer-specification",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-underlay-acoustics",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-silte-akustik",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-user-reviews",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-kullanici-yorumlari",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-vs-laminate",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/is-spc-flooring-waterproof",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-suya-dayanikli-mi",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-interior-finishes-project-specification",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+      "status": 200,
+      "faq_count": 3,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-ureticisi-secimi",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/oem-private-label-spc-flooring",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/oem-ozel-marka-spc-parke",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-flooring-samples-wholesale-quote",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-parke-numune-toptan-teklif",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-wall-panels-for-bathrooms",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/banyo-icin-spc-duvar-panelleri",
+      "status": 200,
+      "faq_count": 4,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/blog/spc-wall-panel-usage-areas",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    },
+    {
+      "path": "/tr/blog/spc-duvar-paneli-kullanim-alanlari",
+      "status": 200,
+      "faq_count": 0,
+      "body_metadata_schema_author": "pass"
+    }
+  ],
+  "new_faq_answers": 24,
+  "internal_links": [
+    {
+      "path": "/blog",
+      "status": 200
+    },
+    {
+      "path": "/blog/tag/floor-use-and-care",
+      "status": 200
+    },
+    {
+      "path": "/blog/tag/care-and-repair",
+      "status": 200
+    },
+    {
+      "path": "/downloads/installation-guides/kermit-spc-flooring-installation-care-en-2026-09.pdf",
+      "status": 200
+    },
+    {
+      "path": "/blog/spc-flooring-heating-sunlight",
+      "status": 200
+    },
+    {
+      "path": "/contact",
+      "status": 200
+    },
+    {
+      "path": "/resources",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/tag/zemin-kullanim-bakim",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/tag/parke-bakimi",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/spc-parke-yerden-isitma-gunes",
+      "status": 200
+    },
+    {
+      "path": "/tr/iletisim",
+      "status": 200
+    },
+    {
+      "path": "/tr/kaynaklar",
+      "status": 200
+    },
+    {
+      "path": "/blog/tag/room-selection",
+      "status": 200
+    },
+    {
+      "path": "/blog/choose-spc-flooring-colour-format",
+      "status": 200
+    },
+    {
+      "path": "/blog/spc-flooring-underlay-acoustics",
+      "status": 200
+    },
+    {
+      "path": "/blog/kermit-spc-flooring-installation-planning",
+      "status": 200
+    },
+    {
+      "path": "/blog/kermit-spc-flooring-care-repair",
+      "status": 200
+    },
+    {
+      "path": "/blog/spc-interior-finishes-project-specification",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/tag/odaya-gore-secim",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/spc-parke-renk-format-secimi",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/spc-parke-silte-akustik",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-montaj-planlama",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-bakim-onarim",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+      "status": 200
+    },
+    {
+      "path": "/blog/tag/underlay-selection",
+      "status": 200
+    },
+    {
+      "path": "/downloads/technical-data-sheets/spc-flooring/kermit-spc-6mm-no-ixpe-tds-ro-2026-09.pdf",
+      "status": 200
+    },
+    {
+      "path": "/blog/spc-flooring-thickness-wear-layer-specification",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/tag/silte-secimi",
+      "status": 200
+    },
+    {
+      "path": "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+      "status": 200
+    }
+  ],
+  "assets": [
+    {
+      "path": "/downloads/installation-guides/kermit-spc-flooring-installation-care-en-2026-09.pdf",
+      "sha256": "59a948e496ee523fd515ea0f874bdc6b200d4128555b0d84c6b49cc39fcf5e70"
+    },
+    {
+      "path": "/downloads/technical-data-sheets/spc-flooring/kermit-spc-6mm-no-ixpe-tds-ro-2026-09.pdf",
+      "sha256": "4c0f97399fb404412ca31197c6b9dad5d3df2b454e2d8c5849a7a36ddd80a9ac"
+    },
+    {
+      "path": "/images/authors/yasinbayram.jpeg",
+      "sha256": "106080b3cace845f4741fc2b772713c431d6f2dce17c4827ec5da33139f60081"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-219/application.jpg",
+      "sha256": "d5b0e392f135af6c052f8cdb635c5d8ea2ce8d69beb97676d80844ecccb71a1e"
+    },
+    {
+      "path": "/images/blog/kermit-spc-skirting-advantages/berlin.png",
+      "sha256": "8781defc298648524bd810b766c5a77771fe6204e7fb2a2bd5a715e5ce3da516"
+    },
+    {
+      "path": "/images/blog/kermit-spc-skirting-advantages/alpha.png",
+      "sha256": "40632b03649fc6a414641edb0c08d7e5309ef63dae94c17bc39d19af02c7d75b"
+    },
+    {
+      "path": "/images/blog/kermit-spc-skirting-advantages/elite.png",
+      "sha256": "c9dd2d8ea19574eda0ba192c1f1b9a417ccc009ce97f57a09e29020556aed289"
+    },
+    {
+      "path": "/images/blog/kermit-spc-skirting-advantages/optima60son.png",
+      "sha256": "877c7e66abfdd37b755cc95ac5a3b30c8bdb3637bcd48503234333793e28996a"
+    },
+    {
+      "path": "/images/blog/kermit-spc-skirting-advantages/optima90.png",
+      "sha256": "a3933673a0b825b0cc612207e8c2992331fd1b187022bc8663e4ac416654435f"
+    },
+    {
+      "path": "/images/skirting-boards/moderna-100-mm-skirting-board/1015031/application.jpg",
+      "sha256": "fb351f6dd91b0239663a616383487dd2815456d9c3f68dbfe31f3cfd7796e144"
+    },
+    {
+      "path": "/images/blog/skirting-with-flexible-edges-what-is-it/flexible.edges.png",
+      "sha256": "4c04005b84cfe0ed35baa0c33ad30d594a6b7d77467b98325ef9f9fd3617abfc"
+    },
+    {
+      "path": "/images/skirting-boards/berlin-100-mm-skirting-board/1115031/application.jpg",
+      "sha256": "5fe69b9268ee3c30b5cd3df75780e3f0e9f1c762726875ffadd1b1882ca1a8a7"
+    },
+    {
+      "path": "/images/skirting-boards/x-line-100-mm-skirting-board/X1015031/application.jpg",
+      "sha256": "af956f136b5319ae98f6ba06e600688d44f45000e54260c90abc41fc6d41fa25"
+    },
+    {
+      "path": "/images/skirting-boards/elite-100-mm-skirting-board/E1015031/product.jpg",
+      "sha256": "9fed8359375467389326310e49516eedffece4e27b414f064996a648c713b3b4"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-201/application.jpg",
+      "sha256": "21326d1ea76e151fc4c8c4bb1e310c985ebc059161546c8b6d24760dd64be961"
+    },
+    {
+      "path": "/images/spc-flooring-travertine-collection/P-404/application.jpg",
+      "sha256": "1f66eb6ac5d69bb83c5c3e31df360b6e01cc0a35643eba3e649174ea5a5e20fa"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-204/application.jpg",
+      "sha256": "70ab6e771e71056bf875200cb60d0260ee5f8e2275081bc2a5e41a81b68ad939"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-212/application.jpg",
+      "sha256": "baa661628bed7036a8eb662b604be9bf3dc29ca9e39dda3d66b4111d5a577af7"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-208/application.jpg",
+      "sha256": "10cfc5a9654db7e9375707b21043ec90e990ac9316f66f23fbd3cf03f97aabbe"
+    },
+    {
+      "path": "/images/blog/spc-flooring-common-mistakes/shared-self-leveling-screed.jpg",
+      "sha256": "1536d2793143f1ec1d05b5e79e290ae8bef157b915a24ad36f8e9083a03ff704"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-217/product.jpg",
+      "sha256": "d54c9d298ec6d328231cee020cad5209c45eaa068923172b105b7be8e56df6b8"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-205/application.jpg",
+      "sha256": "9f16f8438c19a66cbf7dc0329177a13859fb24567917cf4f2bbe2a56f6de5286"
+    },
+    {
+      "path": "/images/spc-flooring-travertine-collection/P-401/application.jpg",
+      "sha256": "3fa840af063dfbf2dcd8dcef2d834febfa128771a1ae0f449dc2df03c3f0ee55"
+    },
+    {
+      "path": "/images/spc-flooring-sky-collection/P-101/product.jpg",
+      "sha256": "7aef557a5d1ea9bfadce289545eb3425a51cb2efaca2f18c2d1919bbd2c88a01"
+    },
+    {
+      "path": "/images/skirting-boards/alpha-140-mm-skirting-board/1404031/application.jpg",
+      "sha256": "565380d1755358f9d9d2fd8cbe556a592f4fad8bf65ef564788c95a041bb0b48"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-207/application.jpg",
+      "sha256": "2e079b167a3982ff853976a033c60e7379b4193d74890abbb6ae450cadd8cc35"
+    },
+    {
+      "path": "/images/spc-flooring-sky-collection/P-104/application.jpg",
+      "sha256": "dd9268100ec90d8cfd2582650dc137616f66b6632c17866c0ff0e6da142c6d31"
+    },
+    {
+      "path": "/images/blog/spc-flooring-thickness-wear-layer/en-layer-diagram.svg",
+      "sha256": "ecdbe0d1911e65ce0d5b0ba49cd93e111cbfe5398d3198009a8cde16571de290"
+    },
+    {
+      "path": "/images/blog/spc-flooring-thickness-wear-layer/tr-layer-diagram.svg",
+      "sha256": "e9d07fe8e00fa64d024dfebdcf27f1eedc987546166df8e02771413230dd118f"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-214/application.jpg",
+      "sha256": "5f536efc5a244d02b28caeeecbe747594f95f07932b35fc3803de70665fb5d2d"
+    },
+    {
+      "path": "/images/spc-flooring-elegance-collection/P-301/application.jpg",
+      "sha256": "f61a4d571d67c89d310e88d40124fe352822a37eba683f9a00f3c4d4fe38e8c5"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-219/application.jpg",
+      "sha256": "ba76b203f86416c831f501f683424746f4e2f63261c9aec5c8833100a3eb56de"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-221/product.jpg",
+      "sha256": "8685cd377ae0092430bcbc669fd88a899bf4379fabc91b1d962c782c93111009"
+    },
+    {
+      "path": "/images/spc-flooring-elite-collection/P-210/application.jpg",
+      "sha256": "09a1f612404f42226ca4e3362cd512a37861147a38702795337c1abfd175a6dd"
+    },
+    {
+      "path": "/images/spc-parquet-stone-collection/N-605/application.jpg",
+      "sha256": "560ba5f13f0bcf80e5b6b68b1d524ec4272ed905a93f4974fbb466c191389bf0"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-215/application.jpg",
+      "sha256": "30453fba70bef0769033d70322eb858eb0eff746b85639f2ba73b948670d8a8c"
+    },
+    {
+      "path": "/images/spc-parquet-stone-collection/N-604/application.jpg",
+      "sha256": "38c1e02fcded556d18394fea1681b76315c1d81538d8397aca66ac1bb1ea0153"
+    },
+    {
+      "path": "/images/spc-parquet-stone-collection/N-611/application.jpg",
+      "sha256": "95166eb970afb6547d672c543c5b7ef7d48ab6c12f88e64358d9ffb630d8c791"
+    },
+    {
+      "path": "/images/spc-parquet-natural-collection/N-209/application.jpg",
+      "sha256": "16b078d5764aaf6f6e8bf7ff240f352a5f58e63e2f57c4b8253b0300df333a48"
+    },
+    {
+      "path": "/images/blog/spc-flooring-what-is-it-vs-laminate-benefits/en-section-01.jpg",
+      "sha256": "83497f3600bf6bcc01d6b5d206e899e07b729339a83ef9c2bc149d670fc410c1"
+    },
+    {
+      "path": "/images/blog/spc-flooring-what-is-it-vs-laminate-benefits/en-section-02.jpg",
+      "sha256": "9146787dec2790df68e3a3a22c67bd35c5411f681de0f410cfa08e80e24504a0"
+    },
+    {
+      "path": "/images/blog/spc-flooring-what-is-it-vs-laminate-benefits/en-section-03.jpg",
+      "sha256": "2fdd00b94856cbc4b3743ad7bbeb978543d816c358539b36d236a7498afe4ae1"
+    },
+    {
+      "path": "/images/blog/spc-flooring-what-is-it-vs-laminate-benefits/tr-section-01.jpg",
+      "sha256": "83497f3600bf6bcc01d6b5d206e899e07b729339a83ef9c2bc149d670fc410c1"
+    },
+    {
+      "path": "/images/blog/spc-flooring-what-is-it-vs-laminate-benefits/tr-section-02.jpg",
+      "sha256": "9146787dec2790df68e3a3a22c67bd35c5411f681de0f410cfa08e80e24504a0"
+    },
+    {
+      "path": "/images/blog/spc-flooring-what-is-it-vs-laminate-benefits/tr-section-03.jpg",
+      "sha256": "2fdd00b94856cbc4b3743ad7bbeb978543d816c358539b36d236a7498afe4ae1"
+    },
+    {
+      "path": "/images/hero-images/resources-download-hero-image.jpg",
+      "sha256": "a5cd237310a0777b710e1a5e3fc9e5836ec303a445e07c6a52981d3d4852f200"
+    },
+    {
+      "path": "/images/hero-images/berlin-100mm-hero-image.jpg",
+      "sha256": "c39e9febcad47454b30fe3720674abf8c247a03ef75771788dcc58342413b026"
+    },
+    {
+      "path": "/images/authors/barbaros-ahmet-bayram.png",
+      "sha256": "b5f3067192a0953b9b68b01d188381471c3a76bd6dddf8f7fdc86a7974427c76"
+    },
+    {
+      "path": "/images/spc-wall-panels/604/application.jpg",
+      "sha256": "b70440e7ea87df9d31ca9bbb1c852e5c2dcb41a32fd51aa2fb0ec75c755abd49"
+    },
+    {
+      "path": "/images/blog/spc-wall-panel-bathroom-renovation-vs-ceramic/web-existing-tile-bathroom-02.webp",
+      "sha256": "2e01b75f759cb426367c89b8ce9daf8db6bd97fa3bde354552119eba3558f451"
+    },
+    {
+      "path": "/images/blog/spc-wall-panel-bathroom-renovation-vs-ceramic/web-context-renovation-01.webp",
+      "sha256": "c5b5bd9e819e74784f4b7a077343e979832c8c3444da817087b31affe9f44305"
+    },
+    {
+      "path": "/images/blog/spc-wall-panel-bathroom-renovation-vs-ceramic/kf-horizontal-gallery-strip.webp",
+      "sha256": "1e63edf8d13e104e01b3d2d89ac372ec727e890028a4179f018b5964b41c69fb"
+    },
+    {
+      "path": "/images/spc-wall-panels/613/application.jpg",
+      "sha256": "3b3ffa4475a36e392beab53d4238f157141d25a704ebb6edee1574aea4130651"
+    },
+    {
+      "path": "/images/spc-wall-panels/611/application.jpg",
+      "sha256": "abbf045a7f0c4124df6000c178b54c3701ad267cfd89c157703eedb0c18d5d3a"
+    },
+    {
+      "path": "/images/spc-wall-panels/603/application.jpg",
+      "sha256": "901249acbda4b4c90a559ae77a36808ea5275b2f7eb9a6ee31e8368f4f83da87"
+    },
+    {
+      "path": "/images/spc-wall-panels/601/application.jpg",
+      "sha256": "1aa87684f051b35a33c6298713981de21f0acf22f5629f2e9cf1560fc2fed125"
+    }
+  ],
+  "redirects": [
+    {
+      "from": "/blog/kermit-spc-parke-bakim-onarim",
+      "to": "/tr/blog/kermit-spc-parke-bakim-onarim",
+      "status": 308
+    },
+    {
+      "from": "/blog/spc-parke-kullanim-alanlari",
+      "to": "/tr/blog/spc-parke-kullanim-alanlari",
+      "status": 308
+    },
+    {
+      "from": "/blog/spc-parke-silte-akustik",
+      "to": "/tr/blog/spc-parke-silte-akustik",
+      "status": 308
+    }
+  ],
+  "viewports": [
+    {
+      "path": "/blog/kermit-spc-flooring-care-repair",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-bakim-onarim",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/blog/where-to-use-spc-flooring",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/tr/blog/spc-parke-kullanim-alanlari",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/blog/spc-flooring-underlay-acoustics",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/tr/blog/spc-parke-silte-akustik",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/blog/kermit-spc-flooring-care-repair",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-bakim-onarim",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/blog/where-to-use-spc-flooring",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/tr/blog/spc-parke-kullanim-alanlari",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/blog/spc-flooring-underlay-acoustics",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "images_loaded": true
+    },
+    {
+      "path": "/tr/blog/spc-parke-silte-akustik",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": false,
+      "images_loaded": true
+    }
+  ],
+  "sitemap": {
+    "entry_count": 154,
+    "articles": [
+      {
+        "path": "/blog/kermit-spc-flooring-care-repair",
+        "standalone_loc": true,
+        "alternate": true
+      },
+      {
+        "path": "/tr/blog/kermit-spc-parke-bakim-onarim",
+        "standalone_loc": false,
+        "alternate": true
+      },
+      {
+        "path": "/blog/where-to-use-spc-flooring",
+        "standalone_loc": true,
+        "alternate": true
+      },
+      {
+        "path": "/tr/blog/spc-parke-kullanim-alanlari",
+        "standalone_loc": false,
+        "alternate": true
+      },
+      {
+        "path": "/blog/spc-flooring-underlay-acoustics",
+        "standalone_loc": true,
+        "alternate": true
+      },
+      {
+        "path": "/tr/blog/spc-parke-silte-akustik",
+        "standalone_loc": false,
+        "alternate": true
+      }
+    ],
+    "known_limitation": "Three new English standalone loc entries; all six locale URLs in hreflang alternates. Turkish standalone loc entries remain absent, pending the structural review."
+  },
+  "completed_at": "2026-09-22T00:52:56.449Z",
+  "result": "passed",
+  "deployment": {
+    "commit": "d3e770e0ddf9e56be695f47ca22afbbacb2275a8",
+    "cloudflare_build_id": "79f77ccd-43c3-4885-b06e-16a94642fc51",
+    "worker_version": "dbb5c742-b587-4fdc-8cb3-dfa224dc5143",
+    "completed_at": "2026-09-22T00:51:15Z",
+    "github_checks": [
+      {
+        "completed_at": "2026-09-22T00:51:15Z",
+        "conclusion": "success",
+        "name": "Workers Builds: kermit-floor-staging",
+        "output": {
+          "annotations_count": 0,
+          "annotations_url": "https://api.github.com/repos/kermit-floor/kermit-floor-staging/check-runs/106575397346/annotations",
+          "summary": "\nBuild ID: [79f77ccd-43c3-4885-b06e-16a94642fc51](https://dash.cloudflare.com/542a80d833f2cf2d70591dbf553ed0d2/workers/services/view/kermit-floor-staging/production/builds/79f77ccd-43c3-4885-b06e-16a94642fc51)\nScript: [kermit-floor-staging](https://dash.cloudflare.com/542a80d833f2cf2d70591dbf553ed0d2/workers/services/view/kermit-floor-staging/production)\nVersion ID: dbb5c742-b587-4fdc-8cb3-dfa224dc5143\n",
+          "text": null,
+          "title": "Workers Builds: kermit-floor-staging"
+        },
+        "status": "completed"
+      },
+      {
+        "completed_at": "2026-09-22T00:50:01Z",
+        "conclusion": "success",
+        "name": "blog",
+        "output": {
+          "annotations_count": 2,
+          "annotations_url": "https://api.github.com/repos/kermit-floor/kermit-floor-staging/check-runs/106574893964/annotations",
+          "summary": null,
+          "text": null,
+          "title": null
+        },
+        "status": "completed"
+      }
+    ],
+    "gsc_partial_day": "2026-09-21",
+    "ga4_partial_day": "2026-09-22",
+    "gsc_first_full_day": "2026-09-22",
+    "ga4_first_full_day": "2026-09-23"
+  },
+  "sitemap_submission": {
+    "submitted_at": "2026-09-22T00:53:35.858958+00:00",
+    "status": 204,
+    "response": {
+      "path": "https://kermitfloor.com/sitemap.xml",
+      "lastSubmitted": "2026-09-22T00:53:35.495Z",
+      "isPending": true,
+      "isSitemapsIndex": false,
+      "type": "sitemap",
+      "lastDownloaded": "2026-09-15T07:42:41.293Z",
+      "warnings": "0",
+      "errors": "0",
+      "contents": [
+        {
+          "type": "web",
+          "submitted": "143",
+          "indexed": "0"
+        }
+      ]
+    },
+    "interpretation": "Submission accepted; processing/indexing not confirmed. Turkish article URLs still occur as hreflang alternates, not standalone loc entries."
+  },
+  "validation": {
+    "build": "passed",
+    "typecheck": "passed",
+    "content_and_text": "passed",
+    "manifest": "passed",
+    "sources_and_media": "exist",
+    "visual_review": "Covers and English/Turkish table layouts inspected at desktop/mobile sizes."
+  }
+}

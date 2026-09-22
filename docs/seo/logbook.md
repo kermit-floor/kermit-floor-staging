@@ -121,7 +121,8 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   after withdrawal. Intercepted collection payloads use `gcs=G1-1` after acceptance;
   test collection requests never reach Google. [Production evidence](baselines/2026-09-21-production-verification.json).
 - **Review due**: September 28 operational check; October 5 desktop comparison;
-  October 21 conversion comparisons; November 2 combined AI-referral outcome.
+  October 21 conversion comparisons; November 3 combined AI/content outcome after the
+  September 22 content re-baseline.
 - **Verdict**: PENDING.
 - **Action**: deployed and verified September 21; keep the repair and preserve the
   measurement break in all later trend interpretations. Correctness passes; the
@@ -242,8 +243,9 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   (GPTBot, ClaudeBot, Google-Extended etc. allowed). "Block AI training bots" was already off.
 - **Hypothesis**: being crawlable by answer engines grows AI-referral traffic over time.
 - **Primary metric(s)**: GA4 "AI Assistant" channel sessions (baseline 6/90d).
-- **Review due**: September 15 historical checkpoint completed; **2026-11-02 combined
-  GA4 AI effect** after the September 21 consent re-baseline, superseding October 27.
+- **Review due**: September 15 historical checkpoint completed; **2026-11-03 combined
+  GA4 AI effect** after the September 22 content re-baseline, preserving the September 21
+  consent measurement break and superseding November 2.
   Historical September content re-baselines remain below.
 - **Verdict**: **INCONCLUSIVE — 2026-09-15 historical checkpoint.** Matched
   07-18→08-14 vs 08-16→09-12 has **1→2 AI Assistant sessions**, all ChatGPT; one
@@ -776,7 +778,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 - **Secondary measures**: Organic Search landings, lead/download key events and observed AI
   referrals. No direct chatbot citation baseline; lead-intent actions are not qualified leads.
 - **Review due**: **2026-09-27 indexing**, **2026-10-11 interim rankings/snippets**,
-  **2026-10-27 combined content/link effect** after the September 15 re-baseline below.
+  **2026-11-03 combined content/link effect** after the September 22 re-baseline above.
   The original October 25 date remains in launch history; other 09-15/09-17/09-27 checks stand.
 - **Interference**: new blog listings/tags and links may affect discovery; About/Resources and
   request/download opportunities can affect site-wide engagement, AI referrals and lead counts.
@@ -953,7 +955,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   and observed AI referrals. Qualified leads, sales and direct chatbot citations are not
   inferred from these metrics.
 - **Review due**: **2026-09-28 indexing**, **2026-10-12 interim rankings/query allocation**,
-  **2026-10-27 combined content/link and secondary effects** after the September 15 re-baseline.
+  **2026-11-03 combined content/link and secondary effects** after the September 22 re-baseline.
 - **Interference treatment**: ship and re-baseline the crawler/llms.txt aggregate AI metric
   and manufacturer secondary resource/organic/lead/AI readings to the new dated baseline,
   with an October 26 combined-effect review and matching notes in the parent entries.
@@ -1036,7 +1038,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   210 Organic Search sessions vs 273, and 20 lead / 8 download key events. Small counts and
   changed instrumentation prevent a conversion-growth or chatbot-citation claim.
 - **Review due**: **2026-09-29 indexing**, **2026-10-13 rankings/query allocation**,
-  **2026-10-27 full content/link and overlapping combined effects**.
+  **2026-11-03 full content/link and overlapping combined effects** after the September 22 re-baseline.
 - **Interference treatment**: ship and re-baseline crawler/llms.txt aggregate AI outcomes and
   the manufacturer/technical content outcomes to September 15, with October 27 combined
   effect reviews and matching parent-entry notes. Added incoming links affect the earlier
@@ -1088,7 +1090,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   GA4 dates follow September 21 treatment. No new verdict or site change.
   [September 21 review](reviews/2026-09-21.md).
 
-### [2026-09-22] Underlay, care and room-selection guides — release prepared
+### [2026-09-22] Underlay, care and room-selection guides — commit d3e770e
 - **Change**: three original EN/TR pairs (six URLs), 24 visible FAQ answers and existing
   collection covers. Underlay/assembly approval, care/repair enquiries and room conditions
   use actual Kermit manuals. [Scope and every-entry interference check](content-strategy/2026-09-22-care-content-launch.md).
@@ -1110,12 +1112,27 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   and aggregate AI/secondary outcomes to September 22, with matching parent notes and
   November 3 review. Preserve earlier indexing/interim checkpoints, September 21 measurement
   break, operational/office-specific dates and the November 2 wall-panel experiment.
+  The historical kitchen-query allocation and English Elite all-query secondary outcome
+  also use November 3; original H1 targets and unaffected schema cohorts keep their dates.
 - **Validation**: content/text validation, manifest generation, typecheck and production build
   pass. Local verification passes for 46 articles, 24 new FAQ answers, 30 internal destinations,
   56 image/PDF byte comparisons and 12 desktop/mobile views. All 40 prior records/related
   cohorts remain identical. Covers and mobile tables were visually inspected.
 - **Verdict**: PENDING.
-- **Action**: complete local browser checks, deploy the authorized batch and record live results.
+- **Deployment**: code **d3e770e**, Cloudflare build **79f77ccd-43c3-4885-b06e-16a94642fc51**,
+  Worker **dbb5c742-b587-4fdc-8cb3-dfa224dc5143**, completed **2026-09-22T00:51:15Z**;
+  GitHub blog checks pass. GSC partial day **2026-09-21**, GA4 partial day **2026-09-22**;
+  first full days **2026-09-22 / 2026-09-23**, respectively.
+- **Production verification**: all **46 articles**, **24 new FAQ answers**, **30 internal
+  destinations**, **54 image / two PDF hashes** and **12 desktop/mobile views** pass.
+  Existing 40 records and related cohorts are preserved. [Live evidence](content-strategy/2026-09-22-care-content-production-verification.json).
+- **Discovery**: new articles appear in their locale listings; three TR aliases return 308.
+  Parsed sitemap has **three new EN loc entries and all six hreflang alternates**; the known
+  missing standalone TR entries remain deferred to the structural review. Google accepts
+  the sitemap with HTTP **204**, `lastSubmitted` **2026-09-22T00:53:35.495Z**,
+  processing pending. No indexing or ranking result is inferred.
+- **Action**: keep the fourth batch live; UNDERLAY, CARE and ROOMS are published in the map.
+  Use October 6, October 20 and November 3 checks; remaining work keeps its evidence needs.
 
 ## Queued (owner-planned, not yet experiments)
 
