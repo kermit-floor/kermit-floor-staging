@@ -1,0 +1,5947 @@
+{
+  "fetched_at": "2026-09-25T12:57:33.968559+00:00",
+  "availability": {
+    "request": {
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-24",
+      "dimensions": [
+        "date"
+      ],
+      "dataState": "final",
+      "type": "web",
+      "rowLimit": 100
+    },
+    "response": {
+      "rows": [
+        {
+          "keys": [
+            "2026-09-15"
+          ],
+          "clicks": 29,
+          "impressions": 684,
+          "ctr": 0.04239766081871345,
+          "position": 7.190058479532164
+        },
+        {
+          "keys": [
+            "2026-09-16"
+          ],
+          "clicks": 39,
+          "impressions": 713,
+          "ctr": 0.0546984572230014,
+          "position": 7.26367461430575
+        },
+        {
+          "keys": [
+            "2026-09-17"
+          ],
+          "clicks": 33,
+          "impressions": 743,
+          "ctr": 0.04441453566621804,
+          "position": 6.9771197846567965
+        },
+        {
+          "keys": [
+            "2026-09-18"
+          ],
+          "clicks": 27,
+          "impressions": 627,
+          "ctr": 0.0430622009569378,
+          "position": 7.1945773524720895
+        },
+        {
+          "keys": [
+            "2026-09-19"
+          ],
+          "clicks": 13,
+          "impressions": 611,
+          "ctr": 0.02127659574468085,
+          "position": 7.124386252045826
+        },
+        {
+          "keys": [
+            "2026-09-20"
+          ],
+          "clicks": 20,
+          "impressions": 617,
+          "ctr": 0.03241491085899514,
+          "position": 6.348460291734198
+        },
+        {
+          "keys": [
+            "2026-09-21"
+          ],
+          "clicks": 37,
+          "impressions": 773,
+          "ctr": 0.047865459249676584,
+          "position": 6.345407503234153
+        },
+        {
+          "keys": [
+            "2026-09-22"
+          ],
+          "clicks": 25,
+          "impressions": 829,
+          "ctr": 0.030156815440289506,
+          "position": 7.059107358262968
+        },
+        {
+          "keys": [
+            "2026-09-23"
+          ],
+          "clicks": 41,
+          "impressions": 756,
+          "ctr": 0.05423280423280423,
+          "position": 6.792328042328043
+        }
+      ],
+      "responseAggregationType": "byProperty"
+    }
+  },
+  "windows": {
+    "latest28": [
+      "2026-08-27",
+      "2026-09-23"
+    ],
+    "previous28": [
+      "2026-07-30",
+      "2026-08-26"
+    ]
+  },
+  "fixed_query_groups": {
+    "comparison": [
+      "spc flooring vs laminate",
+      "laminate vs spc flooring",
+      "spc vs laminate",
+      "spc parke mi laminat mı",
+      "spc parke mi laminat mi",
+      "spc parke laminat farkı"
+    ],
+    "water": [
+      "is spc flooring waterproof",
+      "spc flooring water resistance",
+      "spc parke suya dayanıklı mı",
+      "suya dayanıklı parke"
+    ],
+    "types": [
+      "spc vs lvt",
+      "spc vs wpc",
+      "lvt vs spc",
+      "spc vs vinyl",
+      "spc lvt farkı",
+      "spc wpc farkı"
+    ]
+  },
+  "release_paths": [
+    "/blog/spc-flooring-vs-laminate",
+    "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+    "/blog/is-spc-flooring-waterproof",
+    "/tr/blog/spc-parke-suya-dayanikli-mi",
+    "/blog/spc-lvt-wpc-vinyl-types",
+    "/tr/blog/spc-lvt-wpc-vinil-cesitleri"
+  ],
+  "old_path_cohorts": {
+    "new_paths": [
+      "/blog/spc-flooring-underlay-acoustics",
+      "/tr/blog/spc-parke-silte-akustik",
+      "/blog/kermit-spc-flooring-care-repair",
+      "/tr/blog/kermit-spc-parke-bakim-onarim",
+      "/blog/where-to-use-spc-flooring",
+      "/tr/blog/spc-parke-kullanim-alanlari"
+    ],
+    "technical_paths": [
+      "/blog/spc-flooring-thickness-wear-layer-specification",
+      "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+      "/blog/kermit-spc-flooring-installation-planning",
+      "/tr/blog/kermit-spc-parke-montaj-planlama",
+      "/blog/spc-flooring-heating-sunlight",
+      "/tr/blog/spc-parke-yerden-isitma-gunes"
+    ],
+    "project_paths": [
+      "/blog/kermit-floor-distributor-guide",
+      "/tr/blog/kermit-floor-bayi-rehberi",
+      "/blog/spc-interior-finishes-project-specification",
+      "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+      "/blog/choose-spc-flooring-colour-format",
+      "/tr/blog/spc-parke-renk-format-secimi"
+    ],
+    "manufacturer_article_paths": [
+      "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "/tr/blog/spc-parke-ureticisi-secimi",
+      "/blog/oem-private-label-spc-flooring",
+      "/tr/blog/oem-ozel-marka-spc-parke",
+      "/blog/spc-flooring-samples-wholesale-quote",
+      "/tr/blog/spc-parke-numune-toptan-teklif"
+    ]
+  },
+  "reports": {
+    "gsc_project_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_manufacturer_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri"
+            ],
+            "clicks": 2,
+            "impressions": 16,
+            "ctr": 0.125,
+            "position": 1.875
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer"
+            ],
+            "clicks": 0,
+            "impressions": 34,
+            "ctr": 0,
+            "position": 15.294117647058824
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers"
+            ],
+            "clicks": 0,
+            "impressions": 26,
+            "ctr": 0,
+            "position": 21
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 7.625
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_project_allocation_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_project_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/blog/kermit\\-floor\\-distributor\\-guide|/tr/blog/kermit\\-floor\\-bayi\\-rehberi|/blog/spc\\-interior\\-finishes\\-project\\-specification|/tr/blog/spc\\-ic\\-mekan\\-proje\\-sartnamesi|/blog/choose\\-spc\\-flooring\\-colour\\-format|/tr/blog/spc\\-parke\\-renk\\-format\\-secimi)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/kermit-floor-bayi-rehberi"
+            ],
+            "clicks": 2,
+            "impressions": 8,
+            "ctr": 0.25,
+            "position": 5.375
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/choose-spc-flooring-colour-format"
+            ],
+            "clicks": 0,
+            "impressions": 48,
+            "ctr": 0,
+            "position": 5.791666666666667
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/kermit-floor-distributor-guide"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 3.6666666666666665
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-interior-finishes-project-specification"
+            ],
+            "clicks": 0,
+            "impressions": 28,
+            "ctr": 0,
+            "position": 5.75
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-ic-mekan-proje-sartnamesi"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 7.142857142857143
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/resources|/tr/hakkimizda|/tr/kaynaklar)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 21,
+            "impressions": 299,
+            "ctr": 0.07023411371237458,
+            "position": 6.6755852842809364
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 5,
+            "impressions": 597,
+            "ctr": 0.008375209380234505,
+            "position": 9.971524288107203
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/resources"
+            ],
+            "clicks": 2,
+            "impressions": 30,
+            "ctr": 0.06666666666666667,
+            "position": 7.766666666666667
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/kaynaklar"
+            ],
+            "clicks": 0,
+            "impressions": 16,
+            "ctr": 0,
+            "position": 5.625
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_channels_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-27",
+            "endDate": "2026-09-23"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "192"
+              },
+              {
+                "value": "123"
+              },
+              {
+                "value": "36"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "68"
+              },
+              {
+                "value": "44"
+              },
+              {
+                "value": "12"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "16"
+              },
+              {
+                "value": "6"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "AI Assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "14"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Email"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          }
+        ],
+        "rowCount": 6,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_sources_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-27",
+            "endDate": "2026-09-23"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "14"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "gemini / (not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_lead_events_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-27",
+            "endDate": "2026-09-23"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "46"
+              },
+              {
+                "value": "15"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "40"
+              },
+              {
+                "value": "40"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_manufacturer_organic_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-27",
+            "endDate": "2026-09-23"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/about",
+                      "/resources",
+                      "/tr/hakkimizda",
+                      "/tr/kaynaklar"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "17"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/hakkimizda"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_technical_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring underfloor heating"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_technical_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-thickness\\-wear\\-layer\\-specification|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kalinlik\\-asinma\\-tabakasi|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-installation\\-planning|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-montaj\\-planlama|https://kermitfloor\\.com/blog/spc\\-flooring\\-heating\\-sunlight|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-yerden\\-isitma\\-gunes)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/kermit-spc-flooring-installation-planning"
+            ],
+            "clicks": 3,
+            "impressions": 57,
+            "ctr": 0.05263157894736842,
+            "position": 4.9298245614035086
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-heating-sunlight"
+            ],
+            "clicks": 1,
+            "impressions": 123,
+            "ctr": 0.008130081300813009,
+            "position": 3.967479674796748
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/kermit-spc-parke-montaj-planlama"
+            ],
+            "clicks": 1,
+            "impressions": 25,
+            "ctr": 0.04,
+            "position": 5.56
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-yerden-isitma-gunes"
+            ],
+            "clicks": 1,
+            "impressions": 21,
+            "ctr": 0.047619047619047616,
+            "position": 3.8095238095238093
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-kalinlik-asinma-tabakasi"
+            ],
+            "clicks": 0,
+            "impressions": 10,
+            "ctr": 0,
+            "position": 6.4
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_article_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-manufacturer\\-turkey\\-buyers\\-checklist|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-ureticisi\\-secimi|https://kermitfloor\\.com/blog/oem\\-private\\-label\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/oem\\-ozel\\-marka\\-spc\\-parke|https://kermitfloor\\.com/blog/spc\\-flooring\\-samples\\-wholesale\\-quote|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-numune\\-toptan\\-teklif)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif"
+            ],
+            "clicks": 2,
+            "impressions": 11,
+            "ctr": 0.18181818181818182,
+            "position": 6.2727272727272725
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/oem-private-label-spc-flooring"
+            ],
+            "clicks": 1,
+            "impressions": 4,
+            "ctr": 0.25,
+            "position": 6.75
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 9.857142857142858
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote"
+            ],
+            "clicks": 0,
+            "impressions": 30,
+            "ctr": 0,
+            "position": 8.466666666666667
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 5.75
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 5.666666666666667
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_care_queries_latest28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "does spc flooring need underlay"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 7
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_care_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "does spc flooring need underlay",
+              "https://kermitfloor.com/blog/spc-flooring-underlay-acoustics"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 7
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_care_pages_latest28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-underlay\\-acoustics|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-silte\\-akustik|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-care\\-repair|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-bakim\\-onarim|https://kermitfloor\\.com/blog/where\\-to\\-use\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kullanim\\-alanlari)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/kermit-spc-flooring-care-repair"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 9
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-underlay-acoustics"
+            ],
+            "clicks": 0,
+            "impressions": 24,
+            "ctr": 0,
+            "position": 7.708333333333333
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/where-to-use-spc-flooring"
+            ],
+            "clicks": 0,
+            "impressions": 10,
+            "ctr": 0,
+            "position": 2.6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-kullanim-alanlari"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_technical_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring underfloor heating",
+              "https://kermitfloor.com/blog/spc-flooring-heating-sunlight"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_content_organic_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-27",
+            "endDate": "2026-09-23"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/blog/spc-flooring-underlay-acoustics",
+                      "/tr/blog/spc-parke-silte-akustik",
+                      "/blog/kermit-spc-flooring-care-repair",
+                      "/tr/blog/kermit-spc-parke-bakim-onarim",
+                      "/blog/where-to-use-spc-flooring",
+                      "/tr/blog/spc-parke-kullanim-alanlari",
+                      "/blog/kermit-floor-distributor-guide",
+                      "/tr/blog/kermit-floor-bayi-rehberi",
+                      "/blog/spc-interior-finishes-project-specification",
+                      "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+                      "/blog/choose-spc-flooring-colour-format",
+                      "/tr/blog/spc-parke-renk-format-secimi",
+                      "/blog/spc-flooring-thickness-wear-layer-specification",
+                      "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+                      "/blog/kermit-spc-flooring-installation-planning",
+                      "/tr/blog/kermit-spc-parke-montaj-planlama",
+                      "/blog/spc-flooring-heating-sunlight",
+                      "/tr/blog/spc-parke-yerden-isitma-gunes",
+                      "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+                      "/tr/blog/spc-parke-ureticisi-secimi",
+                      "/blog/oem-private-label-spc-flooring",
+                      "/tr/blog/oem-ozel-marka-spc-parke",
+                      "/blog/spc-flooring-samples-wholesale-quote",
+                      "/tr/blog/spc-parke-numune-toptan-teklif"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_elite_page_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "type": "web",
+        "dataState": "final",
+        "dimensions": [
+          "page"
+        ],
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "equals",
+                "expression": "https://kermitfloor.com/spc-flooring-elite-collection"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-flooring-elite-collection"
+            ],
+            "clicks": 2,
+            "impressions": 117,
+            "ctr": 0.017094017094017096,
+            "position": 8.948717948717949
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_comparison_queries_latest28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ vs\\ laminate|laminate\\ vs\\ spc\\ flooring|spc\\ vs\\ laminate|spc\\ parke\\ mi\\ laminat\\ mı|spc\\ parke\\ mi\\ laminat\\ mi|spc\\ parke\\ laminat\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "laminate vs spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 126,
+            "ctr": 0,
+            "position": 39.15079365079365
+          },
+          {
+            "keys": [
+              "spc flooring vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 33.333333333333336
+          },
+          {
+            "keys": [
+              "spc vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 32
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_comparison_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ vs\\ laminate|laminate\\ vs\\ spc\\ flooring|spc\\ vs\\ laminate|spc\\ parke\\ mi\\ laminat\\ mı|spc\\ parke\\ mi\\ laminat\\ mi|spc\\ parke\\ laminat\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "laminate vs spc flooring",
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 126,
+            "ctr": 0,
+            "position": 39.15079365079365
+          },
+          {
+            "keys": [
+              "spc flooring vs laminate",
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 33.333333333333336
+          },
+          {
+            "keys": [
+              "spc vs laminate",
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 27.428571428571427
+          },
+          {
+            "keys": [
+              "spc vs laminate",
+              "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 64
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_water_queries_latest28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(is\\ spc\\ flooring\\ waterproof|spc\\ flooring\\ water\\ resistance|spc\\ parke\\ suya\\ dayanıklı\\ mı|suya\\ dayanıklı\\ parke)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "suya dayanıklı parke"
+            ],
+            "clicks": 1,
+            "impressions": 42,
+            "ctr": 0.023809523809523808,
+            "position": 11.976190476190476
+          },
+          {
+            "keys": [
+              "is spc flooring waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 72,
+            "ctr": 0,
+            "position": 7.319444444444445
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_water_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(is\\ spc\\ flooring\\ waterproof|spc\\ flooring\\ water\\ resistance|spc\\ parke\\ suya\\ dayanıklı\\ mı|suya\\ dayanıklı\\ parke)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "suya dayanıklı parke",
+              "https://kermitfloor.com/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 1,
+            "impressions": 13,
+            "ctr": 0.07692307692307693,
+            "position": 11.23076923076923
+          },
+          {
+            "keys": [
+              "is spc flooring waterproof",
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 72,
+            "ctr": 0,
+            "position": 7.319444444444445
+          },
+          {
+            "keys": [
+              "suya dayanıklı parke",
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 0,
+            "impressions": 25,
+            "ctr": 0,
+            "position": 12.64
+          },
+          {
+            "keys": [
+              "suya dayanıklı parke",
+              "https://kermitfloor.com/tr/blog/tag/suya-dayan%C4%B1kl%C4%B1-parke"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 10.25
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_types_queries_latest28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ vs\\ lvt|spc\\ vs\\ wpc|lvt\\ vs\\ spc|spc\\ vs\\ vinyl|spc\\ lvt\\ farkı|spc\\ wpc\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_types_allocation_latest28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ vs\\ lvt|spc\\ vs\\ wpc|lvt\\ vs\\ spc|spc\\ vs\\ vinyl|spc\\ lvt\\ farkı|spc\\ wpc\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_release_pages_latest28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-vs\\-laminate|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/is\\-spc\\-flooring\\-waterproof|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-suya\\-dayanikli\\-mi|https://kermitfloor\\.com/blog/spc\\-lvt\\-wpc\\-vinyl\\-types|https://kermitfloor\\.com/tr/blog/spc\\-lvt\\-wpc\\-vinil\\-cesitleri)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 5,
+            "impressions": 691,
+            "ctr": 0.00723589001447178,
+            "position": 5.024602026049204
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 5,
+            "impressions": 200,
+            "ctr": 0.025,
+            "position": 9.23
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 299,
+            "ctr": 0,
+            "position": 33.36789297658863
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+            ],
+            "clicks": 0,
+            "impressions": 10,
+            "ctr": 0,
+            "position": 4.9
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_definition_pages_latest28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/what\\-is\\-spc\\-flooring\\-vs\\-laminate\\-differences\\-benefits|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-nedir\\-laminat\\-farki\\-ve\\-avantajlari)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+            ],
+            "clicks": 102,
+            "impressions": 4140,
+            "ctr": 0.02463768115942029,
+            "position": 6.6954106280193235
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits"
+            ],
+            "clicks": 1,
+            "impressions": 89,
+            "ctr": 0.011235955056179775,
+            "position": 11.573033707865168
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_stone_natural_pages_latest28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/spc\\-parquet\\-stone\\-collection|https://kermitfloor\\.com/tr/spc\\-parke\\-tas\\-koleksiyonu|https://kermitfloor\\.com/spc\\-parquet\\-natural\\-collection|https://kermitfloor\\.com/tr/spc\\-parke\\-natural\\-koleksiyonu)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/spc-parke-natural-koleksiyonu"
+            ],
+            "clicks": 17,
+            "impressions": 424,
+            "ctr": 0.04009433962264151,
+            "position": 8.63679245283019
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/spc-parke-tas-koleksiyonu"
+            ],
+            "clicks": 13,
+            "impressions": 457,
+            "ctr": 0.028446389496717725,
+            "position": 8.214442013129103
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-parquet-stone-collection"
+            ],
+            "clicks": 3,
+            "impressions": 151,
+            "ctr": 0.019867549668874173,
+            "position": 3.5298013245033113
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-parquet-natural-collection"
+            ],
+            "clicks": 2,
+            "impressions": 232,
+            "ctr": 0.008620689655172414,
+            "position": 7.116379310344827
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_existing_page_queries_latest28": {
+      "request": {
+        "dimensions": [
+          "page",
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-vs\\-laminate|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/is\\-spc\\-flooring\\-waterproof|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-suya\\-dayanikli\\-mi)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "is spc waterproof"
+            ],
+            "clicks": 1,
+            "impressions": 19,
+            "ctr": 0.05263157894736842,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "spc parke"
+            ],
+            "clicks": 1,
+            "impressions": 3,
+            "ctr": 0.3333333333333333,
+            "position": 8.666666666666668
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "ıslak zemin parke"
+            ],
+            "clicks": 1,
+            "impressions": 8,
+            "ctr": 0.125,
+            "position": 11.625
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "can spc flooring get wet"
+            ],
+            "clicks": 0,
+            "impressions": 20,
+            "ctr": 0,
+            "position": 3.85
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "es resistente al agua?"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "is spc flooring waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 72,
+            "ctr": 0,
+            "position": 7.319444444444445
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "islak zemin"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 28
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "kitchen"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring is waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 11,
+            "ctr": 0,
+            "position": 5.636363636363637
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring water resistant"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 4.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc laminate with water protection"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 21
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc laminates for high-moisture areas"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 19
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc water"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 5,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc waterproof flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc waterproofing"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 9
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spill proof flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 1.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "suya dayanıklı mı"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "to druhé"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 7
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "water resistance"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "what is waterproof spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "ще не придбала"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "怕水嗎"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "耐水"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "composite flooring vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 62.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "countertops spc laminate"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 28
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "difference between spc and laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 44
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "durable spc laminates"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 37
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "is spc flooring better than laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 35.666666666666664
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate flooring vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 44
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 31
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate vs spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 126,
+            "ctr": 0,
+            "position": 39.15079365079365
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminated flooring vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 47
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "low maintenance spc laminates"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 38
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "premium spc laminate sheets"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 27.75
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc floor vs laminate floor"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 30.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc flooring vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 33.333333333333336
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc flooring vs laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 32
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc flooring vs laminate vs hardwood"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 62
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate"
+            ],
+            "clicks": 0,
+            "impressions": 10,
+            "ctr": 0,
+            "position": 44.1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 51
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate for commercial reception"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 29
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate for showroom interiors"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 28
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate reviews"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 64.33333333333334
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 28.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate vs pvc film"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 57.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 43
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for commercial interiors"
+            ],
+            "clicks": 0,
+            "impressions": 22,
+            "ctr": 0,
+            "position": 4.454545454545455
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for countertops"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 28
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for interiors"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 27.125
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for kitchens"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 33.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for retail spaces"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 23.428571428571427
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc or laminate"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 35
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc or laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 37
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc surface laminates"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 59
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs hpl"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 42
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs hpl flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 30.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs hpl laminate"
+            ],
+            "clicks": 0,
+            "impressions": 9,
+            "ctr": 0,
+            "position": 28.22222222222222
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 27.428571428571427
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 39
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs laminate vs vinyl"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 51.333333333333336
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs vinyl vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 55
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs waterproof laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 39.666666666666664
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "laminat parke suya dayanıklı mıdır"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 10.25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "sağlam parke"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 24
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "sağlıklı parke"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "spc parke nedir"
+            ],
+            "clicks": 0,
+            "impressions": 5,
+            "ctr": 0,
+            "position": 26.8
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "su geçirmez parke"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 15.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "suya dayanıklı banyo parkesi"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 15
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "suya dayanıklı parke"
+            ],
+            "clicks": 0,
+            "impressions": 25,
+            "ctr": 0,
+            "position": 12.64
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "ıslak parke"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "ıslak zemin parkesi"
+            ],
+            "clicks": 0,
+            "impressions": 27,
+            "ctr": 0,
+            "position": 9.962962962962964
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+              "mutfak"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_release_organic_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-27",
+            "endDate": "2026-09-23"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/blog/spc-flooring-vs-laminate",
+                      "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+                      "/blog/is-spc-flooring-waterproof",
+                      "/tr/blog/spc-parke-suya-dayanikli-mi",
+                      "/blog/spc-lvt-wpc-vinyl-types",
+                      "/tr/blog/spc-lvt-wpc-vinil-cesitleri"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/blog/spc-parke-suya-dayanikli-mi"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_project_queries_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_manufacturer_queries_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri"
+            ],
+            "clicks": 2,
+            "impressions": 12,
+            "ctr": 0.16666666666666666,
+            "position": 2.333333333333333
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer"
+            ],
+            "clicks": 0,
+            "impressions": 17,
+            "ctr": 0,
+            "position": 18.352941176470587
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 35.75
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 9.571428571428571
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_project_allocation_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ distributor|spc\\ flooring\\ distributors|spc\\ flooring\\ dealer|spc\\ flooring\\ project\\ specification|flooring\\ finish\\ schedule|spc\\ flooring\\ colour|spc\\ flooring\\ color|spc\\ flooring\\ plank\\ size|spc\\ parke\\ bayilik|spc\\ parke\\ bayisi|spc\\ parke\\ şartnamesi|spc\\ parke\\ renk\\ seçimi|spc\\ parke\\ renkleri|spc\\ parke\\ ölçüleri)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_project_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/blog/kermit\\-floor\\-distributor\\-guide|/tr/blog/kermit\\-floor\\-bayi\\-rehberi|/blog/spc\\-interior\\-finishes\\-project\\-specification|/tr/blog/spc\\-ic\\-mekan\\-proje\\-sartnamesi|/blog/choose\\-spc\\-flooring\\-colour\\-format|/tr/blog/spc\\-parke\\-renk\\-format\\-secimi)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/resources|/tr/hakkimizda|/tr/kaynaklar)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 19,
+            "impressions": 359,
+            "ctr": 0.052924791086350974,
+            "position": 5.788300835654596
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 7,
+            "impressions": 460,
+            "ctr": 0.015217391304347827,
+            "position": 15.589130434782609
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/kaynaklar"
+            ],
+            "clicks": 2,
+            "impressions": 15,
+            "ctr": 0.13333333333333333,
+            "position": 23.466666666666665
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/resources"
+            ],
+            "clicks": 0,
+            "impressions": 20,
+            "ctr": 0,
+            "position": 15.6
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_channels_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-30",
+            "endDate": "2026-08-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "295"
+              },
+              {
+                "value": "186"
+              },
+              {
+                "value": "15"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "79"
+              },
+              {
+                "value": "45"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "11"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "5"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Paid Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "AI Assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 6,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_sources_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-30",
+            "endDate": "2026-08-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_lead_events_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-30",
+            "endDate": "2026-08-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "45"
+              },
+              {
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "14"
+              },
+              {
+                "value": "13"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_manufacturer_organic_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-30",
+            "endDate": "2026-08-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/about",
+                      "/resources",
+                      "/tr/hakkimizda",
+                      "/tr/kaynaklar"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/hakkimizda"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 3,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_technical_queries_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_technical_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-thickness\\-wear\\-layer\\-specification|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kalinlik\\-asinma\\-tabakasi|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-installation\\-planning|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-montaj\\-planlama|https://kermitfloor\\.com/blog/spc\\-flooring\\-heating\\-sunlight|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-yerden\\-isitma\\-gunes)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_article_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-manufacturer\\-turkey\\-buyers\\-checklist|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-ureticisi\\-secimi|https://kermitfloor\\.com/blog/oem\\-private\\-label\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/oem\\-ozel\\-marka\\-spc\\-parke|https://kermitfloor\\.com/blog/spc\\-flooring\\-samples\\-wholesale\\-quote|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-numune\\-toptan\\-teklif)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_care_queries_previous28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring kitchen"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 98
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_care_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ underlay|does\\ spc\\ flooring\\ need\\ underlay|spc\\ flooring\\ acoustic|how\\ to\\ clean\\ spc\\ flooring|spc\\ flooring\\ maintenance|spc\\ flooring\\ repair|spc\\ flooring\\ kitchen|spc\\ flooring\\ bedroom|spc\\ flooring\\ living\\ room|spc\\ parke\\ şilte|spc\\ parke\\ altına\\ şilte|spc\\ parke\\ temizliği|spc\\ parke\\ bakımı|spc\\ parke\\ tamiri|mutfakta\\ spc\\ parke|spc\\ parke\\ yatak\\ odası)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc flooring kitchen",
+              "https://kermitfloor.com/spc-flooring-elite-collection"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 98
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_care_pages_previous28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-underlay\\-acoustics|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-silte\\-akustik|https://kermitfloor\\.com/blog/kermit\\-spc\\-flooring\\-care\\-repair|https://kermitfloor\\.com/tr/blog/kermit\\-spc\\-parke\\-bakim\\-onarim|https://kermitfloor\\.com/blog/where\\-to\\-use\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-kullanim\\-alanlari)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_technical_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ thickness|spc\\ flooring\\ wear\\ layer|spc\\ flooring\\ installation|spc\\ flooring\\ underfloor\\ heating|spc\\ flooring\\ underlay|spc\\ flooring\\ sunlight|spc\\ parke\\ kalınlık|spc\\ parke\\ kalınlığı|spc\\ parke\\ aşınma\\ tabakası|spc\\ parke\\ montaj|spc\\ parke\\ montajı|spc\\ parke\\ yerden\\ ısıtma|spc\\ parke\\ şilte)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_content_organic_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-30",
+            "endDate": "2026-08-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/blog/spc-flooring-underlay-acoustics",
+                      "/tr/blog/spc-parke-silte-akustik",
+                      "/blog/kermit-spc-flooring-care-repair",
+                      "/tr/blog/kermit-spc-parke-bakim-onarim",
+                      "/blog/where-to-use-spc-flooring",
+                      "/tr/blog/spc-parke-kullanim-alanlari",
+                      "/blog/kermit-floor-distributor-guide",
+                      "/tr/blog/kermit-floor-bayi-rehberi",
+                      "/blog/spc-interior-finishes-project-specification",
+                      "/tr/blog/spc-ic-mekan-proje-sartnamesi",
+                      "/blog/choose-spc-flooring-colour-format",
+                      "/tr/blog/spc-parke-renk-format-secimi",
+                      "/blog/spc-flooring-thickness-wear-layer-specification",
+                      "/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+                      "/blog/kermit-spc-flooring-installation-planning",
+                      "/tr/blog/kermit-spc-parke-montaj-planlama",
+                      "/blog/spc-flooring-heating-sunlight",
+                      "/tr/blog/spc-parke-yerden-isitma-gunes",
+                      "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+                      "/tr/blog/spc-parke-ureticisi-secimi",
+                      "/blog/oem-private-label-spc-flooring",
+                      "/tr/blog/oem-ozel-marka-spc-parke",
+                      "/blog/spc-flooring-samples-wholesale-quote",
+                      "/tr/blog/spc-parke-numune-toptan-teklif"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_elite_page_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "type": "web",
+        "dataState": "final",
+        "dimensions": [
+          "page"
+        ],
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "equals",
+                "expression": "https://kermitfloor.com/spc-flooring-elite-collection"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-flooring-elite-collection"
+            ],
+            "clicks": 3,
+            "impressions": 140,
+            "ctr": 0.02142857142857143,
+            "position": 11.857142857142858
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_comparison_queries_previous28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ vs\\ laminate|laminate\\ vs\\ spc\\ flooring|spc\\ vs\\ laminate|spc\\ parke\\ mi\\ laminat\\ mı|spc\\ parke\\ mi\\ laminat\\ mi|spc\\ parke\\ laminat\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "laminate vs spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 146,
+            "ctr": 0,
+            "position": 37.1986301369863
+          },
+          {
+            "keys": [
+              "spc flooring vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 25.333333333333332
+          },
+          {
+            "keys": [
+              "spc vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 24,
+            "ctr": 0,
+            "position": 22.416666666666668
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_comparison_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ vs\\ laminate|laminate\\ vs\\ spc\\ flooring|spc\\ vs\\ laminate|spc\\ parke\\ mi\\ laminat\\ mı|spc\\ parke\\ mi\\ laminat\\ mi|spc\\ parke\\ laminat\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "laminate vs spc flooring",
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 146,
+            "ctr": 0,
+            "position": 37.1986301369863
+          },
+          {
+            "keys": [
+              "spc flooring vs laminate",
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 25.333333333333332
+          },
+          {
+            "keys": [
+              "spc vs laminate",
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 24,
+            "ctr": 0,
+            "position": 22.416666666666668
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_water_queries_previous28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(is\\ spc\\ flooring\\ waterproof|spc\\ flooring\\ water\\ resistance|spc\\ parke\\ suya\\ dayanıklı\\ mı|suya\\ dayanıklı\\ parke)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "suya dayanıklı parke"
+            ],
+            "clicks": 1,
+            "impressions": 82,
+            "ctr": 0.012195121951219513,
+            "position": 10.853658536585366
+          },
+          {
+            "keys": [
+              "is spc flooring waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 74,
+            "ctr": 0,
+            "position": 9.567567567567568
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_water_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(is\\ spc\\ flooring\\ waterproof|spc\\ flooring\\ water\\ resistance|spc\\ parke\\ suya\\ dayanıklı\\ mı|suya\\ dayanıklı\\ parke)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "suya dayanıklı parke",
+              "https://kermitfloor.com/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 1,
+            "impressions": 81,
+            "ctr": 0.012345679012345678,
+            "position": 10.851851851851851
+          },
+          {
+            "keys": [
+              "is spc flooring waterproof",
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 74,
+            "ctr": 0,
+            "position": 9.567567567567568
+          },
+          {
+            "keys": [
+              "suya dayanıklı parke",
+              "https://kermitfloor.com/tr/blog/tag/suya-dayan%C4%B1kl%C4%B1-parke"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 11
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_types_queries_previous28": {
+      "request": {
+        "dimensions": [
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ vs\\ lvt|spc\\ vs\\ wpc|lvt\\ vs\\ spc|spc\\ vs\\ vinyl|spc\\ lvt\\ farkı|spc\\ wpc\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_types_allocation_previous28": {
+      "request": {
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ vs\\ lvt|spc\\ vs\\ wpc|lvt\\ vs\\ spc|spc\\ vs\\ vinyl|spc\\ lvt\\ farkı|spc\\ wpc\\ farkı)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_release_pages_previous28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-vs\\-laminate|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/is\\-spc\\-flooring\\-waterproof|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-suya\\-dayanikli\\-mi|https://kermitfloor\\.com/blog/spc\\-lvt\\-wpc\\-vinyl\\-types|https://kermitfloor\\.com/tr/blog/spc\\-lvt\\-wpc\\-vinil\\-cesitleri)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 8,
+            "impressions": 856,
+            "ctr": 0.009345794392523364,
+            "position": 5.865654205607477
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 465,
+            "ctr": 0,
+            "position": 31.698924731182796
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 1.1428571428571428
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 7
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_definition_pages_previous28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/what\\-is\\-spc\\-flooring\\-vs\\-laminate\\-differences\\-benefits|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-nedir\\-laminat\\-farki\\-ve\\-avantajlari)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+            ],
+            "clicks": 21,
+            "impressions": 590,
+            "ctr": 0.03559322033898305,
+            "position": 7.142372881355932
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits"
+            ],
+            "clicks": 0,
+            "impressions": 94,
+            "ctr": 0,
+            "position": 11.180851063829786
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_stone_natural_pages_previous28": {
+      "request": {
+        "dimensions": [
+          "page"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/spc\\-parquet\\-stone\\-collection|https://kermitfloor\\.com/tr/spc\\-parke\\-tas\\-koleksiyonu|https://kermitfloor\\.com/spc\\-parquet\\-natural\\-collection|https://kermitfloor\\.com/tr/spc\\-parke\\-natural\\-koleksiyonu)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/spc-parke-natural-koleksiyonu"
+            ],
+            "clicks": 18,
+            "impressions": 545,
+            "ctr": 0.03302752293577982,
+            "position": 10.242201834862385
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/spc-parke-tas-koleksiyonu"
+            ],
+            "clicks": 15,
+            "impressions": 491,
+            "ctr": 0.03054989816700611,
+            "position": 8.674134419551935
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-parquet-stone-collection"
+            ],
+            "clicks": 3,
+            "impressions": 212,
+            "ctr": 0.014150943396226415,
+            "position": 6.863207547169812
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-parquet-natural-collection"
+            ],
+            "clicks": 1,
+            "impressions": 244,
+            "ctr": 0.004098360655737705,
+            "position": 13.508196721311476
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_existing_page_queries_previous28": {
+      "request": {
+        "dimensions": [
+          "page",
+          "query"
+        ],
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-vs\\-laminate|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/is\\-spc\\-flooring\\-waterproof|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-suya\\-dayanikli\\-mi)$"
+              }
+            ]
+          }
+        ],
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26"
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc панели для пола"
+            ],
+            "clicks": 1,
+            "impressions": 1,
+            "ctr": 1,
+            "position": 3
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "are spc real"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 10
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "artens rigid spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "can spc flooring get wet"
+            ],
+            "clicks": 0,
+            "impressions": 30,
+            "ctr": 0,
+            "position": 3.1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "dalle spc clipsable"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "dalles spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "how old is this"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "is spc flooring waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 74,
+            "ctr": 0,
+            "position": 9.567567567567568
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "is spc real"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "is spc waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 24,
+            "ctr": 0,
+            "position": 6.166666666666667
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "is this water proof?"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "los pisos spc son resistentes al agua"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "moisture resistant spc laminates"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 17.666666666666668
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "piso flotante spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "piso spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "piso spc opiniones"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "piso spc vs piso flotante"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "pisos spc precio perú"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "pisos spc ventajas y desventajas"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "resistente a agua"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "rigid xps foam board"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "si può bagnare?"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "sol pvc spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "sol spc avis"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring for outdoor"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring is waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring water resistant"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc flooring waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 10
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc laminate with water protection"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 22
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc vs vinyl flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc wall panels"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc wandpanelen badkamer"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc water"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 12
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc waterproofing"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc панели"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 9
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "spc плитка"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "sps паркет"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "suelo vinílico spc precio"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "waterproof spc"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "what are the disadvantages of spc flooring?"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "xps foam"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "xps foam board"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 3.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "è resistente all'acqua?"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "ламинат spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "نعم ارجوك"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+              "有災情嗎"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "difference between spc and laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 70
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "durable spc laminates"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 39.333333333333336
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "is spc flooring better than laminate"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 53
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminat spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 7
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate floor vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 23,
+            "ctr": 0,
+            "position": 41.391304347826086
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate flooring vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 43
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate spc"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 45
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 25,
+            "ctr": 0,
+            "position": 34.68
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminate vs spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 146,
+            "ctr": 0,
+            "position": 37.1986301369863
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminated flooring vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 45.333333333333336
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminated timber flooring vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 21,
+            "ctr": 0,
+            "position": 50.42857142857143
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "laminato vs spc"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 46
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "premium spc laminate sheets"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 25.625
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc flooring vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 25.333333333333332
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc flooring vs laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 40
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc flooring vs laminate vs hardwood"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 59
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 27.25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate for showroom interiors"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 29.25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate reviews"
+            ],
+            "clicks": 0,
+            "impressions": 5,
+            "ctr": 0,
+            "position": 45.8
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate sheets"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 27.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate vs acrylic laminate"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 29.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 10,
+            "ctr": 0,
+            "position": 26.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminate vs pvc film"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 55.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 29
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for commercial interiors"
+            ],
+            "clicks": 0,
+            "impressions": 18,
+            "ctr": 0,
+            "position": 5.111111111111111
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for countertops"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 29
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for interiors"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 25
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for modular furniture"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 24
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for office furniture"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 30
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc laminates for retail spaces"
+            ],
+            "clicks": 0,
+            "impressions": 12,
+            "ctr": 0,
+            "position": 23.833333333333332
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc or laminate"
+            ],
+            "clicks": 0,
+            "impressions": 12,
+            "ctr": 0,
+            "position": 30.666666666666668
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc or laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 29.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs hpl laminate"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 29.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 24,
+            "ctr": 0,
+            "position": 22.416666666666668
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs laminate flooring"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 28.666666666666668
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs vinyl vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 49.75
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "spc vs waterproof laminate"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 39.125
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "what is spc flooring vs laminate"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 50
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "which one is better for office use"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+              "white spc laminate"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 29.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "su gecirir mi"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_release_organic_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-07-30",
+            "endDate": "2026-08-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/blog/spc-flooring-vs-laminate",
+                      "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+                      "/blog/is-spc-flooring-waterproof",
+                      "/tr/blog/spc-parke-suya-dayanikli-mi",
+                      "/blog/spc-lvt-wpc-vinyl-types",
+                      "/tr/blog/spc-lvt-wpc-vinil-cesitleri"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/blog/is-spc-flooring-waterproof"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_post_consent_daily": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-09-22",
+            "endDate": "2026-09-24"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "date"
+          },
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "date"
+          },
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "20260922"
+              },
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "6"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "9"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "Cross-network"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260922"
+              },
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 11,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_changed_redirect_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-27",
+        "endDate": "2026-09-23",
+        "dimensions": [
+          "page"
+        ],
+        "type": "web",
+        "dataState": "final",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-vs\\-laminate|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/is\\-spc\\-flooring\\-waterproof|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-suya\\-dayanikli\\-mi|https://kermitfloor\\.com/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/spc\\-parke\\-suya\\-dayanikli\\-mi)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 5,
+            "impressions": 691,
+            "ctr": 0.00723589001447178,
+            "position": 5.024602026049204
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 5,
+            "impressions": 200,
+            "ctr": 0.025,
+            "position": 9.23
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 1,
+            "impressions": 75,
+            "ctr": 0.013333333333333334,
+            "position": 8.986666666666666
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-parke-vs-laminat-karsilastirma"
+            ],
+            "clicks": 1,
+            "impressions": 18,
+            "ctr": 0.05555555555555555,
+            "position": 8.222222222222221
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 299,
+            "ctr": 0,
+            "position": 33.36789297658863
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+            ],
+            "clicks": 0,
+            "impressions": 10,
+            "ctr": 0,
+            "position": 4.9
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_changed_redirect_pages_previous28": {
+      "request": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-08-26",
+        "dimensions": [
+          "page"
+        ],
+        "type": "web",
+        "dataState": "final",
+        "rowLimit": 25000,
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-vs\\-laminate|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/is\\-spc\\-flooring\\-waterproof|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-suya\\-dayanikli\\-mi|https://kermitfloor\\.com/blog/spc\\-parke\\-vs\\-laminat\\-karsilastirma|https://kermitfloor\\.com/blog/spc\\-parke\\-suya\\-dayanikli\\-mi)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 8,
+            "impressions": 856,
+            "ctr": 0.009345794392523364,
+            "position": 5.865654205607477
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 2,
+            "impressions": 257,
+            "ctr": 0.007782101167315175,
+            "position": 9.669260700389104
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-parke-vs-laminat-karsilastirma"
+            ],
+            "clicks": 2,
+            "impressions": 52,
+            "ctr": 0.038461538461538464,
+            "position": 13.134615384615385
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-vs-laminate"
+            ],
+            "clicks": 0,
+            "impressions": 465,
+            "ctr": 0,
+            "position": 31.698924731182796
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 1.1428571428571428
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 7
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    }
+  },
+  "prelaunch_url_check": {
+    "checked_at": "2026-09-25T12:57:33.968582+00:00",
+    "cache_control": "no-cache",
+    "results": [
+      {
+        "path": "/blog/spc-flooring-vs-laminate",
+        "status": 200,
+        "html_sha256": "181813995f131d0ae63f2d9f79d7c167b03fa9edd3ff41bd63e40cc89ecfc90a"
+      },
+      {
+        "path": "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+        "status": 200,
+        "html_sha256": "8c347337e76b79062ff648b70b3d17f134804140229de362df74e98d292577d0"
+      },
+      {
+        "path": "/blog/is-spc-flooring-waterproof",
+        "status": 200,
+        "html_sha256": "14ea105315e90670dc461a00e6734fa30b8c611efe8e97f7874edd12107594a5"
+      },
+      {
+        "path": "/tr/blog/spc-parke-suya-dayanikli-mi",
+        "status": 200,
+        "html_sha256": "0faddf10bc50db14d4a8dc4e610459aafef357e8ea0a2c62b753c16160dfb317"
+      },
+      {
+        "path": "/blog/spc-lvt-wpc-vinyl-types",
+        "status": 404,
+        "html_sha256": "4f9b6d423be72c40d290fb729cece6b82651a17aee3e2079444f106ac3b9c2b1"
+      },
+      {
+        "path": "/tr/blog/spc-lvt-wpc-vinil-cesitleri",
+        "status": 404,
+        "html_sha256": "322d1f9d92b41f1790ea5fbf7663dd9eb92197bf6ad389e0410ae3b2baf3c7e5"
+      }
+    ]
+  },
+  "measurement_caveat": "GA4 windows can cross September 21 consent repair. Exclude that partial day in post-repair comparisons; the September 22–24 daily supplement is descriptive and too short for an outcome verdict. GSC dates are Pacific; GA4 Europe/Istanbul.",
+  "redirect_overlap_paths": [
+    "/blog/spc-flooring-vs-laminate",
+    "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+    "/blog/is-spc-flooring-waterproof",
+    "/tr/blog/spc-parke-suya-dayanikli-mi",
+    "/blog/spc-parke-vs-laminat-karsilastirma",
+    "/blog/spc-parke-suya-dayanikli-mi"
+  ],
+  "supplement_fetched_at": "2026-09-25T13:14:19.595660+00:00",
+  "prelaunch_redirect_index_inspection": {
+    "checked_at": "2026-09-25T13:18:30.638709+00:00",
+    "results": [
+      {
+        "path": "/tr/blog/spc-parke-vs-laminat-karsilastirma",
+        "request": {
+          "inspectionUrl": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+          "siteUrl": "sc-domain:kermitfloor.com",
+          "languageCode": "en-US"
+        },
+        "response": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:kermitfloor.com&id=xvzKEswDNICBp7052aCtyQ&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "PASS",
+              "coverageState": "Submitted and indexed",
+              "robotsTxtState": "ALLOWED",
+              "indexingState": "INDEXING_ALLOWED",
+              "lastCrawlTime": "2026-09-06T04:00:02Z",
+              "pageFetchState": "SUCCESSFUL",
+              "googleCanonical": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+              "userCanonical": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+              "referringUrls": [
+                "https://kermitfloor.com/blog/spc-parke-vs-laminat-karsilastirma",
+                "http://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+              ],
+              "crawledAs": "MOBILE"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      },
+      {
+        "path": "/blog/spc-parke-vs-laminat-karsilastirma",
+        "request": {
+          "inspectionUrl": "https://kermitfloor.com/blog/spc-parke-vs-laminat-karsilastirma",
+          "siteUrl": "sc-domain:kermitfloor.com",
+          "languageCode": "en-US"
+        },
+        "response": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:kermitfloor.com&id=4tCQVAV1P1sj9amwpTlIfg&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Page with redirect",
+              "robotsTxtState": "ALLOWED",
+              "indexingState": "INDEXING_ALLOWED",
+              "lastCrawlTime": "2026-09-08T11:00:57Z",
+              "pageFetchState": "SUCCESSFUL",
+              "googleCanonical": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+              "userCanonical": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+              "crawledAs": "MOBILE"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      },
+      {
+        "path": "/tr/blog/spc-parke-suya-dayanikli-mi",
+        "request": {
+          "inspectionUrl": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+          "siteUrl": "sc-domain:kermitfloor.com",
+          "languageCode": "en-US"
+        },
+        "response": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:kermitfloor.com&id=hoWlY47tToVV3uhWZ8yEFA&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "PASS",
+              "coverageState": "Submitted and indexed",
+              "robotsTxtState": "ALLOWED",
+              "indexingState": "INDEXING_ALLOWED",
+              "lastCrawlTime": "2026-09-07T00:56:27Z",
+              "pageFetchState": "SUCCESSFUL",
+              "googleCanonical": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "userCanonical": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "referringUrls": [
+                "https://kermitfloor.com/blog/spc-parke-suya-dayanikli-mi",
+                "https://kermitfloor.com/tr/blog/tag/suya-dayan%C4%B1kl%C4%B1-parke"
+              ],
+              "crawledAs": "MOBILE"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      },
+      {
+        "path": "/blog/spc-parke-suya-dayanikli-mi",
+        "request": {
+          "inspectionUrl": "https://kermitfloor.com/blog/spc-parke-suya-dayanikli-mi",
+          "siteUrl": "sc-domain:kermitfloor.com",
+          "languageCode": "en-US"
+        },
+        "response": {
+          "inspectionResult": {
+            "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:kermitfloor.com&id=Xj7fmjXzyz7FenYuIu0K6g&utm_medium=link&utm_source=api",
+            "indexStatusResult": {
+              "verdict": "NEUTRAL",
+              "coverageState": "Page with redirect",
+              "robotsTxtState": "ALLOWED",
+              "indexingState": "INDEXING_ALLOWED",
+              "lastCrawlTime": "2026-09-05T01:49:33Z",
+              "pageFetchState": "SUCCESSFUL",
+              "googleCanonical": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "userCanonical": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+              "referringUrls": [
+                "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+              ],
+              "crawledAs": "MOBILE"
+            },
+            "mobileUsabilityResult": {
+              "verdict": "VERDICT_UNSPECIFIED"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

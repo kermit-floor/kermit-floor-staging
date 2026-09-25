@@ -52,7 +52,10 @@
     "title": "SPC and laminate compared",
     "angle": "Expand the very short existing comparison instead of creating another competing URL.",
     "outline": "Compare construction, intended rooms, subfloor, maintenance and replacement honestly. Link the waterproof guide and use Kermit examples; add actual installed costs only when supplied.",
-    "evidence": "Latest exact query laminate vs spc flooring: 150 impressions at average position 38.45. Existing body is approximately 123 words."
+    "evidence": "Expanded the existing short EN/TR comparison with product-specific construction, water-use limits, installation, performance evidence and complete quotation scope. Kermit PDFs plus primary EPLF/Quick-Step sources.",
+    "status": "prepared",
+    "topic_id": "spc-flooring-vs-laminate",
+    "release_record": "2026-09-25-comparison-content-launch.md"
   },
   {
     "id": "WATER",
@@ -63,7 +66,10 @@
     "title": "Water resistance and room suitability",
     "angle": "Improve a topic that already has measurable Kermit search demand.",
     "outline": "Explain the difference between a water-resistant plank and a waterproofed room, deal with spills and subfloor moisture, and preserve Kermit's bathroom-floor limits.",
-    "evidence": "Latest exact is spc flooring waterproof: 79 impressions, position 8.90. Reuse current Kermit guidance."
+    "evidence": "Revised existing EN/TR guides around damp cleaning, prompt spill removal, bathroom/wet-area limits, substrate moisture and leak assessment using the actual Kermit manual.",
+    "status": "prepared",
+    "topic_id": "spc-flooring-waterproof-guide",
+    "release_record": "2026-09-25-comparison-content-launch.md"
   },
   {
     "id": "MIST",
@@ -293,7 +299,10 @@
     "title": "SPC, LVT, WPC and vinyl terminology",
     "angle": "Consolidate overlapping acronyms and rigid/flexible comparisons into one guide.",
     "outline": "Use a clear category table, product-specific trade-offs and accurate material relationships. Link the existing SPC definition rather than repeat its full introduction.",
-    "evidence": "Do not imply Kermit manufactures every category or repeat blanket flexible-LVT water claims."
+    "evidence": "New EN/TR guide explains overlapping RFCI/MMFA vinyl classifications and compares product records using Kermit’s scoped 6 mm no-IXPE sheet. No implied Kermit LVT/WPC range or universal performance ranking.",
+    "status": "prepared",
+    "topic_id": "spc-lvt-wpc-vinyl-types",
+    "release_record": "2026-09-25-comparison-content-launch.md"
   },
   {
     "id": "MATERIALS",

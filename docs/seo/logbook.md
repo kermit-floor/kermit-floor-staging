@@ -54,6 +54,13 @@ Review cadence (batch of 2026-08-14/16):
   October 27 content effects and November 2 aggregate AI only; retain November 2 wall-panel
   outcomes and September 21 consent/office-specific operational dates.
 
+- **2026-09-25 content continuation** — comparison/water revisions and one new terminology
+  pair: October 9 indexing/recrawl, October 23 rankings/snippets, November 6 combined effects.
+  November 6 applies to affected technical/care/Resources links, Stone collection and revised
+  redirect subsets, plus aggregate AI/content outcomes. Project primary GSC and Elite remain
+  November 3; wall-panel outcomes remain November 2. Preserve unrelated September 27 and
+  September 21 consent/office-specific dates. See the new entry for exact scope.
+
 Parallel changes: new work may ship while experiments are PENDING, but only after the
 interference check in `docs/seo/README.md` (Change interference): disjoint scope ships
 freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
@@ -100,6 +107,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   wall-panel effect November 2; preserve the pre-release and unaffected September 27 checks.
 
 ### [2026-09-21] Analytics consent ordering repair — commit 0e7cbf5
+- **2026-09-25 content interference / current treatment**: New/revised content adds discovery and enquiry exposure. Aggregate AI/content effects use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined review. Keep September 28 correctness, October 5 desktop and October 21 conversions; preserve the September 21 measurement break.
 - **2026-09-22 content interference / current treatment**: Six care/use articles add content and contact opportunities. Aggregate AI/content effects now use the [September 22 cohort](baselines/2026-09-22-care-content.md) with **November 3** combined review. September 28 correctness, October 5 desktop and October 21 conversion checks retain their dates and the September 21 measurement break.
 - **Change**: grant accepted consent and configure GA before mounting the page tracker;
   block manual lead/page events immediately on rejection and resume after reacceptance.
@@ -129,6 +137,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   effect on GA4 completeness and desktop trends remains PENDING.
 
 ### [2026-09-21] Germany representative on bilingual contact pages — commit 0e7cbf5
+- **2026-09-25 content interference / current treatment**: Annotate aggregate contact readings with the [comparison/water/terminology cohort](content-strategy/2026-09-25-comparison-content-launch.md). Keep the office-specific October 21 metric and baseline; no contact-page or event-code changes.
 - **2026-09-22 content interference / current treatment**: Six new care/use articles add contact opportunities. Keep the Germany-office-specific October 21 metric and baseline; annotate aggregate contact/lead readings with this [content cohort](content-strategy/2026-09-22-care-content-launch.md). No office or event code changes.
 - **Change**: IQBody GmbH, representative Suat Altun, Ströherstraße 14D, 36088 Hünfeld,
   and +49 1714071718 on English/Turkish contact pages; click-to-call uses existing
@@ -152,6 +161,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   actual enquiry impact remains PENDING.
 
 ### [2026-08-14] GA4 lead tracking (generate_lead + file_download key events) — commit ae721ed
+- **2026-09-25 content interference / current treatment**: New/revised guides add document/contact opportunities. Preserve WORKED instrumentation and the operational schedule. Record the [comparison/water/terminology cohort](content-strategy/2026-09-25-comparison-content-launch.md) and consent break in aggregate counts; combined AI/content outcome is November 6, without inferring qualified leads.
 - **2026-09-22 content interference / current treatment**: Six new care/use articles add document and enquiry opportunities. Preserve WORKED instrumentation and September 24 operations; mark the [new cohort](content-strategy/2026-09-22-care-content-launch.md) and existing September 21 consent break in aggregate counts. Combined AI/content effects use November 3, not an isolated lead-growth claim.
 - **Additional September 21 navigation confound**: the two Turkish wall-panel
   article links now explicitly target the Turkish product; [scope](baselines/2026-09-21-wall-panel-links.md).
@@ -229,6 +239,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   [September 21 review](reviews/2026-09-21.md).
 
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
+- **2026-09-25 content interference / current treatment**: New/revised comparison, water and terminology content overlaps aggregate discovery. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined AI outcome, superseding November 3 for this metric. Preserve the September 21 consent break and historical verdicts.
 - **2026-09-22 content interference / current treatment**: New underlay/care/room content adds discovery opportunities. Re-baseline the aggregate AI-referral outcome to the [September 22 snapshot](baselines/2026-09-22-care-content.md); **November 3** combined review supersedes November 2 for this metric. Preserve the September 21 consent measurement break and historical verdicts.
 - **Additional September 21 navigation confound**: the two Turkish wall-panel
   article links now explicitly target the Turkish product; [scope](baselines/2026-09-21-wall-panel-links.md).
@@ -298,6 +309,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   [September 21 review](reviews/2026-09-21.md).
 
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
+- **2026-09-25 content interference / current treatment**: Rewritten/localized water-guide links affect Stone EN/TR incoming-link exposure. Re-baseline only that all-query collection subset to the [September 25 baseline](baselines/2026-09-25-comparison-content.md) for **November 6** combined effects. Keep schema correctness, other September 27 collections, November 3 Elite and November 2 wall-panel subsets. Product/schema code is unchanged.
 - **2026-09-22 narrow content overlap**: the new room guide targets `spc flooring kitchen`,
   which previously had one impression on English Elite. Re-baseline that allocation and
   Elite's all-query secondary reading to the [new snapshot](baselines/2026-09-22-care-content.md)
@@ -370,6 +382,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   [September 21 review](reviews/2026-09-21.md).
 
 ### [2026-08-15] Localized collection H1s — commit 8daf750
+- **2026-09-25 content interference / current treatment**: Rewritten/localized water-guide links affect Stone EN/TR incoming-link exposure. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** for that subset’s combined outcome; preserve original snapshots, other September 27 collections, November 3 Elite and November 2 wall-panel subsets. No H1 or collection-data change.
 - **2026-09-22 narrow content overlap**: the new room guide targets `spc flooring kitchen`,
   which previously had one impression on English Elite. Re-baseline that allocation and
   Elite's all-query secondary reading to the [new snapshot](baselines/2026-09-22-care-content.md)
@@ -411,6 +424,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Blog alternate-locale redirects 307→308 — commit 8daf750
+- **2026-09-25 content interference / current treatment**: Existing comparison/water EN/TR content and metadata are revised. Their two Turkish canonical/alias pairs now use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined search outcome. September 27 may read this subset through September 24 as pre-release evidence. Other redirect subsets keep their dates, including November 2 wall panels; verify existing and new 308 behavior independently.
 - **2026-09-21 wall-panel link interference**: two Turkish article body links now
   explicitly target the Turkish product. Owner authorized shipping before September
   27. Re-baseline only the overlapping wall-panel components to the [new checkpoint](baselines/2026-09-21-wall-panel-links.md),
@@ -443,6 +457,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] llms.txt — commit 8daf750
+- **2026-09-25 content interference / current treatment**: New/revised comparison, water and terminology content overlaps aggregate discovery. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined AI outcome, superseding November 3 for this metric. Preserve the September 21 consent break and historical verdicts.
 - **2026-09-22 content interference / current treatment**: New underlay/care/room content adds discovery opportunities. Re-baseline the aggregate AI-referral outcome to the [September 22 snapshot](baselines/2026-09-22-care-content.md); **November 3** combined review supersedes November 2 for this metric. Preserve the September 21 consent measurement break and historical verdicts.
 - **Additional September 21 navigation confound**: the two Turkish wall-panel
   article links now explicitly target the Turkish product; [scope](baselines/2026-09-21-wall-panel-links.md).
@@ -756,6 +771,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   this operational pass is not a search-ranking verdict.
 
 ### [2026-09-13] Manufacturer purchasing guides and product documents — commit d10e888
+- **2026-09-25 content interference / current treatment**: Additional Resources/document/contact opportunities overlap secondary combined outcomes. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6**, retaining original purchasing-query targets, September 27 indexing and October 11 interim rankings. Preserve the consent break.
 - **2026-09-22 content interference / current treatment**: New Resources/document/enquiry links overlap secondary and combined content/link outcomes. Use the [September 22 baseline](baselines/2026-09-22-care-content.md) and **November 3** combined review, superseding October 27 GSC combined effects and November 2 aggregate AI. Retain original purchasing-query baselines, September 27 indexing and October 11 interim ranking reads; preserve the consent measurement break.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -934,6 +950,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   six-page/26-answer technical baseline fixed; validate the new cohort separately.
 
 ### [2026-09-14] Technical specification, installation and heating guides — commit 97d45e7
+- **2026-09-25 content interference / current treatment**: New contextual incoming links overlap this six-page content cohort. Re-baseline the original 13-query/page and combined metrics to the [September 25 baseline](baselines/2026-09-25-comparison-content.md) with **November 6** combined follow-up. Keep September 28 indexing and October 12 interim rankings; preserve the consent break.
 - **2026-09-22 content interference / current treatment**: New incoming technical-guide links and exact `spc flooring underlay` / `spc parke şilte` targets overlap. Re-baseline the original 13-query/six-page cohort with the [September 22 snapshot](baselines/2026-09-22-care-content.md) for **November 3** combined content/link effects (supersedes October 27; aggregate AI also supersedes November 2). Keep September 28 indexing and October 12 interim rankings; preserve the consent measurement break.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -1016,6 +1033,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   [September 21 review](reviews/2026-09-21.md).
 
 ### [2026-09-15] Distributor, project and colour-selection guides — commit 3d01b51
+- **2026-09-25 content interference / current treatment**: The [comparison/water/terminology cohort](content-strategy/2026-09-25-comparison-content-launch.md) adds no direct links or fixed target-query overlap with this group. Keep **November 3 primary GSC** and September 29/October 13 checkpoints. Its shared aggregate AI/content secondary outcome includes September 25 and uses November 6, preserving the consent break.
 - **2026-09-22 content interference / current treatment**: New incoming project/design links overlap these content/link outcomes. Re-baseline the original 14-query/six-page cohort with the [September 22 snapshot](baselines/2026-09-22-care-content.md); **November 3** combined effects supersede October 27 and November 2 aggregate AI. Keep September 29 indexing and October 13 interim rankings; preserve the consent measurement break.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -1091,6 +1109,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   [September 21 review](reviews/2026-09-21.md).
 
 ### [2026-09-22] Underlay, care and room-selection guides — commit d3e770e
+- **2026-09-25 content interference / current treatment**: New contextual incoming links overlap all three topic pairs. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** for combined content/link and aggregate AI effects, superseding November 3 for those measures. Keep October 6 indexing and October 20 interim rankings; preserve the consent break.
 - **Change**: three original EN/TR pairs (six URLs), 24 visible FAQ answers and existing
   collection covers. Underlay/assembly approval, care/repair enquiries and room conditions
   use actual Kermit manuals. [Scope and every-entry interference check](content-strategy/2026-09-22-care-content-launch.md).
@@ -1133,6 +1152,42 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   processing pending. No indexing or ranking result is inferred.
 - **Action**: keep the fourth batch live; UNDERLAY, CARE and ROOMS are published in the map.
   Use October 6, October 20 and November 3 checks; remaining work keeps its evidence needs.
+
+### [2026-09-25] Comparison, water resistance and vinyl terminology — prepared release
+- **Change**: substantially expand the existing SPC/laminate and water-resistance EN/TR pairs,
+  and add an original SPC/LVT/WPC terminology pair. Six affected pages, two new URLs,
+  24 visible/schema FAQ answers; 48 articles across 24 topics. Preserve existing slugs,
+  publication dates, tags, authors and cover paths. [Scope and every-entry interference check](content-strategy/2026-09-25-comparison-content-launch.md).
+- **Hypothesis**: useful product-specific comparisons and precise water-use guidance improve
+  query relevance and help readers reach the applicable Kermit documents; the terminology
+  guide resolves overlapping labels without duplicating the existing SPC introduction.
+- **Primary metric + baseline**: fixed 16-query impression/position and query-to-page allocation
+  trends, recrawl/indexing of six affected URLs, then page CTR where exposure permits.
+  [Fresh 61-report baseline](baselines/2026-09-25-comparison-content.md): comparison queries
+  **0 clicks / 137 impressions / 38.61** vs **0/173/34.94**; water queries **1/114/9.04** vs
+  **1/156/10.24**; terminology queries have no rows in either window. Four existing canonical
+  pages total **10/1,200/12.79** vs **8/1,329/14.88**. New URLs return 404 before release.
+- **Secondary metrics**: document/contact and organic landing opportunities, original linked
+  technical/care/Resources cohorts, Stone collection subset, revised canonical/alias mixture,
+  and fixed AI Assistant referrals. GA4 latest 28 days cross September 21's consent repair:
+  do not treat **14 vs 1 AI sessions** as a clean content growth result or a citation count.
+- **Interference treatment**: re-baseline affected technical/care/Resources and aggregate AI
+  outcomes to September 25 with November 6 review and matching parent notes. New Stone
+  links and revised Turkish comparison/water canonical/alias pairs also use November 6.
+  Keep pre-release September 27 reads for those subsets through September 24. Preserve other
+  September 27 cohorts, prior indexing/interim checks, November 3 project-primary/Elite,
+  November 2 wall panels and consent/office-specific dates. No shared template, sitemap
+  generation, product, document or tracking change. All 42 other article records and all
+  46 original related-post cohorts remain unchanged.
+- **Review due**: **2026-10-09 indexing/recrawl**, **2026-10-23 rankings/snippets**, and
+  **2026-11-06 combined content/link/AI effects** for the affected cohorts.
+- **Validation**: production build, text/blog validation, FAQ manifest and typecheck pass.
+  Local verification covers 48 articles, 24 affected FAQ answers, 46 internal destinations,
+  54 image/PDF byte comparisons and 12 desktop/mobile views. No indexing/ranking verdict
+  follows from implementation checks. Deployment and production proof follow publication.
+- **Verdict**: PENDING.
+- **Action**: finish authorized publication and verify production, then retain the recorded
+  comparison windows and evidence requirements for remaining strategy topics.
 
 ## Queued (owner-planned, not yet experiments)
 
