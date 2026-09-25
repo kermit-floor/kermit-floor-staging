@@ -17,6 +17,8 @@ shipping. The selected skill determines when to read experiment history.
 
 Production domain: `https://kermitfloor.ro`; Romanian default and English `/en`.
 GA4 property **555914779**, web stream **15844361909**, measurement **G-9FMGLPBL5C**.
+Search Console domain property: **sc-domain:kermitfloor.ro**, DNS verified;
+sitemap `https://kermitfloor.ro/sitemap.xml` submitted September 25.
 Use this property for Romania-site reporting. The existing ADC service account currently
 has access only to the international property; use the signed-in Analytics dashboard
 for Romania until access is explicitly arranged. Do not silently substitute `.com` data.

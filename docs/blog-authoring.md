@@ -1,3 +1,9 @@
+> Romania branch: author paired **RO/EN** posts (`ro.mdx` and `en.mdx`). Romanian
+> is the unprefixed default, English uses `/en`; there is no Turkish edition here.
+> Use `src/i18n/pathnames.json` for Romanian static paths. The inherited EN/TR examples
+> below refer to the international branch; apply the RO/EN pairing on this branch.
+> `npm run blog:new`, validation and manifest generation already enforce RO/EN.
+
 # Blog Authoring Checklist
 
 ## Create a new topic

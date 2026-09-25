@@ -75,7 +75,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 - **Interference**: Ship and re-baseline Romania-country components to November 6. Every inherited open entry carries the release marker; all other .com scopes preserve their original dates. English topic overlap across domains is a confound, not proof of incremental demand.
 - **Review due**: October 9 indexing, October 23 interim rankings, November 6 combined structural/cross-domain outcome. Weekly measurement checks; conversion assessment October 25 at the earliest.
 - **Validation**: TypeScript and production/OpenNext builds pass; all 16 RO/EN desktop/mobile consent regressions pass. Public route/canonical/contact and browser verification is recorded in the launch record.
-- **Deployment / verification**: Deployment pending final release checks; update this entry after production verification.
+- **Deployment / verification**: Deployed to the independent `kermit-floor-ro` Worker, initial version `9d7bd9d7-8da5-4623-ae01-9e7742671feb`. All 185 production sitemap URLs pass language/canonical/contact assertions; Turkish paths are 404, www redirects, and R2 PDF download works. Separate `romania` Git deployment connected; Search Console domain verified and sitemap accepted. [Launch record](../romania-launch.md).
 - **Verdict**: PENDING SEO and conversion effect.
 - **Action**: Launch the independent Romanian edition; preserve .com and measure the two domains separately.
 

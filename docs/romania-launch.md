@@ -50,5 +50,25 @@ with no invented monetary value. Analytics remains gated by consent.
 - Site route validation: `python3 scripts/check-romania-site.py https://kermitfloor.ro`.
 - Desktop browser: Romanian layout and RO/EN switch verified.
 
-Deployment version, CI connection and final production checks will be recorded here
-when deployment is complete.
+Initial production release: Cloudflare version `9d7bd9d7-8da5-4623-ae01-9e7742671feb`,
+September 25 at approximately 13:42 UTC. Both custom domains are attached. Public
+HTTPS checks pass for all **185 sitemap URLs**, their language/canonical/contact
+assertions, `/tr` and `/tr/iletisim` (404), robots and llms files. `www` returns a 301
+preserving the English path. The R2 catalogue returns PDF, 43,858,043 bytes and
+range support. The .com homepage and Turkish edition remain available separately.
+
+Cloudflare Git integration is connected to `kermit-floor/kermit-floor-staging`,
+production branch **romania**, root `/`, build `npm run cf:build`, deploy
+`npm run cf:deploy`, preview builds disabled. The existing build-token integration
+is reused; no account permissions were expanded. The next documentation push
+exercises the first automatic build, including removal of the unrelated international
+Analytics integration pages from this edition.
+
+Search Console domain property **sc-domain:kermitfloor.ro** is DNS-verified under
+the owner's existing Google account. `https://kermitfloor.ro/sitemap.xml` was
+submitted successfully. The public verification TXT record must remain in DNS.
+Indexing takes time; successful submission is not an indexing claim.
+
+GitHub Blog Guardrails passed for the initial release commit `1703c5c`.
+The main checkout contains a separate local September 25 SEO review; this task did
+not edit or commit those files. Only the Romanian checkout was changed by this task.
