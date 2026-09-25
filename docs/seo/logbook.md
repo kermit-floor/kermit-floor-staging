@@ -1153,7 +1153,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 - **Action**: keep the fourth batch live; UNDERLAY, CARE and ROOMS are published in the map.
   Use October 6, October 20 and November 3 checks; remaining work keeps its evidence needs.
 
-### [2026-09-25] Comparison, water resistance and vinyl terminology — prepared release
+### [2026-09-25] Comparison, water resistance and vinyl terminology — commit 23b91d9
 - **Change**: substantially expand the existing SPC/laminate and water-resistance EN/TR pairs,
   and add an original SPC/LVT/WPC terminology pair. Six affected pages, two new URLs,
   24 visible/schema FAQ answers; 48 articles across 24 topics. Preserve existing slugs,
@@ -1184,10 +1184,20 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 - **Validation**: production build, text/blog validation, FAQ manifest and typecheck pass.
   Local verification covers 48 articles, 24 affected FAQ answers, 46 internal destinations,
   54 image/PDF byte comparisons and 12 desktop/mobile views. No indexing/ranking verdict
-  follows from implementation checks. Deployment and production proof follow publication.
+  follows from implementation checks. Production results are recorded below.
 - **Verdict**: PENDING.
-- **Action**: finish authorized publication and verify production, then retain the recorded
-  comparison windows and evidence requirements for remaining strategy topics.
+- **Deployment**: content commit **23b91d9**, Cloudflare build **a014076c-958a-488b-bed3-b24491eed5f1**,
+  completed **2026-09-25T13:24:36Z**, Worker version **db058fd4-a785-4275-9a8e-9eb5921d30c1**. GitHub blog checks passed.
+  Measurement boundary: GSC: exclude 2026-09-25, first full day 2026-09-26; GA4: exclude 2026-09-25, first full day 2026-09-26.
+- **Production verification**: all 48 articles, 24 affected FAQ answers, 46 internal destinations,
+  54 image/PDF byte comparisons, 12 desktop/mobile views and three 308 aliases pass.
+  [Live evidence](content-strategy/2026-09-25-comparison-content-production-verification.json).
+  New EN/TR terminology articles appear in their locale listings. Parsed sitemap adds one
+  English article loc and two alternates; existing TR standalone-loc limitation remains.
+- **Sitemap submission**: Google accepted HTTP **204**, `lastSubmitted` **2026-09-25T13:27:42.188Z**,
+  processing pending `true`. This is not indexing proof.
+- **Action**: keep the fifth batch live. CMP/WATER are revised and TYPES published in the map;
+  retain October 9/23 and November 6 reads, plus evidence requirements for remaining topics.
 
 ## Queued (owner-planned, not yet experiments)
 

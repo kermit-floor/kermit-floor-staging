@@ -86,8 +86,29 @@ pass. Verification covers **48 articles**, **24 affected FAQ answers**, **46 int
 46 unchanged related-post cohorts. Screenshots are inspected for covers and table wrapping.
 
 Publication follows the existing GitHub main → Cloudflare pipeline. Post-deployment evidence
-and sitemap submission will be appended after the live checks; deployment does not establish
-indexing, ranking gains or chatbot citations.
+and sitemap submission are recorded below; deployment does not establish indexing, ranking
+gains or chatbot citations.
 
 Reviews: **October 9 indexing/recrawl**, **October 23 rankings/snippets**, **November 6 combined
 content/link outcomes**. Earlier unaffected checkpoints retain their dates.
+
+## Published result
+
+Content commit **23b91d9** deployed successfully at **2026-09-25T13:24:36Z**, Cloudflare build
+**a014076c-958a-488b-bed3-b24491eed5f1**, Worker version **db058fd4-a785-4275-9a8e-9eb5921d30c1**. GitHub blog checks passed.
+Deployment-day measurement boundary: **GSC: exclude 2026-09-25, first full day 2026-09-26; GA4: exclude 2026-09-25, first full day 2026-09-26**. Preserve the separate September 21 consent
+measurement break for GA4 comparisons.
+
+[Production verification](2026-09-25-comparison-content-production-verification.json) passed:
+**48 articles**, **24 affected visible/schema FAQ answers**, **46 internal destinations**,
+**54 source-matching image/PDF assets**, **12 desktop/mobile views** and **three Turkish
+alias redirects returning 308**. The 42 untouched article records and all 46 original related
+cohorts are preserved. Both new articles appear on their locale blog listings.
+
+Parsed XML confirms three affected English loc entries and six language alternates. Of
+these, one English loc and two alternates are new; Turkish article URLs still have no
+standalone loc. Google accepted sitemap submission with HTTP **204**,
+`lastSubmitted` **2026-09-25T13:27:42.188Z**, `isPending: true`. Acceptance is not indexing proof.
+
+CMP and WATER are marked revised, TYPES published in the strategy map. Keep **October 9**
+indexing/recrawl, **October 23** rankings/snippets and **November 6** affected combined effects.

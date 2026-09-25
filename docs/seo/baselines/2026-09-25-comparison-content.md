@@ -132,3 +132,6 @@ counts, not tracking implementation. Aggregate content/AI effects use November 6
 All historical baselines remain intact. Page-row impressions and their weighted positions
 are not property-deduplicated totals. The [release record](../content-strategy/2026-09-25-comparison-content-launch.md)
 records the every-entry interference treatment, validation and actual deployment boundary.
+
+Content commit **23b91d9** deployed **2026-09-25T13:24:36Z**. GSC: exclude 2026-09-25, first full day 2026-09-26; GA4: exclude 2026-09-25, first full day 2026-09-26.
+Preserve the independent September 21 GA4 measurement break.
