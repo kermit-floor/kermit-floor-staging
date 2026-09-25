@@ -60,9 +60,17 @@ range support. The .com homepage and Turkish edition remain available separately
 Cloudflare Git integration is connected to `kermit-floor/kermit-floor-staging`,
 production branch **romania**, root `/`, build `npm run cf:build`, deploy
 `npm run cf:deploy`, preview builds disabled. The existing build-token integration
-is reused; no account permissions were expanded. The next documentation push
-exercises the first automatic build, including removal of the unrelated international
-Analytics integration pages from this edition.
+is reused; no account permissions were expanded. Automatic build **aa4dc79b-6485-4279-a2e1-53c0af5bbf2a**, triggered by commit
+`5cabc8e`, succeeded at **13:48:24 UTC**, deploying version
+`c69d6894-2141-4538-81cd-7a5b732db138`. The unrelated international Analytics
+integration pages are removed from this edition. GitHub validation also passed.
+
+Cloudflare **Always Use HTTPS** is enabled for the `.ro` zone. HTTP redirects to
+HTTPS and www redirects to the apex while preserving the path. Catalogue range
+GET returns 206, `bytes 0-63/43858043`, and a valid PDF signature. Live consent
+verification finds no GA loader before acceptance; after acceptance it loads
+`G-9FMGLPBL5C`. The translated thickness article's language switch opens its matching
+English article, with no browser console errors. All 185 URLs pass after CI deployment.
 
 Search Console domain property **sc-domain:kermitfloor.ro** is DNS-verified under
 the owner's existing Google account. `https://kermitfloor.ro/sitemap.xml` was
