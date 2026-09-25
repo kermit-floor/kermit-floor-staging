@@ -177,7 +177,7 @@ export default async function AboutPage({
                     <h2 className="font-headline text-3xl font-bold text-foreground">{t('footprint.title')}</h2>
                     <p className="mt-4 text-lg text-muted-foreground">{t('footprint.p1')}</p>
                     <dl className="mt-6 space-y-4">
-                        {['turkey', 'moldova', 'romania'].map((key) => (
+                        {['romania'].map((key) => (
                             <div key={key}>
                                 <dt className="font-semibold">{t(`footprint.locations.${key}.title`)}</dt>
                                 <dd className="mt-1 text-muted-foreground">{t(`footprint.locations.${key}.address`)}</dd>
@@ -228,7 +228,7 @@ export default async function AboutPage({
                 </div>
             </section>
 
-            <ManufacturerGuides locale={locale === 'tr' ? 'tr' : 'en'} />
+            <ManufacturerGuides locale={locale === 'ro' ? 'ro' : 'en'} />
 
             <section className="max-w-4xl mx-auto" aria-labelledby="manufacturer-questions-title">
                 <h2 id="manufacturer-questions-title" className="font-headline text-3xl font-bold">{t('questions.title')}</h2>

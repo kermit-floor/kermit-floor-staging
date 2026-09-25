@@ -14,7 +14,7 @@ const BLOG_MANIFEST_SCHEMA_VERSION = 1;
 const parsedManifest = blogManifest as BlogManifest;
 
 function normalizeTag(value: string, locale: BlogLocale = 'en'): string {
-  const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
+  const lowerCaseLocale = locale === 'ro' ? 'ro-RO' : 'en-US';
   return value
     .trim()
     .toLocaleLowerCase(lowerCaseLocale)
@@ -66,22 +66,22 @@ const loadAllBlogPostPairs = cache(async (): Promise<BlogPostPair[]> => {
 
   const pairs = parsedManifest.topics.map((pair) => {
     const en = toBlogPost(pair.en);
-    const tr = toBlogPost(pair.tr);
+    const ro = toBlogPost(pair.ro);
 
-    if (pair.topicId !== en.topicId || pair.topicId !== tr.topicId) {
+    if (pair.topicId !== en.topicId || pair.topicId !== ro.topicId) {
       throw new Error(`Manifest topicId mismatch for "${pair.topicId}".`);
     }
 
     return {
       topicId: pair.topicId,
       en,
-      tr,
+      ro,
     };
   });
 
   return pairs.sort((a, b) => {
-    const aNewest = Math.max(a.en.publishedAtDate.getTime(), a.tr.publishedAtDate.getTime());
-    const bNewest = Math.max(b.en.publishedAtDate.getTime(), b.tr.publishedAtDate.getTime());
+    const aNewest = Math.max(a.en.publishedAtDate.getTime(), a.ro.publishedAtDate.getTime());
+    const bNewest = Math.max(b.en.publishedAtDate.getTime(), b.ro.publishedAtDate.getTime());
     return bNewest - aNewest;
   });
 });
@@ -92,7 +92,7 @@ export async function getAllBlogPostPairs(): Promise<BlogPostPair[]> {
 
 export async function getPublishedBlogPostPairs(): Promise<BlogPostPair[]> {
   const pairs = await getAllBlogPostPairs();
-  return pairs.filter((pair) => pair.en.status === 'published' && pair.tr.status === 'published');
+  return pairs.filter((pair) => pair.en.status === 'published' && pair.ro.status === 'published');
 }
 
 export async function getPublishedBlogPostsByLocale(locale: BlogLocale): Promise<BlogPost[]> {
@@ -106,7 +106,7 @@ export async function getPublishedBlogPostBySlug(locale: BlogLocale, slug: strin
   if (!pair) {
     return null;
   }
-  const alternateLocale: BlogLocale = locale === 'en' ? 'tr' : 'en';
+  const alternateLocale: BlogLocale = locale === 'en' ? 'ro' : 'en';
   return {
     post: pair[locale],
     pair,
@@ -151,7 +151,7 @@ export async function getPublishedBlogTagIndex(locale: BlogLocale): Promise<Blog
       if (b.count !== a.count) {
         return b.count - a.count;
       }
-      return a.tag.localeCompare(b.tag, locale === 'tr' ? 'tr-TR' : 'en-US');
+      return a.tag.localeCompare(b.tag, locale === 'ro' ? 'ro-RO' : 'en-US');
     });
 }
 
@@ -178,5 +178,5 @@ export async function getPublishedBlogTagSlugs(locale: BlogLocale): Promise<stri
       tags.add(tag);
     }
   }
-  return Array.from(tags).sort((a, b) => a.localeCompare(b, locale === 'tr' ? 'tr-TR' : 'en-US'));
+  return Array.from(tags).sort((a, b) => a.localeCompare(b, locale === 'ro' ? 'ro-RO' : 'en-US'));
 }

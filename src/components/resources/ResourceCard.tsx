@@ -6,7 +6,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { format } from 'date-fns';
-import { enUS, tr } from 'date-fns/locale';
+import { enUS, ro } from 'date-fns/locale';
 import { Eye, Download, FileText } from 'lucide-react';
 import { Link } from '@/navigation';
 
@@ -18,12 +18,12 @@ export default function ResourceCard({ resource }: ResourceCardProps) {
   const currentLocale = useLocale() as Locale;
   const t = useTranslations('ResourcesPage');
 
-  const title = currentLocale === 'tr' ? resource.title_tr : resource.title;
-  const summary = currentLocale === 'tr' ? resource.summary_tr : resource.summary;
+  const title = currentLocale === 'ro' ? resource.title_ro : resource.title;
+  const summary = currentLocale === 'ro' ? resource.summary_ro : resource.summary;
   const fileDetails = resource.files[currentLocale] ?? resource.files.en;
   const hasAvailableFile = Boolean(fileDetails?.url && fileDetails.url !== '#');
 
-  const dateLocale = currentLocale === 'tr' ? tr : enUS;
+  const dateLocale = currentLocale === 'ro' ? ro : enUS;
   const formattedDate = format(new Date(resource.updatedAt), 'dd MMM yyyy', {
     locale: dateLocale,
   });

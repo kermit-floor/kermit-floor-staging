@@ -1,6 +1,22 @@
-# Deployment
+# Deployment — Romania
 
-## Cloudflare (Workers / Pages)
+## Branch and permanent worktrees
+
+| Edition | Branch | Permanent checkout | Worker | Domains |
+| --- | --- | --- | --- | --- |
+| International | `main` | `/home/barbaros/projects/kermit-floor-staging` | `kermit-floor-staging` | `kermitfloor.com` |
+| Romania | `romania` | `/home/barbaros/projects/kermit-floor-ro` | `kermit-floor-ro` | `kermitfloor.ro`, `www.kermitfloor.ro` |
+
+Work on each edition in its own checkout. Push Romania changes with `git push origin romania`.
+Shared fixes should be cherry-picked and reviewed in the receiving branch. Do not merge
+Romania's deployment, language or contact configuration wholesale into `main`.
+The Romania deployment guard verifies the branch, Worker/self-binding and domain targets.
+
+Romanian pages use `/`; English pages use `/en`. The apex domain is canonical and
+`www` redirects to it. Analytics uses the dedicated `G-9FMGLPBL5C` stream (property
+`555914779`, Europe/Bucharest, RON); the international Analytics property is separate.
+
+## Cloudflare Workers
 
 This app is configured to build and deploy to Cloudflare using [OpenNext Cloudflare](https://opennext.js.org/cloudflare).
 
@@ -15,7 +31,7 @@ This runs the Next.js build and produces output in `.open-next/` (Worker + asset
 ### Deploy
 
 ```bash
-npx @opennextjs/cloudflare deploy
+npm run cf:deploy
 ```
 
 ### NPM Scripts
@@ -29,6 +45,10 @@ npx @opennextjs/cloudflare deploy
 
 If you are using Cloudflare Workers Builds with a connected Git repository, use:
 
+- Worker: `kermit-floor-ro`
+- Production branch: `romania`
+- Preview branch builds: disabled
+- Root directory: `/`
 - Build command: `npm run cf:build`
 - Deploy command: `npm run cf:deploy`
 

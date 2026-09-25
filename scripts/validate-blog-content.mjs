@@ -168,7 +168,7 @@ function validateNoPromptLeaks(raw, filePath, errors) {
 }
 
 function normalizeTag(value, locale = 'en') {
-  const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
+  const lowerCaseLocale = locale === 'ro' ? 'ro-RO' : 'en-US';
   return String(value)
     .trim()
     .toLocaleLowerCase(lowerCaseLocale)
@@ -226,14 +226,8 @@ async function exists(filePath) {
 }
 
 async function getKnownCtaPaths() {
-  const navigationPath = path.join(process.cwd(), 'src', 'navigation.ts');
-  const source = await readFile(navigationPath, 'utf8');
-  const matches = source.matchAll(/^\s*'([^']+)':\s*{\s*$/gm);
-  const knownPaths = new Set();
-  for (const match of matches) {
-    knownPaths.add(match[1]);
-  }
-  return knownPaths;
+  const source = await readFile(path.join(process.cwd(), 'src/i18n/pathnames.json'), 'utf8');
+  return new Set(Object.keys(JSON.parse(source)));
 }
 
 function parseBlogAuthorsRegistry(raw) {
@@ -329,14 +323,14 @@ function validateFrontmatterShape(frontmatter, filePath, errors) {
     errors.push(`${filePath}: "tags" must be a non-empty array.`);
   } else if (
     frontmatter.tags.some(
-      (item) => typeof item !== 'string' || normalizeTag(item, frontmatter.locale === 'tr' ? 'tr' : 'en') === '',
+      (item) => typeof item !== 'string' || normalizeTag(item, frontmatter.locale === 'ro' ? 'ro' : 'en') === '',
     )
   ) {
     errors.push(`${filePath}: "tags" must contain values that normalize to non-empty slugs.`);
   }
 
-  if (!['en', 'tr'].includes(frontmatter.locale)) {
-    errors.push(`${filePath}: "locale" must be "en" or "tr".`);
+  if (!['en', 'ro'].includes(frontmatter.locale)) {
+    errors.push(`${filePath}: "locale" must be "en" or "ro".`);
   }
 
   if (!['draft', 'published'].includes(frontmatter.status)) {
@@ -396,7 +390,7 @@ async function main() {
   const authorRegistry = await getBlogAuthorRegistry();
   const slugMap = {
     en: new Map(),
-    tr: new Map(),
+    ro: new Map(),
   };
 
   let topicDirs = [];
@@ -416,10 +410,10 @@ async function main() {
     const topicDir = path.join(BLOG_ROOT, topicId);
     const localeFiles = {
       en: path.join(topicDir, 'en.mdx'),
-      tr: path.join(topicDir, 'tr.mdx'),
+      ro: path.join(topicDir, 'ro.mdx'),
     };
 
-    for (const locale of ['en', 'tr']) {
+    for (const locale of ['en', 'ro']) {
       if (!(await exists(localeFiles[locale]))) {
         errors.push(`${topicDir}: Missing ${locale}.mdx.`);
       }
@@ -430,44 +424,44 @@ async function main() {
     }
 
     const enRaw = await readFile(localeFiles.en, 'utf8');
-    const trRaw = await readFile(localeFiles.tr, 'utf8');
+    const roRaw = await readFile(localeFiles.ro, 'utf8');
     validateNoMojibake(enRaw, localeFiles.en, errors);
-    validateNoMojibake(trRaw, localeFiles.tr, errors);
+    validateNoMojibake(roRaw, localeFiles.ro, errors);
     validateNoPromptLeaks(enRaw, localeFiles.en, errors);
-    validateNoPromptLeaks(trRaw, localeFiles.tr, errors);
+    validateNoPromptLeaks(roRaw, localeFiles.ro, errors);
     const enData = matter(enRaw).data;
-    const trData = matter(trRaw).data;
+    const roData = matter(roRaw).data;
 
     validateFrontmatterShape(enData, localeFiles.en, errors);
-    validateFrontmatterShape(trData, localeFiles.tr, errors);
+    validateFrontmatterShape(roData, localeFiles.ro, errors);
 
     if (enData.topicId !== topicId) {
       errors.push(`${localeFiles.en}: topicId must match directory name "${topicId}".`);
     }
-    if (trData.topicId !== topicId) {
-      errors.push(`${localeFiles.tr}: topicId must match directory name "${topicId}".`);
+    if (roData.topicId !== topicId) {
+      errors.push(`${localeFiles.ro}: topicId must match directory name "${topicId}".`);
     }
 
-    if (enData.topicId !== trData.topicId) {
-      errors.push(`${topicDir}: topicId mismatch between en.mdx and tr.mdx.`);
+    if (enData.topicId !== roData.topicId) {
+      errors.push(`${topicDir}: topicId mismatch between en.mdx and ro.mdx.`);
     }
 
     if (enData.locale !== 'en') {
       errors.push(`${localeFiles.en}: locale must be "en".`);
     }
-    if (trData.locale !== 'tr') {
-      errors.push(`${localeFiles.tr}: locale must be "tr".`);
+    if (roData.locale !== 'ro') {
+      errors.push(`${localeFiles.ro}: locale must be "ro".`);
     }
 
-    if (enData.status === 'published' || trData.status === 'published') {
-      if (!(enData.status === 'published' && trData.status === 'published')) {
+    if (enData.status === 'published' || roData.status === 'published') {
+      if (!(enData.status === 'published' && roData.status === 'published')) {
         errors.push(`${topicDir}: published status must be true in both locales together.`);
       }
     }
 
     for (const [locale, data, filePath] of [
       ['en', enData, localeFiles.en],
-      ['tr', trData, localeFiles.tr],
+      ['ro', roData, localeFiles.ro],
     ]) {
       if (typeof data.slug === 'string') {
         const existing = slugMap[locale].get(data.slug);

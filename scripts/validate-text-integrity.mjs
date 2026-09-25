@@ -98,7 +98,7 @@ function findSuspiciousQuestionReplacement(text) {
     if ((isLetter(prev) && isLetter(next)) || (isBoundary(prev) && isLetter(next))) {
       return {
         index,
-        reason: 'contains a suspicious "?" inside/at the start of a Turkish word (likely character loss)',
+        reason: 'contains a suspicious "?" inside/at the start of a Romanian word (likely character loss)',
       };
     }
   }
@@ -132,7 +132,7 @@ function collectJsonStringIssues(node, pathParts, issues) {
   }
 }
 
-async function listTurkishBlogFiles() {
+async function listRomanianBlogFiles() {
   const root = path.join(ROOT, 'content', 'blog', 'topics');
   const files = [];
 
@@ -154,7 +154,7 @@ async function listTurkishBlogFiles() {
         await walk(fullPath);
         continue;
       }
-      if (entry.isFile() && entry.name === 'tr.mdx') {
+      if (entry.isFile() && entry.name === 'ro.mdx') {
         files.push(fullPath);
       }
     }
@@ -200,7 +200,7 @@ async function validateJsonFile(filePath, errors) {
   }
 }
 
-async function validateTurkishMdxFile(filePath, errors) {
+async function validateRomanianMdxFile(filePath, errors) {
   const raw = await readFile(filePath, 'utf8');
 
   const mojibakeIssue = findLikelyMojibake(raw);
@@ -217,11 +217,11 @@ async function validateTurkishMdxFile(filePath, errors) {
 async function main() {
   const errors = [];
 
-  await validateJsonFile(path.join(ROOT, 'messages', 'tr.json'), errors);
+  await validateJsonFile(path.join(ROOT, 'messages', 'ro.json'), errors);
 
-  const turkishBlogFiles = await listTurkishBlogFiles();
-  for (const filePath of turkishBlogFiles) {
-    await validateTurkishMdxFile(filePath, errors);
+  const romanianBlogFiles = await listRomanianBlogFiles();
+  for (const filePath of romanianBlogFiles) {
+    await validateRomanianMdxFile(filePath, errors);
   }
 
   if (errors.length > 0) {
@@ -233,7 +233,7 @@ async function main() {
   }
 
   console.log(
-    `Text integrity validation passed for messages/tr.json and ${turkishBlogFiles.length} Turkish blog file(s).`,
+    `Text integrity validation passed for messages/ro.json and ${romanianBlogFiles.length} Romanian blog file(s).`,
   );
 }
 

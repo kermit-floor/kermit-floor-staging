@@ -2,6 +2,7 @@
 
 'use client';
 
+import {LocalizedText} from '@/components/ui/LocalizedText';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import type { Panel } from '@/lib/panel-types';
@@ -312,8 +313,8 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
         <div className="container mx-auto px-4 mt-6 lg:mt-8">
           <Skeleton className="h-[60vh] w-full" />
           <div className="text-center py-8">
-            <p className="text-lg text-muted-foreground">There are currently no products in this collection.</p>
-            <p className="text-sm text-muted-foreground mt-2">Please add product folders with images to the corresponding directory in `public/images`.</p>
+            <p className="text-lg text-muted-foreground"><LocalizedText ro="Momentan nu există produse în această colecție." en="There are currently no products in this collection." /></p>
+
           </div>
         </div>
       </div>
@@ -383,7 +384,7 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
                 <DialogClose asChild>
                   <Button variant="ghost" size="icon" className="absolute top-[-1rem] right-[-1rem] bg-black/50 hover:bg-black/70 rounded-full h-9 w-9 text-white">
                       <X className="h-5 w-5" />
-                      <span className="sr-only">Close</span>
+                      <span className="sr-only"><LocalizedText ro="Închide" en="Close" /></span>
                   </Button>
                 </DialogClose>
               </DialogContent>

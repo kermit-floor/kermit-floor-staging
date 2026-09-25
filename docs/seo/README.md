@@ -1,4 +1,4 @@
-# SEO Growth Loop — kermitfloor.com
+# SEO Growth Loop — Romania edition
 
 A recurring, data-driven cycle: **measure → hypothesize → change → ship → record → review → keep/revert/iterate.**
 This directory is the system's memory. Use this file for SEO data access, measurement, or
@@ -13,7 +13,19 @@ shipping. The selected skill determines when to read experiment history.
   `.agents/skills/seo-general-review/SKILL.md`; specific analytics questions use
   `.agents/skills/seo-investigate/SKILL.md`.
 
-## Data access
+## Romania data access
+
+Production domain: `https://kermitfloor.ro`; Romanian default and English `/en`.
+GA4 property **555914779**, web stream **15844361909**, measurement **G-9FMGLPBL5C**.
+Use this property for Romania-site reporting. The existing ADC service account currently
+has access only to the international property; use the signed-in Analytics dashboard
+for Romania until access is explicitly arranged. Do not silently substitute `.com` data.
+
+[Launch baseline and cross-domain interference treatment](baselines/2026-09-25-romania.md).
+Earlier logbook entries below describe `.com` history inherited at the branch point;
+they are not historical measurements of this new domain.
+
+## International data access (comparison only)
 
 ### GA4 — property `523760978` (kermitfloor.com)
 
@@ -115,7 +127,7 @@ When overlap is uncertain, protect the measurement rather than silently changing
 
 1. Complete the local change, interference check, and appropriate validation (`npm run build`
    for site changes). Prepare the hypothesis, primary metric, relevant baseline, and review date.
-2. Follow `AGENTS.md` for commit/push authorization. Pushes to `main` trigger Cloudflare builds,
+2. Follow `AGENTS.md` for commit/push authorization. Pushes to `romania` deploy the Romanian Worker; pushes to `main` deploy the international Worker,
    including documentation-only pushes. Direct deployment follows `DEPLOY.md` and requires
    owner authorization covering that action.
 3. Verify the affected behavior on production after deployment.

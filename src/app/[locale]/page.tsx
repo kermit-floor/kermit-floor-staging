@@ -161,7 +161,7 @@ export default async function Home({
         <section className="relative h-[75vh] md:h-[85vh] w-full">
           <Image
             src="/images/spc-wall-panels/613/application.jpg"
-            alt="Modern kitchen with elegant SPC wall panels"
+            alt={locale === 'ro' ? 'Interior modern cu panouri de perete SPC' : 'Modern interior with SPC wall panels'}
             fill
             className="object-cover"
             data-ai-hint="modern kitchen wall"
@@ -252,7 +252,7 @@ export default async function Home({
                 <div className="mt-8">
                   <Button asChild size="lg" variant="outline">
                     <Link href="/blog">
-                      {locale === 'tr' ? 'Tum yazilari gor' : 'View all posts'}
+                      {locale === 'ro' ? 'Vezi toate articolele' : 'View all posts'}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>

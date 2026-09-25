@@ -9,8 +9,8 @@ export async function SiteJsonLd({locale}: {locale: string}) {
     <JsonLd
       data={[
         getOrganizationJsonLd({
-          telephone: tLocations('turkeyPhone'),
-          email: tLocations('turkeyEmail'),
+          telephone: tLocations('romaniaPhone'),
+          email: tLocations('romaniaEmail'),
         }),
         getWebSiteJsonLd(),
       ]}

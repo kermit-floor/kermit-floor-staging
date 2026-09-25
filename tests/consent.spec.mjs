@@ -60,11 +60,11 @@ async function clickPhoneWithoutOpeningAnApp(page) {
   await phone.click();
 }
 
-for (const locale of ['en', 'tr']) {
+for (const locale of ['en', 'ro']) {
   const messages = JSON.parse(readFileSync(new URL(`../messages/${locale}.json`, import.meta.url), 'utf8'));
   const labels = messages.ConsentBanner;
-  const contact = locale === 'en' ? '/contact' : '/tr/iletisim';
-  const privacy = locale === 'en' ? '/privacy-policy' : '/tr/gizlilik-politikasi';
+  const contact = locale === 'en' ? '/en/contact' : '/contact';
+  const privacy = locale === 'en' ? '/en/privacy-policy' : '/politica-de-confidentialitate';
 
   async function preferences(page) {
     await page.getByRole('button', {name: messages.Footer.cookieSettings, exact: true}).click();

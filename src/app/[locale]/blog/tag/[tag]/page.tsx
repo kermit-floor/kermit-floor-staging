@@ -16,7 +16,7 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 function toBlogLocale(locale: string): BlogLocale | null {
-  return locale === 'en' || locale === 'tr' ? locale : null;
+  return locale === 'en' || locale === 'ro' ? locale : null;
 }
 
 function decodeTagValue(value: string): string {
@@ -28,13 +28,13 @@ function decodeTagValue(value: string): string {
 }
 
 export async function generateStaticParams() {
-  const [enTags, trTags] = await Promise.all([
+  const [enTags, roTags] = await Promise.all([
     getPublishedBlogTagSlugs('en'),
-    getPublishedBlogTagSlugs('tr'),
+    getPublishedBlogTagSlugs('ro'),
   ]);
   return [
     ...enTags.map((tag) => ({locale: 'en', tag})),
-    ...trTags.map((tag) => ({locale: 'tr', tag})),
+    ...roTags.map((tag) => ({locale: 'ro', tag})),
   ];
 }
 
@@ -47,10 +47,10 @@ export async function generateMetadata({
   const tag = decodeTagValue(rawTag);
   const locale = toBlogLocale(localeParam) ?? 'en';
   const title =
-    locale === 'tr' ? `Blog etiketi: ${tag}` : `Blog tag: ${tag}`;
+    locale === 'ro' ? `Subiect pe blog: ${tag}` : `Blog tag: ${tag}`;
   const description =
-    locale === 'tr'
-      ? `${tag} etiketi altindaki blog iceriklerini kesfedin.`
+    locale === 'ro'
+      ? `Descoperă articolele despre ${tag}.`
       : `Browse blog articles under the ${tag} tag.`;
 
   return {
@@ -86,13 +86,13 @@ export default async function BlogTagPage({
   }
 
   const copy =
-    locale === 'tr'
+    locale === 'ro'
       ? {
-          title: `Etiket: ${tag}`,
-          subtitle: 'Bu konu etiketine ait yazilar',
-          emptyTitle: 'Bu etikette yazi bulunamadi.',
-          emptyDescription: 'Farkli bir etiketi deneyin.',
-          backLabel: 'Tum etiketler',
+          title: `Subiect: ${tag}`,
+          subtitle: 'Articole despre acest subiect',
+          emptyTitle: 'Nu există articole despre acest subiect.',
+          emptyDescription: 'Încearcă un alt subiect.',
+          backLabel: 'Toate subiectele',
         }
       : {
           title: `Tag: ${tag}`,
@@ -104,7 +104,7 @@ export default async function BlogTagPage({
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <Header />
+      <Header languageSwitcherHrefs={{en: "/blog", ro: "/blog"}} />
       <main className="flex-1">
         <section className="container mx-auto px-4 py-12 md:py-16">
           <div className="mb-8 space-y-3">

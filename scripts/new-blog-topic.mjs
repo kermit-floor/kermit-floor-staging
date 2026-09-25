@@ -108,10 +108,10 @@ ctaPath: /resources
 Write the English version of the post here.
 `;
 
-const turkishTemplate = `---
+const romanianTemplate = `---
 topicId: ${topicId}
-locale: tr
-slug: ${topicId}-tr
+locale: ro
+slug: ${topicId}-ro
 title: ""
 description: ""
 excerpt: ""
@@ -133,9 +133,9 @@ authorName: ${JSON.stringify(defaultAuthorName)}
 ctaPath: /resources
 ---
 
-## Giris
+## Introducere
 
-Yazinin Turkce surumunu buraya yazin.
+Scrie aici versiunea în limba română a articolului.
 `;
 
 try {
@@ -151,7 +151,7 @@ try {
 await mkdir(topicDir, {recursive: true});
 await Promise.all([
   writeFile(path.join(topicDir, 'en.mdx'), englishTemplate, 'utf8'),
-  writeFile(path.join(topicDir, 'tr.mdx'), turkishTemplate, 'utf8'),
+  writeFile(path.join(topicDir, 'ro.mdx'), romanianTemplate, 'utf8'),
 ]);
 
 console.log(`Created bilingual blog topic scaffold at content/blog/topics/${topicId}`);

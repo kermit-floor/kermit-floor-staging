@@ -1,12 +1,12 @@
 import data from './resources.json';
 
-export type Locale = 'en' | 'tr';
+export type Locale = 'en' | 'ro';
 
 export type FileDetails = {
   url: string;
   size: string;
   format: 'pdf' | 'zip' | 'dwg' | 'dxf';
-  language?: 'en' | 'tr' | 'ro' | 'sr';
+  language?: 'en' | 'ro' | 'sr';
 };
 
 export type ProductLine = 'skirting' | 'flooring' | 'wall_panels' | 'general';
@@ -34,17 +34,17 @@ export type Resource = {
   audience: ('installer' | 'dealer' | 'architect' | 'all')[];
   installationMethod: InstallationMethod;
   title: string;
-  title_tr: string;
+  title_ro: string;
   summary: string;
-  summary_tr: string;
+  summary_ro: string;
   bullets?: string[];
-  bullets_tr?: string[];
+  bullets_ro?: string[];
   version: string;
   updatedAt: string; // YYYY-MM-DD
   tags: string[];
   files: {
     en: FileDetails;
-    tr: FileDetails;
+    ro: FileDetails;
   };
   previewEnabled: boolean;
 };

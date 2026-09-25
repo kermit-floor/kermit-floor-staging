@@ -1,7 +1,7 @@
 import type {BlogLocale, BlogPost, BlogPostPair} from './types';
 import {getBlogAuthorProfileByName} from './authors';
 
-const DEFAULT_SITE_URL = 'https://kermitfloor.com';
+const DEFAULT_SITE_URL = 'https://kermitfloor.ro';
 
 function trimTrailingSlash(value: string): string {
   return value.endsWith('/') ? value.slice(0, -1) : value;
@@ -21,13 +21,13 @@ export function getSiteUrl(): string {
 
 export function toLocalePath(locale: BlogLocale, pathname: string): string {
   const normalizedPath = ensureLeadingSlash(pathname);
-  if (locale === 'en') {
+  if (locale === 'ro') {
     return normalizedPath;
   }
   if (normalizedPath === '/') {
-    return '/tr';
+    return '/en';
   }
-  return `/tr${normalizedPath}`;
+  return `/en${normalizedPath}`;
 }
 
 export function toAbsoluteUrl(locale: BlogLocale, pathname: string): string {

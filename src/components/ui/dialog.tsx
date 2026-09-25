@@ -1,5 +1,6 @@
 "use client"
 
+import {LocalizedText} from '@/components/ui/LocalizedText';
 import * as React from "react"
 import * as DialogPrimitive from "@radix-ui/react-dialog"
 import { X } from "lucide-react"
@@ -50,7 +51,7 @@ const DialogContent = React.forwardRef<
         // The DialogClose button should be added manually within the component using the Dialog.
       >
         {/* <X className="h-4 w-4" /> */}
-        <span className="sr-only">Close</span>
+        <span className="sr-only"><LocalizedText ro="Închide" en="Close" /></span>
       </DialogPrimitive.Close>
     </DialogPrimitive.Content>
   </DialogPortal>

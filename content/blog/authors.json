@@ -6,7 +6,7 @@
       "name": "Yasin Bayram",
       "subtitle": {
         "en": "Construction Expert with 30 years of experience",
-        "tr": "İnşaat Eksperi: 30 yıllık deneyim"
+        "ro": "Expert în construcții cu 30 de ani de experiență"
       },
       "photoPath": "/images/authors/yasinbayram.jpeg",
       "isDefault": true
@@ -18,7 +18,7 @@
       "schemaType": "Person",
       "jobTitle": {
         "en": "Manufacturing Efficiency Expert",
-        "tr": "Üretim Verimliliği Uzmanı"
+        "ro": "Expert în eficiența producției"
       },
       "isDefault": false
     }

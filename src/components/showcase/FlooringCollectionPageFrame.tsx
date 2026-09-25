@@ -8,7 +8,7 @@ import { FlooringSeriesProvider } from './FlooringSeriesContext';
 type FlooringCollectionPageFrameProps = {
   collectionType: FlooringCollectionKey;
   initialPanels: Panel[];
-  languageSwitcherHrefs?: Partial<Record<'en' | 'tr', string>>;
+  languageSwitcherHrefs?: Partial<Record<'en' | 'ro', string>>;
 };
 
 export function FlooringCollectionPageFrame({

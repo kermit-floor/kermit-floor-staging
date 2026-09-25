@@ -1,6 +1,6 @@
 import type {FaqItem} from '@/lib/seo/faq';
 
-export const BLOG_LOCALES = ['en', 'tr'] as const;
+export const BLOG_LOCALES = ['en', 'ro'] as const;
 export type BlogLocale = (typeof BLOG_LOCALES)[number];
 
 export const BLOG_STATUSES = ['draft', 'published'] as const;
@@ -59,13 +59,13 @@ export type BlogManifestPost = BlogFrontmatter & {
 export type BlogPostPair = {
   topicId: string;
   en: BlogPost;
-  tr: BlogPost;
+  ro: BlogPost;
 };
 
 export type BlogManifestPostPair = {
   topicId: string;
   en: BlogManifestPost;
-  tr: BlogManifestPost;
+  ro: BlogManifestPost;
 };
 
 export type BlogManifest = {

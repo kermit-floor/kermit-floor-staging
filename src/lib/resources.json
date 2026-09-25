@@ -9,20 +9,12 @@
       ],
       "installationMethod": null,
       "title": "Installer Starter Pack",
-      "title_tr": "Usta Bilgi Paketi",
       "summary": "Essential documents for professional installers, including installation guides and technical data sheets.",
-      "summary_tr": "Ustalar için montaj kılavuzları ve teknik veri sayfaları dahil olmak üzere temel belgeler.",
       "bullets": [
         "All Installation Guides",
         "All Technical Data Sheets",
         "Warranty & Claim Forms",
         "Care & Maintenance Guides"
-      ],
-      "bullets_tr": [
-        "Tüm Montaj Kılavuzları",
-        "Tüm Teknik Veri Sayfaları",
-        "Garanti ve Talep Formları",
-        "Bakım ve Onarım Kılavuzları"
       ],
       "version": "2024.Q3",
       "updatedAt": "2024-07-20",
@@ -34,15 +26,25 @@
         "en": {
           "url": "#",
           "size": "45 MB",
-          "format": "zip"
+          "format": "zip",
+          "language": "en"
         },
-        "tr": {
+        "ro": {
           "url": "#",
           "size": "45 MB",
-          "format": "zip"
+          "format": "zip",
+          "language": "en"
         }
       },
-      "previewEnabled": false
+      "previewEnabled": false,
+      "title_ro": "Pachet pentru montatori",
+      "summary_ro": "Documente esențiale pentru montatori profesioniști, inclusiv ghiduri de montaj și fișe tehnice.",
+      "bullets_ro": [
+        "Ghiduri de montaj",
+        "Fișe tehnice",
+        "Garanție și formulare de reclamație",
+        "Ghiduri de curățare și întreținere"
+      ]
     },
     {
       "id": "pack-dealer",
@@ -53,22 +55,13 @@
       ],
       "installationMethod": null,
       "title": "Dealer Starter Pack",
-      "title_tr": "Bayi Başlangıç Paketi",
       "summary": "A complete package for our dealers, including product catalogues, marketing materials, and price lists.",
-      "summary_tr": "Ürün katalogları, pazarlama materyalleri ve fiyat listeleri dahil olmak üzere bayilerimiz için eksiksiz bir paket.",
       "bullets": [
         "All Product Catalogues",
         "Marketing & Display Guidelines",
         "Ready to publish 20 social media posts",
         "Warranty Information",
         "Packaging Information"
-      ],
-      "bullets_tr": [
-        "Tüm Ürün Katalogları",
-        "Pazarlama ve Teşhir Yönergeleri",
-        "Yayına hazır 20 adet sosyal medya postu",
-        "Garanti Bilgileri",
-        "Nakliye Bilgileri"
       ],
       "version": "2024.Q3",
       "updatedAt": "2024-07-20",
@@ -80,15 +73,26 @@
         "en": {
           "url": "#",
           "size": "120 MB",
-          "format": "zip"
+          "format": "zip",
+          "language": "en"
         },
-        "tr": {
+        "ro": {
           "url": "#",
           "size": "120 MB",
-          "format": "zip"
+          "format": "zip",
+          "language": "en"
         }
       },
-      "previewEnabled": false
+      "previewEnabled": false,
+      "title_ro": "Pachet pentru distribuitori",
+      "summary_ro": "Resurse pentru distribuitori: cataloage de produse, materiale de promovare și informații comerciale.",
+      "bullets_ro": [
+        "Cataloage de produse",
+        "Recomandări de promovare și expunere",
+        "20 de postări pentru rețele sociale",
+        "Informații despre garanție",
+        "Informații despre ambalare"
+      ]
     },
     {
       "id": "pack-architect",
@@ -99,20 +103,12 @@
       ],
       "installationMethod": null,
       "title": "Architect & Specifier Pack",
-      "title_tr": "Mimar ve Tasarımcı Paketi",
       "summary": "High-resolution textures, CAD and 3dsMax files, and full specification documents for architects and specifiers.",
-      "summary_tr": "Mimarlar ve tasarımcılar için yüksek çözünürlüklü dokular (texture), CAD ve 3DSMax dosyaları ve tam özellikli belgeler.",
       "bullets": [
         "All CAD & Drawings",
         "High-Resolution Textures",
         "Full Technical Data Sheets",
         "Sustainability Certificates"
-      ],
-      "bullets_tr": [
-        "Tüm CAD ve Çizimler",
-        "Yüksek Çözünürlüklü Dokular",
-        "Tam Teknik Veri Sayfaları",
-        "Sürdürülebilirlik Sertifikaları"
       ],
       "version": "2024.Q3",
       "updatedAt": "2024-07-20",
@@ -124,15 +120,25 @@
         "en": {
           "url": "#",
           "size": "250 MB",
-          "format": "zip"
+          "format": "zip",
+          "language": "en"
         },
-        "tr": {
+        "ro": {
           "url": "#",
           "size": "250 MB",
-          "format": "zip"
+          "format": "zip",
+          "language": "en"
         }
       },
-      "previewEnabled": false
+      "previewEnabled": false,
+      "title_ro": "Pachet pentru arhitecți și proiectanți",
+      "summary_ro": "Texturi de înaltă rezoluție, fișiere CAD și 3dsMax și documente tehnice pentru arhitecți și proiectanți.",
+      "bullets_ro": [
+        "Fișiere CAD și desene",
+        "Texturi de înaltă rezoluție",
+        "Fișe tehnice complete",
+        "Certificate de sustenabilitate"
+      ]
     },
     {
       "id": "skirting-catalogue-2024",
@@ -143,9 +149,7 @@
       ],
       "installationMethod": null,
       "title": "SPC Skirting Boards Catalogue 2026",
-      "title_tr": "SPC S?p?rgelik Katalo?u 2026",
       "summary": "Explore our complete range of SPC skirting boards, including all models and color options.",
-      "summary_tr": "Tüm modelleri ve renk seçeneklerini içeren eksiksiz SPC süpürgelik serimizi keşfedin.",
       "version": "v2.0",
       "updatedAt": "2026-02-26",
       "tags": [
@@ -157,15 +161,19 @@
         "en": {
           "url": "/downloads/catalogues/kermit-spc-skirting-board-catalogue-en.pdf",
           "size": "8 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/catalogues/kermit-spc-supurgelik-katalog-tr.pdf",
+        "ro": {
+          "url": "/downloads/catalogues/kermit-spc-skirting-board-catalogue-en.pdf",
           "size": "8 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Catalog plinte SPC 2026",
+      "summary_ro": "Descoperă gama completă de plinte SPC, cu toate modelele și variantele de culoare."
     },
     {
       "id": "wall-panel-catalogue-2026",
@@ -176,9 +184,7 @@
       ],
       "installationMethod": null,
       "title": "SPC Wall Panel Catalogue 2026",
-      "title_tr": "SPC Duvar Paneli Kataloğu 2026",
       "summary": "The complete collection of our innovative SPC wall panels.",
-      "summary_tr": "Yenilikçi SPC duvar panellerimizin eksiksiz koleksiyonu.",
       "version": "v2026.08",
       "updatedAt": "2026-08-11",
       "tags": [
@@ -193,14 +199,16 @@
           "format": "pdf",
           "language": "en"
         },
-        "tr": {
+        "ro": {
           "url": "/downloads/catalogues/kermit-spc-wall-panel-catalogue-en-2026-08.pdf",
           "size": "5.7 MB",
           "format": "pdf",
           "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Catalog panouri de perete SPC 2026",
+      "summary_ro": "Colecția completă de panouri de perete SPC Kermit."
     },
     {
       "id": "flooring-catalogue-2026",
@@ -211,9 +219,7 @@
       ],
       "installationMethod": null,
       "title": "SPC Flooring Catalogue 2026",
-      "title_tr": "SPC Parke Kataloğu 2026",
       "summary": "The complete collection of our innovative SPC flooring products.",
-      "summary_tr": "Yenilikçi SPC parke ürünlerimizin eksiksiz koleksiyonu.",
       "version": "v2026.07",
       "updatedAt": "2026-07-23",
       "tags": [
@@ -225,15 +231,19 @@
         "en": {
           "url": "/downloads/catalogues/kermit-floor-spc-flooring-catalogue-2026-07.pdf",
           "size": "42 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/catalogues/kermit-floor-spc-parke-katalog-2026-07.pdf",
-          "size": "43 MB",
-          "format": "pdf"
+        "ro": {
+          "url": "/downloads/catalogues/kermit-floor-spc-flooring-catalogue-2026-07.pdf",
+          "size": "42 MB",
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Catalog parchet SPC 2026",
+      "summary_ro": "Colecția completă de pardoseli SPC Kermit."
     },
     {
       "id": "skirting-tds-alpha-140mm",
@@ -244,9 +254,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Alpha 140mm",
-      "title_tr": "Teknik Veri Sayfası: Alpha 140mm",
       "summary": "Detailed technical specifications for the Alpha 140mm skirting board.",
-      "summary_tr": "Alpha 140mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -259,15 +267,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-alpha-140-spc-skirting-technical-specifications-en.pdf",
           "size": "5.3 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-alpha-140-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-alpha-140-spc-skirting-technical-specifications-en.pdf",
           "size": "5.3 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Alpha 140mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Alpha 140mm."
     },
     {
       "id": "skirting-tds-berlin-100mm",
@@ -278,9 +290,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Berlin 100mm",
-      "title_tr": "Teknik Veri Sayfası: Berlin 100mm",
       "summary": "Detailed technical specifications for the Berlin 100mm skirting board.",
-      "summary_tr": "Berlin 100mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -293,15 +303,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-berlin-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.6 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-berlin-100-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-berlin-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.6 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Berlin 100mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Berlin 100mm."
     },
     {
       "id": "skirting-tds-moderna-100mm",
@@ -312,9 +326,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Moderna 100mm",
-      "title_tr": "Teknik Veri Sayfası: Moderna 100mm",
       "summary": "Detailed technical specifications for the Moderna 100mm skirting board.",
-      "summary_tr": "Moderna 100mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -327,15 +339,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-moderna-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.6 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-moderna-100-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-moderna-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.6 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Moderna 100mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Moderna 100mm."
     },
     {
       "id": "skirting-tds-elite-100mm",
@@ -346,9 +362,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Elite 100mm",
-      "title_tr": "Teknik Veri Sayfası: Elite 100mm",
       "summary": "Detailed technical specifications for the Elite 100mm skirting board.",
-      "summary_tr": "Elite 100mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -361,15 +375,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-elite-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.5 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-elite-100-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-elite-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.5 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Elite 100mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Elite 100mm."
     },
     {
       "id": "skirting-tds-x-line-100mm",
@@ -380,9 +398,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: X-Line 100mm",
-      "title_tr": "Teknik Veri Sayfası: X-Line 100mm",
       "summary": "Detailed technical specifications for the X-Line 100mm skirting board.",
-      "summary_tr": "X-Line 100mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -395,15 +411,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-x-line-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.6 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-x-line-100-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-x-line-100-spc-skirting-technical-specifications-en.pdf",
           "size": "2.6 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: X-Line 100mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta X-Line 100mm."
     },
     {
       "id": "skirting-tds-optima-90mm",
@@ -414,9 +434,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Optima 90mm",
-      "title_tr": "Teknik Veri Sayfası: Optima 90mm",
       "summary": "Detailed technical specifications for the Optima 90mm skirting board.",
-      "summary_tr": "Optima 90mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -429,15 +447,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-optima-90-spc-skirting-technical-specifications-en.pdf",
           "size": "2.3 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-optima-90-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-optima-90-spc-skirting-technical-specifications-en.pdf",
           "size": "2.3 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Optima 90mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Optima 90mm."
     },
     {
       "id": "skirting-tds-solid-80mm",
@@ -448,9 +470,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Solid 80mm",
-      "title_tr": "Teknik Veri Sayfası: Solid 80mm",
       "summary": "Detailed technical specifications for the Solid 80mm skirting board.",
-      "summary_tr": "Solid 80mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -463,15 +483,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-solid-80-spc-skirting-technical-specifications-en.pdf",
           "size": "2.5 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-solid-80-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-solid-80-spc-skirting-technical-specifications-en.pdf",
           "size": "2.5 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Solid 80mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Solid 80mm."
     },
     {
       "id": "skirting-tds-optima-60mm",
@@ -482,9 +506,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: Optima 60mm",
-      "title_tr": "Teknik Veri Sayfası: Optima 60mm",
       "summary": "Detailed technical specifications for the Optima 60mm skirting board.",
-      "summary_tr": "Optima 60mm süpürgelik için ayrıntılı teknik özellikler.",
       "version": "Rev. 01",
       "updatedAt": "2026-06-05",
       "tags": [
@@ -497,15 +519,19 @@
         "en": {
           "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-optima-60-spc-skirting-technical-specifications-en.pdf",
           "size": "2.4 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/technical-data-sheets/spc-skirting-boards/Turkish/kermit-optima-60-spc-skirting-technical-specifications-tr.pdf",
+        "ro": {
+          "url": "/downloads/technical-data-sheets/spc-skirting-boards/English/kermit-optima-60-spc-skirting-technical-specifications-en.pdf",
           "size": "2.4 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: Optima 60mm",
+      "summary_ro": "Specificații tehnice detaliate pentru plinta Optima 60mm."
     },
     {
       "id": "flooring-install-click",
@@ -517,9 +543,7 @@
       ],
       "installationMethod": "clip",
       "title": "SPC Flooring Installation & Care Guide",
-      "title_tr": "SPC Parke Montaj ve Bakım Kılavuzu (İngilizce)",
       "summary": "Floating click flooring: inspection, subfloor preparation, minimum 10 mm movement gaps, joining, heating limits and care. Check the selected locking system.",
-      "summary_tr": "Yüzer kilitli parke: ürün kontrolü, alt zemin, en az 10 mm hareket boşluğu, birleştirme, ısıtma sınırları ve bakım. Seçilen kilit sistemini kontrol edin. Belge İngilizcedir.",
       "version": "2026-09",
       "updatedAt": "2026-09-13",
       "tags": [
@@ -534,14 +558,16 @@
           "format": "pdf",
           "language": "en"
         },
-        "tr": {
+        "ro": {
           "url": "/downloads/installation-guides/kermit-spc-flooring-installation-care-en-2026-09.pdf",
           "size": "1001 KB",
           "format": "pdf",
           "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Ghid de montaj și întreținere pentru parchet SPC",
+      "summary_ro": "Pardoseli flotante cu îmbinare click: verificare, pregătirea suportului, rosturi de dilatare de minimum 10 mm, îmbinare, limite de încălzire și întreținere. Verifică sistemul de îmbinare ales."
     },
     {
       "id": "skirting-install-manual",
@@ -553,9 +579,7 @@
       ],
       "installationMethod": null,
       "title": "SPC Skirting Installation Manual",
-      "title_tr": "SPC Süpürgelik Montaj Kılavuzu",
       "summary": "Step-by-step installation instructions for Kermit SPC skirting boards.",
-      "summary_tr": "Kermit SPC süpürgeliklerin montajı için adım adım talimatlar.",
       "version": "v1.0",
       "updatedAt": "2026-03-11",
       "tags": [
@@ -567,15 +591,19 @@
         "en": {
           "url": "/downloads/installation-guides/SPC-Skirting-Installation-Manual-EN.pdf",
           "size": "2.0 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
-          "url": "/downloads/installation-guides/SPC-Supurgelik-Montaj-Kilavuzu-TR.pdf",
+        "ro": {
+          "url": "/downloads/installation-guides/SPC-Skirting-Installation-Manual-EN.pdf",
           "size": "2.0 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Manual de montaj pentru plinte SPC",
+      "summary_ro": "Instrucțiuni pas cu pas pentru montarea plintelor SPC Kermit."
     },
     {
       "id": "general-warranty",
@@ -586,9 +614,7 @@
       ],
       "installationMethod": null,
       "title": "Kermit Floor Limited Warranty",
-      "title_tr": "Kermit Floor Sınırlı Garanti",
       "summary": "Official warranty terms and conditions for all Kermit Floor SPC products.",
-      "summary_tr": "Tüm Kermit Floor SPC ürünleri için resmi garanti hüküm ve koşulları.",
       "version": "2024",
       "updatedAt": "2024-01-01",
       "tags": [
@@ -599,15 +625,19 @@
         "en": {
           "url": "#",
           "size": "0.5 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         },
-        "tr": {
+        "ro": {
           "url": "#",
           "size": "0.5 MB",
-          "format": "pdf"
+          "format": "pdf",
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Garanția limitată Kermit Floor",
+      "summary_ro": "Condițiile oficiale de garanție pentru produsele SPC Kermit Floor."
     },
     {
       "id": "flooring-underfloor-heating",
@@ -618,9 +648,7 @@
       ],
       "installationMethod": null,
       "title": "SPC Flooring Underfloor Heating Guide",
-      "title_tr": "SPC Parke Yerden Isıtma Rehberi",
       "summary": "Heating compatibility, a maximum floor-surface temperature of 27°C, gradual start-up, underlay and expansion planning. Use with the full installation instructions.",
-      "summary_tr": "Isıtma uyumluluğu, en fazla 27°C zemin yüzey sıcaklığı, kademeli çalıştırma, şilte ve genleşme planı. Tam montaj talimatıyla birlikte kullanın.",
       "version": "2026-09",
       "updatedAt": "2026-09-13",
       "tags": [
@@ -635,14 +663,16 @@
           "format": "pdf",
           "language": "en"
         },
-        "tr": {
-          "url": "/downloads/installation-guides/kermit-spc-yerden-isitma-rehberi-tr-2026-09.pdf",
-          "size": "66 KB",
+        "ro": {
+          "url": "/downloads/installation-guides/kermit-spc-underfloor-heating-guide-en-2026-09.pdf",
+          "size": "65 KB",
           "format": "pdf",
-          "language": "tr"
+          "language": "en"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Ghid SPC pentru încălzire în pardoseală",
+      "summary_ro": "Compatibilitate, temperatura maximă a suprafeței de 27°C, pornire treptată, suport și rosturi de dilatare. Se consultă împreună cu instrucțiunile complete de montaj."
     },
     {
       "id": "flooring-tds-6mm-no-ixpe",
@@ -653,9 +683,7 @@
       ],
       "installationMethod": null,
       "title": "Technical Data Sheet: 6 mm SPC without IXPE (Romanian)",
-      "title_tr": "Teknik Veri Sayfası: IXPE Olmadan 6 mm SPC (Romence)",
       "summary": "Manufacturer technical sheet for the specified 6 mm configuration with a 0.50 mm wear layer and no attached IXPE. Values apply to this configuration. Romanian PDF.",
-      "summary_tr": "0,50 mm aşınma tabakalı, entegre IXPE içermeyen 6 mm yapı için üretici teknik veri sayfası. Değerler bu yapıya aittir. PDF Romencedir.",
       "version": "2026-09",
       "updatedAt": "2026-09-13",
       "tags": [
@@ -670,14 +698,16 @@
           "format": "pdf",
           "language": "ro"
         },
-        "tr": {
+        "ro": {
           "url": "/downloads/technical-data-sheets/spc-flooring/kermit-spc-6mm-no-ixpe-tds-ro-2026-09.pdf",
           "size": "69 KB",
           "format": "pdf",
           "language": "ro"
         }
       },
-      "previewEnabled": true
+      "previewEnabled": true,
+      "title_ro": "Fișă tehnică: SPC de 6 mm fără IXPE (română)",
+      "summary_ro": "Fișa producătorului pentru configurația de 6 mm cu strat de uzură de 0,50 mm, fără IXPE integrat. Valorile se aplică acestei configurații. PDF în română."
     }
   ]
 }

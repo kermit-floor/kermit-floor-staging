@@ -14,7 +14,7 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 function toBlogLocale(locale: string): BlogLocale | null {
-  return locale === 'en' || locale === 'tr' ? locale : null;
+  return locale === 'en' || locale === 'ro' ? locale : null;
 }
 
 export async function generateMetadata({
@@ -24,12 +24,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const locale = toBlogLocale((await params).locale) ?? 'en';
   const title =
-    locale === 'tr'
-      ? 'Kermit Floor Blog | SPC Parke, Duvar Paneli ve Supurgelik Rehberleri'
+    locale === 'ro'
+      ? 'Blog Kermit Floor | Ghiduri pentru parchet SPC, panouri și plinte'
       : 'Kermit Floor Blog | SPC Flooring, Wall Panel and Skirting Guides';
   const description =
-    locale === 'tr'
-      ? 'SPC parke, duvar paneli ve supurgelik secimi, uygulamasi ve proje planlamasi icin teknik icerikler.'
+    locale === 'ro'
+      ? 'Ghiduri tehnice pentru alegerea și montarea pardoselilor SPC, panourilor și plintelor și pentru planificarea proiectelor.'
       : 'Technical blog content for SPC flooring, wall panel and skirting selection, installation, and project planning.';
 
   return {
@@ -39,7 +39,7 @@ export async function generateMetadata({
       canonical: toAbsoluteUrl(locale, '/blog'),
       languages: {
         en: toAbsoluteUrl('en', '/blog'),
-        tr: toAbsoluteUrl('tr', '/blog'),
+        ro: toAbsoluteUrl('ro', '/blog'),
       },
     },
     openGraph: {
@@ -73,14 +73,14 @@ export default async function BlogPage({
   ]);
 
   const copy =
-    locale === 'tr'
+    locale === 'ro'
       ? {
           title: 'Blog',
-          subtitle: 'SPC sistemleri, uygulama detaylari ve proje kararlarina odaklanan icerikler.',
-          heroImageAlt: 'Ic mekan uygulama blog kapak gorseli',
-          emptyTitle: 'Yayinda blog yazisi bulunmuyor.',
-          emptyDescription: 'Ilk yayinlar hazirlandiginda bu alanda listelenecek.',
-          tagsTitle: 'Konular',
+          subtitle: 'Informații practice despre sisteme SPC, detalii de montaj și planificarea proiectelor.',
+          heroImageAlt: 'Finisaje interioare prezentate în blog',
+          emptyTitle: 'Nu există articole publicate.',
+          emptyDescription: 'Articolele vor apărea aici după publicare.',
+          tagsTitle: 'Subiecte',
         }
       : {
           title: 'Blog',

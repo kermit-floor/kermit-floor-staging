@@ -34,7 +34,7 @@ export async function generateMetadata({
 export default async function ResourcesPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const resourceLocale = locale === 'tr' ? 'tr' : 'en';
+  const resourceLocale = locale === 'ro' ? 'ro' : 'en';
   const [starterPacks, libraryDocs, t] = await Promise.all([
     getStarterPacks(),
     getLibraryDocuments(),

@@ -56,7 +56,8 @@ export function getOrganizationJsonLd({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': ORGANIZATION_ID,
-    name: 'Kermit Floor',
+    name: 'Kermit Floor România',
+    legalName: 'DMS INNOVATIVE SOLUTIONS S.R.L.',
     url: siteUrl,
     logo: `${siteUrl}/images/kermit-floor-logo.png`,
     email,
@@ -65,7 +66,7 @@ export function getOrganizationJsonLd({
       contactType: 'sales',
       telephone,
       email,
-      availableLanguage: ['en', 'tr'],
+      availableLanguage: ['en', 'ro'],
     },
     sameAs: ['https://www.instagram.com/kermitfloor'],
   };
@@ -81,7 +82,7 @@ export function getWebSiteJsonLd() {
     name: 'Kermit Floor',
     url: siteUrl,
     publisher: {'@id': ORGANIZATION_ID},
-    inLanguage: ['en', 'tr'],
+    inLanguage: ['en', 'ro'],
   };
 }
 
@@ -108,7 +109,7 @@ export function getProductJsonLd({
     ...(description ? {description} : {}),
     ...(images.length > 0 ? {image: images} : {}),
     brand: {'@type': 'Brand', name: 'Kermit Floor'},
-    manufacturer: {'@id': ORGANIZATION_ID},
+    manufacturer: {'@type': 'Organization', name: 'Kermit Floor'},
     ...(material ? {material} : {}),
     ...(specs.length > 0
       ? {

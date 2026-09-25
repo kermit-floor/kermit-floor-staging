@@ -5,7 +5,7 @@ import MarkdownIt from 'markdown-it';
 import {z} from 'zod';
 import {configureFaqRenderer} from './lib/blog-faq.mjs';
 
-const BLOG_LOCALES = ['en', 'tr'];
+const BLOG_LOCALES = ['en', 'ro'];
 const BLOG_STATUSES = ['draft', 'published'];
 const BLOG_SEARCH_INTENTS = ['informational', 'commercial-investigation', 'comparison'];
 const BLOG_TARGET_AUDIENCES = ['mixed-b2b', 'installer', 'dealer', 'architect'];
@@ -21,6 +21,31 @@ const markdown = new MarkdownIt({
   typographer: false,
 });
 configureFaqRenderer(markdown);
+
+const localizedRoutes = JSON.parse(await readFile(path.join(ROOT, 'src/i18n/pathnames.json'), 'utf8'));
+const blogSlugs = new Map();
+
+// Markdown links bypass next-intl's Link component. Resolve them at build time,
+// including links written with the original site's /en prefix.
+const defaultLinkRenderer = markdown.renderer.rules.link_open ??
+  ((tokens, idx, options, _env, self) => self.renderToken(tokens, idx, options));
+markdown.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+  const token = tokens[idx];
+  const href = token.attrGet('href') ?? '';
+  if (href.startsWith('/') && !href.startsWith('//')) {
+    const url = new URL(href, 'https://kermitfloor.ro');
+    const sourcePath = url.pathname.replace(/^\/(en|ro)(?=\/|$)/, '') || '/';
+    const route = Object.entries(localizedRoutes).find(([key, value]) =>
+      !key.includes('[') && (key === sourcePath || Object.values(value).includes(sourcePath)));
+    const post = sourcePath.startsWith('/blog/') ? blogSlugs.get(sourcePath.slice(6)) : undefined;
+    const targetPath = route ? route[1][env.locale] : post ? `/blog/${post[env.locale]}` : null;
+    if (targetPath) {
+      const prefix = env.locale === 'en' ? '/en' : '';
+      token.attrSet('href', `${prefix}${targetPath === '/' && prefix ? '' : targetPath}${url.search}${url.hash}`);
+    }
+  }
+  return defaultLinkRenderer(tokens, idx, options, env, self);
+};
 
 const VIDEO_EXTENSION_PATTERN = /\.(mp4|webm|ogg|mov|m4v)(?:$|\?)/i;
 
@@ -102,7 +127,7 @@ function normalizeLineEndings(value) {
 }
 
 function normalizeTag(value, locale = 'en') {
-  const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
+  const lowerCaseLocale = locale === 'ro' ? 'ro-RO' : 'en-US';
   return value
     .trim()
     .toLocaleLowerCase(lowerCaseLocale)
@@ -151,7 +176,7 @@ async function parseTopicLocaleFile(topicId, locale) {
   }
 
   const content = normalizeLineEndings(parsed.content).trim();
-  const renderEnv = {source: content};
+  const renderEnv = {source: content, locale};
   const contentHtml = markdown.render(content, renderEnv);
 
   return {
@@ -185,13 +210,20 @@ async function readTopicDirectories() {
 async function main() {
   const topicIds = await readTopicDirectories();
   const topics = [];
+  for (const topicId of topicIds) {
+    const pair = {};
+    for (const locale of BLOG_LOCALES) {
+      pair[locale] = matter(await readFile(path.join(BLOG_TOPICS_ROOT, topicId, `${locale}.mdx`), 'utf8')).data.slug;
+    }
+    for (const slug of Object.values(pair)) blogSlugs.set(slug, pair);
+  }
 
   for (const topicId of topicIds) {
-    const [en, tr] = await Promise.all([
+    const [en, ro] = await Promise.all([
       parseTopicLocaleFile(topicId, 'en'),
-      parseTopicLocaleFile(topicId, 'tr'),
+      parseTopicLocaleFile(topicId, 'ro'),
     ]);
-    topics.push({topicId, en, tr});
+    topics.push({topicId, en, ro});
   }
 
   const manifest = {

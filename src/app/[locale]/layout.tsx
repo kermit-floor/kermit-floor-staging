@@ -7,7 +7,8 @@ import { inter, montserrat } from '@/app/fonts';
 import {ConsentProvider} from '@/components/consent/ConsentProvider';
 import {SiteJsonLd} from '@/components/seo/SiteJsonLd';
 
-const DEFAULT_GA_ID = 'G-W9FZMTQP1H';
+// A dedicated Romanian stream is configured at build time.
+const DEFAULT_GA_ID = 'G-9FMGLPBL5C';
  
 export async function generateMetadata({
   params,
@@ -18,7 +19,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
  
   return {
-    metadataBase: new URL('https://kermitfloor.com'),
+    metadataBase: new URL('https://kermitfloor.ro'),
     title: t('title'),
     description: t('description'),
     openGraph: {
@@ -35,7 +36,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'tr' }];
+  return [{ locale: 'en' }, { locale: 'ro' }];
 }
 
 export default async function RootLayout({

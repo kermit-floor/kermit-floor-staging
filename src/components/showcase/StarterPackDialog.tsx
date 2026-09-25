@@ -1,6 +1,7 @@
 
 'use client';
 
+import {LocalizedText} from '@/components/ui/LocalizedText';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -29,8 +30,8 @@ type StarterPackDialogProps = {
 export function StarterPackDialog({ pack, locale }: StarterPackDialogProps) {
     const t = useTranslations('StarterPackDialog');
     
-    const title = locale === 'tr' ? pack.title_tr : pack.title;
-    const email = "info@kermit.com.tr";
+    const title = locale === 'ro' ? pack.title_ro : pack.title;
+    const email = "info@dmsinnovative.ro";
     
     const whatsappMessage = t('whatsappMessage', { packName: title });
     const whatsappUrl = getWhatsAppUrl(locale, whatsappMessage);
@@ -70,7 +71,7 @@ export function StarterPackDialog({ pack, locale }: StarterPackDialogProps) {
                 <DialogClose asChild>
                     <Button variant="ghost" size="icon" className="absolute top-3 right-3 rounded-full">
                         <X className="h-4 w-4" />
-                        <span className="sr-only">Close</span>
+                        <span className="sr-only"><LocalizedText ro="Închide" en="Close" /></span>
                     </Button>
                 </DialogClose>
             </DialogContent>

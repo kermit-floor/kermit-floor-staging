@@ -2,15 +2,15 @@ import type {Metadata} from 'next';
 import {pathnames} from '@/navigation';
 import {toAbsoluteUrl} from '@/lib/blog/seo';
 
-type AppLocale = 'en' | 'tr';
+type AppLocale = 'en' | 'ro';
 type AppRouteKey = keyof typeof pathnames;
 
 export function normalizeAppLocale(locale: string): AppLocale {
-  return locale === 'tr' ? 'tr' : 'en';
+  return locale === 'ro' ? 'ro' : 'en';
 }
 
 function getLocalizedPath(routeKey: AppRouteKey, locale: AppLocale): string {
-  const route = pathnames[routeKey] as {en: string; tr: string};
+  const route = pathnames[routeKey] as {en: string; ro: string};
   return route[locale];
 }
 
@@ -22,13 +22,13 @@ export function getCanonicalForRoute(routeKey: AppRouteKey, locale: string): str
 export function getAlternatesForRoute(routeKey: AppRouteKey, locale: string): Metadata['alternates'] {
   const normalizedLocale = normalizeAppLocale(locale);
   const enPath = getLocalizedPath(routeKey, 'en');
-  const trPath = getLocalizedPath(routeKey, 'tr');
+  const roPath = getLocalizedPath(routeKey, 'ro');
 
   return {
     canonical: toAbsoluteUrl(normalizedLocale, getLocalizedPath(routeKey, normalizedLocale)),
     languages: {
       en: toAbsoluteUrl('en', enPath),
-      tr: toAbsoluteUrl('tr', trPath),
+      ro: toAbsoluteUrl('ro', roPath),
     },
   };
 }

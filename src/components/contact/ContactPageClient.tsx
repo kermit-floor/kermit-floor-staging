@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { MapPin, Phone, Mail, Building, Printer, Smartphone, UserRound } from 'lucide-react';
+import { MapPin, Phone, Mail, Building } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '../ui/separator';
 import { trackEvent } from '@/lib/consent/gtag';
@@ -44,45 +44,16 @@ export default function ContactPageClient() {
   const t = useTranslations('ContactPage');
   const tLoc = useTranslations('ContactPage.locations');
   
-  const locations = [
-    {
-      title: tLoc('turkeyTitle'),
-      details: [
-        { icon: MapPin, value: tLoc('turkeyAddress') },
-        { icon: Phone, value: tLoc('turkeyPhone'), href: `tel:${tLoc('turkeyPhone').replace(/ /g,'')}`, leadMethod: 'phone' },
-        { icon: Printer, value: tLoc('turkeyFax'), href: `tel:${tLoc('turkeyFax').replace(/ /g,'')}` },
-        { icon: Mail, value: tLoc('turkeyEmail'), href: `mailto:${tLoc('turkeyEmail')}`, leadMethod: 'email' },
-      ]
-    },
-    {
-      title: tLoc('moldovaTitle'),
-      details: [
-        { icon: MapPin, value: tLoc('moldovaAddress') },
-        { icon: Phone, value: tLoc('moldovaPhone') },
-        { icon: Smartphone, value: tLoc('moldovaGsm'), href: `tel:${tLoc('moldovaGsm').replace('GSM:', '').replace(/ /g,'')}`, leadMethod: 'phone' },
-        { icon: Printer, value: tLoc('moldovaFax') },
-        { icon: Mail, value: tLoc('moldovaEmail'), href: `mailto:info@serkanplast.com`, leadMethod: 'email' },
-      ]
-    },
-    {
-      title: tLoc('romaniaTitle'),
-      details: [
-        { icon: Building, value: tLoc('romaniaCompany') },
-        { icon: MapPin, value: tLoc('romaniaAddress') },
-        { icon: Phone, value: tLoc('romaniaPhone') },
-        { icon: Mail, value: tLoc('romaniaEmail'), href: `mailto:${tLoc('romaniaEmail')}`, leadMethod: 'email' },
-      ]
-    },
-    {
-      title: tLoc('germanyTitle'),
-      details: [
-        { icon: Building, value: tLoc('germanyCompany') },
-        { icon: UserRound, value: tLoc('germanyRepresentative') },
-        { icon: MapPin, value: tLoc('germanyAddress') },
-        { icon: Phone, value: tLoc('germanyPhone'), href: `tel:${tLoc('germanyPhone').replace(/ /g,'')}`, leadMethod: 'phone' },
-      ]
-    }
-  ];
+  const locations = [{
+    title: tLoc('romaniaTitle'),
+    details: [
+      {icon: Building, value: tLoc('romaniaCompany')},
+      {icon: MapPin, value: tLoc('romaniaAddress')},
+      {icon: Phone, value: '+40 722 547 258', href: 'tel:+40722547258', leadMethod: 'phone'},
+      {icon: Phone, value: '+40 738 754 074', href: 'tel:+40738754074', leadMethod: 'phone'},
+      {icon: Mail, value: tLoc('romaniaEmail'), href: `mailto:${tLoc('romaniaEmail')}`, leadMethod: 'email'},
+    ],
+  }];
 
   return (
     <>
@@ -109,29 +80,13 @@ export default function ContactPageClient() {
       <div className="container mx-auto px-4 py-12 md:py-16 space-y-12">
         <section>
           <h2 className="text-3xl font-bold font-headline text-center mb-8">{tLoc('title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mx-auto max-w-2xl">
             {locations.map((loc, index) => (
               <LocationCard key={index} location={loc} />
             ))}
           </div>
         </section>
 
-        <Separator />
-        
-        <section>
-            <div className="aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden border">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.2431436157026!2d29.365398076546054!3d40.84458522948732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadfc4706f8761%3A0x8e20cf6c5c3d173a!2sKERM%C4%B0T%20FLOOR!5e0!3m2!1sen!2str!4v1768930053851!5m2!1sen!2str"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen={false}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Kermit Floor Factory Location"
-                ></iframe>
-            </div>
-        </section>
       </div>
     </>
   );

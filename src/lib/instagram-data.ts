@@ -5,7 +5,7 @@ export interface InstagramPost {
   videoSrc: string;
   posterSrc: string;
   caption_en: string;
-  caption_tr: string;
+  caption_ro: string;
   postUrl: string;
 }
 

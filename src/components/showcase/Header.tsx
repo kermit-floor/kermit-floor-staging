@@ -20,7 +20,7 @@ import { Logo, NavMenu } from './HeaderShared';
 
 type HeaderProps = {
   pageType?: CollectionKey;
-  languageSwitcherHrefs?: Partial<Record<'en' | 'tr', string>>;
+  languageSwitcherHrefs?: Partial<Record<'en' | 'ro', string>>;
 }
 
 export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
@@ -114,7 +114,7 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
         <div className="relative h-48 lg:h-64 w-full">
           <Image
             src={heroImage}
-            alt="Wall panel texture background"
+            alt={pageTitle}
             fill
             className="object-cover"
             data-ai-hint={heroImageHint}

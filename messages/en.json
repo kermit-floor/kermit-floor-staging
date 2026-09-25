@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Kermit Floor | SPC Flooring, Wall Panels & Skirting",
-    "description": "High-quality SPC flooring, wall panels and skirting boards for modern interiors. One brand, one complete system."
+    "title": "Kermit Floor Romania | SPC Flooring, Wall Panels & Skirting",
+    "description": "Kermit Floor SPC flooring, wall panels and skirting in Romania. Contact DMS Innovative Solutions for product information, samples and supply quotes."
   },
   "Header": {
     "navHome": "HOME",
@@ -40,14 +40,14 @@
   },
   "HomePage": {
     "seo": {
-      "title": "Kermit Floor | A complete SPC interior finishing system",
-      "description": "A complete SPC interior finishing system from the same brand with durable performance and best selling designs."
+      "title": "Kermit Floor Romania | SPC Floors, Walls & Skirting",
+      "description": "Explore Kermit Floor SPC flooring, wall panels and skirting in Romania. Request samples, product documents and a supply quote from DMS."
     },
     "heroTitle": "SPC FLOORS, SPC WALLS AND SPC SKIRTINGS",
     "heroSubtitle": "A complete SPC interior finishing system from the same brand with durable performance and best selling designs.",
     "heroStarterPacksTitle": "Quick-start your project with our resource packs:",
     "productLinesTitle": "A System-Based Approach to SPC Interiors",
-    "productLinesSubtitle": "We manufacture flooring, skirting, and wall panels designed to work together for a complete finish.",
+    "productLinesSubtitle": "Kermit flooring, skirting and wall panels are designed to work together for a complete finish. DMS supports your project in Romania.",
     "flooringTitle": "SPC Flooring",
     "flooringDescription": "Engineered for durability and style, our rigid-core flooring offers a wide range of designs for any interior.",
     "flooringBenefits": {
@@ -98,7 +98,7 @@
     "instagramTitle": "From Us",
     "instagramSubtitle": "Follow @kermitfloor on Instagram for design inspiration and product updates.",
     "followInstagram": "Follow Us on Instagram",
-    "contactCtaTitle": "Talk to sales for documentation, samples and commercial terms.",
+    "contactCtaTitle": "Contact DMS in Romania for documentation, samples and commercial terms.",
     "contactCtaButton": "Contact Sales",
     "spcWallPanelsTitle": "SPC Wall Panels",
     "spc3dWallPanelsModelATitle": "3D Panels (Model A)",
@@ -188,8 +188,7 @@
       "englishPdf": "Download PDF · English",
       "localizedPdf": "Download PDF · English",
       "roPdf": "Download PDF · Romanian",
-      "enPdf": "Download PDF · English",
-      "trPdf": "Download PDF · Turkish"
+      "enPdf": "Download PDF · English"
     },
     "documents": {
       "title": "Request documents for your project",
@@ -213,26 +212,25 @@
     "fileLanguage": "File language: {language}",
     "languages": {
       "en": "English",
-      "tr": "Turkish",
       "ro": "Romanian",
       "sr": "Serbian"
     }
   },
   "AboutPage": {
     "seo": {
-      "metaTitle": "SPC Flooring Manufacturer in Türkiye | Kermit Floor",
-      "metaDescription": "SPC flooring, skirting and wall panels from Kermit in Türkiye. OEM and private label available, one-container MOQ and a four-week standard lead time."
+      "metaTitle": "Kermit Floor in Romania | DMS Innovative Solutions",
+      "metaDescription": "Explore Kermit SPC flooring, skirting and wall panels in Romania with DMS Innovative Solutions. Request product documents, samples and a quotation."
     },
     "hero": {
-      "title": "SPC Flooring Manufacturer in Türkiye",
-      "subtitle": "Kermit Floor supplies SPC flooring, skirting boards and wall panels for distributors, private-label brands and interior projects. Start with the product specification, samples and a written supply offer.",
+      "title": "Kermit Floor in Romania",
+      "subtitle": "DMS Innovative Solutions is the Romanian contact for Kermit Floor SPC flooring, skirting boards and wall panels. Start with product specifications, samples and a written supply offer.",
       "ctaPrimary": "Request Samples & a Quote",
       "ctaSecondary": "Browse Catalogues"
     },
     "whoWeAre": {
       "title": "Who We Are",
-      "p1": "Kermit Floor is a manufacturer focused on SPC-based interior finishing systems: SPC flooring, SPC skirting boards, and SPC wall panels. Our product development is rooted in long-term experience in polymer processing and mold-making, enabling tight control over design details, repeatability and production consistency.",
-      "p2": "We build products that are practical for the trade—stable, durable, and easy to work with—while keeping the look clean and modern for residential and commercial environments."
+      "p1": "DMS Innovative Solutions represents Kermit Floor in Romania. Kermit manufactures SPC flooring, SPC skirting boards and SPC wall panels, drawing on experience in polymer processing and mold-making.",
+      "p2": "Our team helps you select the Kermit products, documents and supply terms suitable for your residential or commercial project."
     },
     "whatWeMake": {
       "title": "What We Make",
@@ -265,41 +263,33 @@
       }
     },
     "footprint": {
-      "title": "Kermit in Türkiye and Europe",
-      "p1": "We operate with a production and supply structure built for both domestic projects and export workflows. Our goal is simple: reliable availability, clear documentation, and predictable results for distributors, contractors and project buyers.",
+      "title": "Your Kermit contact in Romania",
+      "p1": "DMS supports distributors, contractors and project buyers in Romania with product information and supply enquiries.",
       "ctaTitle": "Interested in working with us?",
       "ctaText": "We support distributor/dealer structures and project-based supply. Contact our sales team for product documentation, samples and commercial terms.",
       "ctaButton1": "Contact Sales",
       "ctaButton2": "View Resources",
       "imageAlt": "Factory building with rooftop solar panels",
       "locations": {
-        "turkey": {
-          "title": "Türkiye · Çayırova, Kocaeli",
-          "address": "Kermit Plastik Sanayi ve Ticaret A.Ş. · Cumhuriyet Mh. Cihan Sk. No:4, Çayırova, Kocaeli"
-        },
-        "moldova": {
-          "title": "Moldova · Chișinău",
-          "address": "Muncești 799, Chișinău, Moldova"
-        },
         "romania": {
-          "title": "Romania · Bucharest store",
-          "address": "DMS Innovative Solution SRL · Bucharest, Romania"
+          "title": "Romania · Bucharest",
+          "address": "DMS INNOVATIVE SOLUTIONS S.R.L. · Bucharest, Romania"
         }
       },
       "originNote": "Share the destination and product codes with our team so the quotation can confirm the supply details for your order."
     },
     "sustainability": {
       "title": "Sustainability & Responsibility",
-      "p1": "We prioritize long service life, practical installation, and responsible manufacturing. Our production is increasingly supported by renewable energy, and we continuously invest in efficient processes that reduce waste and environmental impact. We remain firmly committed to ethical business practices—fair partnerships, transparent operations, and consistent quality standards—so customers can specify Kermit Floor products with confidence.",
+      "p1": "Kermit prioritizes long service life, practical installation and responsible manufacturing. Its production increasingly uses renewable energy, alongside investment in efficient processes that reduce waste. DMS can help you request the documentation relevant to the selected products.",
       "imageAlt": "Hands holding a green sprout"
     },
     "finalCta": {
-      "title": "Plan your next SPC flooring order with Kermit.",
+      "title": "Plan your next Kermit project with DMS.",
       "ctaPrimary": "Request a Wholesale Quote",
       "ctaSecondary": "Browse Catalogues"
     },
     "supply": {
-      "title": "Wholesale SPC flooring at a glance",
+      "title": "Kermit manufacturer-direct wholesale supply",
       "moq": {
         "label": "Minimum wholesale order",
         "value": "1 container"
@@ -312,7 +302,7 @@
         "label": "Branding options",
         "value": "OEM & private label"
       },
-      "note": "The quotation confirms the selected specification, packing, branding scope and order schedule. Ask for the destination delivery date and loading calculation for your chosen products."
+      "note": "These are Kermit’s manufacturer-direct wholesale terms. Contact DMS for Romanian availability, quantities, delivery and a written quotation for your order."
     },
     "documentation": {
       "title": "Documents for your specification",
@@ -338,16 +328,16 @@
     "questions": {
       "title": "Questions before your first order",
       "factory": {
-        "question": "Where is Kermit based?",
-        "answer": "Kermit Plastik Sanayi ve Ticaret A.Ş. is based in Çayırova, Kocaeli, Türkiye. Our company also has locations in Chișinău, Moldova, and Bucharest, Romania. Contact our team for the supply arrangements for your selected products."
+        "question": "Who handles enquiries in Romania?",
+        "answer": "DMS INNOVATIVE SOLUTIONS S.R.L., Bucharest, handles enquiries through this website. Kermit Floor is the product manufacturer."
       },
       "moq": {
         "question": "What is the minimum wholesale SPC flooring order?",
-        "answer": "The minimum order is one container. The square-metre quantity depends on the selected product, packing and loading arrangement; request a calculation for your specification."
+        "answer": "Kermit’s manufacturer-direct wholesale minimum is one container. Contact DMS for the quantities and supply arrangements available for your Romanian project."
       },
       "leadTime": {
         "question": "What is the lead time?",
-        "answer": "Our standard lead time is four weeks. The quotation confirms the actual order schedule and delivery responsibilities, including the expected timing for your destination."
+        "answer": "Kermit’s standard manufacturer-direct lead time is four weeks. DMS will confirm availability, delivery responsibilities and the actual schedule in your quotation."
       },
       "oem": {
         "question": "Can Kermit supply SPC flooring under our brand?",
@@ -361,36 +351,20 @@
   },
   "ContactPage": {
     "seo": {
-      "title": "Kermit Floor | Contact Us!",
-      "description": "Contact Kermit Floor for sales, technical support, or partnership inquiries. We are a leading manufacturer of SPC flooring, skirting, and wall panels."
+      "title": "Contact DMS Romania | Kermit Floor",
+      "description": "Contact DMS Innovative Solutions in Bucharest for Kermit SPC flooring, wall panels and skirting. Product information, samples and quotations."
     },
     "hero": {
       "title": "Contact Us",
       "subtitle": "Get in touch with our team for sales, support, or partnership inquiries. We're here to help."
     },
     "locations": {
-      "title": "Our Offices",
-      "turkeyTitle": "TURKEY – FACTORY (HEADQUARTERS)",
-      "turkeyAddress": "Cumhuriyet Mh. Cihan Sk. No:4\nÇAYIROVA / KOCAELİ - TÜRKİYE",
-      "turkeyPhone": "+90 262 658 97 29",
-      "turkeyFax": "+90 262 658 11 29",
-      "turkeyEmail": "info@kermit.com.tr",
-      "moldovaTitle": "MOLDOVA – FACTORY",
-      "moldovaAddress": "Muncești 799, Chișinău/MOLDOVA",
-      "moldovaPhone": "+373 (22) 85 42 29 / +373 (22) 85 42 30",
-      "moldovaGsm": "GSM: +373 79 157375",
-      "moldovaFax": "+373 (22) 52 40 02",
-      "moldovaEmail": "info@serkanplast.com",
-      "romaniaTitle": "ROMANIA – STORE",
-      "romaniaCompany": "DMS INNOVATIVE SOLUTION SRL",
-      "romaniaAddress": "Bucuresti - Romania",
-      "romaniaPhone": "+40 738 754 074 / +40 722 547 258",
-      "romaniaEmail": "info@dmsinnovative.ro",
-      "germanyTitle": "GERMANY – REPRESENTATIVE",
-      "germanyCompany": "IQBody GmbH",
-      "germanyRepresentative": "Representative: Suat Altun",
-      "germanyAddress": "Ströherstraße 14D\n36088 Hünfeld, Germany",
-      "germanyPhone": "+49 1714071718"
+      "title": "Your contact in Romania",
+      "romaniaTitle": "ROMANIA – DMS",
+      "romaniaCompany": "DMS INNOVATIVE SOLUTIONS S.R.L.",
+      "romaniaAddress": "Bucharest, Romania",
+      "romaniaPhone": "+40 722 547 258",
+      "romaniaEmail": "info@dmsinnovative.ro"
     },
     "form": {
       "title": "Send a Message",
@@ -845,12 +819,12 @@
     "supportTechnical": "Technical Data Sheets",
     "supportBlog": "Blog",
     "contactTitle": "Contact",
-    "address": "Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE",
-    "copyright": "© {year} Kermit Floor. All rights reserved.",
+    "address": "DMS INNOVATIVE SOLUTIONS S.R.L. · Bucharest, Romania",
+    "copyright": "© {year} Kermit Floor · DMS Innovative Solutions. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "phone": "+90 262 658 97 29",
-    "email": "info@kermit.com.tr",
+    "phone": "+40 722 547 258",
+    "email": "info@dmsinnovative.ro",
     "cookieSettings": "Cookie Settings"
   },
   "PrivacyPolicyPage": {
@@ -859,10 +833,10 @@
       "description": "Learn how Kermit Floor collects, uses, and protects your personal data."
     },
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: 8 February 2026",
+    "lastUpdated": "Last updated: 25 September 2026",
     "section1": {
       "title": "1. Who we are (Data Controller)",
-      "content": "<p>This website (“Site”) is operated by Kermit Plastik Sanayi ve Ticaret Anonim Şirketi (“Kermit Floor”, “we”, “us”).</p><ul><li><strong>Data Controller (KVKK):</strong> Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li><strong>Address:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li><strong>Contact (privacy):</strong> info@kermit.com.tr</li><li><strong>Phone:</strong> +90 262 658 97 29</li></ul>"
+      "content": "<p>kermitfloor.ro is operated by DMS INNOVATIVE SOLUTIONS S.R.L., Bucharest, Romania, CUI 45743250 (“DMS”, “we”, “us”). DMS is the controller for personal data handled through this website.</p><p>Contact: info@dmsinnovative.ro · +40 722 547 258.</p>"
     },
     "section2": {
       "title": "2. Scope",
@@ -874,39 +848,39 @@
     },
     "section4": {
       "title": "4. Purposes of processing",
-      "content": "<p>We process personal data for the following purposes:</p><ol><li>Responding to inquiries and providing quotations / product information</li><li>Customer and relationship management (B2B communications, distributor onboarding)</li><li>Providing requested resources (catalogs, technical sheets, installation guides)</li><li>Site operation, security, and fraud prevention</li><li>Improving the Site (performance, usability, analytics)</li><li>Legal compliance (recordkeeping, responding to lawful requests)</li><li>Marketing communications (only where permitted/consented; see Section 7)</li></ol><p><em>These purpose disclosures are part of the transparency obligations under KVKK and GDPR.</em></p>"
+      "content": "<p>We process personal data for the following purposes:</p><ol><li>Responding to inquiries and providing quotations / product information</li><li>Customer and relationship management (B2B communications, distributor onboarding)</li><li>Providing requested resources (catalogs, technical sheets, installation guides)</li><li>Site operation, security, and fraud prevention</li><li>Improving the Site (performance, usability, analytics)</li><li>Legal compliance (recordkeeping, responding to lawful requests)</li><li>Marketing communications (only where permitted/consented; see Section 7)</li></ol>"
     },
     "section5": {
-      "title": "5. Legal bases (KVKK / GDPR)",
-      "content": "<p>We rely on one or more legal grounds depending on the context:</p><p><strong>Under KVKK (Law No. 6698):</strong></p><ul><li>Processing is necessary for the establishment, exercise, or protection of a right (e.g., handling disputes, claims)</li><li>Processing is necessary for the performance of a contract or pre-contract steps (e.g., preparing a quotation at your request)</li><li>Processing is necessary for legitimate interests of the data controller (e.g., ensuring Site security), provided fundamental rights are not harmed</li><li>Explicit consent where required (e.g., non-essential cookies, certain marketing)</li></ul><p><em>KVKK requires that you disclose the collection method and legal reason.</em></p><p><strong>Under GDPR (if applicable):</strong></p><ul><li>Contract / pre-contract steps</li><li>Legitimate interests</li><li>Consent (e.g., non-essential cookies, direct marketing where required)</li><li>Legal obligation</li></ul><p><em>(Transparency items are derived from GDPR Articles 13/14.)</em></p>"
+      "title": "5. Legal bases",
+      "content": "<p>We process enquiries to take steps requested before a contract or to perform a contract; business contact and website security data for our legitimate interests in responding to business requests and keeping the service secure; records required by law to meet legal obligations; and optional analytics or marketing on the basis of consent where required. You can withdraw consent at any time.</p>"
     },
     "section6": {
-      "title": "6. Who we share data with (Recipients / Transfers)",
-      "content": "<p>We may share personal data with:</p><ul><li>IT/hosting providers (e.g., hosting, CDN, website infrastructure)</li><li>Analytics providers (only as configured; ideally with IP masking and consent where required)</li><li>Communication tools (email service provider, CRM, customer support tools)</li><li>Professional advisors (lawyers, accountants) where necessary</li><li>Authorities / courts where legally required</li></ul><p>We do not sell personal data.</p><p><strong>International transfers:</strong> Your data may be processed in countries other than your own depending on our vendors’ infrastructure. Where required, we use appropriate safeguards (e.g., contractual protections and security measures).</p>"
+      "title": "6. Recipients and international processing",
+      "content": "<p>The website uses Cloudflare hosting and delivery infrastructure. Communication providers process messages sent by email or WhatsApp under their applicable terms. Google Analytics receives usage events only after analytics consent. Advisers and authorities may receive data where necessary or required by law. We do not sell personal data.</p><p>Providers may process data outside the European Economic Area. Applicable transfer arrangements depend on the provider and service; contact us for information about the safeguards relevant to your enquiry.</p>"
     },
     "section7": {
       "title": "7. Marketing communications",
-      "content": "<p>If we offer newsletters or promotional messages:</p><ul><li>We will send them only with your consent or another lawful basis permitted by applicable law.</li><li>You can opt out at any time using the unsubscribe link or by emailing info@kermit.com.tr</li></ul>"
+      "content": "<p>If we offer newsletters or promotional messages:</p><ul><li>We will send them only with your consent or another lawful basis permitted by applicable law.</li><li>You can opt out at any time using the unsubscribe link or by emailing info@dmsinnovative.ro</li></ul>"
     },
     "section8": {
       "title": "8. Cookies and similar technologies",
       "content": "<p>We use cookies and similar technologies to keep the Site functional and, with your permission, to measure usage and improve performance.</p><p><strong>Consent-based analytics:</strong> We use Google Analytics 4 (GA4) only after you explicitly accept analytics cookies via our cookie banner. If you reject analytics cookies, GA4 is not activated for your visit.</p><p>You can change your choice at any time by opening <strong>Cookie Settings</strong> from the footer.</p><ul><li><strong>Essential cookies:</strong> required for basic functions and security.</li><li><strong>Analytics cookies (GA4):</strong> enabled only when consent is granted.</li></ul><p><strong>Consent record:</strong> We store your cookie choice in a first-party cookie named <code>kf_consent_v1</code> so your preference can be remembered.</p>"
     },
     "section9": {
-      "title": "9. Data retention",
-      "content": "<p>We retain personal data only as long as necessary for the purposes listed above, then delete or anonymize it, unless a longer retention period is required by law or necessary for establishing/exercising legal rights (e.g., dispute handling). <em>(Retention disclosure is a GDPR transparency item and good practice under KVKK.)</em></p>"
+      "title": "9. Retention",
+      "content": "<p>We keep enquiry data for the time needed to respond, follow up the requested supply and handle related claims. Contractual and accounting records are retained for the applicable legal periods. Security records and consent choices are retained according to their operational purpose. Contact us for the retention period relevant to a specific record.</p>"
     },
     "section10": {
       "title": "10. Security",
       "content": "<p>We apply reasonable technical and organizational measures designed to protect personal data against unauthorized access, loss, misuse, alteration, or disclosure. However, no system is 100% secure.</p>"
     },
     "section11": {
-      "title": "11. Your rights (KVKK Art. 11 / GDPR rights where applicable)",
-      "content": "<p>Under KVKK, you have rights including (summary): to learn whether your data is processed, request information, learn the purpose and whether it is used accordingly, know third parties to whom data is transferred, request correction/deletion where conditions are met, and object to certain results.</p><p>Under GDPR (if applicable) you may have rights such as access, rectification, erasure, restriction, portability, and objection, and the right to withdraw consent.</p>"
+      "title": "11. Your rights",
+      "content": "<p>Subject to applicable conditions, you may request access, correction, erasure, restriction or portability of your data, object to processing based on legitimate interests and withdraw consent without affecting earlier lawful processing. You may complain to Romania’s ANSPDCP at dataprotection.ro or another competent supervisory authority. We do not use website enquiries for automated decisions with legal or similarly significant effects.</p>"
     },
     "section12": {
       "title": "12. How to exercise your rights",
-      "content": "<p>To submit a request, contact us at:</p><ul><li><strong>Email:</strong> info@kermit.com.tr</li><li><strong>Postal address:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li></ul><p>Include sufficient information to verify your identity and clearly describe your request.</p><p>We may request additional information to confirm identity and process your request in line with applicable law.</p>"
+      "content": "<p>Email info@dmsinnovative.ro with a clear description of your request. We may ask for proportionate information to verify your identity. We respond within the applicable statutory period. Supplying enquiry details is voluntary, but we may be unable to respond or prepare a quotation without the necessary contact and project information.</p>"
     },
     "section13": {
       "title": "13. Children’s privacy",
@@ -923,10 +897,10 @@
       "description": "Read the terms of service for using the Kermit Floor website."
     },
     "title": "Website Terms of Use",
-    "lastUpdated": "Last Updated: 25 January 2026",
+    "lastUpdated": "Last updated: 25 September 2026",
     "section1": {
-      "title": "1. Parties and Scope",
-      "content": "<p>These Website Terms of Use (“Terms”) govern access to and use of www.kermitfloor.com (the “Website”), operated by Kermit Plastik Sanayi ve Ticaret Anonim Şirketi (“Kermit Floor”, “Company”).</p><p>The Website is an informational platform providing product information, catalogs/technical documents, and contact/quote request channels. The Website does not provide online checkout or e-commerce purchasing.</p>"
+      "title": "1. Operator and scope",
+      "content": "<p>These terms govern kermitfloor.ro, operated by DMS INNOVATIVE SOLUTIONS S.R.L., Bucharest, Romania, CUI 45743250.</p><p>This website provides Kermit Floor product information, catalogues, technical documents and contact channels. It does not offer online checkout. Sales and supply conditions are confirmed separately in writing.</p>"
     },
     "section2": {
       "title": "2. Acceptance",
@@ -946,7 +920,7 @@
     },
     "section6": {
       "title": "6. Intellectual Property",
-      "content": "<p>Unless explicitly stated otherwise, all Content is owned by or licensed to Kermit Floor. You may view/download catalogs and documents solely for internal evaluation and quotation discussions. Any reproduction, redistribution, commercial use, or unauthorized use of trademarks/logos is prohibited without prior written consent.</p>"
+      "content": "<p>Content and trademarks belong to Kermit Floor or their respective rights holders, or are used with permission. You may view and download catalogues and documents for product evaluation and quotation discussions. Other reproduction, redistribution or commercial use requires the relevant rights holder’s permission.</p>"
     },
     "section7": {
       "title": "7. Submissions (Forms, Messages, Files)",
@@ -970,15 +944,15 @@
     },
     "section12": {
       "title": "12. Privacy",
-      "content": "<p>Personal data handling is governed by the Privacy Policy / KVKK Notice. The KVKK notice must include core transparency items (controller identity, purposes, transfers, collection method/legal basis, rights).</p>"
+      "content": "<p>Our Privacy Policy explains the handling of personal data and cookie choices on this website.</p>"
     },
     "section13": {
-      "title": "13. Governing Law and Jurisdiction",
-      "content": "<p>These Terms are governed by the laws of the Republic of Türkiye. Courts and enforcement offices of Çayırova shall have jurisdiction.</p>"
+      "title": "13. Applicable law",
+      "content": "<p>Romanian law applies, without limiting mandatory protections available under applicable law. Disputes are handled by the competent courts. Nothing in these terms excludes rights or liabilities that cannot lawfully be excluded.</p>"
     },
     "section14": {
       "title": "14. Contact",
-      "content": "<ul><li>Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li>Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li>info@kermit.com.tr</li></ul>"
+      "content": "<p>DMS INNOVATIVE SOLUTIONS S.R.L.<br/>Bucharest, Romania · CUI 45743250<br/>info@dmsinnovative.ro<br/>+40 722 547 258 · +40 738 754 074</p>"
     }
   },
   "ConsentBanner": {

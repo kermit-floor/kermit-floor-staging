@@ -1,6 +1,7 @@
 
 'use client';
 
+import {LocalizedText} from '@/components/ui/LocalizedText';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import type { Panel } from '@/lib/panel-types';
@@ -152,7 +153,7 @@ export function ProductDetails({
                                     <DialogClose asChild>
                                         <Button variant="ghost" size="icon" className="absolute top-[-1rem] right-[-1rem] bg-black/50 hover:bg-black/70 rounded-full h-9 w-9 text-white">
                                             <X className="h-5 w-5" />
-                                            <span className="sr-only">Close</span>
+                                            <span className="sr-only"><LocalizedText ro="Închide" en="Close" /></span>
                                         </Button>
                                     </DialogClose>
                                 </DialogContent>

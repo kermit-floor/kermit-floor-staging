@@ -10,7 +10,7 @@ import { useLocale } from 'next-intl';
 
 export default function InstagramPostCard({ post }: { post: InstagramPost }) {
   const locale = useLocale();
-  const caption = locale === 'tr' ? post.caption_tr : post.caption_en;
+  const caption = locale === 'ro' ? post.caption_ro : post.caption_en;
 
   return (
     <Card className="w-full max-w-sm mx-auto overflow-hidden shadow-lg border">
@@ -27,7 +27,7 @@ export default function InstagramPostCard({ post }: { post: InstagramPost }) {
           </div>
           <span className="font-semibold text-sm">kermitfloor</span>
         </div>
-        <a href={post.postUrl} target="_blank" rel="noopener noreferrer" aria-label="View on Instagram">
+        <a href={post.postUrl} target="_blank" rel="noopener noreferrer" aria-label={locale === 'ro' ? 'Vezi pe Instagram' : 'View on Instagram'}>
           <Instagram className="h-6 w-6 text-muted-foreground" />
         </a>
       </CardHeader>
@@ -62,7 +62,7 @@ export default function InstagramPostCard({ post }: { post: InstagramPost }) {
       <CardFooter className="p-3 border-t bg-muted/50">
         <Button variant="link" asChild className="p-0 h-auto text-sm text-secondary hover:text-primary">
             <a href={post.postUrl} target="_blank" rel="noopener noreferrer">
-                View on Instagram &rarr;
+                {locale === 'ro' ? 'Vezi pe Instagram' : 'View on Instagram'} &rarr;
             </a>
         </Button>
       </CardFooter>

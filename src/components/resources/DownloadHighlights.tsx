@@ -28,7 +28,7 @@ export default async function DownloadHighlights({locale, documents}: {locale: L
           <a key={doc.id} href={doc.files[locale].url} download className="flex items-start gap-4 rounded-xl border bg-card p-6 transition-colors hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
             <Download aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-primary" />
             <div>
-              <h3 className="font-semibold">{locale === 'tr' ? doc.title_tr : doc.title}</h3>
+              <h3 className="font-semibold">{locale === 'ro' ? doc.title_ro : doc.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{t(`${doc.files[locale].language ?? locale}Pdf`)}</p>
             </div>
           </a>

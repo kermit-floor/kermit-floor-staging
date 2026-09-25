@@ -21,14 +21,14 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 function toBlogLocale(locale: string): BlogLocale | null {
-  return locale === 'en' || locale === 'tr' ? locale : null;
+  return locale === 'en' || locale === 'ro' ? locale : null;
 }
 
 export async function generateStaticParams() {
   const pairs = await getPublishedBlogPostPairs();
   return pairs.flatMap((pair) => [
     {locale: 'en', slug: pair.en.slug},
-    {locale: 'tr', slug: pair.tr.slug},
+    {locale: 'ro', slug: pair.ro.slug},
   ]);
 }
 
@@ -43,15 +43,15 @@ export async function generateMetadata({
 
   if (!postEntry) {
     return {
-      title: locale === 'tr' ? 'Yazi bulunamadi' : 'Post not found',
-      description: locale === 'tr' ? 'Istenen blog yazisi bulunamadi.' : 'The requested blog post could not be found.',
+      title: locale === 'ro' ? 'Articolul nu a fost găsit' : 'Post not found',
+      description: locale === 'ro' ? 'Articolul solicitat nu a fost găsit.' : 'The requested blog post could not be found.',
     };
   }
 
   const {post, pair} = postEntry;
   const localePath = getBlogPostPath(post.slug);
   const enPath = getBlogPostPath(pair.en.slug);
-  const trPath = getBlogPostPath(pair.tr.slug);
+  const roPath = getBlogPostPath(pair.ro.slug);
   const canonical = toAbsoluteUrl(locale, localePath);
 
   return {
@@ -61,7 +61,7 @@ export async function generateMetadata({
       canonical,
       languages: {
         en: toAbsoluteUrl('en', enPath),
-        tr: toAbsoluteUrl('tr', trPath),
+        ro: toAbsoluteUrl('ro', roPath),
       },
     },
     openGraph: {
@@ -73,7 +73,7 @@ export async function generateMetadata({
       modifiedTime: `${post.updatedAt}T00:00:00Z`,
       images: [
         {
-          url: toAbsoluteUrl('en', post.coverImage),
+          url: toAbsoluteUrl('ro', post.coverImage),
           alt: post.coverImageAlt,
         },
       ],
@@ -82,7 +82,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [toAbsoluteUrl('en', post.coverImage)],
+      images: [toAbsoluteUrl('ro', post.coverImage)],
     },
   };
 }
@@ -100,7 +100,7 @@ export default async function BlogPostPage({
 
   let postEntry = await getPublishedBlogPostBySlug(locale, slug);
   if (!postEntry) {
-    const alternateLocale: BlogLocale = locale === 'en' ? 'tr' : 'en';
+    const alternateLocale: BlogLocale = locale === 'en' ? 'ro' : 'en';
     const alternateMatch = await getPublishedBlogPostBySlug(alternateLocale, slug);
     if (alternateMatch) {
       permanentRedirect(toLocalePath(alternateLocale, getBlogPostPath(alternateMatch.post.slug)));
@@ -116,9 +116,9 @@ export default async function BlogPostPage({
   const articleJsonLd = getArticleJsonLd(post, pageUrl);
 
   const copy =
-    locale === 'tr'
+    locale === 'ro'
       ? {
-          backLabel: 'Tum yazilar',
+          backLabel: 'Toate articolele',
         }
       : {
           backLabel: 'All posts',
@@ -129,7 +129,7 @@ export default async function BlogPostPage({
       <Header
         languageSwitcherHrefs={{
           en: getBlogPostPath(pair.en.slug),
-          tr: getBlogPostPath(pair.tr.slug),
+          ro: getBlogPostPath(pair.ro.slug),
         }}
       />
       <main className="flex-1">

@@ -1,0 +1,118 @@
+{
+  "/": {
+    "en": "/",
+    "ro": "/"
+  },
+  "/resources": {
+    "en": "/resources",
+    "ro": "/resurse"
+  },
+  "/blog": {
+    "en": "/blog",
+    "ro": "/blog"
+  },
+  "/blog/[slug]": {
+    "en": "/blog/[slug]",
+    "ro": "/blog/[slug]"
+  },
+  "/blog/tag/[tag]": {
+    "en": "/blog/tag/[tag]",
+    "ro": "/blog/tag/[tag]"
+  },
+  "/about": {
+    "en": "/about",
+    "ro": "/despre-noi"
+  },
+  "/contact": {
+    "en": "/contact",
+    "ro": "/contact"
+  },
+  "/spc-wall-panels": {
+    "en": "/spc-wall-panels",
+    "ro": "/panouri-de-perete-spc"
+  },
+  "/spc-3d-wall-panels-model-a": {
+    "en": "/spc-3d-wall-panels-model-a",
+    "ro": "/panouri-spc-3d-model-a"
+  },
+  "/spc-3d-wall-panels-model-b": {
+    "en": "/spc-3d-wall-panels-model-b",
+    "ro": "/panouri-spc-3d-model-b"
+  },
+  "/spc-flooring-elegance-collection": {
+    "en": "/spc-flooring-elegance-collection",
+    "ro": "/parchet-spc-colectia-elegance"
+  },
+  "/spc-flooring-sky-collection": {
+    "en": "/spc-flooring-sky-collection",
+    "ro": "/parchet-spc-colectia-sky"
+  },
+  "/spc-flooring-mosaic-collection": {
+    "en": "/spc-flooring-mosaic-collection",
+    "ro": "/parchet-spc-colectia-mosaic"
+  },
+  "/spc-flooring-elite-collection": {
+    "en": "/spc-flooring-elite-collection",
+    "ro": "/parchet-spc-colectia-elite"
+  },
+  "/spc-flooring-travertine-collection": {
+    "en": "/spc-flooring-travertine-collection",
+    "ro": "/parchet-spc-colectia-travertine"
+  },
+  "/spc-parquet-natural-collection": {
+    "en": "/spc-parquet-natural-collection",
+    "ro": "/parchet-spc-colectia-natural"
+  },
+  "/spc-parquet-stone-collection": {
+    "en": "/spc-parquet-stone-collection",
+    "ro": "/parchet-spc-colectia-stone"
+  },
+  "/full-natural-collection": {
+    "en": "/full-natural-collection",
+    "ro": "/parchet-spc-full-natural"
+  },
+  "/spc-skirting-boards": {
+    "en": "/spc-skirting-boards",
+    "ro": "/plinte-spc"
+  },
+  "/spc-skirting-boards/alpha-140-mm-skirting-board": {
+    "en": "/spc-skirting-boards/alpha-140-mm-skirting-board",
+    "ro": "/plinte-spc/alpha-140-mm"
+  },
+  "/spc-skirting-boards/berlin-100-mm-skirting-board": {
+    "en": "/spc-skirting-boards/berlin-100-mm-skirting-board",
+    "ro": "/plinte-spc/berlin-100-mm"
+  },
+  "/spc-skirting-boards/elite-100-mm-skirting-board": {
+    "en": "/spc-skirting-boards/elite-100-mm-skirting-board",
+    "ro": "/plinte-spc/elite-100-mm"
+  },
+  "/spc-skirting-boards/moderna-100-mm-skirting-board": {
+    "en": "/spc-skirting-boards/moderna-100-mm-skirting-board",
+    "ro": "/plinte-spc/moderna-100-mm"
+  },
+  "/spc-skirting-boards/optima-60-mm-skirting-board": {
+    "en": "/spc-skirting-boards/optima-60-mm-skirting-board",
+    "ro": "/plinte-spc/optima-60-mm"
+  },
+  "/spc-skirting-boards/optima-90-mm-skirting-board": {
+    "en": "/spc-skirting-boards/optima-90-mm-skirting-board",
+    "ro": "/plinte-spc/optima-90-mm"
+  },
+  "/spc-skirting-boards/solid-80-mm-skirting-board": {
+    "en": "/spc-skirting-boards/solid-80-mm-skirting-board",
+    "ro": "/plinte-spc/solid-80-mm"
+  },
+  "/spc-skirting-boards/x-line-100-mm-skirting-board": {
+    "en": "/spc-skirting-boards/x-line-100-mm-skirting-board",
+    "ro": "/plinte-spc/x-line-100-mm"
+  },
+  "/privacy-policy": {
+    "en": "/privacy-policy",
+    "ro": "/politica-de-confidentialitate"
+  },
+  "/terms-of-service": {
+    "en": "/terms-of-service",
+    "ro": "/termeni-de-utilizare"
+  }
+}

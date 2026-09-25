@@ -1,7 +1,12 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
+  "account_id": "542a80d833f2cf2d70591dbf553ed0d2",
+  "routes": [
+    {"pattern": "kermitfloor.ro", "custom_domain": true},
+    {"pattern": "www.kermitfloor.ro", "custom_domain": true}
+  ],
   "main": ".open-next/worker.js",
-  "name": "kermit-floor-staging",
+  "name": "kermit-floor-ro",
   "compatibility_date": "2025-05-05",
   "compatibility_flags": [
     "nodejs_compat",
@@ -20,7 +25,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "kermit-floor-staging"
+      "service": "kermit-floor-ro"
     }
   ],
   "images": {

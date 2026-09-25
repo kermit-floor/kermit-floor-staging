@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useLocale } from 'next-intl';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
@@ -9,10 +10,11 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 import { Separator } from '../ui/separator';
 
 type MobileMenuProps = {
-  languageSwitcherHrefs?: Partial<Record<'en' | 'tr', string>>;
+  languageSwitcherHrefs?: Partial<Record<'en' | 'ro', string>>;
 };
 
 export function MobileMenu({ languageSwitcherHrefs }: MobileMenuProps) {
+  const locale = useLocale();
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -22,13 +24,13 @@ export function MobileMenu({ languageSwitcherHrefs }: MobileMenuProps) {
           variant="ghost"
           size="icon"
           className="h-12 w-12 [&_svg]:size-9"
-          aria-label="Open menu"
+          aria-label={locale === 'ro' ? 'Deschide meniul' : 'Open menu'}
         >
           <Menu />
         </Button>
       </SheetTrigger>
         <SheetContent side="left" className="w-full max-w-sm p-0">
-        <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
+        <SheetTitle className="sr-only">{locale === 'ro' ? 'Meniu de navigare' : 'Mobile Navigation Menu'}</SheetTitle>
         <div className="flex flex-col h-full">
           <div className="p-6 border-b">
             <div onClick={() => setMenuOpen(false)}>

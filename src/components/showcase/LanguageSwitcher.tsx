@@ -21,22 +21,20 @@ const GBFlag = () => (
     </svg>
 );
 
-const TRFlag = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" className="!w-7 !h-auto rounded-sm" aria-hidden="true">
-        <rect width="30" height="20" fill="#e30a17" />
-        <circle cx="10" cy="10" r="5" fill="#fff" />
-        <circle cx="11.5" cy="10" r="4" fill="#e30a17" />
-        <path d="M15.5 10l4.33-2.5-1.65 4.04.01-3.08-1.66 4.04L20 10z" fill="#fff" />
-    </svg>
+const ROFlag = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" className="!w-7 !h-auto rounded-sm" aria-hidden="true">
+    <path fill="#002B7F" d="M0 0h1v2H0z" />
+    <path fill="#FCD116" d="M1 0h1v2H1z" />
+    <path fill="#CE1126" d="M2 0h1v2H2z" />
+  </svg>
 );
-
 const languages = [
-    { code: 'en', name: 'English', flag: <GBFlag /> },
-    { code: 'tr', name: 'Türkçe', flag: <TRFlag /> },
+  {code: 'ro', name: 'Română', flag: <ROFlag />},
+  {code: 'en', name: 'English', flag: <GBFlag />},
 ];
 
 type LanguageSwitcherProps = {
-  alternateHrefs?: Partial<Record<'en' | 'tr', string>>;
+  alternateHrefs?: Partial<Record<'en' | 'ro', string>>;
 };
 
 export function LanguageSwitcher({ alternateHrefs }: LanguageSwitcherProps) {
@@ -45,7 +43,7 @@ export function LanguageSwitcher({ alternateHrefs }: LanguageSwitcherProps) {
   const pathname = usePathname();
 
   const handleLanguageChange = (newLocale: string) => {
-    const overrideHref = alternateHrefs?.[newLocale as 'en' | 'tr'];
+    const overrideHref = alternateHrefs?.[newLocale as 'en' | 'ro'];
     if (overrideHref) {
       router.replace(overrideHref as any, { locale: newLocale });
       return;
@@ -60,7 +58,7 @@ export function LanguageSwitcher({ alternateHrefs }: LanguageSwitcherProps) {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="h-12 w-12">
           {currentLanguage?.flag}
-          <span className="sr-only">Change language, current: {currentLanguage?.name}</span>
+          <span className="sr-only">{locale === 'ro' ? 'Schimbă limba, limba curentă:' : 'Change language, current:'} {currentLanguage?.name}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48 p-2">

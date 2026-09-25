@@ -1,0 +1,949 @@
+{
+  "capturedAt": "2026-09-25T13:29:22.293836+00:00",
+  "domain": "kermitfloor.com",
+  "country": "Romania",
+  "windows": {
+    "latest": {
+      "start": "2026-08-26",
+      "end": "2026-09-22",
+      "gsc": {
+        "rows": [
+          {
+            "clicks": 33,
+            "impressions": 185,
+            "ctr": 0.1783783783783784,
+            "position": 3.5837837837837836
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      },
+      "gscQueries": {
+        "rows": [
+          {
+            "keys": [
+              "kermit floor"
+            ],
+            "clicks": 6,
+            "impressions": 7,
+            "ctr": 0.8571428571428571,
+            "position": 1
+          },
+          {
+            "keys": [
+              "?"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "cu tot cu montaj"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "does spc flooring need an expansion gap"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "in shower area"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "is spc waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "montaj"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "parchet spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "parere"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "skirting the line"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "spc"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 3
+          },
+          {
+            "keys": [
+              "spc parke"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "spc review"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "spc skirting"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "spc wholesale"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      },
+      "gscPages": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/"
+            ],
+            "clicks": 6,
+            "impressions": 8,
+            "ctr": 0.75,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-cost"
+            ],
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "position": 3.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-user-reviews"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-wall-panels-for-bathrooms"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 4
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/what-is-skirting-with-flexible-edges"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/contact"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-parquet-natural-collection"
+            ],
+            "clicks": 0,
+            "impressions": 6,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-parquet-stone-collection"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-skirting-boards"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 2.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-wall-panels"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          }
+        ],
+        "responseAggregationType": "byPage"
+      },
+      "ga": {
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "metricValues": [
+              {
+                "value": "41"
+              },
+              {
+                "value": "13"
+              },
+              {
+                "value": "265"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      },
+      "gaEvents": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "page_view"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "265"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "user_engagement"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "48"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "session_start"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "40"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "scroll"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "21"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "first_visit"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "5"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          }
+        ],
+        "rowCount": 6,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "previous": {
+      "start": "2026-07-29",
+      "end": "2026-08-25",
+      "gsc": {
+        "rows": [
+          {
+            "clicks": 35,
+            "impressions": 135,
+            "ctr": 0.25925925925925924,
+            "position": 4.170370370370371
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      },
+      "gscQueries": {
+        "rows": [
+          {
+            "keys": [
+              "kermit floor"
+            ],
+            "clicks": 12,
+            "impressions": 18,
+            "ctr": 0.6666666666666666,
+            "position": 1
+          },
+          {
+            "keys": [
+              "pret"
+            ],
+            "clicks": 1,
+            "impressions": 1,
+            "ctr": 1,
+            "position": 2
+          },
+          {
+            "keys": [
+              "bathroom spc wall panels"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 10
+          },
+          {
+            "keys": [
+              "can spc flooring be used in bathroom"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 1
+          },
+          {
+            "keys": [
+              "culoare alba"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "da"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "skirting 90mm"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 9
+          },
+          {
+            "keys": [
+              "spc bathroom"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 12
+          },
+          {
+            "keys": [
+              "spc in bathroom"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 11
+          },
+          {
+            "keys": [
+              "spc panel bathroom"
+            ],
+            "clicks": 0,
+            "impressions": 3,
+            "ctr": 0,
+            "position": 12
+          },
+          {
+            "keys": [
+              "spc panels bathroom"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "spc parchet"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "spc parke"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 7
+          },
+          {
+            "keys": [
+              "spc waterproofing"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      },
+      "gscPages": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/"
+            ],
+            "clicks": 13,
+            "impressions": 19,
+            "ctr": 0.6842105263157895,
+            "position": 1.0526315789473684
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 9.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/is-spc-flooring-waterproof"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/kermit-spc-skirting-advantages"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 2
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-cost"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 6
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-user-reviews"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 7
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-wall-panels-for-bathrooms"
+            ],
+            "clicks": 0,
+            "impressions": 9,
+            "ctr": 0,
+            "position": 9.555555555555555
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/contact"
+            ],
+            "clicks": 0,
+            "impressions": 18,
+            "ctr": 0,
+            "position": 3.7777777777777777
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-3d-wall-panels-model-b"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-skirting-boards/optima-90-mm-skirting-board"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 9
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/spc-wall-panels"
+            ],
+            "clicks": 0,
+            "impressions": 14,
+            "ctr": 0,
+            "position": 3.857142857142857
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/terms-of-service"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 9
+          }
+        ],
+        "responseAggregationType": "byPage"
+      },
+      "ga": {
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "totalUsers",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "screenPageViews",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "metricValues": [
+              {
+                "value": "57"
+              },
+              {
+                "value": "18"
+              },
+              {
+                "value": "290"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 1,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      },
+      "gaEvents": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "page_view"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "290"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "user_engagement"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "70"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "session_start"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "55"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "scroll"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "24"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "15"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "first_visit"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "10"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "click"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 7,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    }
+  },
+  "existingKeyEvents": {
+    "keyEvents": [
+      {
+        "name": "properties/523760978/keyEvents/13579885790",
+        "eventName": "close_convert_lead",
+        "createTime": "2026-02-08T21:48:12.926687Z",
+        "deletable": true,
+        "custom": true,
+        "countingMethod": "ONCE_PER_EVENT"
+      },
+      {
+        "name": "properties/523760978/keyEvents/13579885791",
+        "eventName": "qualify_lead",
+        "createTime": "2026-02-08T21:48:12.926687Z",
+        "deletable": true,
+        "custom": true,
+        "countingMethod": "ONCE_PER_EVENT"
+      },
+      {
+        "name": "properties/523760978/keyEvents/13579901767",
+        "eventName": "purchase",
+        "createTime": "2026-02-08T21:48:42.817177Z",
+        "countingMethod": "ONCE_PER_EVENT"
+      },
+      {
+        "name": "properties/523760978/keyEvents/15437924464",
+        "eventName": "file_download",
+        "createTime": "2026-08-14T13:58:05.794202Z",
+        "deletable": true,
+        "custom": true,
+        "countingMethod": "ONCE_PER_EVENT"
+      },
+      {
+        "name": "properties/523760978/keyEvents/15437946104",
+        "eventName": "generate_lead",
+        "createTime": "2026-08-14T13:58:04.344410Z",
+        "deletable": true,
+        "custom": true,
+        "countingMethod": "ONCE_PER_SESSION"
+      }
+    ]
+  },
+  "roPropertyAccess": {
+    "error": 403,
+    "body": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"The caller does not have permission\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  }
+}

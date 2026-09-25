@@ -1,5 +1,6 @@
 'use client';
 
+import {LocalizedText} from '@/components/ui/LocalizedText';
 import type { Resource, Locale } from '@/lib/resources-data';
 import { useLocale, useTranslations } from 'next-intl';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
@@ -32,16 +33,16 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
   const t = useTranslations('ResourcesPage');
   const tDialog = useTranslations('StarterPackDialog');
 
-  const title = locale === 'tr' ? pack.title_tr : pack.title;
-  const summary = locale === 'tr' ? pack.summary_tr : pack.summary;
-  const bullets = locale === 'tr' ? pack.bullets_tr : pack.bullets;
+  const title = locale === 'ro' ? pack.title_ro : pack.title;
+  const summary = locale === 'ro' ? pack.summary_ro : pack.summary;
+  const bullets = locale === 'ro' ? pack.bullets_ro : pack.bullets;
   
   const packAudience = pack.audience[0];
   const packContents = libraryDocs.filter(
     doc => doc.audience.includes(packAudience) || doc.audience.includes('all')
   );
 
-  const email = "info@kermit.com.tr";
+  const email = "info@dmsinnovative.ro";
   const whatsappMessage = tDialog('whatsappMessage', { packName: title });
   const whatsappUrl = getWhatsAppUrl(locale, whatsappMessage);
 
@@ -101,7 +102,7 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
                 <DialogClose asChild>
                     <Button variant="ghost" size="icon" className="absolute top-3 right-3 rounded-full">
                         <X className="h-4 w-4" />
-                        <span className="sr-only">Close</span>
+                        <span className="sr-only"><LocalizedText ro="Închide" en="Close" /></span>
                     </Button>
                 </DialogClose>
             </DialogContent>
@@ -122,7 +123,7 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
                 <ScrollArea className="h-[60vh] border-y">
                     <div className="space-y-3 p-6">
                         {packContents.length > 0 ? packContents.map(doc => {
-                            const docTitle = locale === 'tr' ? doc.title_tr : doc.title;
+                            const docTitle = locale === 'ro' ? doc.title_ro : doc.title;
                             return (
                                 <div key={doc.id} className="flex items-center justify-between p-3 rounded-lg border bg-muted/50">
                                     <div className="flex items-center gap-3 overflow-hidden">
@@ -139,7 +140,7 @@ export default function StarterPackCard({ pack, libraryDocs }: StarterPackCardPr
                 <DialogClose asChild>
                     <Button variant="ghost" size="icon" className="absolute top-3 right-3 rounded-full">
                         <X className="h-4 w-4" />
-                        <span className="sr-only">Close</span>
+                        <span className="sr-only"><LocalizedText ro="Închide" en="Close" /></span>
                     </Button>
                 </DialogClose>
             </DialogContent>
