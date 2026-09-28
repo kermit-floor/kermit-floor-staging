@@ -221,11 +221,11 @@
   "AboutPage": {
     "seo": {
       "metaTitle": "Türkiye'de SPC Parke Üreticisi | Kermit Floor",
-      "metaDescription": "Kermit'ten SPC parke, süpürgelik ve duvar paneli. OEM ve özel marka tedarik; bir konteyner minimum sipariş ve dört haftalık standart süre."
+      "metaDescription": "Kermit Floor: SPC parke ve duvar panelinde yıllık toplam 8 milyon m² kapasite, dört ülkede faaliyet, OEM tedarik, bir konteyner minimum sipariş ve dört hafta standart süre."
     },
     "hero": {
       "title": "Türkiye'de SPC Parke Üreticisi",
-      "subtitle": "Kermit Floor; distribütörler, kendi markasıyla ürün sunan işletmeler ve iç mekân projeleri için SPC parke, süpürgelik ve duvar paneli tedarik eder. Ürün özelliklerini, numuneleri ve yazılı tedarik teklifini birlikte değerlendirin.",
+      "subtitle": "Kermit Floor; distribütörler, kendi markasıyla ürün sunan işletmeler ve iç mekân projeleri için SPC parke, duvar paneli ve süpürgelik üretir. Parke ve duvar panelinde yıllık toplam 8 milyon m² üretim kapasitesiyle Türkiye, Moldova, Romanya ve ABD’de faaliyet gösterir.",
       "ctaPrimary": "Numune ve Teklif İsteyin",
       "ctaSecondary": "Katalogları İnceleyin"
     },
@@ -252,8 +252,8 @@
     "whyKermit": {
       "title": "Neden Kermit Floor",
       "manufacturer": {
-        "title": "Üretici Yaklaşımı",
-        "text": "Standart spesifikasyon, tutarlı kalite ve süreklilik."
+        "title": "Endüstriyel üretim kapasitesi",
+        "text": "SPC parke ve duvar panelinde yıllık toplam 8 milyon m² kapasite; siparişinize göre belirlenen ürün özellikleri ve tedarik koşulları."
       },
       "design": {
         "title": "Tasarım Kontrolü",
@@ -265,8 +265,8 @@
       }
     },
     "footprint": {
-      "title": "Türkiye ve Avrupa'da Kermit",
-      "p1": "Yurt içi projeler ve ihracat süreçleri için planlanmış üretim ve tedarik yapısıyla çalışıyoruz. Amacımız; bayi/distribütör, uygulamacı ve proje alıcıları için güvenilir stok/termin, net dokümantasyon ve öngörülebilir sonuçtur.",
+      "title": "Dört ülkede Kermit faaliyetleri",
+      "p1": "Kermit Floor; Türkiye, Moldova, Romanya ve ABD’de faaliyet gösterir. Merkezimiz ve ana fabrikamız Çayırova, Kocaeli’dedir; Moldova’nın Kişinev kentinde de fabrikamız bulunur. Aşağıda fabrika adreslerimizi, Romanya mağazamızı ve ABD talepleri için iletişim yolunu bulabilirsiniz.",
       "ctaTitle": "Bizimle çalışmak ister misiniz?",
       "ctaText": "Bayi/distribütör yapılanmalarına ve proje bazlı tedarik modeline uygunuz. Doküman, numune ve ticari koşullar için satış ekibimizle iletişime geçin.",
       "ctaButton1": "Satış ile İletişim",
@@ -274,16 +274,20 @@
       "imageAlt": "Çatısında güneş panelleri bulunan fabrika binası",
       "locations": {
         "turkey": {
-          "title": "Türkiye · Çayırova, Kocaeli",
+          "title": "Türkiye · Merkez ve fabrika",
           "address": "Kermit Plastik Sanayi ve Ticaret A.Ş. · Cumhuriyet Mh. Cihan Sk. No:4, Çayırova, Kocaeli"
         },
         "moldova": {
-          "title": "Moldova · Kişinev",
+          "title": "Moldova · Kişinev fabrikası",
           "address": "Muncești 799, Chișinău, Moldova"
         },
         "romania": {
           "title": "Romanya · Bükreş mağazası",
           "address": "DMS Innovative Solution SRL · Bükreş, Romanya"
+        },
+        "usa": {
+          "title": "ABD · Faaliyetlerimiz",
+          "address": "ABD talepleri için ürün bulunabilirliğini, tedarik yolunu ve ticari koşulları satış ekibimizle görüşebilirsiniz."
         }
       },
       "originNote": "Teslimat yerini ve ürün kodlarını ekibimizle paylaşın; siparişinize ilişkin tedarik ayrıntıları teklifte netleşsin."
@@ -299,20 +303,38 @@
       "ctaSecondary": "Katalogları İnceleyin"
     },
     "supply": {
-      "title": "Toptan SPC parke tedarik koşulları",
+      "title": "Kermit Floor üretim ve toptan tedarik bilgileri",
       "moq": {
         "label": "Minimum toptan sipariş",
-        "value": "1 konteyner"
+        "value": "1 konteyner",
+        "detail": "Toptan SPC parke siparişleri"
       },
       "leadTime": {
         "label": "Standart tedarik süresi",
-        "value": "4 hafta"
+        "value": "4 hafta",
+        "detail": "Sipariş takvimi teklifte netleşir"
       },
       "branding": {
         "label": "Markalama seçenekleri",
-        "value": "OEM ve özel marka"
+        "value": "OEM ve özel marka",
+        "detail": "Ürün, ambalaj ve tasarım birlikte belirlenir"
       },
-      "note": "Ürün özellikleri, ambalaj, markalama kapsamı ve sipariş takvimi teklifte netleşir. Seçtiğiniz ürünler için yükleme hesabını ve teslimat yerine ulaşma tarihini isteyin."
+      "note": "Ürün özellikleri, ambalaj, markalama kapsamı ve sipariş takvimi teklifte netleşir. Seçtiğiniz ürünler için yükleme hesabını ve teslimat yerine ulaşma tarihini isteyin.",
+      "capacity": {
+        "label": "Yıllık üretim kapasitesi",
+        "value": "8 milyon m²",
+        "detail": "SPC parke ve duvar paneli toplamı"
+      },
+      "countries": {
+        "label": "Faaliyet alanımız",
+        "value": "4 ülke",
+        "detail": "Türkiye · Moldova · Romanya · ABD"
+      },
+      "headquarters": {
+        "label": "Merkez ve ana fabrika",
+        "value": "Çayırova, Kocaeli",
+        "detail": "Kermit Plastik Sanayi ve Ticaret A.Ş., Türkiye"
+      }
     },
     "documentation": {
       "title": "Şartnameniz için ürün belgeleri",
@@ -338,8 +360,8 @@
     "questions": {
       "title": "İlk sipariş öncesinde sık sorulanlar",
       "factory": {
-        "question": "Kermit'in merkezi nerede?",
-        "answer": "Kermit Plastik Sanayi ve Ticaret A.Ş., Türkiye'de Kocaeli'nin Çayırova ilçesinde yer alır. Şirketimizin Moldova Kişinev'de ve Romanya Bükreş'te de noktaları bulunur. Seçtiğiniz ürünlerin tedarik düzeni için ekibimizle iletişime geçin."
+        "question": "Kermit Floor’un fabrikaları nerede?",
+        "answer": "Kermit Floor’un merkezi ve ana fabrikası Türkiye’de, Kocaeli’nin Çayırova ilçesindedir. Moldova’nın Kişinev kentinde de fabrikamız bulunur. Siparişinizdeki ürünlerin üretim yerini ve tedarik düzenini ekibimizle netleştirebilirsiniz."
       },
       "moq": {
         "question": "Toptan SPC parkede minimum sipariş miktarı nedir?",
@@ -356,6 +378,14 @@
       "enquiry": {
         "question": "Numune veya teklif talebinde hangi bilgiler gerekir?",
         "answer": "Şirket bilgilerinizi, teslimat yerini, ürün veya desen kodlarını, teknik özellikleri, miktarı, kullanım alanını, numune ihtiyacını ve istenen teslim tarihini gönderin. Özel marka veya proje belgeleriyle ilgili ihtiyaçlarınızı da ekleyin."
+      },
+      "capacity": {
+        "question": "Kermit Floor’un yıllık üretim kapasitesi nedir?",
+        "answer": "Kermit Floor’un SPC parke ve duvar panelinde yıllık toplam üretim kapasitesi 8 milyon m²’dir. Siparişe ait miktar, ürün dağılımı ve takvim teklifte netleştirilir."
+      },
+      "countries": {
+        "question": "Kermit Floor hangi ülkelerde faaliyet gösteriyor?",
+        "answer": "Kermit Floor; Türkiye, Moldova, Romanya ve ABD’de faaliyet gösterir. Üretim noktalarımız Türkiye ve Moldova’dadır; Romanya’nın Bükreş kentinde mağazamız bulunur. ABD tedarik talepleriniz için ekibimizle iletişime geçebilirsiniz."
       }
     }
   },

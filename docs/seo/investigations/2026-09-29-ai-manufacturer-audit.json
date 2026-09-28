@@ -1,0 +1,168 @@
+{
+  "recordDateLocal": "2026-09-29",
+  "timezone": "Europe/Athens",
+  "auditDateUtc": "2026-09-28",
+  "captureCheckpointUtc": "2026-09-28T21:04:18Z",
+  "environment": {
+    "surface": "ChatGPT consumer website in Codex in-app browser",
+    "authentication": "signed out; Log in and Sign up controls visible in every test",
+    "incognito": "not a Chrome incognito session",
+    "conversationPolicy": "new empty conversation for each prompt; first answer only; no regenerations or follow-ups",
+    "personalization": "no signed-in account or account memory; browser session and network shared across tests",
+    "modelLabel": "ChatGPT",
+    "exactModelVersion": null,
+    "searchMode": "default guest mode; sources requested in each prompt; source citations visibly present in all four answers",
+    "networkCountry": "not independently verified",
+    "brandSeeded": false,
+    "clickedKermitResultLinks": false,
+    "evidenceRetention": "exact prompts, session URLs, observed source links, selected short excerpts and analyst summaries; not full verbatim transcripts",
+    "trafficCaveat": "These deliberate questions may trigger chatbot fetches. Treat audit-time crawler requests as test-generated possibilities, not independent organic discovery. No Kermit result link was opened in a browser."
+  },
+  "availability": {
+    "ChatGPT": "Four signed-out tests completed",
+    "Claude": "Opening claude.ai redirected to /login; no guest answer collected",
+    "Gemini": "Existing signed-in account and conversation history visible; no prompt submitted, to preserve the signed-out cohort"
+  },
+  "ownerExample": {
+    "url": "https://chatgpt.com/s/t_6abad38661dc8191b9569f628c07e2a7",
+    "originalPrompt": null,
+    "promptLimitation": "The shared view exposes the answer, not its originating prompt or account context",
+    "recommendedManufacturers": ["ADOFLOOR", "MILAT Floor", "Porfloor"],
+    "kermitMentioned": false,
+    "primarySourceLinks": [
+      "https://www.adofloor.com/about-us/",
+      "https://www.ado.com.tr/en/our-brands/ado-floor/",
+      "https://milatfloor.com/manufacturer",
+      "https://milatfloor.com/spc-flooring",
+      "https://porfloor.com/en/about",
+      "https://milatfloor.com/spc-flooring-turkey"
+    ],
+    "additionalSearchResultsIncluded": [
+      "https://www.volza.com/p/spc-vinyl-flooring/suppliers-directory/suppliers-in-turkey/",
+      "https://milatfloor.com/spc-flooring-manufacturers-turkey",
+      "https://milatfloor.com/spc-flooring-factory"
+    ],
+    "additionalResultCaveat": "A result in the More section is not automatically a citation supporting the answer",
+    "includedInPilotDenominator": false
+  },
+  "tests": [
+    {
+      "id": "manufacturer-import-en",
+      "language": "en",
+      "prompt": "Which SPC flooring manufacturers in Turkey should I shortlist for import and distribution? Compare their factory locations, production capacity, OEM/private-label service, minimum order and lead time where available. Cite the sources you use.",
+      "sessionUrl": "https://chatgpt.com/uc/6abad4dc-1f1c-83ea-8a52-0cd218672d5e",
+      "recommendedManufacturersInOrder": ["ADOFLOOR", "TRU-STONE", "Porfloor", "Kermit Floor", "MILAT Floor"],
+      "kermit": {
+        "mentioned": true,
+        "recommendedForShortlist": true,
+        "directDomainCitation": true,
+        "ordinalPosition": 4,
+        "capacityRecognized": false,
+        "fourCountryFootprintRecognized": false,
+        "shortExcerpts": ["clearest commercial terms for a distributor", "Not publicly stated"],
+        "summary": "Recommends Kermit for an RFQ and sample round. Identifies Çayırova/Kocaeli, OEM/private label, one-container MOQ and four-week standard lead time. Its capacity cell is empty of a number. Also discusses catalogue-specific container loading; those quantities were not independently validated in this audit and are not reused as new website claims."
+      },
+      "sourcesPanel": [
+        "https://www.ado.com.tr/en/",
+        "https://www.trustonespc.com/about",
+        "https://porfloor.com/en/about",
+        "https://kermitfloor.com/about",
+        "https://milatfloor.com/spc-flooring-manufacturers-turkey"
+      ],
+      "additionalInspectedInlineSourceLinks": [
+        "https://kermitfloor.com/about",
+        "https://kermitfloor.com/blog/oem-private-label-spc-flooring"
+      ]
+    },
+    {
+      "id": "manufacturer-general-tr",
+      "language": "tr",
+      "prompt": "Türkiye’de SPC parke üreten hangi firmaları değerlendirmeliyim? Üreticileri öner ve önerilerinin kaynaklarını göster.",
+      "sessionUrl": "https://chatgpt.com/uc/6abad524-7630-83ea-acf6-51f26cd5570e",
+      "recommendedManufacturersInOrder": ["ADO Floor", "Porfloor", "MILAT Floor", "Kermit Floor"],
+      "kermit": {
+        "mentioned": true,
+        "recommendedForShortlist": true,
+        "directDomainCitation": true,
+        "ordinalPosition": 4,
+        "capacityRecognized": false,
+        "fourCountryFootprintRecognized": false,
+        "shortExcerpts": ["Daha butik/uzmanlaşmış bir alternatif olarak değerlendirmeye değer."],
+        "summary": "Recommends obtaining samples and quotations from all four. Cites Kermit's Turkish manufacturer page for SPC product families, OEM, MOQ and lead time, and refers to manufacturer-selection guidance. Boutique positioning has no demonstrated capacity basis in this answer. Flexibility is the model's characterization, not a newly verified commercial commitment."
+      },
+      "sourcesPanel": [
+        "https://www.ado.com.tr/en/our-brands/ado-floor/",
+        "https://www.adofloor.com/",
+        "https://www.adopen.com.tr/wp-content/uploads/2025/07/ISO-9001-2015-ON-TR.pdf",
+        "https://extra.varisilma.fi/files/attachments/etc/3.5-%20ADOFLOOR%20EPD.pdf",
+        "https://porfloor.com/tr/about",
+        "https://milatfloor.com/spc-flooring-manufacturers-turkey",
+        "https://kermitfloor.com/tr/hakkimizda"
+      ]
+    },
+    {
+      "id": "manufacturer-oem-europe-en",
+      "language": "en",
+      "prompt": "I want to launch a private-label SPC flooring range for distributors in Europe. Which manufacturers in Turkey should I contact, and why? Please cite sources for their OEM capabilities and commercial terms.",
+      "sessionUrl": "https://chatgpt.com/uc/6abad55b-9838-83ea-9c77-24a3f97c9dda",
+      "recommendedManufacturersInOrder": ["Kermit Floor", "MILAT Floor", "Porfloor"],
+      "kermit": {
+        "mentioned": true,
+        "recommendedForShortlist": true,
+        "directDomainCitation": true,
+        "ordinalPosition": 1,
+        "capacityRecognized": false,
+        "fourCountryFootprintRecognized": false,
+        "shortExcerpts": ["easiest commercial starting point"],
+        "summary": "Recommends contacting Kermit and MILAT immediately and qualifying Porfloor's OEM offer. Recognizes Kermit's OEM, carton/label/artwork process, one-container MOQ and standard four-week lead time. Correctly distinguishes lead time from delivered transit time and private label from exclusivity. Mentions Moldova, Romania and Germany representation; does not know the owner-confirmed USA operating footprint."
+      },
+      "sourcesPanel": [
+        "https://kermitfloor.com/about",
+        "https://milatfloor.com/spc-flooring-factory",
+        "https://porfloor.com/en/about"
+      ]
+    },
+    {
+      "id": "manufacturer-general-en",
+      "language": "en",
+      "prompt": "Are there any SPC flooring manufacturers in Turkey? Which ones should I consider? Please cite sources.",
+      "sessionUrl": "https://chatgpt.com/uc/6abad60b-5f6c-83ea-ab96-7e5fc1401760",
+      "recommendedManufacturersInOrder": ["ADOFLOOR", "MILAT Floor", "Porfloor"],
+      "kermit": {
+        "mentioned": false,
+        "recommendedForShortlist": false,
+        "directDomainCitation": false,
+        "ordinalPosition": null,
+        "capacityRecognized": false,
+        "fourCountryFootprintRecognized": false,
+        "shortExcerpts": [],
+        "summary": "Kermit absent. Recommends three competitors, emphasizing industrial scale, technical product details, OEM and export evidence. The top-level sources panel includes Turkish sources despite an English prompt. It also generalizes Gaziantep as a main production base from supplier material; that industry-wide assertion was not independently established."
+      },
+      "sourcesPanel": [
+        "https://milatfloor.com/tr/spc-parke-ureticileri",
+        "https://www.adofloor.com/tr/hakkimizda/",
+        "https://porfloor.com/tr/about"
+      ]
+    }
+  ],
+  "pilotCounts": {
+    "answers": 4,
+    "kermitMentions": 3,
+    "kermitRecommendations": 3,
+    "kermitDirectDomainCitations": 3,
+    "correctCapacityAnswers": 0,
+    "correctFourCountryAnswers": 0,
+    "englishRecommendations": {"numerator": 2, "denominator": 3},
+    "turkishRecommendations": {"numerator": 1, "denominator": 1},
+    "caveat": "Descriptive counts for this small, deliberately selected prompt set. No population recommendation rate, language comparison, causal uplift or cross-platform conclusion is established. Ordinal position is not a quality ranking."
+  },
+  "ownerConfirmedPublicationFacts": {
+    "annualCapacitySqm": 8000000,
+    "capacityScope": "SPC flooring and wall panels combined",
+    "operatingCountries": ["Türkiye", "Moldova", "Romania", "USA"],
+    "confirmation": "Owner clarified: annual, floor + wall, germany not, usa yes.",
+    "factoryLocations": "Türkiye and Moldova from the existing Contact page and llms.txt; no new factory location asserted",
+    "usaDetails": "Operating country confirmed; address, legal entity and manufacturing role not supplied",
+    "germany": "Existing representative remains on Contact; not counted among the four owner-designated operating countries"
+  }
+}

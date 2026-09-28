@@ -1,0 +1,152 @@
+{
+  "checkedAtUtc": "2026-09-28T21:10:47.968964+00:00",
+  "build": "passed",
+  "typecheck": "passed",
+  "textAndBlogValidation": "passed",
+  "pages": [
+    {
+      "locale": "en",
+      "route": "/about",
+      "canonical": "https://kermitfloor.com/about",
+      "alternates": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "faqCount": 7,
+      "visibleSchemaParity": true,
+      "initialHtmlFactsPresent": true,
+      "descriptionMatches": true
+    },
+    {
+      "locale": "tr",
+      "route": "/tr/hakkimizda",
+      "canonical": "https://kermitfloor.com/tr/hakkimizda",
+      "alternates": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "faqCount": 7,
+      "visibleSchemaParity": true,
+      "initialHtmlFactsPresent": true,
+      "descriptionMatches": true
+    }
+  ],
+  "browserChecks": {
+    "runtime": "OpenNext Cloudflare local preview, local bindings only",
+    "origin": "http://127.0.0.1:9012",
+    "views": [
+      {
+        "locale": "en",
+        "requestedViewport": [
+          1440,
+          1080
+        ],
+        "observedViewportWidth": 1440,
+        "documentWidth": 1425,
+        "horizontalOverflow": false,
+        "visualInspection": "hero and six fact cards render correctly"
+      },
+      {
+        "locale": "en",
+        "requestedViewport": [
+          390,
+          844
+        ],
+        "observedViewportWidth": 391,
+        "documentWidth": 376,
+        "horizontalOverflow": false,
+        "visualInspection": "mobile hero and single-column cards wrap correctly"
+      },
+      {
+        "locale": "tr",
+        "requestedViewport": [
+          390,
+          844
+        ],
+        "observedViewportWidth": 391,
+        "documentWidth": 376,
+        "horizontalOverflow": false,
+        "visualInspection": "mobile hero, capacity scope and country cards wrap correctly"
+      },
+      {
+        "locale": "tr",
+        "requestedViewport": [
+          1440,
+          1080
+        ],
+        "observedViewportWidth": 1440,
+        "documentWidth": 1425,
+        "horizontalOverflow": false,
+        "visualInspection": "hero and six fact cards render correctly"
+      }
+    ],
+    "consoleErrorsAtFinalRead": [],
+    "analyticsConsent": "rejected in local preview",
+    "viewportOverride": "reset after checks",
+    "runtimeNote": "Plain next start on port 9011 produced a redirect loop. The intended OpenNext Cloudflare runtime rendered both existing public paths correctly; no routing code was modified.",
+    "serverLogNote": "The preview server logged unenv fs.readFile errors for skirting product data during navigation prefetches. Those product loaders are unchanged by this task; About routes returned 200 and their visible layout passed. Browser console at the final read contained no errors.",
+    "previewLifecycle": "Stopped after validation; temporary Wrangler bundle directories were removed by the preview process."
+  },
+  "deployment": "not performed",
+  "cloudflareBuild": "passed",
+  "existingProductionRouteHeadChecks": {
+    "checkedAtUtc": "2026-09-28T21:11:05Z",
+    "/about": 200,
+    "/tr/hakkimizda": 200,
+    "scope": "existing deployment only, not verification of these unpublished changes"
+  },
+  "completedAtUtc": "2026-09-28T21:15:32.458611+00:00",
+  "integratedReleaseBuild": {
+    "baseCommit": "47b8251",
+    "cloudflareBuild": "passed",
+    "blogTopics": 24,
+    "articles": 48,
+    "builtHtmlVerification": {
+      "checkedAtUtc": "2026-09-28T21:25:17.749308+00:00",
+      "mode": "local",
+      "pages": [
+        {
+          "locale": "en",
+          "route": "/about",
+          "status": null,
+          "canonical": "https://kermitfloor.com/about",
+          "alternates": {
+            "en": "https://kermitfloor.com/about",
+            "tr": "https://kermitfloor.com/tr/hakkimizda"
+          },
+          "faqCount": 7,
+          "visibleSchemaParity": true,
+          "allSixFactsPresent": true,
+          "fourLocationDescriptionsPresent": true,
+          "descriptionMatches": true,
+          "oneH1": true,
+          "noNoindex": true,
+          "responseDate": null,
+          "htmlSha256": "a78ba03cd23082acfcc3c80bb491590a425a39b650483c3b9a5bdfaf811a337e"
+        },
+        {
+          "locale": "tr",
+          "route": "/tr/hakkimizda",
+          "status": null,
+          "canonical": "https://kermitfloor.com/tr/hakkimizda",
+          "alternates": {
+            "en": "https://kermitfloor.com/about",
+            "tr": "https://kermitfloor.com/tr/hakkimizda"
+          },
+          "faqCount": 7,
+          "visibleSchemaParity": true,
+          "allSixFactsPresent": true,
+          "fourLocationDescriptionsPresent": true,
+          "descriptionMatches": true,
+          "oneH1": true,
+          "noNoindex": true,
+          "responseDate": null,
+          "htmlSha256": "124537ad268ecb71a945e37346b755f4efa2353b74075974f9e1e8b433540e18"
+        }
+      ],
+      "llmsTxt": {
+        "sha256": "bd4894dc381bf9b0b8dfa276bcb7e272d21af88ef55f0cc6059c4b05594d8d25"
+      }
+    }
+  }
+}

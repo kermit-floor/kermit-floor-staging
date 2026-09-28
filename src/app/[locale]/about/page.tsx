@@ -67,7 +67,7 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('AboutPage');
-  const faqItems = ['factory', 'moq', 'leadTime', 'oem', 'enquiry'].map((key) => ({
+  const faqItems = ['factory', 'capacity', 'countries', 'moq', 'leadTime', 'oem', 'enquiry'].map((key) => ({
     question: t(`questions.${key}.question`),
     answer: t(`questions.${key}.answer`),
   }));
@@ -122,11 +122,12 @@ export default async function AboutPage({
         <div className="container px-4 mx-auto space-y-16 md:space-y-24 py-16 md:py-24">
             <section aria-labelledby="supply-title" className="max-w-5xl mx-auto">
                 <h2 id="supply-title" className="font-headline text-3xl font-bold text-center">{t('supply.title')}</h2>
-                <dl className="mt-8 grid gap-4 sm:grid-cols-3">
-                    {['moq', 'leadTime', 'branding'].map((key) => (
+                <dl className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {['capacity', 'countries', 'headquarters', 'moq', 'leadTime', 'branding'].map((key) => (
                         <div key={key} className="rounded-xl border bg-card p-6 text-center">
                             <dt className="text-sm font-medium text-muted-foreground">{t(`supply.${key}.label`)}</dt>
                             <dd className="mt-2 font-headline text-2xl font-bold text-primary">{t(`supply.${key}.value`)}</dd>
+                            <dd className="mt-2 text-sm text-muted-foreground">{t(`supply.${key}.detail`)}</dd>
                         </div>
                     ))}
                 </dl>
@@ -177,7 +178,7 @@ export default async function AboutPage({
                     <h2 className="font-headline text-3xl font-bold text-foreground">{t('footprint.title')}</h2>
                     <p className="mt-4 text-lg text-muted-foreground">{t('footprint.p1')}</p>
                     <dl className="mt-6 space-y-4">
-                        {['turkey', 'moldova', 'romania'].map((key) => (
+                        {['turkey', 'moldova', 'romania', 'usa'].map((key) => (
                             <div key={key}>
                                 <dt className="font-semibold">{t(`footprint.locations.${key}.title`)}</dt>
                                 <dd className="mt-1 text-muted-foreground">{t(`footprint.locations.${key}.address`)}</dd>

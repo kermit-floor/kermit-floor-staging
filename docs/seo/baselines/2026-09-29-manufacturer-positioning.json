@@ -1,0 +1,2636 @@
+{
+  "fetched_at": "2026-09-28T21:24:34.575345+00:00",
+  "availability": {
+    "request": {
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-28",
+      "dimensions": [
+        "date"
+      ],
+      "dataState": "final",
+      "type": "web",
+      "rowLimit": 100
+    },
+    "response": {
+      "rows": [
+        {
+          "keys": [
+            "2026-09-19"
+          ],
+          "clicks": 13,
+          "impressions": 611,
+          "ctr": 0.02127659574468085,
+          "position": 7.124386252045826
+        },
+        {
+          "keys": [
+            "2026-09-20"
+          ],
+          "clicks": 20,
+          "impressions": 617,
+          "ctr": 0.03241491085899514,
+          "position": 6.348460291734198
+        },
+        {
+          "keys": [
+            "2026-09-21"
+          ],
+          "clicks": 37,
+          "impressions": 773,
+          "ctr": 0.047865459249676584,
+          "position": 6.345407503234153
+        },
+        {
+          "keys": [
+            "2026-09-22"
+          ],
+          "clicks": 25,
+          "impressions": 829,
+          "ctr": 0.030156815440289506,
+          "position": 7.059107358262968
+        },
+        {
+          "keys": [
+            "2026-09-23"
+          ],
+          "clicks": 41,
+          "impressions": 756,
+          "ctr": 0.05423280423280423,
+          "position": 6.792328042328043
+        },
+        {
+          "keys": [
+            "2026-09-24"
+          ],
+          "clicks": 13,
+          "impressions": 748,
+          "ctr": 0.017379679144385027,
+          "position": 7.050802139037433
+        },
+        {
+          "keys": [
+            "2026-09-25"
+          ],
+          "clicks": 18,
+          "impressions": 673,
+          "ctr": 0.02674591381872214,
+          "position": 7.102526002971768
+        },
+        {
+          "keys": [
+            "2026-09-26"
+          ],
+          "clicks": 34,
+          "impressions": 659,
+          "ctr": 0.051593323216995446,
+          "position": 6.833080424886191
+        }
+      ],
+      "responseAggregationType": "byProperty"
+    }
+  },
+  "windows": {
+    "latest28": [
+      "2026-08-30",
+      "2026-09-26"
+    ],
+    "previous28": [
+      "2026-08-02",
+      "2026-08-29"
+    ]
+  },
+  "template_source": "2026-09-25-comparison-content.json",
+  "scope": "Approved About EN/TR manufacturer facts, FAQ content and llms.txt release; read-only pre-deployment baseline.",
+  "ai_buyer_pilot": {
+    "recommended_and_directly_cited": 3,
+    "correct_annual_capacity": 0,
+    "correct_complete_country_footprint": 0,
+    "total_first_answers": 4,
+    "evidence": "../investigations/2026-09-29-ai-manufacturer-audit.json"
+  },
+  "measurement_caveats": [
+    "September 21 consent repair is a measurement break; matched windows are descriptive, not a causal conversion comparison.",
+    "GA4 source regex and AI Assistant channel are separate measurements. Direct traffic and browser referrer loss are not attributable here.",
+    "Key events are contact intent/downloads, not qualified enquiries.",
+    "GSC query rows omit anonymized queries; zero returned rows are not proof of no searches.",
+    "Consumer chatbot pilot is selected and small; chatbot prompts may induce fetches. No website links were clicked during pilot."
+  ],
+  "reports": {
+    "gsc_manufacturer_queries_latest28": {
+      "request": {
+        "startDate": "2026-08-30",
+        "endDate": "2026-09-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri"
+            ],
+            "clicks": 2,
+            "impressions": 14,
+            "ctr": 0.14285714285714285,
+            "position": 1.7142857142857144
+          },
+          {
+            "keys": [
+              "oem spc flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 18
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer"
+            ],
+            "clicks": 0,
+            "impressions": 30,
+            "ctr": 0,
+            "position": 14.5
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers"
+            ],
+            "clicks": 0,
+            "impressions": 27,
+            "ctr": 0,
+            "position": 20.88888888888889
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 7.625
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_manufacturer_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-30",
+        "endDate": "2026-09-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/resources|/tr/hakkimizda|/tr/kaynaklar)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 19,
+            "impressions": 316,
+            "ctr": 0.060126582278481014,
+            "position": 6.325949367088608
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 7,
+            "impressions": 616,
+            "ctr": 0.011363636363636364,
+            "position": 9.301948051948052
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/resources"
+            ],
+            "clicks": 2,
+            "impressions": 35,
+            "ctr": 0.05714285714285714,
+            "position": 7.171428571428572
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/kaynaklar"
+            ],
+            "clicks": 0,
+            "impressions": 18,
+            "ctr": 0,
+            "position": 5.111111111111111
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_article_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-30",
+        "endDate": "2026-09-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-manufacturer\\-turkey\\-buyers\\-checklist|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-ureticisi\\-secimi|https://kermitfloor\\.com/blog/oem\\-private\\-label\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/oem\\-ozel\\-marka\\-spc\\-parke|https://kermitfloor\\.com/blog/spc\\-flooring\\-samples\\-wholesale\\-quote|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-numune\\-toptan\\-teklif)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif"
+            ],
+            "clicks": 2,
+            "impressions": 11,
+            "ctr": 0.18181818181818182,
+            "position": 6.2727272727272725
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/oem-private-label-spc-flooring"
+            ],
+            "clicks": 1,
+            "impressions": 9,
+            "ctr": 0.1111111111111111,
+            "position": 11.555555555555555
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist"
+            ],
+            "clicks": 1,
+            "impressions": 10,
+            "ctr": 0.1,
+            "position": 8.1
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+            ],
+            "clicks": 1,
+            "impressions": 7,
+            "ctr": 0.14285714285714285,
+            "position": 9.285714285714286
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote"
+            ],
+            "clicks": 0,
+            "impressions": 35,
+            "ctr": 0,
+            "position": 8.314285714285713
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+            ],
+            "clicks": 0,
+            "impressions": 9,
+            "ctr": 0,
+            "position": 5.444444444444445
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_channels_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-30",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "181"
+              },
+              {
+                "value": "119"
+              },
+              {
+                "value": "39"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "67"
+              },
+              {
+                "value": "43"
+              },
+              {
+                "value": "12"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "17"
+              },
+              {
+                "value": "7"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "AI Assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "14"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Email"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          }
+        ],
+        "rowCount": 6,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_sources_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-30",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "14"
+              },
+              {
+                "value": "10"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "gemini / (not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_lead_events_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-30",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "44"
+              },
+              {
+                "value": "44"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "15"
+              },
+              {
+                "value": "14"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_manufacturer_organic_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-30",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/about",
+                      "/resources",
+                      "/tr/hakkimizda",
+                      "/tr/kaynaklar"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "17"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/hakkimizda"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/about"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 4,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_about_pages_latest28": {
+      "request": {
+        "startDate": "2026-08-30",
+        "endDate": "2026-09-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/tr/hakkimizda)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 19,
+            "impressions": 316,
+            "ctr": 0.060126582278481014,
+            "position": 6.325949367088608
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 7,
+            "impressions": 616,
+            "ctr": 0.011363636363636364,
+            "position": 9.301948051948052
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_allocation_latest28": {
+      "request": {
+        "startDate": "2026-08-30",
+        "endDate": "2026-09-26",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri",
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 2,
+            "impressions": 14,
+            "ctr": 0.14285714285714285,
+            "position": 1.7142857142857144
+          },
+          {
+            "keys": [
+              "oem spc flooring",
+              "https://kermitfloor.com/blog/oem-private-label-spc-flooring"
+            ],
+            "clicks": 0,
+            "impressions": 2,
+            "ctr": 0,
+            "position": 18
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer",
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 30,
+            "ctr": 0,
+            "position": 14.5
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers",
+              "https://kermitfloor.com/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 8
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers",
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 26,
+            "ctr": 0,
+            "position": 21.384615384615383
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey",
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 8,
+            "ctr": 0,
+            "position": 7.625
+          },
+          {
+            "keys": [
+              "spc parke üreticileri",
+              "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 19
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_ai_landings_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-30",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr/spc-duvar-panelleri"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "(not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/spc-3d-wall-panels-model-b"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr/iletisim"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr/spc-3d-duvar-panelleri-model-a"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr/spc-3d-duvar-panelleri-model-b"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "/tr/spc-parke-elit-koleksiyonu"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "gemini / (not set)"
+              },
+              {
+                "value": "/about"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "gemini / (not set)"
+              },
+              {
+                "value": "/spc-parquet-natural-collection"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 11,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_lead_events_latest28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-30",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionSourceMedium",
+                  "stringFilter": {
+                    "matchType": "PARTIAL_REGEXP",
+                    "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+                    "caseSensitive": false
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "eventName",
+                  "inListFilter": {
+                    "values": [
+                      "generate_lead",
+                      "file_download"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "chatgpt.com / ai-assistant"
+              },
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "gemini / (not set)"
+              },
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_manufacturer_queries_previous28": {
+      "request": {
+        "startDate": "2026-08-02",
+        "endDate": "2026-08-29",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri"
+            ],
+            "clicks": 2,
+            "impressions": 15,
+            "ctr": 0.13333333333333333,
+            "position": 2.333333333333333
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer"
+            ],
+            "clicks": 0,
+            "impressions": 21,
+            "ctr": 0,
+            "position": 18.904761904761905
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers"
+            ],
+            "clicks": 0,
+            "impressions": 5,
+            "ctr": 0,
+            "position": 24.6
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 9.571428571428571
+          }
+        ],
+        "responseAggregationType": "byProperty"
+      }
+    },
+    "gsc_manufacturer_pages_previous28": {
+      "request": {
+        "startDate": "2026-08-02",
+        "endDate": "2026-08-29",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/resources|/tr/hakkimizda|/tr/kaynaklar)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 21,
+            "impressions": 367,
+            "ctr": 0.05722070844686648,
+            "position": 6.038147138964578
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 6,
+            "impressions": 445,
+            "ctr": 0.01348314606741573,
+            "position": 15.784269662921348
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/kaynaklar"
+            ],
+            "clicks": 2,
+            "impressions": 14,
+            "ctr": 0.14285714285714285,
+            "position": 24.5
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/resources"
+            ],
+            "clicks": 0,
+            "impressions": 17,
+            "ctr": 0,
+            "position": 16.411764705882355
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_article_pages_previous28": {
+      "request": {
+        "startDate": "2026-08-02",
+        "endDate": "2026-08-29",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "(?i)^(https://kermitfloor\\.com/blog/spc\\-flooring\\-manufacturer\\-turkey\\-buyers\\-checklist|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-ureticisi\\-secimi|https://kermitfloor\\.com/blog/oem\\-private\\-label\\-spc\\-flooring|https://kermitfloor\\.com/tr/blog/oem\\-ozel\\-marka\\-spc\\-parke|https://kermitfloor\\.com/blog/spc\\-flooring\\-samples\\-wholesale\\-quote|https://kermitfloor\\.com/tr/blog/spc\\-parke\\-numune\\-toptan\\-teklif)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_channels_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-02",
+            "endDate": "2026-08-29"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionDefaultChannelGroup"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "Organic Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "287"
+              },
+              {
+                "value": "181"
+              },
+              {
+                "value": "18"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Direct"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "81"
+              },
+              {
+                "value": "45"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Unassigned"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "10"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "Paid Search"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 5,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_sources_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-02",
+            "endDate": "2026-08-29"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_lead_events_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-02",
+            "endDate": "2026-08-29"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "eventName",
+            "inListFilter": {
+              "values": [
+                "generate_lead",
+                "file_download"
+              ]
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "generate_lead"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "46"
+              },
+              {
+                "value": "15"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "file_download"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "28"
+              },
+              {
+                "value": "5"
+              }
+            ]
+          }
+        ],
+        "rowCount": 2,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_manufacturer_organic_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-02",
+            "endDate": "2026-08-29"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionDefaultChannelGroup",
+                  "stringFilter": {
+                    "matchType": "EXACT",
+                    "value": "Organic Search"
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "landingPage",
+                  "inListFilter": {
+                    "values": [
+                      "/about",
+                      "/resources",
+                      "/tr/hakkimizda",
+                      "/tr/kaynaklar"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/hakkimizda"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/tr/kaynaklar"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "/resources"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 3,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "gsc_about_pages_previous28": {
+      "request": {
+        "startDate": "2026-08-02",
+        "endDate": "2026-08-29",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "page",
+                "operator": "includingRegex",
+                "expression": "^https://kermitfloor.com(/about|/tr/hakkimizda)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 21,
+            "impressions": 367,
+            "ctr": 0.05722070844686648,
+            "position": 6.038147138964578
+          },
+          {
+            "keys": [
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 6,
+            "impressions": 445,
+            "ctr": 0.01348314606741573,
+            "position": 15.784269662921348
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "gsc_manufacturer_allocation_previous28": {
+      "request": {
+        "startDate": "2026-08-02",
+        "endDate": "2026-08-29",
+        "dataState": "final",
+        "type": "web",
+        "rowLimit": 25000,
+        "dimensions": [
+          "query",
+          "page"
+        ],
+        "dimensionFilterGroups": [
+          {
+            "groupType": "and",
+            "filters": [
+              {
+                "dimension": "query",
+                "operator": "includingRegex",
+                "expression": "(?i)^(spc\\ flooring\\ manufacturer|spc\\ flooring\\ manufacturers|spc\\ flooring\\ manufacturers\\ in\\ turkey|spc\\ parke\\ üreticileri|private\\ label\\ spc\\ flooring|oem\\ spc\\ flooring|spc\\ flooring\\ wholesale|toptan\\ spc\\ parke)$"
+              }
+            ]
+          }
+        ]
+      },
+      "response": {
+        "rows": [
+          {
+            "keys": [
+              "spc parke üreticileri",
+              "https://kermitfloor.com/tr/hakkimizda"
+            ],
+            "clicks": 2,
+            "impressions": 15,
+            "ctr": 0.13333333333333333,
+            "position": 2.333333333333333
+          },
+          {
+            "keys": [
+              "spc parke üreticileri",
+              "https://kermitfloor.com/"
+            ],
+            "clicks": 1,
+            "impressions": 1,
+            "ctr": 1,
+            "position": 4
+          },
+          {
+            "keys": [
+              "spc flooring manufacturer",
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 21,
+            "ctr": 0,
+            "position": 18.904761904761905
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers",
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 5,
+            "ctr": 0,
+            "position": 24.6
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey",
+              "https://kermitfloor.com/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "position": 19
+          },
+          {
+            "keys": [
+              "spc flooring manufacturers in turkey",
+              "https://kermitfloor.com/about"
+            ],
+            "clicks": 0,
+            "impressions": 7,
+            "ctr": 0,
+            "position": 9.571428571428571
+          }
+        ],
+        "responseAggregationType": "byPage"
+      }
+    },
+    "ga4_ai_landings_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-02",
+            "endDate": "2026-08-29"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "filter": {
+            "fieldName": "sessionSourceMedium",
+            "stringFilter": {
+              "matchType": "PARTIAL_REGEXP",
+              "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+              "caseSensitive": false
+            }
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "landingPage"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_ai_lead_events_previous28": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-08-02",
+            "endDate": "2026-08-29"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "eventName"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "eventCount"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "dimensionFilter": {
+          "andGroup": {
+            "expressions": [
+              {
+                "filter": {
+                  "fieldName": "sessionSourceMedium",
+                  "stringFilter": {
+                    "matchType": "PARTIAL_REGEXP",
+                    "value": "chatgpt|perplexity|claude|gemini|copilot|openai",
+                    "caseSensitive": false
+                  }
+                }
+              },
+              {
+                "filter": {
+                  "fieldName": "eventName",
+                  "inListFilter": {
+                    "values": [
+                      "generate_lead",
+                      "file_download"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "sessionSourceMedium"
+          },
+          {
+            "name": "eventName"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "eventCount",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    },
+    "ga4_post_consent_daily": {
+      "request": {
+        "dateRanges": [
+          {
+            "startDate": "2026-09-22",
+            "endDate": "2026-09-26"
+          }
+        ],
+        "dimensions": [
+          {
+            "name": "date"
+          },
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metrics": [
+          {
+            "name": "sessions"
+          },
+          {
+            "name": "engagedSessions"
+          },
+          {
+            "name": "keyEvents"
+          }
+        ],
+        "limit": 10000
+      },
+      "response": {
+        "dimensionHeaders": [
+          {
+            "name": "date"
+          },
+          {
+            "name": "sessionSourceMedium"
+          }
+        ],
+        "metricHeaders": [
+          {
+            "name": "sessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "engagedSessions",
+            "type": "TYPE_INTEGER"
+          },
+          {
+            "name": "keyEvents",
+            "type": "TYPE_FLOAT"
+          }
+        ],
+        "rows": [
+          {
+            "dimensionValues": [
+              {
+                "value": "20260922"
+              },
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "6"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "13"
+              },
+              {
+                "value": "9"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260926"
+              },
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "6"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "4"
+              },
+              {
+                "value": "4"
+              },
+              {
+                "value": "4"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260925"
+              },
+              {
+                "value": "google / organic"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "3"
+              },
+              {
+                "value": "3"
+              },
+              {
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260925"
+              },
+              {
+                "value": "(direct) / (none)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260922"
+              },
+              {
+                "value": "(direct) / (none)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "(direct) / (none)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "gemini / (not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "2"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260923"
+              },
+              {
+                "value": "nova.paytr.com / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "(direct) / (none)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260924"
+              },
+              {
+                "value": "nova.paytr.com / referral"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "dimensionValues": [
+              {
+                "value": "20260925"
+              },
+              {
+                "value": "gemini / (not set)"
+              }
+            ],
+            "metricValues": [
+              {
+                "value": "1"
+              },
+              {
+                "value": "1"
+              },
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ],
+        "rowCount": 13,
+        "metadata": {
+          "currencyCode": "USD",
+          "timeZone": "Europe/Istanbul"
+        },
+        "kind": "analyticsData#runReport"
+      }
+    }
+  }
+}
