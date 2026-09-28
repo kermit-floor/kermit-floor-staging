@@ -1,0 +1,118 @@
+{
+  "checkedAtUtc": "2026-09-28T21:29:52.812455+00:00",
+  "mode": "production",
+  "pages": [
+    {
+      "locale": "en",
+      "route": "/about",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/about",
+      "alternates": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "faqCount": 7,
+      "visibleSchemaParity": true,
+      "allSixFactsPresent": true,
+      "fourLocationDescriptionsPresent": true,
+      "descriptionMatches": true,
+      "oneH1": true,
+      "noNoindex": true,
+      "responseDate": "Mon, 28 Sep 2026 21:29:51 GMT",
+      "htmlSha256": "6ca5f93fe0eb32ee895906c338342d6d0fea519390ef1a940ad34b34eb62bb35"
+    },
+    {
+      "locale": "tr",
+      "route": "/tr/hakkimizda",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/hakkimizda",
+      "alternates": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "faqCount": 7,
+      "visibleSchemaParity": true,
+      "allSixFactsPresent": true,
+      "fourLocationDescriptionsPresent": true,
+      "descriptionMatches": true,
+      "oneH1": true,
+      "noNoindex": true,
+      "responseDate": "Mon, 28 Sep 2026 21:29:52 GMT",
+      "htmlSha256": "1493c62af29e617333badd81f26d0fcde13dbdcdad453f9dad2ea344562a3339"
+    }
+  ],
+  "llmsTxt": {
+    "status": 200,
+    "exactSourceMatch": true,
+    "sha256": "bd4894dc381bf9b0b8dfa276bcb7e272d21af88ef55f0cc6059c4b05594d8d25"
+  },
+  "deployment": {
+    "commit": "5ac3836a1e8b50465bc99eb53ea36ce2bbad1bb8",
+    "cloudflareBuildId": "45315704-c2e3-459a-acaa-e9450bcf1957",
+    "cloudflareBuildConclusion": "success",
+    "githubBlogCheck": "success",
+    "deploymentId": "446009bd-6594-4f20-be1d-dc9c99b06ac8",
+    "workerVersion": "7818bc67-66f1-4d97-b15a-fd044ec3083a",
+    "trafficPercent": 100,
+    "deployedAtUtc": "2026-09-28T21:28:45.38285Z",
+    "localDate": "2026-09-29",
+    "gscPartialDay": "2026-09-28",
+    "gscFirstFullDay": "2026-09-29",
+    "ga4PartialDay": "2026-09-29",
+    "ga4FirstFullDay": "2026-09-30"
+  },
+  "browserVerification": {
+    "checkedAtUtc": "2026-09-28T21:30:58.362929+00:00",
+    "runtime": "consumer in-app browser, production URLs",
+    "analyticsConsent": "UI confirmed disabled, explicitly rejected again before post-deployment verification",
+    "views": [
+      {
+        "locale": "en",
+        "requestedViewport": [
+          1440,
+          1080
+        ],
+        "observedViewportWidth": 1440,
+        "documentWidth": 1425,
+        "horizontalOverflow": false,
+        "visualInspection": "hero and manufacturer facts legible; locale-specific capacity and country scope verified"
+      },
+      {
+        "locale": "en",
+        "requestedViewport": [
+          390,
+          844
+        ],
+        "observedViewportWidth": 391,
+        "documentWidth": 376,
+        "horizontalOverflow": false,
+        "visualInspection": "hero and manufacturer facts legible; locale-specific capacity and country scope verified"
+      },
+      {
+        "locale": "tr",
+        "requestedViewport": [
+          1440,
+          1080
+        ],
+        "observedViewportWidth": 1440,
+        "documentWidth": 1425,
+        "horizontalOverflow": false,
+        "visualInspection": "hero and manufacturer facts legible; locale-specific capacity and country scope verified"
+      },
+      {
+        "locale": "tr",
+        "requestedViewport": [
+          390,
+          844
+        ],
+        "observedViewportWidth": 391,
+        "documentWidth": 376,
+        "horizontalOverflow": false,
+        "visualInspection": "hero and manufacturer facts legible; locale-specific capacity and country scope verified"
+      }
+    ],
+    "consoleErrorsAtFinalRead": [],
+    "viewportOverride": "reset after verification",
+    "note": "No contact links were activated; no chatbot recommendation was re-tested during deployment verification."
+  }
+}

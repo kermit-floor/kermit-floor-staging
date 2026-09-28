@@ -87,7 +87,21 @@
     "serverLogNote": "The preview server logged unenv fs.readFile errors for skirting product data during navigation prefetches. Those product loaders are unchanged by this task; About routes returned 200 and their visible layout passed. Browser console at the final read contained no errors.",
     "previewLifecycle": "Stopped after validation; temporary Wrangler bundle directories were removed by the preview process."
   },
-  "deployment": "not performed",
+  "deployment": {
+    "commit": "5ac3836a1e8b50465bc99eb53ea36ce2bbad1bb8",
+    "cloudflareBuildId": "45315704-c2e3-459a-acaa-e9450bcf1957",
+    "cloudflareBuildConclusion": "success",
+    "githubBlogCheck": "success",
+    "deploymentId": "446009bd-6594-4f20-be1d-dc9c99b06ac8",
+    "workerVersion": "7818bc67-66f1-4d97-b15a-fd044ec3083a",
+    "trafficPercent": 100,
+    "deployedAtUtc": "2026-09-28T21:28:45.38285Z",
+    "localDate": "2026-09-29",
+    "gscPartialDay": "2026-09-28",
+    "gscFirstFullDay": "2026-09-29",
+    "ga4PartialDay": "2026-09-29",
+    "ga4FirstFullDay": "2026-09-30"
+  },
   "cloudflareBuild": "passed",
   "existingProductionRouteHeadChecks": {
     "checkedAtUtc": "2026-09-28T21:11:05Z",
@@ -148,5 +162,6 @@
         "sha256": "bd4894dc381bf9b0b8dfa276bcb7e272d21af88ef55f0cc6059c4b05594d8d25"
       }
     }
-  }
+  },
+  "productionVerification": "../baselines/2026-09-29-manufacturer-positioning-production.json"
 }

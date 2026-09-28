@@ -1,6 +1,7 @@
 # Manufacturer positioning — September 29, 2026 release
 
-Status: **approved for publication; deployment pending**. The owner requested chatbot buyer experiments,
+Status: **published and verified** — commit `5ac3836`, deployed September 28 at 21:28:45 UTC
+(September 29 in Europe/Athens). The owner requested chatbot buyer experiments,
 source analysis and stronger manufacturer positioning. [Audit and evidence](../investigations/2026-09-29-ai-manufacturer-audit.md).
 
 ## Scope and claim provenance
@@ -98,4 +99,19 @@ to the existing production About URLs returned 200; they are not verification of
 release. The owner subsequently approved commit, push and publication. The integrated
 OpenNext release build on `47b8251` also passed with 24 topics/48 articles; both built About
 pages again passed six-fact, seven-FAQ, canonical/hreflang and description checks. Production
-verification and the same-day ship record will be completed after the connected deployment.
+verification passed after the connected deployment; the same-day logbook entry records the release.
+
+## Deployment and production evidence
+
+Cloudflare Build `45315704-c2e3-459a-acaa-e9450bcf1957` and GitHub blog checks succeeded.
+Worker `7818bc67-66f1-4d97-b15a-fd044ec3083a` received 100% of traffic at
+**2026-09-28T21:28:45Z**. [Production evidence](../baselines/2026-09-29-manufacturer-positioning-production.json)
+records HTTP 200 on both About URLs and llms.txt, correct descriptions/canonicals/hreflang,
+six facts and four location descriptions in initial HTML, seven matching FAQ answers per
+locale, and an exact llms.txt source match. EN/TR desktop/mobile browser checks passed with
+no horizontal overflow or browser-console errors; analytics was disabled and no contact action
+was triggered. No post-release recommendation uplift is claimed.
+
+Exclude September 28 Pacific for GSC and September 29 Europe/Istanbul for GA4 as partial
+deployment days. First full post-release days are September 29 and September 30 respectively.
+Publication used an isolated checkout of remote main; unrelated local review edits were preserved.

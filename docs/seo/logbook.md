@@ -80,7 +80,7 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
 
 ## Open experiments
 
-### [2026-09-29] Manufacturer capacity and four-country profile — approved release
+### [2026-09-29] Manufacturer capacity and four-country profile — commit 5ac3836
 - **Change**: EN/TR About descriptions, introduction, six fact cards, location roles and seven
   visible/matching FAQs now state 8 million m² annual combined SPC flooring/wall-panel capacity
   and operations in Türkiye, Moldova, Romania and USA. `llms.txt` carries matching facts and
@@ -110,11 +110,17 @@ structural/CTR September 27; preserve the separately shipped September 21 GA4 re
   EN/TR About HTML has six facts, four location descriptions, seven matching visible/schema
   answers, correct descriptions, canonicals and hreflang. Local desktop/mobile checks passed;
   [evidence and unchanged preview-runtime qualifications](content-strategy/2026-09-29-manufacturer-positioning-validation.json).
-- **Deployment / verification**: owner approved commit, push and publication. Connected
-  Cloudflare production deployment and live checks pending at preparation; update this entry
-  with actual commit/time and verification immediately after deployment.
-- **Verdict**: PENDING recommendation/search effect; pre-release implementation checks pass.
-- **Action**: publish the approved company facts and preserve the original pilot. Immediate
+- **Deployment / verification**: owner approved commit, push and publication. Commit `5ac3836`
+  pushed to main; Cloudflare Build `45315704-c2e3-459a-acaa-e9450bcf1957` and GitHub blog checks
+  succeeded. Worker `7818bc67-66f1-4d97-b15a-fd044ec3083a` deployed to 100% at
+  **2026-09-28T21:28:45Z** (local September 29). Live EN/TR About and llms.txt return 200;
+  six facts, four location descriptions, seven matching visible/schema FAQs, descriptions,
+  canonicals/hreflang and exact llms.txt source match pass. Desktop/mobile browser checks show
+  no horizontal overflow or console errors; analytics was disabled. [Production evidence](baselines/2026-09-29-manufacturer-positioning-production.json).
+  Exclude GSC September 28 Pacific and GA4 September 29 Europe/Istanbul partial days;
+  first full post-release days are September 29 and September 30 respectively.
+- **Verdict**: PENDING recommendation/search effect; implementation and production correctness verified.
+- **Action**: published and verified; keep the approved company facts and preserve the original pilot. Immediate
   availability cannot establish recommendation uplift; mark deliberate prompt-induced crawler fetches.
 
 ### [2026-09-21] Direct Turkish product links from wall-panel articles — commit 2bcdbac

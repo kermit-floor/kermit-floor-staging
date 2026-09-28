@@ -71,7 +71,7 @@ The experiment provides no evidence that `llms.txt` caused these recommendations
 keeps the company map consistent with the visible page; the observed citations point to
 normal website content. It also does not show that more crawler requests cause more referrals.
 
-## Local implementation
+## Implementation and subsequent publication
 
 The owner confirmed **8,000,000 m²/year combined for flooring and wall panels**, and operations
 in **Türkiye, Moldova, Romania and the USA**. The existing public Contact information identifies
@@ -93,7 +93,9 @@ observed information structure. It does not quote chatbot praise on the public s
 an AI recommendation as independent accreditation.
 
 See the [release preparation and interference check](../content-strategy/2026-09-29-manufacturer-positioning.md).
-The changes are local; no commit, push or deployment is included in this audit.
+After this pre-release audit, the owner approved publication. Commit `5ac3836` deployed
+September 28 at 21:28:45 UTC (local September 29); both languages and llms.txt were verified.
+The audit remains a before-change observation; [separate release baseline and dates](../baselines/2026-09-29-manufacturer-positioning.md).
 
 ## Repeatable measurement
 
@@ -126,4 +128,5 @@ Keep the three measurement layers separate: crawler fetches, observed chatbot re
 and GA4-attributed human visits/contact intent. We did not open our own result links in a
 browser. These deliberate prompts may themselves generate bot fetches, so audit-time crawler
 traffic must not be interpreted as independent organic demand. No GA4 refresh or new traffic
-growth verdict was performed as part of this content audit.
+growth verdict was performed as part of this content audit. A fresh read-only GSC/GA4
+snapshot was subsequently captured for the approved release and is linked above.

@@ -62,7 +62,8 @@ November 10 supersedes November 6 for the overlapping combined AI/manufacturer m
 Unchanged technical/care/comparison search/link effects remain November 6, project/Elite
 November 3, wall-panel November 2, and unchanged blog FAQ/portrait maintenance October 26.
 Keep consent/desktop/office operational schedules and the September 21 measurement break.
-This release is local September 29; record the actual UTC deployment time in the ship entry
-and exclude its partial day in each property's timezone from post-release comparisons.
+Deployment: **September 28, 21:28:45 UTC**, local September 29. Exclude **September 28 Pacific**
+for GSC and **September 29 Europe/Istanbul** for GA4 as partial deployment days; the first full
+post-release days are September 29 and September 30 respectively. [Production evidence](2026-09-29-manufacturer-positioning-production.json).
 
 [All-entry scope review](../content-strategy/2026-09-29-manufacturer-positioning.md).
