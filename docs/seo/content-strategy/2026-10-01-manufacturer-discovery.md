@@ -1,6 +1,7 @@
 # Turkish SPC manufacturer discovery — prepared October 1, 2026
 
-Status: **owner-approved for commit, push and publication on October 1; deployment in progress**. Prepared on
+Status: **published and verified October 1, 2026 — commit ced8fc4**.
+[Production evidence](../baselines/2026-10-01-manufacturer-discovery-production.json). Prepared on
 `codex/ai-manufacturer-discovery` from published `main` at `5ae975e` in the managed
 manufacturer release worktree. The owner's earlier publication approval covered the
 September 29 capacity release; this candidate adds pages, metadata and incoming links.
@@ -79,7 +80,7 @@ making those facts clear on Kermit's cited pages. It does **not** show that repe
 keyword causes citations. Competitor capacities, dates and superiority claims are not
 independently verified and are not used to rank Kermit.
 
-## Prepared page changes and exact wording
+## Published page changes and exact wording
 
 Eight canonical pages, four paired EN/TR page types:
 
@@ -162,7 +163,8 @@ Prompt-triggered crawler requests on this audit date are deliberate research act
 ## Every-entry interference check and proposed shipping treatment
 
 All 22 entries in the published logbook's open/operational section were checked after the
-initial findings. This is a prepared treatment, **not yet a logbook re-baseline or ship entry**.
+initial findings. This treatment was approved and applied at shipment; matching current-treatment notes and the
+new entry are recorded in [the logbook](../logbook.md).
 
 | Existing entry | Proposed treatment when this candidate ships |
 |---|---|
@@ -192,12 +194,12 @@ initial findings. This is a prepared treatment, **not yet a logbook re-baseline 
 Owner-approved treatment: **ship and re-baseline the affected scopes**, preserving old records.
 The [October 1 dated baseline](../baselines/2026-10-01-manufacturer-discovery.md) records the chosen
 cohorts and dates before publication.
-At shipment, add a dated baseline/cohort note and matching treatment in each affected parent
-entry plus the new entry. This is limited-page work, not a shared navigation/template/schema
-overhaul. If the owner chooses to wait, preserve the pending scopes instead of applying these
-future dates now. Refresh the baseline if publication happens later or intervening work ships.
+At shipment, the dated baseline/cohort note and matching treatment were added to each checked
+parent entry plus the new entry. This is limited-page work, not a shared navigation/template/schema
+overhaul. The actual release and verification timestamps are saved in the production evidence;
+refresh the baseline before any later overlapping intervention.
 
-If shipped October 1: **October 15** recrawl/first repeated questions, **October 29**
+Shipped October 1: **October 15** recrawl/first repeated questions, **October 29**
 metadata/questions, **November 12** combined manufacturer, affected wall/broad-floor and
 aggregate AI/content outcome. Those dates supersede Nov 10 only for overlapping metrics;
 affected wall/H1 allocation moves from its earlier date to Nov 12. Other dates above remain.
@@ -218,9 +220,19 @@ An initial local Worker startup error occurred with dependencies symlinked from 
 checkout. An environment override did not fix it. Installing the exact lockfile dependencies
 inside this managed worktree and rebuilding resolved the error without source, version,
 configuration or environment-file edits. Saved preview images are listed in the validation
-JSON; production verification still belongs to publication.
+JSON; production verification is complete and linked above.
 
 The owner authorized commit, push and publication of this expanded change set on October 1.
 Publication includes production verification of all eight pages, same-day ship recording,
 and the actual dated interference treatment. A locally published-status MDX file is not
 evidence that this candidate is live.
+
+## Verified publication
+
+Owner approval covered commit, push and publication. Commit **ced8fc4** is live; the Cloudflare
+and GitHub checks succeeded. All eight pages, seven About FAQ answers per locale, four protected
+product-page fingerprints, unchanged llms.txt, sitemap entries/updated dates and eight responsive
+browser views pass. Google accepted the sitemap for processing; no indexing or discovery verdict
+is inferred. GSC September 30 Pacific and GA4 October 1 Europe/Istanbul are partial ship days.
+The all-query collection/CTR guard, including Elite secondary exposure, now uses November 12;
+disjoint project/room-intent history retains November 3. [Complete live checks](../baselines/2026-10-01-manufacturer-discovery-production.json).

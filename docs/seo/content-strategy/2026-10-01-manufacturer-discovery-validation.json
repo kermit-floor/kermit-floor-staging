@@ -142,7 +142,12 @@
       "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/homepage-desktop.jpg"
     ]
   },
-  "publication": "Owner approved commit, push and publication on October 1; deployment in progress",
+  "publication": {
+    "status": "Published and production verified",
+    "releaseCommit": "ced8fc47d54c7d1395a67c7672921027b3ba9c61",
+    "deployedAtUtc": "2026-09-30T22:45:07.289682Z",
+    "productionEvidence": "../baselines/2026-10-01-manufacturer-discovery-production.json"
+  },
   "localWorkerHttp": {
     "checkedAtUtc": "2026-09-30T22:30:57.443135+00:00",
     "scope": "local OpenNext Cloudflare Worker HTTP initial HTML; not production verification",

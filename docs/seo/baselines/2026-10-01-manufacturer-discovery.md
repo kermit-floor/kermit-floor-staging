@@ -2,7 +2,8 @@
 
 The owner approved commit, push and publication of the eight-page EN/TR discovery
 candidate on October 1. The pre-publication readings below were collected on the same
-local date. Deployment time and production verification will be recorded after release.
+local date. Published commit **ced8fc4** deployed at **2026-09-30T22:45:07.289682Z**;
+[production verification](2026-10-01-manufacturer-discovery-production.json) passes.
 
 ## Measurement cohorts
 
@@ -70,8 +71,10 @@ snippets/repeated questions; **November 12** combined manufacturer, affected wal
 and aggregate AI/content effects. November 12 replaces November 10 for the overlapping
 manufacturer/AI metrics and November 2 for the overlapping wall allocation outcome.
 Keep October 5 desktop, October 21 consent/conversion/Germany-office, October 26 unchanged
-blog FAQ/portrait, November 3 project/Elite and November 6 unaffected technical/care/
+blog FAQ/portrait, November 3 project/room-intent and November 6 unaffected technical/care/
 comparison primary scopes. No recurring automation was requested or created.
 
-Exclude the actual shipment's partial GSC Pacific and GA4 Europe/Istanbul days; final
-production evidence will identify them from the deployment timestamp.
+Exclude **2026-09-30 GSC Pacific** and **2026-10-01 GA4 Europe/Istanbul** partial days.
+First full post-release days are **2026-10-01 / 2026-10-02**, respectively. The
+all-query collection/CTR guard, including Elite secondary exposure, uses November 12;
+disjoint project/room-intent history retains November 3. Preserve the original baselines.

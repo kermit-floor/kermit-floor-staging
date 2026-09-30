@@ -1,0 +1,394 @@
+{
+  "verifiedAtUtc": "2026-09-30T22:45:44.360966+00:00",
+  "scope": "Live production HTTP initial HTML and approved source content, metadata, links/schema, product fingerprints, sitemap and responsive browser checks",
+  "releaseCommit": "ced8fc47d54c7d1395a67c7672921027b3ba9c61",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Turkish SPC Flooring & Wall Panel Manufacturer | Kermit Floor",
+      "canonical": "https://kermitfloor.com",
+      "hreflang": {
+        "en": "https://kermitfloor.com",
+        "tr": "https://kermitfloor.com/tr"
+      },
+      "h1": "SPC FLOORS, SPC WALLS AND SPC SKIRTINGS",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "title": "SPC Manufacturer in Turkey: Flooring & Wall Panels | Kermit Floor",
+      "canonical": "https://kermitfloor.com/about",
+      "hreflang": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "h1": "SPC Flooring and Wall Panel Manufacturer in Turkey",
+      "faqAnswers": 7,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "status": 200,
+      "title": "Choosing an SPC Manufacturer in Türkiye: Buyer Checklist",
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+      },
+      "h1": "Choosing an SPC Manufacturer in Türkiye: Buyer Checklist",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/blog/oem-private-label-spc-flooring",
+      "status": 200,
+      "title": "OEM and Private-Label SPC Flooring from Kermit",
+      "canonical": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+      },
+      "h1": "OEM and Private-Label SPC Flooring from Kermit",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr",
+      "status": 200,
+      "title": "Türkiye’de SPC Parke ve Duvar Paneli Üretimi | Kermit Floor",
+      "canonical": "https://kermitfloor.com/tr",
+      "hreflang": {
+        "en": "https://kermitfloor.com",
+        "tr": "https://kermitfloor.com/tr"
+      },
+      "h1": "SPC PARKE, SPC DUVAR PANELİ VE SPC SÜPÜRGELİKLER",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr/hakkimizda",
+      "status": 200,
+      "title": "Türkiye’de SPC Parke ve Duvar Paneli Üreticisi | Kermit Floor",
+      "canonical": "https://kermitfloor.com/tr/hakkimizda",
+      "hreflang": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "h1": "Türkiye’de SPC Parke ve Duvar Paneli Üreticisi",
+      "faqAnswers": 7,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr/blog/spc-parke-ureticisi-secimi",
+      "status": 200,
+      "title": "SPC Parke Üreticisi Seçimi: Satın Alma Kontrol Listesi",
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+      },
+      "h1": "SPC Parke Üreticisi Seçimi: Satın Alma Kontrol Listesi",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr/blog/oem-ozel-marka-spc-parke",
+      "status": 200,
+      "title": "Kermit'ten OEM ve Özel Marka SPC Parke",
+      "canonical": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+      },
+      "h1": "Kermit'ten OEM ve Özel Marka SPC Parke",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    }
+  ],
+  "productGuardrailBefore": {
+    "checkedAtUtc": "2026-09-30T22:39:46.259220+00:00",
+    "scope": "unchanged flooring and wall product guardrails before discovery release",
+    "results": [
+      {
+        "path": "/spc-wall-panels",
+        "status": 200,
+        "h1": [
+          "SPC WALL PANEL COLLECTION"
+        ],
+        "title": "Kermit Floor | SPC Wall Panels",
+        "products": 1,
+        "productNames": [
+          "SPC WALL PANEL COLLECTION"
+        ],
+        "canonical": "https://kermitfloor.com/spc-wall-panels",
+        "mainHtmlSha256": "1bf56937c253aac73618a9397fdac083e62d732ce39cf22ede7180c5b8fc305d",
+        "productImagePaths": [
+          "/images/spc-wall-panels/613/application.jpg"
+        ]
+      },
+      {
+        "path": "/tr/spc-duvar-panelleri",
+        "status": 200,
+        "h1": [
+          "SPC DUVAR PANELİ KOLEKSİYONU"
+        ],
+        "title": "Kermit Floor | SPC Duvar Panelleri",
+        "products": 1,
+        "productNames": [
+          "SPC DUVAR PANELİ KOLEKSİYONU"
+        ],
+        "canonical": "https://kermitfloor.com/tr/spc-duvar-panelleri",
+        "mainHtmlSha256": "a79f77063040f375bb646bc05c93f7673bbae8a939dea1a9c874540bb6fdbbbf",
+        "productImagePaths": [
+          "/images/spc-wall-panels/613/application.jpg"
+        ]
+      },
+      {
+        "path": "/spc-flooring-elite-collection",
+        "status": 200,
+        "h1": [
+          "Elite SPC Flooring Collection"
+        ],
+        "title": "Kermit Floor | Elite Collection SPC Flooring",
+        "products": 0,
+        "productNames": [],
+        "canonical": "https://kermitfloor.com/spc-flooring-elite-collection",
+        "mainHtmlSha256": "eeebb88b5c1131af4e3ef6bdd25787fd3ecb2fa511141a5a816d766aafc517ff",
+        "productImagePaths": [
+          "/images/spc-flooring-elite-collection/P-201/product.jpg"
+        ]
+      },
+      {
+        "path": "/tr/spc-parke-elit-koleksiyonu",
+        "status": 200,
+        "h1": [
+          "Elit SPC Parke Koleksiyonu"
+        ],
+        "title": "Kermit Floor | Elit SPC Parke Koleksiyonu",
+        "products": 0,
+        "productNames": [],
+        "canonical": "https://kermitfloor.com/tr/spc-parke-elit-koleksiyonu",
+        "mainHtmlSha256": "6e462d36cc1ea24de8d2ff15fc03a62107db207208f5af61e887c4c2cddb88f9",
+        "productImagePaths": [
+          "/images/spc-flooring-elite-collection/P-201/product.jpg"
+        ]
+      }
+    ],
+    "guardrailCapturedAtUtc": "2026-09-30T22:41:24.410070+00:00"
+  },
+  "productGuardrailAfter": [
+    {
+      "path": "/spc-wall-panels",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-wall-panels",
+      "h1": [
+        "SPC WALL PANEL COLLECTION"
+      ],
+      "title": "Kermit Floor | SPC Wall Panels",
+      "mainHtmlSha256": "1bf56937c253aac73618a9397fdac083e62d732ce39cf22ede7180c5b8fc305d",
+      "productImagePaths": [
+        "/images/spc-wall-panels/613/application.jpg"
+      ],
+      "unchangedMainHtml": "PASS"
+    },
+    {
+      "path": "/tr/spc-duvar-panelleri",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-duvar-panelleri",
+      "h1": [
+        "SPC DUVAR PANELİ KOLEKSİYONU"
+      ],
+      "title": "Kermit Floor | SPC Duvar Panelleri",
+      "mainHtmlSha256": "a79f77063040f375bb646bc05c93f7673bbae8a939dea1a9c874540bb6fdbbbf",
+      "productImagePaths": [
+        "/images/spc-wall-panels/613/application.jpg"
+      ],
+      "unchangedMainHtml": "PASS"
+    },
+    {
+      "path": "/spc-flooring-elite-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-flooring-elite-collection",
+      "h1": [
+        "Elite SPC Flooring Collection"
+      ],
+      "title": "Kermit Floor | Elite Collection SPC Flooring",
+      "mainHtmlSha256": "eeebb88b5c1131af4e3ef6bdd25787fd3ecb2fa511141a5a816d766aafc517ff",
+      "productImagePaths": [
+        "/images/spc-flooring-elite-collection/P-201/product.jpg"
+      ],
+      "unchangedMainHtml": "PASS"
+    },
+    {
+      "path": "/tr/spc-parke-elit-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-elit-koleksiyonu",
+      "h1": [
+        "Elit SPC Parke Koleksiyonu"
+      ],
+      "title": "Kermit Floor | Elit SPC Parke Koleksiyonu",
+      "mainHtmlSha256": "6e462d36cc1ea24de8d2ff15fc03a62107db207208f5af61e887c4c2cddb88f9",
+      "productImagePaths": [
+        "/images/spc-flooring-elite-collection/P-201/product.jpg"
+      ],
+      "unchangedMainHtml": "PASS"
+    }
+  ],
+  "unchangedLlmsTxt": "PASS; exact production bytes match published source",
+  "publication": "Published to main and verified in production",
+  "sitemap": {
+    "status": 200,
+    "affectedEnglishEntriesAndTurkishAlternates": [
+      {
+        "url": "https://kermitfloor.com",
+        "lastmod": "2026-09-30T22:48:28.754Z",
+        "alternates": {
+          "en": "https://kermitfloor.com/",
+          "tr": "https://kermitfloor.com/tr"
+        },
+        "status": "PASS"
+      },
+      {
+        "url": "https://kermitfloor.com/about",
+        "lastmod": "2026-09-30T22:48:28.754Z",
+        "alternates": {
+          "en": "https://kermitfloor.com/about",
+          "tr": "https://kermitfloor.com/tr/hakkimizda"
+        },
+        "status": "PASS"
+      },
+      {
+        "url": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "lastmod": "2026-10-01T00:00:00.000Z",
+        "alternates": {
+          "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+          "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+        },
+        "status": "PASS"
+      },
+      {
+        "url": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "lastmod": "2026-10-01T00:00:00.000Z",
+        "alternates": {
+          "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+          "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+        },
+        "status": "PASS"
+      }
+    ],
+    "note": "The pre-existing absence of standalone Turkish loc entries remains outside this release; their hreflang alternates are present."
+  },
+  "browserVisualQa": {
+    "checkedAtUtc": "2026-09-30T22:47:59.369Z",
+    "status": "PASS",
+    "results": [
+      {
+        "page": "/about",
+        "viewport": "desktop",
+        "width": 1440,
+        "height": 900,
+        "overflow": false,
+        "consoleErrors": 0,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-about-desktop.jpg"
+      },
+      {
+        "page": "/about",
+        "viewport": "mobile",
+        "documentWidth": 376,
+        "width": 391,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-about-mobile.jpg"
+      },
+      {
+        "page": "/tr/hakkimizda",
+        "viewport": "mobile",
+        "documentWidth": 376,
+        "width": 391,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-about-turkish-mobile.jpg"
+      },
+      {
+        "page": "/tr/hakkimizda",
+        "viewport": "desktop",
+        "documentWidth": 1425,
+        "width": 1440,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-about-turkish-desktop.jpg"
+      },
+      {
+        "page": "/tr",
+        "viewport": "desktop",
+        "width": 1440,
+        "documentWidth": 1425,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-home-turkish-desktop.jpg"
+      },
+      {
+        "page": "/tr",
+        "viewport": "mobile",
+        "documentWidth": 376,
+        "width": 391,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-home-turkish-mobile.jpg"
+      },
+      {
+        "page": "/",
+        "viewport": "desktop",
+        "width": 1440,
+        "documentWidth": 1425,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-home-desktop.jpg"
+      },
+      {
+        "page": "/",
+        "viewport": "mobile",
+        "width": 391,
+        "documentWidth": 376,
+        "overflow": false,
+        "screenshot": "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/production-home-mobile.jpg"
+      }
+    ],
+    "analytics": "Verified disabled in production Cookie preferences; rejected again before QA",
+    "consoleWarningsOrErrors": []
+  },
+  "deployment": {
+    "id": "86dbc585-012e-4e88-9a18-c94de1210863",
+    "created_on": "2026-09-30T22:45:07.289682Z",
+    "versions": [
+      {
+        "version_id": "b6fadf61-18a1-4f0a-88fd-9fa8e94c140e",
+        "percentage": 100
+      }
+    ]
+  },
+  "cloudflareBuild": {
+    "id": "637ebaa5-af7f-4a79-a11d-3408adcab5f0",
+    "status": "success",
+    "completedAtUtc": "2026-09-30T22:45:15Z",
+    "url": "https://dash.cloudflare.com/542a80d833f2cf2d70591dbf553ed0d2/workers/services/view/kermit-floor-staging/production/builds/637ebaa5-af7f-4a79-a11d-3408adcab5f0"
+  },
+  "githubBlogCheck": {
+    "status": "success",
+    "completedAtUtc": "2026-09-30T22:44:04Z",
+    "url": "https://github.com/kermit-floor/kermit-floor-staging/actions/runs/36787141793/job/110131157208"
+  },
+  "sitemapSubmission": {
+    "checkedAtUtc": "2026-09-30T22:49:16.600246+00:00",
+    "sitemap": "https://kermitfloor.com/sitemap.xml",
+    "httpStatus": 204,
+    "status": "accepted",
+    "lastSubmitted": "2026-09-30T22:49:18.148Z",
+    "isPending": true,
+    "note": "Submission acceptance and processing status are not indexing or recommendation evidence."
+  },
+  "measurementExclusions": {
+    "gscPacificPartialDay": "2026-09-30",
+    "ga4EuropeIstanbulPartialDay": "2026-10-01",
+    "gscFirstFullPostReleaseDay": "2026-10-01",
+    "ga4FirstFullPostReleaseDay": "2026-10-02",
+    "note": "Preserve the September 21 consent break and deliberate October 1 audit fetches; no causal effect is assigned at publication."
+  }
+}
