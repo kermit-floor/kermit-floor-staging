@@ -40,8 +40,8 @@
   },
   "HomePage": {
     "seo": {
-      "title": "Kermit Floor | A complete SPC interior finishing system",
-      "description": "A complete SPC interior finishing system from the same brand with durable performance and best selling designs."
+      "title": "Turkish SPC Flooring & Wall Panel Manufacturer | Kermit Floor",
+      "description": "Kermit Floor manufactures SPC flooring, wall panels and skirting in Turkey, with 8 million m² annual combined floor and wall capacity. Wholesale and OEM enquiries."
     },
     "heroTitle": "SPC FLOORS, SPC WALLS AND SPC SKIRTINGS",
     "heroSubtitle": "A complete SPC interior finishing system from the same brand with durable performance and best selling designs.",
@@ -75,8 +75,8 @@
     "whyKermitTitle": "Why Kermit Floor?",
     "whyKermit": {
       "manufacturer": {
-        "title": "Manufacturer Mindset",
-        "text": "Consistent production, stable specs, and repeatable quality you can rely on."
+        "title": "Manufacturing in Turkey",
+        "text": "Wholesale SPC flooring and OEM/private-label supply for distributors and brands. Product specifications, packaging and order schedules are confirmed in the quotation."
       },
       "design": {
         "title": "Design Control",
@@ -112,7 +112,8 @@
     "spcFlooringSkyCollectionTitle": "Sky",
     "spcFlooringMosaicCollectionTitle": "Mosaic",
     "spcFlooringEliteCollectionTitle": "Elite",
-    "spcFlooringTravertineCollectionTitle": "Travertine"
+    "spcFlooringTravertineCollectionTitle": "Travertine",
+    "manufacturerIntroduction": "Kermit Floor is an SPC flooring and wall panel manufacturer in Turkey, with its headquarters and main factory in Çayırova, Kocaeli. We have 8 million m² of annual combined flooring and wall-panel capacity and operations in Türkiye, Moldova, Romania and the USA."
   },
   "SpcWallPanelsPage": {
     "seo": {
@@ -220,18 +221,18 @@
   },
   "AboutPage": {
     "seo": {
-      "metaTitle": "SPC Flooring Manufacturer in Türkiye | Kermit Floor",
-      "metaDescription": "Kermit Floor: 8 million m² annual SPC flooring and wall-panel capacity, operations in four countries, OEM supply, one-container MOQ and four-week standard lead time."
+      "metaTitle": "SPC Manufacturer in Turkey: Flooring & Wall Panels | Kermit Floor",
+      "metaDescription": "Kermit Floor manufactures SPC flooring and wall panels in Turkey. Annual combined capacity: 8 million m². Four-country operations; wholesale flooring and OEM supply."
     },
     "hero": {
-      "title": "SPC Flooring Manufacturer in Türkiye",
+      "title": "SPC Flooring and Wall Panel Manufacturer in Turkey",
       "subtitle": "Kermit Floor manufactures SPC flooring, wall panels and skirting boards for distributors, private-label brands and interior projects. We combine 8 million m² of annual flooring and wall-panel capacity with operations in Türkiye, Moldova, Romania and the USA.",
       "ctaPrimary": "Request Samples & a Quote",
       "ctaSecondary": "Browse Catalogues"
     },
     "whoWeAre": {
       "title": "Who We Are",
-      "p1": "Kermit Floor is a manufacturer focused on SPC-based interior finishing systems: SPC flooring, SPC skirting boards, and SPC wall panels. Our product development is rooted in long-term experience in polymer processing and mold-making, enabling tight control over design details, repeatability and production consistency.",
+      "p1": "Kermit Floor is an SPC manufacturer in Turkey, producing flooring, wall panels and skirting for interior finishing systems. Our headquarters and main factory are in Çayırova, Kocaeli. Our product development builds on long-term experience in polymer processing and mould manufacturing, supporting control over design details and production consistency.",
       "p2": "We build products that are practical for the trade—stable, durable, and easy to work with—while keeping the look clean and modern for residential and commercial environments."
     },
     "whatWeMake": {
@@ -310,7 +311,7 @@
         "detail": "Wholesale SPC flooring orders"
       },
       "leadTime": {
-        "label": "Standard lead time",
+        "label": "Standard flooring lead time",
         "value": "4 weeks",
         "detail": "Order schedule confirmed in the quotation"
       },
@@ -360,16 +361,16 @@
     "questions": {
       "title": "Questions before your first order",
       "factory": {
-        "question": "Where are Kermit Floor’s factories?",
-        "answer": "Kermit Floor’s headquarters and main factory are in Çayırova, Kocaeli, Türkiye. We also have a factory in Chișinău, Moldova. Ask our team to confirm the manufacturing origin and supply arrangements for the products in your order."
+        "question": "Is Kermit Floor an SPC manufacturer in Turkey?",
+        "answer": "Yes. Kermit Floor manufactures SPC flooring, wall panels and skirting, with its headquarters and main factory in Çayırova, Kocaeli, Turkey. We also have a factory in Chișinău, Moldova. Ask our team to confirm the manufacturing origin and supply arrangement for the products in your order."
       },
       "moq": {
         "question": "What is the minimum wholesale SPC flooring order?",
         "answer": "The minimum order is one container. The square-metre quantity depends on the selected product, packing and loading arrangement; request a calculation for your specification."
       },
       "leadTime": {
-        "question": "What is the lead time?",
-        "answer": "Our standard lead time is four weeks. The quotation confirms the actual order schedule and delivery responsibilities, including the expected timing for your destination."
+        "question": "What is the standard lead time for wholesale SPC flooring?",
+        "answer": "Our standard lead time for wholesale SPC flooring is four weeks. The order schedule, delivery responsibilities and expected timing for your destination are confirmed in the quotation."
       },
       "oem": {
         "question": "Can Kermit supply SPC flooring under our brand?",
@@ -386,6 +387,19 @@
       "countries": {
         "question": "In which countries does Kermit Floor operate?",
         "answer": "Kermit Floor operates in Türkiye, Moldova, Romania and the USA. Our manufacturing locations are in Türkiye and Moldova, and we have a store in Bucharest, Romania. Contact our team for supply enquiries in the USA."
+      }
+    },
+    "manufacturing": {
+      "title": "SPC manufacturing for wholesale and project supply",
+      "flooring": {
+        "title": "SPC flooring for wholesale and OEM buyers",
+        "text": "Distributors comparing SPC flooring manufacturers in Turkey can evaluate Kermit’s collections, samples and product documents before ordering. We offer wholesale SPC flooring and OEM/private-label supply with a one-container minimum order and a four-week standard lead time. The actual order schedule is confirmed in your quotation.",
+        "action": "Use the manufacturer buyer checklist"
+      },
+      "wallPanels": {
+        "title": "SPC wall panels for interior projects",
+        "text": "Project teams comparing SPC wall panel manufacturers in Turkey can review Kermit’s interior panels alongside our flooring and skirting range. Share the panel code, finish, dimensions, quantity and intended application so our team can confirm product documents, samples, supply terms and the manufacturing origin for your order.",
+        "action": "Explore SPC wall panels"
       }
     }
   },

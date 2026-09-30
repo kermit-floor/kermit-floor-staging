@@ -221,7 +221,8 @@ export default async function Home({
 
           {/* 3. Why Kermit Floor Section */}
           <section className="container mx-auto px-4">
-              <h2 className="font-headline text-3xl font-bold text-foreground text-center mb-10">{t('whyKermitTitle')}</h2>
+              <h2 className="font-headline text-3xl font-bold text-foreground text-center">{t('whyKermitTitle')}</h2>
+              <p className="mt-4 mb-10 max-w-3xl mx-auto text-center text-muted-foreground">{t('manufacturerIntroduction')}</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                   {whyKermitItems.map(item => (
                       <WhyKermitCard key={item.title} icon={item.icon} title={item.title} text={item.text} />

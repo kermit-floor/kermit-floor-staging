@@ -143,6 +143,26 @@ export default async function AboutPage({
                 </div>
             </section>
 
+            <section aria-labelledby="manufacturing-title" className="max-w-5xl mx-auto">
+                <h2 id="manufacturing-title" className="font-headline text-3xl font-bold text-center">{t('manufacturing.title')}</h2>
+                <div className="mt-8 grid gap-6 md:grid-cols-2">
+                    <div className="rounded-xl border bg-card p-6">
+                        <h3 className="font-headline text-xl font-semibold">{t('manufacturing.flooring.title')}</h3>
+                        <p className="mt-4 text-muted-foreground">{t('manufacturing.flooring.text')}</p>
+                        <Link href={{ pathname: '/blog/[slug]', params: { slug: locale === 'tr' ? 'spc-parke-ureticisi-secimi' : 'spc-flooring-manufacturer-turkey-buyers-checklist' } }} className="mt-5 inline-block font-medium text-primary underline underline-offset-4">
+                            {t('manufacturing.flooring.action')}
+                        </Link>
+                    </div>
+                    <div className="rounded-xl border bg-card p-6">
+                        <h3 className="font-headline text-xl font-semibold">{t('manufacturing.wallPanels.title')}</h3>
+                        <p className="mt-4 text-muted-foreground">{t('manufacturing.wallPanels.text')}</p>
+                        <Link href="/spc-wall-panels" className="mt-5 inline-block font-medium text-primary underline underline-offset-4">
+                            {t('manufacturing.wallPanels.action')}
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             <Separator />
 
             {/* 3. What We Make */}

@@ -1,0 +1,264 @@
+{
+  "checkedAtUtc": "2026-09-30T22:28:57.678430+00:00",
+  "scope": "final production build initial HTML artifacts; not runtime or production verification",
+  "results": [
+    {
+      "path": "/",
+      "status": "built SSG artifact",
+      "title": "Turkish SPC Flooring & Wall Panel Manufacturer | Kermit Floor",
+      "canonical": "https://kermitfloor.com",
+      "hreflang": {
+        "en": "https://kermitfloor.com",
+        "tr": "https://kermitfloor.com/tr"
+      },
+      "h1": "SPC FLOORS, SPC WALLS AND SPC SKIRTINGS",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/about",
+      "status": "built SSG artifact",
+      "title": "SPC Manufacturer in Turkey: Flooring & Wall Panels | Kermit Floor",
+      "canonical": "https://kermitfloor.com/about",
+      "hreflang": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "h1": "SPC Flooring and Wall Panel Manufacturer in Turkey",
+      "faqAnswers": 7,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "status": "built SSG artifact",
+      "title": "Choosing an SPC Manufacturer in Türkiye: Buyer Checklist",
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+      },
+      "h1": "Choosing an SPC Manufacturer in Türkiye: Buyer Checklist",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/blog/oem-private-label-spc-flooring",
+      "status": "built SSG artifact",
+      "title": "OEM and Private-Label SPC Flooring from Kermit",
+      "canonical": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+      },
+      "h1": "OEM and Private-Label SPC Flooring from Kermit",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr",
+      "status": "built SSG artifact",
+      "title": "Türkiye’de SPC Parke ve Duvar Paneli Üretimi | Kermit Floor",
+      "canonical": "https://kermitfloor.com/tr",
+      "hreflang": {
+        "en": "https://kermitfloor.com",
+        "tr": "https://kermitfloor.com/tr"
+      },
+      "h1": "SPC PARKE, SPC DUVAR PANELİ VE SPC SÜPÜRGELİKLER",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr/hakkimizda",
+      "status": "built SSG artifact",
+      "title": "Türkiye’de SPC Parke ve Duvar Paneli Üreticisi | Kermit Floor",
+      "canonical": "https://kermitfloor.com/tr/hakkimizda",
+      "hreflang": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "h1": "Türkiye’de SPC Parke ve Duvar Paneli Üreticisi",
+      "faqAnswers": 7,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr/blog/spc-parke-ureticisi-secimi",
+      "status": "built SSG artifact",
+      "title": "SPC Parke Üreticisi Seçimi: Satın Alma Kontrol Listesi",
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+      },
+      "h1": "SPC Parke Üreticisi Seçimi: Satın Alma Kontrol Listesi",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    },
+    {
+      "path": "/tr/blog/oem-ozel-marka-spc-parke",
+      "status": "built SSG artifact",
+      "title": "Kermit'ten OEM ve Özel Marka SPC Parke",
+      "canonical": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke",
+      "hreflang": {
+        "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+      },
+      "h1": "Kermit'ten OEM ve Özel Marka SPC Parke",
+      "faqAnswers": 0,
+      "copyMetadataLinksAndSchema": "PASS"
+    }
+  ],
+  "checks": {
+    "textAndBlogValidation": "PASS; 24 topics / 48 locale articles",
+    "nextProductionBuild": "PASS",
+    "openNextCloudflareBuild": "PASS",
+    "typecheck": "PASS after final isolated OpenNext build",
+    "initialHtml": "PASS for all 8 changed canonical pages",
+    "aboutFaqParity": "7 matching visible/schema answers per locale",
+    "manifestScope": "PASS; only 2 topics × EN/TR records changed; unrelated 22 topics unchanged",
+    "diffWhitespace": "PASS"
+  },
+  "browserVisualQa": {
+    "status": "PASS for changed About/home sections in EN/TR; existing blog layout unchanged",
+    "checkedAtUtc": "2026-09-30T22:34:09.574404+00:00",
+    "desktopViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "mobileViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "checks": [
+      "New About cards readable, side by side on desktop and stacked on mobile",
+      "English and Turkish homepage introductions visible on mobile; English desktop section inspected",
+      "No horizontal page overflow at checked widths",
+      "English/Turkish locale switch loads the correct localized page",
+      "All temporary viewport overrides reset; analytics rejected on localhost"
+    ],
+    "screenshots": [
+      "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/about-desktop.jpg",
+      "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/about-turkish-desktop.jpg",
+      "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/about-mobile.jpg",
+      "/home/barbaros/.codex/visualizations/2026/10/01/kermit-manufacturer-discovery/homepage-desktop.jpg"
+    ]
+  },
+  "publication": "Owner approved commit, push and publication on October 1; deployment in progress",
+  "localWorkerHttp": {
+    "checkedAtUtc": "2026-09-30T22:30:57.443135+00:00",
+    "scope": "local OpenNext Cloudflare Worker HTTP initial HTML; not production verification",
+    "results": [
+      {
+        "path": "/",
+        "status": 200,
+        "title": "Turkish SPC Flooring & Wall Panel Manufacturer | Kermit Floor",
+        "canonical": "https://kermitfloor.com",
+        "hreflang": {
+          "en": "https://kermitfloor.com",
+          "tr": "https://kermitfloor.com/tr"
+        },
+        "h1": "SPC FLOORS, SPC WALLS AND SPC SKIRTINGS",
+        "faqAnswers": 0,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/about",
+        "status": 200,
+        "title": "SPC Manufacturer in Turkey: Flooring & Wall Panels | Kermit Floor",
+        "canonical": "https://kermitfloor.com/about",
+        "hreflang": {
+          "en": "https://kermitfloor.com/about",
+          "tr": "https://kermitfloor.com/tr/hakkimizda"
+        },
+        "h1": "SPC Flooring and Wall Panel Manufacturer in Turkey",
+        "faqAnswers": 7,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "status": 200,
+        "title": "Choosing an SPC Manufacturer in Türkiye: Buyer Checklist",
+        "canonical": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "hreflang": {
+          "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+          "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+        },
+        "h1": "Choosing an SPC Manufacturer in Türkiye: Buyer Checklist",
+        "faqAnswers": 0,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/blog/oem-private-label-spc-flooring",
+        "status": 200,
+        "title": "OEM and Private-Label SPC Flooring from Kermit",
+        "canonical": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "hreflang": {
+          "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+          "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+        },
+        "h1": "OEM and Private-Label SPC Flooring from Kermit",
+        "faqAnswers": 0,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/tr",
+        "status": 200,
+        "title": "Türkiye’de SPC Parke ve Duvar Paneli Üretimi | Kermit Floor",
+        "canonical": "https://kermitfloor.com/tr",
+        "hreflang": {
+          "en": "https://kermitfloor.com",
+          "tr": "https://kermitfloor.com/tr"
+        },
+        "h1": "SPC PARKE, SPC DUVAR PANELİ VE SPC SÜPÜRGELİKLER",
+        "faqAnswers": 0,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/tr/hakkimizda",
+        "status": 200,
+        "title": "Türkiye’de SPC Parke ve Duvar Paneli Üreticisi | Kermit Floor",
+        "canonical": "https://kermitfloor.com/tr/hakkimizda",
+        "hreflang": {
+          "en": "https://kermitfloor.com/about",
+          "tr": "https://kermitfloor.com/tr/hakkimizda"
+        },
+        "h1": "Türkiye’de SPC Parke ve Duvar Paneli Üreticisi",
+        "faqAnswers": 7,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/tr/blog/spc-parke-ureticisi-secimi",
+        "status": 200,
+        "title": "SPC Parke Üreticisi Seçimi: Satın Alma Kontrol Listesi",
+        "canonical": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi",
+        "hreflang": {
+          "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+          "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+        },
+        "h1": "SPC Parke Üreticisi Seçimi: Satın Alma Kontrol Listesi",
+        "faqAnswers": 0,
+        "copyMetadataLinksAndSchema": "PASS"
+      },
+      {
+        "path": "/tr/blog/oem-ozel-marka-spc-parke",
+        "status": 200,
+        "title": "Kermit'ten OEM ve Özel Marka SPC Parke",
+        "canonical": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke",
+        "hreflang": {
+          "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+          "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+        },
+        "h1": "Kermit'ten OEM ve Özel Marka SPC Parke",
+        "faqAnswers": 0,
+        "copyMetadataLinksAndSchema": "PASS"
+      }
+    ],
+    "status": "PASS; all 8 routes HTTP 200"
+  },
+  "localPreviewResolution": {
+    "initialFailure": "Cloudflare Worker returned HTTP 500 before page rendering: Dynamic require of /.next/server/middleware-manifest.json is not supported. A production variable override did not resolve it.",
+    "successfulBuild": "Moved the managed worktree node_modules symlink aside and installed the exact lockfile dependencies within that worktree using npm ci; rebuilt the unmodified Next/OpenNext configuration.",
+    "result": "All 8 canonical pages return HTTP 200 through the local Cloudflare Worker. No source/configuration, dependency version, lockfile or .dev.vars changes were needed.",
+    "interpretation": "The working isolated installation resolves this local build condition; no claim is made that the development environment variable caused the failure."
+  },
+  "localPreviewQualifications": "Unmodified product-prefetch paths logged unenv fs.readFile warnings in the local preview. Unchanged production flooring and wall pages are checked before and after release; no source-level product-loader change is part of this candidate."
+}

@@ -1,0 +1,303 @@
+{
+  "auditDateLocal": "2026-10-01",
+  "timezone": "Europe/Athens",
+  "capturedAtUtc": "2026-09-30T22:13:52.910680+00:00",
+  "state": "Before publication of the prepared discovery change; not a post-change result",
+  "method": {
+    "surface": "consumer web UI",
+    "browser": "Codex in-app browser",
+    "signedOut": true,
+    "incognitoClaim": false,
+    "localeOfComputer": "Europe/Athens timezone; IP geography not independently controlled or verified",
+    "chatgptModelLabel": "ChatGPT; exact model/version not exposed",
+    "geminiModelLabel": "Flash-Lite",
+    "oneQuestionPerFreshConversation": true,
+    "brandNotSeeded": true,
+    "noRegenerationsOrFollowupsInScoredAnswers": true,
+    "searchMode": "default; citation request included; source search visibly used",
+    "sample": "one first answer per provider/prompt on one date",
+    "citationInspection": "source popups inspected; Kermit result links were not clicked",
+    "deliberateFetches": "buyer prompts may cause on-demand chatbot fetches; annotate crawler counts on this date"
+  },
+  "promptsAndResults": [
+    {
+      "id": "chatgpt-en-floor",
+      "provider": "ChatGPT",
+      "language": "en",
+      "intent": "flooring",
+      "exactPrompt": "Which SPC flooring manufacturers in Turkey should I consider? Please recommend manufacturers and cite sources.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd86c3-25f8-83ea-8091-792dca8612d8",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "https://milatfloor.com/manufacturer",
+        "https://www.fortetruspc.com/about-us/",
+        "https://www.adopen.com.tr/wp-content/uploads/2025/07/ISO-9001-2015-ON-TR.pdf",
+        "https://www.volza.com/p/spc-flooring/suppliers-directory/suppliers-in-turkey/"
+      ],
+      "responseSummary": "Kermit is shortlisted as a Turkish flooring manufacturer in Kocaeli; its buyer checklist supplies the qualification rationale. No capacity or country list is extracted.",
+      "factualRisks": []
+    },
+    {
+      "id": "chatgpt-en-spc",
+      "provider": "ChatGPT",
+      "language": "en",
+      "intent": "general",
+      "exactPrompt": "Which SPC manufacturers in Turkey should I consider? Please recommend manufacturers and cite sources.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd86d4-d104-83ea-8703-5afbddad83b8",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": false,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://www.volza.com/p/spc-flooring/suppliers-directory/suppliers-in-turkey/",
+        "https://www.ado.com.tr/en/our-brands/ado-floor/",
+        "https://www.fortetruspc.com/about-us/",
+        "https://milatfloor.com/manufacturer",
+        "https://porfloor.com/en/blog/spc-panel-turkey-guide"
+      ],
+      "responseSummary": "Kermit is recommended in a supplier table and RFQ shortlist, supported by Volza shipment data rather than a direct Kermit citation. General SPC is interpreted as flooring.",
+      "factualRisks": []
+    },
+    {
+      "id": "chatgpt-en-wall",
+      "provider": "ChatGPT",
+      "language": "en",
+      "intent": "wall-panels",
+      "exactPrompt": "Which SPC wall panel manufacturers in Turkey should I consider? Please recommend manufacturers and cite sources.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd86dd-323c-83ea-a64f-6b44b9641f77",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": true,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/tr/hakkimizda",
+        "https://www.panastone.com.tr/en/about-us/",
+        "https://porfloor.com/tr/about",
+        "https://spckaplama.com/hakkimizda/",
+        "https://www.adopen.com.tr/wp-content/uploads/2025/07/ISO-9001-2015-ON-TR.pdf"
+      ],
+      "responseSummary": "Kermit is shortlisted as an SPC wall-panel producer; the response correctly extracts 8 million m²/year combined floor/wall capacity and the Turkish main factory.",
+      "factualRisks": [
+        "The wall-panel recommendation carries flooring-specific one-container order terms into a generic wholesale statement; wall terms need quotation confirmation."
+      ]
+    },
+    {
+      "id": "chatgpt-de-floor",
+      "provider": "ChatGPT",
+      "language": "de",
+      "intent": "flooring",
+      "exactPrompt": "Welche SPC-Bodenbelag-Hersteller in der Türkei sollte ich in Betracht ziehen? Bitte empfehle Hersteller und nenne Quellen.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd875d-6318-83ea-a19e-d94c9f3016d9",
+      "status": "completed",
+      "kermitRecommended": false,
+      "directKermitCitation": false,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://www.adofloor.com/tr/hakkimizda/",
+        "https://porfloor.com/tr",
+        "https://milatfloor.com/spc-flooring-factory",
+        "https://peliparke.com/tr/hakkimizda"
+      ],
+      "responseSummary": "Kermit is absent. ADOFLOOR, Porfloor and MILAT form the main shortlist; Peli is a qualified option. Turkish pages are cited in a German answer.",
+      "factualRisks": []
+    },
+    {
+      "id": "chatgpt-ro-floor",
+      "provider": "ChatGPT",
+      "language": "ro",
+      "intent": "flooring",
+      "exactPrompt": "Ce producători de pardoseli SPC din Turcia ar trebui să iau în considerare? Recomandă producători și citează surse.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd8773-88e4-83ea-816a-2452e326ae48",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": false,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://www.volza.com/p/spc-flooring/hsn-code-39181090/suppliers-directory/suppliers-in-turkey/",
+        "https://www.adofloor.com/about-us/",
+        "https://porfloor.com/en/about",
+        "https://milatfloor.com/spc-flooring-manufacturers-turkey"
+      ],
+      "responseSummary": "Kermit is included in the shortlist for production/export, with shipment activity cited from Volza. No direct Kermit citation, capacity or country list.",
+      "factualRisks": []
+    },
+    {
+      "id": "chatgpt-ro-wall",
+      "provider": "ChatGPT",
+      "language": "ro",
+      "intent": "wall-panels",
+      "exactPrompt": "Ce producători de panouri de perete SPC din Turcia ar trebui să iau în considerare? Recomandă producători și citează surse.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd878e-8598-83ea-97ff-fcc4f9268113",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": true,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/about",
+        "https://www.panastone.com.tr/en/about-us/",
+        "https://www.voyagerfloor.com/tr/about-us/",
+        "https://porfloor.com/en/about",
+        "https://www.epdturkey.org/service/detail/s-p-0025563"
+      ],
+      "responseSummary": "Kermit is recommended using its English About page; combined 8 million m² annual capacity and Çayırova factory are correctly extracted.",
+      "factualRisks": [
+        "Generic wholesale MOQ language extends flooring-specific terms into the wall-panel context."
+      ]
+    },
+    {
+      "id": "chatgpt-tr-floor",
+      "provider": "ChatGPT",
+      "language": "tr",
+      "intent": "flooring",
+      "exactPrompt": "Türkiye’de hangi SPC parke üreticilerini değerlendirmeliyim? Lütfen üreticileri öner ve kaynak göster.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd87b7-48ac-83ea-b5dd-27c3beb37cba",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": true,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/tr/hakkimizda",
+        "https://milatfloor.com/manufacturer",
+        "https://www.peliparke.com/tr/kataloglar",
+        "https://www.agt.com.tr/urunler/agt-parke"
+      ],
+      "responseSummary": "Kermit is a positive manufacturer/OEM/procurement recommendation; combined annual capacity and main factory are correctly extracted. List order is not an industry ranking.",
+      "factualRisks": []
+    },
+    {
+      "id": "chatgpt-tr-wall",
+      "provider": "ChatGPT",
+      "language": "tr",
+      "intent": "wall-panels",
+      "exactPrompt": "Türkiye’de hangi SPC duvar paneli üreticilerini değerlendirmeliyim? Lütfen üreticileri öner ve kaynak göster.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd87c1-33e8-83ea-8c2d-35dabab2ae81",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": true,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/tr/hakkimizda",
+        "https://www.panastone.com.tr/",
+        "https://porfloor.com/tr/about",
+        "https://epdturkey.org/service/detail/s-p-0025634/cd",
+        "https://spckaplama.com/hakkimizda/"
+      ],
+      "responseSummary": "Kermit is recommended for wall-panel production, OEM and larger project requirements; correct combined capacity and factory location are extracted.",
+      "factualRisks": []
+    },
+    {
+      "id": "gemini-en-floor",
+      "provider": "Gemini",
+      "language": "en",
+      "intent": "flooring",
+      "exactPrompt": "Which SPC flooring manufacturers in Turkey should I consider? Please recommend manufacturers and cite sources.",
+      "sessionUrl": "https://gemini.google.com/app/d4cfa81641e3b3d3",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/about"
+      ],
+      "responseSummary": "Kermit is recommended for integrated SPC systems, OEM and wholesale supply. The cited About snippet contains earlier wording mentioning Moldova and Romania but no USA or capacity.",
+      "factualRisks": [
+        "Describes four-week lead time as predictable; actual schedule is quotation-dependent."
+      ]
+    },
+    {
+      "id": "gemini-en-spc",
+      "provider": "Gemini",
+      "language": "en",
+      "intent": "general",
+      "exactPrompt": "Which SPC manufacturers in Turkey should I consider? Please recommend manufacturers and cite sources.",
+      "sessionUrl": "https://gemini.google.com/app/948ac9c7661ff2f5",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/about"
+      ],
+      "responseSummary": "Kermit is recommended for flooring, skirting and wall-panel systems. The citation excerpt uses earlier company-location wording; no 8-million figure or complete country list.",
+      "factualRisks": []
+    },
+    {
+      "id": "gemini-en-wall",
+      "provider": "Gemini",
+      "language": "en",
+      "intent": "wall-panels",
+      "exactPrompt": "Which SPC wall panel manufacturers in Turkey should I consider? Please recommend manufacturers and cite sources.",
+      "sessionUrl": "https://gemini.google.com/app/9665a30a56739f22",
+      "status": "completed",
+      "kermitRecommended": true,
+      "directKermitCitation": true,
+      "correctCombinedAnnualCapacity": false,
+      "completeFourCountryOperations": false,
+      "selectedCitationUrls": [
+        "https://kermitfloor.com/about",
+        "https://www.panastone.com.tr/",
+        "https://luxinza.com/",
+        "https://porfloor.com/"
+      ],
+      "responseSummary": "Kermit is recommended for wall-panel trade/OEM supply; the cited About description has earlier wording and no capacity.",
+      "factualRisks": [
+        "Flooring MOQ and four-week lead time are repeated in a wall-panel context without scope clarification.",
+        "Predictable four-week timing and broad custom white-label wording exceed quotation-confirmed scope."
+      ]
+    }
+  ],
+  "unscoredAttempts": [
+    {
+      "provider": "ChatGPT",
+      "language": "de",
+      "intent": "wall-panels",
+      "exactPrompt": "Welche SPC-Wandpaneel-Hersteller in der Türkei sollte ich in Betracht ziehen? Bitte empfehle Hersteller und nenne Quellen.",
+      "sessionUrl": "https://chatgpt.com/uc/6abd877e-77c4-83ea-b8e1-96d0f14fced2",
+      "status": "unavailable",
+      "reason": "Message limit reached; no assistant answer. Do not count as an omission or zero."
+    },
+    {
+      "provider": "ChatGPT",
+      "language": "de",
+      "intent": "wall-panels",
+      "status": "excluded",
+      "reason": "A persisted draft was accidentally appended to the intended wall-panel prompt. Excluded before scoring and replaced by the clean attempt recorded above."
+    }
+  ],
+  "summary": {
+    "chatgptCompleted": 8,
+    "chatgptRecommended": 7,
+    "chatgptDirectKermitCitations": 5,
+    "chatgptCorrectCapacity": 4,
+    "chatgptCompleteCountries": 0,
+    "geminiCompleted": 3,
+    "geminiRecommended": 3,
+    "geminiDirectKermitCitations": 3,
+    "geminiCorrectCapacity": 0,
+    "geminiCompleteCountries": 0
+  },
+  "limitations": [
+    "Selected one-date tests are observations, not market recommendation share or causal uplift.",
+    "Language cohorts have different intents and sizes; German has only one completed flooring test.",
+    "Signed out does not remove IP/location, model-version, search retrieval or stochastic effects.",
+    "These prompts differ from the September 29 four-question pilot. Do not pool or compare rates as like-for-like change.",
+    "No direct consumer Claude test is included; logged-out access was unavailable in the same-day earlier review.",
+    "Gemini citation snippets visibly contain older wording; this does not establish whether the entire source page was re-fetched.",
+    "Competitor claims in chatbot answers are recorded as model claims, not independently verified endorsements.",
+    "Store every completed answer including omissions and factual risks; exclude only documented technical/invalid attempts."
+  ]
+}
