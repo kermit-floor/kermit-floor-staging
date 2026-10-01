@@ -14,7 +14,19 @@
           "name": "SPC",
           "definition": "Rijit vinil zemin yapısıdır. RFCI ve MMFA kısaltmayı katı polimer çekirdek için kullanır. Adı tek başına kalınlığı, şilteyi veya bütün performans özelliklerini belirtmez."
         },
-        "topicId": "spc-flooring-what-is-it-vs-laminate-benefits"
+        "topicId": "spc-flooring-what-is-it-vs-laminate-benefits",
+        "bg": {
+          "name": "SPC",
+          "definition": "Конструкция на твърда винилова подова настилка. RFCI и MMFA използват съкращението за твърда полимерна сърцевина. Името не определя дебелината, подложката или всички експлоатационни характеристики."
+        },
+        "sr": {
+          "name": "SPC",
+          "definition": "Чврста винилна подна конструкција. RFCI и MMFA користе скраћеницу за језгро од чврстог полимера. Име не наводи дебљину, подлогу или свако својство перформанси."
+        },
+        "ar": {
+          "name": "SPC",
+          "definition": "بناء أرضيات الفينيل الصلبة. RFCI و MMFA يستخدمان الاختصار لقلب البوليمر الصلب. لا يحدد الاسم السُمك أو الدعم أو كل خصائص الأداء."
+        }
       },
       {
         "id": "core",
@@ -26,7 +38,19 @@
           "name": "Rijit çekirdek",
           "definition": "Dekoratif katmanların altındaki taşıyıcı gövdedir. Çekirdek yapısı ve toplam plaka kalınlığı ayrı teknik bilgilerdir."
         },
-        "topicId": "spc-flooring-thickness-wear-layer"
+        "topicId": "spc-flooring-thickness-wear-layer",
+        "bg": {
+          "name": "Твърда сърцевина",
+          "definition": "Носещото тяло под декоративните слоеве. Конструкцията на сърцевината и общата дебелина на дъската са отделни въпроси за спецификация."
+        },
+        "sr": {
+          "name": "Чврсто језгро",
+          "definition": "Потпорно тело испод декоративних слојева. Конструкција језгра и укупна дебљина даске су посебна питања спецификације."
+        },
+        "ar": {
+          "name": "قلب صلب",
+          "definition": "الجسم الداعم أسفل الطبقات الزخرفية. تركيب القلب والسماكة الإجمالية للوح بندان منفصلان في المواصفات."
+        }
       },
       {
         "id": "wear-layer",
@@ -38,7 +62,19 @@
           "name": "Aşınma tabakası",
           "definition": "Dekorun üzerinde bulunan ve toplam kalınlıktan ayrı belirtilen katmandır. Kalınlık değeri çizilmezlik garantisi değildir."
         },
-        "topicId": "spc-flooring-thickness-wear-layer"
+        "topicId": "spc-flooring-thickness-wear-layer",
+        "bg": {
+          "name": "Износоустойчив слой",
+          "definition": "Слоят над декора се идентифицира отделно от общата дебелина. Посочената му дебелина не е гаранция за устойчивост на надраскване."
+        },
+        "sr": {
+          "name": "Хабајући слој",
+          "definition": "Слој изнад декора идентификован је одвојено од укупне дебљине. Његова наведена дебљина није гаранција отпорности на огреботине."
+        },
+        "ar": {
+          "name": "طبقة مقاومة التآكل",
+          "definition": "يتم تحديد الطبقة الموجودة فوق الديكور بشكل منفصل عن السمك الإجمالي. سمكها المعلن ليس ضمانًا ضد الخدش."
+        }
       },
       {
         "id": "decor",
@@ -50,7 +86,19 @@
           "name": "Dekor ve ürün kodu",
           "definition": "Sipariş edilen görünümü tanımlayan tasarım referansıdır. Kodu numuneyle saklayın; benzer ad veya görsel birebir eşleşme anlamına gelmez."
         },
-        "topicId": "spc-flooring-colour-format"
+        "topicId": "spc-flooring-colour-format",
+        "bg": {
+          "name": "Декор и код на продукта",
+          "definition": "Референтният дизайн, използван за идентифициране на външния вид, който се поръчва. Запазете кода с пробата; подобни имена или изображения не установяват точно съвпадение."
+        },
+        "sr": {
+          "name": "Декор и шифра производа",
+          "definition": "Референца дизајна која се користи за идентификацију изгледа који се наручује. Сачувајте код са узорком; слична имена или слике не утврђују тачно подударање."
+        },
+        "ar": {
+          "name": "الديكور ورمز المنتج",
+          "definition": "مرجع التصميم المستخدم لتحديد المظهر المطلوب. احتفظ بالكود مع العينة؛ الأسماء أو الصور المتشابهة لا تؤدي إلى تطابق تام."
+        }
       },
       {
         "id": "overall-thickness",
@@ -62,7 +110,19 @@
           "name": "Toplam kalınlık",
           "definition": "Tarif edilen ürün yapısının toplam kalınlığıdır. İki teklifi karşılaştırmadan önce ekli şiltenin bu değere dâhil olup olmadığını kontrol edin."
         },
-        "topicId": "spc-flooring-thickness-wear-layer"
+        "topicId": "spc-flooring-thickness-wear-layer",
+        "bg": {
+          "name": "Обща дебелина",
+          "definition": "Посочената дебелина на пълната конфигурация на продукта. Потвърдете дали е включена прикрепената подложка, преди да сравните две оферти."
+        },
+        "sr": {
+          "name": "Укупна дебљина",
+          "definition": "Наведена дебљина комплетне конфигурације производа. Пре него што упоредите две понуде, проверите да ли је приложена подлога укључена."
+        },
+        "ar": {
+          "name": "السماكة الإجمالية",
+          "definition": "السماكة المذكورة لتكوين المنتج الكامل. تأكد من تضمين الدعم المرفق قبل مقارنة العرضين."
+        }
       },
       {
         "id": "ixpe",
@@ -74,7 +134,19 @@
           "name": "IXPE şilte",
           "definition": "Bazı parke yapılarında belirtilen köpük taban katmanıdır. Bulunup bulunmadığı, kalınlığı ve uyumu seçilen ürün için kontrol edilir."
         },
-        "topicId": "spc-flooring-underlay-acoustics"
+        "topicId": "spc-flooring-underlay-acoustics",
+        "bg": {
+          "name": "Подложка IXPE",
+          "definition": "Подложка от пяна, определена за някои конфигурации на подови настилки. Неговото наличие, дебелина и съвместимост трябва да се провери за избрания продукт."
+        },
+        "sr": {
+          "name": "IXPE подлога",
+          "definition": "Пенаста подлога специфицирана на неким конфигурацијама подова. За изабрани производ мора се проверити његово присуство, дебљина и компатибилност."
+        },
+        "ar": {
+          "name": "طبقة IXPE السفلية",
+          "definition": "دعامة رغوية محددة في بعض تكوينات الأرضيات. ويجب التحقق من وجوده وسمكه وتوافقه مع المنتج المحدد."
+        }
       },
       {
         "id": "click-system",
@@ -86,9 +158,24 @@
           "name": "Kilit sistemi",
           "definition": "Komşu plakaları birleştiren biçimlendirilmiş bağlantıdır. Seçilen kilit, birleştirme sırasını ve uygulanacak talimatı belirler."
         },
-        "topicId": "spc-flooring-installation-planning"
+        "topicId": "spc-flooring-installation-planning",
+        "bg": {
+          "name": "Клик система",
+          "definition": "Оформената фуга, свързваща съседни дъски. Избраната ключалка определя последователността на монтаж и съответните инструкции за монтаж."
+        },
+        "sr": {
+          "name": "Клик систем",
+          "definition": "Обликовани спој који повезује суседне даске. Изабрана брава одређује редослед монтаже и релевантна упутства за монтажу."
+        },
+        "ar": {
+          "name": "نظام التعشيق",
+          "definition": "المفصل الشكلي الذي يربط الألواح المجاورة. يحدد القفل المحدد تسلسل التركيب وتعليمات التثبيت ذات الصلة."
+        }
       }
-    ]
+    ],
+    "bg": "Конструкция на продукта",
+    "sr": "Конструкција производа",
+    "ar": "بناء المنتج"
   },
   {
     "id": "installation",
@@ -105,7 +192,19 @@
           "name": "Yüzer döşeme",
           "definition": "Birbirine bağlı yüzey olarak uygulanan ve hareket edebilmesi gereken zemindir. Sabit elemanlar ve profiller parkeyi sıkıştırmamalıdır."
         },
-        "topicId": "spc-flooring-common-mistakes"
+        "topicId": "spc-flooring-common-mistakes",
+        "bg": {
+          "name": "Плаващ под",
+          "definition": "Под, положен като взаимосвързана повърхност, която трябва да остане свободна за движение. Фиксирани предмети и облицовки не трябва да го притискат."
+        },
+        "sr": {
+          "name": "Пливајући под",
+          "definition": "Под постављен као међусобно повезана површина која мора остати слободна за кретање. Фиксни објекти и украси га не смеју причврстити."
+        },
+        "ar": {
+          "name": "أرضية عائمة",
+          "definition": "أرضية يتم وضعها كسطح مترابط يجب أن يظل حرًا في الحركة. يجب ألا تثبت الأشياء والزخارف الثابتة."
+        }
       },
       {
         "id": "subfloor",
@@ -117,7 +216,19 @@
           "name": "Alt zemin",
           "definition": "Kaplama sisteminin uygulandığı taşıyıcı yüzeydir. Hazırlık ürünü seçmeden önce malzemesini, durumunu ve nemini belirleyin."
         },
-        "topicId": "spc-flooring-installation-planning"
+        "topicId": "spc-flooring-installation-planning",
+        "bg": {
+          "name": "Подова основа",
+          "definition": "Носещата основа, върху която е монтирана подовата система. Определете неговия материал, състояние и влага, преди да изберете продукти за подготовка."
+        },
+        "sr": {
+          "name": "Подлога испод подне облоге",
+          "definition": "Носећа основа на којој се поставља подни систем. Идентификујте његов материјал, стање и влагу пре избора производа за припрему."
+        },
+        "ar": {
+          "name": "الأرضية السفلية",
+          "definition": "القاعدة الداعمة التي يتم تركيب نظام الأرضيات عليها. التعرف على مادته وحالته ورطوبته قبل اختيار منتجات التحضير."
+        }
       },
       {
         "id": "flatness",
@@ -129,7 +240,19 @@
           "name": "Yüzey düzgünlüğü",
           "definition": "Odanın genel eğiminden farklı olan yerel yüzey düzgünlüğüdür. Kermit kılavuzundaki sınır 1 metrede en fazla 2 mm sapmadır."
         },
-        "topicId": "spc-flooring-common-mistakes"
+        "topicId": "spc-flooring-common-mistakes",
+        "bg": {
+          "name": "Равнинност",
+          "definition": "Местна равномерност на повърхността, различна от общия наклон на помещението. Ръководството на Kermit задава максимална неравност от 2 mm над 1 m."
+        },
+        "sr": {
+          "name": "Равност",
+          "definition": "Локална равност површине, различита од укупног нагиба просторије. Приручник за Kermit поставља максималну неравнину од 2 mm преко 1 m."
+        },
+        "ar": {
+          "name": "استواء السطح",
+          "definition": "تساوي السطح المحلي، يختلف عن المنحدر العام للغرفة. يحدد دليل Kermit الحد الأقصى للتفاوت بمقدار 2 mm على 1 m."
+        }
       },
       {
         "id": "movement-gap",
@@ -141,7 +264,19 @@
           "name": "Hareket boşluğu / genleşme payı",
           "definition": "Yüzer zeminin hareketine izin veren boşluktur. Kermit kılavuzu duvarlarda ve sabit elemanlarda en az 10 mm ister; ek derzler yerleşime göre değerlendirilir."
         },
-        "topicId": "spc-flooring-common-mistakes"
+        "topicId": "spc-flooring-common-mistakes",
+        "bg": {
+          "name": "Разширителна фуга",
+          "definition": "Просвет, който позволява на плаващ под да се движи. Ръководството на Kermit изисква поне 10 mm около стени и неподвижни предмети; допълнителните фуги зависят от оформлението."
+        },
+        "sr": {
+          "name": "Дилатациони размак",
+          "definition": "Размак који омогућава померање плутајућег пода. Упутство за Kermit захтева најмање 10 mm око зидова и фиксних објеката; додатни спојеви зависе од распореда."
+        },
+        "ar": {
+          "name": "فاصل الحركة",
+          "definition": "الخلوص الذي يسمح للأرضية العائمة بالتحرك. يتطلب دليل Kermit ما لا يقل عن 10 mm حول الجدران والأشياء الثابتة؛ تعتمد المفاصل الإضافية على التخطيط."
+        }
       },
       {
         "id": "transition",
@@ -153,7 +288,19 @@
           "name": "Geçiş profili",
           "definition": "Zemin alanları veya kaplamalar arasındaki planlı birleşimde kullanılan profildir. Detayı ve sabitlemesi gerekli hareketi engellememelidir."
         },
-        "topicId": "spc-flooring-installation-planning"
+        "topicId": "spc-flooring-installation-planning",
+        "bg": {
+          "name": "Преходен профил",
+          "definition": "Профил, използван при планирана връзка между подови площи или покрития. Изберете неговия детайл и фиксиране, без да ограничавате необходимото движение на пода."
+        },
+        "sr": {
+          "name": "Прелазни профил",
+          "definition": "Профил који се користи на планираном споју између подних површина или завршних обрада. Изаберите његов детаљ и причвршћивање без ограничавања потребног кретања пода."
+        },
+        "ar": {
+          "name": "مقطع الانتقال",
+          "definition": "ملف تعريف يستخدم عند التقاطع المخطط بين مساحات الأرضية أو التشطيبات. اختر تفاصيلها وتثبيتها دون تقييد حركة الأرضية المطلوبة."
+        }
       },
       {
         "id": "moisture-barrier",
@@ -165,7 +312,19 @@
           "name": "Nem bariyeri",
           "definition": "Alt zeminden gelen neme karşı tarif edilen katmandır. Yastıklama şiltesi veya odanın su yalıtımından farklı işlevi vardır."
         },
-        "topicId": "spc-flooring-underlay-acoustics"
+        "topicId": "spc-flooring-underlay-acoustics",
+        "bg": {
+          "name": "Бариера за влага",
+          "definition": "Слой, предназначен за управление на влагата от основата. Има различно предназначение от омекотяващата подложка или хидроизолацията на помещението."
+        },
+        "sr": {
+          "name": "Баријера од влаге",
+          "definition": "Слој који је одређен да управља влагом са подлоге. Има другачију намену од подлоге јастука или хидроизолације просторија."
+        },
+        "ar": {
+          "name": "حاجز الرطوبة",
+          "definition": "طبقة مخصصة لإدارة الرطوبة من القاعدة. لها غرض مختلف عن البطانة الأساسية أو العزل المائي للغرفة."
+        }
       },
       {
         "id": "underlay",
@@ -177,7 +336,19 @@
           "name": "İlave şilte",
           "definition": "Zeminin altına, bütün sistem için seçilen katmandır. Özellikle plakanın ekli şiltesi varsa uyumu teyit edilmelidir."
         },
-        "topicId": "spc-flooring-underlay-acoustics"
+        "topicId": "spc-flooring-underlay-acoustics",
+        "bg": {
+          "name": "Подложка",
+          "definition": "Слой под пода, избран за цялата система. Потвърдете съвместимостта, особено когато дъската вече има прикрепена подложка."
+        },
+        "sr": {
+          "name": "Подложни слој",
+          "definition": "Слој испод пода изабран за комплетан систем. Потврдите компатибилност, посебно тамо где даска већ има причвршћену подлогу."
+        },
+        "ar": {
+          "name": "الطبقة السفلية",
+          "definition": "طبقة تحت الأرضية تم اختيارها للنظام الكامل. تأكد من التوافق، خاصةً عندما يكون اللوح الخشبي متصلًا بالفعل بالدعامة."
+        }
       },
       {
         "id": "carton-coverage",
@@ -189,7 +360,19 @@
           "name": "Kutu kaplama alanı",
           "definition": "Belirli ürünün bir kutusundaki doğrulanmış metrekare miktarıdır. Alan hesabı bu değerle tam kutuya yukarı yuvarlanır."
         },
-        "topicId": "spc-flooring-quantity-layout"
+        "topicId": "spc-flooring-quantity-layout",
+        "bg": {
+          "name": "Площ в една кутия",
+          "definition": "Потвърдените квадратни метри се доставят в една кашон от точния продукт. Използвайте тази стойност, за да закръглите изчислението на площ до цели картонени кутии."
+        },
+        "sr": {
+          "name": "Површина по кутији",
+          "definition": "Потврђени квадратни метри се испоручују у једној кутији тачног производа. Користите ову вредност да бисте заокружили израчунавање површине на комплетан картон."
+        },
+        "ar": {
+          "name": "مساحة التغطية لكل كرتونة",
+          "definition": "الأمتار المربعة المؤكدة المتوفرة في كرتونة واحدة للمنتج المحدد. استخدم هذه القيمة لتقريب حساب المساحة إلى علب كرتونية كاملة."
+        }
       },
       {
         "id": "cut-allowance",
@@ -201,9 +384,24 @@
           "name": "Kesim payı ve yedek stok",
           "definition": "Kesim payı yerleşimde beklenen kayıpları karşılar. Sonraki işler için gerekli tam plaka veya açılmamış kutuları ayrıca ayırın."
         },
-        "topicId": "spc-flooring-quantity-layout"
+        "topicId": "spc-flooring-quantity-layout",
+        "bg": {
+          "name": "Добавка за рязане и резервен материал",
+          "definition": "Надбавката за изрязване покрива очакваните загуби на оформлението. Запазете пълни дъски или неотворени кашони отделно, ако са необходими за бъдеща работа."
+        },
+        "sr": {
+          "name": "Додатак за резање и резервни материјал",
+          "definition": "Додатак за смањење покрива очекиване губитке у распореду. Резервишите пуне даске или неотворене кутије одвојено ако су потребне за будући рад."
+        },
+        "ar": {
+          "name": "نسبة الهدر للقص والمخزون الاحتياطي",
+          "definition": "يغطي بدل القطع خسائر التخطيط المتوقعة. قم بحجز الألواح الكاملة أو الصناديق الكرتونية غير المفتوحة بشكل منفصل إذا كانت هناك حاجة إليها للعمل في المستقبل."
+        }
       }
-    ]
+    ],
+    "bg": "Монтаж и количества",
+    "sr": "Инсталација и количине",
+    "ar": "التركيب والكميات"
   },
   {
     "id": "evidence",
@@ -220,7 +418,19 @@
           "name": "Kullanım sınıfı",
           "definition": "Ürünün öngörülen kullanım yoğunluğuna ilişkin beyan edilen sınıftır. Her odaya onay gibi değil, teknik föy ve uygulama sınırlarıyla birlikte okunur."
         },
-        "topicId": "spc-flooring-thickness-wear-layer"
+        "topicId": "spc-flooring-thickness-wear-layer",
+        "bg": {
+          "name": "Клас на употреба",
+          "definition": "Декларирана класификация за предвидената интензивност на употреба на продукта. Прочетете го с избрания технически лист и ограничения за монтаж, а не като одобрение за всяка стая."
+        },
+        "sr": {
+          "name": "Класа употребе",
+          "definition": "Декларисана класификација за намеравани интензитет употребе производа. Прочитајте га са изабраним техничким листом и ограничењима уградње, а не као одобрење за сваку просторију."
+        },
+        "ar": {
+          "name": "فئة الاستخدام",
+          "definition": "تصنيف معلن لكثافة الاستخدام المقصودة للمنتج. اقرأها مع الورقة الفنية المحددة وحدود التثبيت، وليس كموافقة لكل غرفة."
+        }
       },
       {
         "id": "acoustic-assembly",
@@ -232,7 +442,19 @@
           "name": "Akustik katman düzeni",
           "definition": "Ses testiyle ilişkili kaplama, şilte ve taşıyıcı yapı birleşimidir. Bir sonuç farklı katmanlara doğrudan aktarılamaz."
         },
-        "topicId": "spc-flooring-underlay-acoustics"
+        "topicId": "spc-flooring-underlay-acoustics",
+        "bg": {
+          "name": "Акустична подова система",
+          "definition": "Комбинацията от под, подложка или подложка и поддържаща конструкция, свързана със звуков тест. Един резултат не може просто да бъде прехвърлен на различни слоеве."
+        },
+        "sr": {
+          "name": "Акустични подни склоп",
+          "definition": "Комбинација пода, подлоге или подлоге и носеће конструкције повезане са тестом звука. Резултат се не може једноставно пренети на различите слојеве."
+        },
+        "ar": {
+          "name": "تركيب الأرضية الصوتي",
+          "definition": "مزيج من الأرضية أو الطبقة الداعمة أو الطبقة الأساسية والبنية الداعمة المرتبطة باختبار الصوت. لا يمكن ببساطة نقل النتيجة إلى طبقات مختلفة."
+        }
       },
       {
         "id": "surface-temperature",
@@ -244,7 +466,19 @@
           "name": "Zemin yüzey sıcaklığı",
           "definition": "Bitmiş yürüme yüzeyindeki sıcaklıktır. Onaylı yerden ısıtmada Kermit sınırı 27°C’dir; tesisat suyu ayarı değildir."
         },
-        "topicId": "spc-flooring-heating-sunlight"
+        "topicId": "spc-flooring-heating-sunlight",
+        "bg": {
+          "name": "Температура на подовата повърхност",
+          "definition": "Температура на завършената повърхност за ходене. Ограничението на Kermit е 27°C в одобрено приложение за подово отопление; това не е настройката за отопление."
+        },
+        "sr": {
+          "name": "Температура површине пода",
+          "definition": "Температура на готовој површини за ходање. Граница Kermit је 27°C у одобреној примени за подно грејање; ово није подешавање воде за грејање."
+        },
+        "ar": {
+          "name": "درجة حرارة سطح الأرضية",
+          "definition": "درجة الحرارة عند سطح المشي النهائي. حد Kermit هو 27°C في تطبيق التدفئة الأرضية المعتمد؛ هذا ليس إعداد تسخين الماء."
+        }
       },
       {
         "id": "thermal-resistance",
@@ -256,7 +490,19 @@
           "name": "Isıl direnç",
           "definition": "Tarif edilen katmanlardan ısı geçişi değerlendirilirken kullanılan ölçüdür. Isıtma uyumu bütün zemin katmanlarını ve sistem uygunluğunu gerektirir."
         },
-        "topicId": "spc-flooring-heating-sunlight"
+        "topicId": "spc-flooring-heating-sunlight",
+        "bg": {
+          "name": "Термична устойчивост",
+          "definition": "Мярка, използвана при оценка на топлинния поток през посочените слоеве. Съвместимостта с отопление изисква цялостно изграждане на пода и одобрение на системата."
+        },
+        "sr": {
+          "name": "Топлотни отпор",
+          "definition": "Мера која се користи при процени протока топлоте кроз наведене слојеве. Компатибилност са грејањем захтева комплетну изградњу пода и одобрење система."
+        },
+        "ar": {
+          "name": "المقاومة الحرارية",
+          "definition": "مقياس يستخدم عند تقييم تدفق الحرارة عبر الطبقات المحددة. يتطلب التوافق مع التدفئة بناء الأرضية بالكامل وموافقة النظام."
+        }
       },
       {
         "id": "water-resistance",
@@ -268,7 +514,19 @@
           "name": "Su direnci",
           "definition": "Maruziyet sınırlarıyla birlikte okunması gereken ürün özelliğidir. Odayı su yalıtımlı yapmaz ve alt zemin nem kontrolünü ortadan kaldırmaz."
         },
-        "topicId": "spc-flooring-waterproof-guide"
+        "topicId": "spc-flooring-waterproof-guide",
+        "bg": {
+          "name": "Водоустойчивост",
+          "definition": "Характеристика на продукта, която трябва да се прочете с неговите граници на експозиция. Това не прави помещението водоустойчиво и не премахва необходимостта от проверка на влажността на субстрата."
+        },
+        "sr": {
+          "name": "Отпорност на воду",
+          "definition": "Карактеристика производа која се мора прочитати са својим границама изложености. Не чини простор водоотпорном нити уклања потребу за провером влаге у подлози."
+        },
+        "ar": {
+          "name": "مقاومة الماء",
+          "definition": "خاصية المنتج التي يجب قراءتها مع حدود التعرض لها. لا يجعل الغرفة مقاومة للماء أو يزيل الحاجة إلى فحص رطوبة الركيزة."
+        }
       },
       {
         "id": "technical-sheet",
@@ -280,7 +538,19 @@
           "name": "Teknik föy (TDS)",
           "definition": "Üreticinin belirli ürün ve teknik özellikleri için hazırladığı belgedir. Sürümü ve ürün yapısını kontrol edin; kendiliğinden bağımsız sertifika değildir."
         },
-        "topicId": "kermit-spc-certificates-emissions"
+        "topicId": "kermit-spc-certificates-emissions",
+        "bg": {
+          "name": "Лист с технически данни (TDS)",
+          "definition": "Описание на производителя на определен продукт и неговите технически свойства. Проверете неговата версия и конфигурация; това не е автоматично независимо сертифициране."
+        },
+        "sr": {
+          "name": "Технички лист (TDS)",
+          "definition": "Произвођачев опис дефинисаног производа и његових техничких својстава. Проверите његову ревизију и конфигурацију; то није аутоматски независна сертификација."
+        },
+        "ar": {
+          "name": "ورقة البيانات الفنية (TDS)",
+          "definition": "وصف الشركة المصنعة لمنتج محدد وخصائصه الفنية. التحقق من مراجعته وتكوينه؛ إنها ليست شهادة مستقلة تلقائيًا."
+        }
       },
       {
         "id": "emissions",
@@ -292,7 +562,19 @@
           "name": "Emisyon",
           "definition": "Belirli test koşullarında salınan maddelerdir. Yöntemi, birimleri ve numune kapsamını okuyun; içerik ve emisyon farklı sorulardır."
         },
-        "topicId": "kermit-spc-certificates-emissions"
+        "topicId": "kermit-spc-certificates-emissions",
+        "bg": {
+          "name": "Емисии",
+          "definition": "Вещества, освободени при определени условия на изпитване. Прочетете метода, единиците и обхвата на пробата; съдържанието на съставките и емисиите са различни въпроси."
+        },
+        "sr": {
+          "name": "Емисије",
+          "definition": "Супстанце ослобођене под одређеним условима испитивања. Прочитајте метод, јединице и обим узорка; садржај састојака и емисије су различита питања."
+        },
+        "ar": {
+          "name": "الانبعاثات",
+          "definition": "المواد المنطلقة في ظل ظروف اختبار محددة. اقرأ الطريقة والوحدات ونطاق العينة؛ محتوى المكونات والانبعاثات هي أسئلة مختلفة."
+        }
       },
       {
         "id": "certificate-scope",
@@ -304,9 +586,24 @@
           "name": "Sertifika kapsamı",
           "definition": "Belirli belgenin kapsadığı ürün, kuruluş, faaliyet veya tesislerdir. İddiayı ve siparişi kapsamla eşleştirin; güncel durumu doğrulayın."
         },
-        "topicId": "kermit-spc-certificates-emissions"
+        "topicId": "kermit-spc-certificates-emissions",
+        "bg": {
+          "name": "Обхват на сертификата",
+          "definition": "Продуктите, организацията, дейностите или обектите, обхванати от конкретен сертификат. Свържете действителния иск и поръчка с този обхват и проверете текущото състояние."
+        },
+        "sr": {
+          "name": "Обухват сертификата",
+          "definition": "Производи, организација, активности или сајтови обухваћени одређеним сертификатом. Ускладите стварни захтев и налог са тим опсегом и проверите тренутни статус."
+        },
+        "ar": {
+          "name": "نطاق الشهادة",
+          "definition": "المنتجات أو المؤسسات أو الأنشطة أو المواقع المشمولة بشهادة معينة. قم بمطابقة المطالبة والطلب الفعليين بهذا النطاق وتحقق من الحالة الحالية."
+        }
       }
-    ]
+    ],
+    "bg": "Експлоатационни характеристики и документи",
+    "sr": "Перформансе и документи",
+    "ar": "الأداء والوثائق"
   },
   {
     "id": "ordering",
@@ -323,7 +620,19 @@
           "name": "Parti referansı",
           "definition": "Teslim edilen ürünü üretim kaydıyla ilişkilendiren kimliktir. Soru veya tekrar sipariş için etiketi dekor ve sipariş bilgisiyle saklayın."
         },
-        "topicId": "spc-flooring-care-repair"
+        "topicId": "spc-flooring-care-repair",
+        "bg": {
+          "name": "Номер на партидата",
+          "definition": "Идентификатор, свързващ доставените стоки с техния производствен запис. Запазете етикети с декора и информация за поръчка за запитвания или повторна доставка."
+        },
+        "sr": {
+          "name": "Ознака серије",
+          "definition": "Идентификатор који повезује испоручену робу са њиховом производном евиденцијом. Сачувајте налепнице са декором и информацијама о поруџбини за упите или поновну набавку."
+        },
+        "ar": {
+          "name": "مرجع دفعة الإنتاج",
+          "definition": "معرف يربط البضائع المسلمة بسجل إنتاجها. احتفظ بالملصقات التي تحتوي على معلومات الديكور والطلب للاستفسارات أو تكرار العرض."
+        }
       },
       {
         "id": "moq",
@@ -335,7 +644,19 @@
           "name": "Asgari sipariş miktarı (MOQ)",
           "definition": "Ticari alımın alt sınırıdır. Kermit’te toptan SPC parke için bir konteynerdir; gerçek yükleme miktarı kararlaştırılan ürüne bağlıdır."
         },
-        "topicId": "spc-samples-wholesale-quote"
+        "topicId": "spc-samples-wholesale-quote",
+        "bg": {
+          "name": "Минимално количество за поръчка (MOQ)",
+          "definition": "Минималната търговска поръчка. Kermit на едро SPC подова настилка MOQ е един контейнер; действителното количество за зареждане зависи от договорената спецификация."
+        },
+        "sr": {
+          "name": "Минимална количина поруџбине (MOQ)",
+          "definition": "Минимални комерцијални налог. Kermit велепродаја SPC подне МОК је један контејнер; стварна количина утовара зависи од договорене спецификације."
+        },
+        "ar": {
+          "name": "الحد الأدنى لكمية الطلب (MOQ)",
+          "definition": "الحد الأدنى للطلب التجاري. Kermit بالجملة SPC الأرضيات موك عبارة عن حاوية واحدة ؛ تعتمد كمية التحميل الفعلية على المواصفات المتفق عليها."
+        }
       },
       {
         "id": "lead-time",
@@ -347,7 +668,19 @@
           "name": "Termin",
           "definition": "Kararlaştırılan sipariş aşaması için verilen süredir. Kermit’in standart termini dört haftadır; başlangıç koşulunu ve ayrı taşıma takvimini teklifte netleştirin."
         },
-        "topicId": "import-spc-flooring-from-kermit"
+        "topicId": "import-spc-flooring-from-kermit",
+        "bg": {
+          "name": "Срок за доставка",
+          "definition": "Цитираното време за договорен етап на поръчка. Стандартното време за доставка на Kermit е четири седмици; потвърдете началната база и отделен транспортен график в офертата."
+        },
+        "sr": {
+          "name": "Рок испоруке",
+          "definition": "Наведено време за фазу договорене поруџбине. Стандардно време испоруке Kermit је четири недеље; потврдити почетну основу и посебан распоред транспорта у понуди."
+        },
+        "ar": {
+          "name": "مدة التوريد",
+          "definition": "الوقت المحدد لمرحلة الطلب المتفق عليها. Kermit المهلة القياسية هي أربعة أسابيع؛ تأكيد أساس البداية وجدول النقل المنفصل في عرض الأسعار."
+        }
       },
       {
         "id": "private-label",
@@ -359,7 +692,19 @@
           "name": "OEM ve özel marka",
           "definition": "Alıcının ürün veya marka tarifine göre tedariktir. Kermit bu imkânı sunar; ürün ayrıntısı, tasarım ve sertifika/logo kapsamı siparişte kararlaştırılır."
         },
-        "topicId": "spc-oem-private-label"
+        "topicId": "spc-oem-private-label",
+        "bg": {
+          "name": "OEM и собствена марка",
+          "definition": "Доставка за продукт или марка на купувача. Kermit предлага тази възможност; подробности за продукта, произведения на изкуството и обхват на сертифициране/лого се съгласуват за поръчката."
+        },
+        "sr": {
+          "name": "OEM и сопствена робна марка",
+          "definition": "Набавка за купчев производ или бриеф бренда. Kermit нуди ову могућност; детаљи о производу, уметничка дела и било који опсег сертификата/логотипа су договорени за поруџбину."
+        },
+        "ar": {
+          "name": "OEM والعلامة التجارية الخاصة",
+          "definition": "توريد منتج المشتري أو ملخص العلامة التجارية. Kermit يقدم هذه الإمكانية؛ يتم الاتفاق على تفاصيل المنتج والأعمال الفنية وأي نطاق شهادة/شعار للطلب."
+        }
       },
       {
         "id": "landed-cost",
@@ -371,9 +716,24 @@
           "name": "Varış noktasına kadar maliyet",
           "definition": "Malı seçilen noktada teslim almak için tanımlanan toplam maliyettir. Birim tutarları karşılaştırmadan önce giderleri, miktarı, para birimini ve vergileri belirleyin."
         },
-        "topicId": "import-spc-flooring-from-kermit"
+        "topicId": "import-spc-flooring-from-kermit",
+        "bg": {
+          "name": "Обща себестойност до местоназначението",
+          "definition": "Дефинирана обща цена за получаване на стоки в избраната дестинация. Идентифицирайте включените такси, количество, валута и данъчно третиране, преди да сравните единиците."
+        },
+        "sr": {
+          "name": "Укупни трошкови до одредишта",
+          "definition": "Дефинисани укупни трошак пријема робе на одабраној дестинацији. Идентификујте укључене трошкове, количину, валуту и ​​порески третман пре него што упоредите јединице."
+        },
+        "ar": {
+          "name": "التكلفة الإجمالية حتى الوصول",
+          "definition": "تكلفة إجمالية محددة لاستلام البضائع في الوجهة المختارة. حدد الرسوم والكمية والعملة والمعاملة الضريبية المضمنة قبل مقارنة أرقام الوحدة."
+        }
       }
-    ]
+    ],
+    "bg": "Поръчка и доставка",
+    "sr": "Наручивање и снабдевање",
+    "ar": "الطلب والتوريد"
   },
   {
     "id": "walls-skirting",
@@ -390,7 +750,19 @@
           "name": "Süpürgelik yüksekliği ve kalınlığı",
           "definition": "Yükseklik duvarda görünen düşey ölçü, kalınlık profilin çıkıntısıdır. İkisi de kesim ve miktar hesabında gereken ürün boyu değildir."
         },
-        "topicId": "kermit-spc-skirting-advantages"
+        "topicId": "kermit-spc-skirting-advantages",
+        "bg": {
+          "name": "Височина и дебелина на перваза",
+          "definition": "Височината е видимото издигане на стената; дебелината описва проекцията на профила. Нито пък предоставената му дължина, която има значение за разкроя и количеството."
+        },
+        "sr": {
+          "name": "Висина и дебљина лајсне",
+          "definition": "Висина је видљиво уздизање зида; дебљина описује пројекцију профила. Није ни његова испоручена дужина, која је битна за сечење и количину."
+        },
+        "ar": {
+          "name": "ارتفاع الوزرة وسماكتها",
+          "definition": "الارتفاع هو الارتفاع المرئي لأعلى الجدار؛ يصف السُمك إسقاط الملف الشخصي. ولا هو طولها الموردة، وهو أمر مهم للقطع والكمية."
+        }
       },
       {
         "id": "flexible-edge",
@@ -402,7 +774,19 @@
           "name": "Esnek kenar / conta",
           "definition": "Belirli süpürgelik profilindeki esnek temas kenarıdır. Duvar hazırlığının veya bütün su yalıtım sisteminin yerine geçmez."
         },
-        "topicId": "skirting-with-flexible-edges-what-is-it"
+        "topicId": "skirting-with-flexible-edges-what-is-it",
+        "bg": {
+          "name": "Гъвкав ръб",
+          "definition": "Гъвкав контактен ръб на определен профил на перваза. Това е характеристика на профила, а не заместител на подготовката на стените или цялостна хидроизолационна система."
+        },
+        "sr": {
+          "name": "Флексибилна ивица",
+          "definition": "Флексибилна контактна ивица на одређеном профилу лајсне. То је карактеристика профила, а не замена за припрему зида или комплетан систем хидроизолације."
+        },
+        "ar": {
+          "name": "حافة مرنة",
+          "definition": "حافة تلامس مرنة على شكل حافة محدد. إنها ميزة ملف تعريف، وليست بديلاً لإعداد الجدار أو نظام العزل المائي الكامل."
+        }
       },
       {
         "id": "wall-substrate",
@@ -414,7 +798,19 @@
           "name": "Duvar alt yüzeyi",
           "definition": "Duvar panelini taşıyan yüzeydir. Durumu, nemi ve sabitleme sistemiyle uyumu, parke uygulamasından ayrı değerlendirilir."
         },
-        "topicId": "spc-wall-panel-usage-areas"
+        "topicId": "spc-wall-panel-usage-areas",
+        "bg": {
+          "name": "Основа на стената",
+          "definition": "Повърхността, поддържаща монтаж на стенни панели. Неговото състояние, влага и съвместимост с избраната фиксираща система се нуждаят от отделна оценка от пода."
+        },
+        "sr": {
+          "name": "Зидна подлога",
+          "definition": "Површина која подржава уградњу зидних плоча. Његово стање, влажност и компатибилност са одабраним системом причвршћивања захтевају одвојену процену од пода."
+        },
+        "ar": {
+          "name": "السطح الأساسي للجدار",
+          "definition": "السطح الذي يدعم تركيب لوحة الحائط. تحتاج حالته ورطوبته وتوافقه مع نظام التثبيت المحدد إلى تقييم منفصل عن الأرضية."
+        }
       },
       {
         "id": "finish-schedule",
@@ -426,8 +822,23 @@
           "name": "Kaplama çizelgesi",
           "definition": "Parke, süpürgelik ve duvar ürünlerini oda bazında kaydeden listedir. Miktar, referans ve uygulama ayrıntıları ürün ailelerine göre ayrı tutulur."
         },
-        "topicId": "spc-interior-finishes-project-specification"
+        "topicId": "spc-interior-finishes-project-specification",
+        "bg": {
+          "name": "Спецификация на довършителните работи",
+          "definition": "Запис за стая по стая на подови настилки, первази и продукти за стени, с техните количества, референции и подробности за монтажа, които се съхраняват ясно."
+        },
+        "sr": {
+          "name": "Спецификација завршних облога",
+          "definition": "Евиденција производа за подове, лајсне и зидове од собе до собе, са њиховим количинама, референцама и детаљима уградње који се чувају одвојено."
+        },
+        "ar": {
+          "name": "جدول مواصفات التشطيبات",
+          "definition": "يتم الاحتفاظ بسجل تفصيلي لكل غرفة على حدة لمنتجات الأرضيات والحواف والجدران، مع الاحتفاظ بالكميات والمراجع وتفاصيل التركيب الخاصة بها."
+        }
       }
-    ]
+    ],
+    "bg": "Первази и стенни панели",
+    "sr": "Лајсне и зидне плоче",
+    "ar": "الوزرات وألواح الجدران"
   }
 ]

@@ -61,21 +61,21 @@ function WallCollectionNav() {
     imageUrl: string;
     imageHint: string;
   }[] = [
-    { 
-      name: t('spcWallPanelsTitle'), 
-      href: '/spc-wall-panels', 
+    {
+      name: t('spcWallPanelsTitle'),
+      href: '/spc-wall-panels',
       imageUrl: '/images/spc-wall-panels/613/application.jpg',
       imageHint: 'travertine texture'
     },
-    { 
-      name: t('spc3dWallPanelsModelATitle'), 
-      href: '/spc-3d-wall-panels-model-a', 
+    {
+      name: t('spc3dWallPanelsModelATitle'),
+      href: '/spc-3d-wall-panels-model-a',
       imageUrl: '/images/spc-3d-panels-model-a/3D-205/application.jpg',
       imageHint: 'geometric 3d texture'
     },
-    { 
-      name: t('spc3dWallPanelsModelBTitle'), 
-      href: '/spc-3d-wall-panels-model-b', 
+    {
+      name: t('spc3dWallPanelsModelBTitle'),
+      href: '/spc-3d-wall-panels-model-b',
       imageUrl: '/images/spc-3d-panels-model-b/3D-617/application.jpg',
       imageHint: 'wavy 3d texture'
     },
@@ -87,8 +87,8 @@ function WallCollectionNav() {
             <div className="flex items-start justify-center gap-4 md:gap-8">
                 {collections.map((collection, index) => (
                     <React.Fragment key={collection.name}>
-                        <Link 
-                            href={collection.href} 
+                        <Link
+                            href={collection.href}
                             className={cn(
                                 "flex flex-col items-center gap-2 group",
                             )}
@@ -98,7 +98,7 @@ function WallCollectionNav() {
                                 pathnameValue === getHrefPath(collection.href) ? "border-primary" : "border-transparent group-hover:border-primary/50"
                             )}
                             >
-                                <Image 
+                                <Image
                                     src={collection.imageUrl}
                                     alt={collection.name}
                                     fill
@@ -140,8 +140,8 @@ function FlooringCollectionNav({ activeSeriesId }: { activeSeriesId: ReturnType<
 
                         return (
                           <React.Fragment key={collection.collectionKey}>
-                              <Link 
-                                  href={collection.href} 
+                              <Link
+                                  href={collection.href}
                                   aria-current={isActive ? 'page' : undefined}
                                   className="group flex flex-col items-center gap-2 rounded-2xl px-3 pb-2 pt-1.5 transition-all duration-300"
                               >
@@ -153,7 +153,7 @@ function FlooringCollectionNav({ activeSeriesId }: { activeSeriesId: ReturnType<
                                         : "border-foreground/70 group-hover:border-primary/65"
                                     )}
                                   >
-                                      <Image 
+                                      <Image
                                           src={collection.imageUrl}
                                           alt={t(collection.titleKey)}
                                           fill
@@ -215,9 +215,9 @@ function SkirtingCollectionNav() {
         <div className="container mx-auto px-4">
             <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
                 {collections.map((collection) => (
-                    <Link 
+                    <Link
                         key={collection.name}
-                        href={collection.href} 
+                        href={collection.href}
                         className={cn(
                             "flex flex-col items-center gap-2 group",
                         )}
@@ -227,7 +227,7 @@ function SkirtingCollectionNav() {
                             pathnameValue.includes(getHrefPath(collection.href)) ? "border-primary" : "border-transparent group-hover:border-primary/50"
                         )}
                         >
-                            <Image 
+                            <Image
                                 src={collection.imageUrl}
                                 alt={collection.name}
                                 fill
@@ -263,6 +263,7 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
   const tProductDetails = useTranslations('ProductDetails');
   const tCollectionPanelNames = useTranslations(getCollectionPanelNameNamespace(collectionType));
   const tShowcase = useTranslations('ShowcasePage');
+  const tCommon = useTranslations('Common');
   const resolvedCollectionSpecs = resolveCollectionSpecs(collectionType, tProductDetails);
   const collectionFamily = getCollectionFamily(collectionType);
   const tPanelNames = (key: string) => resolvePanelName(tCollectionPanelNames, key);
@@ -312,8 +313,7 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
         <div className="container mx-auto px-4 mt-6 lg:mt-8">
           <Skeleton className="h-[60vh] w-full" />
           <div className="text-center py-8">
-            <p className="text-lg text-muted-foreground">There are currently no products in this collection.</p>
-            <p className="text-sm text-muted-foreground mt-2">Please add product folders with images to the corresponding directory in `public/images`.</p>
+            <p className="text-lg text-muted-foreground">{tCommon('noProducts')}</p>
           </div>
         </div>
       </div>
@@ -330,9 +330,9 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
         <WallCollectionNav />
       )}
       <div className="container mx-auto px-4 mt-6 lg:mt-8">
-        <ProductDetails 
-          panel={selectedPanel} 
-          panels={panels} 
+        <ProductDetails
+          panel={selectedPanel}
+          panels={panels}
           onPanelSelect={setSelectedPanel}
           family={collectionFamily}
           tPanelNames={tPanelNames}
@@ -341,7 +341,7 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
           specialFlags={resolvedCollectionSpecs.specialFlags}
         />
       </div>
-      
+
       <ColorPicker
         panels={panels}
         selectedPanel={selectedPanel}
@@ -357,7 +357,7 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
                 <Card className="group overflow-hidden shadow-lg border-none bg-background/50 relative aspect-[16/9] cursor-pointer">
                     <Image
                       src={selectedPanel.applicationImageUrl}
-                      alt={`Application of SPC Wall Panel ${tPanelNames(selectedPanel.nameKey)}`}
+                      alt={tCommon('applicationAlt', {name: tPanelNames(selectedPanel.nameKey)})}
                       fill
                       className="object-cover"
                       data-ai-hint={selectedPanel.applicationImageHint}
@@ -369,11 +369,11 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
                 </Card>
               </DialogTrigger>
               <DialogContent className="max-w-4xl p-0 bg-transparent border-none">
-                <DialogTitle className="sr-only">{`Enlarged application view of SPC Wall Panel ${tPanelNames(selectedPanel.nameKey)}`}</DialogTitle>
+                <DialogTitle className="sr-only">{tCommon('applicationEnlargedAlt', {name: tPanelNames(selectedPanel.nameKey)})}</DialogTitle>
                 <div className="relative aspect-[16/9]">
                    <Image
                     src={selectedPanel.applicationImageUrl}
-                    alt={`Enlarged application view of SPC Wall Panel ${tPanelNames(selectedPanel.nameKey)}`}
+                    alt={tCommon('applicationEnlargedAlt', {name: tPanelNames(selectedPanel.nameKey)})}
                     fill
                     className="object-contain rounded-lg"
                     data-ai-hint={selectedPanel.applicationImageHint}
@@ -381,61 +381,61 @@ export function Showcase({ initialPanels, collectionType }: ShowcaseProps) {
                   />
                 </div>
                 <DialogClose asChild>
-                  <Button variant="ghost" size="icon" className="absolute top-[-1rem] right-[-1rem] bg-black/50 hover:bg-black/70 rounded-full h-9 w-9 text-white">
+                  <Button variant="ghost" size="icon" className="absolute top-[-1rem] end-[-1rem] bg-black/50 hover:bg-black/70 rounded-full h-9 w-9 text-white">
                       <X className="h-5 w-5" />
-                      <span className="sr-only">Close</span>
+                      <span className="sr-only">{tCommon('close')}</span>
                   </Button>
                 </DialogClose>
               </DialogContent>
             </Dialog>
         </section>
       </div>
-      
+
       <div className="container mx-auto px-4">
         <section id="application-video" className="scroll-mt-20">
             <h2 className="text-2xl md:text-3xl font-bold font-headline text-primary tracking-wide text-center mb-4">{tShowcase('applicationVideoTitle')}</h2>
             {isFlooring ? (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <Card className="overflow-hidden shadow-lg border-none bg-background/50 relative aspect-video">
-                    <iframe 
+                    <iframe
                         className="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/94ksNLWyxe8" 
-                        title="YouTube video player 1" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        src="https://www.youtube.com/embed/94ksNLWyxe8"
+                        title={tShowcase('applicationVideoTitle')}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen>
                     </iframe>
                 </Card>
                 <Card className="overflow-hidden shadow-lg border-none bg-background/50 relative aspect-video">
-                    <iframe 
+                    <iframe
                         className="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/J7aVghybjpI" 
-                        title="YouTube video player 2" 
-                        frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        src="https://www.youtube.com/embed/J7aVghybjpI"
+                        title={tShowcase('applicationVideoTitle')}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen>
                     </iframe>
                 </Card>
               </div>
             ) : isSkirting ? (
               <Card className="overflow-hidden shadow-lg border-none bg-background/50 relative aspect-video">
-                  <iframe 
+                  <iframe
                       className="absolute top-0 left-0 w-full h-full"
-                      src="https://www.youtube.com/embed/6ly_3AK2AaQ" 
-                      title="YouTube video player" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      src="https://www.youtube.com/embed/6ly_3AK2AaQ"
+                      title={tShowcase('applicationVideoTitle')}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen>
                   </iframe>
               </Card>
             ) : (
               <Card className="overflow-hidden shadow-lg border-none bg-background/50 relative aspect-video">
-                  <iframe 
+                  <iframe
                       className="absolute top-0 left-0 w-full h-full"
-                      src="https://www.youtube.com/embed/LLy_k_s2Yso" 
-                      title="YouTube video player" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      src="https://www.youtube.com/embed/LLy_k_s2Yso"
+                      title={tShowcase('applicationVideoTitle')}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen>
                   </iframe>
               </Card>

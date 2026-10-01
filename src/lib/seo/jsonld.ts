@@ -1,4 +1,5 @@
 import {getSiteUrl} from '@/lib/blog/seo';
+import {locales} from '@/i18n/locales';
 import type {CollectionFamily, CollectionKey} from '@/lib/product-collections';
 import type {pathnames} from '@/navigation';
 
@@ -65,7 +66,7 @@ export function getOrganizationJsonLd({
       contactType: 'sales',
       telephone,
       email,
-      availableLanguage: ['en', 'tr'],
+      availableLanguage: locales,
     },
     sameAs: ['https://www.instagram.com/kermitfloor'],
   };
@@ -81,7 +82,7 @@ export function getWebSiteJsonLd() {
     name: 'Kermit Floor',
     url: siteUrl,
     publisher: {'@id': ORGANIZATION_ID},
-    inLanguage: ['en', 'tr'],
+    inLanguage: locales,
   };
 }
 

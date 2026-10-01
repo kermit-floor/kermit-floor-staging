@@ -1,11 +1,11 @@
 
 import {createNavigation} from 'next-intl/navigation';
 import type {Pathnames} from 'next-intl/routing';
+import {locales, defaultLocale} from './i18n/locales';
 
-export const locales = ['en', 'tr'] as const;
-export const defaultLocale = 'en';
+export {locales, defaultLocale};
 
-export const pathnames = {
+const existingPathnames = {
   '/': {
     en: '/',
     tr: '/'
@@ -126,9 +126,18 @@ export const pathnames = {
     en: '/terms-of-service',
     tr: '/kullanim-sartlari'
   }
-} satisfies Pathnames<typeof locales>;
+};
 
-// Use `'as-needed'` to only add a prefix for the non-default locale (`tr`).
+// Keep existing EN/TR URLs stable. Additional languages use the same route slugs
+// as English beneath their own locale prefix; product names stay unchanged.
+export const pathnames = Object.fromEntries(
+  Object.entries(existingPathnames).map(([key, route]) => [
+    key,
+    {...route, bg: route.en, sr: route.en, ar: route.en},
+  ]),
+) as {[Key in keyof typeof existingPathnames]: Record<(typeof locales)[number], string>} satisfies Pathnames<typeof locales>;
+
+// Only the default language has no locale prefix.
 export const localePrefix = 'as-needed' as const;
 
 const navigation = (() => {

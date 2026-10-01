@@ -73,16 +73,16 @@ export function Footer() {
                 <h3 className="font-headline text-lg font-semibold text-foreground">{t('contactTitle')}</h3>
                 <ul className="space-y-3 text-sm">
                 <li className="flex items-start">
-                    <MapPin className="h-5 w-5 mt-0.5 text-secondary flex-shrink-0 mr-3" />
+                    <MapPin className="h-5 w-5 mt-0.5 text-secondary flex-shrink-0 me-3" />
                     <span>{t('address')}</span>
                 </li>
                 <li className="flex items-start">
-                    <Phone className="h-5 w-5 mt-0.5 text-secondary flex-shrink-0 mr-3" />
-                    <a href={`tel:${phoneRaw}`} className="hover:text-primary transition-colors">{t('phone')}</a>
+                    <Phone className="h-5 w-5 mt-0.5 text-secondary flex-shrink-0 me-3" />
+                    <a href={`tel:${phoneRaw}`} dir="ltr" className="hover:text-primary transition-colors">{t('phone')}</a>
                 </li>
                 <li className="flex items-start">
-                    <Mail className="h-5 w-5 mt-0.5 text-secondary flex-shrink-0 mr-3" />
-                    <a href={`mailto:${emailAddress}`} className="hover:text-primary transition-colors">{emailAddress}</a>
+                    <Mail className="h-5 w-5 mt-0.5 text-secondary flex-shrink-0 me-3" />
+                    <a href={`mailto:${emailAddress}`} dir="ltr" className="hover:text-primary transition-colors">{emailAddress}</a>
                 </li>
                 </ul>
             </div>
@@ -94,7 +94,7 @@ export function Footer() {
         <div className="bg-background/50">
             <div className="container mx-auto px-4 py-4">
             <Separator className="mb-4 bg-border/50" />
-            <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4">
+            <div className="flex flex-col sm:flex-row justify-between items-center text-center sm:text-start gap-4">
                 <p className="text-xs text-muted-foreground">
                 {t('copyright', {year: new Date().getFullYear()})}
                 </p>

@@ -1,0 +1,1229 @@
+{
+  "Metadata": {
+    "title": "Kermit Floor | SPC подови, зидни панели и лајсне",
+    "description": "Квалитетни SPC подови, зидни панели и подне лајсне за савремене ентеријере. Један бренд, комплетан систем."
+  },
+  "Header": {
+    "navHome": "ПОЧЕТНА",
+    "navFloors": "ПОДОВИ",
+    "navWalls": "ЗИДОВИ",
+    "navSkirtings": "ЛАЈСНЕ",
+    "navDownload": "РЕСУРСИ",
+    "navAbout": "О НАМА",
+    "navContact": "КОНТАКТ",
+    "heroTitleSpc": "КОЛЕКЦИЈА SPC ЗИДНИХ ПАНЕЛА",
+    "heroTitle3d": "КОЛЕКЦИЈА SPC 3D ЗИДНИХ ПАНЕЛА",
+    "heroTitle3dModelA": "SPC РЕБРАСТИ ПАНЕЛИ: Model A",
+    "heroTitle3dModelB": "SPC РЕБРАСТИ ПАНЕЛИ: Model B",
+    "collectionsTitle": "Колекције SPC зидних панела",
+    "heroTitleSpcParquetNaturalCollection": "Брза испорука: NATURAL",
+    "heroTitleSpcParquetStoneCollection": "Брза испорука: STONE",
+    "heroTitleFullNaturalCollection": "NATURAL: пуни опсег",
+    "heroTitleSkirtingAlpha140mm": "ПОДНА ЛАЈСНА Alpha 140 mm",
+    "heroTitleSkirtingBerlin100mm": "ПОДНА ЛАЈСНА Berlin 100 mm",
+    "heroTitleSkirtingElite100mm": "ПОДНА ЛАЈСНА Elite 100 mm",
+    "heroTitleSkirtingModerna100mm": "ПОДНА ЛАЈСНА Moderna 100 mm",
+    "heroTitleSkirtingOptima60mm": "ПОДНА ЛАЈСНА Optima 60 mm",
+    "heroTitleSkirtingOptima90mm": "ПОДНА ЛАЈСНА Optima 90 mm",
+    "heroTitleSkirtingSolid80mm": "ПОДНА ЛАЈСНА Solid 80 mm",
+    "heroTitleSkirtingXLine100mm": "ПОДНА ЛАЈСНА X-Line 100 mm",
+    "heroTitleFlooringPremierSeries": "Брза испорука: PREMIUM",
+    "heroTitleFlooringNaturalSeries": "Брза испорука: NATURAL",
+    "heroH1SpcFlooringEliteCollection": "Колекција SPC подова Elite",
+    "heroH1SpcFlooringEleganceCollection": "Колекција SPC подова Elegance",
+    "heroH1SpcFlooringSkyCollection": "Колекција SPC подова Sky",
+    "heroH1SpcFlooringMosaicCollection": "Колекција SPC подова Mosaic",
+    "heroH1SpcFlooringTravertineCollection": "Колекција SPC подова Travertine",
+    "heroH1SpcParquetNaturalCollection": "Колекција SPC подова Natural",
+    "heroH1SpcParquetStoneCollection": "Колекција SPC подова Stone",
+    "heroH1FullNaturalCollection": "Колекција SPC подова Full Natural"
+  },
+  "HomePage": {
+    "seo": {
+      "title": "турски SPC Произвођач подних и зидних панела | Kermit Floor",
+      "description": "Kermit Floor производи SPC подове, зидне панеле и лајсне у Турској, са 8 милиона м² годишњег комбинованог капацитета пода и зидова. Велепродаја и OEM упити."
+    },
+    "heroTitle": "SPC ПОДОВИ, SPC ЗИДОВИ И SPC ЛАЈСНЕ",
+    "heroSubtitle": "Комплетан SPC систем унутрашње завршне обраде истог бренда са издржљивим перформансама и најпродаванијим дизајном.",
+    "heroStarterPacksTitle": "Брзо започните свој пројекат помоћу наших пакета ресурса:",
+    "productLinesTitle": "Системски приступ SPC ентеријерима",
+    "productLinesSubtitle": "Производимо подове, лајсне и зидне панеле осмишљене да се међусобно уклапају и пруже комплетну завршну обраду.",
+    "flooringTitle": "SPC подови",
+    "flooringDescription": "Наши подови са крутим језгром спајају издржљивост и стил, уз широк избор дезена за сваки ентеријер.",
+    "flooringBenefits": {
+      "b1": "100% водоотпорни и веома издржљиви",
+      "b2": "Брза и чиста уградња клик системом",
+      "b3": "Широк избор реалистичних дрвених и камених декора"
+    },
+    "viewFlooring": "Погледајте подове",
+    "skirtingTitle": "SPC подне лајсне",
+    "skirtingDescription": "Завршите пројекат одговарајућим лајснама са флексибилним ивицама за уредан спој зида и пода.",
+    "skirtingBenefits": {
+      "b1": "Могу се фарбати и веома су отпорне на ударце",
+      "b2": "Флексибилне ивице за неравне зидове",
+      "b3": "Усклађени тонови са подовима и панелима"
+    },
+    "viewSkirting": "Погледајте лајсне",
+    "wallsTitle": "SPC зидни панели",
+    "wallsDescription": "Преобразите ентеријер нашим квалитетним SPC панелима који се лако уграђују, са каменим, дрвеним и 3D текстурама.",
+    "wallsBenefits": {
+      "b1": "Потпуно водоотпорно решење без фуговања",
+      "b2": "Уградња преко постојећих плочица за неколико сати",
+      "b3": "Дезени великог формата за целовит изглед"
+    },
+    "viewWalls": "Погледајте зидне панеле",
+    "whyKermitTitle": "Зашто Kermit Floor?",
+    "whyKermit": {
+      "manufacturer": {
+        "title": "Производња у Турској",
+        "text": "Велепродаја SPC подова и OEM/приватна робна марка за дистрибутере и брендове. Спецификације производа, паковања и распореди поруџбина су потврђени у понуди."
+      },
+      "design": {
+        "title": "Контрола дизајна",
+        "text": "Сопствена израда калупа омогућава прецизну контролу детаља и брз развој производа."
+      },
+      "system": {
+        "title": "Системски приступ",
+        "text": "Подови, лајсне и зидни панели дизајнирани да раде заједно за потпуну завршну обраду."
+      }
+    },
+    "viewAboutUs": "Сазнајте више о нама",
+    "blogSectionTitle": "Корисне информације",
+    "comingSoon": "Ускоро...",
+    "resourcesTitle": "Планирајте свој пројекат са комплетном документацијом",
+    "resourcesCardCatalogue": "Каталози",
+    "resourcesCardTds": "Технички листови",
+    "resourcesCardInstall": "Упутства за уградњу",
+    "viewResources": "Погледајте ресурсе",
+    "instagramTitle": "Од нас",
+    "instagramSubtitle": "Пратите @kermitfloor на Instagram-у за инспирацију за дизајн и новости о производима.",
+    "followInstagram": "Пратите нас на Instagram",
+    "contactCtaTitle": "Разговарајте са продајом за документацију, узорке и комерцијалне услове.",
+    "contactCtaButton": "Контактирајте продају",
+    "spcWallPanelsTitle": "SPC Зидни панели",
+    "spc3dWallPanelsModelATitle": "3Д панели (модел А)",
+    "spc3dWallPanelsModelBTitle": "3Д панели (модел Б)",
+    "spcParquetNaturalCollectionTitle": "Natural",
+    "spcParquetStoneCollectionTitle": "Stone",
+    "fullNaturalCollectionTitle": "Full Natural",
+    "premierSeriesTitle": "Колекције Premium",
+    "naturalSeriesTitle": "Колекције Natural",
+    "spcFlooringEleganceCollectionTitle": "Elegance",
+    "spcFlooringSkyCollectionTitle": "Sky",
+    "spcFlooringMosaicCollectionTitle": "Mosaic",
+    "spcFlooringEliteCollectionTitle": "Elite",
+    "spcFlooringTravertineCollectionTitle": "Travertine",
+    "manufacturerIntroduction": "Kermit Floor је произвођач SPC подова и зидних панела у Турској, са седиштем и главном фабриком у Çayırova, Kocaeli. Годишњи заједнички капацитет за подове и зидне панеле износи 8 милиона m², а послујемо у Турској, Молдавији, Румунији и САД."
+  },
+  "SpcWallPanelsPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC зидни панели",
+      "description": "Откријте нашу премиум колекцију зидних панела SPC. водоотпоран, издржљив и једноставан за инсталацију."
+    }
+  },
+  "Spc3dWallPanelsModelAPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC 3д зидни панели – модел а",
+      "description": "Трансформишите своје зидове помоћу нашег модела 3д SPC панела, који нуде јединствене текстуре и модеран дизајн."
+    }
+  },
+  "Spc3dWallPanelsModelBPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC 3д зидни панели – модел б",
+      "description": "Креирајте задивљујуће зидове са нашим моделом б 3д SPC панелима, са елегантним и савременим шарама."
+    }
+  },
+  "SpcParquetNaturalCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Најпродаваније SPC подне даске са изгледом храста",
+      "description": "Истражите нашу најпродаванију колекцију SPC подних дасака са изгледом природног храста. Издржљиве, водоотпорне и пажљиво дизајниране за сваки ентеријер."
+    }
+  },
+  "SpcParquetStoneCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC подови са изгледом камена",
+      "description": "Откријте нашу колекцију SPC подова са изгледом камена. Издржљиви, водоотпорни и савршени за модеран, елегантан ентеријер."
+    }
+  },
+  "FullNaturalCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Колекција Natural: више од 110 боја",
+      "description": "Истражите наш комплетан асортиман SPC подова са изгледом природног дрвета и више од 110 опција боја."
+    }
+  },
+  "ResourcesPage": {
+    "seo": {
+      "title": "SPC каталози, упутства за уградњу и документација | Kermit Floor",
+      "description": "Преузмите Kermit каталоге подова, лајсни и зидних панела и водиче за постављање лајсни. Затражите документе производа, услове гаранције и велепродајне узорке."
+    },
+    "heroTitle": "Ресурси и преузимања",
+    "heroSubtitle": "Прегледајте тренутне каталоге производа и ресурсе за инсталацију, а затим затражите документе потребне за вашу спецификацију.",
+    "starterPacksTitle": "Почетни пакети",
+    "downloadZip": "Преузмите ZIP",
+    "viewContents": "Погледајте садржај",
+    "viewContentsTitle": "Садржај пакета {packName}",
+    "viewContentsDescription": "Користите ову листу да са нашим тимом размотрите документацију која вам је потребна. Доступне датотеке за преузимање налазе се у библиотеци испод.",
+    "productLineTabs_skirting": "SPC лајсне",
+    "productLineTabs_flooring": "SPC подови",
+    "productLineTabs_wall_panels": "SPC зидни панели",
+    "accordion_catalogue": "Каталози",
+    "accordion_tds": "Технички листови са подацима",
+    "accordion_installation": "Упутства за уградњу",
+    "accordion_warranty": "Гаранција и рекламације",
+    "accordion_maintenance": "Нега и одржавање",
+    "accordion_cad": "CAD и цртежи",
+    "accordion_textures": "Текстуре (ZIP)",
+    "accordion_packaging": "Паковање и палетизација",
+    "doc_type": "Врста документа",
+    "version": "Верзија",
+    "last_updated": "Последње ажурирање",
+    "preview": "Преглед",
+    "download": "Преузмите",
+    "comingSoon": "Ускоро...",
+    "noResults": "Ниједан документ не одговара вашим критеријумима.",
+    "requestPack": "Затражите овај пакет",
+    "requestDocument": "Затражите овај документ",
+    "downloads": {
+      "title": "Каталози и техничка преузимања",
+      "description": "Пронађите шифре производа у каталозима, а затим проверите инсталацијску и техничку документацију за одабране подове. Свако преузимање идентификује свој језик и обим.",
+      "englishPdf": "Преузми PDF · енглески",
+      "localizedPdf": "Преузми PDF · енглески",
+      "roPdf": "Преузми PDF · румунски",
+      "enPdf": "Преузми PDF · енглески",
+      "trPdf": "Преузми PDF · турски",
+      "bgPdf": "Бугарски PDF",
+      "srPdf": "Српски PDF",
+      "arPdf": "Арапски PDF"
+    },
+    "documents": {
+      "title": "Затражите документе за ваш пројекат",
+      "description": "Пошаљите референцу производа и захтеве вашег пројекта или одредишног тржишта. Наш тим може да прегледа која техничка документација се примењује на предложену набавку.",
+      "listLabel": "Документи за дискусију",
+      "types": {
+        "technical": "Технички подаци",
+        "installation": "Уградња и гаранција",
+        "projectEvidence": "Тестови и декларације"
+      },
+      "requestTitle": "Учините захтев конкретним",
+      "requestDescription": "Укључите ове детаље тако да се одговор односи на производ који намеравате да наручите:",
+      "include": {
+        "product": "Колекцију, шифру декора, дебљину, хабајући слој и подлогу.",
+        "market": "Одредишну земљу, намеравану употребу и спецификацију пројекта.",
+        "requirements": "Потребне тестове, сертификате, декларације и језик документа."
+      },
+      "manuals": "Користите доњи водич за постављање подних облога и затражите упутства за одређени производ и применљиву гаранцију пре наручивања или почетка рада.",
+      "requestAction": "Затражите документе о производу"
+    },
+    "fileLanguage": "Језик датотеке: {language}",
+    "languages": {
+      "en": "Енглески",
+      "tr": "Турски",
+      "ro": "Румунски",
+      "sr": "Српски",
+      "bg": "Бугарски",
+      "ar": "Арапски"
+    }
+  },
+  "AboutPage": {
+    "seo": {
+      "metaTitle": "SPC Произвођач у Турској: Подни и зидни панели | Kermit Floor",
+      "metaDescription": "Kermit Floor производи SPC подне и зидне панеле у Турској. Годишњи комбиновани капацитет: 8 милиона м². Операције у четири земље; велепродаја подова и OEM снабдевање."
+    },
+    "hero": {
+      "title": "SPC Произвођач подова и зидних панела у Турској",
+      "subtitle": "Kermit Floor производи SPC подове, зидне панеле и лајсне за дистрибутере, брендове приватних марки и пројекте ентеријера. Комбинујемо 8 милиона м² годишњег капацитета подова и зидних плоча са операцијама у Турској, Молдавији, Румунији и САД.",
+      "ctaPrimary": "Затражите узорке и понуду",
+      "ctaSecondary": "Прелистајте каталоге"
+    },
+    "whoWeAre": {
+      "title": "Ко смо ми",
+      "p1": "Kermit Floor је SPC произвођач у Турској, који производи подове, зидне панеле и лајсне за системе унутрашње завршне обраде. Наше седиште и главна фабрика су у Цаиıрову, Коцаели. Наш развој производа се заснива на дугогодишњем искуству у преради полимера и производњи калупа, подржавајући контролу над детаљима дизајна и конзистентношћу производње.",
+      "p2": "Ми правимо производе који су практични за трговину — стабилни, издржљиви и лаки за рад — док изглед одржавамо чистим и модерним за стамбена и комерцијална окружења."
+    },
+    "whatWeMake": {
+      "title": "Оно што правимо",
+      "flooring": {
+        "title": "SPC подови",
+        "text": "Подни системи са крутим језгром пројектовани за свакодневну издржљивост и поуздан резултат уградње у широком спектру унутрашњих простора."
+      },
+      "skirting": {
+        "title": "SPC лајсне",
+        "text": "Решења за лајсне дизајнирана да чисто заврше спој зид-под. Наше лајсне имају флексибилне ивице за побољшање коначног пријањања на неравне површине."
+      },
+      "wallPanels": {
+        "title": "SPC зидни панели",
+        "text": "Системи унутрашњих зидних панела дизајнирани за брзу уградњу, отпорност на ударце и доследне декоративне резултате."
+      }
+    },
+    "whyKermit": {
+      "title": "Зашто Kermit Floor",
+      "manufacturer": {
+        "title": "Индустријски производни капацитет",
+        "text": "8 милиона м² годишњег капацитета преко SPC подних и зидних панела, са спецификацијама производа и условима испоруке дефинисаним за вашу поруџбину."
+      },
+      "design": {
+        "title": "Контрола дизајна",
+        "text": "Могућност дизајна вођеног калупом омогућава контролу детаља и еволуцију производа."
+      },
+      "system": {
+        "title": "Системски приступ",
+        "text": "Под + лајсне + зидне плоче дизајниране да раде заједно за потпуну завршну обраду."
+      }
+    },
+    "footprint": {
+      "title": "Kermit пословање у четири земље",
+      "p1": "Kermit Floor послује у Турској, Молдавији, Румунији и САД. Наше седиште и главна фабрика су у Цаиıрова, Коцаели, Турска, са додатном фабриком у Кишињеву, Молдавија. Доле наведене локације идентификују наше фабричке адресе, румунску продавницу и пут за упит у САД.",
+      "ctaTitle": "Заинтересовани за рад са нама?",
+      "ctaText": "Подржавамо структуре дистрибутера/дилера и снабдевање засновано на пројектима. Контактирајте наш продајни тим за документацију о производу, узорке и комерцијалне услове.",
+      "ctaButton1": "Контактирајте продају",
+      "ctaButton2": "Погледајте ресурсе",
+      "imageAlt": "Фабричка зграда са кровним соларним панелима",
+      "locations": {
+        "turkey": {
+          "title": "Турска · Седиште и фабрика",
+          "address": "Kermit Plastik Sanayi ve Ticaret A.Ş. · Cumhuriyet Mh. Cihan Sk. No:4, Çayırova, Kocaeli"
+        },
+        "moldova": {
+          "title": "Молдавија · Фабрика у Кишињеву",
+          "address": "Muncești 799, Chișinău, Moldova"
+        },
+        "romania": {
+          "title": "Румунија · продавница у Букурешту",
+          "address": "DMS Innovative Solution SRL · Bucharest, Romania"
+        },
+        "usa": {
+          "title": "САД · Операције",
+          "address": "За упите у САД, контактирајте наш продајни тим да бисте потврдили доступност производа, пут снабдевања и комерцијалне услове."
+        }
+      },
+      "originNote": "Поделите шифре одредишта и производа са нашим тимом како би понуда могла да потврди детаље снабдевања за вашу поруџбину."
+    },
+    "sustainability": {
+      "title": "Одрживост и одговорност",
+      "p1": "Приоритет нам је дуг радни век, практична инсталација и одговорна производња. Нашу производњу све више подржава обновљива енергија, а ми континуирано улажемо у ефикасне процесе који смањују отпад и утицај на животну средину. Остајемо чврсто посвећени етичким пословним праксама – поштеним партнерствима, транспарентним операцијама и доследним стандардима квалитета – тако да купци могу са поверењем да специфицирају Kermit Floor производе.",
+      "imageAlt": "Руке држе зелену клицу"
+    },
+    "finalCta": {
+      "title": "Испланирајте своју следећу поруџбину подова SPC са Kermit.",
+      "ctaPrimary": "Затражите велепродајну понуду",
+      "ctaSecondary": "Прелистајте каталоге"
+    },
+    "supply": {
+      "title": "Kermit Floor производња и снабдевање на велико",
+      "moq": {
+        "label": "Минимална велепродајна наруџба",
+        "value": "1 контејнер",
+        "detail": "Велепродајне поруџбине SPC подова"
+      },
+      "leadTime": {
+        "label": "Стандардно време за подове",
+        "value": "4 недеље",
+        "detail": "Распоред поруџбине потврђен у понуди"
+      },
+      "branding": {
+        "label": "Опције брендирања",
+        "value": "OEM и приватна робна марка",
+        "detail": "Производ, паковање и графичко решење договорени са вама"
+      },
+      "note": "Понуда потврђује изабрану спецификацију, паковање, обим брендирања и распоред наручивања. Затражите датум испоруке на одредиште и калкулацију утовара за одабране производе.",
+      "capacity": {
+        "label": "Годишњи капацитет производње",
+        "value": "8 милиона м²",
+        "detail": "Заједно за SPC подове и зидне панеле"
+      },
+      "countries": {
+        "label": "Земље у којима послујемо",
+        "value": "4 земље",
+        "detail": "Турска · Молдавија · Румунија · САД"
+      },
+      "headquarters": {
+        "label": "Седиште и главна фабрика",
+        "value": "Çayırova, Kocaeli",
+        "detail": "Kermit Plastik Sanayi ve Ticaret A.Ş., Турска"
+      }
+    },
+    "documentation": {
+      "title": "Документација за вашу спецификацију",
+      "description": "Почните са нашим тренутним каталозима подова, лајсни и зидних плоча. За пројекат или велепродајну наруџбу, пошаљите тражене критеријуме перформанси и затражите документе релевантне за одабрани производ.",
+      "types": {
+        "catalogues": "Каталози производа",
+        "instructions": "Упутства за уградњу",
+        "projectEvidence": "Пројектна документација"
+      },
+      "scope": "Прегледајте референцу производа, обим и валидност сваког документа пре него што га употребите у тендерском или брендираном асортиману. Затражите одговарајућа упутства за постављање подних облога и гаранцију уз вашу понуду.",
+      "action": "Погледајте преузимања и захтевајте документе"
+    },
+    "oem": {
+      "title": "Ваш бренд, дефинисани опсег SPC",
+      "description": "OEM и набавка приватне робне марке је доступна. Реците нам који производи су потребни вашим купцима и како планирате да представите асортиман под вашим брендом.",
+      "items": {
+        "specification": "Дефинишите колекцију, декор, конструкцију и предвиђену употребу.",
+        "branding": "Усагласите захтеве за кутије, етикете и графичко решење у понуди.",
+        "schedule": "Потврдите узорке, документе, прву наруџбу и распоред испоруке."
+      },
+      "action": "Размотрите поруџбину под сопственом робном марком"
+    },
+    "questions": {
+      "title": "Питања пре прве поруџбине",
+      "factory": {
+        "question": "Да ли је Kermit Floor SPC произвођач у Турској?",
+        "answer": "Да. Kermit Floor производи SPC подове, зидне панеле и лајсне, са седиштем и главном фабриком у Цаиıрова, Коцаели, Турска. Такође имамо фабрику у Кишињеву, Молдавија. Замолите наш тим да потврди порекло производње и аранжман снабдевања за производе у вашој поруџбини."
+      },
+      "moq": {
+        "question": "Која је минимална велепродајна наруџба SPC подова?",
+        "answer": "Минимална поруџбина је један контејнер. Количина у квадратном метру зависи од изабраног производа, паковања и распореда утовара; затражите прорачун за вашу спецификацију."
+      },
+      "leadTime": {
+        "question": "Које је стандардно време испоруке за велепродајне подове SPC?",
+        "answer": "Наше стандардно време испоруке за велепродајне подове SPC је четири недеље. Распоред поруџбина, обавезе испоруке и очекивано време за ваше одредиште су потврђени у понуди."
+      },
+      "oem": {
+        "question": "Може ли Kermit испоручити SPC подове под нашим брендом?",
+        "answer": "Да. OEM и набавка приватне робне марке је доступна. Укључите захтеве за свој производ, брендирање и документацију како би се обим могао писмено договорити."
+      },
+      "enquiry": {
+        "question": "Шта треба да садржи узорак или захтев за понуду?",
+        "answer": "Пошаљите податке о вашој компанији, одредиште, шифре производа или декора, техничке захтеве, количину, предвиђену употребу, потребе за узорком и тражени датум испоруке. Укључите све захтеве за приватну етикету или пројектну документацију."
+      },
+      "capacity": {
+        "question": "Колики је годишњи производни капацитет Kermit Floor?",
+        "answer": "Kermit Floor има комбиновани годишњи производни капацитет од 8 милиона м² за SPC подне и зидне плоче. Количина, асортиман производа и распоред за појединачну наруџбу су потврђени у понуди."
+      },
+      "countries": {
+        "question": "У којим земљама послује Kermit Floor?",
+        "answer": "Kermit Floor послује у Турској, Молдавији, Румунији и САД. Наше производне локације су у Турској и Молдавији, а имамо продавницу у Букурешту, Румунија. Контактирајте наш тим за упите о снабдевању у САД."
+      }
+    },
+    "manufacturing": {
+      "title": "SPC производња за велепродају и пројектно снабдевање",
+      "flooring": {
+        "title": "SPC подови за велепродају и OEM купце",
+        "text": "Дистрибутери који упоређују SPC произвођаче подних облога у Турској могу проценити колекције, узорке и документацију производа Kermit пре наручивања. Нудимо велепродају SPC подова и OEM/приватну марку снабдевање са минималном наруџбом од једног контејнера и стандардним роком испоруке од четири недеље. Стварни распоред поруџбина је потврђен у вашој понуди.",
+        "action": "Погледајте контролну листу за избор произвођача"
+      },
+      "wallPanels": {
+        "title": "SPC зидни панели за унутрашње пројекте",
+        "text": "Пројектни тимови који упоређују SPC произвођаче зидних панела у Турској могу прегледати унутрашње панеле Kermit заједно са нашим асортиманом подова и лајсни. Поделите шифру панела, завршну обраду, димензије, количину и предвиђену примену како би наш тим могао да потврди документацију о производу, узорке, услове снабдевања и порекло производње за вашу поруџбину.",
+        "action": "Истражите зидне панеле SPC"
+      }
+    }
+  },
+  "ContactPage": {
+    "seo": {
+      "title": "Kermit Floor | Контактирајте нас",
+      "description": "Контактирајте Kermit Floor за продају, техничку подршку или упите о партнерству. Ми смо водећи произвођач SPC подних облога, лајсни и зидних панела."
+    },
+    "hero": {
+      "title": "Контактирајте нас",
+      "subtitle": "Обратите се нашем тиму за продају, подршку или питања о партнерству. Ту смо да помогнемо."
+    },
+    "locations": {
+      "title": "Наше канцеларије",
+      "turkeyTitle": "Турска – фабрика (седиште)",
+      "turkeyAddress": "Cumhuriyet Mh. Cihan Sk. No:4\nÇAYIROVA / KOCAELİ - TÜRKİYE",
+      "turkeyPhone": "+90 262 658 97 29",
+      "turkeyFax": "+90 262 658 11 29",
+      "turkeyEmail": "info@kermit.com.tr",
+      "moldovaTitle": "Молдавија – фабрика",
+      "moldovaAddress": "Muncești 799, Chișinău/MOLDOVA",
+      "moldovaPhone": "+373 (22) 85 42 29 / +373 (22) 85 42 30",
+      "moldovaGsm": "GSM: +373 79 157375",
+      "moldovaFax": "+373 (22) 52 40 02",
+      "moldovaEmail": "info@serkanplast.com",
+      "romaniaTitle": "Румунија – продавница",
+      "romaniaCompany": "DMS INNOVATIVE SOLUTION SRL",
+      "romaniaAddress": "Bucuresti - Romania",
+      "romaniaPhone": "+40 738 754 074 / +40 722 547 258",
+      "romaniaEmail": "info@dmsinnovative.ro",
+      "germanyTitle": "Немачка – представник",
+      "germanyCompany": "IQBody GmbH",
+      "germanyRepresentative": "Представник: Suat Altun",
+      "germanyAddress": "Ströherstraße 14D\n36088 Hünfeld, Germany",
+      "germanyPhone": "+49 1714071718"
+    },
+    "form": {
+      "title": "Пошаљите поруку",
+      "description": "Попуните формулар испод и ми ћемо вам се јавити што је пре могуће.",
+      "nameLabel": "Пуно име",
+      "namePlaceholder": "Иван Петровић",
+      "emailLabel": "Адреса е-поште",
+      "emailPlaceholder": "you@example.com",
+      "phoneLabel": "Број телефона (опционо)",
+      "phonePlaceholder": "+1 (555) 123-4567",
+      "inquiryTypeLabel": "Тип упита",
+      "inquiryTypePlaceholder": "Изаберите тип упита",
+      "inquiryTypeSales": "Продаја и цене",
+      "inquiryTypeSupport": "Техничка подршка",
+      "inquiryTypePartnership": "Партнерства и дистрибуција",
+      "inquiryTypeGeneral": "Општи упит",
+      "messageLabel": "Ваша порука",
+      "messagePlaceholder": "Молимо вас да детаљно опишете свој упит...",
+      "submitButton": "Пошаљите поруку",
+      "submittingButton": "Слање...",
+      "successTitle": "Порука послата!",
+      "successDescription": "Хвала, {name}! Ваша порука је примљена. Ускоро ћемо вам се јавити.",
+      "errorTitle": "Нешто је пошло по злу",
+      "errorMessage": "Дошло је до неочекиване грешке. Покушајте поново."
+    }
+  },
+  "PanelNames": {
+    "205": "Buttermilk Oak",
+    "215": "Sahara Oak",
+    "227": "Weathered Greige Oak",
+    "601": "Concrete Grey",
+    "602": "Microcement Silver",
+    "603": "Concrete Light Grey",
+    "604": "Anthracite Concrete",
+    "605": "Bardiglio Grey",
+    "606": "Marble Anthracite",
+    "607": "Travertine White Vein",
+    "608": "Travertine Grey",
+    "609": "Calacatta Bianco",
+    "610": "Marble Black",
+    "611": "Statuario Bianco",
+    "612": "Calacatta Gold",
+    "613": "Fior di Bosco (Olive)",
+    "614": "Ceppo di Gre Beige",
+    "616": "Tundra Grey",
+    "617": "Bianco Lasa",
+    "618": "Carrara White",
+    "619": "Ceppo di Gre White",
+    "620": "Crema Marfil Beige",
+    "742": "Glacier Oak"
+  },
+  "3DModelAPanelNames": {
+    "3D-800": "Sage Grey",
+    "3D-801": "Ash Grey",
+    "3D-802": "Fumed Oak",
+    "3D-803": "Charcoal Oak",
+    "3D-205": "Buttermilk Oak",
+    "3D-804": "Light Grey Oak",
+    "3D-805": "Smoked Oak",
+    "3D-742": "Glacier Oak"
+  },
+  "3DModelBPanelNames": {
+    "3D-617": "Bianco Lasa",
+    "3D-618": "Carrara White",
+    "3D-605": "Bardiglio Grey",
+    "3D-610": "Marble Black",
+    "3D-608": "Travertine Grey",
+    "3D-607": "Travertine White Vein",
+    "3D-612": "Calacatta Gold"
+  },
+  "SpcParquetNaturalCollectionPanelNames": {
+    "N-206": "Ivory Mist Oak",
+    "N-207": "Natural Beige Oak",
+    "N-208": "Sand Dune Oak",
+    "N-209": "Light Grey Oak",
+    "N-211": "Cognac Oak",
+    "N-212": "Rustic Greige Oak",
+    "N-215": "Sahara Oak",
+    "N-217": "Silver Mist Oak",
+    "N-220": "Dark Walnut Oak",
+    "N-221": "Weathered Grey Oak",
+    "N-222": "Dark Grey Oak",
+    "N-223": "Ice Grey Oak",
+    "N-219": "Ash Grey Oak (Dark)",
+    "N-225": "Linen Oak",
+    "N-227": "Weathered Greige Oak",
+    "N-228": "Nordic Frost Oak",
+    "N-229": "Dark Taupe Oak",
+    "N-230": "White Chocolate Walnut",
+    "N-231": "Smoked Greige Oak",
+    "N-232": "Arctic Driftwood Oak",
+    "N-233": "Natural Honey Oak"
+  },
+  "SpcParquetStoneCollectionPanelNames": {
+    "N-601": "Concrete Grey",
+    "N-602": "Microcement Silver",
+    "N-603": "Concrete Light Grey",
+    "N-604": "Anthracite Concrete",
+    "N-605": "Bardiglio Grey",
+    "N-606": "Marble Anthracite",
+    "N-607": "Travertine White Vein",
+    "N-608": "Travertine Grey",
+    "N-609": "Calacatta Bianco",
+    "N-610": "Marble Black",
+    "N-611": "Statuario Bianco",
+    "N-612": "Calacatta Gold",
+    "N-613": "Fior di Bosco (Olive)",
+    "N-614": "Ceppo di Gre Beige",
+    "N-616": "Tundra Grey",
+    "N-617": "Bianco Lasa",
+    "N-618": "Carrara White",
+    "N-619": "Ceppo di Gre White",
+    "N-620": "Crema Marfil Beige"
+  },
+  "FullNaturalCollectionPanelNames": {
+    "N-201": "Bleached Oak",
+    "N-202": "Arctic Oak",
+    "N-203": "Sunlit Oak",
+    "N-204": "Light Natural Oak",
+    "N-205": "Buttermilk Oak",
+    "N-210": "Canyon Oak",
+    "N-213": "Light Beige Oak",
+    "N-214": "Dove Grey Oak",
+    "N-216": "Harvest Oak",
+    "N-218": "Chestnut Oak",
+    "N-226": "Honey Amber Oak",
+    "N-701": "Graphite Oak",
+    "N-702": "Taupe Oak",
+    "N-703": "Silver Driftwood",
+    "N-704": "Mist Grey Oak",
+    "N-705": "Burnt Oak",
+    "N-706": "Frosted Oak",
+    "N-707": "Urban Grey Oak",
+    "N-708": "Soft Greige Oak",
+    "N-709": "Charcoal Rustic Oak",
+    "N-710": "Nordic Ash Oak",
+    "N-711": "Golden Knot Oak",
+    "N-712": "Pebble Oak",
+    "N-713": "Blonde Natural Oak",
+    "N-714": "Whitewashed Drift Oak",
+    "N-715": "Cocoa Oak",
+    "N-716": "Cloud Grey Oak",
+    "N-717": "Wheat Oak",
+    "N-718": "Smoky Grey Oak",
+    "N-719": "Reclaimed Barnwood",
+    "N-720": "Chalk White Oak",
+    "N-721": "Vintage Grey Oak",
+    "N-722": "Golden Natural Oak",
+    "N-723": "Pearl Mist Oak",
+    "N-724": "Rustic Heritage Oak",
+    "N-725": "Weathered Pier Oak",
+    "N-726": "Beach House Oak",
+    "N-727": "Stone Grey Oak",
+    "N-728": "Mineral Grey Oak",
+    "N-729": "Drift Brown Oak",
+    "N-730": "Country Natural Oak",
+    "N-731": "Ivory Oak",
+    "N-732": "Midnight Oak",
+    "N-733": "Vanilla Oak",
+    "N-734": "Sable Oak",
+    "N-735": "Almond Oak",
+    "N-736": "Mocha Oak",
+    "N-737": "Desert Sand Oak",
+    "N-738": "Silver Frost Oak",
+    "N-739": "Polar Oak",
+    "N-740": "Coastal Drift Oak",
+    "N-741": "Coal Grey Oak",
+    "N-742": "Glacier Oak",
+    "N-743": "Greige Oak",
+    "N-744": "Biscuit Oak",
+    "N-745": "Cream Oak",
+    "N-746": "Tundra Oak",
+    "N-747": "Weathered Oak Brown",
+    "N-748": "Fog Oak",
+    "N-749": "Onyx Oak",
+    "N-750": "Basalt Oak",
+    "N-751": "Champagne Oak",
+    "N-752": "Slate Oak",
+    "N-753": "Winter Oak",
+    "N-754": "Mushroom Oak",
+    "N-755": "Dune Oak",
+    "N-756": "Alabaster Oak",
+    "N-757": "Seaside Oak",
+    "N-758": "Toasted Oak",
+    "N-759": "Washed Beige Oak",
+    "N-760": "Frost Grey Oak",
+    "N-761": "Moonstone Oak",
+    "N-762": "Scandi Natural Oak",
+    "N-763": "Umber Oak",
+    "N-764": "Nordic White Oak",
+    "N-765": "Golden Wheat Oak",
+    "N-766": "Limestone Oak",
+    "N-767": "Silver Oak",
+    "N-768": "Olive Brown Oak",
+    "N-769": "Rustic Barn Oak",
+    "N-770": "Patina Oak",
+    "N-771": "Ash Grey Barnwood",
+    "N-772": "Gunmetal Oak",
+    "N-773": "Industrial Barnwood",
+    "N-774": "Desert Drift Oak",
+    "N-775": "Concrete Grey Oak",
+    "N-776": "Sandy Drift Oak",
+    "N-777": "Faded Silver Oak",
+    "N-778": "Estate Greige Oak",
+    "N-779": "Classic Natural Oak",
+    "N-780": "Sawmill Oak",
+    "N-781": "Spiced Acacia",
+    "N-782": "Linen Beige Oak",
+    "N-783": "Straw Oak",
+    "N-784": "Meadow Oak",
+    "N-785": "Camel Oak",
+    "N-786": "Amber Oak",
+    "N-787": "Smoked Taupe Oak",
+    "N-788": "Stonewashed Oak",
+    "N-789": "Honey Gold Oak",
+    "N-790": "Warm Sand Oak",
+    "N-791": "Shadow Oak",
+    "N-792": "Drift Beige Oak",
+    "N-793": "White Patina Oak",
+    "N-794": "Misty Grey Oak",
+    "N-795": "Shell Beige Oak",
+    "N-796": "Caramel Oak",
+    "N-797": "Steel Grey Oak",
+    "N-798": "Stone Beige Oak",
+    "N-799": "Espresso Oak"
+  },
+  "SkirtingCollectionNames": {
+    "alpha-140-mm": "Alpha 140mm",
+    "berlin-100-mm": "Berlin 100mm",
+    "elite-100-mm": "Elite 100mm",
+    "moderna-100-mm": "Moderna 100mm",
+    "optima-60-mm": "Optima 60mm",
+    "optima-90-mm": "Optima 90mm",
+    "solid-80-mm": "Solid 80mm",
+    "x-line-100-mm": "X-Line 100mm"
+  },
+  "SkirtingPanelNames": {
+    "1004031": "1004031",
+    "1005031": "1005031",
+    "1006031": "1006031",
+    "1009031": "1009031",
+    "1010031": "1010031",
+    "1012031": "1012031",
+    "1013031": "1013031",
+    "1015031": "1015031",
+    "1104031": "1104031",
+    "1105031": "1105031",
+    "1106031": "1106031",
+    "1109031": "1109031",
+    "1110031": "1110031",
+    "1112031": "1112031",
+    "1113031": "1113031",
+    "1115031": "1115031",
+    "1404031": "1404031",
+    "1405031": "1405031",
+    "1406031": "1406031",
+    "1409031": "1409031",
+    "1410031": "1410031",
+    "1412031": "1412031",
+    "1413031": "1413031",
+    "1415031": "1415031",
+    "E1013031": "E1013031",
+    "E1004031": "E1004031",
+    "E1005031": "E1005031",
+    "E1006031": "E1006031",
+    "E1009031": "E1009031",
+    "E1010031": "E1010031",
+    "E1012031": "E1012031",
+    "E1015031": "E1015031",
+    "0604031": "0604031",
+    "0605031": "0605031",
+    "0606031": "0606031",
+    "0609031": "0609031",
+    "0610031": "0610031",
+    "0612031": "0612031",
+    "0613031": "0613031",
+    "0615031": "0615031",
+    "0704031": "0704031",
+    "0705031": "0705031",
+    "0706031": "0706031",
+    "0709031": "0709031",
+    "0710031": "0710031",
+    "0712031": "0712031",
+    "0713031": "0713031",
+    "0715031": "0715031",
+    "0904031": "0904031",
+    "0905031": "0905031",
+    "0906031": "0906031",
+    "0909031": "0909031",
+    "0910031": "0910031",
+    "0912031": "0912031",
+    "0913031": "0913031",
+    "0915031": "0915031",
+    "X1004031": "X1004031",
+    "X1005031": "X1005031",
+    "X1006031": "X1006031",
+    "X1009031": "X1009031",
+    "X1010031": "X1010031",
+    "X1012031": "X1012031",
+    "X1013031": "X1013031",
+    "X1015031": "X1015031"
+  },
+  "SkirtingPages": {
+    "alpha-140-mm": {
+      "title": "Kermit Floor | Alpha 140mm SPC лајсне",
+      "description": "Откријте лајсну Alpha 140mm SPC. висок, модеран и издржљив за савршену завршну обраду."
+    },
+    "berlin-100-mm": {
+      "title": "Kermit Floor | Berlin 100mm SPC лајсне",
+      "description": "Истражите лајсну Berlin 100mm SPC. класичан дизајн и модерна издржљивост."
+    },
+    "elite-100-mm": {
+      "title": "Kermit Floor | Elite 100mm SPC лајсне",
+      "description": "Лајсна Elite 100mm SPC нуди софистицирани профил за сваки ентеријер."
+    },
+    "moderna-100-mm": {
+      "title": "Kermit Floor | Moderna 100mm SPC лајсне",
+      "description": "Постићи чист, савремени изглед са лајсном Moderna 100mm SPC."
+    },
+    "optima-60-mm": {
+      "title": "Kermit Floor | Optima 60mm SPC лајсне",
+      "description": "Лајсна Optima 60mm SPC је свестрано и минималистичко решење за сваки простор."
+    },
+    "optima-90-mm": {
+      "title": "Kermit Floor | Optima 90mm SPC лајсне",
+      "description": "Пронађите савршену равнотежу висине и стила са Optima 90mm SPC лајсном."
+    },
+    "solid-80-mm": {
+      "title": "Kermit Floor | Solid 80mm SPC лајсне",
+      "description": "Solid 80mm SPC лајсна пружа робусну и безвременску завршну обраду ваших зидова."
+    },
+    "x-line-100-mm": {
+      "title": "Kermit Floor | X-Line 100mm SPC лајсне",
+      "description": "Створите оштар, архитектонски изглед помоћу лајсне X-Line 100mm SPC."
+    }
+  },
+  "SpcSkirtingBoardsPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC лајсне",
+      "description": "Истражите све SPC лајсне компаније Kermit Floor: 8 профила висине од 60 до 140 mm, флексибилне ивице и боје усклађене са SPC подовима."
+    },
+    "hero": {
+      "title": "SPC лајсне"
+    },
+    "specLabels": {
+      "height": "Висина",
+      "width": "Ширина",
+      "length": "Дужина",
+      "material": "Материјал"
+    },
+    "lines": {
+      "alpha-140-mm": {
+        "name": "Alpha 140mm лајсна"
+      },
+      "berlin-100-mm": {
+        "name": "Berlin 100mm лајсна"
+      },
+      "elite-100-mm": {
+        "name": "Elite 100mm лајсна"
+      },
+      "moderna-100-mm": {
+        "name": "Moderna 100mm лајсна"
+      },
+      "optima-60-mm": {
+        "name": "Optima 60mm лајсна"
+      },
+      "optima-90-mm": {
+        "name": "Optima 90mm лајсна"
+      },
+      "solid-80-mm": {
+        "name": "Solid 80mm лајсна"
+      },
+      "x-line-100-mm": {
+        "name": "X-Line 100mm лајсна"
+      }
+    },
+    "cta": {
+      "title": "Потребне су вам SPC лајсне за пројекат?",
+      "text": "Пошаљите нам своје количине и избор декора — ми ћемо припремити понуду набавке за ваш пројекат.",
+      "button": "Затражите понуду"
+    }
+  },
+  "ProductDetails": {
+    "specThickness": "ДЕБЉИНА",
+    "specDepth": "ДУБИНА",
+    "specWearLayer": "ХАБАЈУЋИ СЛОЈ",
+    "specDimensions": "ДИМЕНЗИЈЕ",
+    "specEdge": "ИВИЦА",
+    "specInstallation": "УГРАДЊА",
+    "specUtilityClass": "КЛАСА УПОТРЕБЕ",
+    "specUsageArea": "ОБЛАСТ ПРИМЕНЕ",
+    "specMaterial": "МАТЕРИЈАЛ",
+    "specEdgeValue": "Микрофаза",
+    "specInstallationValue": "Уградња лепљењем",
+    "specInstallationValueClick": "Клик систем",
+    "specUsageAreaValue": "Унутрашњи зидови и подови",
+    "specMaterialValue": "SPC (камено-полимерни композит)",
+    "specIxpeUnderlay": "IXPE ПОДЛОГА",
+    "specLockingSystem": "СИСТЕМ ЗАКЉУЧАВАЊА",
+    "specHeight": "ВИСИНА",
+    "specLength": "ДУЖИНА",
+    "specEmbossed": "Рељефна површина",
+    "featureWaterProof": "Водоотпорност",
+    "featureAntiBacterial": "Антибактеријска својства",
+    "featureQuickInstallation": "Брза уградња",
+    "featureImpactResistant": "Отпорност на ударце",
+    "featureSoundAbsorbtion": "Апсорпција звука",
+    "featurePhthalateFree": "Без фталата",
+    "featureFlexibleEdges": "Флексибилне ивице",
+    "featureSmartInstallation": "Практична уградња",
+    "featureMattSurface": "Мат површина",
+    "featureCableChannel": "Канал за каблове",
+    "specInteriorValue": "Унутрашњи простори",
+    "specIxpeIncludedValue": "{thickness} укључена",
+    "specEdgeProfileValue": "Микрофаска / V-жлеб"
+  },
+  "InquiryForm": {
+    "title": "Пошаљите упит",
+    "description": "Заинтересовани за панел {panelName}? попуните образац испод.",
+    "nameLabel": "Пуно име",
+    "namePlaceholder": "Иван Петровић",
+    "emailLabel": "Адреса е-поште",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "Ваша порука",
+    "messagePlaceholder": "Желео бих да знам више о ценама и доступности...",
+    "submitButton": "Послати упит",
+    "submittingButton": "Слање...",
+    "successTitle": "Упит послат!",
+    "successDescription": "Хвала, {name}! Ваш упит о {panelName} је примљен.",
+    "errorTitle": "Нешто је пошло по злу",
+    "errorMessage": "Дошло је до неочекиване грешке. покушајте поново."
+  },
+  "StarterPackDialog": {
+    "title": "Затражите наш {packName}",
+    "emailAction": "Пошаљите нам е-пошту",
+    "whatsappAction": "WhatsApp",
+    "whatsappMessage": "Желео бих да затражим {packName}."
+  },
+  "ShowcasePage": {
+    "applicationVideoTitle": "Видео са примером примене"
+  },
+  "Chatbox": {
+    "prompt": "Разговарајте са нама!"
+  },
+  "Footer": {
+    "tagline": "Квалитетна решења за SPC подове, зидне панеле и лајсне за савремене ентеријере.",
+    "productsTitle": "Производи",
+    "productFlooring": "SPC подови",
+    "productSkirting": "SPC лајсне",
+    "productWallPanels": "SPC зидни панели",
+    "product3dWallPanels": "SPC 3д зидни панели",
+    "supportTitle": "Подршка",
+    "supportCatalogue": "Преузмите каталог",
+    "supportInstallation": "Упутство за уградњу",
+    "supportTechnical": "Технички листови са подацима",
+    "supportBlog": "Блог",
+    "contactTitle": "Контакт",
+    "address": "Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE",
+    "copyright": "© {year} Kermit Floor. сва права задржана.",
+    "privacyPolicy": "Политика приватности",
+    "termsOfService": "Услови коришћења услуге",
+    "phone": "+90 262 658 97 29",
+    "email": "info@kermit.com.tr",
+    "cookieSettings": "Подешавања колачића"
+  },
+  "PrivacyPolicyPage": {
+    "seo": {
+      "title": "Kermit Floor | политика приватности",
+      "description": "Сазнајте како Kermit Floor прикупља, користи и штити ваше личне податке."
+    },
+    "title": "Политика приватности",
+    "lastUpdated": "Последњи пут ажурирано: 8 фебруар 2026",
+    "section1": {
+      "title": "1. ко смо (контролор података)",
+      "content": "<p>Овим веб-сајтом („Сајт“) управља Kermit Plastik Sanayi ve Ticaret Anonim Şirketi („Kermit Floor“, „ми“, „нас“).</p><ul><li><strong>Руковалац подацима (KVKK):</strong> Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li><strong>Адреса:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li><strong>Контакт за приватност:</strong> info@kermit.com.tr</li><li><strong>Телефон:</strong> +90 262 658 97 29</li></ul>"
+    },
+    "section2": {
+      "title": "2. обим",
+      "content": "<p>Ова Политика приватности објашњава како прикупљамо, користимо, откривамо и штитимо личне податке када:</p><ul><li>посетите сајт,</li><li>контактирајте нас путем формулара, е-поште, телефона или WhatsApp,</li><li>захтевајте каталоге/техничку документацију,</li><li>поднесите упите или РФК,</li><li>пријавити се за дистрибутерство/партнерство,</li><li>интеракцију са уграђеним садржајем (нпр. Instagram), и</li><li>претплатите се на ажурирања (ако су у понуди).</li></ul>"
+    },
+    "section3": {
+      "title": "3. личне податке које прикупљамо",
+      "content": "<p>У зависности од тога како користите Сајт, можемо прикупити:</p><h3>О. Подаци које дајете</h3><ul><li><strong>Идентитет/контакт:</strong> име, презиме, фирма, титула, емаил, телефон</li><li><strong>Садржај упита:</strong> поруке, интересовања за производе, детаљи о пројекту, прилози</li><li><strong>Комерцијални детаљи (Б2Б):</strong> адреса компаније, ПДВ/порески број, преференције испоруке (ако је примењиво)</li></ul><h3>Б. Подаци који се прикупљају аутоматски</h3><ul><li><strong>Уређај и употреба:</strong> ИП адреса, тип претраживача, прегледане странице, приближна локација (град/земља), временске ознаке, УРЛ адресе</li><li><strong>Колачићи и сличне технологије</strong> (види одељак 8)</li></ul><h3>Ц. Подаци трећих страна (ограничено)</h3><ul><li>Добављачи аналитике/мерења (збирна статистика коришћења)</li><li>Друштвене платформе (када сте у интеракцији са уграђеним садржајем)</li></ul><p><strong>Напомена:</strong> Не прикупљамо намерно посебне категорије личних података (осетљиви подаци). Немојте слати осетљиве податке путем образаца за сајт.</p>"
+    },
+    "section4": {
+      "title": "4. сврхе обраде",
+      "content": "<p>Личне податке обрађујемо у следеће сврхе:</p><ol><li>Одговарање на упите и пружање понуда/информација о производу</li><li>Управљање клијентима и односима (Б2Б комуникација, укључивање дистрибутера)</li><li>Обезбеђивање тражених ресурса (каталози, технички листови, водичи за инсталацију)</li><li>Рад сајта, безбедност и превенција превара</li><li>Побољшање сајта (перформансе, употребљивост, аналитика)</li><li>Усклађеност са законима (вођење евиденције, одговарање на законите захтеве)</li><li>Маркетиншке комуникације (само тамо где је дозвољено/сагласно; видети одељак 7)</li></ol><p><em>Ова сврха откривања је део обавеза транспарентности према КВКК и ГДПР-у.</em></p>"
+    },
+    "section5": {
+      "title": "5. правне основе (квкк / гдпр)",
+      "content": "<p>Ослањамо се на један или више правних основа у зависности од контекста:</p><p><strong>Према КВКК (Закон бр. 6698):</strong></p><ul><li>Обрада је неопходна за успостављање, остваривање или заштиту права (нпр. решавање спорова, потраживања)</li><li>Обрада је неопходна за извршење уговора или корака пре склапања уговора (нпр. припрема понуде на ваш захтев)</li><li>Обрада је неопходна за легитимне интересе контролора података (нпр. обезбеђивање безбедности сајта), под условом да основна права нису повређена</li><li>Експлицитна сагласност тамо где је потребна (нпр. небитни колачићи, одређени маркетинг)</li></ul><p><em>КВКК захтева да откријете начин прикупљања и правни разлог.</em></p><p><strong>Према ГДПР-у (ако је применљиво):</strong></p><ul><li>Кораци уговора/предуговора</li><li>Легитимни интереси</li><li>Сагласност (нпр. небитни колачићи, директни маркетинг где је потребно)</li><li>Правна обавеза</li></ul><p><em>(Ставке транспарентности су изведене из чланака ГДПР-а 13/14.)</em></p>"
+    },
+    "section6": {
+      "title": "6. са ким делимо податке (примаоци/трансфери)",
+      "content": "<p>Можемо да делимо личне податке са:</p><ul><li>ИТ/хостинг провајдери (нпр. хостинг, ЦДН, инфраструктура веб локација)</li><li>Добављачи аналитике (само онако како су конфигурисани; идеално са ИП маскирањем и пристанком где је потребно)</li><li>Комуникациони алати (провајдер услуга е-поште, ЦРМ, алати за корисничку подршку)</li><li>Стручни саветници (адвокати, рачуновође) по потреби</li><li>Власти / судови тамо где је то законски потребно</li></ul><p>Ми не продајемо личне податке.</p><p><strong>Међународни трансфери:</strong> Ваши подаци могу да се обрађују у другим земљама осим у вашој, у зависности од инфраструктуре наших добављача. Где је потребно, користимо одговарајуће мере заштите (нпр. уговорне заштите и мере безбедности).</p>"
+    },
+    "section7": {
+      "title": "7. маркетиншке комуникације",
+      "content": "<p>Ако нудимо билтене или промотивне поруке:</p><ul><li>Слаћемо их само уз вашу сагласност или по другом правном основу који дозвољавају важећи прописи.</li><li>Можете се одјавити у било ком тренутку путем везе за одјаву или слањем е-поште на info@kermit.com.tr</li></ul>"
+    },
+    "section8": {
+      "title": "8. колачићи и сличне технологије",
+      "content": "<p>Користимо колачиће и сличне технологије да бисмо одржали сајт функционалним и, уз вашу дозволу, да бисмо измерили употребу и побољшали перформансе.</p><p><strong>Аналитика заснована на сагласности:</strong> Користимо Google Analytics 4 (ГА4) тек након што експлицитно прихватите аналитичке колачиће преко нашег банера колачића. Ако одбијете аналитичке колачиће, ГА4 се неће активирати за вашу посету.</p><p>Свој избор можете променити у било ком тренутку отварањем <strong>Подешавања колачића</strong> из подножја.</p><ul><li><strong>Основни колачићи:</strong> потребно за основне функције и безбедност.</li><li><strong>Колачићи аналитике (ГА4):</strong> омогућено само када је сагласност дата.</li></ul><p><strong>Запис о сагласности:</strong> Ваш избор колачића чувамо у колачићу прве стране под називом <code>кф_цонсент_в1</code> тако да се ваша жеља може запамтити.</p>"
+    },
+    "section9": {
+      "title": "9. задржавање података",
+      "content": "<p>Задржавамо личне податке само онолико колико је потребно за горе наведене сврхе, а затим их бришемо или анонимизирамо, осим ако је дужи период чувања обавезан по закону или је неопходан за успостављање/коришћење законских права (нпр. рјешавање спорова). <em>(Откривање задржавања је ставка транспарентности ГДПР-а и добра пракса према КВКК-у.)</em></p>"
+    },
+    "section10": {
+      "title": "10. безбедност",
+      "content": "<p>Примењујемо разумне техничке и организационе мере дизајниране да заштитимо личне податке од неовлашћеног приступа, губитка, злоупотребе, измене или откривања. Међутим, ниједан систем није 100% сигуран.</p>"
+    },
+    "section11": {
+      "title": "11. ваша права (квкк арт. 11 / права гдпр где је применљиво)",
+      "content": "<p>Под КВКК, имате права, укључујући (сажетак): да сазнате да ли се ваши подаци обрађују, затражите информације, сазнате сврху и да ли се користе у складу са тим, знате треће стране којима се подаци преносе, затражите исправку/брисање када су услови испуњени и приговор на одређене резултате.</p><p>Према ГДПР-у (ако је примењиво) можете имати права као што су приступ, исправљање, брисање, ограничење, преносивост и приговор, као и право да повучете сагласност.</p>"
+    },
+    "section12": {
+      "title": "12. како остварити своја права",
+      "content": "<p>Да бисте поднели захтев, обратите нам се на:</p><ul><li><strong>Е-пошта:</strong> info@kermit.com.tr</li><li><strong>Поштанска адреса:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li></ul><p>Наведите довољно информација за проверу идентитета и јасно опишите свој захтев.</p><p>Можемо затражити додатне информације ради потврде идентитета и обраде захтева у складу са важећим прописима.</p>"
+    },
+    "section13": {
+      "title": "13. приватност деце",
+      "content": "<p>сајт није намењен деци. не прикупљамо свесно личне податке од деце.</p>"
+    },
+    "section14": {
+      "title": "14. измене ове политике приватности",
+      "content": "<p>Ову Политику приватности можемо с времена на време ажурирати. Датум „Последње ажурирање“ ће се променити у складу са тим. Материјалне промене ће бити објављене на Сајту.</p>"
+    }
+  },
+  "TermsOfServicePage": {
+    "seo": {
+      "title": "Kermit Floor | услови коришћења услуге",
+      "description": "Прочитајте услове коришћења услуге Kermit Floor веб странице."
+    },
+    "title": "Услови коришћења веб странице",
+    "lastUpdated": "Последњи пут ажурирано: 25 јануар 2026",
+    "section1": {
+      "title": "1. странке и делокруг",
+      "content": "<p>Ови Услови коришћења веб локације („Услови“) регулишу приступ и коришћење ввв.кермитфлоор.цом („Веб сајт“), којим управља Kermit Пластик Санаии ве Тицарет Аноним Сиркети (“Kermit Floor“, „Компанија”).</p><p>Веб локација је информативна платформа која пружа информације о производу, каталоге/техничку документацију и канале за контакт/понуде. Веб-сајт не пружа онлајн плаћање или куповину путем е-трговине.</p>"
+    },
+    "section2": {
+      "title": "2. прихватање",
+      "content": "<p>приступањем или коришћењем веб странице, сагласни сте са овим условима. ако се не слажете, немојте користити веб локацију.</p>"
+    },
+    "section3": {
+      "title": "3. дефиниције",
+      "content": "<ul><li><strong>Садржај:</strong> Сав текст, слике, видео снимци, каталози, технички документи, цртежи, жигови/логотипи, дизајни и софтвер на Веб-сајт.</li><li><strong>Корисник:</strong> Свака особа која приступа веб-сајту или поднесе упит.</li></ul>"
+    },
+    "section4": {
+      "title": "4. информативни садржај – без обавезујуће понуде",
+      "content": "<p>Све информације о производу, спецификације, визуелни прикази и документи су дати само за опште информације и не представљају обавезујућу понуду. Цене, рокови испоруке, доступност и коначне спецификације се потврђују само путем писмене понуде/потврде компаније.</p>"
+    },
+    "section5": {
+      "title": "5. техничка документација и одговорност за апликацију",
+      "content": "<p>Технички листови и упутства за инсталацију су опште референце. Услови пројекта могу да варирају и утичу на резултате. Одлуке о примени и прикладност на лицу места морају да процене квалификовани стручњаци.</p>"
+    },
+    "section6": {
+      "title": "6. интелектуална својина",
+      "content": "<p>Осим ако није изричито наведено другачије, сав Садржај је у власништву или под лиценцом Kermit Floor. Можете прегледати/преузети каталоге и документе искључиво за интерну евалуацију и дискусије о понудама. Било каква репродукција, редистрибуција, комерцијална употреба или неовлашћена употреба жигова/логотипа је забрањена без претходне писмене сагласности.</p>"
+    },
+    "section7": {
+      "title": "7. поднесци (обрасци, поруке, датотеке)",
+      "content": "<p>Ако шаљете упите, поруке или датотеке, потврђујете да имате право да их делите. Компанија их може користити искључиво за процену и одговор на ваш захтев. Не ствара се никаква обавеза поверљивости осим ако није посебно договорено у писаној форми (нпр. НДА).</p>"
+    },
+    "section8": {
+      "title": "8. забрањена употреба",
+      "content": "<p>Сагласни сте да не:</p><ul><li>ометају безбедност/рад, уводе малвер, покушавају неовлашћени приступ,</li><li>скенирање, масовно преузимање или прикупљање података путем аутоматизованих средстава,</li><li>копирати/дистрибуирати садржај без дозволе,</li><li>незаконито користите веб локацију или кршите права трећих лица.</li></ul>"
+    },
+    "section9": {
+      "title": "9. везе трећих страна/уграђени садржај",
+      "content": "<p>Веб локација може садржати везе трећих страна или уграђени садржај. Компанија није одговорна за садржај или праксе трећих страна.</p>"
+    },
+    "section10": {
+      "title": "10. доступност и промене",
+      "content": "<p> компанија може да измени веб локацију у било ком тренутку и може привремено да суспендује приступ због одржавања или оперативних разлога.</p>"
+    },
+    "section11": {
+      "title": "11. ограничење одговорности",
+      "content": "<p>У максималној мери дозвољеној законом, Веб локација се пружа „као што јесте“. Компанија није одговорна за индиректну или последичну штету, губитак добити или губитак података који проистичу из коришћења (или немогућности коришћења) веб странице.</p>"
+    },
+    "section12": {
+      "title": "12. приватност",
+      "content": "<p>Руковање личним подацима је регулисано Политиком приватности / КВКК обавештењем. Обавештење КВКК-а мора да садржи основне ставке транспарентности (идентитет контролора, сврхе, трансфери, начин прикупљања/правна основа, права).</p>"
+    },
+    "section13": {
+      "title": "13. меродавно право и надлежност",
+      "content": "<p>Ови Услови су регулисани законима Републике Турске. Надлежни су судови и службе за извршење Цаиıрова.</p>"
+    },
+    "section14": {
+      "title": "14. контакт",
+      "content": "<ul><li>Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li>Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li>info@kermit.com.tr</li></ul>"
+    }
+  },
+  "ConsentBanner": {
+    "title": "Ваш избор приватности",
+    "description": "Користимо аналитичке колачиће (Google Analytics 4) да бисмо разумели употребу сајта и побољшали перформансе. Можете прихватити или одбити аналитичке колачиће.",
+    "accept": "Прихватити аналитику",
+    "reject": "Одбацити аналитику",
+    "manage": "Управљати преференцама",
+    "privacyLink": "Политика приватности",
+    "preferencesTitle": "Подешавања колачића",
+    "preferencesDescription": "Управљајте својим избором колачића за аналитику у наставку. основни колачићи остају активни за основну функционалност сајта.",
+    "analyticsTitle": "Аналитички колачићи (Google Analytics 4)",
+    "analyticsDescription": "Користи се за мерење употребе и побољшање перформанси сајта. омогућено само уз вашу сагласност.",
+    "statusAccepted": "Тренутни статус: аналитика омогућена",
+    "statusRejected": "Тренутни статус: аналитика онемогућена",
+    "statusUnset": "Тренутни статус: избор још није сачуван"
+  },
+  "SpcFlooringEleganceCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Elegance колекција SPC подови",
+      "description": "Откријте брзу колекцију Elegance са префињеним подним декорима SPC за модерне ентеријере."
+    }
+  },
+  "SpcFlooringSkyCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Sky колекција SPC подови",
+      "description": "Истражите брзу колекцију Sky са разноврсним подним декорима SPC за стамбене и комерцијалне пројекте."
+    }
+  },
+  "SpcFlooringMosaicCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Mosaic колекција SPC подови",
+      "description": "Прегледајте колекцију за брзу испоруку Mosaic са дезенима подова SPC са узорцима и визуелним приказима инспирисаним каменом."
+    }
+  },
+  "SpcFlooringEliteCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Elite колекција SPC подови",
+      "description": "Погледајте колекцију за брзу испоруку Elite са врхунским бојама подова SPC направљеним за унутрашње пројекте високе потражње."
+    }
+  },
+  "SpcFlooringTravertineCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | Travertine колекција SPC подови",
+      "description": "Погледајте колекцију брзе испоруке Travertine са опцијама подова инспирисаних травертином SPC за елегантне ентеријере."
+    }
+  },
+  "SpcFlooringEleganceCollectionPanelNames": {
+    "P-301": "Parchment Oak",
+    "P-302": "Rustic Beige Oak",
+    "P-304": "Oatmeal Oak",
+    "P-305": "Wheatfield Oak",
+    "P-306": "Flaxen Oak",
+    "P-307": "Natural Linen Oak",
+    "P-308": "Toasted Honey Oak",
+    "P-309": "Tobacco Oak",
+    "P-310": "Burnished Oak",
+    "P-311": "Pewter Oak"
+  },
+  "SpcFlooringSkyCollectionPanelNames": {
+    "P-101": "Pale Blonde Oak",
+    "P-102": "Honey Straw Oak",
+    "P-103": "Oyster Beige Oak",
+    "P-104": "Warm Linen Oak",
+    "P-105": "Amber Wheat Oak",
+    "P-106": "Heritage Taupe Oak",
+    "P-107": "Nutmeg Oak",
+    "P-108": "Golden Malt Oak",
+    "P-109": "Sienna Oak",
+    "P-110": "Smoked Ember Oak",
+    "P-111": "Mineral Greige Oak",
+    "P-112": "Silver Taupe Oak"
+  },
+  "SpcFlooringMosaicCollectionPanelNames": {
+    "P-501": "Mosaic Greige",
+    "P-502": "Mosaic Taupe",
+    "P-503": "Mosaic Graphite",
+    "P-504": "Mosaic Pearl",
+    "P-505": "Mosaic Ivory",
+    "P-506": "Mosaic Beige",
+    "P-507": "Mosaic Silver"
+  },
+  "SpcFlooringEliteCollectionPanelNames": {
+    "P-201": "Bleached Oak",
+    "P-202": "Arctic Oak",
+    "P-203": "Sunlit Oak",
+    "P-204": "Light Natural Oak",
+    "P-205": "Buttermilk Oak",
+    "P-206": "Ivory Mist Oak",
+    "P-207": "Natural Beige Oak",
+    "P-208": "Sand Dune Oak",
+    "P-209": "Light Grey Oak",
+    "P-210": "Canyon Oak",
+    "P-211": "Cognac Oak",
+    "P-212": "Rustic Greige Oak",
+    "P-213": "Light Beige Oak",
+    "P-214": "Dove Grey Oak",
+    "P-215": "Sahara Oak",
+    "P-216": "Harvest Oak",
+    "P-217": "Silver Mist Oak",
+    "P-218": "Chestnut Oak",
+    "P-219": "Ash Grey Oak (Dark)",
+    "P-220": "Dark Walnut Oak"
+  },
+  "SpcFlooringTravertineCollectionPanelNames": {
+    "P-401": "Travertine Brown",
+    "P-402": "Travertine Dark Gray",
+    "P-403": "Travertine Turkish Gold",
+    "P-404": "Travertine Light Beige",
+    "P-405": "Travertine Turkish"
+  },
+  "ManufacturerGuides": {
+    "title": "Водичи за дистрибутере и купце приватних марки",
+    "description": "Упоредите добављаче, припремите захтев за узорке и дефинишите своју прву OEM поруџбину уз ове практичне водиче за набавку.",
+    "read": "Прочитајте водич"
+  },
+  "Common": {
+    "close": "Затвори",
+    "openMenu": "Отвори мени",
+    "mobileMenu": "Мобилни навигациони мени",
+    "changeLanguage": "Промени језик, тренутно: {language}",
+    "previousSlide": "Претходни слајд",
+    "nextSlide": "Следећи слајд",
+    "carousel": "Галерија слика",
+    "slide": "Слајд",
+    "logoAlt": "Логотип Kermit Floor",
+    "wallTextureAlt": "Позадина текстуре зидног панела",
+    "productColourAlt": "Узорак боје: {name}",
+    "productEnlargedAlt": "Увећани приказ производа: {name}",
+    "applicationAlt": "Унутрашња примена: {name}",
+    "applicationEnlargedAlt": "Увећана унутрашња примена: {name}",
+    "noProducts": "Тренутно нема производа у овој колекцији.",
+    "viewInstagram": "Погледајте на Instagram",
+    "homeHeroAlt": "Модерна кухиња са елегантним зидним панелима SPC",
+    "factoryLocation": "Локација фабрике Kermit Floor"
+  },
+  "Blog": {
+    "seoTitle": "Kermit Floor Водичи | SPC Подови, зидне плоче и лајсне",
+    "seoDescription": "Пронађите Kermit водиче за избор производа, количине, уградњу, негу и куповину на велико, са речником подова и техничком документацијом.",
+    "title": "Водичи Kermit",
+    "subtitle": "Планирајте избор производа, инсталацију и наручивање, једну по једну одлуку.",
+    "heroImageAlt": "Илустрација планирања пројекта са цртежима и калкулатором",
+    "emptyTitle": "Још нема објављених чланака.",
+    "emptyDescription": "Објављени чланци ће се приказати овде.",
+    "tagsTitle": "Све ознаке тема",
+    "allPosts": "Сви чланци",
+    "viewAllPosts": "Погледајте све чланке",
+    "notFoundTitle": "Чланак није пронађен",
+    "notFoundDescription": "Тражени чланак на блогу није пронађен.",
+    "tagSeoTitle": "Тема блога: {tag}",
+    "tagSeoDescription": "Прегледајте чланке на блогу о теми {tag}.",
+    "tagTitle": "Тема: {tag}",
+    "tagSubtitle": "Чланци о овој теми",
+    "tagEmptyTitle": "Нема чланака о овој теми.",
+    "tagEmptyDescription": "Изаберите другу тему.",
+    "allTags": "Све теме",
+    "videoFallback": "Ваш прегледач не подржава репродукцију овог видеа.",
+    "flexibleEdges": "Флексибилне ивице",
+    "browseTitle": "Почните са следећом одлуком",
+    "allTitle": "Сви чланци",
+    "allDescription": "Прво најновије, према оригиналном датуму објављивања.",
+    "glossary": "Речник подова",
+    "resources": "Технички документи и приручници",
+    "sections": {
+      "buying": {
+        "title": "Куповина од Kermit",
+        "description": "Изаберите добављача, припремите узорке и понуде и планирајте прву велепродајну поруџбину."
+      },
+      "choosing": {
+        "title": "Избор пода",
+        "description": "Схватите материјале, упоредите прикладну употребу и видите шта да проверите у узорку."
+      },
+      "installation": {
+        "title": "Уградња и одржавање",
+        "description": "Израчунајте количину, припремите подлогу и планирајте дилатационе размаке, грејање, чишћење и поправке."
+      },
+      "specification": {
+        "title": "Спецификације и трошкови пројекта",
+        "description": "Прегледајте техничку документацију, дефинишите спецификацију завршних облога и упоредите буџет пројекта."
+      },
+      "walls-skirting": {
+        "title": "Лајсне и зидне плоче",
+        "description": "Планирајте завршну обраду периметра и зидова користећи упутства за те породице производа."
+      }
+    }
+  },
+  "Glossary": {
+    "title": "Речник SPC подова, лајсни и зидних панела",
+    "description": "Упознајте слојеве пода, термине за уградњу, количине и документацију производа уз дефиниције повезане са практичним водичима Kermit.",
+    "intro": "Користите ове термине када читате спецификацију, упоређујете понуде или планирате уградњу. Примените бројчана ограничења на конкретан производ Kermit и пратите његова актуелна упутства.",
+    "jump": "Пређите на тему",
+    "guide": "Прочитајте водич",
+    "guides": "Истражите све водиче",
+    "resources": "Технички документи"
+  }
+}

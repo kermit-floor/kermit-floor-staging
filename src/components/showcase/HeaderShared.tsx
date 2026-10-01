@@ -7,11 +7,12 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/navigation';
 
 export function Logo() {
+  const t = useTranslations('Common');
   return (
     <Link href="/">
       <Image
         src="/images/kermit-floor-logo.png"
-        alt="Kermit Floor Logo"
+        alt={t('logoAlt')}
         width={140}
         height={48}
         className="object-contain"

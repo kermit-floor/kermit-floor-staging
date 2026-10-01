@@ -1,9 +1,9 @@
 ---
 name: blog-post-generator
-description: Create or revise paired EN/TR Kermit Floor blog posts with verified product claims and valid MDX. Use for new articles, substantial rewrites, or targeted edits to repository blog content.
+description: Create or revise localized Kermit Floor blog posts with verified product claims and valid MDX. Use for new articles, substantial rewrites, or targeted edits to repository blog content.
 ---
 
-# Bilingual Blog Post Generator
+# Multilingual Blog Post Generator
 
 Use the current request, supplied brief, and existing article to determine the work. A clear
 natural-language request or explicit `$blog-post-generator` invocation starts this workflow.
@@ -11,9 +11,10 @@ natural-language request or explicit `$blog-post-generator` invocation starts th
 ## Choose the scope
 
 - **New article or substantial rewrite:** create a shared topic plan, adapt it to each locale,
-  verify claims, and complete both `content/blog/topics/<topicId>/en.mdx` and `tr.mdx`.
-- **Targeted edit:** change the requested content and maintain relevant EN/TR consistency.
-  A factual correction may need both locales; a locale-specific typo may need only one.
+  verify claims, and complete `content/blog/topics/<topicId>/<locale>.mdx` for every language
+  in `src/i18n/locales.json`.
+- **Targeted edit:** change the requested content and maintain consistency across translations.
+  A factual correction may need all locales; a locale-specific typo may need only one.
   Preserve unrelated metadata, author, status, media, and text. Do not expand a small edit into
   research, a rewrite, or new media unless the correction requires it.
 
@@ -42,7 +43,7 @@ Paths under `references/` are relative to this skill; other paths are repository
 
 ## Create or revise the content
 
-For a new topic, `npm run blog:new -- --topic <topic-id>` can scaffold the locale pair. Replace
+For a new topic, `npm run blog:new -- --topic <topic-id>` can scaffold the locale files. Replace
 its placeholders before considering the draft complete. For existing topics, work from their
 current files.
 
@@ -52,15 +53,19 @@ Verify Kermit claims using the applicable source, and keep actual research/verif
 references in `sourceUrls`. Unsupported claims should be removed or replaced with accurate
 generic guidance that does not imply an unverified Kermit capability.
 
-Adapt EN and TR from the same intent and facts, with natural local phrasing and proper Turkish
-characters. Choose length and structure for the reader's decision; keep planning and prompt
+Adapt all locales from the same intent and facts, with natural local phrasing, proper Turkish
+characters, Serbian Cyrillic and Arabic text. Preserve product names, technical identifiers,
+source references and original PDF files. Keep translated tags aligned by position and use
+the selected locale prefix in internal links. For BG/SR/AR translations, preserve the English
+article's Markdown structure and media as required by `npm run i18n:validate`.
+Choose length and structure for the reader's decision; keep planning and prompt
 details out of article copy. Add media and internal links where they help explain or act on
 the topic, using the relevant reference.
 
 ## Complete the local result
 
-Save the requested files and assets, then run `npm run blog:validate`. For Turkish text
-changes, also run `npm run text:validate`; when adding or changing FAQ blocks, run
+Save the requested files and assets, then run `npm run blog:validate`, `npm run i18n:validate`
+and `npm run text:validate`; when adding or changing FAQ blocks, run
 `npm run blog:build-manifest` to check their parsing. Fix failures caused by the work and
 report any unrelated blockers.
 

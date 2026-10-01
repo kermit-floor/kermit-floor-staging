@@ -30,7 +30,7 @@ Files under `public/` use app paths without that prefix in MDX:
 ```
 
 Place each image near the explanation it supports and use descriptive locale-specific alt
-text. Reuse a shared visual across EN/TR when appropriate.
+text. Reuse a shared visual across languages when appropriate.
 
 ## Place supplied videos
 

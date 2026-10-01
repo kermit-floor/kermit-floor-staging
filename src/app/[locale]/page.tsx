@@ -83,10 +83,10 @@ const ProductLineCard = ({
         </CardHeader>
         <CardContent className="flex-grow space-y-4">
             <p className="text-muted-foreground">{description}</p>
-            <ul className="text-left space-y-2">
+            <ul className="text-start space-y-2">
                 {benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start">
-                        <benefit.icon className="h-5 w-5 text-secondary mr-3 mt-0.5 flex-shrink-0" />
+                        <benefit.icon className="h-5 w-5 text-secondary me-3 mt-0.5 flex-shrink-0" />
                         <span className="text-sm text-foreground/80">{benefit.text}</span>
                     </li>
                 ))}
@@ -94,7 +94,7 @@ const ProductLineCard = ({
         </CardContent>
         <CardFooter>
             <Button asChild className="w-full">
-                <Link href={href}>{ctaText} <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                <Link href={href}>{ctaText} <ArrowRight className="ms-2 h-5 w-5" /></Link>
             </Button>
         </CardFooter>
     </Card>
@@ -125,6 +125,8 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('HomePage');
+  const tCommon = await getTranslations('Common');
+  const tBlog = await getTranslations('Blog');
   const starterPacks = await getStarterPacks();
   const instagramPosts = getInstagramPosts();
   const latestBlogPosts = (await getPublishedBlogPostsByLocale(locale)).slice(0, 3);
@@ -161,7 +163,7 @@ export default async function Home({
         <section className="relative h-[75vh] md:h-[85vh] w-full">
           <Image
             src="/images/spc-wall-panels/613/application.jpg"
-            alt="Modern kitchen with elegant SPC wall panels"
+            alt={tCommon('homeHeroAlt')}
             fill
             className="object-cover"
             data-ai-hint="modern kitchen wall"
@@ -230,7 +232,7 @@ export default async function Home({
               </div>
               <div className="text-center mt-12">
                   <Button asChild size="lg">
-                    <Link href="/about">{t('viewAboutUs')} <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                    <Link href="/about">{t('viewAboutUs')} <ArrowRight className="ms-2 h-5 w-5" /></Link>
                   </Button>
               </div>
           </section>
@@ -245,7 +247,7 @@ export default async function Home({
             <h2 className="font-headline text-3xl font-bold text-foreground mb-4">{t('blogSectionTitle')}</h2>
             {latestBlogPosts.length > 0 ? (
               <>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 text-left">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 text-start">
                   {latestBlogPosts.map((post) => (
                     <BlogCard key={`${post.locale}-${post.slug}`} post={post} locale={locale} />
                   ))}
@@ -253,8 +255,8 @@ export default async function Home({
                 <div className="mt-8">
                   <Button asChild size="lg" variant="outline">
                     <Link href="/blog">
-                      {locale === 'tr' ? 'Tum yazilari gor' : 'View all posts'}
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      {tBlog('viewAllPosts')}
+                      <ArrowRight className="ms-2 h-5 w-5" />
                     </Link>
                   </Button>
                 </div>
@@ -276,7 +278,7 @@ export default async function Home({
             </div>
             <div className="mt-10">
                 <Button asChild size="lg" variant="outline">
-                    <Link href="/resources">{t('viewResources')} <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                    <Link href="/resources">{t('viewResources')} <ArrowRight className="ms-2 h-5 w-5" /></Link>
                 </Button>
             </div>
           </section>

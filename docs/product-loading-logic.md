@@ -11,7 +11,7 @@ Product data is intentionally split across a few layers:
 - `public/images/.../products.json`
 - `public/images/.../<product-id>/product.jpg`
 - `public/images/.../<product-id>/application.jpg`
-- `messages/en.json` and `messages/tr.json`
+- `messages/<locale>.json` for each language in `src/i18n/locales.json`
 - `src/lib/product-collections.ts`
 - `src/lib/specs/data/*.json`
 
@@ -99,6 +99,10 @@ Current behavior:
   - resolves string or translation-backed values
   - returns feature labels and special flags
 
+Translation-backed values may pass named `values` from the spec profile to the dictionary.
+This keeps measurements in the registry while translating descriptive words such as
+“included”, “interior”, and edge terminology.
+
 Important rule:
 
 - `products.json` is for membership and order
@@ -143,10 +147,10 @@ To add a new active collection cleanly, update all of these layers:
 6. Add the collection key and family mapping in `src/lib/product-collections.ts`
 7. Add the collection entry in `src/lib/specs/data/collection-spec-registry.json`
 8. Point that entry to an existing or new spec profile in `src/lib/specs/data/*.json`
-9. Add the product-name translations in `messages/en.json` and `messages/tr.json`
+9. Add the product-name entries in every supported dictionary, retaining original product names in BG/SR/AR
 10. Add the collection to `scripts/generate-panel-manifests.mjs`
 11. Regenerate `public/data/*.json`
-12. Verify the route works in both locales and that the generated `public/data/<collection-key>.json` matches the manifest order
+12. Verify the route works in every locale and that the generated `public/data/<collection-key>.json` matches the manifest order
 
 ## Guardrails
 

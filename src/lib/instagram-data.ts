@@ -6,6 +6,9 @@ export interface InstagramPost {
   posterSrc: string;
   caption_en: string;
   caption_tr: string;
+  caption_bg: string;
+  caption_sr: string;
+  caption_ar: string;
   postUrl: string;
 }
 

@@ -10,7 +10,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Chatbox } from '@/components/showcase/Chatbox';
-import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical';
+import { getAlternatesForRoute, getCanonicalForRoute, normalizeAppLocale } from '@/lib/seo/canonical';
 import ManufacturerGuides from '@/components/manufacturer/ManufacturerGuides';
 import FaqJsonLd from '@/components/seo/FaqJsonLd';
 
@@ -240,7 +240,7 @@ export default async function AboutPage({
                 <div className="rounded-xl bg-muted/50 p-6 md:p-8">
                     <h2 className="font-headline text-3xl font-bold">{t('oem.title')}</h2>
                     <p className="mt-4 text-muted-foreground">{t('oem.description')}</p>
-                    <ul className="mt-5 list-disc space-y-2 pl-5 text-muted-foreground">
+                    <ul className="mt-5 list-disc space-y-2 ps-5 text-muted-foreground">
                         {['specification', 'branding', 'schedule'].map((key) => <li key={key}>{t(`oem.items.${key}`)}</li>)}
                     </ul>
                     <Button asChild className="mt-6 h-auto whitespace-normal">
@@ -249,7 +249,7 @@ export default async function AboutPage({
                 </div>
             </section>
 
-            <ManufacturerGuides locale={locale === 'tr' ? 'tr' : 'en'} />
+            <ManufacturerGuides locale={normalizeAppLocale(locale)} />
 
             <section className="max-w-4xl mx-auto" aria-labelledby="manufacturer-questions-title">
                 <h2 id="manufacturer-questions-title" className="font-headline text-3xl font-bold">{t('questions.title')}</h2>

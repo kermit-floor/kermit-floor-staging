@@ -4,18 +4,18 @@ All generated files must include this frontmatter shape.
 
 ## Required Fields
 
-- `topicId`: string, shared across EN/TR files
-- `locale`: `en` or `tr`
+- `topicId`: string, shared across all locale files
+- `locale`: a supported language from `src/i18n/locales.json`
 - `slug`: locale-specific kebab-case slug
 - `title`: localized title
 - `description`: localized meta description
 - `excerpt`: localized listing summary
 - `primaryKeyword`: locale-specific primary target keyword
 - `secondaryKeywords`: non-empty array of locale-specific keywords
-- `tags`: non-empty locale-specific array (EN tags in English, TR tags in Turkish)
+- `tags`: non-empty localized array; keep corresponding tags in the same order across languages
 - `publishedAt`: ISO date `YYYY-MM-DD`
 - `updatedAt`: ISO date `YYYY-MM-DD`, must be on or after `publishedAt`
-- `status`: `draft` or `published` (both locales must match for publish)
+- `status`: `draft` or `published` (all locales must match for publish)
 - `searchIntent`: `informational`, `commercial-investigation`, or `comparison`
 - `targetAudience`: `mixed-b2b`, `installer`, `dealer`, or `architect`
 - `funnelStage`: `awareness`, `consideration`, or `decision`
@@ -31,14 +31,14 @@ All generated files must include this frontmatter shape.
 
 ## File Contract
 
-- EN file: `content/blog/topics/<topicId>/en.mdx`
-- TR file: `content/blog/topics/<topicId>/tr.mdx`
+- One file per supported language: `content/blog/topics/<topicId>/<locale>.mdx`
+- Bulgarian, Serbian and Arabic may retain the English slug beneath their locale prefix.
 
 ## Validation Notes
 
 - Slugs must be unique per locale.
-- Missing locale pair is invalid.
-- `published` status must be set on both locale files together.
+- Missing locale files are invalid.
+- `published` status must be set on all locale files together.
 - `sourceUrls` cannot be empty.
 - `authorName` should be selected from the repo author registry (`content/blog/authors.json`) for consistency.
 - User video references are inserted in MDX body as playable blocks (not as frontmatter fields).

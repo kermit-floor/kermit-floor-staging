@@ -4,8 +4,9 @@ import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 import {z} from 'zod';
 import {configureFaqRenderer} from './lib/blog-faq.mjs';
+import {SUPPORTED_LOCALES} from './lib/locales.mjs';
 
-const BLOG_LOCALES = ['en', 'tr'];
+const BLOG_LOCALES = SUPPORTED_LOCALES;
 const BLOG_STATUSES = ['draft', 'published'];
 const BLOG_SEARCH_INTENTS = ['informational', 'commercial-investigation', 'comparison'];
 const BLOG_TARGET_AUDIENCES = ['mixed-b2b', 'installer', 'dealer', 'architect'];
@@ -14,6 +15,10 @@ const BLOG_FUNNEL_STAGES = ['awareness', 'consideration', 'decision'];
 const ROOT = process.cwd();
 const BLOG_TOPICS_ROOT = path.join(ROOT, 'content', 'blog', 'topics');
 const OUTPUT_PATH = path.join(ROOT, 'src', 'generated', 'blog-manifest.json');
+const blogCopy = Object.fromEntries(await Promise.all(BLOG_LOCALES.map(async (locale) => [
+  locale,
+  JSON.parse(await readFile(path.join(ROOT, 'messages', `${locale}.json`), 'utf8')).Blog,
+])));
 
 const markdown = new MarkdownIt({
   html: false,
@@ -50,15 +55,23 @@ markdown.renderer.rules.image = (tokens, idx, options, env, self) => {
     token.attrSet('decoding', 'async');
   }
   if (!VIDEO_EXTENSION_PATTERN.test(src)) {
+    // This source diagram has an English raster caption. Keep its drawing and
+    // display a localized caption beneath it for the additional languages.
+    if (src === '/images/blog/skirting-with-flexible-edges-what-is-it/flexible.edges.png' && !['en', 'tr'].includes(env.locale)) {
+      const drawing = defaultImageRenderer(tokens, idx, options, env, self);
+      const caption = markdown.utils.escapeHtml(blogCopy[env.locale].flexibleEdges);
+      return `<span style="display:block;aspect-ratio:1115/930;overflow:hidden">${drawing}</span><span style="display:block;text-align:center;font-weight:700;font-size:1.5rem;margin-top:1rem">${caption}</span>`;
+    }
     return defaultImageRenderer(tokens, idx, options, env, self);
   }
 
-  const title = token.attrGet('title') ?? token.content ?? 'Blog video';
+  const title = token.attrGet('title') ?? token.content ?? blogCopy[env.locale].title;
   const escapedSrc = markdown.utils.escapeHtml(src);
   const escapedTitle = markdown.utils.escapeHtml(title);
   const escapedMimeType = markdown.utils.escapeHtml(getVideoMimeType(src));
 
-  return `<video controls preload="none" playsinline aria-label="${escapedTitle}"><source src="${escapedSrc}" type="${escapedMimeType}" />Your browser does not support the video tag.</video>`;
+  const fallback = markdown.utils.escapeHtml(blogCopy[env.locale].videoFallback);
+  return `<video controls preload="none" playsinline aria-label="${escapedTitle}"><source src="${escapedSrc}" type="${escapedMimeType}" />${fallback}</video>`;
 };
 
 const frontmatterSchema = z
@@ -102,10 +115,9 @@ function normalizeLineEndings(value) {
 }
 
 function normalizeTag(value, locale = 'en') {
-  const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
   return value
     .trim()
-    .toLocaleLowerCase(lowerCaseLocale)
+    .toLocaleLowerCase(locale)
     .normalize('NFC')
     .replace(/[^\p{L}\p{N}\s-]/gu, '')
     .replace(/\s+/g, '-')
@@ -151,7 +163,7 @@ async function parseTopicLocaleFile(topicId, locale) {
   }
 
   const content = normalizeLineEndings(parsed.content).trim();
-  const renderEnv = {source: content};
+  const renderEnv = {source: content, locale};
   const contentHtml = markdown.render(content, renderEnv);
 
   return {
@@ -187,11 +199,10 @@ async function main() {
   const topics = [];
 
   for (const topicId of topicIds) {
-    const [en, tr] = await Promise.all([
-      parseTopicLocaleFile(topicId, 'en'),
-      parseTopicLocaleFile(topicId, 'tr'),
-    ]);
-    topics.push({topicId, en, tr});
+    const posts = Object.fromEntries(await Promise.all(
+      BLOG_LOCALES.map(async (locale) => [locale, await parseTopicLocaleFile(topicId, locale)]),
+    ));
+    topics.push({topicId, ...posts});
   }
 
   const manifest = {

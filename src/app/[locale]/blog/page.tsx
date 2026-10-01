@@ -9,37 +9,30 @@ import Image from 'next/image';
 import {getPublishedBlogPostsByLocale, getPublishedBlogTagIndex} from '@/lib/blog/content';
 import {toAbsoluteUrl} from '@/lib/blog/seo';
 import type {BlogLocale} from '@/lib/blog/types';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
+import {isAppLocale} from '@/i18n/locales';
+import {getAlternatesForRoute} from '@/lib/seo/canonical';
 
 
 const guideSections = [
   {
     id: 'buying',
-    en: {title: 'Buying from Kermit', description: 'Choose a supplier, prepare samples and quotes, and plan a first wholesale order.'},
-    tr: {title: "Kermit'ten tedarik", description: 'Üretici seçimini, numuneyi, teklifi ve ilk toptan siparişi planlayın.'},
     topics: ['spc-manufacturer-buyers-checklist', 'spc-samples-wholesale-quote', 'spc-oem-private-label', 'kermit-floor-distributor-guide', 'import-spc-flooring-from-kermit'],
   },
   {
     id: 'choosing',
-    en: {title: 'Choosing a floor', description: 'Understand the materials, compare suitable uses and see what to check in a sample.'},
-    tr: {title: 'Zemin seçimi', description: 'Malzemeleri ve kullanım alanlarını karşılaştırın; numunede neye bakacağınızı belirleyin.'},
     topics: ['spc-flooring-what-is-it-vs-laminate-benefits', 'spc-flooring-vs-laminate', 'spc-lvt-wpc-vinyl-types', 'spc-flooring-material-alternatives', 'spc-flooring-user-reviews', 'spc-flooring-room-suitability', 'spc-flooring-colour-format'],
   },
   {
     id: 'installation',
-    en: {title: 'Installation and care', description: 'Measure the order, prepare the base and plan movement, heating, cleaning and repairs.'},
-    tr: {title: 'Montaj ve bakım', description: 'Metrajı hesaplayın; alt zemini, hareketi, ısıtmayı, temizliği ve onarımı planlayın.'},
     topics: ['spc-flooring-quantity-layout', 'spc-flooring-installation-planning', 'spc-flooring-common-mistakes', 'spc-flooring-underlay-acoustics', 'spc-flooring-heating-sunlight', 'spc-flooring-care-repair'],
   },
   {
     id: 'specification',
-    en: {title: 'Specifications and project costs', description: 'Read technical evidence, define the complete finish schedule and compare a project budget.'},
-    tr: {title: 'Teknik özellikler ve proje bütçesi', description: 'Belgeleri okuyun, kaplama çizelgesini oluşturun ve toplam proje maliyetini karşılaştırın.'},
     topics: ['spc-flooring-thickness-wear-layer', 'spc-flooring-waterproof-guide', 'kermit-spc-certificates-emissions', 'spc-interior-finishes-project-specification', 'spc-flooring-prices'],
   },
   {
     id: 'walls-skirting',
-    en: {title: 'Skirting and wall panels', description: 'Plan the perimeter and wall finishes using the instructions for those product families.'},
-    tr: {title: 'Süpürgelik ve duvar panelleri', description: 'Kenar ve duvar kaplamalarını kendi ürün ailelerinin koşullarıyla değerlendirin.'},
     topics: ['skirting-with-flexible-edges-what-is-it', 'kermit-spc-skirting-advantages', 'spc-wall-panel-usage-areas', 'spc-wall-panel-bathroom-usage', 'spc-wall-panel-bathroom-renovation-vs-ceramic'],
   },
 ];
@@ -48,7 +41,7 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 function toBlogLocale(locale: string): BlogLocale | null {
-  return locale === 'en' || locale === 'tr' ? locale : null;
+  return isAppLocale(locale) ? locale : null;
 }
 
 export async function generateMetadata({
@@ -57,25 +50,14 @@ export async function generateMetadata({
   params: Promise<{locale: string}>;
 }): Promise<Metadata> {
   const locale = toBlogLocale((await params).locale) ?? 'en';
-  const title =
-    locale === 'tr'
-      ? 'Kermit Floor Rehberleri | SPC Parke, Duvar Paneli ve Süpürgelik'
-      : 'Kermit Floor Guides | SPC Flooring, Wall Panels and Skirting';
-  const description =
-    locale === 'tr'
-      ? 'Ürün seçimi, metraj, montaj, bakım ve toptan tedarik için Kermit rehberlerini konuya göre keşfedin; sözlüğe ve teknik belgelere ulaşın.'
-      : 'Find Kermit guides for product selection, quantities, installation, care and wholesale buying, with a flooring glossary and technical documents.';
+  const t = await getTranslations({locale, namespace: 'Blog'});
+  const title = t('seoTitle');
+  const description = t('seoDescription');
 
   return {
     title,
     description,
-    alternates: {
-      canonical: toAbsoluteUrl(locale, '/blog'),
-      languages: {
-        en: toAbsoluteUrl('en', '/blog'),
-        tr: toAbsoluteUrl('tr', '/blog'),
-      },
-    },
+    alternates: getAlternatesForRoute('/blog', locale),
     openGraph: {
       title,
       description,
@@ -106,34 +88,21 @@ export default async function BlogPage({
     getPublishedBlogTagIndex(locale),
   ]);
 
-  const copy =
-    locale === 'tr'
-      ? {
-          title: 'Kermit rehberleri',
-          subtitle: 'Ürün seçimini, uygulamayı ve siparişi adım adım planlayın.',
-          heroImageAlt: 'Çizimler ve hesap makinesiyle proje planlama görseli',
-          emptyTitle: 'Yayında blog yazısı bulunmuyor.',
-          emptyDescription: 'İlk yayınlar hazırlandığında bu alanda listelenecek.',
-          tagsTitle: 'Tüm konu etiketleri',
-          browseTitle: 'İhtiyacınıza göre başlayın',
-          allTitle: 'Tüm yazılar',
-          allDescription: 'İlk yayın tarihine göre, en yeniden eskiye.',
-          glossary: 'Terimler sözlüğü',
-          resources: 'Teknik belgeler ve kılavuzlar',
-        }
-      : {
-          title: 'Kermit guides',
-          subtitle: 'Plan your product choice, installation and order, one decision at a time.',
-          heroImageAlt: 'Project planning illustration with drawings and a calculator',
-          emptyTitle: 'No blog posts are published yet.',
-          emptyDescription: 'Published articles will appear here as they go live.',
-          tagsTitle: 'All topic tags',
-          browseTitle: 'Start with your next decision',
-          allTitle: 'All articles',
-          allDescription: 'Newest first, by original publication date.',
-          glossary: 'Flooring glossary',
-          resources: 'Technical documents and manuals',
-        };
+  setRequestLocale(locale);
+  const t = await getTranslations('Blog');
+  const copy = {
+    title: t('title'),
+    subtitle: t('subtitle'),
+    heroImageAlt: t('heroImageAlt'),
+    emptyTitle: t('emptyTitle'),
+    emptyDescription: t('emptyDescription'),
+    tagsTitle: t('tagsTitle'),
+    browseTitle: t('browseTitle'),
+    allTitle: t('allTitle'),
+    allDescription: t('allDescription'),
+    glossary: t('glossary'),
+    resources: t('resources'),
+  };
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -175,8 +144,8 @@ export default async function BlogPage({
               if (selectedPosts.length === 0) return null;
               return (
                 <section key={section.id} aria-labelledby={`guide-${section.id}`} className="rounded-xl border border-border bg-card p-6">
-                  <h3 id={`guide-${section.id}`} className="text-xl font-semibold">{section[locale].title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{section[locale].description}</p>
+                  <h3 id={`guide-${section.id}`} className="text-xl font-semibold">{t(`sections.${section.id}.title`)}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(`sections.${section.id}.description`)}</p>
                   <ul className="mt-4 space-y-3">
                     {selectedPosts.map((post) => (
                       <li key={post.topicId}>

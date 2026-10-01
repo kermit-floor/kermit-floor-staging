@@ -1,7 +1,8 @@
 import type {FaqItem} from '@/lib/seo/faq';
+import {locales, type AppLocale} from '@/i18n/locales';
 
-export const BLOG_LOCALES = ['en', 'tr'] as const;
-export type BlogLocale = (typeof BLOG_LOCALES)[number];
+export const BLOG_LOCALES = locales;
+export type BlogLocale = AppLocale;
 
 export const BLOG_STATUSES = ['draft', 'published'] as const;
 export type BlogStatus = (typeof BLOG_STATUSES)[number];
@@ -58,15 +59,11 @@ export type BlogManifestPost = BlogFrontmatter & {
 
 export type BlogPostPair = {
   topicId: string;
-  en: BlogPost;
-  tr: BlogPost;
-};
+} & Record<BlogLocale, BlogPost>;
 
 export type BlogManifestPostPair = {
   topicId: string;
-  en: BlogManifestPost;
-  tr: BlogManifestPost;
-};
+} & Record<BlogLocale, BlogManifestPost>;
 
 export type BlogManifest = {
   schemaVersion: 1;

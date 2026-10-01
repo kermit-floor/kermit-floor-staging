@@ -1,3 +1,4 @@
+import type {AppLocale} from '@/i18n/locales';
 import type { Panel } from '@/lib/panel-types';
 import type { FlooringCollectionKey } from '@/lib/product-collections';
 import { getFlooringSeriesId } from '@/lib/flooring-series';
@@ -8,7 +9,7 @@ import { FlooringSeriesProvider } from './FlooringSeriesContext';
 type FlooringCollectionPageFrameProps = {
   collectionType: FlooringCollectionKey;
   initialPanels: Panel[];
-  languageSwitcherHrefs?: Partial<Record<'en' | 'tr', string>>;
+  languageSwitcherHrefs?: Partial<Record<AppLocale, string>>;
 };
 
 export function FlooringCollectionPageFrame({

@@ -1,5 +1,6 @@
 import path from 'node:path';
 import {mkdir, writeFile, access, readFile} from 'node:fs/promises';
+import {SUPPORTED_LOCALES} from './lib/locales.mjs';
 
 const args = process.argv.slice(2);
 const topicFlagIndex = args.findIndex((arg) => arg === '--topic' || arg === '-t');
@@ -133,9 +134,9 @@ authorName: ${JSON.stringify(defaultAuthorName)}
 ctaPath: /resources
 ---
 
-## Giris
+## Giriş
 
-Yazinin Turkce surumunu buraya yazin.
+Yazının Türkçe sürümünü buraya yazın.
 `;
 
 try {
@@ -149,9 +150,17 @@ try {
 }
 
 await mkdir(topicDir, {recursive: true});
-await Promise.all([
-  writeFile(path.join(topicDir, 'en.mdx'), englishTemplate, 'utf8'),
-  writeFile(path.join(topicDir, 'tr.mdx'), turkishTemplate, 'utf8'),
-]);
+const introductions = {
+  bg: '## Въведение\n\nНапишете българската версия на статията тук.',
+  sr: '## Увод\n\nОвде напишите српску верзију чланка.',
+  ar: '## مقدمة\n\nاكتب النسخة العربية من المقال هنا.',
+};
+await Promise.all(SUPPORTED_LOCALES.map((locale) => {
+  const template = locale === 'en' ? englishTemplate : locale === 'tr' ? turkishTemplate
+    : englishTemplate.replace('locale: en', `locale: ${locale}`)
+      .replace(`slug: ${topicId}`, `slug: ${topicId}-${locale}`)
+      .replace('## Introduction\n\nWrite the English version of the post here.', introductions[locale]);
+  return writeFile(path.join(topicDir, `${locale}.mdx`), template, 'utf8');
+}));
 
-console.log(`Created bilingual blog topic scaffold at content/blog/topics/${topicId}`);
+console.log(`Created ${SUPPORTED_LOCALES.length}-language blog topic scaffold at content/blog/topics/${topicId}`);

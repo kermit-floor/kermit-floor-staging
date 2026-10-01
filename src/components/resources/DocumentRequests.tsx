@@ -20,7 +20,7 @@ export default async function DocumentRequests({locale}: {locale: string}) {
         <div>
           <h3 className="font-headline text-xl font-semibold">{t('requestTitle')}</h3>
           <p className="mt-3 text-muted-foreground">{t('requestDescription')}</p>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+          <ul className="mt-4 list-disc space-y-2 ps-5 text-sm text-muted-foreground">
             {['product', 'market', 'requirements'].map((key) => <li key={key}>{t(`include.${key}`)}</li>)}
           </ul>
           <p className="mt-4 text-sm text-muted-foreground">{t('manuals')}</p>

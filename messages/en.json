@@ -190,7 +190,10 @@
       "localizedPdf": "Download PDF · English",
       "roPdf": "Download PDF · Romanian",
       "enPdf": "Download PDF · English",
-      "trPdf": "Download PDF · Turkish"
+      "trPdf": "Download PDF · Turkish",
+      "bgPdf": "Bulgarian PDF",
+      "srPdf": "Serbian PDF",
+      "arPdf": "Arabic PDF"
     },
     "documents": {
       "title": "Request documents for your project",
@@ -216,7 +219,9 @@
       "en": "English",
       "tr": "Turkish",
       "ro": "Romanian",
-      "sr": "Serbian"
+      "sr": "Serbian",
+      "bg": "Bulgarian",
+      "ar": "Arabic"
     }
   },
   "AboutPage": {
@@ -846,7 +851,10 @@
     "featureFlexibleEdges": "Flexible Edges",
     "featureSmartInstallation": "Smart Installation",
     "featureMattSurface": "Matt Surface",
-    "featureCableChannel": "Cable Channel"
+    "featureCableChannel": "Cable Channel",
+    "specInteriorValue": "Interior",
+    "specIxpeIncludedValue": "{thickness} Included",
+    "specEdgeProfileValue": "Micro Bevel / V-Groove"
   },
   "InquiryForm": {
     "title": "Send an Inquiry",
@@ -1138,5 +1146,84 @@
     "title": "Guides for distributors and private-label buyers",
     "description": "Compare suppliers, prepare a sample request and define your first OEM order with these practical purchasing guides.",
     "read": "Read the guide"
+  },
+  "Common": {
+    "close": "Close",
+    "openMenu": "Open menu",
+    "mobileMenu": "Mobile navigation menu",
+    "changeLanguage": "Change language, current: {language}",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "carousel": "Carousel",
+    "slide": "Slide",
+    "logoAlt": "Kermit Floor logo",
+    "wallTextureAlt": "Wall panel texture background",
+    "productColourAlt": "Colour sample: {name}",
+    "productEnlargedAlt": "Enlarged product view: {name}",
+    "applicationAlt": "Interior application: {name}",
+    "applicationEnlargedAlt": "Enlarged interior application: {name}",
+    "noProducts": "There are currently no products in this collection.",
+    "viewInstagram": "View on Instagram",
+    "homeHeroAlt": "Modern kitchen with elegant SPC wall panels",
+    "factoryLocation": "Kermit Floor factory location"
+  },
+  "Blog": {
+    "seoTitle": "Kermit Floor Guides | SPC Flooring, Wall Panels and Skirting",
+    "seoDescription": "Find Kermit guides for product selection, quantities, installation, care and wholesale buying, with a flooring glossary and technical documents.",
+    "title": "Kermit guides",
+    "subtitle": "Plan your product choice, installation and order, one decision at a time.",
+    "heroImageAlt": "Project planning illustration with drawings and a calculator",
+    "emptyTitle": "No blog posts are published yet.",
+    "emptyDescription": "Published articles will appear here as they go live.",
+    "tagsTitle": "All topic tags",
+    "allPosts": "All posts",
+    "viewAllPosts": "View all posts",
+    "notFoundTitle": "Post not found",
+    "notFoundDescription": "The requested blog post could not be found.",
+    "tagSeoTitle": "Blog tag: {tag}",
+    "tagSeoDescription": "Browse blog articles under the {tag} tag.",
+    "tagTitle": "Tag: {tag}",
+    "tagSubtitle": "Articles under this topic tag",
+    "tagEmptyTitle": "No posts found for this tag.",
+    "tagEmptyDescription": "Try another tag.",
+    "allTags": "All tags",
+    "videoFallback": "Your browser does not support the video tag.",
+    "flexibleEdges": "FLEXIBLE EDGES",
+    "browseTitle": "Start with your next decision",
+    "allTitle": "All articles",
+    "allDescription": "Newest first, by original publication date.",
+    "glossary": "Flooring glossary",
+    "resources": "Technical documents and manuals",
+    "sections": {
+      "buying": {
+        "title": "Buying from Kermit",
+        "description": "Choose a supplier, prepare samples and quotes, and plan a first wholesale order."
+      },
+      "choosing": {
+        "title": "Choosing a floor",
+        "description": "Understand the materials, compare suitable uses and see what to check in a sample."
+      },
+      "installation": {
+        "title": "Installation and care",
+        "description": "Measure the order, prepare the base and plan movement, heating, cleaning and repairs."
+      },
+      "specification": {
+        "title": "Specifications and project costs",
+        "description": "Read technical evidence, define the complete finish schedule and compare a project budget."
+      },
+      "walls-skirting": {
+        "title": "Skirting and wall panels",
+        "description": "Plan the perimeter and wall finishes using the instructions for those product families."
+      }
+    }
+  },
+  "Glossary": {
+    "title": "SPC flooring, skirting and wall-panel glossary",
+    "description": "Understand flooring layers, installation terms, quantities and product evidence, with definitions linked to practical Kermit guides.",
+    "intro": "Use these terms to read a specification, compare a quotation or plan an installation. Apply numerical limits to the identified Kermit product and follow its current instructions.",
+    "jump": "Jump to a subject",
+    "guide": "Read the guide",
+    "guides": "Explore all guides",
+    "resources": "Technical documents"
   }
 }

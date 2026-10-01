@@ -38,7 +38,7 @@ export function Chatbox() {
           onClick={() => trackEvent('generate_lead', {method: 'whatsapp', location: 'floating_chatbox', locale})}
         >
           <WhatsAppIcon className="h-10 w-10" />
-          <span className="ml-3 text-lg font-semibold">{t('prompt')}</span>
+          <span className="ms-3 text-lg font-semibold">{t('prompt')}</span>
         </a>
       </Button>
     </div>

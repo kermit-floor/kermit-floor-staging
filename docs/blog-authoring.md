@@ -8,10 +8,13 @@ Run:
 npm run blog:new -- --topic <topic-id>
 ```
 
-This creates:
+This creates one file per supported language:
 
 - `content/blog/topics/<topic-id>/en.mdx`
 - `content/blog/topics/<topic-id>/tr.mdx`
+- `content/blog/topics/<topic-id>/bg.mdx`
+- `content/blog/topics/<topic-id>/sr.mdx`
+- `content/blog/topics/<topic-id>/ar.mdx`
 
 The scaffolder uses the default author from `content/blog/authors.json` (falls back to `Kermit Floor Team` if the registry is missing or invalid).
 
@@ -34,25 +37,27 @@ An individual's localized `jobTitle` appears below their name (unless a `subtitl
 
 - Scaffolds contain placeholder metadata and body text. Replace them with the article's
   actual content, applicable evidence in `sourceUrls`, and appropriate media before review.
-- Keep EN/TR parity and validator rules intact. For targeted edits, update the other locale
-  when the shared facts or intent change; a locale-specific correction can stay in that locale.
+- Keep all five locales aligned and validator rules intact. For targeted edits, update all
+  translations when shared facts or intent change; a locale-specific correction can stay in that locale.
 - Save and validate the local draft before review. Publishing follows `AGENTS.md` and
   `docs/seo/README.md`, including authorization for commit/push and the ship-time logbook entry.
 
 ## Required publishing rules
 
-1. Keep one shared `topicId` for EN and TR files.
+1. Keep one shared `topicId` for all supported languages (`src/i18n/locales.json`).
 2. Keep `status` aligned:
-   - `draft` + `draft`, or
-   - `published` + `published`
+   - all files `draft`, or
+   - all files `published`
 3. Use locale-specific slugs:
    - `en.mdx` -> English slug
    - `tr.mdx` -> Turkish slug
-4. Use locale-specific tags for each locale (EN tags in English, TR tags in Turkish).
+   - BG/SR/AR may retain the English slug; the locale prefix provides a distinct canonical URL.
+4. Use localized tags for each language. Keep corresponding tags in the same order so
+   language switching can find the translated topic. Serbian uses Cyrillic.
 5. Fill all required frontmatter fields before publishing.
 6. Ensure `updatedAt` is on or after `publishedAt`.
 7. Keep `ctaPath` to a valid app pathname (for example `/resources`, `/spc-wall-panels`).
-8. Set strategy fields in both locales:
+8. Set strategy fields in every locale:
    - `searchIntent`: `informational | commercial-investigation | comparison`
    - `targetAudience`: `mixed-b2b | installer | dealer | architect`
    - `funnelStage`: `awareness | consideration | decision`
@@ -62,10 +67,8 @@ An individual's localized `jobTitle` appears below their name (unless a `subtitl
 
 ## Keyword workflow
 
-1. Use one shared topic in both locales.
-2. Define keyword targets per locale:
-   - `primaryKeyword` for EN and TR separately
-   - `secondaryKeywords` for EN and TR separately
+1. Use one shared topic across all languages.
+2. Define `primaryKeyword` and `secondaryKeywords` separately for each language.
 3. Keep intent parity across locales even if phrasing differs.
 
 ## SEO checks before publish
@@ -82,6 +85,7 @@ An individual's localized `jobTitle` appears below their name (unless a `subtitl
 
 ```bash
 npm run blog:validate
+npm run i18n:validate
 ```
 
 ## FAQ sections
@@ -113,3 +117,9 @@ time; the Cloudflare Worker does not parse Markdown or read source files at requ
 - PR checks run:
   - `npm run blog:validate`
   - `npm run typecheck`
+
+The build also runs `npm run i18n:validate`. It checks the additional languages against
+the English source for matching Markdown structure, localized internal links, preserved
+media and unchanged authors, dates, status, claim sources and product names. Translate
+image descriptions and titles; reuse original photographs and videos. Localized variants
+of the technical layer diagram use the same source geometry and specifications.

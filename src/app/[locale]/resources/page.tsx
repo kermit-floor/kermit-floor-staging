@@ -10,6 +10,7 @@ import { getAlternatesForRoute, getCanonicalForRoute } from '@/lib/seo/canonical
 import DocumentRequests from '@/components/resources/DocumentRequests';
 import DownloadHighlights from '@/components/resources/DownloadHighlights';
 import ManufacturerGuides from '@/components/manufacturer/ManufacturerGuides';
+import {normalizeAppLocale} from '@/lib/seo/canonical';
 
 export async function generateMetadata({
   params,
@@ -34,7 +35,7 @@ export async function generateMetadata({
 export default async function ResourcesPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const resourceLocale = locale === 'tr' ? 'tr' : 'en';
+  const resourceLocale = normalizeAppLocale(locale);
   const [starterPacks, libraryDocs, t] = await Promise.all([
     getStarterPacks(),
     getLibraryDocuments(),

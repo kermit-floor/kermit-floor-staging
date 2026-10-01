@@ -26,7 +26,7 @@ export default function HomeInstagramSection({
       <div className="mt-10">
         <Button asChild>
           <a href="https://www.instagram.com/kermitfloor" target="_blank" rel="noopener noreferrer">
-            <Instagram className="mr-2 h-5 w-5" /> {followLabel}
+            <Instagram className="me-2 h-5 w-5" /> {followLabel}
           </a>
         </Button>
       </div>

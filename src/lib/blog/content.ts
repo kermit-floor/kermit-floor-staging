@@ -1,5 +1,6 @@
 import {cache} from 'react';
 import blogManifest from '@/generated/blog-manifest.json';
+import {BLOG_LOCALES} from './types';
 import type {
   BlogLocale,
   BlogManifest,
@@ -14,10 +15,9 @@ const BLOG_MANIFEST_SCHEMA_VERSION = 1;
 const parsedManifest = blogManifest as BlogManifest;
 
 function normalizeTag(value: string, locale: BlogLocale = 'en'): string {
-  const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
   return value
     .trim()
-    .toLocaleLowerCase(lowerCaseLocale)
+    .toLocaleLowerCase(locale)
     .normalize('NFC')
     .replace(/[^\p{L}\p{N}\s-]/gu, '')
     .replace(/\s+/g, '-')
@@ -65,23 +65,19 @@ const loadAllBlogPostPairs = cache(async (): Promise<BlogPostPair[]> => {
   }
 
   const pairs = parsedManifest.topics.map((pair) => {
-    const en = toBlogPost(pair.en);
-    const tr = toBlogPost(pair.tr);
-
-    if (pair.topicId !== en.topicId || pair.topicId !== tr.topicId) {
-      throw new Error(`Manifest topicId mismatch for "${pair.topicId}".`);
-    }
-
-    return {
-      topicId: pair.topicId,
-      en,
-      tr,
-    };
+    const posts = Object.fromEntries(BLOG_LOCALES.map((locale) => {
+      const post = toBlogPost(pair[locale]);
+      if (pair.topicId !== post.topicId) {
+        throw new Error(`Manifest topicId mismatch for "${pair.topicId}" locale "${locale}".`);
+      }
+      return [locale, post];
+    })) as Record<BlogLocale, BlogPost>;
+    return {topicId: pair.topicId, ...posts};
   });
 
   return pairs.sort((a, b) => {
-    const aNewest = Math.max(a.en.publishedAtDate.getTime(), a.tr.publishedAtDate.getTime());
-    const bNewest = Math.max(b.en.publishedAtDate.getTime(), b.tr.publishedAtDate.getTime());
+    const aNewest = Math.max(...BLOG_LOCALES.map((locale) => a[locale].publishedAtDate.getTime()));
+    const bNewest = Math.max(...BLOG_LOCALES.map((locale) => b[locale].publishedAtDate.getTime()));
     return bNewest - aNewest;
   });
 });
@@ -92,7 +88,7 @@ export async function getAllBlogPostPairs(): Promise<BlogPostPair[]> {
 
 export async function getPublishedBlogPostPairs(): Promise<BlogPostPair[]> {
   const pairs = await getAllBlogPostPairs();
-  return pairs.filter((pair) => pair.en.status === 'published' && pair.tr.status === 'published');
+  return pairs.filter((pair) => BLOG_LOCALES.every((locale) => pair[locale].status === 'published'));
 }
 
 export async function getPublishedBlogPostsByLocale(locale: BlogLocale): Promise<BlogPost[]> {
@@ -106,11 +102,9 @@ export async function getPublishedBlogPostBySlug(locale: BlogLocale, slug: strin
   if (!pair) {
     return null;
   }
-  const alternateLocale: BlogLocale = locale === 'en' ? 'tr' : 'en';
   return {
     post: pair[locale],
     pair,
-    alternate: pair[alternateLocale],
   };
 }
 
@@ -151,7 +145,7 @@ export async function getPublishedBlogTagIndex(locale: BlogLocale): Promise<Blog
       if (b.count !== a.count) {
         return b.count - a.count;
       }
-      return a.tag.localeCompare(b.tag, locale === 'tr' ? 'tr-TR' : 'en-US');
+      return a.tag.localeCompare(b.tag, locale);
     });
 }
 
@@ -178,5 +172,20 @@ export async function getPublishedBlogTagSlugs(locale: BlogLocale): Promise<stri
       tags.add(tag);
     }
   }
-  return Array.from(tags).sort((a, b) => a.localeCompare(b, locale === 'tr' ? 'tr-TR' : 'en-US'));
+  return Array.from(tags).sort((a, b) => a.localeCompare(b, locale));
+}
+
+export async function getBlogTagAlternates(locale: BlogLocale, tag: string) {
+  const pairs = await getPublishedBlogPostPairs();
+  const normalizedTag = normalizeTag(tag, locale);
+  return Object.fromEntries(BLOG_LOCALES.map((language) => {
+    const counts = new Map<string, number>();
+    for (const pair of pairs) {
+      const index = pair[locale].tags.indexOf(normalizedTag);
+      const translatedTag = index >= 0 ? pair[language].tags[index] : undefined;
+      if (translatedTag) counts.set(translatedTag, (counts.get(translatedTag) ?? 0) + 1);
+    }
+    const bestMatch = [...counts].sort((a, b) => b[1] - a[1])[0]?.[0];
+    return [language, bestMatch];
+  })) as Partial<Record<BlogLocale, string>>;
 }

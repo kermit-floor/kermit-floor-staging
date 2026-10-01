@@ -1,6 +1,7 @@
 import {NextRequest, NextResponse} from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 import {locales, pathnames, localePrefix, defaultLocale} from './navigation';
+import {isAppLocale} from './i18n/locales';
 
 const intlMiddleware = createMiddleware({
   defaultLocale,
@@ -23,7 +24,7 @@ function isBlogRoute(pathname: string): boolean {
     return false;
   }
 
-  const offset = segments[0] === 'en' || segments[0] === 'tr' ? 1 : 0;
+  const offset = isAppLocale(segments[0]) ? 1 : 0;
   return segments[offset] === 'blog';
 }
 
@@ -61,7 +62,7 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     '/((?!api|_next|_vercel|.*\\..*).*)',
-    '/(tr|en)/:path*',
+    '/(tr|en|bg|sr|ar)/:path*',
     '/_next/image',
   ],
 };

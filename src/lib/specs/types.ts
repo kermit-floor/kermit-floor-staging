@@ -50,6 +50,9 @@ export type ProductDetailsMessageKey =
   | 'specInstallationValue'
   | 'specUsageAreaValue'
   | 'specMaterialValue'
+  | 'specInteriorValue'
+  | 'specIxpeIncludedValue'
+  | 'specEdgeProfileValue'
   | 'specIxpeUnderlay'
   | 'specLockingSystem'
   | 'specHeight'
@@ -83,6 +86,7 @@ export type PanelNameNamespace =
 export type SpecValueTranslation = {
   type: 'translation';
   key: ProductDetailsMessageKey;
+  values?: Record<string, string>;
 };
 
 export type SpecValue = string | string[] | SpecValueTranslation;

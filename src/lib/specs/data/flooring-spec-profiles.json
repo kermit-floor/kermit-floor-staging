@@ -2,45 +2,45 @@
   "floor-natural": [
     { "labelKey": "specThickness", "value": "5 mm / 7 mm" },
     { "labelKey": "specWearLayer", "value": "0,30 mm / 0,55 mm" },
-    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specIxpeUnderlay", "value": { "type": "translation", "key": "specIxpeIncludedValue", "values": { "thickness": "1 mm / 1,5 mm" } } },
     { "labelKey": "specDimensions", "value": ["181,1 X 1219,2 mm", "228,6 X 1219,2 mm", "228,6 X 1493 mm"] },
     { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeValue" } },
     { "labelKey": "specLockingSystem", "value": "UniClic / I4F" },
     { "labelKey": "specUtilityClass", "value": "23 / 33" },
-    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specUsageArea", "value": { "type": "translation", "key": "specInteriorValue" } },
     { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
   ],
   "floor-stone": [
     { "labelKey": "specThickness", "value": "5 mm / 7 mm" },
     { "labelKey": "specWearLayer", "value": "0,30 mm / 0,55 mm" },
-    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specIxpeUnderlay", "value": { "type": "translation", "key": "specIxpeIncludedValue", "values": { "thickness": "1 mm / 1,5 mm" } } },
     { "labelKey": "specDimensions", "value": "305 X 915 mm" },
     { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeValue" } },
     { "labelKey": "specLockingSystem", "value": "I4F" },
     { "labelKey": "specUtilityClass", "value": "23 / 33" },
-    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specUsageArea", "value": { "type": "translation", "key": "specInteriorValue" } },
     { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
   ],
   "floor-premier-plank": [
     { "labelKey": "specThickness", "value": "5 mm / 6 mm / 7 mm" },
     { "labelKey": "specWearLayer", "value": "0,30 mm / 0,50 mm" },
-    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specIxpeUnderlay", "value": { "type": "translation", "key": "specIxpeIncludedValue", "values": { "thickness": "1 mm / 1,5 mm" } } },
     { "labelKey": "specDimensions", "value": ["177,8 x 1219,2 mm", "228,6 x 1219,2 mm"] },
-    { "labelKey": "specEdge", "value": "Micro Bevel / V-Groove" },
+    { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeProfileValue" } },
     { "labelKey": "specLockingSystem", "value": "UniClic / I4F" },
     { "labelKey": "specUtilityClass", "value": "23 / 33" },
-    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specUsageArea", "value": { "type": "translation", "key": "specInteriorValue" } },
     { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
   ],
   "floor-premier-pattern": [
     { "labelKey": "specThickness", "value": "5 mm / 6 mm / 7 mm" },
     { "labelKey": "specWearLayer", "value": "0,30 mm / 0,50 mm" },
-    { "labelKey": "specIxpeUnderlay", "value": "1 mm / 1,5 mm Included" },
+    { "labelKey": "specIxpeUnderlay", "value": { "type": "translation", "key": "specIxpeIncludedValue", "values": { "thickness": "1 mm / 1,5 mm" } } },
     { "labelKey": "specDimensions", "value": ["305 x 915 mm", "228,6 x 1219,2 mm"] },
-    { "labelKey": "specEdge", "value": "Micro Bevel / V-Groove" },
+    { "labelKey": "specEdge", "value": { "type": "translation", "key": "specEdgeProfileValue" } },
     { "labelKey": "specLockingSystem", "value": "UniClic / I4F" },
     { "labelKey": "specUtilityClass", "value": "23 / 33" },
-    { "labelKey": "specUsageArea", "value": "Interior" },
+    { "labelKey": "specUsageArea", "value": { "type": "translation", "key": "specInteriorValue" } },
     { "labelKey": "specMaterial", "value": { "type": "translation", "key": "specMaterialValue" } }
   ]
 }

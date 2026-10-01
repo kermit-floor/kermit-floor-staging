@@ -1,0 +1,7 @@
+{
+  "en": {"name": "English", "direction": "ltr"},
+  "tr": {"name": "Türkçe", "direction": "ltr"},
+  "bg": {"name": "Български", "direction": "ltr"},
+  "sr": {"name": "Српски", "direction": "ltr"},
+  "ar": {"name": "العربية", "direction": "rtl"}
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "base_commit": "2029b21",
+  "build": "npm run cf:build",
+  "static_pages": 571,
+  "typecheck": "passed",
+  "validators": [
+    "text:validate",
+    "i18n:validate",
+    "blog:validate",
+    "blog:skill:check",
+    "refactor:product-spec:validate-registry"
+  ],
+  "languages": 5,
+  "message_keys": 883,
+  "resources": 19,
+  "translated_articles": 84,
+  "glossary_terms_per_locale": 33,
+  "browser_tests": {
+    "localization": 10,
+    "consent": 16
+  },
+  "candidate_sitemap": {
+    "entries": 567,
+    "retained_prior_entries": 228,
+    "new_locale_entries": 339,
+    "static_and_article_five_language_alternate_entries": 280
+  },
+  "worker_dry_run_gzip_KiB": 2527,
+  "translation_note": "Machine-assisted with manual terminology and UI refinements; not reviewed by native speakers. PDFs, names/codes and specifications are preserved.",
+  "network_note": "Browser checks block third-party traffic; no contact forms submitted. R2 PDFs are verified after Cloudflare deployment."
+}

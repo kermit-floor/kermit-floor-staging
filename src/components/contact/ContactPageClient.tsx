@@ -23,11 +23,12 @@ function LocationCard({ location }: { location: { title: string; details: any[] 
                 {item.href ? (
                   <a
                     href={item.href}
+                    dir="ltr"
                     className="hover:text-primary transition-colors"
                     onClick={item.leadMethod ? () => trackEvent('generate_lead', {method: item.leadMethod, location: 'contact_page', office: location.title}) : undefined}
                   >{item.value}</a>
                 ) : (
-                  <span>{item.value}</span>
+                  <span dir={/^\+/.test(item.value) ? 'ltr' : undefined}>{item.value}</span>
                 )}
               </div>
             </div>
@@ -42,6 +43,7 @@ function LocationCard({ location }: { location: { title: string; details: any[] 
 
 export default function ContactPageClient() {
   const t = useTranslations('ContactPage');
+  const tCommon = useTranslations('Common');
   const tLoc = useTranslations('ContactPage.locations');
   
   const locations = [
@@ -128,7 +130,7 @@ export default function ContactPageClient() {
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Kermit Floor Factory Location"
+                    title={tCommon('factoryLocation')}
                 ></iframe>
             </div>
         </section>

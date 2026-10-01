@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
-import {setRequestLocale} from 'next-intl/server';
+import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {Header} from '@/components/showcase/Header';
 import {Footer} from '@/components/showcase/Footer';
 import {Chatbox} from '@/components/showcase/Chatbox';
@@ -8,34 +8,15 @@ import {Link} from '@/navigation';
 import {getPublishedBlogPostsByLocale} from '@/lib/blog/content';
 import {getAlternatesForRoute, getCanonicalForRoute} from '@/lib/seo/canonical';
 import sections from '@/lib/glossary.json';
+import {isAppLocale, defaultLocale} from '@/i18n/locales';
 
 export const dynamic = 'force-static';
 export const revalidate = false;
 
-const copy = {
-  en: {
-    title: 'SPC flooring, skirting and wall-panel glossary',
-    description: 'Understand flooring layers, installation terms, quantities and product evidence, with definitions linked to practical Kermit guides.',
-    intro: 'Use these terms to read a specification, compare a quotation or plan an installation. Apply numerical limits to the identified Kermit product and follow its current instructions.',
-    jump: 'Jump to a subject',
-    guide: 'Read the guide',
-    guides: 'Explore all guides',
-    resources: 'Technical documents',
-  },
-  tr: {
-    title: 'SPC parke, süpürgelik ve duvar paneli sözlüğü',
-    description: 'Zemin katmanlarını, montaj terimlerini, metrajı ve ürün belgelerini Kermit uygulama rehberlerine bağlanan tanımlarla öğrenin.',
-    intro: 'Şartnameyi okurken, teklifleri karşılaştırırken veya montajı planlarken bu terimleri kullanın. Sayısal sınırları ilgili Kermit ürününe uygulayın ve güncel talimatını izleyin.',
-    jump: 'Konuya geçin',
-    guide: 'Rehberi okuyun',
-    guides: 'Tüm rehberleri keşfedin',
-    resources: 'Teknik belgeler',
-  },
-};
-
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
   const {locale} = await params;
-  const text = copy[locale === 'tr' ? 'tr' : 'en'];
+  const t = await getTranslations({locale: isAppLocale(locale) ? locale : defaultLocale, namespace: 'Glossary'});
+  const text = {title: t('title'), description: t('description')};
   const title = `${text.title} | Kermit Floor`;
   return {
     title,
@@ -47,9 +28,10 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
 
 export default async function GlossaryPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  if (locale !== 'en' && locale !== 'tr') notFound();
+  if (!isAppLocale(locale)) notFound();
   setRequestLocale(locale);
-  const text = copy[locale];
+  const t = await getTranslations('Glossary');
+  const text = {title: t('title'), description: t('description'), intro: t('intro'), jump: t('jump'), guide: t('guide'), guides: t('guides'), resources: t('resources')};
   const posts = await getPublishedBlogPostsByLocale(locale);
   const url = getCanonicalForRoute('/glossary', locale);
   const schema = {
@@ -102,7 +84,7 @@ export default async function GlossaryPage({params}: {params: Promise<{locale: s
                         </dt>
                         <dd className="mt-3 text-sm leading-relaxed text-muted-foreground">
                           <p>{term[locale].definition}</p>
-                          {post ? <Link href={{pathname: '/blog/[slug]', params: {slug: post.slug}}} className="mt-4 inline-block font-medium text-foreground underline underline-offset-4" aria-label={`${text.guide}: ${post.title}`}>{text.guide} →</Link> : null}
+                          {post ? <Link href={{pathname: '/blog/[slug]', params: {slug: post.slug}}} className="mt-4 inline-block font-medium text-foreground underline underline-offset-4" aria-label={`${text.guide}: ${post.title}`}>{text.guide} <span aria-hidden="true" className="inline-block rtl:rotate-180">→</span></Link> : null}
                         </dd>
                       </div>
                     );

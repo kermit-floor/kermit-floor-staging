@@ -14,6 +14,7 @@ import {
   } from "@/components/ui/dialog"
 import { Button } from '../ui/button';
 import React, { useState, useEffect } from 'react';
+import {useTranslations} from 'next-intl';
 import {
   Carousel,
   CarouselContent,
@@ -58,6 +59,7 @@ export function ProductDetails({
   specialFlags,
 }: ProductDetailsProps) {
   const [api, setApi] = useState<CarouselApi>();
+  const tCommon = useTranslations('Common');
 
   const isSkirting = family === 'skirting';
   const featureIcons = isSkirting
@@ -126,7 +128,7 @@ export function ProductDetails({
                                     <div className="relative aspect-[1920/1298] w-full group cursor-pointer">
                                         <Image
                                         src={p.productImageUrl}
-                                        alt={`SPC Wall Panel ${tPanelNames(p.nameKey)} Color`}
+                                        alt={tCommon('productColourAlt', {name: tPanelNames(p.nameKey)})}
                                         fill
                                         className="object-cover rounded-lg shadow-md"
                                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -138,11 +140,11 @@ export function ProductDetails({
                                     </div>
                                 </DialogTrigger>
                                 <DialogContent className="max-w-4xl p-0 bg-transparent border-none">
-                                    <DialogTitle className="sr-only">{`Enlarged view of ${tPanelNames(p.nameKey)} product photo`}</DialogTitle>
+                                    <DialogTitle className="sr-only">{tCommon('productEnlargedAlt', {name: tPanelNames(p.nameKey)})}</DialogTitle>
                                     <div className="relative aspect-[1920/1298]">
                                     <Image
                                         src={p.productImageUrl}
-                                        alt={`Enlarged view of SPC Wall Panel ${tPanelNames(p.nameKey)} Color`}
+                                        alt={tCommon('productEnlargedAlt', {name: tPanelNames(p.nameKey)})}
                                         fill
                                         className="object-contain rounded-lg"
                                         data-ai-hint={p.productImageHint}
@@ -150,9 +152,9 @@ export function ProductDetails({
                                     />
                                     </div>
                                     <DialogClose asChild>
-                                        <Button variant="ghost" size="icon" className="absolute top-[-1rem] right-[-1rem] bg-black/50 hover:bg-black/70 rounded-full h-9 w-9 text-white">
+                                        <Button variant="ghost" size="icon" className="absolute top-[-1rem] end-[-1rem] bg-black/50 hover:bg-black/70 rounded-full h-9 w-9 text-white">
                                             <X className="h-5 w-5" />
-                                            <span className="sr-only">Close</span>
+                                            <span className="sr-only">{tCommon('close')}</span>
                                         </Button>
                                     </DialogClose>
                                 </DialogContent>
@@ -164,18 +166,22 @@ export function ProductDetails({
                 <Button
                   variant="outline"
                   size="icon"
-                  className="absolute left-2 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-black/30 hover:bg-black/50 text-white border-white/50 hover:border-white transition-opacity"
+                  className="absolute start-2 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-black/30 hover:bg-black/50 text-white border-white/50 hover:border-white transition-opacity"
+                  aria-label={tCommon('previousSlide')}
+                  disabled={!api}
                   onClick={handlePrevious}
                 >
-                  <ChevronLeft className="h-4 w-4" />
+                  <ChevronLeft className="h-4 w-4 rtl:rotate-180" />
                 </Button>
                 <Button
                   variant="outline"
                   size="icon"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-black/30 hover:bg-black/50 text-white border-white/50 hover:border-white transition-opacity"
+                  className="absolute end-2 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-black/30 hover:bg-black/50 text-white border-white/50 hover:border-white transition-opacity"
+                  aria-label={tCommon('nextSlide')}
+                  disabled={!api}
                   onClick={handleNext}
                 >
-                  <ChevronRight className="h-4 w-4" />
+                  <ChevronRight className="h-4 w-4 rtl:rotate-180" />
                 </Button>
               </div>
 
@@ -185,13 +191,13 @@ export function ProductDetails({
                           <li key={spec.label} className="flex justify-between items-center border-b border-border/70 pb-1.5">
                               <span className="font-semibold text-foreground text-xs md:text-sm tracking-wide">{spec.label}:</span>
                               {Array.isArray(spec.value) ? (
-                                <div className="text-right">
+                                <div className="text-end">
                                   {spec.value.map((val, index) => (
                                     <span key={index} className="font-medium text-foreground/90 text-sm md:text-base block">{val}</span>
                                   ))}
                                 </div>
                               ) : (
-                                <span className="font-medium text-foreground/90 text-sm md:text-base text-right">{spec.value}</span>
+                                <span className="font-medium text-foreground/90 text-sm md:text-base text-end">{spec.value}</span>
                               )}
                           </li>
                       ))}
@@ -200,8 +206,8 @@ export function ProductDetails({
             </div>
             {specialFlags.embossedBadge && (
                 <div className="mt-6 border-t pt-4 flex justify-center items-center gap-3">
-                    <Image src="/images/icons/embossed-icon.jpg" alt={specialFlags.embossedBadgeLabel ?? 'Embossed'} width={32} height={32} className="rounded" />
-                    <span className="font-semibold text-lg text-foreground">{specialFlags.embossedBadgeLabel ?? 'Embossed'}</span>
+                    <Image src="/images/icons/embossed-icon.jpg" alt={specialFlags.embossedBadgeLabel ?? ''} width={32} height={32} className="rounded" />
+                    <span className="font-semibold text-lg text-foreground">{specialFlags.embossedBadgeLabel ?? ''}</span>
                 </div>
             )}
           </div>

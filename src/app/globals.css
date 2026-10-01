@@ -67,4 +67,17 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  html[lang="ar"] .font-body,
+  html[lang="ar"] .font-headline {
+    font-family: var(--font-noto-sans-arabic), sans-serif;
+  }
+
+  html[lang="ar"] {
+    letter-spacing: normal;
+  }
+
+  html[lang="ar"] [class*="tracking-"] {
+    letter-spacing: normal;
+  }
 }

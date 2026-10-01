@@ -11,12 +11,15 @@ import {
 } from '@/lib/blog/content';
 import {getBlogTagPath, toAbsoluteUrl} from '@/lib/blog/seo';
 import type {BlogLocale} from '@/lib/blog/types';
+import {getTranslations} from 'next-intl/server';
+import {locales, isAppLocale} from '@/i18n/locales';
+import {getBlogTagAlternates} from '@/lib/blog/content';
 
 export const dynamic = 'force-static';
 export const revalidate = false;
 
 function toBlogLocale(locale: string): BlogLocale | null {
-  return locale === 'en' || locale === 'tr' ? locale : null;
+  return isAppLocale(locale) ? locale : null;
 }
 
 function decodeTagValue(value: string): string {
@@ -28,14 +31,11 @@ function decodeTagValue(value: string): string {
 }
 
 export async function generateStaticParams() {
-  const [enTags, trTags] = await Promise.all([
-    getPublishedBlogTagSlugs('en'),
-    getPublishedBlogTagSlugs('tr'),
-  ]);
-  return [
-    ...enTags.map((tag) => ({locale: 'en', tag})),
-    ...trTags.map((tag) => ({locale: 'tr', tag})),
-  ];
+  const tagsByLocale = await Promise.all(locales.map(async (locale) => {
+    const tags = await getPublishedBlogTagSlugs(locale);
+    return tags.map((tag) => ({locale, tag}));
+  }));
+  return tagsByLocale.flat();
 }
 
 export async function generateMetadata({
@@ -46,12 +46,9 @@ export async function generateMetadata({
   const {locale: localeParam, tag: rawTag} = await params;
   const tag = decodeTagValue(rawTag);
   const locale = toBlogLocale(localeParam) ?? 'en';
-  const title =
-    locale === 'tr' ? `Blog etiketi: ${tag}` : `Blog tag: ${tag}`;
-  const description =
-    locale === 'tr'
-      ? `${tag} etiketi altindaki blog iceriklerini kesfedin.`
-      : `Browse blog articles under the ${tag} tag.`;
+  const t = await getTranslations({locale, namespace: 'Blog'});
+  const title = t('tagSeoTitle', {tag});
+  const description = t('tagSeoDescription', {tag});
 
   return {
     title,
@@ -85,26 +82,16 @@ export default async function BlogTagPage({
     notFound();
   }
 
-  const copy =
-    locale === 'tr'
-      ? {
-          title: `Etiket: ${tag}`,
-          subtitle: 'Bu konu etiketine ait yazilar',
-          emptyTitle: 'Bu etikette yazi bulunamadi.',
-          emptyDescription: 'Farkli bir etiketi deneyin.',
-          backLabel: 'Tum etiketler',
-        }
-      : {
-          title: `Tag: ${tag}`,
-          subtitle: 'Articles under this topic tag',
-          emptyTitle: 'No posts found for this tag.',
-          emptyDescription: 'Try another tag.',
-          backLabel: 'All tags',
-        };
+  const t = await getTranslations({locale, namespace: 'Blog'});
+  const alternateTags = await getBlogTagAlternates(locale, tag);
+  const copy = {
+    title: t('tagTitle', {tag}), subtitle: t('tagSubtitle'),
+    emptyTitle: t('tagEmptyTitle'), emptyDescription: t('tagEmptyDescription'), backLabel: t('allTags'),
+  };
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <Header />
+      <Header languageSwitcherHrefs={Object.fromEntries(locales.map((language) => [language, alternateTags[language] ? getBlogTagPath(alternateTags[language]!) : '/blog']))} />
       <main className="flex-1">
         <section className="container mx-auto px-4 py-12 md:py-16">
           <div className="mb-8 space-y-3">

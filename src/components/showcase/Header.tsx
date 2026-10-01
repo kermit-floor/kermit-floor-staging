@@ -1,5 +1,6 @@
 'use client';
 
+import type {AppLocale} from '@/i18n/locales';
 import {
   FLOORING_SERIES_HERO,
   getFlooringSeriesId,
@@ -20,11 +21,12 @@ import { Logo, NavMenu } from './HeaderShared';
 
 type HeaderProps = {
   pageType?: CollectionKey;
-  languageSwitcherHrefs?: Partial<Record<'en' | 'tr', string>>;
+  languageSwitcherHrefs?: Partial<Record<AppLocale, string>>;
 }
 
 export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
   const t = useTranslations('Header');
+  const tCommon = useTranslations('Common');
   const flooringSeries = useFlooringSeries();
   
   let pageTitle;
@@ -114,7 +116,7 @@ export function Header({ pageType, languageSwitcherHrefs }: HeaderProps) {
         <div className="relative h-48 lg:h-64 w-full">
           <Image
             src={heroImage}
-            alt="Wall panel texture background"
+            alt={tCommon('wallTextureAlt')}
             fill
             className="object-cover"
             data-ai-hint={heroImageHint}

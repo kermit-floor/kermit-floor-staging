@@ -37,7 +37,7 @@ export const SKIRTING_FEATURE_KEYS = [
   'featureCableChannel',
 ] as const satisfies readonly ProductDetailsMessageKey[];
 
-type ProductDetailsTranslator = (key: ProductDetailsMessageKey) => string;
+type ProductDetailsTranslator = (key: ProductDetailsMessageKey, values?: Record<string, string>) => string;
 type PanelNameTranslator = (key: string) => string;
 
 export function getCollectionSpecRegistryEntry(collectionKey: CollectionKey) {
@@ -63,7 +63,7 @@ export function resolveSpecValue(value: SpecValue, translate: ProductDetailsTran
     return value;
   }
 
-  return translate(value.key);
+  return translate(value.key, value.values);
 }
 
 export function resolveCollectionSpecs(

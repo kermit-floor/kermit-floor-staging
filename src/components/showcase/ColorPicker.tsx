@@ -15,6 +15,7 @@ import {
 import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
+import {useTranslations} from 'next-intl';
 
 type ColorPickerProps = {
   panels: Panel[];
@@ -32,6 +33,7 @@ export function ColorPicker({
   tPanelNames
 }: ColorPickerProps) {
   const [api, setApi] = useState<CarouselApi>();
+  const tCommon = useTranslations('Common');
   
   useEffect(() => {
     if (!api) {
@@ -75,17 +77,17 @@ export function ColorPicker({
           }}
           className="w-full"
         >
-          <CarouselContent className="-ml-2 md:-ml-4">
+          <CarouselContent className="-ms-2 md:-ms-4">
             {panels.map((panel) => (
               <CarouselItem
                 key={panel.id}
-                className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
+                className="ps-2 md:ps-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
               >
                 <div className="p-1">
                   <button
                     onClick={() => onPanelSelect(panel)}
                     className={cn(
-                      'block w-full text-left rounded-lg overflow-hidden transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+                      'block w-full text-start rounded-lg overflow-hidden transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background',
                       selectedPanel.id === panel.id
                         ? 'ring-2 ring-primary ring-offset-2 ring-offset-background'
                         : ''
@@ -102,7 +104,7 @@ export function ColorPicker({
                       <div className="relative aspect-square">
                         <Image
                           src={panel.productImageUrl}
-                          alt={`SPC Wall Panel ${tPanelNames(panel.nameKey)} Color`}
+                          alt={tCommon('productColourAlt', {name: tPanelNames(panel.nameKey)})}
                           fill
                           className="w-full h-full object-cover"
                           data-ai-hint={panel.productImageHint}
@@ -118,8 +120,8 @@ export function ColorPicker({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-[-10px] sm:left-0 md:left-2 transform -translate-y-1/2 top-1/2 bg-background/50 hover:bg-background" />
-          <CarouselNext className="absolute right-[-10px] sm:right-0 md:right-2 transform -translate-y-1/2 top-1/2 bg-background/50 hover:bg-background" />
+          <CarouselPrevious className="absolute start-[-10px] sm:start-0 md:start-2 transform -translate-y-1/2 top-1/2 bg-background/50 hover:bg-background" />
+          <CarouselNext className="absolute end-[-10px] sm:end-0 md:end-2 transform -translate-y-1/2 top-1/2 bg-background/50 hover:bg-background" />
         </Carousel>
       </div>
     </div>

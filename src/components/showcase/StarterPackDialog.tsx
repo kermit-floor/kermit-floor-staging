@@ -13,6 +13,7 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { Download, Mail, X } from 'lucide-react';
 import type { Resource, Locale } from '@/lib/resources-data';
+import {getResourceCopy} from '@/lib/resources-data';
 import { getWhatsAppUrl } from '@/lib/contact';
 import { trackEvent } from '@/lib/consent/gtag';
 import { useTranslations } from 'next-intl';
@@ -28,8 +29,9 @@ type StarterPackDialogProps = {
 
 export function StarterPackDialog({ pack, locale }: StarterPackDialogProps) {
     const t = useTranslations('StarterPackDialog');
+    const tCommon = useTranslations('Common');
     
-    const title = locale === 'tr' ? pack.title_tr : pack.title;
+    const title = getResourceCopy(pack, locale).title;
     const email = "info@kermit.com.tr";
     
     const whatsappMessage = t('whatsappMessage', { packName: title });
@@ -39,7 +41,7 @@ export function StarterPackDialog({ pack, locale }: StarterPackDialogProps) {
         <Dialog>
             <DialogTrigger asChild>
                 <Button size="sm" variant="outline" className="bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-sm h-auto px-4 py-2">
-                    <Download className="mr-2 h-4 w-4" />
+                    <Download className="me-2 h-4 w-4" />
                     {title}
                 </Button>
             </DialogTrigger>
@@ -68,9 +70,9 @@ export function StarterPackDialog({ pack, locale }: StarterPackDialogProps) {
                     </a>
                 </div>
                 <DialogClose asChild>
-                    <Button variant="ghost" size="icon" className="absolute top-3 right-3 rounded-full">
+                    <Button variant="ghost" size="icon" className="absolute top-3 end-3 rounded-full">
                         <X className="h-4 w-4" />
-                        <span className="sr-only">Close</span>
+                        <span className="sr-only">{tCommon('close')}</span>
                     </Button>
                 </DialogClose>
             </DialogContent>

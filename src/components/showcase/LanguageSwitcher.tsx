@@ -7,9 +7,10 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
-import { Check } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { Check, Globe } from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/navigation';
+import {localeDetails, getLocaleDirection, type AppLocale} from '@/i18n/locales';
 
 const GBFlag = () => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" className="!w-7 !h-auto rounded-sm" aria-hidden="true">
@@ -33,47 +34,52 @@ const TRFlag = () => (
 const languages = [
     { code: 'en', name: 'English', flag: <GBFlag /> },
     { code: 'tr', name: 'Türkçe', flag: <TRFlag /> },
+    { code: 'bg', name: localeDetails.bg.name, flag: <span aria-hidden="true" className="text-2xl">🇧🇬</span> },
+    { code: 'sr', name: localeDetails.sr.name, flag: <span aria-hidden="true" className="text-2xl">🇷🇸</span> },
+    { code: 'ar', name: localeDetails.ar.name, flag: <Globe aria-hidden="true" className="!h-6 !w-6" /> },
 ];
 
 type LanguageSwitcherProps = {
-  alternateHrefs?: Partial<Record<'en' | 'tr', string>>;
+  alternateHrefs?: Partial<Record<AppLocale, string>>;
 };
 
 export function LanguageSwitcher({ alternateHrefs }: LanguageSwitcherProps) {
   const locale = useLocale();
+  const t = useTranslations('Common');
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleLanguageChange = (newLocale: string) => {
-    const overrideHref = alternateHrefs?.[newLocale as 'en' | 'tr'];
+  const handleLanguageChange = (newLocale: AppLocale) => {
+    const overrideHref = alternateHrefs?.[newLocale];
+    const query = window.location.search;
     if (overrideHref) {
-      router.replace(overrideHref as any, { locale: newLocale });
+      router.replace(`${overrideHref}${query}` as any, { locale: newLocale });
       return;
     }
-    router.replace(pathname as any, {locale: newLocale});
+    router.replace(`${pathname}${query}` as any, {locale: newLocale});
   };
 
   const currentLanguage = languages.find(lang => lang.code === locale);
 
   return (
-    <DropdownMenu>
+    <DropdownMenu dir={getLocaleDirection(locale)}>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="h-12 w-12">
           {currentLanguage?.flag}
-          <span className="sr-only">Change language, current: {currentLanguage?.name}</span>
+          <span className="sr-only">{t('changeLanguage', {language: currentLanguage?.name ?? locale})}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48 p-2">
         {languages.map((lang) => (
           <DropdownMenuItem
             key={lang.code}
-            onClick={() => handleLanguageChange(lang.code)}
+            onClick={() => handleLanguageChange(lang.code as AppLocale)}
             className="flex items-center justify-between px-3 py-2 text-base"
             disabled={locale === lang.code}
           >
             <span className="flex items-center gap-3">
               {lang.flag}
-              <span className="font-medium">{lang.name}</span>
+              <span lang={lang.code} dir={getLocaleDirection(lang.code)} className="font-medium">{lang.name}</span>
             </span>
             {locale === lang.code && <Check className="!h-5 !w-5" />}
           </DropdownMenuItem>

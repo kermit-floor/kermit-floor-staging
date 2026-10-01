@@ -16,20 +16,19 @@ import {
   toAbsoluteUrl,
 } from '@/lib/blog/seo';
 import type {BlogLocale} from '@/lib/blog/types';
+import {getTranslations} from 'next-intl/server';
+import {locales, isAppLocale} from '@/i18n/locales';
 
 export const dynamic = 'force-static';
 export const revalidate = false;
 
 function toBlogLocale(locale: string): BlogLocale | null {
-  return locale === 'en' || locale === 'tr' ? locale : null;
+  return isAppLocale(locale) ? locale : null;
 }
 
 export async function generateStaticParams() {
   const pairs = await getPublishedBlogPostPairs();
-  return pairs.flatMap((pair) => [
-    {locale: 'en', slug: pair.en.slug},
-    {locale: 'tr', slug: pair.tr.slug},
-  ]);
+  return pairs.flatMap((pair) => locales.map((locale) => ({locale, slug: pair[locale].slug})));
 }
 
 export async function generateMetadata({
@@ -42,16 +41,12 @@ export async function generateMetadata({
   const postEntry = await getPublishedBlogPostBySlug(locale, slug);
 
   if (!postEntry) {
-    return {
-      title: locale === 'tr' ? 'Yazi bulunamadi' : 'Post not found',
-      description: locale === 'tr' ? 'Istenen blog yazisi bulunamadi.' : 'The requested blog post could not be found.',
-    };
+    const t = await getTranslations({locale, namespace: 'Blog'});
+    return {title: t('notFoundTitle'), description: t('notFoundDescription')};
   }
 
   const {post, pair} = postEntry;
   const localePath = getBlogPostPath(post.slug);
-  const enPath = getBlogPostPath(pair.en.slug);
-  const trPath = getBlogPostPath(pair.tr.slug);
   const canonical = toAbsoluteUrl(locale, localePath);
 
   return {
@@ -59,10 +54,7 @@ export async function generateMetadata({
     description: post.description,
     alternates: {
       canonical,
-      languages: {
-        en: toAbsoluteUrl('en', enPath),
-        tr: toAbsoluteUrl('tr', trPath),
-      },
+      languages: Object.fromEntries(locales.map((language) => [language, toAbsoluteUrl(language, getBlogPostPath(pair[language].slug))])),
     },
     openGraph: {
       title: post.title,
@@ -98,12 +90,13 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  let postEntry = await getPublishedBlogPostBySlug(locale, slug);
+  const postEntry = await getPublishedBlogPostBySlug(locale, slug);
   if (!postEntry) {
-    const alternateLocale: BlogLocale = locale === 'en' ? 'tr' : 'en';
-    const alternateMatch = await getPublishedBlogPostBySlug(alternateLocale, slug);
-    if (alternateMatch) {
-      permanentRedirect(toLocalePath(alternateLocale, getBlogPostPath(alternateMatch.post.slug)));
+    for (const alternateLocale of locales.filter((language) => language !== locale)) {
+      const alternateMatch = await getPublishedBlogPostBySlug(alternateLocale, slug);
+      if (alternateMatch) {
+        permanentRedirect(toLocalePath(locale, getBlogPostPath(alternateMatch.pair[locale].slug)));
+      }
     }
   }
 
@@ -115,26 +108,16 @@ export default async function BlogPostPage({
   const pageUrl = toAbsoluteUrl(locale, getBlogPostPath(post.slug));
   const articleJsonLd = getArticleJsonLd(post, pageUrl);
 
-  const copy =
-    locale === 'tr'
-      ? {
-          backLabel: 'Tum yazilar',
-        }
-      : {
-          backLabel: 'All posts',
-        };
+  const t = await getTranslations({locale, namespace: 'Blog'});
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header
-        languageSwitcherHrefs={{
-          en: getBlogPostPath(pair.en.slug),
-          tr: getBlogPostPath(pair.tr.slug),
-        }}
+        languageSwitcherHrefs={Object.fromEntries(locales.map((language) => [language, getBlogPostPath(pair[language].slug)]))}
       />
       <main className="flex-1">
         <section className="container mx-auto px-4 py-12 md:py-16">
-          <BlogPostContent post={post} locale={locale} backLabel={copy.backLabel} />
+          <BlogPostContent post={post} locale={locale} backLabel={t('allPosts')} />
         </section>
       </main>
       <Footer />

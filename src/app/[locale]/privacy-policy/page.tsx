@@ -37,8 +37,8 @@ const Section = ({ title, children }: { title: string, children: React.ReactNode
 
 const RichTextComponents = {
   p: (chunks: React.ReactNode) => <p>{chunks}</p>,
-  ul: (chunks: React.ReactNode) => <ul className="list-outside space-y-2 pl-6 list-disc">{chunks}</ul>,
-  ol: (chunks: React.ReactNode) => <ol className="list-outside space-y-2 pl-6 list-decimal">{chunks}</ol>,
+  ul: (chunks: React.ReactNode) => <ul className="list-outside space-y-2 ps-6 list-disc">{chunks}</ul>,
+  ol: (chunks: React.ReactNode) => <ol className="list-outside space-y-2 ps-6 list-decimal">{chunks}</ol>,
   li: (chunks: React.ReactNode) => <li>{chunks}</li>,
   strong: (chunks: React.ReactNode) => <strong className="font-semibold text-foreground">{chunks}</strong>,
   em: (chunks: React.ReactNode) => <em className="italic">{chunks}</em>,

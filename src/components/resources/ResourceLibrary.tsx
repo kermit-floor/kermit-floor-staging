@@ -2,7 +2,8 @@
 
 import { useSearchParams } from 'next/navigation';
 import type { Resource, ProductLine, DocType } from '@/lib/resources-data';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import {getLocaleDirection} from '@/i18n/locales';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Accordion,
@@ -24,6 +25,7 @@ const docTypes: DocType[] = [
 
 export default function ResourceLibrary({ documents }: ResourceLibraryProps) {
   const t = useTranslations('ResourcesPage');
+  const direction = getLocaleDirection(useLocale());
   const searchParams = useSearchParams();
   const tabFromUrl = searchParams.get('tab');
   const defaultTab: ProductLine = productLines.includes(tabFromUrl as ProductLine)
@@ -35,7 +37,7 @@ export default function ResourceLibrary({ documents }: ResourceLibraryProps) {
   };
 
   return (
-    <Tabs defaultValue={defaultTab} className="w-full">
+    <Tabs dir={direction} defaultValue={defaultTab} className="w-full">
       <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 h-auto">
         {productLines.map(pl => (
           <TabsTrigger key={pl} value={pl} className="py-3 text-lg font-semibold">

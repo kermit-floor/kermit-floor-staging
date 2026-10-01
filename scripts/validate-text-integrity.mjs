@@ -1,5 +1,6 @@
 import path from 'node:path';
 import {readdir, readFile} from 'node:fs/promises';
+import {SUPPORTED_LOCALES} from './lib/locales.mjs';
 
 const ROOT = process.cwd();
 const SUSPECT_MOJIBAKE_PREFIXES = new Set([0x00C2, 0x00C3, 0x00C4, 0x00C5]);
@@ -132,7 +133,7 @@ function collectJsonStringIssues(node, pathParts, issues) {
   }
 }
 
-async function listTurkishBlogFiles() {
+async function listLocalizedBlogFiles() {
   const root = path.join(ROOT, 'content', 'blog', 'topics');
   const files = [];
 
@@ -154,7 +155,7 @@ async function listTurkishBlogFiles() {
         await walk(fullPath);
         continue;
       }
-      if (entry.isFile() && entry.name === 'tr.mdx') {
+      if (entry.isFile() && SUPPORTED_LOCALES.some((locale) => entry.name === `${locale}.mdx`)) {
         files.push(fullPath);
       }
     }
@@ -174,7 +175,7 @@ function reportRawIssue(filePath, issue) {
   return `${filePath}:${line}:${column}: ${issue.reason}. Snippet: "${snippet}"`;
 }
 
-async function validateJsonFile(filePath, errors) {
+async function validateJsonFile(filePath, errors, locale) {
   const raw = await readFile(filePath, 'utf8');
   const mojibakeIssue = findLikelyMojibake(raw);
   if (mojibakeIssue) {
@@ -190,7 +191,7 @@ async function validateJsonFile(filePath, errors) {
   }
 
   const stringIssues = [];
-  collectJsonStringIssues(parsed, [], stringIssues);
+  if (locale === 'tr') collectJsonStringIssues(parsed, [], stringIssues);
   for (const issue of stringIssues) {
     const {line, column} = getLineAndColumn(issue.source, issue.index);
     const snippet = getSnippet(issue.source, issue.index);
@@ -200,7 +201,7 @@ async function validateJsonFile(filePath, errors) {
   }
 }
 
-async function validateTurkishMdxFile(filePath, errors) {
+async function validateLocalizedMdxFile(filePath, errors) {
   const raw = await readFile(filePath, 'utf8');
 
   const mojibakeIssue = findLikelyMojibake(raw);
@@ -208,7 +209,7 @@ async function validateTurkishMdxFile(filePath, errors) {
     errors.push(reportRawIssue(filePath, {...mojibakeIssue, source: raw}));
   }
 
-  const questionIssue = findSuspiciousQuestionReplacement(raw);
+  const questionIssue = path.basename(filePath) === 'tr.mdx' ? findSuspiciousQuestionReplacement(raw) : null;
   if (questionIssue) {
     errors.push(reportRawIssue(filePath, {...questionIssue, source: raw}));
   }
@@ -217,11 +218,13 @@ async function validateTurkishMdxFile(filePath, errors) {
 async function main() {
   const errors = [];
 
-  await validateJsonFile(path.join(ROOT, 'messages', 'tr.json'), errors);
+  for (const locale of SUPPORTED_LOCALES) {
+    await validateJsonFile(path.join(ROOT, 'messages', `${locale}.json`), errors, locale);
+  }
 
-  const turkishBlogFiles = await listTurkishBlogFiles();
-  for (const filePath of turkishBlogFiles) {
-    await validateTurkishMdxFile(filePath, errors);
+  const localizedBlogFiles = await listLocalizedBlogFiles();
+  for (const filePath of localizedBlogFiles) {
+    await validateLocalizedMdxFile(filePath, errors);
   }
 
   if (errors.length > 0) {
@@ -233,7 +236,7 @@ async function main() {
   }
 
   console.log(
-    `Text integrity validation passed for messages/tr.json and ${turkishBlogFiles.length} Turkish blog file(s).`,
+    `Text integrity validation passed for ${SUPPORTED_LOCALES.length} message dictionaries and ${localizedBlogFiles.length} localized blog file(s).`,
   );
 }
 

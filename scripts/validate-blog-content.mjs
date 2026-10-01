@@ -1,6 +1,7 @@
 import path from 'node:path';
 import {access, readdir, readFile} from 'node:fs/promises';
 import matter from 'gray-matter';
+import {SUPPORTED_LOCALES} from './lib/locales.mjs';
 
 const BLOG_ROOT = path.join(process.cwd(), 'content', 'blog', 'topics');
 const BLOG_AUTHORS_PATH = path.join(process.cwd(), 'content', 'blog', 'authors.json');
@@ -168,10 +169,9 @@ function validateNoPromptLeaks(raw, filePath, errors) {
 }
 
 function normalizeTag(value, locale = 'en') {
-  const lowerCaseLocale = locale === 'tr' ? 'tr-TR' : 'en-US';
   return String(value)
     .trim()
-    .toLocaleLowerCase(lowerCaseLocale)
+    .toLocaleLowerCase(locale)
     .normalize('NFC')
     .replace(/[^\p{L}\p{N}\s-]/gu, '')
     .replace(/\s+/g, '-')
@@ -329,14 +329,14 @@ function validateFrontmatterShape(frontmatter, filePath, errors) {
     errors.push(`${filePath}: "tags" must be a non-empty array.`);
   } else if (
     frontmatter.tags.some(
-      (item) => typeof item !== 'string' || normalizeTag(item, frontmatter.locale === 'tr' ? 'tr' : 'en') === '',
+      (item) => typeof item !== 'string' || normalizeTag(item, frontmatter.locale) === '',
     )
   ) {
     errors.push(`${filePath}: "tags" must contain values that normalize to non-empty slugs.`);
   }
 
-  if (!['en', 'tr'].includes(frontmatter.locale)) {
-    errors.push(`${filePath}: "locale" must be "en" or "tr".`);
+  if (!SUPPORTED_LOCALES.includes(frontmatter.locale)) {
+    errors.push(`${filePath}: "locale" must be one of ${SUPPORTED_LOCALES.join(', ')}.`);
   }
 
   if (!['draft', 'published'].includes(frontmatter.status)) {
@@ -394,10 +394,7 @@ async function main() {
   const errors = [];
   const knownCtaPaths = await getKnownCtaPaths();
   const authorRegistry = await getBlogAuthorRegistry();
-  const slugMap = {
-    en: new Map(),
-    tr: new Map(),
-  };
+  const slugMap = Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, new Map()]));
 
   let topicDirs = [];
   try {
@@ -414,12 +411,9 @@ async function main() {
 
   for (const topicId of topicDirs) {
     const topicDir = path.join(BLOG_ROOT, topicId);
-    const localeFiles = {
-      en: path.join(topicDir, 'en.mdx'),
-      tr: path.join(topicDir, 'tr.mdx'),
-    };
+    const localeFiles = Object.fromEntries(SUPPORTED_LOCALES.map((locale) => [locale, path.join(topicDir, `${locale}.mdx`)]));
 
-    for (const locale of ['en', 'tr']) {
+    for (const locale of SUPPORTED_LOCALES) {
       if (!(await exists(localeFiles[locale]))) {
         errors.push(`${topicDir}: Missing ${locale}.mdx.`);
       }
@@ -429,46 +423,27 @@ async function main() {
       continue;
     }
 
-    const enRaw = await readFile(localeFiles.en, 'utf8');
-    const trRaw = await readFile(localeFiles.tr, 'utf8');
-    validateNoMojibake(enRaw, localeFiles.en, errors);
-    validateNoMojibake(trRaw, localeFiles.tr, errors);
-    validateNoPromptLeaks(enRaw, localeFiles.en, errors);
-    validateNoPromptLeaks(trRaw, localeFiles.tr, errors);
-    const enData = matter(enRaw).data;
-    const trData = matter(trRaw).data;
-
-    validateFrontmatterShape(enData, localeFiles.en, errors);
-    validateFrontmatterShape(trData, localeFiles.tr, errors);
-
-    if (enData.topicId !== topicId) {
-      errors.push(`${localeFiles.en}: topicId must match directory name "${topicId}".`);
-    }
-    if (trData.topicId !== topicId) {
-      errors.push(`${localeFiles.tr}: topicId must match directory name "${topicId}".`);
-    }
-
-    if (enData.topicId !== trData.topicId) {
-      errors.push(`${topicDir}: topicId mismatch between en.mdx and tr.mdx.`);
-    }
-
-    if (enData.locale !== 'en') {
-      errors.push(`${localeFiles.en}: locale must be "en".`);
-    }
-    if (trData.locale !== 'tr') {
-      errors.push(`${localeFiles.tr}: locale must be "tr".`);
-    }
-
-    if (enData.status === 'published' || trData.status === 'published') {
-      if (!(enData.status === 'published' && trData.status === 'published')) {
-        errors.push(`${topicDir}: published status must be true in both locales together.`);
+    const localizedPosts = await Promise.all(SUPPORTED_LOCALES.map(async (locale) => {
+      const filePath = localeFiles[locale];
+      const raw = await readFile(filePath, 'utf8');
+      validateNoMojibake(raw, filePath, errors);
+      validateNoPromptLeaks(raw, filePath, errors);
+      const data = matter(raw).data;
+      validateFrontmatterShape(data, filePath, errors);
+      if (data.topicId !== topicId) {
+        errors.push(`${filePath}: topicId must match directory name "${topicId}".`);
       }
+      if (data.locale !== locale) {
+        errors.push(`${filePath}: locale must be "${locale}".`);
+      }
+      return [locale, data, filePath];
+    }));
+
+    if (new Set(localizedPosts.map(([, data]) => data.status)).size > 1) {
+      errors.push(`${topicDir}: status must match in all supported locales.`);
     }
 
-    for (const [locale, data, filePath] of [
-      ['en', enData, localeFiles.en],
-      ['tr', trData, localeFiles.tr],
-    ]) {
+    for (const [locale, data, filePath] of localizedPosts) {
       if (typeof data.slug === 'string') {
         const existing = slugMap[locale].get(data.slug);
         if (existing) {

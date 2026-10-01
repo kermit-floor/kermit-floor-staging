@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
-    "build": "npm run text:validate && npm run blog:validate && npm run blog:build-manifest && node scripts/generate-panel-manifests.mjs && next build",
+    "build": "npm run text:validate && npm run i18n:validate && npm run blog:validate && npm run blog:build-manifest && node scripts/generate-panel-manifests.mjs && next build",
     "cf:build": "opennextjs-cloudflare build",
     "cf:deploy": "opennextjs-cloudflare deploy",
     "start": "next start -p 9002",
@@ -17,6 +17,7 @@
     "blog:new": "node scripts/new-blog-topic.mjs",
     "blog:skill:check": "node scripts/check-blog-post-generator-skill-setup.mjs",
     "text:validate": "node scripts/validate-text-integrity.mjs",
+    "i18n:validate": "node scripts/validate-i18n.mjs",
     "blog:validate": "node scripts/validate-blog-content.mjs",
     "blog:build-manifest": "node scripts/generate-blog-manifest.mjs",
     "refactor:product-spec:capture": "node tools/refactor/product-spec-registry/capture-showcase-baseline.mjs",
@@ -24,7 +25,8 @@
     "refactor:product-spec:validate-registry": "node tools/refactor/product-spec-registry/validate-registry.mjs",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test:consent": "playwright test --config playwright.consent.config.mjs"
+    "test:consent": "playwright test --config playwright.consent.config.mjs",
+    "test:i18n": "playwright test --config playwright.localization.config.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.3",

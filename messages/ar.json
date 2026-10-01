@@ -1,0 +1,1229 @@
+{
+  "Metadata": {
+    "title": "Kermit Floor | أرضيات SPC وألواح الجدران ووزرات الحائط",
+    "description": "أرضيات SPC وألواح جدران ووزرات حائط عالية الجودة للتصميمات الداخلية الحديثة. علامة تجارية واحدة ونظام متكامل."
+  },
+  "Header": {
+    "navHome": "الرئيسية",
+    "navFloors": "الأرضيات",
+    "navWalls": "الجدران",
+    "navSkirtings": "وزرات الحائط",
+    "navDownload": "الموارد",
+    "navAbout": "من نحن",
+    "navContact": "اتصل بنا",
+    "heroTitleSpc": "مجموعة ألواح الجدران SPC",
+    "heroTitle3d": "مجموعة ألواح الجدران SPC ثلاثية الأبعاد",
+    "heroTitle3dModelA": "ألواح SPC مخددة: Model A",
+    "heroTitle3dModelB": "ألواح SPC مخددة: Model B",
+    "collectionsTitle": "مجموعات ألواح الجدران SPC",
+    "heroTitleSpcParquetNaturalCollection": "شحن سريع: NATURAL",
+    "heroTitleSpcParquetStoneCollection": "شحن سريع: STONE",
+    "heroTitleFullNaturalCollection": "NATURAL: مجموعة كاملة",
+    "heroTitleSkirtingAlpha140mm": "وزرة حائط Alpha 140 mm",
+    "heroTitleSkirtingBerlin100mm": "وزرة حائط Berlin 100 mm",
+    "heroTitleSkirtingElite100mm": "وزرة حائط Elite 100 mm",
+    "heroTitleSkirtingModerna100mm": "وزرة حائط Moderna 100 mm",
+    "heroTitleSkirtingOptima60mm": "وزرة حائط Optima 60 mm",
+    "heroTitleSkirtingOptima90mm": "وزرة حائط Optima 90 mm",
+    "heroTitleSkirtingSolid80mm": "وزرة حائط Solid 80 mm",
+    "heroTitleSkirtingXLine100mm": "وزرة حائط X-Line 100 mm",
+    "heroTitleFlooringPremierSeries": "شحن سريع: PREMIUM",
+    "heroTitleFlooringNaturalSeries": "شحن سريع: NATURAL",
+    "heroH1SpcFlooringEliteCollection": "مجموعة أرضيات SPC Elite",
+    "heroH1SpcFlooringEleganceCollection": "مجموعة أرضيات SPC Elegance",
+    "heroH1SpcFlooringSkyCollection": "مجموعة أرضيات SPC Sky",
+    "heroH1SpcFlooringMosaicCollection": "مجموعة أرضيات SPC Mosaic",
+    "heroH1SpcFlooringTravertineCollection": "مجموعة أرضيات SPC Travertine",
+    "heroH1SpcParquetNaturalCollection": "مجموعة أرضيات SPC Natural",
+    "heroH1SpcParquetStoneCollection": "مجموعة أرضيات SPC Stone",
+    "heroH1FullNaturalCollection": "مجموعة أرضيات SPC Full Natural"
+  },
+  "HomePage": {
+    "seo": {
+      "title": "تركي SPC مُصنع أرضيات وألواح حائط | Kermit Floor",
+      "description": "تقوم Kermit Floor بتصنيع SPC الأرضيات وألواح الجدران والحواجز في تركيا، بقدرة 8 مليون متر مربع سنويًا للأرضيات والجدران مجتمعة. استفسار بالجملة و OEM."
+    },
+    "heroTitle": "أرضيات SPC وجدران SPC ووزرات SPC",
+    "heroSubtitle": "نظام متكامل لتشطيب المساحات الداخلية بمنتجات SPC من علامة تجارية واحدة، يجمع الأداء المتين والتصاميم الأكثر مبيعًا.",
+    "heroStarterPacksTitle": "ابدأ مشروعك سريعًا باستخدام حزم الموارد لدينا:",
+    "productLinesTitle": "نظام متكامل لتشطيب المساحات الداخلية بمنتجات SPC",
+    "productLinesSubtitle": "نصنع الأرضيات ووزرات الحائط وألواح الجدران لتتناسق معًا وتوفر تشطيبًا متكاملًا.",
+    "flooringTitle": "أرضيات SPC",
+    "flooringDescription": "صُممت أرضياتنا ذات القلب الصلب لتجمع المتانة والأناقة، مع مجموعة واسعة من التصاميم المناسبة لمختلف المساحات الداخلية.",
+    "flooringBenefits": {
+      "b1": "مقاومة للماء بنسبة 100% وعالية المتانة",
+      "b2": "تركيب سريع ونظيف بنظام التعشيق",
+      "b3": "مجموعة واسعة من الديكورات الواقعية بمظهر الخشب والحجر"
+    },
+    "viewFlooring": "عرض الأرضيات",
+    "skirtingTitle": "وزرات حائط SPC",
+    "skirtingDescription": "أكمل مشروعك بوزرات حائط متناسقة ذات حواف مرنة لتشطيب متقن عند التقاء الجدار بالأرضية.",
+    "skirtingBenefits": {
+      "b1": "قابلة للطلاء وعالية المقاومة للصدمات",
+      "b2": "حواف مرنة تلائم الجدران غير المستوية",
+      "b3": "ألوان متناسقة مع الأرضيات والألواح"
+    },
+    "viewSkirting": "عرض وزرات الحائط",
+    "wallsTitle": "ألواح جدران SPC",
+    "wallsDescription": "جدّد مساحاتك الداخلية بألواح SPC عالية الجودة وسهلة التركيب، المتوفرة بمظهر الحجر والخشب وبملمس ثلاثي الأبعاد.",
+    "wallsBenefits": {
+      "b1": "حل مقاوم للماء بالكامل دون الحاجة إلى حشو الفواصل",
+      "b2": "تركيب فوق البلاط الموجود خلال ساعات",
+      "b3": "تصاميم كبيرة المقاس بمظهر متصل"
+    },
+    "viewWalls": "عرض ألواح الجدران",
+    "whyKermitTitle": "لماذا Kermit Floor؟",
+    "whyKermit": {
+      "manufacturer": {
+        "title": "التصنيع في تركيا",
+        "text": "بيع بالجملة SPC للأرضيات و OEM/ توريد علامات خاصة للموزعين والعلامات التجارية. يتم تأكيد مواصفات المنتج والتعبئة وجداول الطلب في عرض الأسعار."
+      },
+      "design": {
+        "title": "التحكم في التصميم",
+        "text": "يسمح تصنيع القوالب داخل الشركة بالتحكم الدقيق في التفاصيل والتطور السريع للمنتج."
+      },
+      "system": {
+        "title": "نهج النظام",
+        "text": "تم تصميم ألواح الأرضيات والحواف والجدران للعمل معًا للحصول على تشطيب كامل."
+      }
+    },
+    "viewAboutUs": "اعرف المزيد عنا",
+    "blogSectionTitle": "معلومات مفيدة",
+    "comingSoon": "قريبا...",
+    "resourcesTitle": "خطط لمشروعك باستخدام الوثائق الكاملة",
+    "resourcesCardCatalogue": "الكتالوجات",
+    "resourcesCardTds": "أوراق البيانات الفنية",
+    "resourcesCardInstall": "أدلة التثبيت",
+    "viewResources": "انتقل إلى الموارد",
+    "instagramTitle": "منا",
+    "instagramSubtitle": "تابع @kermitfloor على Instagram لاستلهام أفكار التصميم ومعرفة آخر أخبار المنتجات.",
+    "followInstagram": "تابعونا على Instagram",
+    "contactCtaTitle": "تحدث إلى المبيعات للحصول على الوثائق والعينات والشروط التجارية.",
+    "contactCtaButton": "اتصل بالمبيعات",
+    "spcWallPanelsTitle": "SPC لوحات الحائط",
+    "spc3dWallPanelsModelATitle": "لوحات ثلاثية الأبعاد (النموذج أ)",
+    "spc3dWallPanelsModelBTitle": "لوحات ثلاثية الأبعاد (النموذج ب)",
+    "spcParquetNaturalCollectionTitle": "Natural",
+    "spcParquetStoneCollectionTitle": "Stone",
+    "fullNaturalCollectionTitle": "Full Natural",
+    "premierSeriesTitle": "مجموعات Premium",
+    "naturalSeriesTitle": "مجموعات Natural",
+    "spcFlooringEleganceCollectionTitle": "Elegance",
+    "spcFlooringSkyCollectionTitle": "Sky",
+    "spcFlooringMosaicCollectionTitle": "Mosaic",
+    "spcFlooringEliteCollectionTitle": "Elite",
+    "spcFlooringTravertineCollectionTitle": "Travertine",
+    "manufacturerIntroduction": "Kermit Floor هي شركة تصنيع SPC للأرضيات وألواح الجدران في تركيا، ويقع مقرها الرئيسي ومصنعها الرئيسي في تشايروفا، قوجا إيلي. لدينا 8 مليون متر مربع من الطاقة الإنتاجية السنوية للأرضيات وألواح الجدران وعملياتها في تركيا ومولدوفا ورومانيا والولايات المتحدة الأمريكية."
+  },
+  "SpcWallPanelsPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC لوحات الحائط",
+      "description": "اكتشف مجموعتنا المتميزة من لوحات الحائط SPC. مقاوم للماء، ومتين، وسهل التركيب."
+    }
+  },
+  "Spc3dWallPanelsModelAPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC لوحات حائط ثلاثية الأبعاد – موديل أ",
+      "description": "قم بتحويل جدرانك باستخدام لوحاتنا Model A 3D SPC، التي تقدم أنسجة فريدة وتصميمات حديثة."
+    }
+  },
+  "Spc3dWallPanelsModelBPage": {
+    "seo": {
+      "title": "Kermit Floor | SPC لوحات حائط ثلاثية الابعاد – موديل B",
+      "description": "قم بإنشاء جدران مميزة مذهلة باستخدام لوحات Model B 3D SPC، التي تتميز بأنماط أنيقة ومعاصرة."
+    }
+  },
+  "SpcParquetNaturalCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | الأكثر مبيعاً SPC الأرضيات بلوط",
+      "description": "اكتشف مجموعتنا الأكثر مبيعاً من ألواح الأرضيات من خشب البلوط الطبيعي SPC. متين ومقاوم للماء ومصمم بشكل جميل لأي تصميم داخلي."
+    }
+  },
+  "SpcParquetStoneCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | أرضيات SPC بمظهر حجري",
+      "description": "اكتشف مجموعتنا من الأرضيات SPC المستوحاة من الحجر. متين ومقاوم للماء ومثالي لمظهر عصري وأنيق."
+    }
+  },
+  "FullNaturalCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | مجموعة Natural: أكثر من 110 ألوان",
+      "description": "استكشف مجموعتنا الكاملة من الأرضيات الخشبية الطبيعية SPC مع أكثر من 110 خيارات الألوان."
+    }
+  },
+  "ResourcesPage": {
+    "seo": {
+      "title": "كتالوجات SPC وأدلة التركيب والوثائق | Kermit Floor",
+      "description": "نزّل كتالوجات Kermit للأرضيات ووزرات الحائط وألواح الجدران وأدلة تركيب الوزرات. اطلب وثائق المنتجات وشروط الضمان وعينات البيع بالجملة."
+    },
+    "heroTitle": "الموارد والتنزيلات",
+    "heroSubtitle": "تصفح كتالوجات المنتجات الحالية وأدلة التركيب، ثم اطلب الوثائق اللازمة لمواصفات مشروعك.",
+    "starterPacksTitle": "حزم الموارد للبدء",
+    "downloadZip": "تنزيل ملف ZIP",
+    "viewContents": "عرض المحتويات",
+    "viewContentsTitle": "{packName} المحتويات",
+    "viewContentsDescription": "استخدم هذه القائمة لمناقشة المستندات التي تحتاجها مع فريقنا. التنزيلات المتوفرة موجودة في المكتبة أدناه.",
+    "productLineTabs_skirting": "وزرات حائط SPC",
+    "productLineTabs_flooring": "أرضيات SPC",
+    "productLineTabs_wall_panels": "ألواح جدران SPC",
+    "accordion_catalogue": "الكتالوجات",
+    "accordion_tds": "أوراق البيانات الفنية",
+    "accordion_installation": "أدلة التركيب",
+    "accordion_warranty": "الضمان والمطالبات",
+    "accordion_maintenance": "الرعاية والصيانة",
+    "accordion_cad": "CAD ورسومات",
+    "accordion_textures": "الخامات (ZIP)",
+    "accordion_packaging": "التعبئة والتغليف وترتيب المنصات",
+    "doc_type": "نوع المستند",
+    "version": "الإصدار",
+    "last_updated": "آخر تحديث",
+    "preview": "معاينة",
+    "download": "تحميل",
+    "comingSoon": "قريبا...",
+    "noResults": "لا توجد مستندات تطابق المعايير الخاصة بك.",
+    "requestPack": "اطلب هذه الحزمة",
+    "requestDocument": "اطلب هذه الوثيقة",
+    "downloads": {
+      "title": "الكتالوجات والتنزيلات الفنية",
+      "description": "ابحث عن رموز المنتج في الكتالوجات، ثم تحقق من وثائق التثبيت والوثائق الفنية للأرضيات التي اخترتها. يحدد كل تنزيل لغته ونطاقه.",
+      "englishPdf": "تحميل PDF · الإنجليزية",
+      "localizedPdf": "تحميل PDF · الإنجليزية",
+      "roPdf": "تحميل PDF · الرومانية",
+      "enPdf": "تحميل PDF · الإنجليزية",
+      "trPdf": "تحميل PDF · اللغة التركية",
+      "bgPdf": "البلغارية PDF",
+      "srPdf": "الصربية PDF",
+      "arPdf": "العربية PDF"
+    },
+    "documents": {
+      "title": "اطلب المستندات الخاصة بمشروعك",
+      "description": "أرسل مرجع المنتج ومتطلبات مشروعك أو السوق الوجهة. يمكن لفريقنا مراجعة المستندات الفنية التي تنطبق على العرض المقترح.",
+      "listLabel": "وثائق للمناقشة",
+      "types": {
+        "technical": "البيانات الفنية",
+        "installation": "التركيب والضمان",
+        "projectEvidence": "الاختبارات والإقرارات"
+      },
+      "requestTitle": "اجعل الطلب محددًا",
+      "requestDescription": "قم بتضمين هذه التفاصيل حتى يتناول الرد المنتج الذي تنوي طلبه:",
+      "include": {
+        "product": "المجموعة، كود الديكور، السمك، طبقة التآكل والبطانة.",
+        "market": "بلد المقصد والاستخدام المقصود ومواصفات المشروع.",
+        "requirements": "الاختبارات والشهادات والإقرارات المطلوبة ولغة الوثيقة."
+      },
+      "manuals": "استخدم دليل تركيب الأرضيات أدناه واطلب أي تعليمات خاصة بالمنتج والضمان المعمول به قبل الطلب أو بدء العمل.",
+      "requestAction": "طلب وثائق المنتج"
+    },
+    "fileLanguage": "لغة الملف: {language}",
+    "languages": {
+      "en": "الإنجليزية",
+      "tr": "تركي",
+      "ro": "الرومانية",
+      "sr": "الصربية",
+      "bg": "البلغارية",
+      "ar": "العربية"
+    }
+  },
+  "AboutPage": {
+    "seo": {
+      "metaTitle": "SPC المُصنع في تركيا: ألواح الأرضيات والجدران | Kermit Floor",
+      "metaDescription": "Kermit Floor تصنع SPC ألواح الأرضيات والجدران في تركيا. القدرة المجمعة السنوية: 8 مليون متر مربع. عمليات في أربع دول؛ ارضيات بالجملة وتوريد OEM."
+    },
+    "hero": {
+      "title": "SPC صانع الأرضيات وألواح الجدران في تركيا",
+      "subtitle": "تصنّع Kermit Floor أرضيات SPC وألواح الجدران ووزرات الحائط للموزعين والعلامات التجارية الخاصة والمشاريع الداخلية. تبلغ طاقتنا الإنتاجية السنوية للأرضيات وألواح الجدران 8 ملايين m²، ولدينا عمليات في تركيا ومولدوفا ورومانيا والولايات المتحدة الأمريكية.",
+      "ctaPrimary": "طلب عينات واقتباس",
+      "ctaSecondary": "تصفح الكتالوجات"
+    },
+    "whoWeAre": {
+      "title": "من نحن",
+      "p1": "Kermit Floor هي شركة مصنعة SPC في تركيا، تنتج الأرضيات وألواح الجدران والحواف لأنظمة التشطيب الداخلي. يقع مقرنا الرئيسي ومصنعنا الرئيسي في تشايروفا، كوجالي. يعتمد تطوير منتجاتنا على خبرة طويلة الأمد في معالجة البوليمر وتصنيع القوالب، مما يدعم التحكم في تفاصيل التصميم واتساق الإنتاج.",
+      "p2": "نحن نبني منتجات عملية للتجارة - مستقرة ومتينة وسهلة العمل - مع الحفاظ على المظهر النظيف والحديث للبيئات السكنية والتجارية."
+    },
+    "whatWeMake": {
+      "title": "ما نصنعه",
+      "flooring": {
+        "title": "SPC الارضيات",
+        "text": "تم تصميم أنظمة الأرضيات الصلبة لتحقيق المتانة اليومية ونتائج التثبيت الموثوقة عبر مجموعة واسعة من المساحات الداخلية."
+      },
+      "skirting": {
+        "title": "وزرات حائط SPC",
+        "text": "حلول وزرات مصممة لتشطيب التقاء الجدار بالأرضية بإتقان. تتميز وزراتنا بحواف مرنة لتحسين الملاءمة النهائية على الأسطح غير المستوية."
+      },
+      "wallPanels": {
+        "title": "SPC لوحات الحائط",
+        "text": "تم تصميم أنظمة ألواح الجدران الداخلية للتركيب السريع ومقاومة الصدمات والحصول على نتائج زخرفية متسقة."
+      }
+    },
+    "whyKermit": {
+      "title": "لماذا Kermit Floor",
+      "manufacturer": {
+        "title": "القدرة التصنيعية الصناعية",
+        "text": "8 مليون متر مربع من السعة السنوية عبر SPC ألواح الأرضيات والجدران، مع مواصفات المنتج وشروط التوريد المحددة لطلبك."
+      },
+      "design": {
+        "title": "التحكم في التصميم",
+        "text": "تمكن القدرة على التصميم القائم على القالب من التحكم في التفاصيل وتطوير المنتج."
+      },
+      "system": {
+        "title": "نهج النظام",
+        "text": "أرضيات ووزرات حائط وألواح جدران مصممة لتتناسق معًا وتوفر تشطيبًا متكاملًا."
+      }
+    },
+    "footprint": {
+      "title": "عمليات Kermit في أربع دول",
+      "p1": "Kermit Floor تعمل في تركيا ومولدوفا ورومانيا والولايات المتحدة الأمريكية. يقع مقرنا الرئيسي ومصنعنا الرئيسي في تشايروفا، كوكايلي، تركيا، بالإضافة إلى مصنع إضافي في كيشيناو، مولدوفا. تحدد المواقع أدناه عناوين مصانعنا ومتجرنا الروماني وطريق الاستفسار في الولايات المتحدة.",
+      "ctaTitle": "هل أنت مهتم بالعمل معنا؟",
+      "ctaText": "نحن ندعم هياكل الموزعين/الوكلاء والإمدادات القائمة على المشاريع. اتصل بفريق المبيعات لدينا للحصول على وثائق المنتج والعينات والشروط التجارية.",
+      "ctaButton1": "اتصل بالمبيعات",
+      "ctaButton2": "عرض الموارد",
+      "imageAlt": "بناء مصنع بألواح شمسية على السطح",
+      "locations": {
+        "turkey": {
+          "title": "تركيا · المقر الرئيسي والمصنع",
+          "address": "Kermit Plastik Sanayi ve Ticaret A.Ş. · Cumhuriyet Mh. Cihan Sk. No:4, Çayırova, Kocaeli"
+        },
+        "moldova": {
+          "title": "مولدوفا · مصنع كيشيناو",
+          "address": "Muncești 799, Chișinău, Moldova"
+        },
+        "romania": {
+          "title": "رومانيا · متجر بوخارست",
+          "address": "DMS Innovative Solution SRL · Bucharest, Romania"
+        },
+        "usa": {
+          "title": "الولايات المتحدة الأمريكية · العمليات",
+          "address": "للاستفسارات في الولايات المتحدة، اتصل بفريق المبيعات لدينا للتأكد من توفر المنتج وطريق التوريد والشروط التجارية."
+        }
+      },
+      "originNote": "قم بمشاركة رموز الوجهة والمنتج مع فريقنا حتى يتمكن عرض الأسعار من تأكيد تفاصيل التوريد لطلبك."
+    },
+    "sustainability": {
+      "title": "الاستدامة والمسؤولية",
+      "p1": "نحن نعطي الأولوية لعمر الخدمة الطويل، والتركيب العملي، والتصنيع المسؤول. يتم دعم إنتاجنا بشكل متزايد بالطاقة المتجددة، ونحن نستثمر باستمرار في العمليات الفعالة التي تقلل من النفايات والأثر البيئي. نظل ملتزمين بشدة بالممارسات التجارية الأخلاقية - الشراكات العادلة والعمليات الشفافة ومعايير الجودة المتسقة - حتى يتمكن العملاء من تحديد منتجات Kermit Floor بثقة.",
+      "imageAlt": "أيدي تحمل براعم خضراء"
+    },
+    "finalCta": {
+      "title": "خطط لطلبك القادم من أرضيات SPC مع Kermit.",
+      "ctaPrimary": "طلب عرض أسعار بالجملة",
+      "ctaSecondary": "تصفح الكتالوجات"
+    },
+    "supply": {
+      "title": "تصنيع Kermit Floor وتوريدها بالجملة",
+      "moq": {
+        "label": "الحد الأدنى للطلب بالجملة",
+        "value": "1 حاوية",
+        "detail": "طلبيات الارضيات SPC بالجملة"
+      },
+      "leadTime": {
+        "label": "مهلة الأرضيات القياسية",
+        "value": "4 اسبوعين",
+        "detail": "تم تأكيد جدول الطلب في عرض الأسعار"
+      },
+      "branding": {
+        "label": "خيارات العلامة التجارية",
+        "value": "OEM وملصق خاص",
+        "detail": "المنتج والتعبئة والتغليف والأعمال الفنية المتفق عليها معك"
+      },
+      "note": "يؤكد عرض الأسعار المواصفات المحددة والتعبئة ونطاق العلامة التجارية وجدول الطلب. اسأل عن تاريخ تسليم الوجهة وحساب التحميل للمنتجات التي اخترتها.",
+      "capacity": {
+        "label": "القدرة الإنتاجية السنوية",
+        "value": "8 مليون متر مربع",
+        "detail": "لأرضيات SPC وألواح الجدران معًا"
+      },
+      "countries": {
+        "label": "الدول التي نعمل فيها",
+        "value": "4 دول",
+        "detail": "تركيا · مولدوفا · رومانيا · الولايات المتحدة الأمريكية"
+      },
+      "headquarters": {
+        "label": "المقر الرئيسي والمصنع الرئيسي",
+        "value": "تشايروفا، كوكايلي",
+        "detail": "Kermit بلاستيك سانايي في تيكاريت A.Ş., Türkiye"
+      }
+    },
+    "documentation": {
+      "title": "وثائق للمواصفات الخاصة بك",
+      "description": "ابدأ بكتالوجاتنا الحالية للأرضيات ووزرات الحائط وألواح الجدران. للمشاريع أو طلبات الجملة، أرسل معايير الأداء المطلوبة واطلب الوثائق الخاصة بالمنتج المختار.",
+      "types": {
+        "catalogues": "كتالوجات المنتجات",
+        "instructions": "تعليمات التثبيت",
+        "projectEvidence": "وثائق المشروع"
+      },
+      "scope": "قم بمراجعة مرجع المنتج ونطاقه وصلاحيته لكل مستند قبل استخدامه في نطاق المناقصة أو العلامة التجارية. اطلب تعليمات تركيب الأرضيات المعمول بها والضمان مع عرض الأسعار الخاص بك.",
+      "action": "عرض التنزيلات وطلب المستندات"
+    },
+    "oem": {
+      "title": "علامتك التجارية ومجموعة SPC محددة المواصفات",
+      "description": "OEM وتوريد العلامة الخاصة متاح. أخبرنا بالمنتجات التي يحتاجها عملاؤك وكيف تخطط لتقديم المجموعة تحت علامتك التجارية.",
+      "items": {
+        "specification": "تحديد المجموعة والديكور والبناء والاستخدام المقصود.",
+        "branding": "وافق على متطلبات الكرتون والملصق والأعمال الفنية في العرض.",
+        "schedule": "تأكيد العينات والمستندات والطلب الأول وجدول التسليم."
+      },
+      "action": "ناقش طلب العلامة الخاصة"
+    },
+    "questions": {
+      "title": "الأسئلة قبل طلبك الأول",
+      "factory": {
+        "question": "هل Kermit Floor مصنع SPC في تركيا؟",
+        "answer": "نعم. تقوم Kermit Floor بتصنيع SPC الأرضيات وألواح الجدران والحواجز، ويقع مقرها الرئيسي ومصنعها الرئيسي في تشايروفا، قوجا ايلي، تركيا. لدينا أيضًا مصنع في كيشيناو، مولدوفا. اطلب من فريقنا تأكيد أصل التصنيع وترتيبات التوريد للمنتجات الموجودة في طلبك."
+      },
+      "moq": {
+        "question": "ما هو الحد الأدنى لطلب الأرضيات SPC بالجملة؟",
+        "answer": "الحد الأدنى للطلب هو حاوية واحدة. تعتمد كمية المتر المربع على المنتج المحدد وترتيبات التعبئة والتحميل؛ طلب حساب للمواصفات الخاصة بك."
+      },
+      "leadTime": {
+        "question": "ما هي المهلة القياسية لبيع الأرضيات بالجملة SPC؟",
+        "answer": "المهلة القياسية لدينا لبيع الأرضيات بالجملة SPC هي أربعة أسابيع. تم تأكيد جدول الطلب ومسؤوليات التسليم والتوقيت المتوقع لوجهتك في عرض الأسعار."
+      },
+      "oem": {
+        "question": "هل يمكن لـ Kermit توريد SPC الأرضيات تحت علامتنا التجارية؟",
+        "answer": "نعم. OEM وتوريد العلامة الخاصة متاح. قم بتضمين متطلبات المنتج والعلامة التجارية والوثائق الخاصة بك حتى يمكن الاتفاق على النطاق كتابيًا."
+      },
+      "enquiry": {
+        "question": "ما الذي يجب أن يتضمنه طلب العينة أو عرض الأسعار؟",
+        "answer": "أرسل تفاصيل شركتك والوجهة وأكواد المنتج أو الديكور والمتطلبات الفنية والكمية والاستخدام المقصود واحتياجات العينة وتاريخ التسليم المطلوب. قم بتضمين أي متطلبات خاصة بالعلامة التجارية أو وثائق المشروع."
+      },
+      "capacity": {
+        "question": "ما هي الطاقة الإنتاجية السنوية لـ Kermit Floor؟",
+        "answer": "Kermit Floor تبلغ الطاقة الإنتاجية السنوية المجمعة 8 مليون متر مربع لـ SPC ألواح الأرضيات والجدران. يتم تأكيد الكمية ومزيج المنتجات والجدول الزمني للطلب الفردي في عرض الأسعار."
+      },
+      "countries": {
+        "question": "في أي الدول يعمل Kermit Floor؟",
+        "answer": "Kermit Floor تعمل في تركيا ومولدوفا ورومانيا والولايات المتحدة الأمريكية. تقع مواقع التصنيع لدينا في تركيا ومولدوفا، ولدينا متجر في بوخارست، رومانيا. اتصل بفريقنا للاستفسار عن التوريد في الولايات المتحدة الأمريكية."
+      }
+    },
+    "manufacturing": {
+      "title": "تصنيع منتجات SPC للبيع بالجملة وتوريد المشاريع",
+      "flooring": {
+        "title": "أرضيات SPC للبيع بالجملة وللمشترين بنظام OEM",
+        "text": "يمكن للموزعين الذين يقارنون مصنعي الأرضيات SPC في تركيا تقييم مجموعات وعينات ومستندات المنتج Kermit قبل الطلب. نحن نقدم بالجملة SPC أرضيات وOEM/إمدادات ذات علامة خاصة مع حد أدنى للطلب من حاوية واحدة ومهلة قياسية مدتها أربعة أسابيع. تم تأكيد جدول الطلب الفعلي في عرض الأسعار الخاص بك.",
+        "action": "اطّلع على قائمة التحقق لاختيار الشركة المصنّعة"
+      },
+      "wallPanels": {
+        "title": "ألواح جدران SPC للمشاريع الداخلية",
+        "text": "يمكن لفرق المشروع التي تقارن مصنعي ألواح الجدران SPC في تركيا مراجعة الألواح الداخلية لـ Kermit جنبًا إلى جنب مع مجموعة الأرضيات والحواف. قم بمشاركة رمز اللوحة والتشطيب والأبعاد والكمية والتطبيق المقصود حتى يتمكن فريقنا من تأكيد مستندات المنتج والعينات وشروط التوريد وأصل التصنيع لطلبك.",
+        "action": "استكشف ألواح الجدران SPC"
+      }
+    }
+  },
+  "ContactPage": {
+    "seo": {
+      "title": "Kermit Floor | اتصل بنا!",
+      "description": "تواصل مع Kermit Floor للاستفسار عن المبيعات أو الدعم الفني أو الشراكات. نحن شركة رائدة في تصنيع أرضيات SPC ووزرات الحائط وألواح الجدران."
+    },
+    "hero": {
+      "title": "اتصل بنا",
+      "subtitle": "تواصل مع فريقنا للاستفسارات المتعلقة بالمبيعات أو الدعم أو الشراكة. نحن هنا للمساعدة."
+    },
+    "locations": {
+      "title": "مكاتبنا",
+      "turkeyTitle": "تركيا – المصنع (المقر الرئيسي)",
+      "turkeyAddress": "Cumhuriyet Mh. Cihan Sk. No:4\nÇAYIROVA / KOCAELİ - TÜRKİYE",
+      "turkeyPhone": "+90 262 658 97 29",
+      "turkeyFax": "+90 262 658 11 29",
+      "turkeyEmail": "info@kermit.com.tr",
+      "moldovaTitle": "مولدوفا – المصنع",
+      "moldovaAddress": "Muncești 799, Chișinău/MOLDOVA",
+      "moldovaPhone": "+373 (22) 85 42 29 / +373 (22) 85 42 30",
+      "moldovaGsm": "GSM: +373 79 157375",
+      "moldovaFax": "+373 (22) 52 40 02",
+      "moldovaEmail": "info@serkanplast.com",
+      "romaniaTitle": "رومانيا – متجر",
+      "romaniaCompany": "DMS INNOVATIVE SOLUTION SRL",
+      "romaniaAddress": "Bucuresti - Romania",
+      "romaniaPhone": "+40 738 754 074 / +40 722 547 258",
+      "romaniaEmail": "info@dmsinnovative.ro",
+      "germanyTitle": "ألمانيا – ممثل",
+      "germanyCompany": "IQBody GmbH",
+      "germanyRepresentative": "الممثل: Suat Altun",
+      "germanyAddress": "Ströherstraße 14D\n36088 Hünfeld, Germany",
+      "germanyPhone": "+49 1714071718"
+    },
+    "form": {
+      "title": "أرسل رسالة",
+      "description": "املأ النموذج أدناه وسنقوم بالرد عليك في أقرب وقت ممكن.",
+      "nameLabel": "الاسم الكامل",
+      "namePlaceholder": "جون دو",
+      "emailLabel": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "you@example.com",
+      "phoneLabel": "رقم الهاتف (اختياري)",
+      "phonePlaceholder": "+1 (555) 123-4567",
+      "inquiryTypeLabel": "نوع الاستفسار",
+      "inquiryTypePlaceholder": "اختر نوع الاستفسار",
+      "inquiryTypeSales": "المبيعات والتسعير",
+      "inquiryTypeSupport": "الدعم الفني",
+      "inquiryTypePartnership": "الشراكات والتوزيع",
+      "inquiryTypeGeneral": "استفسار عام",
+      "messageLabel": "رسالتك",
+      "messagePlaceholder": "يرجى وصف استفسارك بالتفصيل ...",
+      "submitButton": "أرسل رسالة",
+      "submittingButton": "جارٍ الإرسال...",
+      "successTitle": "تم إرسال الرسالة!",
+      "successDescription": "شكرا لك، {name}! لقد تم استلام رسالتك. سنكون على اتصال قريبا.",
+      "errorTitle": "حدث خطأ ما",
+      "errorMessage": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "PanelNames": {
+    "205": "Buttermilk Oak",
+    "215": "Sahara Oak",
+    "227": "Weathered Greige Oak",
+    "601": "Concrete Grey",
+    "602": "Microcement Silver",
+    "603": "Concrete Light Grey",
+    "604": "Anthracite Concrete",
+    "605": "Bardiglio Grey",
+    "606": "Marble Anthracite",
+    "607": "Travertine White Vein",
+    "608": "Travertine Grey",
+    "609": "Calacatta Bianco",
+    "610": "Marble Black",
+    "611": "Statuario Bianco",
+    "612": "Calacatta Gold",
+    "613": "Fior di Bosco (Olive)",
+    "614": "Ceppo di Gre Beige",
+    "616": "Tundra Grey",
+    "617": "Bianco Lasa",
+    "618": "Carrara White",
+    "619": "Ceppo di Gre White",
+    "620": "Crema Marfil Beige",
+    "742": "Glacier Oak"
+  },
+  "3DModelAPanelNames": {
+    "3D-800": "Sage Grey",
+    "3D-801": "Ash Grey",
+    "3D-802": "Fumed Oak",
+    "3D-803": "Charcoal Oak",
+    "3D-205": "Buttermilk Oak",
+    "3D-804": "Light Grey Oak",
+    "3D-805": "Smoked Oak",
+    "3D-742": "Glacier Oak"
+  },
+  "3DModelBPanelNames": {
+    "3D-617": "Bianco Lasa",
+    "3D-618": "Carrara White",
+    "3D-605": "Bardiglio Grey",
+    "3D-610": "Marble Black",
+    "3D-608": "Travertine Grey",
+    "3D-607": "Travertine White Vein",
+    "3D-612": "Calacatta Gold"
+  },
+  "SpcParquetNaturalCollectionPanelNames": {
+    "N-206": "Ivory Mist Oak",
+    "N-207": "Natural Beige Oak",
+    "N-208": "Sand Dune Oak",
+    "N-209": "Light Grey Oak",
+    "N-211": "Cognac Oak",
+    "N-212": "Rustic Greige Oak",
+    "N-215": "Sahara Oak",
+    "N-217": "Silver Mist Oak",
+    "N-220": "Dark Walnut Oak",
+    "N-221": "Weathered Grey Oak",
+    "N-222": "Dark Grey Oak",
+    "N-223": "Ice Grey Oak",
+    "N-219": "Ash Grey Oak (Dark)",
+    "N-225": "Linen Oak",
+    "N-227": "Weathered Greige Oak",
+    "N-228": "Nordic Frost Oak",
+    "N-229": "Dark Taupe Oak",
+    "N-230": "White Chocolate Walnut",
+    "N-231": "Smoked Greige Oak",
+    "N-232": "Arctic Driftwood Oak",
+    "N-233": "Natural Honey Oak"
+  },
+  "SpcParquetStoneCollectionPanelNames": {
+    "N-601": "Concrete Grey",
+    "N-602": "Microcement Silver",
+    "N-603": "Concrete Light Grey",
+    "N-604": "Anthracite Concrete",
+    "N-605": "Bardiglio Grey",
+    "N-606": "Marble Anthracite",
+    "N-607": "Travertine White Vein",
+    "N-608": "Travertine Grey",
+    "N-609": "Calacatta Bianco",
+    "N-610": "Marble Black",
+    "N-611": "Statuario Bianco",
+    "N-612": "Calacatta Gold",
+    "N-613": "Fior di Bosco (Olive)",
+    "N-614": "Ceppo di Gre Beige",
+    "N-616": "Tundra Grey",
+    "N-617": "Bianco Lasa",
+    "N-618": "Carrara White",
+    "N-619": "Ceppo di Gre White",
+    "N-620": "Crema Marfil Beige"
+  },
+  "FullNaturalCollectionPanelNames": {
+    "N-201": "Bleached Oak",
+    "N-202": "Arctic Oak",
+    "N-203": "Sunlit Oak",
+    "N-204": "Light Natural Oak",
+    "N-205": "Buttermilk Oak",
+    "N-210": "Canyon Oak",
+    "N-213": "Light Beige Oak",
+    "N-214": "Dove Grey Oak",
+    "N-216": "Harvest Oak",
+    "N-218": "Chestnut Oak",
+    "N-226": "Honey Amber Oak",
+    "N-701": "Graphite Oak",
+    "N-702": "Taupe Oak",
+    "N-703": "Silver Driftwood",
+    "N-704": "Mist Grey Oak",
+    "N-705": "Burnt Oak",
+    "N-706": "Frosted Oak",
+    "N-707": "Urban Grey Oak",
+    "N-708": "Soft Greige Oak",
+    "N-709": "Charcoal Rustic Oak",
+    "N-710": "Nordic Ash Oak",
+    "N-711": "Golden Knot Oak",
+    "N-712": "Pebble Oak",
+    "N-713": "Blonde Natural Oak",
+    "N-714": "Whitewashed Drift Oak",
+    "N-715": "Cocoa Oak",
+    "N-716": "Cloud Grey Oak",
+    "N-717": "Wheat Oak",
+    "N-718": "Smoky Grey Oak",
+    "N-719": "Reclaimed Barnwood",
+    "N-720": "Chalk White Oak",
+    "N-721": "Vintage Grey Oak",
+    "N-722": "Golden Natural Oak",
+    "N-723": "Pearl Mist Oak",
+    "N-724": "Rustic Heritage Oak",
+    "N-725": "Weathered Pier Oak",
+    "N-726": "Beach House Oak",
+    "N-727": "Stone Grey Oak",
+    "N-728": "Mineral Grey Oak",
+    "N-729": "Drift Brown Oak",
+    "N-730": "Country Natural Oak",
+    "N-731": "Ivory Oak",
+    "N-732": "Midnight Oak",
+    "N-733": "Vanilla Oak",
+    "N-734": "Sable Oak",
+    "N-735": "Almond Oak",
+    "N-736": "Mocha Oak",
+    "N-737": "Desert Sand Oak",
+    "N-738": "Silver Frost Oak",
+    "N-739": "Polar Oak",
+    "N-740": "Coastal Drift Oak",
+    "N-741": "Coal Grey Oak",
+    "N-742": "Glacier Oak",
+    "N-743": "Greige Oak",
+    "N-744": "Biscuit Oak",
+    "N-745": "Cream Oak",
+    "N-746": "Tundra Oak",
+    "N-747": "Weathered Oak Brown",
+    "N-748": "Fog Oak",
+    "N-749": "Onyx Oak",
+    "N-750": "Basalt Oak",
+    "N-751": "Champagne Oak",
+    "N-752": "Slate Oak",
+    "N-753": "Winter Oak",
+    "N-754": "Mushroom Oak",
+    "N-755": "Dune Oak",
+    "N-756": "Alabaster Oak",
+    "N-757": "Seaside Oak",
+    "N-758": "Toasted Oak",
+    "N-759": "Washed Beige Oak",
+    "N-760": "Frost Grey Oak",
+    "N-761": "Moonstone Oak",
+    "N-762": "Scandi Natural Oak",
+    "N-763": "Umber Oak",
+    "N-764": "Nordic White Oak",
+    "N-765": "Golden Wheat Oak",
+    "N-766": "Limestone Oak",
+    "N-767": "Silver Oak",
+    "N-768": "Olive Brown Oak",
+    "N-769": "Rustic Barn Oak",
+    "N-770": "Patina Oak",
+    "N-771": "Ash Grey Barnwood",
+    "N-772": "Gunmetal Oak",
+    "N-773": "Industrial Barnwood",
+    "N-774": "Desert Drift Oak",
+    "N-775": "Concrete Grey Oak",
+    "N-776": "Sandy Drift Oak",
+    "N-777": "Faded Silver Oak",
+    "N-778": "Estate Greige Oak",
+    "N-779": "Classic Natural Oak",
+    "N-780": "Sawmill Oak",
+    "N-781": "Spiced Acacia",
+    "N-782": "Linen Beige Oak",
+    "N-783": "Straw Oak",
+    "N-784": "Meadow Oak",
+    "N-785": "Camel Oak",
+    "N-786": "Amber Oak",
+    "N-787": "Smoked Taupe Oak",
+    "N-788": "Stonewashed Oak",
+    "N-789": "Honey Gold Oak",
+    "N-790": "Warm Sand Oak",
+    "N-791": "Shadow Oak",
+    "N-792": "Drift Beige Oak",
+    "N-793": "White Patina Oak",
+    "N-794": "Misty Grey Oak",
+    "N-795": "Shell Beige Oak",
+    "N-796": "Caramel Oak",
+    "N-797": "Steel Grey Oak",
+    "N-798": "Stone Beige Oak",
+    "N-799": "Espresso Oak"
+  },
+  "SkirtingCollectionNames": {
+    "alpha-140-mm": "Alpha 140mm",
+    "berlin-100-mm": "Berlin 100mm",
+    "elite-100-mm": "Elite 100mm",
+    "moderna-100-mm": "Moderna 100mm",
+    "optima-60-mm": "Optima 60mm",
+    "optima-90-mm": "Optima 90mm",
+    "solid-80-mm": "Solid 80mm",
+    "x-line-100-mm": "X-Line 100mm"
+  },
+  "SkirtingPanelNames": {
+    "1004031": "1004031",
+    "1005031": "1005031",
+    "1006031": "1006031",
+    "1009031": "1009031",
+    "1010031": "1010031",
+    "1012031": "1012031",
+    "1013031": "1013031",
+    "1015031": "1015031",
+    "1104031": "1104031",
+    "1105031": "1105031",
+    "1106031": "1106031",
+    "1109031": "1109031",
+    "1110031": "1110031",
+    "1112031": "1112031",
+    "1113031": "1113031",
+    "1115031": "1115031",
+    "1404031": "1404031",
+    "1405031": "1405031",
+    "1406031": "1406031",
+    "1409031": "1409031",
+    "1410031": "1410031",
+    "1412031": "1412031",
+    "1413031": "1413031",
+    "1415031": "1415031",
+    "E1013031": "E1013031",
+    "E1004031": "E1004031",
+    "E1005031": "E1005031",
+    "E1006031": "E1006031",
+    "E1009031": "E1009031",
+    "E1010031": "E1010031",
+    "E1012031": "E1012031",
+    "E1015031": "E1015031",
+    "0604031": "0604031",
+    "0605031": "0605031",
+    "0606031": "0606031",
+    "0609031": "0609031",
+    "0610031": "0610031",
+    "0612031": "0612031",
+    "0613031": "0613031",
+    "0615031": "0615031",
+    "0704031": "0704031",
+    "0705031": "0705031",
+    "0706031": "0706031",
+    "0709031": "0709031",
+    "0710031": "0710031",
+    "0712031": "0712031",
+    "0713031": "0713031",
+    "0715031": "0715031",
+    "0904031": "0904031",
+    "0905031": "0905031",
+    "0906031": "0906031",
+    "0909031": "0909031",
+    "0910031": "0910031",
+    "0912031": "0912031",
+    "0913031": "0913031",
+    "0915031": "0915031",
+    "X1004031": "X1004031",
+    "X1005031": "X1005031",
+    "X1006031": "X1006031",
+    "X1009031": "X1009031",
+    "X1010031": "X1010031",
+    "X1012031": "X1012031",
+    "X1013031": "X1013031",
+    "X1015031": "X1015031"
+  },
+  "SkirtingPages": {
+    "alpha-140-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Alpha 140mm",
+      "description": "اكتشف وزرة حائط SPC Alpha 140mm. تصميم مرتفع وعصري ومتين لتشطيب متقن."
+    },
+    "berlin-100-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Berlin 100mm",
+      "description": "اكتشف وزرة حائط SPC Berlin 100mm. تصميم كلاسيكي يجمع المتانة الحديثة."
+    },
+    "elite-100-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Elite 100mm",
+      "description": "توفر وزرة حائط SPC Elite 100mm شكلًا أنيقًا لمختلف المساحات الداخلية."
+    },
+    "moderna-100-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Moderna 100mm",
+      "description": "احصل على مظهر مرتب وعصري مع وزرة حائط SPC Moderna 100mm."
+    },
+    "optima-60-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Optima 60mm",
+      "description": "وزرة حائط SPC Optima 60mm حل متعدد الاستخدامات بتصميم بسيط يناسب مختلف المساحات."
+    },
+    "optima-90-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Optima 90mm",
+      "description": "وازن بين الارتفاع والأناقة مع وزرة حائط SPC Optima 90mm."
+    },
+    "solid-80-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC Solid 80mm",
+      "description": "توفر وزرة حائط SPC Solid 80mm تشطيبًا متينًا بتصميم يحافظ على جاذبيته بمرور الزمن."
+    },
+    "x-line-100-mm": {
+      "title": "Kermit Floor | وزرات حائط SPC X-Line 100mm",
+      "description": "امنح المساحة طابعًا معماريًا واضحًا مع وزرة حائط SPC X-Line 100mm."
+    }
+  },
+  "SpcSkirtingBoardsPage": {
+    "seo": {
+      "title": "Kermit Floor | وزرات حائط SPC",
+      "description": "اكتشف جميع وزرات SPC من Kermit Floor: 8 أشكال بارتفاعات من 60 إلى 140 mm، وحواف مرنة وألوان متناسقة مع أرضيات SPC."
+    },
+    "hero": {
+      "title": "وزرات حائط SPC"
+    },
+    "specLabels": {
+      "height": "الارتفاع",
+      "width": "العرض",
+      "length": "الطول",
+      "material": "المادة"
+    },
+    "lines": {
+      "alpha-140-mm": {
+        "name": "وزرة حائط Alpha 140mm"
+      },
+      "berlin-100-mm": {
+        "name": "وزرة حائط Berlin 100mm"
+      },
+      "elite-100-mm": {
+        "name": "وزرة حائط Elite 100mm"
+      },
+      "moderna-100-mm": {
+        "name": "وزرة حائط Moderna 100mm"
+      },
+      "optima-60-mm": {
+        "name": "وزرة حائط Optima 60mm"
+      },
+      "optima-90-mm": {
+        "name": "وزرة حائط Optima 90mm"
+      },
+      "solid-80-mm": {
+        "name": "وزرة حائط Solid 80mm"
+      },
+      "x-line-100-mm": {
+        "name": "وزرة حائط X-Line 100mm"
+      }
+    },
+    "cta": {
+      "title": "هل تحتاج إلى وزرات SPC لمشروعك؟",
+      "text": "أرسل لنا الكميات واختيارات الديكور الخاصة بك - وسنقوم بإعداد عرض أسعار لمشروعك.",
+      "button": "طلب عرض أسعار"
+    }
+  },
+  "ProductDetails": {
+    "specThickness": "السماكة",
+    "specDepth": "العمق",
+    "specWearLayer": "طبقة التآكل",
+    "specDimensions": "الأبعاد",
+    "specEdge": "الحافة",
+    "specInstallation": "التركيب",
+    "specUtilityClass": "فئة الاستخدام",
+    "specUsageArea": "مجال الاستخدام",
+    "specMaterial": "المادة",
+    "specEdgeValue": "حافة مشطوفة دقيقة",
+    "specInstallationValue": "التركيب باللصق",
+    "specInstallationValueClick": "نظام التعشيق",
+    "specUsageAreaValue": "الجدران والأرضيات الداخلية",
+    "specMaterialValue": "SPC (مركب الحجر والبوليمر)",
+    "specIxpeUnderlay": "الطبقة السفلية IXPE",
+    "specLockingSystem": "نظام القفل",
+    "specHeight": "الارتفاع",
+    "specLength": "الطول",
+    "specEmbossed": "سطح بارز الملمس",
+    "featureWaterProof": "مقاومة الماء",
+    "featureAntiBacterial": "خصائص مضادة للبكتيريا",
+    "featureQuickInstallation": "تركيب سريع",
+    "featureImpactResistant": "مقاومة الصدمات",
+    "featureSoundAbsorbtion": "امتصاص الصوت",
+    "featurePhthalateFree": "خالٍ من الفثالات",
+    "featureFlexibleEdges": "حواف مرنة",
+    "featureSmartInstallation": "تركيب عملي",
+    "featureMattSurface": "سطح مطفي",
+    "featureCableChannel": "قناة للكابلات",
+    "specInteriorValue": "للاستخدام الداخلي",
+    "specIxpeIncludedValue": "{thickness} مضمّنة",
+    "specEdgeProfileValue": "حافة مشطوفة دقيقة / أخدود V"
+  },
+  "InquiryForm": {
+    "title": "إرسال استفسار",
+    "description": "هل أنت مهتم بلوحة {panelName}؟ املأ النموذج أدناه.",
+    "nameLabel": "الاسم الكامل",
+    "namePlaceholder": "جون دو",
+    "emailLabel": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "you@example.com",
+    "messageLabel": "رسالتك",
+    "messagePlaceholder": "أود أن أعرف المزيد عن الأسعار والتوافر...",
+    "submitButton": "إرسال الاستفسار",
+    "submittingButton": "جارٍ الإرسال...",
+    "successTitle": "تم إرسال الاستفسار!",
+    "successDescription": "شكرا لك، {name}! تم استلام استفسارك حول {panelName}.",
+    "errorTitle": "حدث خطأ ما",
+    "errorMessage": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
+  },
+  "StarterPackDialog": {
+    "title": "اطلب {packName}",
+    "emailAction": "راسلنا عبر البريد الإلكتروني",
+    "whatsappAction": "WhatsApp",
+    "whatsappMessage": "أود أن أطلب {packName}."
+  },
+  "ShowcasePage": {
+    "applicationVideoTitle": "فيديو يوضح التطبيق"
+  },
+  "Chatbox": {
+    "prompt": "الدردشة معنا!"
+  },
+  "Footer": {
+    "tagline": "حلول عالية الجودة لأرضيات SPC وألواح الجدران ووزرات الحائط للتصميمات الداخلية الحديثة.",
+    "productsTitle": "المنتجات",
+    "productFlooring": "أرضيات SPC",
+    "productSkirting": "وزرات حائط SPC",
+    "productWallPanels": "ألواح جدران SPC",
+    "product3dWallPanels": "ألواح جدران SPC ثلاثية الأبعاد",
+    "supportTitle": "الدعم",
+    "supportCatalogue": "تحميل الكتالوج",
+    "supportInstallation": "دليل التركيب",
+    "supportTechnical": "أوراق البيانات الفنية",
+    "supportBlog": "مدونة",
+    "contactTitle": "الاتصال",
+    "address": "Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE",
+    "copyright": "© {year} Kermit Floor. جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة",
+    "phone": "+90 262 658 97 29",
+    "email": "info@kermit.com.tr",
+    "cookieSettings": "إعدادات ملفات تعريف الارتباط"
+  },
+  "PrivacyPolicyPage": {
+    "seo": {
+      "title": "Kermit Floor | سياسة الخصوصية",
+      "description": "تعرف على كيفية قيام Kermit Floor بجمع بياناتك الشخصية واستخدامها وحمايتها."
+    },
+    "title": "سياسة الخصوصية",
+    "lastUpdated": "آخر تحديث: 8 فبراير 2026",
+    "section1": {
+      "title": "1. من نحن (مراقب البيانات)",
+      "content": "<p>تدير شركة Kermit Plastik Sanayi ve Ticaret Anonim Şirketi هذا الموقع الإلكتروني («الموقع») وتُشار إليها باسم «Kermit Floor» أو «نحن».</p><ul><li><strong>متحكم البيانات (KVKK):</strong> Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li><strong>العنوان:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li><strong>التواصل بشأن الخصوصية:</strong> info@kermit.com.tr</li><li><strong>الهاتف:</strong> +90 262 658 97 29</li></ul>"
+    },
+    "section2": {
+      "title": "2. النطاق",
+      "content": "<p>تشرح سياسة الخصوصية هذه كيف نقوم بجمع البيانات الشخصية واستخدامها والكشف عنها وحمايتها عندما:</p><ul><li>زيارة الموقع،</li><li>الاتصال بنا عبر النماذج أو البريد الإلكتروني أو الهاتف أو WhatsApp,</li><li>طلب كتالوجات/مستندات فنية,</li><li>تقديم استفسارات أو طلبات عروض أسعار,</li><li>تقدم بطلب للحصول التوزيع/الشراكة،</li><li>التفاعل مع المحتوى المضمن (على سبيل المثال، Instagram)، و</li><li>الاشتراك في التحديثات (إذا تم عرضها).</li></ul>"
+    },
+    "section3": {
+      "title": "3. البيانات الشخصية التي نجمعها",
+      "content": "<p>اعتمادًا على كيفية استخدامك للموقع، قد نقوم بجمع:</p><h3>A. البيانات التي تقدمها</h3><ul><li><strong>الهوية/جهة الاتصال:</strong> الاسم واللقب والشركة والمسمى الوظيفي والبريد الإلكتروني، هاتف</li><li><strong>محتوى الاستفسار:</strong> الرسائل، اهتمامات المنتج، تفاصيل المشروع، المرفقات</li><li><strong>التفاصيل التجارية (B2B):</strong> عنوان الشركة، رقم ضريبة القيمة المضافة/الضريبة، تفضيلات التسليم (إن وجدت)</li></ul><h3>ب. يتم جمع البيانات تلقائيًا</h3><ul><li><strong>الجهاز والاستخدام:</strong> عنوان IP، نوع المتصفح، الصفحات التي تم عرضها، الموقع التقريبي (المدينة/البلد)، الطوابع الزمنية، الإحالة عناوين URL</li><li><strong>ملفات تعريف الارتباط والتقنيات المشابهة</strong> (راجع القسم 8)</li></ul><h3>C. بيانات من أطراف ثالثة (محدودة)</h3><ul><li>موفرو التحليلات/القياس (إحصائيات الاستخدام المجمعة)</li><li>المنصات الاجتماعية (عندما تتفاعل مع الوسائط المضمنة المحتوى)</li></ul><p><strong>ملاحظة:</strong> نحن لا نجمع عن قصد فئات خاصة من البيانات الشخصية (البيانات الحساسة). يرجى عدم تقديم بيانات حساسة عبر نماذج الموقع.</p>"
+    },
+    "section4": {
+      "title": "4. أغراض المعالجة",
+      "content": "<p>نقوم بمعالجة البيانات الشخصية للأغراض التالية:</p><ol><li>الرد على الاستفسارات وتقديم عروض الأسعار / معلومات المنتج</li><li>إدارة العملاء والعلاقات (الاتصالات B2B والموزعين الإعداد)</li><li>توفير الموارد المطلوبة (الكتالوجات والأوراق الفنية وأدلة التثبيت)</li><li>تشغيل الموقع والأمن ومنع الاحتيال</li><li>تحسين الموقع (الأداء وسهولة الاستخدام، التحليلات)</li><li>الامتثال القانوني (حفظ السجلات، والاستجابة للطلبات القانونية)</li><li>الاتصالات التسويقية (فقط عندما يُسمح/يتم الموافقة عليها؛ راجع القسم 7)</li></ol><p><em> تعد عمليات الكشف عن الغرض هذه جزءًا من التزامات الشفافية بموجب KVKK واللائحة العامة لحماية البيانات.</em></p>"
+    },
+    "section5": {
+      "title": "5. الأسس القانونية (KVKK / GDPR)",
+      "content": "<p>نعتمد على أساس قانوني واحد أو أكثر بحسب السياق:</p><p><strong>بموجب KVKK (القانون رقم 6698):</strong></p><ul><li>تكون المعالجة ضرورية لإنشاء حق أو ممارسته أو حمايته (مثل التعامل مع النزاعات والمطالبات)</li><li>تكون المعالجة ضرورية لتنفيذ عقد أو اتخاذ خطوات قبل التعاقد (مثل إعداد عرض أسعار بناءً على طلبك)</li><li>تكون المعالجة ضرورية للمصالح المشروعة لمتحكم البيانات (مثل ضمان أمن الموقع)، بشرط عدم الإضرار بالحقوق الأساسية</li><li>الموافقة الصريحة عند اشتراطها (مثل ملفات تعريف الارتباط غير الأساسية وبعض الأنشطة التسويقية)</li></ul><p><em>يشترط KVKK الإفصاح عن طريقة جمع البيانات والأساس القانوني.</em></p><p><strong>بموجب GDPR (حيثما ينطبق):</strong></p><ul><li>العقد أو الخطوات السابقة للتعاقد</li><li>المصالح المشروعة</li><li>الموافقة (مثل ملفات تعريف الارتباط غير الأساسية والتسويق المباشر عند اشتراطها)</li><li>الالتزام القانوني</li></ul><p><em>(تستند عناصر الشفافية إلى المادتين 13/14 من GDPR.)</em></p>"
+    },
+    "section6": {
+      "title": "6. مع من نشارك البيانات (المستلمون / التحويلات)",
+      "content": "<p>قد نشارك البيانات الشخصية مع:</p><ul><li>موفري تكنولوجيا المعلومات/الاستضافة (على سبيل المثال، الاستضافة وCDN والبنية التحتية لموقع الويب)</li><li>موفرو التحليلات (فقط كما تم تكوينهم؛ بشكل مثالي مع إخفاء IP والموافقة عند الاقتضاء)</li><li>أدوات الاتصال (مزود خدمة البريد الإلكتروني، إدارة علاقات العملاء، أدوات دعم العملاء)</li><li>المستشارين المحترفين (المحامين والمحاسبين) عند الضرورة</li><li>السلطات / المحاكم حيثما يكون ذلك مطلوبًا قانونيًا</li></ul><p>نحن لا نبيع البيانات الشخصية.</p><p><strong>التحويلات الدولية:</strong> قد تتم معالجة بياناتك في بلدان أخرى غير دولتك اعتمادًا على البائعين لدينا البنية التحتية. عند الاقتضاء، نستخدم الضمانات المناسبة (مثل الحماية التعاقدية والتدابير الأمنية).</p>"
+    },
+    "section7": {
+      "title": "7. الاتصالات التسويقية",
+      "content": "<p>إذا قدمنا نشرات إخبارية أو رسائل ترويجية:</p><ul><li>سنرسلها فقط بموافقتك أو استنادًا إلى أساس قانوني آخر تسمح به القوانين المعمول بها.</li><li>يمكنك إلغاء الاشتراك في أي وقت باستخدام رابط إلغاء الاشتراك أو بمراسلتنا على info@kermit.com.tr</li></ul>"
+    },
+    "section8": {
+      "title": "8. ملفات تعريف الارتباط والتقنيات المماثلة",
+      "content": "<p> نحن نستخدم ملفات تعريف الارتباط والتقنيات المشابهة للحفاظ على عمل الموقع، وبعد الحصول على إذن منك، لقياس الاستخدام وتحسين الأداء.</p><p><strong>التحليلات المبنية على الموافقة:</strong> نحن نستخدم Google Analytics 4 (GA4) فقط بعد قبول ملفات تعريف الارتباط التحليلية بشكل صريح عبر شعار ملفات تعريف الارتباط الخاص بنا. إذا رفضت ملفات تعريف الارتباط التحليلية، فلن يتم تنشيط GA4 لزيارتك.</p><p>يمكنك تغيير اختيارك في أي وقت عن طريق فتح <strong>إعدادات ملفات تعريف الارتباط</strong> من تذييل الصفحة.</p><ul><li><strong>ملفات تعريف الارتباط الأساسية:</strong> مطلوبة للوظائف الأساسية والأمان.</li><li><strong>ملفات تعريف الارتباط التحليلية (GA4):</strong> يتم تمكينه فقط عند منح الموافقة.</li></ul><p><strong>سجل الموافقة:</strong> نقوم بتخزين اختيارك لملفات تعريف الارتباط في ملف تعريف ارتباط للطرف الأول يُسمى <code>kf_consent_v1</code> حتى نتذكر تفضيلاتك.</p>"
+    },
+    "section9": {
+      "title": "9. الاحتفاظ بالبيانات",
+      "content": "<p> نحن نحتفظ بالبيانات الشخصية فقط طالما كان ذلك ضروريًا للأغراض المذكورة أعلاه، ثم نقوم بحذفها أو إخفاء هويتها، ما لم يكن هناك فترة احتفاظ أطول مطلوبة بموجب القانون أو ضرورية لإنشاء/ممارسة الحقوق القانونية (على سبيل المثال، التعامل مع النزاعات). <em>(الإفصاح عن الاحتفاظ هو أحد عناصر شفافية القانون العام لحماية البيانات (GDPR) والممارسات الجيدة بموجب KVKK.)</em></p>"
+    },
+    "section10": {
+      "title": "10. الأمن",
+      "content": "<p> نحن نطبق تدابير فنية وتنظيمية معقولة مصممة لحماية البيانات الشخصية من الوصول غير المصرح به أو الفقدان أو سوء الاستخدام أو التغيير أو الكشف. ومع ذلك، لا يوجد نظام آمن 100%.</p>"
+    },
+    "section11": {
+      "title": "11. حقوقك (KVKK Art. 11 / حقوق القانون العام لحماية البيانات حيثما ينطبق ذلك)",
+      "content": "<p>بموجب KVKK، لديك حقوق تشمل (الملخص): لمعرفة ما إذا كانت بياناتك تتم معالجتها، وطلب المعلومات، ومعرفة الغرض وما إذا كان يتم استخدامها وفقًا لذلك، ومعرفة الأطراف الثالثة التي يتم نقل البيانات إليها، وطلب التصحيح/الحذف عند استيفاء الشروط، والاعتراض على نتائج معينة.</p><p>بموجب اللائحة العامة لحماية البيانات (إن أمكن) قد يكون لديك حقوق مثل الوصول، التصحيح والمحو والتقييد والنقل والاعتراض والحق في سحب الموافقة.</p>"
+    },
+    "section12": {
+      "title": "12. كيفية ممارسة حقوقك",
+      "content": "<p>لتقديم طلب، تواصل معنا عبر:</p><ul><li><strong>البريد الإلكتروني:</strong> info@kermit.com.tr</li><li><strong>العنوان البريدي:</strong> Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li></ul><p>أدرج معلومات كافية للتحقق من هويتك وصف طلبك بوضوح.</p><p>قد نطلب معلومات إضافية لتأكيد الهوية ومعالجة طلبك وفقًا للقوانين المعمول بها.</p>"
+    },
+    "section13": {
+      "title": "13. خصوصية الأطفال",
+      "content": "<p>الموقع غير موجه للأطفال. نحن لا نجمع البيانات الشخصية من الأطفال عن قصد.</p>"
+    },
+    "section14": {
+      "title": "14. التغييرات على سياسة الخصوصية هذه",
+      "content": "<p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. وسيتغير تاريخ \"آخر تحديث\" وفقًا لذلك. سيتم نشر التغييرات المادية على الموقع.</p>"
+    }
+  },
+  "TermsOfServicePage": {
+    "seo": {
+      "title": "Kermit Floor | شروط الخدمة",
+      "description": "اقرأ شروط الخدمة لاستخدام موقع Kermit Floor."
+    },
+    "title": "شروط استخدام الموقع",
+    "lastUpdated": "آخر تحديث: 25 يناير 2026",
+    "section1": {
+      "title": "1. الأطراف والنطاق",
+      "content": "<p> تحكم شروط استخدام موقع الويب هذه (\"الشروط\") الوصول إلى واستخدام www.kermitfloor.com (\"الموقع الإلكتروني\")، الذي تديره Kermit Plastik Sanayi ve Ticaret Anonim Şirketi (\"Kermit Floor\"، \"الشركة\").</p><p> الموقع عبارة عن منصة إعلامية توفر معلومات عن المنتج والكتالوجات/المستندات الفنية وقنوات الاتصال/طلب عرض الأسعار. لا يوفر الموقع إمكانية الدفع عبر الإنترنت أو الشراء عبر التجارة الإلكترونية.</p>"
+    },
+    "section2": {
+      "title": "2. القبول",
+      "content": "<p>بدخولك إلى الموقع أو استخدامه، فإنك توافق على هذه الشروط. إذا كنت لا توافق، فلا تستخدم الموقع.</p>"
+    },
+    "section3": {
+      "title": "3. التعاريف",
+      "content": "<ul><li><strong>المحتوى:</strong> جميع النصوص والصور ومقاطع الفيديو والكتالوجات والمستندات الفنية والرسومات والعلامات التجارية/الشعارات والتصميمات والبرامج الموجودة على الموقع الموقع الإلكتروني.</li><li><strong>المستخدم:</strong> أي شخص يدخل إلى الموقع أو يقدم استفسار.</li></ul>"
+    },
+    "section4": {
+      "title": "4. محتوى إعلامي – لا يوجد عرض ملزم",
+      "content": "<p>جميع معلومات المنتج والمواصفات والمرئيات والمستندات مقدمة للحصول على معلومات عامة فقط ولا تشكل عرضًا ملزمًا. يتم تأكيد الأسعار والمهل الزمنية والتوافر والمواصفات النهائية فقط من خلال عرض الأسعار / التأكيد المكتوب من الشركة.</p>"
+    },
+    "section5": {
+      "title": "5. الوثائق الفنية ومسؤولية التطبيق",
+      "content": "<p>الأوراق الفنية وإرشادات التثبيت هي مراجع عامة. قد تختلف ظروف المشروع وتؤثر على النتائج. يجب تقييم قرارات التقديم والملاءمة في الموقع من قبل متخصصين مؤهلين.</p>"
+    },
+    "section6": {
+      "title": "6. الملكية الفكرية",
+      "content": "<p>ما لم يُنص صراحة على خلاف ذلك، كل المحتوى مملوك أو مرخص لـ Kermit Floor. يمكنك عرض/تنزيل الكتالوجات والمستندات فقط لأغراض التقييم الداخلي ومناقشات عروض الأسعار. يحظر أي إعادة إنتاج أو إعادة توزيع أو استخدام تجاري أو استخدام غير مصرح به للعلامات التجارية/الشعارات دون موافقة كتابية مسبقة.</p>"
+    },
+    "section7": {
+      "title": "7. عمليات الإرسال (النماذج، الرسائل، الملفات)",
+      "content": "<p>إذا قمت بإرسال استفسارات أو رسائل أو ملفات، فأنت تؤكد أن لديك الحق في مشاركتها. ويجوز للشركة استخدامها فقط لتقييم طلبك والرد عليه. لا يتم إنشاء أي التزام بالسرية ما لم يتم الاتفاق بشكل منفصل كتابيًا (على سبيل المثال، NDA).</p>"
+    },
+    "section8": {
+      "title": "8. الاستخدام المحظور",
+      "content": "<p>أنت توافق على عدم القيام بما يلي:</p><ul><li>التدخل في الأمان/التشغيل، أو إدخال برامج ضارة، أو محاولة الوصول غير المصرح به،</li><li>كشط البيانات أو تنزيلها بكميات كبيرة أو جمعها عبر الآلي يعني،</li><li>نسخ/توزيع المحتوى دون إذن،</li><li>استخدام موقع الويب بشكل غير قانوني أو انتهاك حقوق الطرف الثالث.</li></ul>"
+    },
+    "section9": {
+      "title": "9. روابط الطرف الثالث/المحتوى المضمن",
+      "content": "<p> قد يحتوي موقع الويب على روابط أو محتوى مضمن لأطراف ثالثة. الشركة ليست مسؤولة عن محتوى أو ممارسات الطرف الثالث.</p>"
+    },
+    "section10": {
+      "title": "10. التوفر والتغييرات",
+      "content": "<p>يجوز للشركة تعديل الموقع في أي وقت ويجوز لها تعليق الوصول مؤقتًا لأسباب الصيانة أو التشغيل.</p>"
+    },
+    "section11": {
+      "title": "11. حدود المسؤولية",
+      "content": "<p>إلى الحد الأقصى الذي يسمح به القانون، يتم توفير الموقع \"كما هو\". الشركة ليست مسؤولة عن الأضرار غير المباشرة أو التبعية أو خسارة الأرباح أو فقدان البيانات الناشئة عن استخدام (أو عدم القدرة على استخدام) الموقع.</p>"
+    },
+    "section12": {
+      "title": "12. الخصوصية",
+      "content": "<p>تخضع معالجة البيانات الشخصية لسياسة الخصوصية / إشعار KVKK. يجب أن يتضمن إشعار KVKK عناصر الشفافية الأساسية (هوية المتحكم، الأغراض، التحويلات، طريقة التجميع/الأساس القانوني، الحقوق).</p>"
+    },
+    "section13": {
+      "title": "13. القانون الحاكم والاختصاص القضائي",
+      "content": "<p> تخضع هذه الشروط لقوانين الجمهورية التركية. تتمتع المحاكم ومكاتب التنفيذ في تشايروفا بالاختصاص القضائي.</p>"
+    },
+    "section14": {
+      "title": "14. الاتصال",
+      "content": "<ul><li>Kermit Plastik Sanayi ve Ticaret Anonim Şirketi</li><li>Cumhuriyet Mh. Cihan Sk. No:4 ÇAYIROVA / KOCAELİ - TÜRKİYE</li><li>info@kermit.com.tr</li></ul>"
+    }
+  },
+  "ConsentBanner": {
+    "title": "خيارات الخصوصية الخاصة بك",
+    "description": "نحن نستخدم ملفات تعريف الارتباط التحليلية (Google Analytics 4) لفهم استخدام الموقع وتحسين الأداء. يمكنك قبول أو رفض ملفات تعريف الارتباط التحليلية.",
+    "accept": "قبول التحليلات",
+    "reject": "رفض التحليلات",
+    "manage": "إدارة التفضيلات",
+    "privacyLink": "سياسة الخصوصية",
+    "preferencesTitle": "تفضيلات ملفات تعريف الارتباط",
+    "preferencesDescription": "قم بإدارة اختيارك لملفات تعريف الارتباط التحليلية أدناه. تظل ملفات تعريف الارتباط الأساسية نشطة لوظائف الموقع الأساسية.",
+    "analyticsTitle": "ملفات تعريف الارتباط التحليلية (Google Analytics 4)",
+    "analyticsDescription": "يستخدم لقياس الاستخدام وتحسين أداء الموقع. تم تمكينه فقط بموافقتك.",
+    "statusAccepted": "الوضع الحالي: تم تمكين التحليلات",
+    "statusRejected": "الوضع الحالي: التحليلات معطلة",
+    "statusUnset": "الوضع الحالي: لم يتم حفظ أي خيار حتى الآن"
+  },
+  "SpcFlooringEleganceCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | مجموعة أرضيات SPC Elegance",
+      "description": "اكتشف مجموعة Elegance السريعة مع ديكورات الأرضيات SPC الراقية للديكورات الداخلية الحديثة."
+    }
+  },
+  "SpcFlooringSkyCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | مجموعة أرضيات SPC Sky",
+      "description": "استكشف مجموعة Sky السريعة التي تحتوي على ديكورات أرضيات SPC متعددة الاستخدامات للمشاريع السكنية والتجارية."
+    }
+  },
+  "SpcFlooringMosaicCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | مجموعة أرضيات SPC Mosaic",
+      "description": "تصفح مجموعة Mosaic السريعة مع تصميمات الأرضيات SPC المزخرفة والمرئيات المستوحاة من الحجر."
+    }
+  },
+  "SpcFlooringEliteCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | مجموعة أرضيات SPC Elite",
+      "description": "شاهد مجموعة Elite السريعة مع ألوان الأرضيات SPC المتميزة المصممة للمشاريع الداخلية عالية الطلب."
+    }
+  },
+  "SpcFlooringTravertineCollectionPage": {
+    "seo": {
+      "title": "Kermit Floor | مجموعة أرضيات SPC Travertine",
+      "description": "شاهد مجموعة Travertine السريعة مع خيارات الأرضيات SPC المستوحاة من الحجر الجيري للتصميمات الداخلية الأنيقة."
+    }
+  },
+  "SpcFlooringEleganceCollectionPanelNames": {
+    "P-301": "Parchment Oak",
+    "P-302": "Rustic Beige Oak",
+    "P-304": "Oatmeal Oak",
+    "P-305": "Wheatfield Oak",
+    "P-306": "Flaxen Oak",
+    "P-307": "Natural Linen Oak",
+    "P-308": "Toasted Honey Oak",
+    "P-309": "Tobacco Oak",
+    "P-310": "Burnished Oak",
+    "P-311": "Pewter Oak"
+  },
+  "SpcFlooringSkyCollectionPanelNames": {
+    "P-101": "Pale Blonde Oak",
+    "P-102": "Honey Straw Oak",
+    "P-103": "Oyster Beige Oak",
+    "P-104": "Warm Linen Oak",
+    "P-105": "Amber Wheat Oak",
+    "P-106": "Heritage Taupe Oak",
+    "P-107": "Nutmeg Oak",
+    "P-108": "Golden Malt Oak",
+    "P-109": "Sienna Oak",
+    "P-110": "Smoked Ember Oak",
+    "P-111": "Mineral Greige Oak",
+    "P-112": "Silver Taupe Oak"
+  },
+  "SpcFlooringMosaicCollectionPanelNames": {
+    "P-501": "Mosaic Greige",
+    "P-502": "Mosaic Taupe",
+    "P-503": "Mosaic Graphite",
+    "P-504": "Mosaic Pearl",
+    "P-505": "Mosaic Ivory",
+    "P-506": "Mosaic Beige",
+    "P-507": "Mosaic Silver"
+  },
+  "SpcFlooringEliteCollectionPanelNames": {
+    "P-201": "Bleached Oak",
+    "P-202": "Arctic Oak",
+    "P-203": "Sunlit Oak",
+    "P-204": "Light Natural Oak",
+    "P-205": "Buttermilk Oak",
+    "P-206": "Ivory Mist Oak",
+    "P-207": "Natural Beige Oak",
+    "P-208": "Sand Dune Oak",
+    "P-209": "Light Grey Oak",
+    "P-210": "Canyon Oak",
+    "P-211": "Cognac Oak",
+    "P-212": "Rustic Greige Oak",
+    "P-213": "Light Beige Oak",
+    "P-214": "Dove Grey Oak",
+    "P-215": "Sahara Oak",
+    "P-216": "Harvest Oak",
+    "P-217": "Silver Mist Oak",
+    "P-218": "Chestnut Oak",
+    "P-219": "Ash Grey Oak (Dark)",
+    "P-220": "Dark Walnut Oak"
+  },
+  "SpcFlooringTravertineCollectionPanelNames": {
+    "P-401": "Travertine Brown",
+    "P-402": "Travertine Dark Gray",
+    "P-403": "Travertine Turkish Gold",
+    "P-404": "Travertine Light Beige",
+    "P-405": "Travertine Turkish"
+  },
+  "ManufacturerGuides": {
+    "title": "أدلة للموزعين والمشترين من العلامات التجارية الخاصة",
+    "description": "قارن بين الموردين، وقم بإعداد طلب عينة وحدد طلبك الأول OEM باستخدام أدلة الشراء العملية هذه.",
+    "read": "اقرأ الدليل"
+  },
+  "Common": {
+    "close": "إغلاق",
+    "openMenu": "فتح القائمة",
+    "mobileMenu": "قائمة التنقل للجوال",
+    "changeLanguage": "تغيير اللغة، اللغة الحالية: {language}",
+    "previousSlide": "الشريحة السابقة",
+    "nextSlide": "الشريحة التالية",
+    "carousel": "عارض الصور",
+    "slide": "شريحة",
+    "logoAlt": "شعار Kermit Floor",
+    "wallTextureAlt": "خلفية نسيج لوحة الحائط",
+    "productColourAlt": "عينة اللون: {name}",
+    "productEnlargedAlt": "عرض مكبّر للمنتج: {name}",
+    "applicationAlt": "تطبيق داخلي: {name}",
+    "applicationEnlargedAlt": "عرض مكبّر للتطبيق الداخلي: {name}",
+    "noProducts": "لا يوجد حاليا أي منتجات في هذه المجموعة.",
+    "viewInstagram": "عرض على Instagram",
+    "homeHeroAlt": "مطبخ حديث مع ألواح حائط أنيقة SPC",
+    "factoryLocation": "موقع مصنع Kermit Floor"
+  },
+  "Blog": {
+    "seoTitle": "Kermit Floor الأدلة | SPC الأرضيات وألواح الجدران والحواف",
+    "seoDescription": "ابحث عن Kermit أدلة اختيار المنتج والكميات والتركيب والرعاية والشراء بالجملة، مع مسرد للأرضيات والمستندات الفنية.",
+    "title": "أدلة Kermit",
+    "subtitle": "خطط لاختيار منتجك وتركيبه وطلبه، بقرار واحد في كل مرة.",
+    "heroImageAlt": "الرسم التوضيحي لتخطيط المشروع مع الرسومات والآلة الحاسبة",
+    "emptyTitle": "لا توجد مقالات منشورة بعد.",
+    "emptyDescription": "ستظهر المقالات هنا فور نشرها.",
+    "tagsTitle": "جميع علامات الموضوع",
+    "allPosts": "جميع المقالات",
+    "viewAllPosts": "عرض جميع المقالات",
+    "notFoundTitle": "لم يُعثر على المقال",
+    "notFoundDescription": "تعذر العثور على مقال المدونة المطلوب.",
+    "tagSeoTitle": "موضوع المدونة: {tag}",
+    "tagSeoDescription": "تصفح مقالات المدونة المتعلقة بموضوع {tag}.",
+    "tagTitle": "الموضوع: {tag}",
+    "tagSubtitle": "مقالات متعلقة بهذا الموضوع",
+    "tagEmptyTitle": "لا توجد مقالات عن هذا الموضوع.",
+    "tagEmptyDescription": "اختر موضوعًا آخر.",
+    "allTags": "جميع المواضيع",
+    "videoFallback": "متصفحك لا يدعم تشغيل هذا الفيديو.",
+    "flexibleEdges": "حواف مرنة",
+    "browseTitle": "ابدأ بقرارك التالي",
+    "allTitle": "جميع المقالات",
+    "allDescription": "الأحدث أولاً، حسب تاريخ النشر الأصلي.",
+    "glossary": "معجم الأرضيات",
+    "resources": "الوثائق والأدلة التقنية",
+    "sections": {
+      "buying": {
+        "title": "الشراء من Kermit",
+        "description": "اختر موردًا، وقم بإعداد العينات وعروض الأسعار، وخطط لطلب الجملة الأول."
+      },
+      "choosing": {
+        "title": "اختيار الأرضيات",
+        "description": "فهم المواد، ومقارنة الاستخدامات المناسبة ومعرفة ما يجب التحقق منه في العينة."
+      },
+      "installation": {
+        "title": "التركيب والعناية",
+        "description": "احسب الكميات، وجهّز الأرضية السفلية، وخطّط لفواصل الحركة والتدفئة والتنظيف والإصلاحات."
+      },
+      "specification": {
+        "title": "المواصفات وتكاليف المشروع",
+        "description": "راجع المستندات الفنية، وحدّد جدول مواصفات التشطيبات الكامل، وقارن ميزانية المشروع."
+      },
+      "walls-skirting": {
+        "title": "الوزرات وألواح الجدران",
+        "description": "خطّط لتشطيبات محيط الغرفة والجدران باتباع التعليمات الخاصة بكل مجموعة من المنتجات."
+      }
+    }
+  },
+  "Glossary": {
+    "title": "معجم أرضيات SPC والوزرات وألواح الجدران",
+    "description": "تعرّف على طبقات الأرضيات ومصطلحات التركيب والكميات ومستندات المنتجات، مع تعريفات مرتبطة بأدلة Kermit العملية.",
+    "intro": "استخدم هذه المصطلحات لقراءة المواصفات أو مقارنة عروض الأسعار أو التخطيط للتركيب. طبّق الحدود الرقمية على منتج Kermit المحدد واتبع تعليماته الحالية.",
+    "jump": "انتقل إلى موضوع ما",
+    "guide": "اقرأ الدليل",
+    "guides": "استكشاف جميع الأدلة",
+    "resources": "الوثائق الفنية"
+  }
+}

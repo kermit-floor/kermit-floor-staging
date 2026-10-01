@@ -6,11 +6,13 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import type { InstagramPost } from '@/lib/instagram-data';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
+import type {AppLocale} from '@/i18n/locales';
 
 export default function InstagramPostCard({ post }: { post: InstagramPost }) {
-  const locale = useLocale();
-  const caption = locale === 'tr' ? post.caption_tr : post.caption_en;
+  const locale = useLocale() as AppLocale;
+  const t = useTranslations('Common');
+  const caption = post[`caption_${locale}`];
 
   return (
     <Card className="w-full max-w-sm mx-auto overflow-hidden shadow-lg border">
@@ -19,7 +21,7 @@ export default function InstagramPostCard({ post }: { post: InstagramPost }) {
           <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-primary/50 flex items-center justify-center bg-white">
              <Image
                 src="/images/kermit-floor-logo.png"
-                alt="Kermit Floor Logo"
+                alt={t('logoAlt')}
                 width={28}
                 height={28}
                 className="object-contain"
@@ -27,7 +29,7 @@ export default function InstagramPostCard({ post }: { post: InstagramPost }) {
           </div>
           <span className="font-semibold text-sm">kermitfloor</span>
         </div>
-        <a href={post.postUrl} target="_blank" rel="noopener noreferrer" aria-label="View on Instagram">
+        <a href={post.postUrl} target="_blank" rel="noopener noreferrer" aria-label={t('viewInstagram')}>
           <Instagram className="h-6 w-6 text-muted-foreground" />
         </a>
       </CardHeader>
@@ -54,7 +56,7 @@ export default function InstagramPostCard({ post }: { post: InstagramPost }) {
             <Bookmark className="h-6 w-6 text-muted-foreground cursor-pointer hover:text-foreground transition-colors" />
         </div>
         <p className="text-sm whitespace-pre-line">
-            <a href={post.postUrl} target="_blank" rel="noopener noreferrer" className="font-semibold mr-1">kermitfloor</a>
+            <a href={post.postUrl} target="_blank" rel="noopener noreferrer" className="font-semibold me-1">kermitfloor</a>
             {caption}
         </p>
       </CardContent>
@@ -62,7 +64,7 @@ export default function InstagramPostCard({ post }: { post: InstagramPost }) {
       <CardFooter className="p-3 border-t bg-muted/50">
         <Button variant="link" asChild className="p-0 h-auto text-sm text-secondary hover:text-primary">
             <a href={post.postUrl} target="_blank" rel="noopener noreferrer">
-                View on Instagram &rarr;
+                {t('viewInstagram')} <span aria-hidden="true">&rarr;</span>
             </a>
         </Button>
       </CardFooter>

@@ -3,7 +3,9 @@ import '../globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {NextIntlClientProvider} from 'next-intl';
-import { inter, montserrat } from '@/app/fonts';
+import { inter, montserrat, notoSansArabic } from '@/app/fonts';
+import {locales, isAppLocale, getLocaleDirection} from '@/i18n/locales';
+import {notFound} from 'next/navigation';
 import {ConsentProvider} from '@/components/consent/ConsentProvider';
 import {SiteJsonLd} from '@/components/seo/SiteJsonLd';
 
@@ -35,7 +37,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'tr' }];
+  return locales.map((locale) => ({locale}));
 }
 
 export default async function RootLayout({
@@ -46,12 +48,13 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+  if (!isAppLocale(locale)) notFound();
   setRequestLocale(locale);
   const messages = await getMessages({ locale });
   const gaId = (process.env.NEXT_PUBLIC_GA_ID ?? DEFAULT_GA_ID).trim();
   const consentModeEnabled = process.env.NEXT_PUBLIC_CONSENT_MODE_ENABLED !== 'false';
   return (
-    <html lang={locale} className={`${inter.variable} ${montserrat.variable} scroll-smooth`}>
+    <html lang={locale} dir={getLocaleDirection(locale)} className={`${inter.variable} ${montserrat.variable} ${notoSansArabic.variable} scroll-smooth`}>
       <head>
       </head>
       <body className="font-body antialiased">

@@ -6,7 +6,10 @@
       "name": "Yasin Bayram",
       "subtitle": {
         "en": "Construction Expert with 30 years of experience",
-        "tr": "İnşaat Eksperi: 30 yıllık deneyim"
+        "tr": "İnşaat Eksperi: 30 yıllık deneyim",
+        "bg": "Експерт по строителство с 30 години опит",
+        "sr": "Стручњак за грађевинарство са 30 година искуства",
+        "ar": "خبير بناء يتمتع بخبرة 30 سنة"
       },
       "photoPath": "/images/authors/yasinbayram.jpeg",
       "isDefault": true
@@ -18,7 +21,10 @@
       "schemaType": "Person",
       "jobTitle": {
         "en": "Manufacturing Efficiency Expert",
-        "tr": "Üretim Verimliliği Uzmanı"
+        "tr": "Üretim Verimliliği Uzmanı",
+        "bg": "Експерт по ефективност на производството",
+        "sr": "Стручњак за ефикасност производње",
+        "ar": "خبير كفاءة التصنيع"
       },
       "isDefault": false
     }

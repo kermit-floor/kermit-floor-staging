@@ -190,7 +190,10 @@
       "localizedPdf": "PDF İndir · Türkçe",
       "roPdf": "PDF İndir · Romence",
       "enPdf": "PDF İndir · İngilizce",
-      "trPdf": "PDF İndir · Türkçe"
+      "trPdf": "PDF İndir · Türkçe",
+      "bgPdf": "Bulgarca PDF",
+      "srPdf": "Sırpça PDF",
+      "arPdf": "Arapça PDF"
     },
     "documents": {
       "title": "Projeniz için belge talep edin",
@@ -216,7 +219,9 @@
       "en": "İngilizce",
       "tr": "Türkçe",
       "ro": "Romence",
-      "sr": "Sırpça"
+      "sr": "Sırpça",
+      "bg": "Bulgarca",
+      "ar": "Arapça"
     }
   },
   "AboutPage": {
@@ -846,7 +851,10 @@
     "featureFlexibleEdges": "Esnek Kenarlar",
     "featureSmartInstallation": "Akıllı Montaj",
     "featureMattSurface": "Mat Yüzey",
-    "featureCableChannel": "Kablo Kanalı"
+    "featureCableChannel": "Kablo Kanalı",
+    "specInteriorValue": "İç Mekan",
+    "specIxpeIncludedValue": "{thickness} dahil",
+    "specEdgeProfileValue": "Mikro pah / V oluk"
   },
   "InquiryForm": {
     "title": "Bilgi Talebi Gönder",
@@ -1138,5 +1146,84 @@
     "title": "Distribütörler ve özel marka alıcıları için rehberler",
     "description": "Tedarikçileri karşılaştırın, numune talebinizi hazırlayın ve ilk OEM siparişinizin kapsamını bu satın alma rehberleriyle belirleyin.",
     "read": "Rehberi okuyun"
+  },
+  "Common": {
+    "close": "Kapat",
+    "openMenu": "Menüyü aç",
+    "mobileMenu": "Mobil gezinme menüsü",
+    "changeLanguage": "Dili değiştir, geçerli dil: {language}",
+    "previousSlide": "Önceki slayt",
+    "nextSlide": "Sonraki slayt",
+    "carousel": "Görsel kaydırıcı",
+    "slide": "Slayt",
+    "logoAlt": "Kermit Floor logosu",
+    "wallTextureAlt": "Duvar paneli doku arka planı",
+    "productColourAlt": "Renk numunesi: {name}",
+    "productEnlargedAlt": "Büyütülmüş ürün görünümü: {name}",
+    "applicationAlt": "İç mekân uygulaması: {name}",
+    "applicationEnlargedAlt": "Büyütülmüş iç mekân uygulaması: {name}",
+    "noProducts": "Bu koleksiyonda şu anda ürün bulunmuyor.",
+    "viewInstagram": "Instagram'da görüntüle",
+    "homeHeroAlt": "Şık SPC duvar panelleri bulunan modern mutfak",
+    "factoryLocation": "Kermit Floor fabrika konumu"
+  },
+  "Blog": {
+    "seoTitle": "Kermit Floor Rehberleri | SPC Parke, Duvar Paneli ve Süpürgelik",
+    "seoDescription": "Ürün seçimi, metraj, montaj, bakım ve toptan tedarik için Kermit rehberlerini konuya göre keşfedin; sözlüğe ve teknik belgelere ulaşın.",
+    "title": "Kermit rehberleri",
+    "subtitle": "Ürün seçimini, uygulamayı ve siparişi adım adım planlayın.",
+    "heroImageAlt": "Çizimler ve hesap makinesiyle proje planlama görseli",
+    "emptyTitle": "Yayında blog yazısı bulunmuyor.",
+    "emptyDescription": "İlk yayınlar hazırlandığında bu alanda listelenecek.",
+    "tagsTitle": "Tüm konu etiketleri",
+    "allPosts": "Tüm yazılar",
+    "viewAllPosts": "Tüm yazıları gör",
+    "notFoundTitle": "Yazı bulunamadı",
+    "notFoundDescription": "İstenen blog yazısı bulunamadı.",
+    "tagSeoTitle": "Blog etiketi: {tag}",
+    "tagSeoDescription": "{tag} etiketi altındaki blog içeriklerini keşfedin.",
+    "tagTitle": "Etiket: {tag}",
+    "tagSubtitle": "Bu konu etiketine ait yazılar",
+    "tagEmptyTitle": "Bu etikette yazı bulunamadı.",
+    "tagEmptyDescription": "Farklı bir etiketi deneyin.",
+    "allTags": "Tüm etiketler",
+    "videoFallback": "Tarayıcınız video etiketini desteklemiyor.",
+    "flexibleEdges": "ESNEK KENARLAR",
+    "browseTitle": "İhtiyacınıza göre başlayın",
+    "allTitle": "Tüm yazılar",
+    "allDescription": "İlk yayın tarihine göre, en yeniden eskiye.",
+    "glossary": "Terimler sözlüğü",
+    "resources": "Teknik belgeler ve kılavuzlar",
+    "sections": {
+      "buying": {
+        "title": "Kermit'ten tedarik",
+        "description": "Üretici seçimini, numuneyi, teklifi ve ilk toptan siparişi planlayın."
+      },
+      "choosing": {
+        "title": "Zemin seçimi",
+        "description": "Malzemeleri ve kullanım alanlarını karşılaştırın; numunede neye bakacağınızı belirleyin."
+      },
+      "installation": {
+        "title": "Montaj ve bakım",
+        "description": "Metrajı hesaplayın; alt zemini, hareketi, ısıtmayı, temizliği ve onarımı planlayın."
+      },
+      "specification": {
+        "title": "Teknik özellikler ve proje bütçesi",
+        "description": "Belgeleri okuyun, kaplama çizelgesini oluşturun ve toplam proje maliyetini karşılaştırın."
+      },
+      "walls-skirting": {
+        "title": "Süpürgelik ve duvar panelleri",
+        "description": "Kenar ve duvar kaplamalarını kendi ürün ailelerinin koşullarıyla değerlendirin."
+      }
+    }
+  },
+  "Glossary": {
+    "title": "SPC parke, süpürgelik ve duvar paneli sözlüğü",
+    "description": "Zemin katmanlarını, montaj terimlerini, metrajı ve ürün belgelerini Kermit uygulama rehberlerine bağlanan tanımlarla öğrenin.",
+    "intro": "Şartnameyi okurken, teklifleri karşılaştırırken veya montajı planlarken bu terimleri kullanın. Sayısal sınırları ilgili Kermit ürününe uygulayın ve güncel talimatını izleyin.",
+    "jump": "Konuya geçin",
+    "guide": "Rehberi okuyun",
+    "guides": "Tüm rehberleri keşfedin",
+    "resources": "Teknik belgeler"
   }
 }

@@ -1,5 +1,6 @@
 import type {MetadataRoute} from 'next';
 import {pathnames} from '@/navigation';
+import {locales} from '@/i18n/locales';
 import {
   getPublishedBlogPostPairs,
   getPublishedBlogTagSlugs,
@@ -24,21 +25,16 @@ function buildStaticRouteEntries(): MetadataRoute.Sitemap {
       continue;
     }
 
-    const localized = route as {en: string; tr: string};
-    const enUrl = toAbsoluteUrl('en', localized.en);
-    const trUrl = toAbsoluteUrl('tr', localized.tr);
+    const languages = Object.fromEntries(locales.map((locale) => [locale, toAbsoluteUrl(locale, route[locale])]));
 
     const lastModified = new Date();
 
-    for (const url of [enUrl, trUrl]) {
+    for (const url of Object.values(languages)) {
       entries.push({
         url,
         lastModified,
         alternates: {
-          languages: {
-            en: enUrl,
-            tr: trUrl,
-          },
+          languages,
         },
       });
     }
@@ -48,42 +44,31 @@ function buildStaticRouteEntries(): MetadataRoute.Sitemap {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [pairs, enTags, trTags] = await Promise.all([
+  const [pairs, tagsByLocale] = await Promise.all([
     getPublishedBlogPostPairs(),
-    getPublishedBlogTagSlugs('en'),
-    getPublishedBlogTagSlugs('tr'),
+    Promise.all(locales.map(async (locale) => ({locale, tags: await getPublishedBlogTagSlugs(locale)}))),
   ]);
 
   const staticEntries = buildStaticRouteEntries();
   const postEntries: MetadataRoute.Sitemap = pairs.flatMap((pair) => {
-    const enUrl = toAbsoluteUrl('en', getBlogPostPath(pair.en.slug));
-    const trUrl = toAbsoluteUrl('tr', getBlogPostPath(pair.tr.slug));
-    const lastModified = pair.en.updatedAtDate > pair.tr.updatedAtDate
-      ? pair.en.updatedAtDate
-      : pair.tr.updatedAtDate;
+    const languages = Object.fromEntries(locales.map((locale) => [locale, toAbsoluteUrl(locale, getBlogPostPath(pair[locale].slug))]));
+    const lastModified = new Date(Math.max(...locales.map((locale) => pair[locale].updatedAtDate.getTime())));
 
-    return [enUrl, trUrl].map((url) => ({
+    return Object.values(languages).map((url) => ({
       url,
       lastModified,
       alternates: {
-        languages: {
-          en: enUrl,
-          tr: trUrl,
-        },
+        languages,
       },
     }));
   });
 
-  const tagEntries: MetadataRoute.Sitemap = [
-    ...enTags.map((tag) => ({
-      url: toAbsoluteUrl('en', getBlogTagPath(tag)),
+  const tagEntries: MetadataRoute.Sitemap = tagsByLocale.flatMap(({locale, tags}) =>
+    tags.map((tag) => ({
+      url: toAbsoluteUrl(locale, getBlogTagPath(tag)),
       lastModified: new Date(),
     })),
-    ...trTags.map((tag) => ({
-      url: toAbsoluteUrl('tr', getBlogTagPath(tag)),
-      lastModified: new Date(),
-    })),
-  ];
+  );
 
   return [...staticEntries, ...postEntries, ...tagEntries];
 }

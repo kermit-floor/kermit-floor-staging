@@ -25,9 +25,9 @@ export function toLocalePath(locale: BlogLocale, pathname: string): string {
     return normalizedPath;
   }
   if (normalizedPath === '/') {
-    return '/tr';
+    return `/${locale}`;
   }
-  return `/tr${normalizedPath}`;
+  return `/${locale}${normalizedPath}`;
 }
 
 export function toAbsoluteUrl(locale: BlogLocale, pathname: string): string {
