@@ -28,5 +28,8 @@
   },
   "worker_dry_run_gzip_KiB": 2527,
   "translation_note": "Machine-assisted with manual terminology and UI refinements; not reviewed by native speakers. PDFs, names/codes and specifications are preserved.",
-  "network_note": "Browser checks block third-party traffic; no contact forms submitted. R2 PDFs are verified after Cloudflare deployment."
+  "network_note": "Browser checks block third-party traffic; no contact forms submitted. R2 PDFs are verified after Cloudflare deployment.",
+  "all_sitemap_http_page_checks": 567,
+  "local_pdf_headers_passed": 25,
+  "r2_pdf_headers_deferred_to_production": 2
 }

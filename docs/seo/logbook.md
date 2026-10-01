@@ -95,6 +95,8 @@ Review cadence (batch of 2026-08-14/16):
 - **2026-10-01 language expansion** — Bulgarian, Serbian and Arabic extend navigation,
   article/glossary discovery and hreflang. October 15/29 checks and November 12 combined
   outcomes; preserve original cohorts, historical verdicts and disjoint operational dates.
+  Published at **11:10:21 UTC**; all 567 pages, 27 PDFs and ten production browser checks pass.
+  First full combined post-release GSC/GA4 day: **October 2**.
 
 Parallel changes: new work may ship while experiments are PENDING, but only after the
 interference check in `docs/seo/README.md` (Change interference): disjoint scope ships
@@ -120,7 +122,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
 
 ## Open experiments
 
-### [2026-10-01] Bulgarian, Serbian and Arabic site translations — commit pending
+### [2026-10-01] Bulgarian, Serbian and Arabic site translations — commit 9fb9c29
 - **Change**: add Bulgarian, Serbian (Cyrillic) and Arabic across the current site, including
   all 28 topics, 33 glossary terms, legal/contact pages, resources and product-spec labels.
   Arabic has RTL layout and typography. Existing EN/TR routes/copy, original PDF files,
@@ -148,14 +150,27 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   dictionaries, 883 message keys, 19 resources, 84 translated articles and all 33 glossary
   terms. Candidate sitemap **567 unique URLs**, all 228 old URLs retained; 339 additions.
   Worker packaging dry-run passes (gzip 2527 KiB).
-- **Publication**: authorized commit/push pending; production verification and actual deployment
-  boundary will be recorded after Cloudflare publication.
+- **Publication / production verification**: owner-approved code `9fb9c29` pushed to main.
+  GitHub blog checks and Cloudflare Build **7ca4e090-2c6e-40ca-9b08-45af2c628d9b** succeeded.
+  Worker version **7d6798cd-4b9b-45ef-a1c9-e181c7b2a673** deployed to 100% at
+  **2026-10-01T11:10:21.907652Z**. All **567 live URLs** pass HTTP 200, locale/direction,
+  self-canonical and applicable hreflang checks; all 228 old URLs and article dates remain.
+  All **27 original PDF URLs** return PDF headers, including the two R2 catalogues; local
+  file sizes match. **10/10 production browser checks** pass switching, guide/glossary schema
+  parity, product names/specifications, Arabic mobile layout and controls. Three localized
+  diagram assets match the committed bytes.
+  [Production evidence](baselines/2026-10-01-language-expansion-production.json).
+- **Sitemap / measurement boundary**: GSC accepted PUT **204** at **11:13:42 UTC**, with
+  processing pending and the previous 228-URL downloaded snapshot. Acceptance is not indexing
+  or search uplift. Exclude partial **October 1** in GSC (Pacific) and GA4 (Istanbul);
+  first complete post-release day is **October 2** for both.
 - **Verdict**: PENDING search/discovery effect.
-- **Action**: owner approved the reviewed language release. Preserve the latest published
-  English/Turkish content while completing publication and production verification.
+- **Action**: keep the approved, published and verified language expansion. The current EN/TR
+  content is preserved. Review October 15/29 and November 12; machine-assisted translation
+  does not constitute native-speaker review.
 
 ### [2026-10-01] Remaining guides, article revisions and glossary — commit 781581e
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **Change**: four new EN/TR guide pairs (quantity, import orders, alternatives and document
   evidence), four revised pairs (definition, mistakes, cost and reviews), a 33-term bilingual
   glossary and a curated bilingual blog hub covering all 28 published topics. Factory/QC
@@ -195,7 +210,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
 
 
 ### [2026-10-01] Independent Turkish sitemap entries — commit 2b08ba0
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Extend bilingual discovery with the new article/glossary URLs and curated hub. Preserve the original 51/51 sitemap correctness; combined search/discovery remains November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -239,7 +254,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   Submission acceptance and production correctness do not establish search uplift.
 
 ### [2026-10-01] Turkey SPC manufacturer discovery wording — commit ced8fc4
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Supplier/AI discovery overlaps new export/evidence content and hub/glossary links. Preserve the exact provider/prompt audit; annotate its next November 12 observation with this separate release boundary.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -311,7 +326,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   GSC/GA4 days October 1/2. No early effect verdict. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-29] Manufacturer capacity and four-country profile — commit 5ac3836
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: New export copy uses the confirmed site/country scope. Preserve the original prompt cohort, capacity facts and prior evidence; combined discovery November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -363,7 +378,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   availability cannot establish recommendation uplift; mark deliberate prompt-induced crawler fetches.
 
 ### [2026-09-21] Direct Turkish product links from wall-panel articles — commit 2bcdbac
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Curated wall-guide and glossary links add upstream discovery. Preserve the fixed product/query allocation cohort and review combined effects November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -418,7 +433,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   combined verdict. Live localized links and product canonical pass. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-21] Analytics consent ordering repair — commit 0e7cbf5
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Consent implementation unchanged. Preserve WORKED correctness, October 5 desktop, October 8 weekly and October 21 consent checks; annotate traffic/conversion mix only.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -477,7 +492,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   October 5; clicks and sessions measure different things. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-21] Germany representative on bilingual contact pages — commit 0e7cbf5
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Office/contact implementation unchanged. Retain the office-specific October 21 read and annotate content referral changes without attributing them to the office link.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -514,7 +529,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   remains the earliest office/conversion comparison; no premature qualified-lead verdict. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-14] GA4 lead tracking (generate_lead + file_download key events) — commit ae721ed
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Key-event implementation unchanged; preserve October 8 weekly operations. New content changes traffic composition; do not infer a new tracking verdict.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -617,7 +632,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   and next weekly read October 8; no measurement rewrite from the prior download spike. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Crawler settings unchanged; aggregate AI referrals overlap this expanded corpus. Combined outcome November 12; referrals do not measure citation frequency.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -711,7 +726,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   no post-release citation lift is established. Preserve **November 12** combined effect. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Glossary DefinedTermSet and affected article FAQs are incremental. Preserve Product/Breadcrumb verdicts and prior schema-only baselines; combined discovery November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -817,7 +832,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   [Review](reviews/2026-09-25.md).
 
 ### [2026-08-15] Localized collection H1s — commit 8daf750
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Collection H1s unchanged, but definition/review/pricing and discovery links overlap broad floor/query allocation. Use the fixed collection guard and November 12 combined outcome.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -880,7 +895,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Blog alternate-locale redirects 307→308 — commit 8daf750
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Existing slugs and redirect rules unchanged. Revised content may affect allocation; retain historical aliases in the new baseline and preserve WORKED consolidation.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -935,7 +950,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] llms.txt — commit 8daf750
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: llms.txt unchanged; new article/glossary/hub content overlaps aggregate discovery and AI outcomes. Combined interpretation November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1027,7 +1042,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   no post-release citation lift is established. Preserve **November 12** combined effect. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Direct EN/TR rewrite and metadata change. Preserve the historical WORKED ranking verdict; new fixed page/query baseline with October 29 descriptive and November 12 combined outcome.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1081,7 +1096,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   both articles remain indexed. Ongoing support is separate from conversion evidence. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] New post pair: SPC pricing factors — commit 89db2ae
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Direct EN/TR rewrite and metadata change. Preserve the earlier INCONCLUSIVE verdict; new fixed pricing page/query baseline, October 29 descriptive and November 12 combined outcome. October 21 is descriptive for content effects.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1147,7 +1162,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-16] CTR refresh of 3 blog topics — commit ee18f48
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: CTR article titles remain unchanged; hub/glossary incoming discovery overlaps. Keep October 15 descriptive query read and November 12 combined outcome.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1239,7 +1254,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   Pacific FAQ interference remains covered by the recorded 27-day sensitivity.
 
 ### [2026-08-16] Skirting hub page — commit d9d4225
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Product hub unchanged; curated skirting-guide discovery overlaps the fixed hub/blog query cohort. Retain October 15 descriptive and November 12 combined outcome.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1316,7 +1331,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   [September 17 review](reviews/2026-09-17.md).
 
 ### [2026-09-03] Skirting hub card-image fallback — release repair, commit 171ace5
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Preserve the closed WORKED image correctness verdict. Only parent skirting discovery has a new cohort boundary, combined November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1352,7 +1367,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   this operational pass is not a search-ranking verdict.
 
 ### [2026-09-13] Manufacturer purchasing guides and product documents — commit d10e888
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Export/evidence guides and hub/glossary links overlap manufacturer/Resources cohorts. Preserve WORKED indexing, earlier descriptive reads and original query recipe; combined November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1470,7 +1485,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   No early verdict or baseline reset. [Review](reviews/2026-09-25.md).
 
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Author registry, portrait and attribution rules unchanged. Preserve WORKED correctness; annotate parent discovery/AI outcome for November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1514,7 +1529,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   and validation are recorded with the FAQPage release below.
 
 ### [2026-09-14] FAQPage from visible answers and supplied author portrait — commit 4d4b4e9
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Existing FAQ parser/portrait unchanged. Validate 64 visible answers on 16 affected pages and glossary definition parity; retain October 26 maintenance and November 12 discovery interpretation.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1573,7 +1588,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   six-page/26-answer technical baseline fixed; validate the new cohort separately.
 
 ### [2026-09-14] Technical specification, installation and heating guides — commit 97d45e7
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Definition/quantity/mistakes and hub/glossary add incoming technical links. Keep original query cohort and indexing verdict; combined November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1680,7 +1695,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   [Review](reviews/2026-09-25.md).
 
 ### [2026-09-15] Distributor, project and colour-selection guides — commit 3d01b51
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Quantity/cost/materials and hub/glossary overlap project/selection links. Preserve original project query cohort and indexing verdict; combined November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1780,7 +1795,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   No early rewrite or failure verdict. [Review](reviews/2026-09-25.md).
 
 ### [2026-09-22] Underlay, care and room-selection guides — commit d3e770e
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Materials/reviews/mistakes and hub/glossary overlap room/care links. Preserve October 6/20 as descriptive; combined November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
@@ -1848,7 +1863,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
   November 12 aggregate AI dates; no early ranking or conversion verdict. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-25] Comparison, water resistance and vinyl terminology — commit 23b91d9
-- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry below.
+- **2026-10-01 language expansion / current cohort**: BG/SR/AR translations, five-language alternates and navigation extend site-wide discovery and the acquisition mix. Ship/re-baseline affected search/allocation/link and aggregate AI/referral outcomes to the [fresh locale/page/country checkpoint](baselines/2026-10-01-language-expansion.md), with **November 12** combined interpretation. Preserve fixed original cohorts, historical verdicts, exact manufacturer prompt audits and October 5/8/21/26 operational or correctness dates. Production boundary is recorded in the language entry.
 - **2026-10-01 content completion / cohort marker**: Definition/materials and hub/glossary overlap comparison/water/type intent. Preserve October 9/23 as descriptive; combined November 12.
   [Fresh page/query baseline](baselines/2026-10-01-content-completion.md);
   [scope and deployment boundary](content-strategy/2026-10-01-content-completion-launch.md).
