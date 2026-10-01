@@ -1,0 +1,1127 @@
+{
+  "verified_at_utc": "2026-10-01T01:06:27.962412+00:00",
+  "code_commit": "2b08ba0b6528135759ee2aebb5c596052bff54fd",
+  "status": "passed",
+  "sitemap": {
+    "url": "https://kermitfloor.com/sitemap.xml",
+    "http_status": 200,
+    "sha256": "b9a9f54ac706b3d0c2aba328e20de5e821d5c058946eeaa5a84750d6216d283c",
+    "entries": 210,
+    "added_turkish_entries": 51,
+    "static_added": 27,
+    "articles_added": 24,
+    "duplicates": 0,
+    "removed_prior_entries": 0,
+    "reciprocal_self_alternate_entries": 102,
+    "all_article_lastmod_preserved": true
+  },
+  "page_checks": [
+    {
+      "url": "https://kermitfloor.com/",
+      "status": 200,
+      "canonical": "https://kermitfloor.com",
+      "alternates": {
+        "en": "https://kermitfloor.com",
+        "tr": "https://kermitfloor.com/tr"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/about",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/about",
+      "alternates": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog",
+        "tr": "https://kermitfloor.com/tr/blog"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/choose-spc-flooring-colour-format",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/choose-spc-flooring-colour-format",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/choose-spc-flooring-colour-format",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-renk-format-secimi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/kermit-floor-distributor-guide",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/kermit-floor-distributor-guide",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-floor-distributor-guide",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-floor-bayi-rehberi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/kermit-spc-flooring-care-repair",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/kermit-spc-flooring-care-repair",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-spc-flooring-care-repair",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-spc-parke-bakim-onarim"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/kermit-spc-flooring-installation-planning",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/kermit-spc-flooring-installation-planning",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-spc-flooring-installation-planning",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-spc-parke-montaj-planlama"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/kermit-spc-skirting-advantages",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/kermit-spc-skirting-advantages",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-spc-skirting-advantages",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-spc-supurgelik-farki"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+        "tr": "https://kermitfloor.com/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-cost",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-cost",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-cost",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-fiyatlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-heating-sunlight",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-heating-sunlight",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-heating-sunlight",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-yerden-isitma-gunes"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-dogru-bilinen-yanlislar"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-thickness-wear-layer-specification",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-thickness-wear-layer-specification",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-thickness-wear-layer-specification",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-kalinlik-asinma-tabakasi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-underlay-acoustics",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-underlay-acoustics",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-underlay-acoustics",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-silte-akustik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-user-reviews",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-user-reviews",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-user-reviews",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-kullanici-yorumlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-interior-finishes-project-specification",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-interior-finishes-project-specification",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-interior-finishes-project-specification",
+        "tr": "https://kermitfloor.com/tr/blog/spc-ic-mekan-proje-sartnamesi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-lvt-wpc-vinyl-types",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-lvt-wpc-vinyl-types",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-lvt-wpc-vinyl-types",
+        "tr": "https://kermitfloor.com/tr/blog/spc-lvt-wpc-vinil-cesitleri"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-wall-panel-usage-areas",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-wall-panel-usage-areas",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-wall-panel-usage-areas",
+        "tr": "https://kermitfloor.com/tr/blog/spc-duvar-paneli-kullanim-alanlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/spc-wall-panels-for-bathrooms",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-wall-panels-for-bathrooms",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-wall-panels-for-bathrooms",
+        "tr": "https://kermitfloor.com/tr/blog/banyo-icin-spc-duvar-panelleri"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/what-is-skirting-with-flexible-edges",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/what-is-skirting-with-flexible-edges",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/what-is-skirting-with-flexible-edges",
+        "tr": "https://kermitfloor.com/tr/blog/contali-supurgelik-nedir"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/blog/where-to-use-spc-flooring",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/where-to-use-spc-flooring",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/where-to-use-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-kullanim-alanlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/contact",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/contact",
+      "alternates": {
+        "en": "https://kermitfloor.com/contact",
+        "tr": "https://kermitfloor.com/tr/iletisim"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/full-natural-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/full-natural-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/full-natural-collection",
+        "tr": "https://kermitfloor.com/tr/tam-dogal-koleksiyon"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/privacy-policy",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/privacy-policy",
+      "alternates": {
+        "en": "https://kermitfloor.com/privacy-policy",
+        "tr": "https://kermitfloor.com/tr/gizlilik-politikasi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/resources",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/resources",
+      "alternates": {
+        "en": "https://kermitfloor.com/resources",
+        "tr": "https://kermitfloor.com/tr/kaynaklar"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-3d-wall-panels-model-a",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-3d-wall-panels-model-a",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-3d-wall-panels-model-a",
+        "tr": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-a"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-3d-wall-panels-model-b",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-3d-wall-panels-model-b",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-3d-wall-panels-model-b",
+        "tr": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-b"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-flooring-elegance-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-flooring-elegance-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-elegance-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-elegans-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-flooring-elite-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-flooring-elite-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-elite-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-elit-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-flooring-mosaic-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-flooring-mosaic-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-mosaic-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-mozaik-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-flooring-sky-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-flooring-sky-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-sky-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-sky-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-flooring-travertine-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-flooring-travertine-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-travertine-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-traverten-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-parquet-natural-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-parquet-natural-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-parquet-natural-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-natural-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-parquet-stone-collection",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-parquet-stone-collection",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-parquet-stone-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-tas-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/alpha-140-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/alpha-140-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/alpha-140-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/alpha-140-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/berlin-100-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/berlin-100-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/berlin-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/berlin-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/elite-100-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/elite-100-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/elite-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/elite-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/moderna-100-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/moderna-100-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/moderna-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/moderna-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/optima-60-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/optima-60-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/optima-60-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/optima-60-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/optima-90-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/optima-90-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/optima-90-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/optima-90-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/solid-80-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/solid-80-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/solid-80-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/solid-80-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-skirting-boards/x-line-100-mm-skirting-board",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-skirting-boards/x-line-100-mm-skirting-board",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/x-line-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/x-line-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/spc-wall-panels",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/spc-wall-panels",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-wall-panels",
+        "tr": "https://kermitfloor.com/tr/spc-duvar-panelleri"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/terms-of-service",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/terms-of-service",
+      "alternates": {
+        "en": "https://kermitfloor.com/terms-of-service",
+        "tr": "https://kermitfloor.com/tr/kullanim-sartlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr",
+      "alternates": {
+        "en": "https://kermitfloor.com",
+        "tr": "https://kermitfloor.com/tr"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog",
+        "tr": "https://kermitfloor.com/tr/blog"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/banyo-icin-spc-duvar-panelleri",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/banyo-icin-spc-duvar-panelleri",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-wall-panels-for-bathrooms",
+        "tr": "https://kermitfloor.com/tr/blog/banyo-icin-spc-duvar-panelleri"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-advantages-in-bathroom-renovation-over-ceramic-tiles",
+        "tr": "https://kermitfloor.com/tr/blog/banyo-tadilatinda-spc-panel-avantajlari-seramige-gore"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/contali-supurgelik-nedir",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/contali-supurgelik-nedir",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/what-is-skirting-with-flexible-edges",
+        "tr": "https://kermitfloor.com/tr/blog/contali-supurgelik-nedir"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/kermit-floor-bayi-rehberi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-floor-bayi-rehberi",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-floor-distributor-guide",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-floor-bayi-rehberi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/kermit-spc-parke-bakim-onarim",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-parke-bakim-onarim",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-spc-flooring-care-repair",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-spc-parke-bakim-onarim"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/kermit-spc-parke-montaj-planlama",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-parke-montaj-planlama",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-spc-flooring-installation-planning",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-spc-parke-montaj-planlama"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/kermit-spc-supurgelik-farki",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-supurgelik-farki",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/kermit-spc-skirting-advantages",
+        "tr": "https://kermitfloor.com/tr/blog/kermit-spc-supurgelik-farki"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/oem-private-label-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/oem-ozel-marka-spc-parke"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-duvar-paneli-kullanim-alanlari",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-duvar-paneli-kullanim-alanlari",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-wall-panel-usage-areas",
+        "tr": "https://kermitfloor.com/tr/blog/spc-duvar-paneli-kullanim-alanlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-ic-mekan-proje-sartnamesi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-ic-mekan-proje-sartnamesi",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-interior-finishes-project-specification",
+        "tr": "https://kermitfloor.com/tr/blog/spc-ic-mekan-proje-sartnamesi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-lvt-wpc-vinil-cesitleri",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-lvt-wpc-vinil-cesitleri",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-lvt-wpc-vinyl-types",
+        "tr": "https://kermitfloor.com/tr/blog/spc-lvt-wpc-vinil-cesitleri"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-dogru-bilinen-yanlislar"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-fiyatlari",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-fiyatlari",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-cost",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-fiyatlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-kalinlik-asinma-tabakasi",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-thickness-wear-layer-specification",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-kalinlik-asinma-tabakasi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-kullanici-yorumlari",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-kullanici-yorumlari",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-user-reviews",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-kullanici-yorumlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-kullanim-alanlari",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-kullanim-alanlari",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/where-to-use-spc-flooring",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-kullanim-alanlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-samples-wholesale-quote",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-numune-toptan-teklif"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-renk-format-secimi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-renk-format-secimi",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/choose-spc-flooring-colour-format",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-renk-format-secimi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-silte-akustik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-silte-akustik",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-underlay-acoustics",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-silte-akustik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/is-spc-flooring-waterproof",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-suya-dayanikli-mi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-manufacturer-turkey-buyers-checklist",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-ureticisi-secimi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-vs-laminate",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-vs-laminat-karsilastirma"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/blog/spc-parke-yerden-isitma-gunes",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-yerden-isitma-gunes",
+      "alternates": {
+        "en": "https://kermitfloor.com/blog/spc-flooring-heating-sunlight",
+        "tr": "https://kermitfloor.com/tr/blog/spc-parke-yerden-isitma-gunes"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/gizlilik-politikasi",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/gizlilik-politikasi",
+      "alternates": {
+        "en": "https://kermitfloor.com/privacy-policy",
+        "tr": "https://kermitfloor.com/tr/gizlilik-politikasi"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/hakkimizda",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/hakkimizda",
+      "alternates": {
+        "en": "https://kermitfloor.com/about",
+        "tr": "https://kermitfloor.com/tr/hakkimizda"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/iletisim",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/iletisim",
+      "alternates": {
+        "en": "https://kermitfloor.com/contact",
+        "tr": "https://kermitfloor.com/tr/iletisim"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/kaynaklar",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/kaynaklar",
+      "alternates": {
+        "en": "https://kermitfloor.com/resources",
+        "tr": "https://kermitfloor.com/tr/kaynaklar"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/kullanim-sartlari",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/kullanim-sartlari",
+      "alternates": {
+        "en": "https://kermitfloor.com/terms-of-service",
+        "tr": "https://kermitfloor.com/tr/kullanim-sartlari"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-a",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-a",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-3d-wall-panels-model-a",
+        "tr": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-a"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-b",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-b",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-3d-wall-panels-model-b",
+        "tr": "https://kermitfloor.com/tr/spc-3d-duvar-panelleri-model-b"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-duvar-panelleri",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-duvar-panelleri",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-wall-panels",
+        "tr": "https://kermitfloor.com/tr/spc-duvar-panelleri"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-elegans-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-elegans-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-elegance-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-elegans-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-elit-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-elit-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-elite-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-elit-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-mozaik-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-mozaik-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-mosaic-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-mozaik-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-natural-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-natural-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-parquet-natural-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-natural-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-sky-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-sky-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-sky-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-sky-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-tas-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-tas-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-parquet-stone-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-tas-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-parke-traverten-koleksiyonu",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-parke-traverten-koleksiyonu",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-flooring-travertine-collection",
+        "tr": "https://kermitfloor.com/tr/spc-parke-traverten-koleksiyonu"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/alpha-140-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/alpha-140-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/alpha-140-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/alpha-140-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/berlin-100-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/berlin-100-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/berlin-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/berlin-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/elite-100-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/elite-100-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/elite-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/elite-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/moderna-100-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/moderna-100-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/moderna-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/moderna-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/optima-60-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/optima-60-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/optima-60-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/optima-60-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/optima-90-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/optima-90-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/optima-90-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/optima-90-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/solid-80-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/solid-80-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/solid-80-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/solid-80-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/spc-supurgelikler/x-line-100-mm-supurgelik",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/spc-supurgelikler/x-line-100-mm-supurgelik",
+      "alternates": {
+        "en": "https://kermitfloor.com/spc-skirting-boards/x-line-100-mm-skirting-board",
+        "tr": "https://kermitfloor.com/tr/spc-supurgelikler/x-line-100-mm-supurgelik"
+      },
+      "robots": []
+    },
+    {
+      "url": "https://kermitfloor.com/tr/tam-dogal-koleksiyon",
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/tam-dogal-koleksiyon",
+      "alternates": {
+        "en": "https://kermitfloor.com/full-natural-collection",
+        "tr": "https://kermitfloor.com/tr/tam-dogal-koleksiyon"
+      },
+      "robots": []
+    }
+  ],
+  "network_note": "GET-only HTTP checks; no browser JavaScript/analytics execution and no enquiries.",
+  "build_checks": {
+    "checked_at": "2026-10-01T01:06:07.255123+00:00",
+    "sha": "2b08ba0b6528135759ee2aebb5c596052bff54fd",
+    "checks": [
+      {
+        "id": 110170278670,
+        "name": "Workers Builds: kermit-floor-staging",
+        "status": "completed",
+        "conclusion": "success",
+        "started_at": "2026-10-01T01:06:04Z",
+        "completed_at": "2026-10-01T01:06:04Z",
+        "details_url": "https://dash.cloudflare.com/542a80d833f2cf2d70591dbf553ed0d2/workers/services/view/kermit-floor-staging/production/builds/6ba6df10-2be9-49e4-99eb-077c0d643397"
+      },
+      {
+        "id": 110169750864,
+        "name": "blog",
+        "status": "completed",
+        "conclusion": "success",
+        "started_at": "2026-10-01T01:04:03Z",
+        "completed_at": "2026-10-01T01:05:14Z",
+        "details_url": "https://github.com/kermit-floor/kermit-floor-staging/actions/runs/36799280764/job/110169750864"
+      }
+    ]
+  },
+  "gsc_sitemap_submission": {
+    "submission": {
+      "method": "PUT",
+      "endpoint": "https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Akermitfloor.com/sitemaps/https%3A%2F%2Fkermitfloor.com%2Fsitemap.xml",
+      "submitted_at": "2026-10-01T01:06:43.528953+00:00",
+      "http_status": 204,
+      "response": ""
+    },
+    "state": {
+      "method": "GET",
+      "endpoint": "https://www.googleapis.com/webmasters/v3/sites/sc-domain%3Akermitfloor.com/sitemaps/https%3A%2F%2Fkermitfloor.com%2Fsitemap.xml",
+      "fetched_at": "2026-10-01T01:06:43.857798+00:00",
+      "http_status": 200,
+      "response": {
+        "path": "https://kermitfloor.com/sitemap.xml",
+        "lastSubmitted": "2026-10-01T01:06:43.435Z",
+        "isPending": true,
+        "isSitemapsIndex": false,
+        "type": "sitemap",
+        "lastDownloaded": "2026-09-30T22:49:19.880Z",
+        "warnings": "0",
+        "errors": "0",
+        "contents": [
+          {
+            "type": "web",
+            "submitted": "159",
+            "indexed": "0"
+          }
+        ]
+      }
+    },
+    "interpretation": "Submission accepted; immediate processing fields may describe the previous read. This is not evidence that the 51 newly listed URLs have been recrawled or indexed."
+  },
+  "deployment": {
+    "id": "22de4383-2182-488f-9457-24b8468a5a97",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "barbaros@kermit.com.tr",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "3581315e-3549-4d31-9889-a183166bf140",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-01T01:05:56.241541Z"
+  },
+  "measurement_boundaries": {
+    "deployed_at_utc": "2026-10-01T01:05:56.241541Z",
+    "gsc": {
+      "timezone": "America/Los_Angeles",
+      "partial_day_excluded": "2026-09-30",
+      "first_full_post_release_day": "2026-10-01"
+    },
+    "ga4": {
+      "timezone": "Europe/Istanbul",
+      "partial_day_excluded": "2026-10-01",
+      "first_full_post_release_day": "2026-10-02"
+    }
+  }
+}

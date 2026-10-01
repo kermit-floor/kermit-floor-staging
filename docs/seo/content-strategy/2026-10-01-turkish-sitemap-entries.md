@@ -1,8 +1,9 @@
-# Turkish sitemap entries — release preparation
+# Turkish sitemap entries — verified release
 
-**Status: owner authorized commit, push and publication on October 1; deployment
-and production verification are pending.** The owner requested separate Turkish sitemap entries after the
-October 1 review. This document records the completed preparation, not a shipment.
+**Published and verified October 1, 2026, at 01:05:56 UTC — commit `2b08ba0`.**
+The owner requested separate Turkish sitemap entries after the October 1 review and
+approved commit, push and publication. Production verification and GSC submission are complete;
+Google processing and search effects remain pending.
 
 `src/app/sitemap.ts` now emits an English and Turkish entry for every static route and
 published article pair. Each entry includes the same EN/TR alternates, including itself,
@@ -27,24 +28,24 @@ in the original workspace; its older checkout and unrelated local edits were pre
   GET-only validation executes no browser analytics and submits no enquiries.
 
 [Machine-readable validation](2026-10-01-turkish-sitemap-entries-validation.json) ·
-[Prepared baseline](../baselines/2026-10-01-turkish-sitemap-entries.md).
+[Pre-release baseline](../baselines/2026-10-01-turkish-sitemap-entries.md).
 This implements Google's [localized sitemap guidance](https://developers.google.com/search/docs/specialty/international/localized-versions).
 
-## Interference treatment to apply at shipment
+## Active interference treatment
 
 The sitemap changes discovery signals across Turkish static pages and articles. It
 does not establish a ranking or AI-citation uplift. Treat it as a site-wide discovery
-cohort and add a dated marker to **all 23 open entries** on actual deployment.
+cohort; the logbook now carries a dated marker on **all 23 pre-existing open entries**.
 
 For affected bilingual search/page-allocation effects, **ship and re-baseline** to the
-prepared exact-URL and original-query checkpoint. If shipped October 1, the combined
-structural review is **November 12**. Earlier scheduled indexing, ranking and query
+frozen exact-URL and original-query checkpoint. The combined structural review is
+**November 12** after the October 1 deployment. Earlier scheduled indexing, ranking and query
 checks remain useful descriptive readings with the new intervention marked. November
 3/6 affected bilingual primary outcomes become November 12 combined outcomes; do not
 silently retain an isolated earlier-release interpretation. Existing closed correctness/
 ranking verdicts and original historical snapshots remain intact.
 
-| Open parent entry | Treatment at shipment |
+| Open parent entry | Active treatment |
 |---|---|
 | October 1 manufacturer discovery | Mark additional discovery intervention; retain November 12 combined outcome and exact prompt cells. |
 | September 29 capacity/four-country profile | Same manufacturer treatment; preserve its separate four-question pilot. |
@@ -70,16 +71,29 @@ ranking verdicts and original historical snapshots remain intact.
 | September 22 care/room guides | Preserve October 6/20 descriptive milestones; affected bilingual search outcome moves November 6 → November 12. |
 | September 25 comparison/water/types | Preserve October 9/23 descriptive milestones; affected bilingual search outcome moves November 6 → November 12. |
 
-This treatment is prepared, **not active while the change remains local**. It follows
+This treatment is active from the recorded production boundary. It follows
 the repository's [interference and shipping rules](../README.md); the sitemap's causal
 role in earlier traffic changes remains unproven.
 
 ## Publication completion
 
-After authorization, commit/push the isolated change and necessary SEO records, verify
-the successful production deployment and fetch the live XML. Confirm 210 unique entries
-and the same 51 additions, reciprocal alternates and unchanged canonical destinations.
-Submit the existing sitemap URL to GSC, record its actual processing/submission result,
-and distinguish acceptance from indexing. Record the actual deployment boundary,
-activate the parent markers/treatments and add the shipped logbook entry that day.
-No new automation is implied by the dates in this document.
+Commit `2b08ba0b6528135759ee2aebb5c596052bff54fd` was pushed to `main` after owner
+approval. Cloudflare Workers Build `6ba6df10-2be9-49e4-99eb-077c0d643397` and the GitHub
+blog check succeeded. Deployment `22de4383-2182-488f-9457-24b8468a5a97` sent Worker version
+`3581315e-3549-4d31-9889-a183166bf140` to 100% at **2026-10-01T01:05:56.241541Z**.
+
+Live XML contains **210 unique URLs**, exactly **51 new Turkish entries**, no removals
+or duplicates, and **102 reciprocal/self alternate maps**. All 102 production page
+checks pass HTTP 200, self-canonical, matching EN/TR alternates and absence of noindex.
+Existing article modification dates remain unchanged.
+[Production evidence](../baselines/2026-10-01-turkish-sitemap-entries-production.json).
+
+GSC accepted the sitemap PUT with **HTTP 204** and records lastSubmitted
+**2026-10-01T01:06:43.435Z**. Immediate status is **pending**, with zero errors/warnings
+on the previous downloaded snapshot (159 URLs, September 30 at 22:49:19 UTC). Submission
+acceptance does not establish new processing, recrawling or indexing.
+
+Exclude the partial **September 30 Pacific GSC day** and **October 1 Europe/Istanbul GA4 day**;
+first full post-release days are **October 1** and **October 2** respectively. All parent
+markers and the shipped logbook entry are recorded the same day. Review October 15 processing/
+indexing, October 29 descriptive exposure and November 12 combined effects. No automation created.

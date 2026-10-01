@@ -52,13 +52,13 @@ Review cadence (batch of 2026-08-14/16):
 - **2026-10-01** — weekly operations complete: leads/download keys **4/10**, desktop
   discrepancy and wall-product allocation watch persist. All first four September batches
   indexed (24/24), plus the two new terminology pages. Next weekly operations **October 8**.
-- **Next disjoint checks** — October 5 desktop; October 6 care indexing; October 9
-  comparison indexing/recrawl; October 11/12/13 interim manufacturer/technical/project;
-  October 15 CTR/hub and new manufacturer recrawl/questions; October 20 care rankings;
-  October 21 pricing/consent/contact; October 23 comparison snippets; October 26 unchanged
-  FAQ/portrait; October 29 manufacturer snippets/questions. Primary project/room effects
-  remain November 3, unaffected technical/care/comparison November 6, and affected
-  manufacturer/wall/broad-floor/collection/aggregate AI outcomes November 12.
+- **Next checks** — October 5 desktop; October 6 care indexing; October 9 comparison
+  indexing/recrawl; October 11/12/13 descriptive manufacturer/technical/project; October 15
+  sitemap processing/indexing, descriptive CTR/hub and manufacturer recrawl/questions;
+  October 20 descriptive care rankings; October 21 pricing/consent/contact; October 23
+  descriptive comparison snippets; October 26 FAQ/portrait maintenance; October 29 sitemap
+  exposure and manufacturer snippets/questions. All affected bilingual search/allocation
+  and aggregate AI outcomes now use **November 12** after the sitemap discovery treatment.
 
 - **2026-09-22 content continuation** — next batch checks October 6 indexing, October 20
   rankings and November 3 combined content/link/aggregate AI effects. November 3 supersedes
@@ -84,6 +84,14 @@ Review cadence (batch of 2026-08-14/16):
   Preserve disjoint operational, project/room-intent, technical/care/comparison and unchanged FAQ
   dates; all-query collection/CTR guards, including Elite secondary exposure, use November 12.
 
+- **2026-10-01 sitemap continuation — current schedule**: 51 Turkish static/article URLs
+  gained independent sitemap entries at 01:05:56 UTC. October 15 processing/indexing,
+  October 29 descriptive exposure and November 12 combined effects. This supersedes prior
+  November 3/6 affected bilingual primary search/link outcomes; all 23 existing open entries
+  carry the discovery marker. Earlier content/query checks stay descriptive. Consent,
+  desktop, contact and correctness milestones keep their dates and historical verdicts.
+  [Active treatment and exact scope](content-strategy/2026-10-01-turkish-sitemap-entries.md).
+
 Parallel changes: new work may ship while experiments are PENDING, but only after the
 interference check in `docs/seo/README.md` (Change interference): disjoint scope ships
 freely; overlapping scope waits, re-baselines, or goes INCONCLUSIVE; site-wide changes get a
@@ -96,11 +104,59 @@ GSC final through September 28; current published re-baselines reconciled with t
 September 25 record; next desktop October 5, care indexing October 6, weekly operations
 October 8; retain November 12 affected combined outcome and all disjoint dates)
 
+After-review shipment: Turkish sitemap entries deployed and verified October 1 at 01:05:56 UTC.
+The current schedule above and the latest sitemap marker in each entry supersede older
+cohort schedules for affected metrics; historical snapshots and verdicts remain unchanged.
+
 ---
 
 ## Open experiments
 
+### [2026-10-01] Independent Turkish sitemap entries — commit 2b08ba0
+- **Change**: static pages and published article pairs now emit both English and Turkish
+  canonical entries with identical self-inclusive EN/TR alternates. Added **27 static + 24
+  article Turkish URLs**, taking the live sitemap **159 → 210 unique entries**; no old URL
+  was removed. Existing tags and article modification dates retain their behavior.
+- **Hypothesis**: explicit canonical locale entries give crawlers a complete bilingual
+  discovery list and support consolidation. Search/indexing improvement is a separate,
+  potentially combined outcome; already indexed pages need no new indexing-count increase.
+- **Primary metric / baseline**: affected Turkish URLs with their own unique canonical
+  entry **0/51 → 51/51**, with reciprocal/self alternates and no loss of old entries.
+  [Frozen baseline](baselines/2026-10-01-turkish-sitemap-entries.md): exact cohort latest
+  September 1–28 **435 clicks / 10,336 impressions / 4.21% CTR / position 6.58**, versus
+  August 4–31 **312 / 6,306 / 4.95% / 7.46**. Fresh pre-release inspections cover **28/51**
+  URLs, all indexed (all 24 articles plus four static pages); other 23 static URLs uninspected.
+- **Interference**: site-wide discovery marker added to all 23 pre-existing open entries.
+  Ship/re-baseline affected bilingual page/query allocation and search effects to the frozen
+  checkpoint and **November 12** combined outcome; earlier November 3/6 affected primary
+  outcomes are superseded. Preserve original historical/correctness verdicts, descriptive
+  interim checks, operational dates and separate manufacturer prompt cohorts.
+  [Every-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
+- **Review due**: **2026-10-15** sitemap processing/indexing; **2026-10-29** descriptive
+  exposure; **2026-11-12** combined structural search/discovery effect. No automation created.
+- **Validation**: production Next build, text/blog validation and TypeScript checks passed;
+  all **102** local paired page checks passed. Live sitemap confirms 210 unique entries,
+  exact 51 additions, reciprocal/self alternate maps and preserved article dates. All
+  **102** production destinations return HTTP 200, self-canonical, matching EN/TR alternates
+  and no noindex. [Local validation](content-strategy/2026-10-01-turkish-sitemap-entries-validation.json)
+  and [production evidence](baselines/2026-10-01-turkish-sitemap-entries-production.json).
+- **Deployment / verification**: owner approved commit/push/publication. Code `2b08ba0`
+  pushed to main; Cloudflare Build `6ba6df10-2be9-49e4-99eb-077c0d643397` and GitHub blog
+  checks succeeded. Worker version `3581315e-3549-4d31-9889-a183166bf140` deployed to 100%
+  at **2026-10-01T01:05:56.241541Z**. GSC accepted the sitemap PUT with **HTTP 204** at
+  **01:06:43 UTC**, with processing pending; immediate counts still describe the previous
+  downloaded 159-URL snapshot, not new indexing. Exclude GSC **September 30 Pacific** and
+  GA4 **October 1 Europe/Istanbul** partial days; first full days **October 1 / October 2**.
+- **Verdict**: **WORKED — 2026-10-01, sitemap implementation correctness (51/51)**.
+  Google processing, recrawling/indexing and combined search/AI effects remain PENDING.
+- **Action**: keep the published entries and submitted sitemap; review on the dates above.
+  Submission acceptance and production correctness do not establish search uplift.
+
 ### [2026-10-01] Turkey SPC manufacturer discovery wording — commit ced8fc4
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Additional discovery intervention on the manufacturer pages and guides; retain November 12 combined outcome and the exact multilingual prompt cells.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **Change**: EN/TR About, homepage and two sourcing guides now identify Kermit as an SPC
   flooring/wall-panel manufacturer in Turkey. Natural flooring/manufacturer/wall-panel
   discovery wording accompanies factory location, combined annual capacity and country roles.
@@ -165,6 +221,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   GSC/GA4 days October 1/2. No early effect verdict. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-29] Manufacturer capacity and four-country profile — commit 5ac3836
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Manufacturer discovery overlaps; retain November 12 combined outcome and the separate September 29 four-question pilot.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Direct About/company-fact overlap. Ship/re-baseline combined manufacturer recommendation/citation and fact accuracy to the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. Keep the September 29 four-question pilot separate; its October 13/27 reads are descriptive with the new intervention. Current repeat/recrawl checks are October 15/29.
 - **Change**: EN/TR About descriptions, introduction, six fact cards, location roles and seven
   visible/matching FAQs now state 8 million m² annual combined SPC flooring/wall-panel capacity
@@ -209,6 +269,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   availability cannot establish recommendation uplift; mark deliberate prompt-induced crawler fetches.
 
 ### [2026-09-21] Direct Turkish product links from wall-panel articles — commit 2bcdbac
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Product/article sitemap coverage overlaps page allocation; refresh the query/page checkpoint for November 12 combined effects. Preserve original link correctness.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: New About-to-wall-product links and wall manufacturer text overlap product/query allocation. Ship/re-baseline that combined outcome to the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**, replacing November 2 for the affected scope. Preserve the original link-correctness checks and pre-release snapshots.
 - **Change**: the Turkish usage-guide and bathroom-renovation article body links now
   explicitly target `/tr/spc-duvar-panelleri` rather than the English product URL.
@@ -238,7 +302,7 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   preserved English links. [Production evidence](baselines/2026-09-21-wall-panel-links-production.json).
 - **Verdict**: PENDING SEO effect; implementation correctness verified September 21.
 - **Action**: deployed and verified; keep the direct Turkish links. Review the combined
-  wall-panel effect November 2; preserve the pre-release and unaffected September 27 checks.
+  wall-panel effect November 12 after the sitemap treatment; preserve historical checks.
 - **Operational check — 2026-09-25**: latest rolling 28 days through September 23
   show TR product **13 clicks / 279 impressions**, versus **32 / 784** in the prior
   28 days. Whole-property `spc duvar paneli` clicks rise **21→30** as allocation shifts
@@ -256,6 +320,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   combined verdict. Live localized links and product canonical pass. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-21] Analytics consent ordering repair — commit 0e7cbf5
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. No event-code change; annotate acquisition mix. Preserve WORKED command ordering, October 5/21 operations and the September 21 consent boundary.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: No event-code change. Aggregate AI/content outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. Preserve consent correctness, October 5 desktop, October 21 conversion checks and the September 21 measurement break.
 - **2026-09-29 manufacturer interference / current treatment**: Aggregate AI/content outcomes use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md) and **November 10** combined review. Keep consent correctness, October 5 desktop, October 21 conversions and the September 21 measurement break; no event-code change.
 - **2026-09-25 content interference / current treatment**: New/revised content adds discovery and enquiry exposure. Aggregate AI/content effects use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined review. Keep September 28 correctness, October 5 desktop and October 21 conversions; preserve the September 21 measurement break.
@@ -307,6 +375,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   October 5; clicks and sessions measure different things. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-21] Germany representative on bilingual contact pages — commit 0e7cbf5
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Annotate incoming search exposure; preserve office behavior and the October 21 office read. Avoid isolated enquiry-volume attribution.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Contact office data and handlers unchanged. Keep Germany-office-specific October 21 baseline/date; annotate aggregate incoming enquiries with the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md). No qualified-lead growth is inferred.
 - **2026-09-29 manufacturer interference / current treatment**: About manufacturer copy adds enquiry exposure. Annotate aggregate contact counts with the [September 29 cohort](content-strategy/2026-09-29-manufacturer-positioning.md); keep Germany-office-specific October 21 metrics and Contact data unchanged.
 - **2026-09-25 content interference / current treatment**: Annotate aggregate contact readings with the [comparison/water/terminology cohort](content-strategy/2026-09-25-comparison-content-launch.md). Keep the office-specific October 21 metric and baseline; no contact-page or event-code changes.
@@ -336,6 +408,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   remains the earliest office/conversion comparison; no premature qualified-lead verdict. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-14] GA4 lead tracking (generate_lead + file_download key events) — commit ae721ed
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Annotate acquisition mix and preserve the consent boundary, WORKED instrumentation and October 8 weekly operations.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Preserve WORKED instrumentation and weekly operational reads. Aggregate AI/content outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**; retain the consent break and distinguish intent/download actions from qualified enquiries.
 - **2026-09-29 manufacturer interference / current treatment**: Preserve WORKED instrumentation and weekly operational reads. Annotate aggregate intent/download counts with the new manufacturer copy and September 21 consent break. Combined AI/content review is **November 10** using the [new baseline](baselines/2026-09-29-manufacturer-positioning.md); these are not qualified leads.
 - **2026-09-25 content interference / current treatment**: New/revised guides add document/contact opportunities. Preserve WORKED instrumentation and the operational schedule. Record the [comparison/water/terminology cohort](content-strategy/2026-09-25-comparison-content-launch.md) and consent break in aggregate counts; combined AI/content outcome is November 6, without inferring qualified leads.
@@ -431,6 +507,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   and next weekly read October 8; no measurement rewrite from the prior download spike. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] AI crawlers unblocked (Cloudflare AI Crawl Control) — no code commit
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve the historical INCONCLUSIVE verdict and November 12 combined aggregate AI outcome; no isolated crawler effect is established.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Crawler settings unchanged. Combined AI/content/referral outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. Preserve historical snapshots and consent break; mark deliberate October 1 audit fetches. Recommendation-plus-owned-citation cells are a separate consumer measure, not proof of crawler-setting efficacy.
 - **2026-09-29 manufacturer interference / current treatment**: Ship/re-baseline overlapping AI/content outcomes to the [September 29 snapshot](baselines/2026-09-29-manufacturer-positioning.md), with **November 10** combined review. Preserve old snapshots and consent break; neither referrals nor prompt-induced fetches isolate crawler-setting efficacy. The signed-out buyer-question pilot is a separate 3/4 recommendation/citation measure.
 - **2026-09-25 content interference / current treatment**: New/revised comparison, water and terminology content overlaps aggregate discovery. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined AI outcome, superseding November 3 for this metric. Preserve the September 21 consent break and historical verdicts.
@@ -517,6 +597,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   no post-release citation lift is established. Preserve **November 12** combined effect. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] JSON-LD structured data site-wide — commit 8daf750
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve Breadcrumb WORKED and Product eligibility NO EFFECT; affected search/CTR uses the refreshed November 12 combined checkpoint.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Product/Organization/Breadcrumb code unchanged; About FAQ text changed and seven answers per locale match visible/schema output. Affected wall/broad-floor allocation and CTR subsets use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. Preserve enhancement/correctness checks and disjoint cohorts.
 - **2026-09-29 manufacturer interference / current treatment**: Changed About FAQ facts overlap only About/entity citation interpretation; use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md) and **November 10** for that content subset. Product/schema framework, unrelated correctness checks and existing product search dates are unchanged.
 - **2026-09-25 content interference / current treatment**: Rewritten/localized water-guide links affect Stone EN/TR incoming-link exposure. Re-baseline only that all-query collection subset to the [September 25 baseline](baselines/2026-09-25-comparison-content.md) for **November 6** combined effects. Keep schema correctness, other September 27 collections, November 3 Elite and November 2 wall-panel subsets. Product/schema code is unchanged.
@@ -615,6 +699,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   [Review](reviews/2026-09-25.md).
 
 ### [2026-08-15] Localized collection H1s — commit 8daf750
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Collection discovery overlaps; fixed-collection all-query/CTR and broad-floor outcomes use the refreshed November 12 combined checkpoint.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Collection H1s unchanged; homepage manufacturer titles can affect broad floor-query allocation and collection CTR. Re-baseline the fixed 16-URL all-query/CTR and broad-floor allocation guards to the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**; preserve the earlier historical reads and disjoint query cohorts.
 - **2026-09-25 content interference / current treatment**: Rewritten/localized water-guide links affect Stone EN/TR incoming-link exposure. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** for that subset’s combined outcome; preserve original snapshots, other September 27 collections, November 3 Elite and November 2 wall-panel subsets. No H1 or collection-data change.
 - **2026-09-22 narrow content overlap**: the new room guide targets `spc flooring kitchen`,
@@ -670,6 +758,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] Blog alternate-locale redirects 307→308 — commit 8daf750
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED canonical consolidation and October 8 alias check; later bilingual allocation, including comparison/water subsets, now uses November 12 combined effects.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Redirect code unchanged. Overlapping wall/broad-floor URL/query allocation subsets use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**; preserve redirect correctness and unaffected historical subsets.
 - **2026-09-25 content interference / current treatment**: Existing comparison/water EN/TR content and metadata are revised. Their two Turkish canonical/alias pairs now use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined search outcome. September 27 may read this subset through September 24 as pre-release evidence. Other redirect subsets keep their dates, including November 2 wall panels; verify existing and new 308 behavior independently.
 - **2026-09-21 wall-panel link interference**: two Turkish article body links now
@@ -687,8 +779,8 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
 - **Hypothesis**: consolidates indexing/link equity onto canonical URLs.
 - **Primary metric(s)**: GSC indexed-URL mix for the affected slugs; /tr URL clicks vs unprefixed.
 - **Review due**: September 27 consolidation verdict completed **2026-10-01**. Passive
-  stale-alias check **October 8**; preserve **November 6** comparison/water subset and
-  **November 12** overlapping wall/broad-floor combined outcomes.
+  stale-alias check **October 8**; **November 12** combined bilingual allocation, including
+  comparison/water and wall/broad-floor subsets, after the sitemap treatment.
 
 - **Verdict**: **WORKED — 2026-10-01, canonical consolidation.** All nine original Turkish
   canonical pages are indexed; all nine old aliases are excluded as Page with redirect
@@ -717,6 +809,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-15] llms.txt — commit 8daf750
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. No llms.txt change; preserve historical INCONCLUSIVE and November 12 combined aggregate AI outcome.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: File unchanged and exact production bytes verified. Aggregate AI/content outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**; preserve older snapshots and avoid an isolated llms.txt effect claim.
 - **2026-09-29 manufacturer interference / current treatment**: Direct content overlap: capacity, country roles and purchasing links now match About. Re-baseline combined AI/content effects to [September 29](baselines/2026-09-29-manufacturer-positioning.md) and **November 10**. Preserve history; normal page citations do not establish llms.txt efficacy.
 - **2026-09-25 content interference / current treatment**: New/revised comparison, water and terminology content overlaps aggregate discovery. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** combined AI outcome, superseding November 3 for this metric. Preserve the September 21 consent break and historical verdicts.
@@ -801,6 +897,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   no post-release citation lift is established. Preserve **November 12** combined effect. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] New post pair: SPC user reviews — commit 89db2ae
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED historical rankings; subsequent article discovery readings carry this marker without reopening the closed verdict.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: No page, target-query or related-link edit. Preserve WORKED primary ranking outcome/passive monitoring; annotate aggregate AI/contact secondary readings with the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md).
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -847,6 +947,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   both articles remain indexed. Ongoing support is separate from conversion evidence. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-08-15] New post pair: SPC pricing factors — commit 89db2ae
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Article/tag allocation overlaps; October 21 is descriptive, November 12 is the combined search outcome. Conversion inference still depends on sufficient measured visits.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: No pricing-intent copy or links changed. Preserve primary price-query scope and historical checkpoints; aggregate AI/contact secondary readings carry the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md).
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -858,8 +962,9 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
 - **Hypothesis**: capture price-intent (pos 14.2, "kermit süpürgelik fiyatları" pos 6.1) and
   convert it to WhatsApp/email leads.
 - **Primary metric(s)**: query positions + post clicks; generate_lead events with page = post.
-- **Review due**: September 27 follow-up completed **2026-10-01**; next **2026-10-21**
-  article/tag allocation and conversion review, subject to enough measured visits.
+- **Review due**: September 27 follow-up completed **2026-10-01**; **2026-10-21**
+  descriptive article/tag allocation and conversion read, subject to enough measured visits;
+  **2026-11-12** combined search outcome after the sitemap treatment.
 
 - **Verdict**: **INCONCLUSIVE — 2026-10-01, overall search/conversion outcome.**
   `spc parke fiyatları` moves from **0/16/12.06** to **3/324/9.14**
@@ -904,6 +1009,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   with the content cohort; the WORKED lead-instrumentation verdict is not reopened.
 
 ### [2026-08-16] CTR refresh of 3 blog topics — commit ee18f48
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Keep the historical INCONCLUSIVE verdict; October 15 bathroom/skirting readings are now descriptive, November 12 is the combined bilingual outcome.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Original article metadata untouched. The wall-related combined product/allocation subset overlaps the new About link/copy and uses the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. Preserve disjoint exact bathroom/skirting topic checks and historical snapshots.
 - **2026-09-21 wall-panel link interference**: two Turkish article body links now
   explicitly target the Turkish product. Owner authorized shipping before September
@@ -922,8 +1031,8 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
 - **Primary metric(s)**: CTR — "spc wall panels for bathroom" 0.5% @ 9.8 (928 imp);
   "spc skirting" blog 0.5% @ 6.9; "spc duvar kaplama" 1.8% @ 6.3 (279 imp).
 - **Review due**: September 27 combined follow-up completed **2026-10-01**. Next
-  **2026-10-15** disjoint bathroom/skirting check; **November 12** overlapping wall
-  allocation. Preserve the September 17 fixed 28-day and 27-day sensitivity windows.
+  **2026-10-15** descriptive bathroom/skirting check; **November 12** combined bilingual
+  topic/allocation outcome. Preserve September 17 fixed 28-day and 27-day sensitivity windows.
 
 - **Verdict**: **INCONCLUSIVE — 2026-10-01, combined topic outcome.** Exact-query
   baseline→latest clicks/impressions: bathroom **1/230→0/34**, skirting
@@ -947,7 +1056,7 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   recrawled after launch, and serve the shipped metadata. Full evidence, standard 28d
   comparison, and URL-alias handling: [2026-09-06 review](reviews/2026-09-06.md).
 - **Action**: keep all six articles. More exact-query clicks at comparable positions
-  would strengthen the October 15 disjoint read; retain the November 12 combined wall
+  would strengthen the October 15 descriptive read; use the November 12 combined sitemap
   treatment. No title/content/link iteration is justified by this review alone.
 
 - **Interference recorded 2026-09-06**: the same-day 2026-08-16 hub launch overlaps
@@ -988,6 +1097,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   Pacific FAQ interference remains covered by the recorded 27-day sensitivity.
 
 ### [2026-08-16] Skirting hub page — commit d9d4225
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Hub/blog discovery overlaps; preserve October 15 as descriptive and use November 12 for combined effects.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Hub, product data/navigation and skirting-intent copy unchanged. Keep primary hub/query scope and historical dates; annotate aggregate AI/contact secondary readings with the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md).
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -1002,7 +1115,8 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
 - **Primary metric(s)**: hub impressions/position for "spc skirting"; term CTR (target >3%);
   product pages' positions for the term (baseline 22–26).
 - **Review due**: September 27 full-effect checkpoint completed **2026-10-01**; next
-  **2026-10-15**, after more exposure following the English September 27 indexed crawl.
+  **2026-10-15** descriptive query/exposure read following the September 27 English indexed
+  crawl, then **2026-11-12** combined hub/blog discovery outcome after the sitemap treatment.
 
 - **Verdict**: **INCONCLUSIVE — 2026-10-01, full-effect checkpoint.** The English hub
   receives only **25 `spc skirting` impressions / position 6.60 / zero clicks**, versus
@@ -1056,6 +1170,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   [September 17 review](reviews/2026-09-17.md).
 
 ### [2026-09-03] Skirting hub card-image fallback — release repair, commit 171ace5
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED image correctness; annotate parent search readings, with October 15 descriptive and November 12 combined effects.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: No image/card-loader change or overlapping primary correctness metric. Preserve WORKED and the original evidence; this release does not reopen the repair verdict.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
   Germany contact card; [fresh baseline and treatment](baselines/2026-09-21-consent-contact.md).
@@ -1072,8 +1190,9 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   baseline on 2026-09-03 was **0/8**, target after deployment is **8/8 in both EN and TR**.
   Secondary search metrics remain those of the 2026-08-16 skirting hub experiment above.
 - **Review due**: September 4 live smoke check completed September 6. Parent ranking
-  checkpoint completed September 15; September 27 full-effect follow-up completed
-  October 1, INCONCLUSIVE. Parent's next query/exposure read is **October 15**.
+  checkpoint completed September 15; September 27 full-effect follow-up completed October 1,
+  INCONCLUSIVE. Parent query/exposure read **October 15** is descriptive; combined effects
+  **November 12** after the sitemap treatment. Image correctness remains closed.
 - **Verdict**: **WORKED — 2026-09-06.** Production EN and TR hubs each load **8/8** card
   images with non-empty `src`, `complete: true`, and `naturalWidth > 0` (baseline EN 0/8).
   Both pages return HTTP 200 with self-canonicals and eight actual ItemList image URLs.
@@ -1083,6 +1202,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   this operational pass is not a search-ranking verdict.
 
 ### [2026-09-13] Manufacturer purchasing guides and product documents — commit d10e888
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED 6/6 indexing; mark October 11/15/29 readings as descriptive and retain November 12 combined effects.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Direct About/four-article edits and manufacturer-query overlap. Re-baseline the original fixed query/About/Resources/six-guide combined cohort to the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**; keep the expanded regex separate, preserve original snapshots and treat earlier interim reads as descriptive.
 - **2026-09-29 manufacturer interference / current treatment**: About copy/descriptions and manufacturer discovery directly overlap. Ship/re-baseline the eight-query, About/Resources and purchasing discovery scope to the [September 29 snapshot](baselines/2026-09-29-manufacturer-positioning.md); combined review **November 10**. Retain October 11 as descriptive, intervention-marked. Original snapshots and unchanged article text remain intact.
 - **2026-09-25 content interference / current treatment**: Additional Resources/document/contact opportunities overlap secondary combined outcomes. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6**, retaining original purchasing-query targets, September 27 indexing and October 11 interim rankings. Preserve the consent break.
@@ -1193,6 +1316,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   No early verdict or baseline reset. [Review](reviews/2026-09-25.md).
 
 ### [2026-09-14] Named purchasing-guide author — commit c8e22c2
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED attribution correctness; mark parent discovery/AI interpretation and retain November 12 combined effects.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Byline/photo/job title unchanged; preserve WORKED attribution. Parent manufacturer discovery and aggregate AI secondary outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**.
 - **2026-09-29 manufacturer interference / current treatment**: Byline/photo/attribution unchanged. Parent manufacturer discovery and aggregate AI effects now use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md), **November 10**; preserve attribution correctness.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
@@ -1229,6 +1356,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   and validation are recorded with the FAQPage release below.
 
 ### [2026-09-14] FAQPage from visible answers and supplied author portrait — commit 4d4b4e9
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED correctness and October 26 maintenance; discovery/citation observations use the November 12 combined cohort.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Two About answers changed through the existing shared visible/schema content; all seven answers per locale match in production. About citation observation uses the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**, with the new prompt cohort separate from September 29. Unchanged blog FAQs/portrait keep October 26.
 - **2026-09-29 manufacturer interference / current treatment**: About adds two visible FAQs and revises factory wording, all emitted through the existing schema. Verify seven visible/schema answers per locale. About observational citation review uses the [new pilot/baseline](baselines/2026-09-29-manufacturer-positioning.md), **November 10**; unchanged blog FAQs/portrait retain October 26.
 - **2026-09-21 release cohort / interference**: site-wide consent-order repair and
@@ -1280,6 +1411,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   six-page/26-answer technical baseline fixed; validate the new cohort separately.
 
 ### [2026-09-14] Technical specification, installation and heating guides — commit 97d45e7
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED indexing and October 12 descriptive read; affected bilingual search/link effects move November 6 to November 12 combined.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: No technical article, query or new direct incoming link. Primary scope remains **November 6**; overlapping manufacturer/aggregate AI secondary outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**.
 - **2026-09-29 manufacturer interference / current treatment**: Primary article/query/link scope is unchanged; preserve the September 25 treatment and **November 6** primary search/link date. Aggregate AI/content secondary outcomes use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md) and **November 10**; keep consent annotations.
 - **2026-09-25 content interference / current treatment**: New contextual incoming links overlap this six-page content cohort. Re-baseline the original 13-query/page and combined metrics to the [September 25 baseline](baselines/2026-09-25-comparison-content.md) with **November 6** combined follow-up. Keep September 28 indexing and October 12 interim rankings; preserve the consent break.
@@ -1304,8 +1439,9 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   and observed AI referrals. Qualified leads, sales and direct chatbot citations are not
   inferred from these metrics.
 - **Review due**: September 28 indexing completed **2026-10-01**; preserve
-  **October 12** interim rankings/query allocation, **November 6** primary search/link
-  effects and **November 12** aggregate AI/content secondary outcome.
+  **October 12** descriptive rankings/query allocation. **November 12** combined bilingual
+  search/link and aggregate AI/content outcomes after the sitemap treatment, superseding
+  November 6 for the affected primary search/link metrics.
 
 - **Interference treatment**: ship and re-baseline the crawler/llms.txt aggregate AI metric
   and manufacturer secondary resource/organic/lead/AI readings to the new dated baseline,
@@ -1378,6 +1514,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   [Review](reviews/2026-09-25.md).
 
 ### [2026-09-15] Distributor, project and colour-selection guides — commit 3d01b51
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve WORKED indexing and October 13 descriptive read; affected project/room-intent effects move November 3 to November 12 combined.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: No original project/design article/query edit. Primary project/room-intent scope remains **November 3**; overlapping manufacturer/aggregate AI secondary outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. The separate all-query collection/CTR guard, including Elite, follows November 12.
 - **2026-09-29 manufacturer interference / current treatment**: Primary article/query scope unchanged, retaining **November 3**. Overlapping manufacturer discovery and aggregate AI secondary outcomes use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md), **November 10**; do not assign shared gains to this batch alone.
 - **2026-09-25 content interference / current treatment**: The [comparison/water/terminology cohort](content-strategy/2026-09-25-comparison-content-launch.md) adds no direct links or fixed target-query overlap with this group. Keep **November 3 primary GSC** and September 29/October 13 checkpoints. Its shared aggregate AI/content secondary outcome includes September 25 and uses November 6, preserving the consent break.
@@ -1403,8 +1543,9 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   210 Organic Search sessions vs 273, and 20 lead / 8 download key events. Small counts and
   changed instrumentation prevent a conversion-growth or chatbot-citation claim.
 - **Review due**: September 29 indexing completed **2026-10-01**; preserve
-  **October 13** rankings/query allocation, **November 3** primary project/room-intent
-  effects and **November 12** overlapping manufacturer/AI secondary outcome.
+  **October 13** descriptive rankings/query allocation. **November 12** combined project/
+  room-intent, manufacturer and AI outcomes after the sitemap treatment, superseding
+  November 3 for affected primary project/room-intent metrics.
 
 - **Interference treatment**: ship and re-baseline crawler/llms.txt aggregate AI outcomes and
   the manufacturer/technical content outcomes to September 15, with October 27 combined
@@ -1469,6 +1610,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   No early rewrite or failure verdict. [Review](reviews/2026-09-25.md).
 
 ### [2026-09-22] Underlay, care and room-selection guides — commit d3e770e
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve October 6/20 descriptive milestones; affected bilingual search/link effects move November 6 to November 12 combined.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Care article/query/link primary scope unchanged, retaining **November 6**. Shared aggregate AI/content outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**. The homepage title overlaps the all-query collection/CTR and broad-floor allocation guards, including Elite secondary exposure; those guards now use November 12, preserving disjoint room-intent history.
 - **2026-09-29 manufacturer interference / current treatment**: Primary article/query/link scope unchanged; preserve **November 6** from the September 25 treatment. Aggregate AI/content secondary outcomes use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md), **November 10**; consent break remains.
 - **2026-09-25 content interference / current treatment**: New contextual incoming links overlap all three topic pairs. Use the [September 25 baseline](baselines/2026-09-25-comparison-content.md) and **November 6** for combined content/link and aggregate AI effects, superseding November 3 for those measures. Keep October 6 indexing and October 20 interim rankings; preserve the consent break.
@@ -1486,9 +1631,9 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   AI Assistant sessions are 13 vs 1; lead/download keys 16/15 vs 10/1. Counts cross earlier
   instrumentation changes and precede the September 21 consent repair, so they do not
   establish growth, qualified leads or chatbot citations.
-- **Review due**: **2026-10-06 indexing**, **2026-10-20 rankings/query allocation**,
-  **2026-11-06 primary search/link effects** per September 25; **2026-11-12 aggregate AI/content
-  secondary outcome** after October 1.
+- **Review due**: **2026-10-06 indexing**, **2026-10-20 descriptive rankings/query
+  allocation**, **2026-11-12 combined bilingual search/link and aggregate AI/content
+  outcomes** after the sitemap treatment, superseding November 6 primary search/link effects.
 - **Interference**: new links overlap technical/project/design pages and Resources; two exact
   underlay queries overlap the technical group. Ship and re-baseline affected content/link
   and aggregate AI/secondary outcomes to September 22, with matching parent notes and
@@ -1514,7 +1659,8 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   the sitemap with HTTP **204**, `lastSubmitted` **2026-09-22T00:53:35.495Z**,
   processing pending. No indexing or ranking result is inferred.
 - **Action**: keep the fourth batch live; UNDERLAY, CARE and ROOMS are published in the map.
-  Use October 6, October 20 and November 3 checks; remaining work keeps its evidence needs.
+  Use October 6/20 descriptive checks and November 12 combined effects; remaining work keeps
+  its evidence needs.
 - **Early passive check — 2026-09-25**: **6/6 indexed/self-canonical**, all crawled
   September 22 UTC. September 13–23 cohort exposure is **36 impressions / zero clicks**;
   excluding the partial GSC launch day leaves **35/0 on September 22–23**. One fixed
@@ -1528,6 +1674,10 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   November 12 aggregate AI dates; no early ranking or conversion verdict. [October 1 review](reviews/2026-10-01.md).
 
 ### [2026-09-25] Comparison, water resistance and vinyl terminology — commit 23b91d9
+- **2026-10-01 sitemap discovery / current treatment**: At 01:05:56 UTC, 51 Turkish
+  static/article URLs gained separate sitemap entries. Preserve October 9/23 descriptive milestones; affected bilingual search/link effects move November 6 to November 12 combined.
+  [Frozen page/query checkpoint](baselines/2026-10-01-turkish-sitemap-entries.md);
+  [all-parent treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md).
 - **2026-10-01 discovery interference / current treatment**: Article/query/link/redirect primary scope unchanged; keep October 9/23 and **November 6** primary dates. Shared aggregate AI/content secondary outcomes use the [October 1 baseline](baselines/2026-10-01-manufacturer-discovery.md), **November 12**.
 - **2026-09-29 manufacturer interference / current treatment**: No article, metadata, tag, link or redirect change. Keep October 9/23 and **November 6** primary search/link dates. Aggregate AI/content secondary outcomes use the [September 29 baseline](baselines/2026-09-29-manufacturer-positioning.md), **November 10**.
 - **Change**: substantially expand the existing SPC/laminate and water-resistance EN/TR pairs,
@@ -1555,9 +1705,9 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   November 2 wall panels and consent/office-specific dates. No shared template, sitemap
   generation, product, document or tracking change. All 42 other article records and all
   46 original related-post cohorts remain unchanged.
-- **Review due**: **2026-10-09 indexing/recrawl**, **2026-10-23 rankings/snippets**,
-  **2026-11-06 primary search/link effects**; **2026-11-12 aggregate AI/content secondary
-  outcome** after October 1.
+- **Review due**: **2026-10-09 indexing/recrawl**, **2026-10-23 descriptive rankings/
+  snippets**, **2026-11-12 combined bilingual search/link and aggregate AI/content outcomes**
+  after the sitemap treatment, superseding November 6 primary search/link effects.
 - **Validation**: production build, text/blog validation, FAQ manifest and typecheck pass.
   Local verification covers 48 articles, 24 affected FAQ answers, 46 internal destinations,
   54 image/PDF byte comparisons and 12 desktop/mobile views. No indexing/ranking verdict
@@ -1574,7 +1724,8 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
 - **Sitemap submission**: Google accepted HTTP **204**, `lastSubmitted` **2026-09-25T13:27:42.188Z**,
   processing pending `true`. This is not indexing proof.
 - **Action**: keep the fifth batch live. CMP/WATER are revised and TYPES published in the map;
-  retain October 9/23 and November 6 reads, plus evidence requirements for remaining topics.
+  retain October 9/23 descriptive checks and November 12 combined effects, plus evidence
+  requirements for remaining topics.
 
 - **Review — 2026-10-01**: Provisional, before October 9: both new terminology URLs indexed and all
   four revised comparison/water pages have post-launch indexed crawls. September 26–28
@@ -1583,20 +1734,6 @@ October 8; retain November 12 affected combined outcome and all disjoint dates)
   aggregate AI; no early effect verdict. [October 1 review](reviews/2026-10-01.md).
 
 ## Queued (owner-planned, not yet experiments)
-
-- **Turkish sitemap entries — prepared 2026-10-01, not shipped.** Owner requested the
-  correction after today's review. Local implementation adds **27 Turkish static + 24
-  article entries**, taking the current published sitemap from **159 to 210 unique URLs**
-  with reciprocal/self EN/TR alternates. Production build and all **102 paired destination
-  checks** pass against published base `722cd50`. [Preparation and all-23-parent interference
-  treatment](content-strategy/2026-10-01-turkish-sitemap-entries.md),
-  [baseline](baselines/2026-10-01-turkish-sitemap-entries.md) and
-  [validation](content-strategy/2026-10-01-turkish-sitemap-entries-validation.json).
-  Hypothesis: explicit canonical locale entries improve discovery/consolidation signals;
-  correctness is 51/51 separate entries, with indexing/search effects measured separately.
-  For an October 1 ship, proposed checks are October 15/29 and November 12 combined effects.
-  Owner authorized commit/push/publication October 1. Current experiment dates stay
-  active until deployment; production verification and sitemap submission are pending.
 
 - **End-customer cost breakdown: SPC vs ceramics vs laminate** — owner will prepare real cost
   data in a future session. When it exists: new content targeting the price-intent cluster

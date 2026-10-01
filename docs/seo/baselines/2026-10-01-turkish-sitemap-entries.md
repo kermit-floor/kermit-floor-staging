@@ -1,12 +1,15 @@
-# Turkish sitemap entries — prepared baseline, October 1
+# Turkish sitemap entries — pre-release baseline, October 1
 
-**Prepared locally; not deployed.** This snapshot does not activate a new experiment
-or change any current review date. [Release preparation and interference treatment](../content-strategy/2026-10-01-turkish-sitemap-entries.md).
+**Deployed and verified October 1, 2026, at 01:05:56 UTC**, code commit `2b08ba0`.
+This frozen pre-release snapshot now supports the active discovery treatment.
+[Release and interference treatment](../content-strategy/2026-10-01-turkish-sitemap-entries.md) ·
+[Production evidence](2026-10-01-turkish-sitemap-entries-production.json).
 
-The live sitemap has **159 URL entries**. Its **27 Turkish static URLs and 24 Turkish
-article URLs** appear as alternates but have **zero separate `<loc>` entries**. The
-candidate has **210 unique entries**, including all 51 of those URLs. All existing
-entries remain present; each bilingual page pair has identical self-inclusive EN/TR
+Before release, the live sitemap had **159 URL entries**. Its **27 Turkish static URLs
+and 24 Turkish article URLs** appeared as alternates but had **zero separate `<loc>`
+entries**. The verified production sitemap now has **210 unique entries**, including
+all 51 of those URLs. All existing entries remain present; each bilingual page pair
+has identical self-inclusive EN/TR
 alternates on both entries. Existing tag entries and article modification dates retain
 their behavior.
 
@@ -35,8 +38,14 @@ sitemap entry with reciprocal/self EN/TR alternates; no old entry is removed. Fo
 GSC sitemap processing and canonical indexing separately. Search exposure is a secondary
 combined outcome, using the frozen page and original parent query cohorts in the JSON.
 
-If deployed October 1: immediate production verification, **October 15** processing/
-indexing check, **October 29** descriptive exposure check, **November 12** combined
-structural outcome. Record the actual UTC deployment and derive partial/first-full
-GSC and GA4 days then; refresh the checkpoint if deployment is delayed. Preserve every
-original experiment baseline and the separate manufacturer prompt cohorts.
+Production verification passed for the sitemap and all 102 paired page destinations.
+GSC accepted submission with HTTP 204 at **01:06:43 UTC October 1**; processing is pending.
+Its last downloaded snapshot is still September 30 at 22:49:19 UTC (159 submitted URLs),
+so its immediate contents counters do not describe the newly published sitemap or establish indexing.
+
+Review **October 15** processing/indexing, **October 29** descriptive exposure, and
+**November 12** combined structural outcome. Exclude **September 30 Pacific** as the
+partial GSC day; the first full GSC day is **October 1**. Exclude **October 1 Europe/Istanbul**
+as the partial GA4 day; the first full GA4 day is **October 2**. These are release boundaries,
+not evidence that Google has recrawled the URLs. Preserve every original experiment
+baseline and the separate manufacturer prompt cohorts.

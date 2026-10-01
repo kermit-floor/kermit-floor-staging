@@ -1,6 +1,6 @@
 {
   "record_date": "2026-10-01",
-  "status": "APPROVED_PENDING_DEPLOYMENT",
+  "status": "DEPLOYED_VERIFIED",
   "source_review_fetched_at": "2026-10-01T00:41:40.574235+00:00",
   "measurement_cutoff": "2026-09-28",
   "windows": {
@@ -7419,12 +7419,38 @@
       }
     }
   },
-  "provenance_note": "Reuses fresh same-day direct API evidence from the completed October 1 review, before this candidate existed. Full selected request/response records retained; original experiment baselines remain authoritative history. Scope is exact added sitemap URLs, with original parent query filters retained separately. No new attribution/reset becomes effective until deployment.",
+  "provenance_note": "Reuses fresh same-day direct API evidence from the completed October 1 review, before this candidate existed. Full selected request/response records retained; original experiment baselines remain authoritative history. Scope is exact added sitemap URLs, with original parent query filters retained separately. The sitemap discovery treatment became effective at the recorded deployment boundary; the same-day pre-release data and historical baselines remain unchanged.",
   "published_base_commit": "722cd50329e347dc4bd798b7af4ae90657bb78cc",
   "inspection_coverage": {
     "inspected": 28,
     "indexed": 28,
     "not_inspected": 23
   },
-  "owner_authorized": "2026-10-01"
+  "owner_authorized": "2026-10-01",
+  "code_commit": "2b08ba0b6528135759ee2aebb5c596052bff54fd",
+  "measurement_boundaries": {
+    "deployed_at_utc": "2026-10-01T01:05:56.241541Z",
+    "gsc": {
+      "timezone": "America/Los_Angeles",
+      "partial_day_excluded": "2026-09-30",
+      "first_full_post_release_day": "2026-10-01"
+    },
+    "ga4": {
+      "timezone": "Europe/Istanbul",
+      "partial_day_excluded": "2026-10-01",
+      "first_full_post_release_day": "2026-10-02"
+    }
+  },
+  "review_due": {
+    "processing_indexing": "2026-10-15",
+    "descriptive_search_exposure": "2026-10-29",
+    "combined_structural_effect": "2026-11-12"
+  },
+  "production_evidence": "2026-10-01-turkish-sitemap-entries-production.json",
+  "post_release_correctness": {
+    "sitemap_entries": 210,
+    "affected_urls_with_own_loc": 51,
+    "removed_prior_entries": 0,
+    "verified_page_destinations": 102
+  }
 }
