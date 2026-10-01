@@ -74,3 +74,16 @@ maps each parent scope. Preserve implementation correctness verdicts and histori
 Keep October 5 desktop checks, October 8 weekly lead reading, October 21 consent/office
 operational checks and October 26 FAQ/portrait maintenance. Earlier article-cohort interim
 checks remain descriptive; no monitoring automation is created by this release.
+
+## Recorded release boundary
+
+Code commit `781581e` deployed **October 1 at 02:18:38 UTC**. GSC's Pacific reporting day
+September 30 contains the partial release; the first full post-release GSC day is **October 1**.
+GA4 uses Europe/Istanbul, so October 1 is partial and **October 2** is its first full day.
+Do not compare same-labelled daily rows as if these measurement boundaries were identical.
+
+[Production verification](2026-10-01-content-completion-production.json) records 40 successful
+live desktop/mobile page checks, 181 valid internal destinations, 228 unique sitemap entries
+with no original entry removed, and Google sitemap acknowledgement **HTTP 204** at
+02:20:40 UTC. The immediate GSC GET is pending and still describes the prior 210-entry
+processing state; it is not an indexing verdict for this release.

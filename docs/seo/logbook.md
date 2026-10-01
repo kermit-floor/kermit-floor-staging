@@ -116,7 +116,7 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
 
 ## Open experiments
 
-### [2026-10-01] Remaining guides, article revisions and glossary — release pending
+### [2026-10-01] Remaining guides, article revisions and glossary — commit 781581e
 - **Change**: four new EN/TR guide pairs (quantity, import orders, alternatives and document
   evidence), four revised pairs (definition, mistakes, cost and reviews), a 33-term bilingual
   glossary and a curated bilingual blog hub covering all 28 published topics. Factory/QC
@@ -144,9 +144,14 @@ cohort schedules for affected metrics; historical snapshots and verdicts remain 
 - **Local validation**: build/typecheck and content validators pass; 40 desktop/mobile route
   checks, 181 internal destinations, 64 FAQ answers and 33 glossary definitions per locale.
   Existing 40 unaffected article records and all 48 old related lists are unchanged.
-- **Publication / verification**: pending release and production verification.
+- **Publication / verification**: commit `781581e` deployed **2026-10-01 02:18:38 UTC**;
+  Cloudflare and GitHub checks passed. All 40 live viewport/page cases, 181 internal
+  destinations, 64 FAQ answers and bilingual 33-term glossary checks pass. Sitemap **228**
+  unique entries, all original 210 retained; submission **204** at 02:20:40 UTC, processing
+  pending. [Production evidence](baselines/2026-10-01-content-completion-production.json).
+  First full post-release day: GSC **October 1** (Pacific); GA4 **October 2** (Istanbul).
 - **Verdict**: PENDING.
-- **Action**: publish the approved supported scope; leave factory/QC and evidence-dependent
+- **Action**: approved supported scope published and verified; leave factory/QC and evidence-dependent
   packing/routes/current-price/certificate enhancements for a later confirmed brief.
 
 

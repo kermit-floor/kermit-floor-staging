@@ -1,0 +1,483 @@
+{
+  "status": "DEPLOYED_VERIFIED",
+  "verified_at_utc": "2026-10-01T02:23:33.496402+00:00",
+  "code_commit": "781581ea18a719b87b1b0c51d0820b5a9a497f12",
+  "deployment": {
+    "id": "5eaa8c79-1fbc-46d6-8690-f516eef332f6",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "versions": [
+      {
+        "version_id": "f8ff4216-0996-411e-8999-f7b45ac0a356",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-01T02:18:38.56062Z"
+  },
+  "build_checks": [
+    {
+      "name": "Workers Builds: kermit-floor-staging",
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-10-01T02:18:47Z",
+      "details_url": "https://dash.cloudflare.com/542a80d833f2cf2d70591dbf553ed0d2/workers/services/view/kermit-floor-staging/production/builds/7fdd1602-c518-4012-932d-18384aef8690"
+    },
+    {
+      "name": "blog",
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-10-01T02:17:40Z",
+      "details_url": "https://github.com/kermit-floor/kermit-floor-staging/actions/runs/36805052709/job/110187416722"
+    }
+  ],
+  "measurement_boundaries": {
+    "deployed_at_utc": "2026-10-01T02:18:38.56062Z",
+    "gsc": {
+      "time_zone": "America/Los_Angeles",
+      "partial_release_day": "2026-09-30",
+      "first_full_post_release_day": "2026-10-01"
+    },
+    "ga4": {
+      "time_zone": "Europe/Istanbul",
+      "partial_release_day": "2026-10-01",
+      "first_full_post_release_day": "2026-10-02"
+    }
+  },
+  "local_and_production_regressions": {
+    "topics": 28,
+    "articles": 56,
+    "newArticlePages": 8,
+    "updatedArticlePages": 8,
+    "unchangedPosts": 40,
+    "preservedOldRelatedLists": 48,
+    "faqAnswersInAffectedArticles": 64,
+    "glossaryTermsPerLocale": 33,
+    "arithmetic": "PASS"
+  },
+  "production_page_checks": [
+    {
+      "path": "/blog",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog",
+      "h1": "Kermit guides",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/tr/blog",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog",
+      "h1": "Kermit rehberleri",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "h1": "What Is SPC Flooring? Layers, Benefits and the Difference from Laminate",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "h1": "SPC Parke Nedir? Katmanları, Avantajları ve Laminattan Farkı",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-mistakes-misconceptions",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions",
+      "h1": "SPC Flooring Mistakes: 6 Misconceptions About Installation and Care",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "h1": "SPC Parkede Doğru Bilinen Yanlışlar: Montaj ve Bakımda 6 Hata",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-cost",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-cost",
+      "h1": "SPC Flooring Cost: 7 Quote Checks and a Complete Project Example",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-fiyatlari",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-fiyatlari",
+      "h1": "SPC Parke Fiyatları: 7 Teklif Kontrolü ve Toplam Maliyet Hesabı",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-user-reviews",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-user-reviews",
+      "h1": "SPC Flooring User Reviews: An Expert Guide to Benefits and Drawbacks",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-kullanici-yorumlari",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-kullanici-yorumlari",
+      "h1": "SPC Parke Kullanıcı Yorumları: Avantaj ve Sınırlar İçin Uzman Rehberi",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/glossary",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/glossary",
+      "h1": "SPC flooring, skirting and wall-panel glossary",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/tr/sozluk",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/sozluk",
+      "h1": "SPC parke, süpürgelik ve duvar paneli sözlüğü",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/blog/import-spc-flooring-from-kermit",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/import-spc-flooring-from-kermit",
+      "h1": "Importing SPC Flooring from Kermit: Orders, Packing and Landed Cost",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-ihracat-tedarik",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-parke-ihracat-tedarik",
+      "h1": "Kermit SPC Parke İhracat ve Tedarik Rehberi: Siparişten Teslimata",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-quantity-layout",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-quantity-layout",
+      "h1": "SPC Flooring Quantity: Measure, Plan the Layout and Round to Cartons",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-metraj-doseme-plani",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-metraj-doseme-plani",
+      "h1": "SPC Parke Metrajı: Alan, Fire Payı ve Kutu Hesabı",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-material-alternatives",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-material-alternatives",
+      "h1": "SPC Flooring Alternatives: Compare Tile, Wood, Carpet, Cork and Bamboo",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-alternatif-zeminler",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-alternatif-zeminler",
+      "h1": "SPC Parke Alternatifleri: Seramik, Ahşap, Halı, Mantar ve Bambu",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/kermit-spc-certificates-emissions",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/kermit-spc-certificates-emissions",
+      "h1": "SPC Flooring Certificates and Emissions: How to Check the Evidence",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/kermit-spc-sertifikalar-emisyon",
+      "viewport": 1440,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-sertifikalar-emisyon",
+      "h1": "SPC Parke Sertifikaları ve Emisyon: Belgeler Nasıl Kontrol Edilir?",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog",
+      "h1": "Kermit guides",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/tr/blog",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog",
+      "h1": "Kermit rehberleri",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/what-is-spc-flooring-vs-laminate-differences-benefits",
+      "h1": "What Is SPC Flooring? Layers, Benefits and the Difference from Laminate",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-nedir-laminat-farki-ve-avantajlari",
+      "h1": "SPC Parke Nedir? Katmanları, Avantajları ve Laminattan Farkı",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-mistakes-misconceptions",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-mistakes-misconceptions",
+      "h1": "SPC Flooring Mistakes: 6 Misconceptions About Installation and Care",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-dogru-bilinen-yanlislar",
+      "h1": "SPC Parkede Doğru Bilinen Yanlışlar: Montaj ve Bakımda 6 Hata",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-cost",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-cost",
+      "h1": "SPC Flooring Cost: 7 Quote Checks and a Complete Project Example",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-fiyatlari",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-fiyatlari",
+      "h1": "SPC Parke Fiyatları: 7 Teklif Kontrolü ve Toplam Maliyet Hesabı",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-user-reviews",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-user-reviews",
+      "h1": "SPC Flooring User Reviews: An Expert Guide to Benefits and Drawbacks",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-kullanici-yorumlari",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-kullanici-yorumlari",
+      "h1": "SPC Parke Kullanıcı Yorumları: Avantaj ve Sınırlar İçin Uzman Rehberi",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/glossary",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/glossary",
+      "h1": "SPC flooring, skirting and wall-panel glossary",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/tr/sozluk",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/sozluk",
+      "h1": "SPC parke, süpürgelik ve duvar paneli sözlüğü",
+      "horizontalOverflow": false
+    },
+    {
+      "path": "/blog/import-spc-flooring-from-kermit",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/import-spc-flooring-from-kermit",
+      "h1": "Importing SPC Flooring from Kermit: Orders, Packing and Landed Cost",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/kermit-spc-parke-ihracat-tedarik",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-parke-ihracat-tedarik",
+      "h1": "Kermit SPC Parke İhracat ve Tedarik Rehberi: Siparişten Teslimata",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-quantity-layout",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-quantity-layout",
+      "h1": "SPC Flooring Quantity: Measure, Plan the Layout and Round to Cartons",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-metraj-doseme-plani",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-metraj-doseme-plani",
+      "h1": "SPC Parke Metrajı: Alan, Fire Payı ve Kutu Hesabı",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/spc-flooring-material-alternatives",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/spc-flooring-material-alternatives",
+      "h1": "SPC Flooring Alternatives: Compare Tile, Wood, Carpet, Cork and Bamboo",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/spc-parke-alternatif-zeminler",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/spc-parke-alternatif-zeminler",
+      "h1": "SPC Parke Alternatifleri: Seramik, Ahşap, Halı, Mantar ve Bambu",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/blog/kermit-spc-certificates-emissions",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/blog/kermit-spc-certificates-emissions",
+      "h1": "SPC Flooring Certificates and Emissions: How to Check the Evidence",
+      "horizontalOverflow": false,
+      "faq": 4
+    },
+    {
+      "path": "/tr/blog/kermit-spc-sertifikalar-emisyon",
+      "viewport": 390,
+      "status": 200,
+      "canonical": "https://kermitfloor.com/tr/blog/kermit-spc-sertifikalar-emisyon",
+      "h1": "SPC Parke Sertifikaları ve Emisyon: Belgeler Nasıl Kontrol Edilir?",
+      "horizontalOverflow": false,
+      "faq": 4
+    }
+  ],
+  "production_summary": {
+    "checkedInternalDestinations": 181,
+    "brokenLinks": [],
+    "errors": [],
+    "sitemapEntries": 228,
+    "completedAt": "2026-10-01T02:20:58.654Z"
+  },
+  "production_interactions": {
+    "glossaryLanguageSwitch": "EN → TR → EN passed",
+    "articleLanguageSwitch": "EN quantity → TR quantity passed",
+    "glossaryAnchor": "ordering passed",
+    "tagDisclosure": "passed"
+  },
+  "sitemap_and_submission": {
+    "verified_at_utc": "2026-10-01T02:20:39.018426+00:00",
+    "http_status": 200,
+    "sha256": "96b97e0b3b971c4da2a34c24ec7559cca789ab57fb92789f4365733d690bfc4f",
+    "entries": 228,
+    "old_membership_source": "Original 210-entry cohort reconstructed from base commit 950232c navigation and the before manifest; prior production count recorded in 2026-10-01-turkish-sitemap-entries-production.json.",
+    "removed_prior_entries": [],
+    "added_entries": [
+      "https://kermitfloor.com/blog/import-spc-flooring-from-kermit",
+      "https://kermitfloor.com/blog/kermit-spc-certificates-emissions",
+      "https://kermitfloor.com/blog/spc-flooring-material-alternatives",
+      "https://kermitfloor.com/blog/spc-flooring-quantity-layout",
+      "https://kermitfloor.com/blog/tag/floor-material-selection",
+      "https://kermitfloor.com/blog/tag/floor-quantity-planning",
+      "https://kermitfloor.com/blog/tag/flooring-document-evidence",
+      "https://kermitfloor.com/blog/tag/flooring-import-orders",
+      "https://kermitfloor.com/glossary",
+      "https://kermitfloor.com/tr/blog/kermit-spc-parke-ihracat-tedarik",
+      "https://kermitfloor.com/tr/blog/kermit-spc-sertifikalar-emisyon",
+      "https://kermitfloor.com/tr/blog/spc-parke-alternatif-zeminler",
+      "https://kermitfloor.com/tr/blog/spc-parke-metraj-doseme-plani",
+      "https://kermitfloor.com/tr/blog/tag/parke-belge-kaniti",
+      "https://kermitfloor.com/tr/blog/tag/parke-ihracat-tedarik",
+      "https://kermitfloor.com/tr/blog/tag/parke-metraj-planlama",
+      "https://kermitfloor.com/tr/blog/tag/zemin-malzeme-secimi",
+      "https://kermitfloor.com/tr/sozluk"
+    ],
+    "affected_reciprocal_self_alternates": 20,
+    "submission": {
+      "http_status": 204,
+      "submitted_at_utc": "2026-10-01T02:20:40.465798+00:00"
+    },
+    "search_console_state": {
+      "http_status": 200,
+      "response": {
+        "path": "https://kermitfloor.com/sitemap.xml",
+        "lastSubmitted": "2026-10-01T02:20:40.379Z",
+        "isPending": true,
+        "isSitemapsIndex": false,
+        "type": "sitemap",
+        "lastDownloaded": "2026-10-01T01:06:44.353Z",
+        "warnings": "0",
+        "errors": "0",
+        "contents": [
+          {
+            "type": "web",
+            "submitted": "210",
+            "indexed": "0"
+          }
+        ]
+      }
+    },
+    "interpretation": "HTTP 204 acknowledges submission. The GET state is the current report, which may describe earlier processing; neither proves indexing or improved rankings."
+  },
+  "limitations": [
+    "Implementation and submission verified; indexing, rankings and LLM citation effects remain unproven.",
+    "Sitemap GET still shows the prior 210-entry processing state with isPending true; submitted indexed zero is not a page-level index verdict.",
+    "First full post-release GSC and GA4 dates differ because the reporting time zones differ."
+  ]
+}

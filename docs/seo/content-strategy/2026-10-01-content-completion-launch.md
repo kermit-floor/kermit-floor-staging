@@ -1,6 +1,6 @@
 # Remaining content release — October 1, 2026
 
-Status: **LOCALLY_VALIDATED; production verification pending**.
+Status: **DEPLOYED AND VERIFIED** — code commit `781581e`.
 Base: `950232c` (includes the approved October 1 manufacturer and bilingual sitemap changes).
 Working branch: `codex/complete-content-plan` in a separate managed worktree. The owner's
 original dirty checkout is untouched. Continuing approval covers this completion release and
@@ -121,7 +121,7 @@ changes cannot be isolated from these observations.
 - **181 internal destinations** return 200, including every published guide and retained tag
   destination discovered from these pages. New terms point only to published topics.
 - **228 sitemap entries**, including independent EN/TR entries for all ten new destinations.
-  Original 210-entry membership will also be compared in the production record.
+  All original 210 entries remain in the production sitemap.
 - Quantity and cost arithmetic checked. Representative hub, glossary, article and mobile
   table layouts visually inspected. Local screenshots stay in the scratch QA directory.
 
@@ -131,5 +131,26 @@ corrected without changing application locale behavior.
 
 ## Publication
 
-Pending push, deployment completion, production checks and sitemap submission. Refresh this
-section and the logbook with the actual commit and deployment boundary after verification.
+Code commit **`781581ea18a719b87b1b0c51d0820b5a9a497f12`** was pushed to `main` under the
+owner's continuing publication approval. GitHub blog checks passed at **02:17:40 UTC**;
+Cloudflare Workers Builds passed at **02:18:47 UTC**. Actual deployment boundary:
+**2026-10-01 02:18:38.560620 UTC**, deployment `5eaa8c79-1fbc-46d6-8690-f516eef332f6`,
+100% Worker version `f8ff4216-0996-411e-8999-f7b45ac0a356`.
+
+[Production evidence](../baselines/2026-10-01-content-completion-production.json) confirms:
+
+- All **20 affected URLs** passed at desktop and mobile widths (40 cases): correct
+  language, one H1, canonical, visible structured-content parity and no overflow or page errors.
+- All **181 checked internal destinations** return 200. The EN/TR glossary language
+  switcher, quantity-article language switch, term anchor and tag disclosure work live.
+- Sitemap has **228 unique entries**, all original 210 retained, 18 additions (eight article,
+  two glossary and eight tag URLs). All 20 affected canonical entries have reciprocal/self
+  EN/TR alternates. This preserves the earlier standalone Turkish sitemap fix.
+- GSC submission returned **204** at **02:20:40 UTC**. Immediate GET returned 200 with
+  `isPending: true`, zero errors/warnings and the previous 210-entry processing state.
+  This is acknowledgement, not proof of new page indexing or search/AI gains.
+
+The first full post-release day is **October 1 for GSC (America/Los_Angeles)** and
+**October 2 for GA4 (Europe/Istanbul)**. Record the different partial-day boundaries in later
+comparisons. Search and AI effects remain PENDING. The follow-up documentation commit
+records these observations without changing the deployed content.

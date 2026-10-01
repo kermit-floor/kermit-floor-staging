@@ -1,6 +1,6 @@
 {
   "record_date": "2026-10-01",
-  "status": "PRE_RELEASE",
+  "status": "DEPLOYED_VERIFIED",
   "base_commit": "950232c",
   "fetched_at": "2026-10-01T01:42:19.396430+00:00",
   "cutoff_probe": {
@@ -10662,5 +10662,20 @@
     "descriptive_rankings_snippets": "2026-10-29",
     "combined_search_and_discovery": "2026-11-12"
   },
-  "interference_treatment": "Ship as a combined eight-topic content / curated hub / glossary release. Preserve prior verdicts and original snapshots; re-baseline affected page/query/link/AI outcomes with this exact cohort. Earlier interim checks remain descriptive, operational and implementation-only verdicts unchanged. All 24 current open/operational entries receive a cohort marker."
+  "interference_treatment": "Ship as a combined eight-topic content / curated hub / glossary release. Preserve prior verdicts and original snapshots; re-baseline affected page/query/link/AI outcomes with this exact cohort. Earlier interim checks remain descriptive, operational and implementation-only verdicts unchanged. All 24 current open/operational entries receive a cohort marker.",
+  "code_commit": "781581ea18a719b87b1b0c51d0820b5a9a497f12",
+  "measurement_boundaries": {
+    "deployed_at_utc": "2026-10-01T02:18:38.56062Z",
+    "gsc": {
+      "time_zone": "America/Los_Angeles",
+      "partial_release_day": "2026-09-30",
+      "first_full_post_release_day": "2026-10-01"
+    },
+    "ga4": {
+      "time_zone": "Europe/Istanbul",
+      "partial_release_day": "2026-10-01",
+      "first_full_post_release_day": "2026-10-02"
+    }
+  },
+  "production_evidence": "2026-10-01-content-completion-production.json"
 }
