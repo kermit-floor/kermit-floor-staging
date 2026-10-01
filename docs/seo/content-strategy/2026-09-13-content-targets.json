@@ -8,7 +8,10 @@
     "title": "SPC manufacturer in Türkiye",
     "angle": "Turn the existing company page into the main commercial destination for manufacturer, factory and Turkish supplier searches.",
     "outline": "Expand the existing manufacturer destination with Kermit company locations, the full floor/skirting/wall range, OEM, one-container MOQ, four-week lead time and scoped document links. Do not attach certificate coverage to a factory without matching evidence.",
-    "evidence": "Current company information; owner confirmation dated 2026-09-13; certificate files and site scope; real factory imagery."
+    "evidence": "Manufacturer destination published September 13; capacity/country profile updated September 29 and Turkish discovery wording October 1. Preserve 8 million m² combined annual flooring/wall-panel capacity and four-country footprint from the later owner confirmation.",
+    "status": "implemented",
+    "released_at": "2026-09-13",
+    "release_record": "2026-09-13-manufacturer-launch.md"
   },
   {
     "id": "DOCS",
@@ -19,7 +22,10 @@
     "title": "Certificates and technical documents",
     "angle": "Make the evidence behind the commercial pages accessible and traceable.",
     "outline": "Publish reviewed technical and installation documents with product and language labels. Request remaining warranty and project evidence. Named certificates are deferred pending accurate holder, site and product scope.",
-    "evidence": "Owner-supplied documents and approved 2026-09-13 technical corrections; see the launch record."
+    "evidence": "Owner-supplied documents and approved 2026-09-13 technical corrections; see the launch record.",
+    "status": "implemented",
+    "released_at": "2026-09-13",
+    "release_record": "2026-09-13-manufacturer-launch.md"
   },
   {
     "id": "HUB",
@@ -30,7 +36,10 @@
     "title": "Kermit guides and practical advice",
     "angle": "Use the existing article hub as the learning centre without migrating published URLs.",
     "outline": "Add curated sections for buying from Kermit, product selection, installation, skirting and wall panels. Retain one canonical blog URL per language and link only published pages.",
-    "evidence": "Review the September experiments before broad navigation or cross-link changes."
+    "evidence": "Curated bilingual /blog sections resolve all 28 published topic IDs, retain the chronological listing and existing tag destinations, and link Resources and the glossary. Same-day broad discovery interference is recorded against all open entries.",
+    "status": "revised",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md"
   },
   {
     "id": "DEF",
@@ -41,7 +50,11 @@
     "title": "What SPC is and how Kermit uses it",
     "angle": "Keep one primary SPC definition and materials explanation.",
     "outline": "Use a real Kermit layer diagram, explain rigid-core terminology, distinguish flooring from wall panels and point to deeper installation and comparison guides.",
-    "evidence": "Existing SPC explanation and product profiles; avoid borrowing another manufacturer's layer stack."
+    "evidence": "Revised around the scoped 6 mm layer diagram, actual installation limits, optional backing, floor/wall distinction and links to the dedicated comparison guides.",
+    "status": "revised",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "spc-flooring-what-is-it-vs-laminate-benefits"
   },
   {
     "id": "CMP",
@@ -82,7 +95,11 @@
     "title": "Installation mistakes and movement",
     "angle": "Consolidate expansion-gap and lifting questions around the existing practical article.",
     "outline": "Cover restrained floors, subfloor preparation, water misuse and diagnostic questions. Reference the existing minimum 10 mm guidance, then confirm it against the approved installation document.",
-    "evidence": "Latest exact does spc flooring expand: 26 impressions, position 10.42. Do not diagnose every reported fault as installer error."
+    "evidence": "Revised to match the published 2 mm/1 m flatness, minimum 10 mm clearance and 27°C surface limit. Removed universal water, cutting, lifetime and installer-blame claims; added a fault-observation record.",
+    "status": "revised",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "spc-flooring-common-mistakes"
   },
   {
     "id": "COST",
@@ -92,8 +109,12 @@
     "tr_path": "/tr/blog/spc-parke-fiyatlari",
     "title": "Flooring price factors",
     "angle": "Protect the existing pricing experiment and later extend it with actual costs.",
-    "outline": "Explain a comparable quote and total project scope. Link the wholesale quotation guide rather than duplicate price pages.",
-    "evidence": "Review due 2026-09-15. Owner's SPC/ceramic/laminate installed-cost study remains queued."
+    "outline": "Explain seven quote checks and a complete project budget with explicit hypothetical arithmetic; retain the canonical price destinations and link the wholesale guide.",
+    "evidence": "Owner authorized completion of all remaining content in one release. Current installed-price study remains unavailable; the example uses generic currency units and is not a Kermit price list. October 1 baseline preserves the prior pricing verdict and query/page cohort.",
+    "status": "revised",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "spc-flooring-prices"
   },
   {
     "id": "REVIEW",
@@ -104,7 +125,11 @@
     "title": "Expert evaluation of SPC flooring",
     "angle": "Keep one expert assessment of advantages, drawbacks and suitable uses.",
     "outline": "Add grounded experience when available; avoid several worth-it, pros-and-cons and review pages answering the same question.",
-    "evidence": "Review due 2026-09-15. Customer testimonial quotes remain out of scope."
+    "evidence": "Updated as a named expert technical evaluation and review-reading guide. No customer testimonials, ratings or undocumented site experiences invented; prior review experiment outcome retained as history with a new rewrite boundary.",
+    "status": "revised",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "spc-flooring-user-reviews"
   },
   {
     "id": "GLOSSARY",
@@ -115,7 +140,10 @@
     "title": "SPC flooring, skirting and wall-panel glossary",
     "angle": "Create one useful reference with anchored definitions across Kermit's actual product families.",
     "outline": "Start with core, wear layer, IXPE, floating floor, use class, joint, transition, skirting height, flexible edge and wall substrate. Link each term to a relevant guide or technical sheet.",
-    "evidence": "Use original definitions and actual Kermit terminology. No separate page is needed for every short term."
+    "evidence": "33 original EN/TR definitions across construction, installation/quantity, evidence, supply and wall/skirting, each with an anchor and a published guide link; localized DefinedTermSet matches visible definitions.",
+    "status": "published",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md"
   },
   {
     "id": "BUY",
@@ -126,7 +154,11 @@
     "title": "Choosing an SPC manufacturer: a buyer's checklist",
     "angle": "Answer the supplier-shortlisting task with a usable comparison sheet.",
     "outline": "Cover company and factory identity, specification, samples, certification scope, site suitability, written commercial terms and the first order. Include a clearly identified Kermit facts panel.",
-    "evidence": "Company records and the newly confirmed OEM, MOQ and lead-time facts. Link actual evidence, without claiming a third-party best-manufacturer award."
+    "evidence": "Company records and the newly confirmed OEM, MOQ and lead-time facts. Link actual evidence, without claiming a third-party best-manufacturer award.",
+    "status": "published",
+    "released_at": "2026-09-13",
+    "release_record": "2026-09-13-manufacturer-launch.md",
+    "topic_id": "spc-manufacturer-buyers-checklist"
   },
   {
     "id": "QUOTE",
@@ -137,7 +169,11 @@
     "title": "Samples, wholesale quotes and the first container",
     "angle": "Turn interest into a well-specified enquiry.",
     "outline": "Give a copyable enquiry template, working catalogue links, sample checks and the documents a quote should settle. State MOQ one container and standard lead time four weeks.",
-    "evidence": "Do not invent container size, square-metre capacity, free samples, payment terms, shipping time or a lead-time start trigger."
+    "evidence": "Do not invent container size, square-metre capacity, free samples, payment terms, shipping time or a lead-time start trigger.",
+    "status": "published",
+    "released_at": "2026-09-13",
+    "release_record": "2026-09-13-manufacturer-launch.md",
+    "topic_id": "spc-samples-wholesale-quote"
   },
   {
     "id": "OEM",
@@ -148,7 +184,11 @@
     "title": "OEM and private-label SPC flooring",
     "angle": "Explain Kermit's confirmed brand-supply capability as a distinct buying task.",
     "outline": "Cover the product brief, branding, sample and artwork decisions, certificate scope and repeat-order specification. State the confirmed MOQ and lead time, with order-specific scope agreed in the quotation.",
-    "evidence": "OEM/private label confirmed 2026-09-13. Custom recipes, dimensions, exclusivity and ODM are not yet documented."
+    "evidence": "OEM/private label confirmed 2026-09-13. Custom recipes, dimensions, exclusivity and ODM are not yet documented.",
+    "status": "published",
+    "released_at": "2026-09-13",
+    "release_record": "2026-09-13-manufacturer-launch.md",
+    "topic_id": "spc-oem-private-label"
   },
   {
     "id": "EXPORT",
@@ -158,8 +198,12 @@
     "tr_path": "/tr/blog/kermit-spc-parke-ihracat-tedarik",
     "title": "Importing SPC flooring from Kermit",
     "angle": "Create one practical export guide before considering country pages.",
-    "outline": "Use a landed-cost worksheet, pack data, origin, document list and actual route examples. Explain Kocaeli and Moldova fulfilment facts accurately and confirm the production site per order.",
-    "evidence": "Actual carton/pallet data and routes; destination-specific primary sources for customs. No invented tariffs or automatic market conformity."
+    "outline": "Use a labelled landed-cost example, packing fields, origin/dispatch distinctions and a route-enquiry brief. Confirm production site and shipment terms per order; actual standard routes and packing capacities remain deferred.",
+    "evidence": "Owner-confirmed MOQ/lead time, September 29 site/country facts and fresh European Commission import guidance. No tariffs, actual transit times, container capacities or automatic conformity claims.",
+    "status": "published",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "import-spc-flooring-from-kermit"
   },
   {
     "id": "DEALER",
@@ -274,8 +318,12 @@
     "tr_path": "/tr/blog/spc-parke-metraj-doseme-plani",
     "title": "Quantity, carton rounding and layout",
     "angle": "Combine measurement, waste and layout into a useful planning tool.",
-    "outline": "Show room calculations, editable waste assumptions, carton rounding and spare stock; use real Kermit formats and actual pack coverage.",
-    "evidence": "Verified carton contents and approved stagger/pattern instructions are needed before fixed recommendations."
+    "outline": "Show area measurement, variable cut allowance, complete-carton rounding and separate reserve stock with a copyable worksheet and a scoped real plank-width layout example.",
+    "evidence": "Worked 35.30 m² example uses explicitly hypothetical 8% allowance and 2.20 m² carton coverage. Published technical sheet supports only the 228.6 mm width in a separate geometry example. Actual pack quantities and fixed pattern rules remain deferred.",
+    "status": "published",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "spc-flooring-quantity-layout"
   },
   {
     "id": "ROOMS",
@@ -316,7 +364,11 @@
     "title": "SPC and alternative flooring materials",
     "angle": "Offer a selective balanced comparison only when buyer demand supports it.",
     "outline": "Compare timber, ceramic, carpet, cork and bamboo through room use, maintenance and repair. Keep the existing laminate comparison separate and canonical.",
-    "evidence": "Do not invent installed costs, life expectancy, health claims or universal superiority."
+    "evidence": "Balanced SPC/tile/timber/carpet/cork/bamboo decision guide with primary NWFA, TCNA and CRI maintenance/assembly sources. No invented comparative prices, lifetimes or health rankings.",
+    "status": "published",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "spc-flooring-material-alternatives"
   },
   {
     "id": "DESIGN",
@@ -342,7 +394,9 @@
     "title": "Inside Kermit's manufacturing and quality process",
     "angle": "Provide first-party evidence that generic competitor-derived articles cannot supply.",
     "outline": "Show the real production stages, people, sample checks, batch records and packing at identified Kermit sites. Link a short summary from the manufacturer page.",
-    "evidence": "Requires a factual production interview and original imagery. No numerical Milat capacity was published in the fetched corpus."
+    "evidence": "Owner deferred factory-process/QC follow-up on October 1. Production footage exists, but the specific process narrative and QC checkpoints remain for a later confirmed brief. No factory article is published in this release.",
+    "status": "deferred-owner",
+    "deferred_at": "2026-10-01"
   },
   {
     "id": "IAQ",
@@ -352,7 +406,11 @@
     "tr_path": "/tr/blog/kermit-spc-sertifikalar-emisyon",
     "title": "Understanding Kermit's certificates and emissions evidence",
     "angle": "Explain what the available documents do and do not establish.",
-    "outline": "Link the relevant FloorScore listing and reports and distinguish management-system certificates from product evidence. Link the OEM guide for branding questions.",
-    "evidence": "Actual certificate files have been inspected but public claims are deferred pending accurate holder/site/product scope. Do not use broad certification parity as publication evidence."
+    "outline": "Explain product evidence and document scope; link Kermit’s published TDS/Resources and primary SCS/ISO guidance. Request applicable certificates for the ordered product instead of asserting unverified named coverage.",
+    "evidence": "Published as a document interpretation/request guide. Named Kermit FloorScore/ISO coverage and certificate uploads remain deferred until product/holder/site scope is substantiated. No third-party certificate was edited or republished.",
+    "status": "published",
+    "released_at": "2026-10-01",
+    "release_record": "2026-10-01-content-completion-launch.md",
+    "topic_id": "kermit-spc-certificates-emissions"
   }
 ]

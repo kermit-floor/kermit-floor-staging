@@ -1,0 +1,433 @@
+[
+  {
+    "id": "construction",
+    "en": "Product construction",
+    "tr": "Ürün yapısı",
+    "terms": [
+      {
+        "id": "spc",
+        "en": {
+          "name": "SPC",
+          "definition": "A rigid vinyl flooring construction. RFCI and MMFA use the abbreviation for solid polymer core. The name does not specify thickness, backing or every performance property."
+        },
+        "tr": {
+          "name": "SPC",
+          "definition": "Rijit vinil zemin yapısıdır. RFCI ve MMFA kısaltmayı katı polimer çekirdek için kullanır. Adı tek başına kalınlığı, şilteyi veya bütün performans özelliklerini belirtmez."
+        },
+        "topicId": "spc-flooring-what-is-it-vs-laminate-benefits"
+      },
+      {
+        "id": "core",
+        "en": {
+          "name": "Rigid core",
+          "definition": "The supporting body beneath the decorative layers. Core construction and overall plank thickness are separate specification questions."
+        },
+        "tr": {
+          "name": "Rijit çekirdek",
+          "definition": "Dekoratif katmanların altındaki taşıyıcı gövdedir. Çekirdek yapısı ve toplam plaka kalınlığı ayrı teknik bilgilerdir."
+        },
+        "topicId": "spc-flooring-thickness-wear-layer"
+      },
+      {
+        "id": "wear-layer",
+        "en": {
+          "name": "Wear layer",
+          "definition": "The layer above the decor identified separately from overall thickness. Its stated thickness is not a scratch-proof guarantee."
+        },
+        "tr": {
+          "name": "Aşınma tabakası",
+          "definition": "Dekorun üzerinde bulunan ve toplam kalınlıktan ayrı belirtilen katmandır. Kalınlık değeri çizilmezlik garantisi değildir."
+        },
+        "topicId": "spc-flooring-thickness-wear-layer"
+      },
+      {
+        "id": "decor",
+        "en": {
+          "name": "Decor and product code",
+          "definition": "The design reference used to identify the appearance being ordered. Keep the code with the sample; similar names or images do not establish an exact match."
+        },
+        "tr": {
+          "name": "Dekor ve ürün kodu",
+          "definition": "Sipariş edilen görünümü tanımlayan tasarım referansıdır. Kodu numuneyle saklayın; benzer ad veya görsel birebir eşleşme anlamına gelmez."
+        },
+        "topicId": "spc-flooring-colour-format"
+      },
+      {
+        "id": "overall-thickness",
+        "en": {
+          "name": "Overall thickness",
+          "definition": "The stated thickness of the complete product configuration. Confirm whether attached backing is included before comparing two offers."
+        },
+        "tr": {
+          "name": "Toplam kalınlık",
+          "definition": "Tarif edilen ürün yapısının toplam kalınlığıdır. İki teklifi karşılaştırmadan önce ekli şiltenin bu değere dâhil olup olmadığını kontrol edin."
+        },
+        "topicId": "spc-flooring-thickness-wear-layer"
+      },
+      {
+        "id": "ixpe",
+        "en": {
+          "name": "IXPE backing",
+          "definition": "A foam backing specified on some flooring configurations. Its presence, thickness and compatibility must be checked for the selected product."
+        },
+        "tr": {
+          "name": "IXPE şilte",
+          "definition": "Bazı parke yapılarında belirtilen köpük taban katmanıdır. Bulunup bulunmadığı, kalınlığı ve uyumu seçilen ürün için kontrol edilir."
+        },
+        "topicId": "spc-flooring-underlay-acoustics"
+      },
+      {
+        "id": "click-system",
+        "en": {
+          "name": "Click system",
+          "definition": "The shaped joint connecting adjacent planks. The selected lock determines the fitting sequence and relevant installation instructions."
+        },
+        "tr": {
+          "name": "Kilit sistemi",
+          "definition": "Komşu plakaları birleştiren biçimlendirilmiş bağlantıdır. Seçilen kilit, birleştirme sırasını ve uygulanacak talimatı belirler."
+        },
+        "topicId": "spc-flooring-installation-planning"
+      }
+    ]
+  },
+  {
+    "id": "installation",
+    "en": "Installation and quantities",
+    "tr": "Montaj ve metraj",
+    "terms": [
+      {
+        "id": "floating-floor",
+        "en": {
+          "name": "Floating floor",
+          "definition": "A floor laid as an interconnected surface that must remain free to move. Fixed objects and trims must not pin it down."
+        },
+        "tr": {
+          "name": "Yüzer döşeme",
+          "definition": "Birbirine bağlı yüzey olarak uygulanan ve hareket edebilmesi gereken zemindir. Sabit elemanlar ve profiller parkeyi sıkıştırmamalıdır."
+        },
+        "topicId": "spc-flooring-common-mistakes"
+      },
+      {
+        "id": "subfloor",
+        "en": {
+          "name": "Subfloor",
+          "definition": "The supporting base on which the flooring system is installed. Identify its material, condition and moisture before selecting preparation products."
+        },
+        "tr": {
+          "name": "Alt zemin",
+          "definition": "Kaplama sisteminin uygulandığı taşıyıcı yüzeydir. Hazırlık ürünü seçmeden önce malzemesini, durumunu ve nemini belirleyin."
+        },
+        "topicId": "spc-flooring-installation-planning"
+      },
+      {
+        "id": "flatness",
+        "en": {
+          "name": "Flatness",
+          "definition": "Local surface evenness, distinct from the overall slope of a room. Kermit’s manual sets a maximum unevenness of 2 mm over 1 m."
+        },
+        "tr": {
+          "name": "Yüzey düzgünlüğü",
+          "definition": "Odanın genel eğiminden farklı olan yerel yüzey düzgünlüğüdür. Kermit kılavuzundaki sınır 1 metrede en fazla 2 mm sapmadır."
+        },
+        "topicId": "spc-flooring-common-mistakes"
+      },
+      {
+        "id": "movement-gap",
+        "en": {
+          "name": "Movement gap",
+          "definition": "Clearance that allows a floating floor to move. Kermit’s manual requires at least 10 mm around walls and fixed objects; additional joints depend on the layout."
+        },
+        "tr": {
+          "name": "Hareket boşluğu / genleşme payı",
+          "definition": "Yüzer zeminin hareketine izin veren boşluktur. Kermit kılavuzu duvarlarda ve sabit elemanlarda en az 10 mm ister; ek derzler yerleşime göre değerlendirilir."
+        },
+        "topicId": "spc-flooring-common-mistakes"
+      },
+      {
+        "id": "transition",
+        "en": {
+          "name": "Transition profile",
+          "definition": "A profile used at a planned junction between floor areas or finishes. Choose its detail and fixing without restricting the required floor movement."
+        },
+        "tr": {
+          "name": "Geçiş profili",
+          "definition": "Zemin alanları veya kaplamalar arasındaki planlı birleşimde kullanılan profildir. Detayı ve sabitlemesi gerekli hareketi engellememelidir."
+        },
+        "topicId": "spc-flooring-installation-planning"
+      },
+      {
+        "id": "moisture-barrier",
+        "en": {
+          "name": "Moisture barrier",
+          "definition": "A layer specified to manage moisture from the base. It has a different purpose from cushioning underlay or room waterproofing."
+        },
+        "tr": {
+          "name": "Nem bariyeri",
+          "definition": "Alt zeminden gelen neme karşı tarif edilen katmandır. Yastıklama şiltesi veya odanın su yalıtımından farklı işlevi vardır."
+        },
+        "topicId": "spc-flooring-underlay-acoustics"
+      },
+      {
+        "id": "underlay",
+        "en": {
+          "name": "Underlay",
+          "definition": "A layer beneath the floor selected for the complete system. Confirm compatibility, especially where the plank already has attached backing."
+        },
+        "tr": {
+          "name": "İlave şilte",
+          "definition": "Zeminin altına, bütün sistem için seçilen katmandır. Özellikle plakanın ekli şiltesi varsa uyumu teyit edilmelidir."
+        },
+        "topicId": "spc-flooring-underlay-acoustics"
+      },
+      {
+        "id": "carton-coverage",
+        "en": {
+          "name": "Carton coverage",
+          "definition": "The confirmed square metres supplied in one carton of the exact product. Use this value to round an area calculation up to complete cartons."
+        },
+        "tr": {
+          "name": "Kutu kaplama alanı",
+          "definition": "Belirli ürünün bir kutusundaki doğrulanmış metrekare miktarıdır. Alan hesabı bu değerle tam kutuya yukarı yuvarlanır."
+        },
+        "topicId": "spc-flooring-quantity-layout"
+      },
+      {
+        "id": "cut-allowance",
+        "en": {
+          "name": "Cut allowance and spare stock",
+          "definition": "A cut allowance covers the expected layout losses. Reserve full planks or unopened cartons separately if they are needed for future work."
+        },
+        "tr": {
+          "name": "Kesim payı ve yedek stok",
+          "definition": "Kesim payı yerleşimde beklenen kayıpları karşılar. Sonraki işler için gerekli tam plaka veya açılmamış kutuları ayrıca ayırın."
+        },
+        "topicId": "spc-flooring-quantity-layout"
+      }
+    ]
+  },
+  {
+    "id": "evidence",
+    "en": "Performance and documents",
+    "tr": "Performans ve belgeler",
+    "terms": [
+      {
+        "id": "use-class",
+        "en": {
+          "name": "Use class",
+          "definition": "A declared classification for the product’s intended intensity of use. Read it with the selected technical sheet and installation limits, not as approval for every room."
+        },
+        "tr": {
+          "name": "Kullanım sınıfı",
+          "definition": "Ürünün öngörülen kullanım yoğunluğuna ilişkin beyan edilen sınıftır. Her odaya onay gibi değil, teknik föy ve uygulama sınırlarıyla birlikte okunur."
+        },
+        "topicId": "spc-flooring-thickness-wear-layer"
+      },
+      {
+        "id": "acoustic-assembly",
+        "en": {
+          "name": "Acoustic assembly",
+          "definition": "The combination of floor, backing or underlay and supporting construction associated with a sound test. A result cannot simply be transferred to different layers."
+        },
+        "tr": {
+          "name": "Akustik katman düzeni",
+          "definition": "Ses testiyle ilişkili kaplama, şilte ve taşıyıcı yapı birleşimidir. Bir sonuç farklı katmanlara doğrudan aktarılamaz."
+        },
+        "topicId": "spc-flooring-underlay-acoustics"
+      },
+      {
+        "id": "surface-temperature",
+        "en": {
+          "name": "Floor-surface temperature",
+          "definition": "Temperature at the finished walking surface. Kermit’s limit is 27°C in an approved underfloor-heating application; this is not the heating-water setting."
+        },
+        "tr": {
+          "name": "Zemin yüzey sıcaklığı",
+          "definition": "Bitmiş yürüme yüzeyindeki sıcaklıktır. Onaylı yerden ısıtmada Kermit sınırı 27°C’dir; tesisat suyu ayarı değildir."
+        },
+        "topicId": "spc-flooring-heating-sunlight"
+      },
+      {
+        "id": "thermal-resistance",
+        "en": {
+          "name": "Thermal resistance",
+          "definition": "A measure used when assessing heat flow through the specified layers. Heating compatibility requires the complete floor build-up and system approval."
+        },
+        "tr": {
+          "name": "Isıl direnç",
+          "definition": "Tarif edilen katmanlardan ısı geçişi değerlendirilirken kullanılan ölçüdür. Isıtma uyumu bütün zemin katmanlarını ve sistem uygunluğunu gerektirir."
+        },
+        "topicId": "spc-flooring-heating-sunlight"
+      },
+      {
+        "id": "water-resistance",
+        "en": {
+          "name": "Water resistance",
+          "definition": "A product characteristic that must be read with its exposure limits. It does not make a room waterproof or remove the need to check substrate moisture."
+        },
+        "tr": {
+          "name": "Su direnci",
+          "definition": "Maruziyet sınırlarıyla birlikte okunması gereken ürün özelliğidir. Odayı su yalıtımlı yapmaz ve alt zemin nem kontrolünü ortadan kaldırmaz."
+        },
+        "topicId": "spc-flooring-waterproof-guide"
+      },
+      {
+        "id": "technical-sheet",
+        "en": {
+          "name": "Technical data sheet (TDS)",
+          "definition": "The manufacturer’s description of a defined product and its technical properties. Check its revision and configuration; it is not automatically independent certification."
+        },
+        "tr": {
+          "name": "Teknik föy (TDS)",
+          "definition": "Üreticinin belirli ürün ve teknik özellikleri için hazırladığı belgedir. Sürümü ve ürün yapısını kontrol edin; kendiliğinden bağımsız sertifika değildir."
+        },
+        "topicId": "kermit-spc-certificates-emissions"
+      },
+      {
+        "id": "emissions",
+        "en": {
+          "name": "Emissions",
+          "definition": "Substances released under specified test conditions. Read the method, units and sample scope; ingredient content and emissions are different questions."
+        },
+        "tr": {
+          "name": "Emisyon",
+          "definition": "Belirli test koşullarında salınan maddelerdir. Yöntemi, birimleri ve numune kapsamını okuyun; içerik ve emisyon farklı sorulardır."
+        },
+        "topicId": "kermit-spc-certificates-emissions"
+      },
+      {
+        "id": "certificate-scope",
+        "en": {
+          "name": "Certificate scope",
+          "definition": "The products, organization, activities or sites covered by a particular certificate. Match the actual claim and order to that scope and verify current status."
+        },
+        "tr": {
+          "name": "Sertifika kapsamı",
+          "definition": "Belirli belgenin kapsadığı ürün, kuruluş, faaliyet veya tesislerdir. İddiayı ve siparişi kapsamla eşleştirin; güncel durumu doğrulayın."
+        },
+        "topicId": "kermit-spc-certificates-emissions"
+      }
+    ]
+  },
+  {
+    "id": "ordering",
+    "en": "Ordering and supply",
+    "tr": "Sipariş ve tedarik",
+    "terms": [
+      {
+        "id": "batch",
+        "en": {
+          "name": "Batch reference",
+          "definition": "An identifier linking delivered goods to their production record. Retain labels with the decor and order information for enquiries or repeat supply."
+        },
+        "tr": {
+          "name": "Parti referansı",
+          "definition": "Teslim edilen ürünü üretim kaydıyla ilişkilendiren kimliktir. Soru veya tekrar sipariş için etiketi dekor ve sipariş bilgisiyle saklayın."
+        },
+        "topicId": "spc-flooring-care-repair"
+      },
+      {
+        "id": "moq",
+        "en": {
+          "name": "Minimum order quantity (MOQ)",
+          "definition": "The minimum commercial order. Kermit’s wholesale SPC flooring MOQ is one container; the actual loading quantity depends on the agreed specification."
+        },
+        "tr": {
+          "name": "Asgari sipariş miktarı (MOQ)",
+          "definition": "Ticari alımın alt sınırıdır. Kermit’te toptan SPC parke için bir konteynerdir; gerçek yükleme miktarı kararlaştırılan ürüne bağlıdır."
+        },
+        "topicId": "spc-samples-wholesale-quote"
+      },
+      {
+        "id": "lead-time",
+        "en": {
+          "name": "Lead time",
+          "definition": "The quoted time for an agreed order stage. Kermit’s standard lead time is four weeks; confirm the start basis and separate transport schedule in the quotation."
+        },
+        "tr": {
+          "name": "Termin",
+          "definition": "Kararlaştırılan sipariş aşaması için verilen süredir. Kermit’in standart termini dört haftadır; başlangıç koşulunu ve ayrı taşıma takvimini teklifte netleştirin."
+        },
+        "topicId": "import-spc-flooring-from-kermit"
+      },
+      {
+        "id": "private-label",
+        "en": {
+          "name": "OEM and private label",
+          "definition": "Supply for a buyer’s product or brand brief. Kermit offers this capability; product details, artwork and any certification/logo scope are agreed for the order."
+        },
+        "tr": {
+          "name": "OEM ve özel marka",
+          "definition": "Alıcının ürün veya marka tarifine göre tedariktir. Kermit bu imkânı sunar; ürün ayrıntısı, tasarım ve sertifika/logo kapsamı siparişte kararlaştırılır."
+        },
+        "topicId": "spc-oem-private-label"
+      },
+      {
+        "id": "landed-cost",
+        "en": {
+          "name": "Landed cost",
+          "definition": "A defined total cost to receive goods at the chosen destination. Identify included charges, quantity, currency and tax treatment before comparing unit figures."
+        },
+        "tr": {
+          "name": "Varış noktasına kadar maliyet",
+          "definition": "Malı seçilen noktada teslim almak için tanımlanan toplam maliyettir. Birim tutarları karşılaştırmadan önce giderleri, miktarı, para birimini ve vergileri belirleyin."
+        },
+        "topicId": "import-spc-flooring-from-kermit"
+      }
+    ]
+  },
+  {
+    "id": "walls-skirting",
+    "en": "Skirting and wall panels",
+    "tr": "Süpürgelik ve duvar panelleri",
+    "terms": [
+      {
+        "id": "skirting-height",
+        "en": {
+          "name": "Skirting height and thickness",
+          "definition": "Height is the visible rise up the wall; thickness describes the profile’s projection. Neither is its supplied length, which matters for cutting and quantity."
+        },
+        "tr": {
+          "name": "Süpürgelik yüksekliği ve kalınlığı",
+          "definition": "Yükseklik duvarda görünen düşey ölçü, kalınlık profilin çıkıntısıdır. İkisi de kesim ve miktar hesabında gereken ürün boyu değildir."
+        },
+        "topicId": "kermit-spc-skirting-advantages"
+      },
+      {
+        "id": "flexible-edge",
+        "en": {
+          "name": "Flexible edge",
+          "definition": "A flexible contact edge on a specified skirting profile. It is a profile feature, not a replacement for wall preparation or a complete waterproofing system."
+        },
+        "tr": {
+          "name": "Esnek kenar / conta",
+          "definition": "Belirli süpürgelik profilindeki esnek temas kenarıdır. Duvar hazırlığının veya bütün su yalıtım sisteminin yerine geçmez."
+        },
+        "topicId": "skirting-with-flexible-edges-what-is-it"
+      },
+      {
+        "id": "wall-substrate",
+        "en": {
+          "name": "Wall substrate",
+          "definition": "The surface supporting a wall-panel installation. Its condition, moisture and compatibility with the selected fixing system need separate assessment from a floor."
+        },
+        "tr": {
+          "name": "Duvar alt yüzeyi",
+          "definition": "Duvar panelini taşıyan yüzeydir. Durumu, nemi ve sabitleme sistemiyle uyumu, parke uygulamasından ayrı değerlendirilir."
+        },
+        "topicId": "spc-wall-panel-usage-areas"
+      },
+      {
+        "id": "finish-schedule",
+        "en": {
+          "name": "Finish schedule",
+          "definition": "A room-by-room record of flooring, skirting and wall products, with their quantities, references and installation details kept distinct."
+        },
+        "tr": {
+          "name": "Kaplama çizelgesi",
+          "definition": "Parke, süpürgelik ve duvar ürünlerini oda bazında kaydeden listedir. Miktar, referans ve uygulama ayrıntıları ürün ailelerine göre ayrı tutulur."
+        },
+        "topicId": "spc-interior-finishes-project-specification"
+      }
+    ]
+  }
+]
