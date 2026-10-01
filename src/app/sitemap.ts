@@ -28,16 +28,20 @@ function buildStaticRouteEntries(): MetadataRoute.Sitemap {
     const enUrl = toAbsoluteUrl('en', localized.en);
     const trUrl = toAbsoluteUrl('tr', localized.tr);
 
-    entries.push({
-      url: enUrl,
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: enUrl,
-          tr: trUrl,
+    const lastModified = new Date();
+
+    for (const url of [enUrl, trUrl]) {
+      entries.push({
+        url,
+        lastModified,
+        alternates: {
+          languages: {
+            en: enUrl,
+            tr: trUrl,
+          },
         },
-      },
-    });
+      });
+    }
   }
 
   return entries;
@@ -51,16 +55,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
 
   const staticEntries = buildStaticRouteEntries();
-  const postEntries: MetadataRoute.Sitemap = pairs.map((pair) => ({
-    url: toAbsoluteUrl('en', getBlogPostPath(pair.en.slug)),
-    lastModified: pair.en.updatedAtDate > pair.tr.updatedAtDate ? pair.en.updatedAtDate : pair.tr.updatedAtDate,
-    alternates: {
-      languages: {
-        en: toAbsoluteUrl('en', getBlogPostPath(pair.en.slug)),
-        tr: toAbsoluteUrl('tr', getBlogPostPath(pair.tr.slug)),
+  const postEntries: MetadataRoute.Sitemap = pairs.flatMap((pair) => {
+    const enUrl = toAbsoluteUrl('en', getBlogPostPath(pair.en.slug));
+    const trUrl = toAbsoluteUrl('tr', getBlogPostPath(pair.tr.slug));
+    const lastModified = pair.en.updatedAtDate > pair.tr.updatedAtDate
+      ? pair.en.updatedAtDate
+      : pair.tr.updatedAtDate;
+
+    return [enUrl, trUrl].map((url) => ({
+      url,
+      lastModified,
+      alternates: {
+        languages: {
+          en: enUrl,
+          tr: trUrl,
+        },
       },
-    },
-  }));
+    }));
+  });
 
   const tagEntries: MetadataRoute.Sitemap = [
     ...enTags.map((tag) => ({
